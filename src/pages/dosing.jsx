@@ -1,13 +1,13 @@
 import React from "react"
-import { Container, Row, Col } from "react-bootstrap"
 import Layout from "../components/layout"
+import { Container, Row, Col } from "react-bootstrap"
 
 export default () => (
   <Layout>
     <Container>
       <Row>
         <Col>
-          <h1>Homepage</h1>
+          <h1>Dosing</h1>
         </Col>
       </Row>
     </Container>

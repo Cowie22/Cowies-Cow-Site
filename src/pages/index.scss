@@ -1,0 +1,76 @@
+// Primary colors
+$teal: #6eceb2;
+$blue: #43859b;
+$salmon: #ee968a;
+
+// Other
+$light-teal: #9ed8cf;
+
+@import '../components/header/utilityNav.scss';
+@import '../components/header/mainNav.scss';
+@import '../components/footer/footer.scss';
+@import '../components/layout.scss';
+@import "~bootstrap/scss/bootstrap";
+
+html {
+  // UI/UX use multiples of 8px
+  // https://medium.com/code-better/css-units-for-font-size-px-em-rem-79f7e592bb97
+  // Since browser default is 16px, the following will set the root font size to 8px
+  // It should be set this way to avoid the issues mentioned with setting font sizes
+  // and spacing (margin/padding)
+  font-size: 50%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem; 
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  ul {
+    display: inline-block;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    li {
+      a {
+        // Primary color
+        color: $teal;
+        &:hover {
+          text-decoration: none;
+          // Secondary color
+          color: $salmon;
+        }
+      }
+      &:not(:last-of-type) {
+        margin-right: 3rem;
+      }
+    }
+  }
+  &.right {
+    justify-content: flex-end;
+  }
+  &.text-white {
+    ul {
+      li {
+        a {
+          color: white;
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: 1fr;
+  gap: 2rem;
+}
