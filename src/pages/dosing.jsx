@@ -7,7 +7,7 @@ export default () => (
     <Container>
       <Row>
         <Col>
-          <h1>Dosing</h1>
+          <h1>Dosing Page</h1>
         </Col>
       </Row>
     </Container>
