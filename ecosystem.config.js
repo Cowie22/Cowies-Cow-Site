@@ -82,7 +82,7 @@ module.exports = {
       "post-setup": "pwd && ls -la && npm install",
       path: "/var/www/stage/" + client_name + "/" + project_name,
       "post-deploy":
-        'npm config set @fortawesome:registry https://npm.fontawesome.com/EEFD84F8-907F-4B20-82D9-DC20387F3808 && npm install && npm run build && if [ -d "build" ]; then rm -rf build; fi && mv public build && cp -r ./build/* ../htdocs/',
+        'npm config set @fortawesome:registry https://npm.fontawesome.com/EEFD84F8-907F-4B20-82D9-DC20387F3808 && npm install && npm run build && if [ -d build ]; then rm -rf build; fi && mv public build && cp -r ./build/* ../htdocs/',
       env: {
         NODE_ENV: "stage",
       },
