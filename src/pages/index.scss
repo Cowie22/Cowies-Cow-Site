@@ -6,10 +6,10 @@ $salmon: #ee968a;
 // Other
 $light-teal: #9ed8cf;
 
-@import '../components/header/utilityNav.scss';
-@import '../components/header/mainNav.scss';
-@import '../components/footer/footer.scss';
-@import '../components/layout.scss';
+@import '../components/header/UtilityNav.scss';
+@import '../components/header/MainNav.scss';
+@import '../components/footer/Footer.scss';
+@import '../components/Layout.scss';
 @import "~bootstrap/scss/bootstrap";
 
 html {

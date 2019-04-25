@@ -1,7 +1,7 @@
 import React from "react"
-import Indication from "./indication"
-import UtilityNav from "./utilitynav"
-import MainNav from "./mainNav"
+import Indication from "./Indication"
+import UtilityNav from "./UtilityNav"
+import MainNav from "./MainNav"
 
 export default () => (
   <>

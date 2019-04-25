@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 
 export default () => (
   <Layout>

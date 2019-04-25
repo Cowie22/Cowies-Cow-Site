@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import Header from "./header/header"
-import Footer from "./footer/footer"
+import Header from "./header/Header"
+import Footer from "./footer/Footer"
 
 import "../pages/index.scss"
 
