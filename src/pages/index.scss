@@ -7,10 +7,11 @@ $salmon: #ee968a;
 $light-teal: #9ed8cf;
 
 @import '../components/header/UtilityNav.scss';
+@import '../components/header/Header.scss';
+@import '../components/header/Indication.scss';
 @import '../components/header/MainNav.scss';
 @import '../components/footer/Footer.scss';
 @import '../components/Layout.scss';
-@import "~bootstrap/scss/bootstrap";
 
 html {
   // UI/UX use multiples of 8px
@@ -24,6 +25,20 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem; 
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h5 {
+  color: $blue;
+  font-size: 16px;	
+  font-weight: 600;	
+  line-height: 19px;
+  text-transform: uppercase;
 }
 
 nav {
@@ -43,7 +58,7 @@ nav {
         &:hover {
           text-decoration: none;
           // Secondary color
-          color: $salmon;
+          color: $blue;
         }
       }
       &:not(:last-of-type) {
@@ -66,11 +81,4 @@ nav {
       }
     }
   }
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-auto-rows: 1fr;
-  gap: 2rem;
 }

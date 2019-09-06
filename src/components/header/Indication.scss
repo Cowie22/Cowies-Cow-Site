@@ -1,0 +1,44 @@
+.indication {
+  .indication-col {
+    display: flex;
+    justify-content: space-between;
+    section {
+      padding: 1rem 0;
+    }
+  }
+  .indication-close-col {
+    display: flex;
+    justify-content: flex-end;
+    section {
+      padding: 1rem 0 1rem 1rem;
+      display: inline-block;
+      cursor: pointer;
+      svg {
+        color: $salmon
+      }
+      &:hover {
+        svg {
+          color: $blue;
+        }
+      }
+    }
+  }
+  p {
+    margin: 0;
+    font-size: 14px;	
+    line-height: 24px;
+    a {
+      color: $salmon;
+      margin-left: 1rem;
+      position: relative;
+      svg {
+        position: absolute;
+        top: -5px;
+        right: -15px;
+      }
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}

@@ -1,8 +1,11 @@
 .layout {
+  // The lines below stretch out the body if there isn't enough content
+  // TODO: Remove lines below when body content has been inserted
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 150vh;
   .main {
     flex: 1;
   }
+  // TODO: Remove lines above when body content has been inserted
 }

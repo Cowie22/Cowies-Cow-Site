@@ -12,11 +12,14 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        google: {
-          families: ["Montserrat:400,600,700"],
-        },
+        fonts: [
+          {
+            family: `Montserrat`,
+            variants: [`400`, `600`, `700`],
+          },
+        ],
       },
     },
   ],
