@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
-import { StickyContainer, Sticky } from "react-sticky"
+import { StickyContainer } from "react-sticky"
 
 import { StateProvider } from "../contexts/state"
 import HeaderSwitcher from "./header/HeaderSwitcher"
