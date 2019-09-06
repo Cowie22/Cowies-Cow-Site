@@ -27,14 +27,15 @@
     margin: 0;
     font-size: 14px;	
     line-height: 24px;
+    position: relative;
     a {
+      position: absolute;
+      bottom: 0;
       color: $salmon;
       margin-left: 1rem;
-      position: relative;
       svg {
-        position: absolute;
-        top: -5px;
-        right: -15px;
+        position: relative;
+        top: 5px;
       }
       &:hover {
         color: $blue;
