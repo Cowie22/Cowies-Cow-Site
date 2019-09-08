@@ -7,8 +7,9 @@ import { StateProvider } from "../contexts/state"
 import HeaderSwitcher from "./header/HeaderSwitcher"
 import Footer from "./footer/Footer"
 
+import "bootstrap/dist/css/bootstrap.min.css"
+import "@fortawesome/fontawesome-svg-core/styles.css"
 import "../pages/index.scss"
-
 // Import font-awesome
 // Sources:
 // https://github.com/gatsbyjs/gatsby/issues/6357#issuecomment-490972478 - source of code below
