@@ -7,10 +7,6 @@ import Header from "./header/Header"
 import HeaderNoIndication from "./header/HeaderNoIndication"
 import Footer from "./footer/Footer"
 
-import "bootstrap/dist/css/bootstrap.min.css"
-import "@fortawesome/fontawesome-svg-core/styles.css"
-import "../pages/index.scss"
-
 const Layout = ({ children }) => {
   const [{ isIndicationVisible }] = useStateValue()
   return (

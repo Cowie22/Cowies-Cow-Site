@@ -14,6 +14,7 @@ import AppWrapper from "./src/components/AppWrapper"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "@fortawesome/fontawesome-svg-core/styles.css"
+import "./src/pages/index.scss"
 
 export const wrapRootElement = ({ element }) => {
   return <AppWrapper>{element}</AppWrapper>
