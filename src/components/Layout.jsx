@@ -9,7 +9,7 @@ import Footer from "./footer/Footer"
 
 const Layout = ({ children }) => {
   const [{ isIndicationVisible }] = useStateValue()
-  return (
+  return children ? (
     <div className="layout">
       <Helmet>
         <meta charSet="utf-8" />
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
       <div className="main">{children}</div>
       <Footer />
     </div>
-  )
+  ) : null
 }
 
 Layout.propTypes = {
