@@ -3,7 +3,8 @@ import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import { StickyContainer } from "react-sticky"
 
-import { StateProvider } from "../contexts/state"
+import AppProvider, { AppContext } from '../contexts/state';
+
 import HeaderSwitcher from "./header/HeaderSwitcher"
 import Footer from "./footer/Footer"
 
@@ -23,24 +24,8 @@ import "../pages/index.scss"
 // library.add(faTimesCircle, faAngleRight)
 
 const Layout = ({ children }) => {
-  const initialState = {
-    isIndicationVisible: true,
-  }
-
-  const reducer = (state, action) => {
-    switch (action.type) {
-      case "hideIndication":
-        return {
-          ...state,
-          isIndicationVisible: false,
-        }
-
-      default:
-        return state
-    }
-  }
   return (
-    <StateProvider initialState={initialState} reducer={reducer}>
+    <AppProvider>
       <StickyContainer>
         <div className="layout">
           <Helmet>
@@ -56,7 +41,7 @@ const Layout = ({ children }) => {
           <Footer />
         </div>
       </StickyContainer>
-    </StateProvider>
+    </AppProvider>
   )
 }
 
