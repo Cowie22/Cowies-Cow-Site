@@ -9,7 +9,7 @@ export default () => (
   <footer>
     <Container>
       <Row>
-        <Col className="top-footer">
+        <Col className="top-footer" lg={{ span: 9, order: 1}} xs={{ span: 12, order: 2}}>
           <nav className="text-white">
             <ul>
               <li>
@@ -23,6 +23,8 @@ export default () => (
               </li>
             </ul>
           </nav>
+        </Col>
+        <Col lg={{ span: 3, order: 2}} xs={{ span: 12, order: 1}}>
           <img alt="Evoke Giant alt logo" src={footerLogo} />
         </Col>
       </Row>
