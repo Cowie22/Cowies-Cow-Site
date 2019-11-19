@@ -6,6 +6,7 @@ import { StickyContainer } from "react-sticky"
 import AppProvider, { AppContext } from '../contexts/state';
 
 import HeaderSwitcher from "./header/HeaderSwitcher"
+import Isi from "./isi/Isi"
 import Footer from "./footer/Footer"
 
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -38,6 +39,7 @@ const Layout = ({ children }) => {
           </Helmet>
           <HeaderSwitcher />
           <div className="main">{children}</div>
+          <Isi />
           <Footer />
         </div>
       </StickyContainer>

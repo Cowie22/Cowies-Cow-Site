@@ -13,6 +13,7 @@ $light-teal: #9ed8cf;
 @import '../components/header/Header.scss';
 @import '../components/header/Indication.scss';
 @import '../components/header/MainNav.scss';
+@import '../components/isi/Isi.scss';
 @import '../components/footer/Footer.scss';
 @import '../components/Layout.scss';
 
@@ -28,6 +29,9 @@ html {
 body {
   font-family: $montserrat;
   font-size: 2rem; 
+  &.scroll-none {
+    overflow: hidden;
+  }
 }
 
 a {
