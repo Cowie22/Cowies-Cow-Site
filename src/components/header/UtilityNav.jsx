@@ -1,7 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
-export default () => (
+
+export default props => (
   <section className="utility-nav">
     <Container>
       <Row>
@@ -11,6 +12,7 @@ export default () => (
               <li>
                 <Link to="#">Prescribing Information</Link>
               </li>
+              <li onClick={() => props.openIndication()}>Indication</li>
               <li>
                 <Link to="#">Important Safety Information</Link>
               </li>

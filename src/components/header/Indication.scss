@@ -1,10 +1,8 @@
 .indication {
+  padding: 1rem 0;
   .indication-col {
     display: flex;
     justify-content: space-between;
-    section {
-      padding: 1rem 0;
-    }
   }
   .indication-close-col {
     display: flex;
@@ -14,7 +12,7 @@
       display: inline-block;
       cursor: pointer;
       svg {
-        color: $salmon
+        color: $salmon;
       }
       &:hover {
         svg {
@@ -40,6 +38,16 @@
       &:hover {
         color: $blue;
       }
+    }
+  }
+  .read-more-arrow {
+    height: 15px;
+    margin-bottom: 2px;
+    padding-left: 8px;
+    transition: 0.4s all;
+    &:hover {
+      cursor: pointer;
+      transition: 0.4s all;
     }
   }
 }

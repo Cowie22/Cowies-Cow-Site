@@ -2,17 +2,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Sticky } from "react-sticky"
 
-import Indication from "./Indication"
-import UtilityNav from "./UtilityNav"
 import MainNav from "./MainNav"
 
-const Header = () => {
+const Header = props => {
   return (
-    <Sticky>
+    <Sticky topOffset={props.indicationIsOpen ? 160 : 100}>
       {({ style }) => (
         <header className="main-header" style={{ ...style }}>
-          <Indication />
-          <UtilityNav />
           <MainNav />
         </header>
       )}

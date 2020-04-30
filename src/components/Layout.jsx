@@ -1,30 +1,32 @@
-import React from "react"
+import React, { useState } from "react"
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import { StickyContainer } from "react-sticky"
 
-import AppProvider, { AppContext } from '../contexts/state';
+import AppProvider, { AppContext } from "../contexts/state"
 
-import HeaderSwitcher from "./header/HeaderSwitcher"
+import Header from "./header/Header"
+import Indication from "./header/Indication"
+import UtilityNav from "./header/UtilityNav"
 import Isi from "./isi/Isi"
 import Footer from "./footer/Footer"
 
 import "bootstrap/dist/css/bootstrap.min.css"
-import "@fortawesome/fontawesome-svg-core/styles.css"
 import "../pages/index.scss"
-// Import font-awesome
-// Sources:
-// https://github.com/gatsbyjs/gatsby/issues/6357#issuecomment-490972478 - source of code below
-// https://github.com/FortAwesome/react-fontawesome#build-a-library-to-reference-icons-throughout-your-app-more-conveniently
-// import { library } from "@fortawesome/fontawesome-svg-core"
-// import brand icons
-// import { fab } from "@fortawesome/free-brands-svg-icons"
-// import pro icons
-// import { faTimesCircle, faAngleRight } from "@fortawesome/pro-light-svg-icons"
-// then add icons to the library
-// library.add(faTimesCircle, faAngleRight)
+
 
 const Layout = ({ children }) => {
+  const [indicationIsOpen, setIndicationIsOpen] = useState(false)
+
+  function closeIndication() {
+    setIndicationIsOpen(false)
+  }
+
+  function openIndication() {
+    document.cookie = "indication=true"
+    setIndicationIsOpen(true)
+  }
+
   return (
     <AppProvider>
       <StickyContainer>
@@ -37,7 +39,19 @@ const Layout = ({ children }) => {
               content="Evoke Giant Starter description"
             />
           </Helmet>
-          <HeaderSwitcher />
+          <Indication
+            indicationIsOpen={indicationIsOpen}
+            setIndicationIsOpen={setIndicationIsOpen}
+            openIndication={openIndication}
+            closeIndication={closeIndication}
+          />
+          <UtilityNav openIndication={openIndication} />
+
+          <Header
+            indicationIsOpen={indicationIsOpen}
+            openIndication={openIndication}
+            closeIndication={closeIndication}
+          />
           <div className="main">{children}</div>
           <Isi />
           <Footer />
