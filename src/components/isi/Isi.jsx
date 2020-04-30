@@ -29,8 +29,8 @@ export default () => {
   function toggleIsiTray() {
     setIsiExpanded(!isIsiExpanded)
     isIsiExpanded
-      ? $("body").removeClass("scroll-none")
-      : $("body").addClass("scroll-none")
+      ? $("body").removeClass("isi-expanded")
+      : $("body").addClass("isi-expanded")
   }
 
   function toggleScrollIsi() {
