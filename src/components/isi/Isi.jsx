@@ -20,7 +20,7 @@ export default () => {
     var isiTop =
       $(".page-isi").offset().top - $(window).scrollTop() + isiHeaderHeight
     if (isiTop < windowHeight) {
-      $(".isi-tray").fadeOut("slow")
+      $(".isi-tray").fadeOut("fast")
     } else {
       $(".isi-tray").fadeIn("fast")
     }
