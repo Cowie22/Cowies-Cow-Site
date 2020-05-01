@@ -10,10 +10,10 @@ import Indication from "./header/Indication"
 import UtilityNav from "./header/UtilityNav"
 import Isi from "./isi/Isi"
 import Footer from "./footer/Footer"
+import ExitRamp from "../components/exitramp/ExitRamp"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../pages/index.scss"
-
 
 const Layout = ({ children }) => {
   const [indicationIsOpen, setIndicationIsOpen] = useState(false)
@@ -28,9 +28,9 @@ const Layout = ({ children }) => {
   }
 
   return (
-    <AppProvider>
-      <StickyContainer>
-        <div className="layout">
+    <div className="layout">
+      <AppProvider>
+        <StickyContainer>
           <Helmet>
             <meta charSet="utf-8" />
             <title>Evoke Giant Starter</title>
@@ -55,9 +55,10 @@ const Layout = ({ children }) => {
           <div className="main">{children}</div>
           <Isi />
           <Footer />
-        </div>
-      </StickyContainer>
-    </AppProvider>
+        </StickyContainer>
+        <ExitRamp />
+      </AppProvider>
+    </div>
   )
 }
 
