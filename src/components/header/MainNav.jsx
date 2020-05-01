@@ -69,19 +69,39 @@ export default props => {
       </Container>
       <div className={isNavOpen ? "mobile-nav opened" : "mobile-nav"}>
         <ul className="mobile-nav-links">
-          <li>
+          <li
+            onClick={() => {
+              toggleNav()
+            }}
+          >
             <Link to="/efficacy">Efficacy</Link>
           </li>
-          <li>
+          <li
+            onClick={() => {
+              toggleNav()
+            }}
+          >
             <Link to="/safety">Safety</Link>
           </li>
-          <li>
+          <li
+            onClick={() => {
+              toggleNav()
+            }}
+          >
             <Link to="/dosing">Dosing</Link>
           </li>
-          <li>
+          <li
+            onClick={() => {
+              toggleNav()
+            }}
+          >
             <Link to="/mechanism-of-action">Mechanism of Action</Link>
           </li>
-          <li>
+          <li
+            onClick={() => {
+              toggleNav()
+            }}
+          >
             <Link to="/support-and-resources">Support &amp; Resources</Link>
           </li>
         </ul>
