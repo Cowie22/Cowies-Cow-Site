@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
+import ExternalLink from "../exitramp/ExternalLink.jsx"
 
 export default props => (
   <section className="utility-nav">
@@ -14,7 +15,7 @@ export default props => (
               </li>
               <li onClick={() => props.openIndication()}>Indication</li>
               <li>
-                <Link to="#">Important Safety Information</Link>
+                <Link to="#page-isi">Important Safety Information</Link>
               </li>
               <li>
                 <Link to="#">References</Link>
@@ -23,7 +24,9 @@ export default props => (
                 <Link to="#">FAQ</Link>
               </li>
               <li>
-                <Link to="#">Visit Patient Site</Link>
+                <ExternalLink externalUrl="#">
+                  Visit Patient Site
+                </ExternalLink>
               </li>
             </ul>
           </nav>

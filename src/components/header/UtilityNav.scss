@@ -10,4 +10,10 @@
   padding: 2rem 0;
 
   // uses global nav styling in index
+  li {
+    cursor: pointer;
+    &:hover {
+      color: $blue;
+    }
+  }
 }
