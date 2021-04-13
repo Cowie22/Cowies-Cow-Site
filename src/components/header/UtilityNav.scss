@@ -1,19 +1,74 @@
 .utility-nav {
-  // in Sketch, it's a gradient, but I'll use a solid color for now
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9ed8cf+0,6eceb2+100 */
-  // background: #9ed8cf; /* Old browsers */
-  // background: -moz-linear-gradient(left, #9ed8cf 0%, #6eceb2 100%); /* FF3.6-15 */
-  // background: -webkit-linear-gradient(left, #9ed8cf 0%,#6eceb2 100%); /* Chrome10-25,Safari5.1-6 */
-  // background: linear-gradient(to right, #9ed8cf 0%,#6eceb2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ed8cf', endColorstr='#6eceb2',GradientType=1 ); /* IE6-9 */
-  background-color: $teal;
-  padding: 2rem 0;
-
-  // uses global nav styling in index
+  background-color: rgba(79, 113, 143, 0.1);
+  padding: 8px 0;
+  display: flex;
+  p {
+    font-size: 12px;
+  }
   li {
+    color: $black;
     cursor: pointer;
+    font-size: 12px;
     &:hover {
-      color: $blue;
+      color: $teal;
+    }
+    &:visited {
+      text-decoration: none;
+    }
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1320px) {
+  .utility-nav {
+    padding: 4px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-intended-container {
+    background: $white;
+    p {
+      font-size: 12px;
+    }
+  }
+  .utility-nav {
+    background-color: rgba(79, 113, 143, 0.1);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .right {
+      justify-content: space-between;
+    }
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        color: $black;
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 24px;
+        margin: 0px;
+        width: 50%;
+        &:hover {
+          color: $black;
+        }
+        a {
+          &:visited {
+            text-decoration: none;
+            color: $black;
+          }
+          &:active {
+            text-decoration: none;
+          }
+        }
+      }
     }
   }
 }

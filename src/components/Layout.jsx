@@ -6,7 +6,6 @@ import { StickyContainer } from "react-sticky"
 import AppProvider, { AppContext } from "../contexts/state"
 
 import Header from "./header/Header"
-import Indication from "./header/Indication"
 import UtilityNav from "./header/UtilityNav"
 import Isi from "./isi/Isi"
 import Footer from "./footer/Footer"
@@ -39,12 +38,6 @@ const Layout = ({ children }) => {
               content="Evoke Giant Starter description"
             />
           </Helmet>
-          <Indication
-            indicationIsOpen={indicationIsOpen}
-            setIndicationIsOpen={setIndicationIsOpen}
-            openIndication={openIndication}
-            closeIndication={closeIndication}
-          />
           <UtilityNav openIndication={openIndication} />
 
           <Header

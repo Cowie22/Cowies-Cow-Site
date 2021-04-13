@@ -2,6 +2,9 @@
 $teal: #6eceb2;
 $blue: #43859b;
 $salmon: #ee968a;
+$black: #000000;
+$white: #FFFFFF;
+$red: #a51140;
 
 // fonts
 $montserrat: "Montserrat", sans-serif;
@@ -11,8 +14,9 @@ $light-teal: #9ed8cf;
 
 @import "../components/header/UtilityNav.scss";
 @import "../components/header/Header.scss";
-@import "../components/header/Indication.scss";
 @import "../components/header/MainNav.scss";
+@import "../components/NonUSPopUp/NonUSPopUp.scss";
+@import "../components/SelectionNav/SelectionNav.scss";
 @import "../components/exitramp/ExitRamp.scss";
 @import "../components/isi/Isi.scss";
 @import "../components/form/SignUpForm.scss";

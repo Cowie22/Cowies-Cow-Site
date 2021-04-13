@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Row, Col, Dropdown } from "react-bootstrap"
 import { navigate } from "gatsby"
-import $ from "jquery"
+import Axios from "axios"
 
 import arrowRightWhite from "../../assets/images/arrowRightWhite.svg"
 import arrowRightGreen from "../../assets/images/arrowRightGreen.svg"
@@ -131,16 +131,10 @@ export default class SignUpForm extends Component {
       utm_term: this.getCookie("utm_term"),
     }
 
-    $.ajax({
-      type: "POST",
-      url: "",
-      data: JSON.stringify(data),
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      error: e => console.log(e),
-    })
+    Axios.post('', data)
+      .then(res => {
+        console.log('MADE IT', res)
+      })
   }
 
   getCookie(cname) {
