@@ -51,9 +51,9 @@ class NonUSPopUp extends React.Component {
               </Row>
               <Row>
                 <Col lg={12}>
-                  <h1 className='popup-title text-center'>
+                  <h2 className='popup-title text-center'>
                     This site is intended for US healthcare providers only
-                  </h1>
+                  </h2>
                 </Col>
               </Row>
               <Row>
@@ -67,7 +67,7 @@ class NonUSPopUp extends React.Component {
                       className='link text-center cta-btn'
                       target='_blank'
                       rel='noopener noreferrer'
-                      href='http://www.adcetris.ca/'
+                      href='https://www.google.com/'
                     >
                       <button
                         className='cta-btn-red text-center'
@@ -87,7 +87,7 @@ class NonUSPopUp extends React.Component {
                       className='link text-center cta-btn'
                       target='_blank'
                       rel='noopener noreferrer'
-                      href='http://www.takedaoncology.com/medicines/our-products/'
+                      href='https://www.google.com/'
                     >
                       <button
                         className='cta-btn-red text-center'

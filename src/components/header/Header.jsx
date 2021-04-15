@@ -4,7 +4,6 @@ import { Sticky, StickyContainer } from "react-sticky"
 import AppProvider, { AppContext } from '../../contexts/state'
 
 import MainNav from "./MainNav"
-import SelectionNav from '../SelectionNav/SelectionNav'
 import NonUSPopUp from '../NonUSPopUp/NonUSPopUp'
 
 class Header extends React.Component {
@@ -99,16 +98,6 @@ class Header extends React.Component {
                     popup={popup}
                     handlePopUp={this.handlePopUp}
                   />
-                  {
-                    selectionNav ?
-                      <div>
-                        <SelectionNav />
-                      </div>
-                    :
-                      <div>
-
-                      </div>
-                  }
                 </header>
               </div>
             :
@@ -120,16 +109,6 @@ class Header extends React.Component {
                     popup={popup}
                     handlePopUp={this.handlePopUp}
                   />
-                  {
-                    selectionNav ?
-                      <div>
-                        <SelectionNav />
-                      </div>
-                    :
-                      <div>
-
-                      </div>
-                  }
                 </header>
               </div>
           )

@@ -28,29 +28,27 @@ const Layout = ({ children }) => {
 
   return (
     <div className="layout">
-      <AppProvider>
-        <StickyContainer>
-          <Helmet>
-            <meta charSet="utf-8" />
-            <title>Evoke Giant Starter</title>
-            <meta
-              name="description"
-              content="Evoke Giant Starter description"
-            />
-          </Helmet>
-          <UtilityNav openIndication={openIndication} />
-
-          <Header
-            indicationIsOpen={indicationIsOpen}
-            openIndication={openIndication}
-            closeIndication={closeIndication}
+      <StickyContainer>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Evoke Giant Starter</title>
+          <meta
+            name="description"
+            content="Evoke Giant Starter description"
           />
-          <div className="main">{children}</div>
-          <Isi />
-          <Footer />
-        </StickyContainer>
-        <ExitRamp />
-      </AppProvider>
+        </Helmet>
+        <UtilityNav openIndication={openIndication} />
+
+        <Header
+          indicationIsOpen={indicationIsOpen}
+          openIndication={openIndication}
+          closeIndication={closeIndication}
+        />
+        <div className="main">{children}</div>
+        <Isi />
+        <Footer />
+      </StickyContainer>
+      <ExitRamp />
     </div>
   )
 }

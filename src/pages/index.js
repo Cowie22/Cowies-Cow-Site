@@ -1,18 +1,32 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import Layout from "../components/Layout"
+import AppProvider, { AppContext } from '../contexts/state'
 
-import SignUpForm from "../components/form/SignUpForm.jsx"
+import HomeContent from '../components/HomeContent/HomeContent'
 
-export default () => (
-  <Layout>
-    <Container>
-      <Row>
-        <Col className="home">
-          <h1>Homepage</h1>
-          <SignUpForm />
-        </Col>
-      </Row>
-    </Container>
-  </Layout>
-)
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    }
+  }
+  render() {
+    return (
+      <AppContext.Consumer>
+        {(context) => {
+          const { handleActiveHeaderNav, handleTabLink, activeHeaderNav } = context;
+          return (
+            <HomeContent
+              handleActiveHeaderNav={handleActiveHeaderNav}
+              handleTabLink={handleTabLink}
+              activeHeaderNav={activeHeaderNav}
+            />
+          )
+        }}
+      </AppContext.Consumer>
+    )
+  }
+}
+
+export default Home

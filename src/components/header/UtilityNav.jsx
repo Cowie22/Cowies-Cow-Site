@@ -93,14 +93,6 @@ class UtilityNav extends React.Component {
                 <nav className='right'>
                   <ul>
                     <li className='d-none d-lg-block'>
-                      <Link
-                        to='/request-a-rep/'
-                        className='utility-header-nav'
-                      >
-                        Request Office Visit
-                      </Link>
-                    </li>
-                    <li className='d-none d-lg-block'>
                       <a
                         target='_blank'
                         className='utility-header-nav'
@@ -111,7 +103,7 @@ class UtilityNav extends React.Component {
                     </li>
                     <li className='d-none d-lg-block'>
                       <ExternalLink
-                        externalUrl={'https://www.adcetris.com/'}
+                        externalUrl={'https://www.google.com/'}
                         className='utility-header-nav'
                       >
                         Visit Patient Site
@@ -127,7 +119,7 @@ class UtilityNav extends React.Component {
                     </li>
                     <li>
                       <a
-                        href={'https://seagendocs.com/adcetris/pi/attachments/gXy3FkRz6t5bQhaYA6j4Fj'}
+                        href={'https://www.google.com/'}
                         target='_blank'
                         className='utility-header-nav'
                       >

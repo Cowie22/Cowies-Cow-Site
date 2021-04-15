@@ -2,9 +2,9 @@ import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import AppProvider, { AppContext } from '../contexts/state'
 
-import SafetyContent from '../components/SafetyContent/SafetyContent'
+import ResourcesContent from '../components/ResourcesContent/ResourcesContent'
 
-class Safety extends React.Component {
+class Resources extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,7 +17,7 @@ class Safety extends React.Component {
         {(context) => {
           const { handleActiveHeaderNav, handleTabLink, activeHeaderNav } = context;
           return (
-            <SafetyContent
+            <ResourcesContent
               handleActiveHeaderNav={handleActiveHeaderNav}
               handleTabLink={handleTabLink}
               activeHeaderNav={activeHeaderNav}
@@ -29,4 +29,4 @@ class Safety extends React.Component {
   }
 }
 
-export default Safety
+export default Resources

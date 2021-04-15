@@ -12,6 +12,13 @@ $montserrat: "Montserrat", sans-serif;
 // Other
 $light-teal: #9ed8cf;
 
+@import "../components/HomeContent/HomeContent.scss";
+@import "../components/DosingContent/DosingContent.scss";
+@import "../components/EfficacyContent/EfficacyContent.scss";
+@import "../components/MOAContent/MOAContent.scss";
+@import "../components/ResourcesContent/ResourcesContent.scss";
+@import "../components/SafetyContent/SafetyContent.scss";
+
 @import "../components/header/UtilityNav.scss";
 @import "../components/header/Header.scss";
 @import "../components/header/MainNav.scss";
@@ -50,6 +57,12 @@ a {
   &:hover {
     text-decoration: none;
   }
+}
+
+h1 {
+  color: $blue;
+  font-size: 88px;
+  font-weight: 600;
 }
 
 h5 {

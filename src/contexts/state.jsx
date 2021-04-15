@@ -4,8 +4,40 @@ import React, { Component } from "react"
 // AppContext will have AppContext.Provider, which is used here and will also have
 // AppContext.Consumer, which allows the global state to be used throughout the app.
 // Hence why AppContext is exported as well as the class component below.
-export const AppContext = React.createContext()
 
+const defaultState = {
+  isIndicationVisible: true,
+  handleIsIndicationVisible: () => {},
+  isExitRampOpen: false,
+  handleIsExitRampOpen: () => {},
+  externalUrl: '',
+  isCookieVisible: true,
+  handleIsCookieVisible: () => {},
+  isCoronaVisible: true,
+  handleIsCoronaVisible: () => {},
+  activeHeaderNav: '',
+  handleActiveHeaderNav: () => {},
+  activeSite: '',
+  handleActiveSite: () => {},
+  tabLink: '',
+  tabBool: '',
+  handleTabLink: () => {},
+  siteVisited: '',
+  handleSiteVisited: () => {}
+}
+
+
+// Default state is needed for gatsby build.  Otherwise global state values are undefined.
+// const defaultState = {
+//   isIndicationVisible: true,
+//   isExitRampOpen: false,
+//   externalUrl: '',
+//   isCookieVisible: true,
+//   activeHeaderNav: '',
+//   activeSite: '',
+// }
+
+export const AppContext = React.createContext(defaultState)
 class AppProvider extends Component {
   constructor(props) {
     super(props)
@@ -28,7 +60,45 @@ class AppProvider extends Component {
           externalUrl: url,
         })
       },
-      externalUrl: "",
+      externalUrl: '',
+      isCookieVisible: true,
+      handleIsCookieVisible: (val) => {
+        this.setState({
+          isCookieVisible: val,
+        })
+      },
+      isCoronaVisible: true,
+      handleIsCoronaVisible: (val) => {
+        this.setState({
+          isCoronaVisible: val,
+        })
+      },
+      activeHeaderNav: '',
+      handleActiveHeaderNav: (val) => {
+        this.setState({
+          activeHeaderNav: val,
+        })
+      },
+      activeSite: '',
+      handleActiveSite: (val) => {
+        this.setState({
+          activeSite: val,
+        })
+      },
+      tabLink: '',
+      tabBool: '',
+      handleTabLink: (val, bool) => {
+        this.setState({
+          tabLink: val,
+          tabBool: bool,
+        })
+      },
+      siteVisited: false,
+      handleSiteVisited: () => {
+        this.setState({
+          siteVisited: true,
+        })
+      }
     }
   }
   render() {
@@ -44,5 +114,6 @@ class AppProvider extends Component {
     )
   }
 }
+
 
 export default AppProvider

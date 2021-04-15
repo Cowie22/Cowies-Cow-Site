@@ -1,43 +1,71 @@
 .main-nav {
   padding: 13px 0;
-  ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    li {
-      margin-right: 0px;
-      text-align: left;
-      transition: .2s color;
-      width: 180px;
-      @media only screen and (max-width: 1200px) and (min-width: 769px) {
-        width: 150px;
+  background: $black;
+  .header-logo {
+    width: 100%;
+  }
+  .nav-container {
+    justify-content: flex-start;
+    ul {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        margin-left: -14px;
       }
-      &:hover {
-        color: $red;
-        transition: .2s color;
-      }
-      .header-list-container {
-        display: flex;
+      li {
+        margin-right: 0px;
+        text-align: center;
+        transition: 0.2s color;
+        width: 100%;
+        font-family: $montserrat;
         &:hover {
-          font-weight: normal;
-          cursor: pointer;
+          color: $red;
+          transition: 0.2s color;
         }
-        .header-list-icon {
-          // width: 23px;
-          // height: 51px;
-          margin-right: 8px;
+        .header-discussion-container {
+          display: flex;
+          &:hover {
+            font-weight: normal;
+          }
+          .header-discussion-icon {
+            height: 51px;
+            margin-right: 8px;
+            @media all and (-ms-high-contrast: none),
+              (-ms-high-contrast: active) {
+              height: 50px;
+              width: 60px;
+            }
+          }
         }
       }
-      .extra-padding-link {
-        padding-left: 30px;
-      }
-    }
-    li:not(:last-of-type) {
-      // margin-right: 50px;
-    }
-    @media only screen and (max-width: 1200px) and (min-width: 769px) {
       li:not(:last-of-type) {
-        margin-right: 21px;
+        margin-right: 34px;
+      }
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        li:not(:last-of-type) {
+          margin-right: 38px;
+        }
+        .ie-margin {
+          margin-left: -30px;
+          margin-right: 30px;
+        }
+      }
+      @media only screen and (max-width: 1200px) and (min-width: 769px) {
+        li:not(:last-of-type) {
+          margin-right: 22px;
+        }
+        li {
+          a {
+            font-size: 14px;
+          }
+          .header-discussion-container {
+            .header-discussion-icon {
+              height: 44px;
+            }
+          }
+        }
       }
     }
   }
@@ -47,10 +75,9 @@
     background: $red;
     transition: 1s all;
     position: absolute;
-    top: 76px;
+    top: 50px;
   }
 }
-
 
 .mobile-nav {
   display: none;
@@ -100,7 +127,7 @@
 
       &:hover {
         color: $red;
-        transition: .2s color;
+        transition: 0.2s color;
       }
 
       &:first-child {
@@ -135,39 +162,39 @@
         &:hover {
           text-decoration: none;
           color: $red;
-          transition: .2s color;
+          transition: 0.2s color;
         }
       }
     }
   }
 
-@media only screen and (max-width: 768px) {
-  .mobile-nav-col {
-    padding-left: 0px;
-    .header-list-container {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      border-top: 2px solid #EAEAEA;
-      border-bottom: 2px solid #EAEAEA;
-      padding: 24px 0;
-      .header-list-icon {
-        padding-left: 8px;
+  @media only screen and (max-width: 768px) {
+    .mobile-nav-col {
+      padding-left: 0px;
+      .header-discussion-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-top: 2px solid #eaeaea;
+        border-bottom: 2px solid #eaeaea;
+        padding: 24px 0;
+        .header-discussion-icon {
+          padding-left: 8px;
+        }
+      }
+      .header-providers-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .header-providers-icon {
+          padding-left: 8px;
+        }
       }
     }
-    .header-providers-container {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      .header-providers-icon {
-        padding-left: 8px;
-      }
+    .header-logo {
+      height: 22px;
     }
   }
-  .header-adcetris-logo {
-    height: 52px;
-  }
-}
 
   .navbar-collapse {
     display: none;
