@@ -6,19 +6,11 @@ import React, { Component } from "react"
 // Hence why AppContext is exported as well as the class component below.
 
 const defaultState = {
-  isIndicationVisible: true,
-  handleIsIndicationVisible: () => {},
   isExitRampOpen: false,
   handleIsExitRampOpen: () => {},
   externalUrl: '',
-  isCookieVisible: true,
-  handleIsCookieVisible: () => {},
-  isCoronaVisible: true,
-  handleIsCoronaVisible: () => {},
   activeHeaderNav: '',
   handleActiveHeaderNav: () => {},
-  activeSite: '',
-  handleActiveSite: () => {},
   tabLink: '',
   tabBool: '',
   handleTabLink: () => {},
@@ -47,12 +39,6 @@ class AppProvider extends Component {
     // I have seen that many engineers indent the function, directly below the state or states that
     // That particular function is responsible for updating.
     this.state = {
-      isIndicationVisible: true,
-      handleIsIndicationVisible: () => {
-        this.setState({
-          isIndicationVisible: false,
-        })
-      },
       isExitRampOpen: false,
       handleIsExitRampOpen: url => {
         this.setState({
@@ -61,28 +47,10 @@ class AppProvider extends Component {
         })
       },
       externalUrl: '',
-      isCookieVisible: true,
-      handleIsCookieVisible: (val) => {
-        this.setState({
-          isCookieVisible: val,
-        })
-      },
-      isCoronaVisible: true,
-      handleIsCoronaVisible: (val) => {
-        this.setState({
-          isCoronaVisible: val,
-        })
-      },
       activeHeaderNav: '',
       handleActiveHeaderNav: (val) => {
         this.setState({
           activeHeaderNav: val,
-        })
-      },
-      activeSite: '',
-      handleActiveSite: (val) => {
-        this.setState({
-          activeSite: val,
         })
       },
       tabLink: '',

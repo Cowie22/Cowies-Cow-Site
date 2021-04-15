@@ -6,8 +6,6 @@ import AppProvider, { AppContext } from '../../contexts/state';
 import ExternalLink from "../exitramp/ExternalLink.jsx"
 
 import logo from '../../assets/images/logo.svg'
-import headerDiscussionIcon from '../../assets/images/header-discussion-icon.svg'
-import headerDiscussionIconMobile from '../../assets/images/header-discussion-icon-mobile.svg'
 import headerProviderIconMobile from '../../assets/images/header-provider-icon-mobile.svg'
 
 export default props => {
@@ -41,18 +39,12 @@ export default props => {
                 <Col sm={12} lg={3} className="navbar-header">
                   <Link
                     to="/"
-                    id='chl-home-nav'
                   >
                     <img
                       loading='lazy'
                       alt=""
                       className='header-logo'
                       src={logo}
-                      onClick={() => {
-                          handleActiveHeaderNav('');
-                          handleActiveSite('');
-                        }
-                      }
                     />
                   </Link>
                   <button
