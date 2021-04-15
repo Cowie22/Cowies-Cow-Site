@@ -120,39 +120,3 @@ class Header extends React.Component {
 }
 
 export default Header
-
-
-// <Sticky
-//   topOffset={
-//     isCoronaVisible && xDirection > 768 ? 120 :
-//     !isCoronaVisible && xDirection > 768 ? 42 :
-//     isCoronaVisible && xDirection <= 768 && xDirection > 525 ? 114 :
-//     !isCoronaVisible && xDirection <= 768 && xDirection > 525 ? 35 :
-//     isCoronaVisible && xDirection <= 525 ? 184 :
-//     54
-//   }
-//   isActive={true}
-// >
-//   {({ style, isSticky }) => {
-//     console.log('HERE', isSticky)
-//     // isSticky = prevYValue < yDirection ? true : false
-//     console.log('Second', isSticky)
-//     return (
-//       <header className="main-header" style={{ ...style }}>
-//         <MainNav />
-//         {
-//           selectionNav ?
-//             <div>
-//               <SelectionNav />
-//             </div>
-//           :
-//             <div>
-
-//             </div>
-//         }
-//       </header>
-
-//     )
-//   }
-//   }
-// </Sticky>

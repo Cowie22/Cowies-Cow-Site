@@ -15,16 +15,6 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "../pages/index.scss"
 
 const Layout = ({ children }) => {
-  const [indicationIsOpen, setIndicationIsOpen] = useState(false)
-
-  function closeIndication() {
-    setIndicationIsOpen(false)
-  }
-
-  function openIndication() {
-    document.cookie = "indication=true"
-    setIndicationIsOpen(true)
-  }
 
   return (
     <div className="layout">
@@ -37,13 +27,9 @@ const Layout = ({ children }) => {
             content="Evoke Giant Starter description"
           />
         </Helmet>
-        <UtilityNav openIndication={openIndication} />
+        <UtilityNav />
 
-        <Header
-          indicationIsOpen={indicationIsOpen}
-          openIndication={openIndication}
-          closeIndication={closeIndication}
-        />
+        <Header />
         <div className="main">{children}</div>
         <Isi />
         <Footer />
