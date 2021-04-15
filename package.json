@@ -1,7 +1,7 @@
 {
-  "name": "evoke-giant-starter",
+  "name": "Myovant-Patient-Gatsby",
   "private": true,
-  "description": "Starter for Evoke Giant websites",
+  "description": "Patient site for Myovant",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -15,7 +15,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
-    "gatsby": "^2.3.3",
+    "gatsby": "^3.3.0",
     "gatsby-plugin-client-side-redirect": "^1.1.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-google-tagmanager": "^2.1.8",
@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/GiantAgency/Myovant-Patient-Gatsby"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
