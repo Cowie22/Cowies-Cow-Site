@@ -18,17 +18,6 @@ const defaultState = {
   handleSiteVisited: () => {}
 }
 
-
-// Default state is needed for gatsby build.  Otherwise global state values are undefined.
-// const defaultState = {
-//   isIndicationVisible: true,
-//   isExitRampOpen: false,
-//   externalUrl: '',
-//   isCookieVisible: true,
-//   activeHeaderNav: '',
-//   activeSite: '',
-// }
-
 export const AppContext = React.createContext(defaultState)
 class AppProvider extends Component {
   constructor(props) {

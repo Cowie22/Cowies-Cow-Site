@@ -35,11 +35,11 @@ class NonUSPopUp extends React.Component {
     return (
       <section
         className={popup ? 'non-us-popup-col' : 'non-us-popup-col-hidden'}
-        style={
-          xDirection < 426 ? {top: '100px'} :
-          xDirection < 769 ? {top: '100px'} :
-          {top: `${yDirection + 100}px`}
-        }
+        // style={
+        //   xDirection < 426 ? {top: '100px'} :
+        //   xDirection < 769 ? {top: '100px'} :
+        //   {top: `${yDirection + 100}px`}
+        // }
       >
         <Container>
           <Row>
@@ -64,13 +64,13 @@ class NonUSPopUp extends React.Component {
                 >
                   <div className='cta-btn-container'>
                     <a
-                      className='link text-center cta-btn'
+                      className='text-center'
                       target='_blank'
                       rel='noopener noreferrer'
                       href='https://www.google.com/'
                     >
                       <button
-                        className='cta-btn-red text-center'
+                        className='cta-btn text-center'
                       >
                         I am a healthcare provider in Canada
                       </button>
@@ -84,13 +84,13 @@ class NonUSPopUp extends React.Component {
                 >
                   <div className='cta-btn-container'>
                     <a
-                      className='link text-center cta-btn'
+                      className='text-center'
                       target='_blank'
                       rel='noopener noreferrer'
                       href='https://www.google.com/'
                     >
                       <button
-                        className='cta-btn-red text-center'
+                        className='cta-btn text-center'
                       >
                         I am a healthcare provider outside of US/Canada
                       </button>

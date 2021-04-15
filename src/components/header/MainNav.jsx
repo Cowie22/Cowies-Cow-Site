@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
-import AppProvider, { AppContext } from '../../contexts/state';
+import AppProvider, { AppContext } from '../../contexts/state'
 
 import ExternalLink from "../exitramp/ExternalLink.jsx"
 
