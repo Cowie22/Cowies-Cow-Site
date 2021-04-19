@@ -18,13 +18,15 @@ class HomeContent extends React.Component {
   render() {
     return (
       <Layout>
-        <Container>
-          <Row>
-            <Col>
-              <h1>Home Page</h1>
-            </Col>
-          </Row>
-        </Container>
+        <section class='home-container'>
+          <Container>
+            <Row>
+              <Col>
+                <h1>Home Page</h1>
+              </Col>
+            </Row>
+          </Container>
+        </section>
       </Layout>
     )
   }

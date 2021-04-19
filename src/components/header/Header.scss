@@ -13,7 +13,7 @@ nav {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   ul {
     display: inline-block;
     list-style: none;
@@ -21,7 +21,7 @@ nav {
     padding: 0;
     margin: 0;
     li {
-      font-family: $montserrat;
+      font-family: $mulish;
       color: $black;
       display: flex;
       align-items: center;
@@ -47,7 +47,7 @@ nav {
   &.text-white {
     ul {
       li {
-        font-family: $montserrat;
+        font-family: $mulish;
         a {
           color: white;
           transition: .2s all;

@@ -5,7 +5,7 @@ import AppProvider, { AppContext } from '../../contexts/state'
 
 import ExternalLink from "../exitramp/ExternalLink.jsx"
 
-import logo from '../../assets/images/logo.svg'
+import logo from '../../assets/images/header-logo.svg'
 import headerProviderIconMobile from '../../assets/images/header-provider-icon-mobile.svg'
 
 export default props => {

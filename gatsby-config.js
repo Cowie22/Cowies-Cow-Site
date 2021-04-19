@@ -13,8 +13,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Montserrat\:400,600,700`,
-          `Roboto\:400,600,700`
+          `Mulish\:400,600,700`,
+          `Source Sans Pro\:400,600,700`,
         ],
         display: 'swap'
       }

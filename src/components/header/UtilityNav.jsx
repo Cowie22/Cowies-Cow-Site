@@ -62,17 +62,6 @@ class UtilityNav extends React.Component {
         onClick={() => this.handlePopUp()}
       >
       </section>
-        {/* <section className='d-block d-lg-none mobile-intended-container'>
-          <Container>
-            <Row>
-              <Col>
-                <p>
-                  This site is intended for US healthcare providers only
-                </p>
-              </Col>
-            </Row>
-          </Container>
-        </section> */}
         <section className='utility-nav'>
           <Container>
             <Row>
@@ -84,13 +73,8 @@ class UtilityNav extends React.Component {
               </Col>
             </Row>
             <Row>
-              <Col lg={5}>
-                <p className='d-none d-lg-block'>
-                  This site is intended for US healthcare providers only
-                </p>
-              </Col>
-              <Col lg={7} xs={12}>
-                <nav className='right'>
+              <Col lg={{ span: 10, offset: 2 }}>
+                <nav>
                   <ul>
                     <li className='d-none d-lg-block'>
                       <a
@@ -98,34 +82,37 @@ class UtilityNav extends React.Component {
                         className='utility-header-nav'
                         onClick={() => this.handlePopUp()}
                       >
-                        Non-US Residents
+                        Important Safety Information
                       </a>
                     </li>
                     <li className='d-none d-lg-block'>
-                      <ExternalLink
-                        externalUrl={'https://www.google.com/'}
-                        className='utility-header-nav'
-                      >
-                        Visit Patient Site
-                      </ExternalLink>
-                    </li>
-                    <li className='d-block d-lg-none'>
                       <a
                         target='_blank'
                         className='utility-header-nav'
                       >
-                        For US healthcare providers
+                        Prescribing Information
                       </a>
                     </li>
-                    <li>
+                    <li className='d-none d-lg-block'>
                       <a
-                        href={'https://www.google.com/'}
                         target='_blank'
+                        // TODO: HERE IS HOW TO RUN THE CALL NOW BTN
+                        // href="tel:+15302772232"
                         className='utility-header-nav'
                       >
-                        <strong className='cashmere'>Prescribing Information</strong>
+                        Medication Guide
                       </a>
                     </li>
+                    <div class='utility-nav-end-container'>
+                      <li className='d-none d-lg-block'>
+                        <ExternalLink
+                          externalUrl={'https://www.google.com/'}
+                          className='utility-header-nav'
+                        >
+                          Visit Healthcare Professional Site
+                        </ExternalLink>
+                      </li>
+                    </div>
                   </ul>
                 </nav>
               </Col>
