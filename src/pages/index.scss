@@ -1,9 +1,19 @@
 // Primary colors
-$teal: #6eceb2;
-$blue: #43859b;
-$salmon: #ee968a;
+$purple: #5C068C;
+$blue: #055964;
+$green: #B8D7C9;
+$medium-green: #D4E7DF;
+$light-green: #F1F7F4;
+$pink: #A51890;
+$light-pink: #FCDEE2;
 $black: #000000;
 $white: #FFFFFF;
+$grey: #333333;
+$medium-grey: #C1C1C1;
+$light-grey: #F1F1F1;
+
+$teal: #6eceb2;
+$salmon: #ee968a;
 $red: #a51140;
 
 // fonts
@@ -61,25 +71,147 @@ a {
 }
 
 h1 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 50px;
+  font-family: $mulish;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 400;
   color: #333333;
+  margin: 0;
+  @media screen and (max-width: 991px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 h2 {
-  font-weight: 700;
+  font-family: $mulish;
+  font-style: normal;
   font-size: 30px;
   line-height: 38px;
+  font-weight: 500;
   color: #333333;
+  margin: 0;
+  @media screen and (max-width: 991px) {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 700;
+  }
+}
+
+h3 {
+  font-family: $mulish;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #333333;
+  margin: 0;
+  @media screen and (max-width: 991px) {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+  }
+}
+
+h4 {
+  font-family: $sans;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #333333;
+  margin: 0;
 }
 
 h5 {
-  color: $blue;
+  font-family: $sans;
+  font-style: normal;
   font-size: 16px;
-  font-weight: 600;
-  line-height: 19px;
-  text-transform: uppercase;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+  margin: 0;
+}
+
+h6 {
+  font-family: $sans;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #333333;
+  margin: 0;
+}
+
+p {
+  font-family: $sans;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+  margin: 0;
+}
+
+.normal-weight {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.extra-bold {
+  font-weight: 700;
+}
+
+.purple {
+  color: $purple;
+}
+
+.blue {
+  color: $blue;
+}
+
+.green {
+  color: $green;
+}
+
+.medium-green {
+  color: $medium-green;
+}
+
+.light-green {
+  color: $light-green;
+}
+
+.pink {
+  color: $pink;
+}
+
+.light-pink {
+  color: $light-pink;
+}
+
+.black {
+  color: $black;
+}
+
+.white {
+  color: $white;
+}
+
+.grey {
+  color: $grey;
+}
+
+.medium-grey {
+  color: $medium-grey;
+}
+
+.light-grey {
+  color: $light-grey;
 }
 
 // nav {
@@ -137,9 +269,9 @@ h5 {
   text-align: center;
   border-radius: 6px;
   font-family: $mulish;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 26px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
   // transition: .1s all;
   outline: none;
   @media screen and (min-width: 769px) and (max-width: 1200px) {
