@@ -2,9 +2,9 @@
  * Project configuration section
  */
 
-var project_name = "evoke-gatsby-start"
-var client_name = "giant"
-var git_repo = "git@github.com:GiantAgency/evoke-gatsby-starter.git"
+var project_name = "myovant-patient-gatsby"
+var client_name = "myovant"
+var git_repo = "git@github.com:GiantAgency/Myovant-Patient-Gatsby.git"
 var git_branch = "master"
 var fontawesome =
   "npm config set @fortawesome:registry https://npm.fontawesome.com/EEFD84F8-907F-4B20-82D9-DC20387F3808"
