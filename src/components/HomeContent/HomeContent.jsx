@@ -54,7 +54,7 @@ class HomeContent extends React.Component {
             </Row>
           </Container>
         </section>
-        <section>
+        <section className='home-callout-container'>
           <Container>
             <CallNowCard />
           </Container>
