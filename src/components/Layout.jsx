@@ -10,6 +10,7 @@ import UtilityNav from "./header/UtilityNav"
 import Isi from "./isi/Isi"
 import Footer from "./footer/Footer"
 import ExitRamp from "../components/exitramp/ExitRamp"
+import Cookie from '../components/Cookie/Cookie'
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../pages/index.scss"
@@ -27,6 +28,7 @@ const Layout = ({ children }) => {
             content="Evoke Giant Starter description"
           />
         </Helmet>
+        <Cookie />
         <UtilityNav />
 
         <Header />

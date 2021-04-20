@@ -15,7 +15,9 @@ const defaultState = {
   tabBool: '',
   handleTabLink: () => {},
   siteVisited: '',
-  handleSiteVisited: () => {}
+  handleSiteVisited: () => {},
+  isCookieVisible: true,
+  handleIsCookieVisible: () => {},
 }
 
 export const AppContext = React.createContext(defaultState)
@@ -55,7 +57,13 @@ class AppProvider extends Component {
         this.setState({
           siteVisited: true,
         })
-      }
+      },
+      isCookieVisible: true,
+      handleIsCookieVisible: (val) => {
+        this.setState({
+          isCookieVisible: val,
+        })
+      },
     }
   }
   render() {

@@ -35,12 +35,14 @@ $light-teal: #9ed8cf;
 @import "../components/header/MainNav.scss";
 @import "../components/NonUSPopUp/NonUSPopUp.scss";
 @import "../components/SelectionNav/SelectionNav.scss";
-@import "../components/CallNowCard/CallNowCard.scss";
 @import "../components/exitramp/ExitRamp.scss";
 @import "../components/isi/Isi.scss";
 @import "../components/form/SignUpForm.scss";
 @import "../components/footer/Footer.scss";
 @import "../components/Layout.scss";
+
+@import "../components/CallNowCard/CallNowCard.scss";
+@import "../components/Cookie/Cookie.scss";
 
 html {
   // UI/UX use multiples of 8px
@@ -49,6 +51,7 @@ html {
   // It should be set this way to avoid the issues mentioned with setting font sizes
   // and spacing (margin/padding)
   font-size: 50%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -251,6 +254,16 @@ p {
   background: transparent;
   &:hover {
     background: #A51890;
+  }
+}
+
+.transparent-btn-pink {
+  background: transparent;
+  border: 1px solid #A51890;
+  color: #A51890;
+  &:hover {
+    background: #A51890;
+    color: $white;
   }
 }
 

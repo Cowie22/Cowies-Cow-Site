@@ -1,7 +1,10 @@
 .call-now-container {
-  padding: 64px 0;
+  padding: 64px 19px;
   background: #F1F7F4;
   border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 40px;
   .call-now-btn-container {
     margin: 0 15px;
   }

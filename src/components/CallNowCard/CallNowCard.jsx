@@ -7,7 +7,7 @@ const CallNowCard = (props) => {
       <Row>
         <Col lg={12}>
           <Row>
-            <Col lg={{span: 5, offset: 2}}>
+            <Col lg={{span: 6, offset: 1}}>
               <h3 className='blue'>
                 We'll help you started with treatment
               </h3>
