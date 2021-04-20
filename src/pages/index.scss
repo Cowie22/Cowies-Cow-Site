@@ -343,3 +343,24 @@ p {
     padding-right: 14px;
   }
 }
+
+.purple-ul {
+  padding: 8px 28px 8px 46px;
+  margin: 0;
+  list-style: none;
+  li {
+    font-family: $sans;
+    padding-bottom: 4px;
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+  li::before {
+    content: "\2022";
+    color: $purple;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+}

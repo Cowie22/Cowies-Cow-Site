@@ -115,43 +115,8 @@ class IsiContent extends React.Component {
       <section>
         <Container>
           <Row>
-            {/* {width < 769 ?
-              <Col xs={{span: 12, order: 1}} className='isi-mobile-header-col'>
-                <div
-                  className='isi-mobile-header-container'
-                  onClick={() => {
-                    this.handleAdcetrisOpen()
-                  }}
-                >
-                  <h2 className='isi-mobile-header'>
-                    Indications
-                  </h2>
-                  {AdcetrisOpen ?
-                    <img loading='lazy'
-                    src={Minus}
-                    width="12"
-                    height="12"
-                    className='isi-mobile-header-img'
-                    >
-                    </img>
-                    :
-                    <img loading='lazy'
-                    src={Plus}
-                    width="12"
-                    height="12"
-                    className='isi-mobile-header-img'
-                    >
-                    </img>
-                  }
-                </div>
-              </Col>
-              :
-              <div>
-
-              </div>
-              } */}
             <Col
-              lg={{span: 5, order: 2}}
+              lg={{span: 11, order: 1}}
               xs={{span: 12, order: 3}}
               style={
                 !AdcetrisOpen && width < 769 && yDirection < 1 ? {height: '100%', display: 'inline', overflow: 'hidden', transition: '.4s height'} :
@@ -160,70 +125,34 @@ class IsiContent extends React.Component {
                 {}
               }
             >
-              {/* {width > 768 ? */}
-                <h2 className='indications-header'>
-                  Indications
-                </h2>
-                {/* :
-                <div>
-
-                </div>
-              } */}
-              <p className='right-isi-header'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+              <h4 className='purple'>
+                Use
+              </h4>
+              <p>
+                Myfembree is a prescription medicine that is used in the treatment of heavy menstrual bleeding
+                associated with uterine fibroids.
               </p>
-              <p className='right-isi-header'>
-                <strong className='teal'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</strong>
+              <h4 className='purple'>
+                Important Safety Information
+              </h4>
+              <p className='purple extra-bold'>
+                What is the most important information I should know about Myfembree?
               </p>
-              <ul>
-                <li>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+              <p className='extra-bold'>
+                Myfembree may cause serious side effects, including:
+              </p>
+              <ul className='purple-ul'>
+                <li className='purple extra-bold'>
+                  Cardiovascular Conditions
                 </li>
-              </ul>
-              <p className='right-isi-header'>
-                <strong className='teal'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</strong>
-              </p>
-              <ul>
-                <li>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                </li>
-              </ul>
-              <p className='right-isi-header'>
-                <strong className='teal'>Lorem Ipsum</strong>
-              </p>
-              <ul>
-                <li>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                  the industry's
-                </li>
-              </ul>
-              <p className='right-isi-header'>
-                <strong className='teal'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's</strong>
-              </p>
-              <ul>
-                <li>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                </li>
-              </ul>
-              <p className='right-isi-header'>
-                <strong className='teal'>Lorem ipsum</strong>
-              </p>
-              <ul>
-                <li>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                the industry's
-                </li>
-              </ul>
-              <p className='right-isi-header'>
-                <strong className='teal'>Lorem ipsum</strong>
-              </p>
-              <ul>
-                <li>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                been the industry's
-                </li>
+                <ul>
+                  <li>
+                    Myfembree may increase your chances of heart attack, stroke, or blood clots, especially
+                    if you are over 35 years of age and smoke, have uncontrolled high blood pressure, high
+                    cholesterol, diabetes, or are obese. Stop taking Myfembree and call your healthcare
+                    provider right away or go to the nearest hospital emergency room right away if you have:
+                  </li>
+                </ul>
               </ul>
             </Col>
             {width < 769 ?
@@ -267,138 +196,6 @@ class IsiContent extends React.Component {
 
               </div>
             }
-            <Col
-              lg={{span: 7, order: 1}}
-              xs={{span: 12, order: 1}}
-              // style={
-              //   !safetyInfoOpen ? {height: 0, display: 'none', overflow: 'hidden', transition: '.4s height'} :
-              //   safetyInfoOpen ? {height: '100%', display: 'inline', overflow: 'scroll', transition: '.4s height'} :
-              //   {}
-              // }
-            >
-              {width > 768 ?
-                <h2 className='isi-header-desktop'>
-                  Important Safety Information
-                </h2>
-                :
-                <div>
-
-                </div>
-              }
-              {/* <h4 className='font-weight-medium'>Important Safety Information</h4> */}
-              <p className='teal font-weight-bold left-isi-header'>
-                BOXED WARNING
-              </p>
-              <p>
-                <strong>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                  has been the industry's
-                </strong>
-              </p>
-              <p className='teal font-weight-bold left-isi-header'>
-                Loeum ipsum
-              </p>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-              </p>
-              <p className='teal font-weight-bold right-isi-header'>
-                Lorum ipsum
-              </p>
-              <ul>
-                <li>
-                  <strong className='teal font-weight-medium'>Lorum ipsum</strong> Lorem Ipsum is simply dummy
-                  text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s, when an unknown printer took a galley ived not only five centuries,
-                  but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                </li>
-                <li>
-                  <strong className='teal font-weight-medium'>Lorum ipsum</strong> Lorem Ipsum is simply dummy
-                  text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s, when an unknown printer took a galley ived not only five centuries,
-                  but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                </li>
-                <li>
-                  <strong className='teal font-weight-medium'>Lorum ipsum</strong> Lorem Ipsum is simply dummy
-                  text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s, when an unknown printer took a galley ived not only five centuries,
-                  but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                </li>
-                <li>
-                  <strong className='teal font-weight-medium'>Lorum ipsum</strong> Lorem Ipsum is simply dummy
-                  text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s, when an unknown printer took a galley ived not only five centuries,
-                  but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                </li>
-                <li>
-                  <strong className='teal font-weight-medium'>Lorum ipsum</strong> Lorem Ipsum is simply dummy
-                  text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s, when an unknown printer took a galley ived not only five centuries,
-                  but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                </li>
-              </ul>
-            </Col>
-            <Col
-              lg={{span: 12, order: 3}}
-              xs={{span: 12, order: 2}}
-            >
-              <ul>
-                <li>
-                  <strong className='teal font-weight-medium'>Lorum ipsum</strong> Lorem Ipsum is simply dummy
-                  text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s, when an unknown printer took a galley ived not only five centuries,
-                  but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                </li>
-                <li>
-                  <strong className='teal font-weight-medium'>Lorum ipsum</strong> Lorem Ipsum is simply dummy
-                  text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s, when an unknown printer took a galley ived not only five centuries,
-                  but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                </li>
-                <li>
-                  <strong className='teal font-weight-medium'>Lorum ipsum</strong> Lorem Ipsum is simply dummy
-                  text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s, when an unknown printer took a galley ived not only five centuries,
-                  but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                </li>
-                <li>
-                  <strong className='teal font-weight-medium'>Lorum ipsum</strong> Lorem Ipsum is simply dummy
-                  text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s, when an unknown printer took a galley ived not only five centuries,
-                  but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                </li>
-                <li>
-                  <strong className='teal font-weight-medium'>Lorum ipsum</strong> Lorem Ipsum is simply dummy
-                  text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s, when an unknown printer took a galley ived not only five centuries,
-                  but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                </li>
-                <li>
-                  <strong className='teal font-weight-medium'>Lorum ipsum</strong> Lorem Ipsum is simply dummy
-                  text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s, when an unknown printer took a galley ived not only five centuries,
-                  but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                </li>
-                <li>
-                  <strong className='teal font-weight-medium'>Lorum ipsum</strong> Lorem Ipsum is simply dummy
-                  text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s, when an unknown printer took a galley ived not only five centuries,
-                  but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                </li>
-              </ul>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <a
-                href={''}
-                target='_blank'
-                className='isi-info-lower'
-              >
-                <p className='font-weight-bold teal'>
-                  Please see full Prescribing Information, including BOXED WARNING
-                </p>
-              </a>
-            </Col>
           </Row>
         </Container>
       </section>

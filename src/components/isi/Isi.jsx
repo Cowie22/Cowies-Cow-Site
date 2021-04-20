@@ -147,34 +147,23 @@ class ISI extends React.Component {
             onClick={() => typeof window !== 'undefined' && window.innerWidth > 768 ? this.toggleIsiTray() : null}
           >
           {width > 768 ?
-          <div className='isi-tray-header-container'>
-            <div className='isi-tray-header'>
-              <Container>
-                <Row>
-                  <Col lg={{span: 12, offset: 0}} className='isi-tray-col-background'>
+            <Container>
+              <Row>
+                <Col lg={{span: 12, offset: 0}}>
+                  <div className='isi-tray-container'>
                     <Row>
-                      <Col lg={5}>
-                        <div className='isi-header-text'>
-                          <h2>
-                            Important Safety Information
-                          </h2>
-                        </div>
+                      <Col lg={7}>
+                        <h4 className='purple'>
+                          Important Safety Information
+                        </h4>
                       </Col>
-                      <Col lg={{span: 3, offset: 2}}>
-                        <h2 className='text-left'>
-                          Indications
-                        </h2>
+                      <Col lg={{span: 4, offset: 0}}>
+                        <h4 className='text-left purple'>
+                          Use
+                        </h4>
                       </Col>
-                      <Col lg={2}>
-                        <div className='header-right red'>
-                          {typeof window !== 'undefined' &&
-                          window.innerWidth > 425 ? (
-                            <h4>
-                              {isIsiExpanded ? 'READ LESS' : 'READ MORE'}
-                            </h4>
-                          ) : (
-                            ''
-                          )}
+                      <Col lg={1}>
+                        <div className='isi-tray-icon-container'>
                           {isIsiExpanded ? (
                             <img
                               loading='lazy'
@@ -193,26 +182,46 @@ class ISI extends React.Component {
                         </div>
                       </Col>
                     </Row>
-                  </Col>
-                </Row>
-              </Container>
-            </div>
-            </div>
+                    <div className='isi-content'>
+                      {
+                        isIsiExpanded ?
+                        <IsiContent
+                          width={width}
+                          yDirection={yDirection}
+                          Plus={Plus}
+                          Minus={Minus}
+                          isIsiExpanded={isIsiExpanded}
+                          nonExpandedISI={nonExpandedISI}
+                        />
+                        :
+                        <Row>
+                          <Col lg={7}>
+                            <p>
+                              Myfembree (elagolix, estradiol, and norethindrone acetate capsules; elagolix capsules)
+                              may increase your chances of heart attack, stroke, or blood clots, especially if you
+                              are over 35 years of age and smoke, have uncontrolled high blood pressure, high
+                              cholesterol, diabetes, and/or are obese. Stop taking Myfembree and call a
+                              doctor right away…
+                            </p>
+                          </Col>
+                          <Col lg={{span: 4, offset: 0}}>
+                            <p>
+                              Myfembree is a prescription medicine that is used in the treatment of heavy menstrual
+                              bleeding associated with uterine fibroids.
+                            </p>
+                          </Col>
+                        </Row>
+                      }
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
             :
             <div>
 
             </div>
           }
-            <div className='isi-content'>
-              <IsiContent
-                width={width}
-                yDirection={yDirection}
-                Plus={Plus}
-                Minus={Minus}
-                isIsiExpanded={isIsiExpanded}
-                nonExpandedISI={nonExpandedISI}
-              />
-            </div>
           </div>
         </div>
         <div id='page-isi' />
