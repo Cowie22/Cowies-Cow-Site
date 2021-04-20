@@ -103,7 +103,7 @@ class UtilityNav extends React.Component {
                         Medication Guide
                       </a>
                     </li>
-                    <div class='utility-nav-end-container'>
+                    <div className='utility-nav-end-container'>
                       <li className='d-none d-lg-block'>
                         <ExternalLink
                           externalUrl={'https://www.google.com/'}

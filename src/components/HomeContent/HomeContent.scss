@@ -1,4 +1,27 @@
 .home-container {
-  background: #DDDDDD;
-  padding: 88px 0;
+  background-image: url('../assets/images/home-bg-img.webp');
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 48px 0 200px 0;
+  .home-title {
+    letter-spacing: 0.5em;
+    font-feature-settings: 'liga' off, 'kern' off;
+    color: #E3EFE9;
+  }
+  .home-sub-title {
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .home-container {
+    background-image: url('../assets/images/home-bg-img-mobile.webp');
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 88px 0;
+  }
 }

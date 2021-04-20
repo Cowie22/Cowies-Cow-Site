@@ -47,20 +47,6 @@ class ISI extends React.Component {
     }
   }
 
-  // toggleIsiHeader = () => {
-  //   var windowHeight = $(window).height()
-  //   var isiHeaderHeight = 66
-  //   var isiTop =
-  //     $('.page-isi').offset().top - $(window).scrollTop() + isiHeaderHeight
-  //   if (isiTop < windowHeight) {
-  //     $('.isi-tray').fadeOut('fast')
-  //     $('.isi-mobile-header-img').addClass('hidden-plus')
-  //   } else {
-  //     $('.isi-tray').fadeIn('fast')
-  //     $('.isi-mobile-header-img').removeClass('hidden-plus')
-  //   }
-  // }
-
   toggleIsiHeader = () => {
     const fadeInEffect = () => {
       let fadeTarget = document.querySelector('.isi-tray');
@@ -173,9 +159,9 @@ class ISI extends React.Component {
                             </h4>
                           </Col>
                         :
-                        <Col lg={11} xs={10}>
+                          <Col lg={11} xs={10}>
 
-                        </Col>
+                          </Col>
                       }
                       <Col lg={1} xs={2}>
                         <div className='isi-tray-icon-container'>

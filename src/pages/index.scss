@@ -214,56 +214,16 @@ p {
   color: $light-grey;
 }
 
-// nav {
-//   height: 100%;
-//   display: flex;
-//   align-items: center;
-//   ul {
-//     display: inline-block;
-//     list-style: none;
-//     display: flex;
-//     padding: 0;
-//     margin: 0;
-//     li {
-//       a {
-//         // Primary color
-//         color: $teal;
-//         &:hover {
-//           text-decoration: none;
-//           // Secondary color
-//           color: $blue;
-//         }
-//       }
-//       &:not(:last-of-type) {
-//         margin-right: 3rem;
-//       }
-//     }
-//   }
-//   &.right {
-//     justify-content: flex-end;
-//   }
-//   &.text-white {
-//     ul {
-//       li {
-//         a {
-//           color: white;
-//           &:hover {
-//             color: $blue;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+.cta-btn-container {
+  margin: 24px 0;
+}
 
 .cta-btn {
   color: $white;
-  background: linear-gradient(0deg, #004a5c 0%, #00718c 87.43%);
   border: 1px solid $white;
-  padding: 12px 18px;
+  padding: 8px 40px;
   display: block;
-  width: 343px;
-  // height: 50px;
+  width: fit-content;
   max-width: 100%;
   min-height: fit-content;
   text-align: center;
@@ -272,32 +232,19 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  // transition: .1s all;
+  transition: all .7s;
+  transition-delay: .1s;
   outline: none;
-  @media screen and (min-width: 769px) and (max-width: 1200px) {
-    font-size: 17px;
-    width: 100%;
-  }
-  @media screen and (max-width: 991px)  {
-    width: 100%;
-  }
   &:hover {
-    background: rgba(0, 74, 92, 0.6);
-    // font-weight: bold;
+    background: #A51890;
     cursor: pointer;
-    // transition: .1s all;
+    transition: all .7s;
+    transition-delay: .1s;
   }
 }
 
-
-
-
-
-
-
-.home {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.transparent-btn {
+  background: transparent;
 }
 
 .overlay {
@@ -316,31 +263,6 @@ p {
 
   &.hidden {
     display: none;
-  }
-}
-
-.link {
-  background-color: $teal;
-  border: 2px solid $teal;
-  border-radius: 10px;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 45px;
-  color: white;
-  font-weight: 600;
-  line-height: 1;
-  transition: 0.4s all;
-  &:hover {
-    text-decoration: none;
-    background-color: white;
-    color: $teal;
-    transition: 0.4s all;
-  }
-  span {
-    padding-right: 14px;
   }
 }
 
