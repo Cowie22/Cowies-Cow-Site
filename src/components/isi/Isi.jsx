@@ -144,25 +144,40 @@ class ISI extends React.Component {
         <div className={isIsiExpanded ? 'isi-overlay' : ''}>
           <div
             className={isIsiExpanded ? 'isi-tray expanded' : 'isi-tray'}
-            onClick={() => typeof window !== 'undefined' && window.innerWidth > 768 ? this.toggleIsiTray() : null}
+            onClick={() => typeof window !== 'undefined' && window.innerWidth > 0 ? this.toggleIsiTray() : null}
           >
-          {width > 768 ?
             <Container>
               <Row>
                 <Col lg={{span: 12, offset: 0}}>
                   <div className='isi-tray-container'>
                     <Row>
-                      <Col lg={7}>
-                        <h4 className='purple'>
-                          Important Safety Information
-                        </h4>
-                      </Col>
-                      <Col lg={{span: 4, offset: 0}}>
-                        <h4 className='text-left purple'>
-                          Use
-                        </h4>
-                      </Col>
-                      <Col lg={1}>
+                      {
+                        !isIsiExpanded && width >= 991 ?
+                        <>
+                          <Col lg={7}>
+                            <h4 className='purple'>
+                              Important Safety Information
+                            </h4>
+                          </Col>
+                          <Col lg={{span: 4, offset: 0}}>
+                            <h4 className='text-left purple'>
+                              Use
+                            </h4>
+                          </Col>
+                        </>
+                        :
+                        !isIsiExpanded && width < 991 ?
+                          <Col xs={10}>
+                            <h4 className='purple'>
+                              Important Safety Information
+                            </h4>
+                          </Col>
+                        :
+                        <Col lg={11} xs={10}>
+
+                        </Col>
+                      }
+                      <Col lg={1} xs={2}>
                         <div className='isi-tray-icon-container'>
                           {isIsiExpanded ? (
                             <img
@@ -185,14 +200,16 @@ class ISI extends React.Component {
                     <div className='isi-content'>
                       {
                         isIsiExpanded ?
-                        <IsiContent
-                          width={width}
-                          yDirection={yDirection}
-                          Plus={Plus}
-                          Minus={Minus}
-                          isIsiExpanded={isIsiExpanded}
-                          nonExpandedISI={nonExpandedISI}
-                        />
+                        <div className='isi-content-container'>
+                          <IsiContent
+                            width={width}
+                            yDirection={yDirection}
+                            Plus={Plus}
+                            Minus={Minus}
+                            isIsiExpanded={isIsiExpanded}
+                            nonExpandedISI={nonExpandedISI}
+                          />
+                        </div>
                         :
                         <Row>
                           <Col lg={7}>
@@ -217,23 +234,24 @@ class ISI extends React.Component {
                 </Col>
               </Row>
             </Container>
-            :
-            <div>
-
-            </div>
-          }
           </div>
         </div>
         <div id='page-isi' />
         <div className='page-isi'>
-          <IsiContent
-            width={width}
-            yDirection={yDirection}
-            Plus={Plus}
-            Minus={Minus}
-            isIsiExpanded={isIsiExpanded}
-            nonExpandedISI={nonExpandedISI}
-          />
+          <Container>
+            <Row>
+              <Col>
+                <IsiContent
+                  width={width}
+                  yDirection={yDirection}
+                  Plus={Plus}
+                  Minus={Minus}
+                  isIsiExpanded={isIsiExpanded}
+                  nonExpandedISI={nonExpandedISI}
+                />
+              </Col>
+            </Row>
+          </Container>
         </div>
       </section>
     )
