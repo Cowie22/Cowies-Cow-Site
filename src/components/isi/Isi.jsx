@@ -200,7 +200,7 @@ class ISI extends React.Component {
                     <div className='isi-content'>
                       {
                         isIsiExpanded ?
-                        <div className='isi-content-container'>
+                        <div className='isi-content-inner-container'>
                           <IsiContent
                             width={width}
                             yDirection={yDirection}
