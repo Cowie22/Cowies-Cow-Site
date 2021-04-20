@@ -3,6 +3,8 @@ import Layout from "../Layout"
 import { Container, Row, Col } from "react-bootstrap"
 import AppProvider, { AppContext } from '../../contexts/state'
 
+import CallNowCard from '../CallNowCard/CallNowCard'
+
 class HomeContent extends React.Component {
   constructor(props) {
     super(props);
@@ -30,13 +32,17 @@ class HomeContent extends React.Component {
                 <h1 className='white'>
                   Myfembree–a new treatment for symptoms of uterine fibroids
                 </h1>
-                <div className='cta-btn-container'>
-                  <a>
-                    <button className='cta-btn transparent-btn'>
-                      Learn More
-                    </button>
-                  </a>
-                </div>
+                <Row>
+                  <Col lg={5}>
+                    <div className='cta-btn-container home-btn-container'>
+                      <a>
+                        <button className='cta-btn transparent-btn'>
+                          Learn More
+                        </button>
+                      </a>
+                    </div>
+                  </Col>
+                </Row>
                 <h3 className='home-sub-title white'>
                   Talk to your doctor today to learn more
                 </h3>
@@ -46,6 +52,11 @@ class HomeContent extends React.Component {
                 </p>
               </Col>
             </Row>
+          </Container>
+        </section>
+        <section>
+          <Container>
+            <CallNowCard />
           </Container>
         </section>
       </Layout>
