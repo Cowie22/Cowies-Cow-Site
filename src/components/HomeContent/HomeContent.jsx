@@ -32,8 +32,15 @@ class HomeContent extends React.Component {
                 <h1 className='white'>
                   Myfembree–a new treatment for symptoms of uterine fibroids
                 </h1>
+                <h3 className='home-sub-title white'>
+                  Talk to your doctor today about Myfembree
+                </h3>
+                <p className='white'>
+                  Myfembree is a prescription medicine that is used in the treatment of heavy
+                  menstrual bleeding associated with uterine fibroids.
+                </p>
                 <Row>
-                  <Col lg={5}>
+                  <Col lg={4}>
                     <div className='cta-btn-container home-btn-container'>
                       <a>
                         <button className='cta-btn transparent-btn'>
@@ -43,13 +50,6 @@ class HomeContent extends React.Component {
                     </div>
                   </Col>
                 </Row>
-                <h3 className='home-sub-title white'>
-                  Talk to your doctor today to learn more
-                </h3>
-                <p className='white'>
-                  Myfembree is a prescription medicine that is used in the treatment of heavy menstrual
-                  bleeding associated with uterine fibroids.
-                </p>
               </Col>
             </Row>
           </Container>

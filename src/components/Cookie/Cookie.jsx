@@ -32,7 +32,7 @@ class Cookie extends React.Component {
                     </p>
                   </Col>
                   <Col lg={2}>
-                    <div className='cta-btn-container'>
+                    <div className='cta-btn-container' onClick={() => handleIsCookieVisible(false)}>
                       <a>
                         <button className='cta-btn transparent-btn-pink'>
                           Accept

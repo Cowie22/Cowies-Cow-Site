@@ -1,12 +1,32 @@
 .call-now-container {
-  padding: 64px 19px;
+  padding: 60px 19px;
   background: #F1F7F4;
   border-radius: 20px;
-  position: absolute;
   bottom: 0;
-  margin-bottom: 40px;
-  .call-now-btn-container {
-    margin: 0 15px;
+  margin: -200px 0 40px 0;
+  h3 {
+    padding-bottom: 16px;
+  }
+  .call-now-text-link {
+    color: #A51890;
+    white-space: nowrap;
+    transition: font-weight .4s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      font-weight: bold;
+      transition: font-weight .4s ease-in-out;
+    }
+  }
+  .call-now-inner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    .call-now-btn-container {
+      margin: 0 15px;
+      width: 100%;
+    }
   }
 }
 

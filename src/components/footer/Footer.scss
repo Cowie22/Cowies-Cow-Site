@@ -1,18 +1,29 @@
 footer {
-  background-color: $teal;
-  padding: 6rem 0 5rem;
-  color: white;
-  border-top: solid 4px $salmon;
-  .top-footer {
-    display: flex;
-    justify-content: space-between;
-  }
-  // overrides nav from index.scss
+  background: #F1F7F4;
+  padding: 60px 0;
   nav {
     align-items: flex-end;
+    height: fit-content;
+    padding: 16px 0 32px 0;
+    li {
+      a {
+        color: #A51890;
+        transition: font-weight .4s;
+        &:hover {
+          cursor: pointer;
+          color: #A51890;
+          font-weight: bold;
+          transition: font-weight .4s;
+        }
+      }
+    }
   }
-  hr {
-    margin: 2rem 0 3rem;
-    border-color: inherit;
+  .footer-text {
+    padding-bottom: 16px;
+  }
+  .footer-logo-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
   }
 }

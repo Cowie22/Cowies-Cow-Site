@@ -3,8 +3,12 @@
   .cookie-link {
     text-decoration: none;
     color: $purple;
+    transition: font-weight .4s ease-in-out;
+    font-weight: normal;
     &:hover {
       cursor: pointer;
+      font-weight: bold;
+      transition: font-weight .4s ease-in-out;
     }
   }
   .close-icon-container {

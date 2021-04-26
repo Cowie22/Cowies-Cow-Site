@@ -48,7 +48,7 @@
   z-index: 10;
   transition: 0.5s;
   &.expanded {
-    top: 200px;
+    top: 150px;
   }
   &.scroll {
     top: calc(100% - 54px);
@@ -83,7 +83,7 @@
 .isi-content-inner-container {
   margin-top: 8px;
   overflow-y: scroll;
-  height: 530px;
+  height: 580px;
   min-height: fit-content;
   padding-bottom: 24px;
 }

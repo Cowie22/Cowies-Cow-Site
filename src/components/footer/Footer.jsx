@@ -9,33 +9,42 @@ export default () => (
   <footer>
     <Container>
       <Row>
-        <Col className="top-footer" lg={{ span: 9, order: 1}} xs={{ span: 12, order: 2}}>
-          <nav className="text-white">
+        <Col lg={{ span: 12, order: 1}}>
+          <h6>
+            For US Residents Only
+          </h6>
+          <nav>
             <ul>
               <li>
-                <Link to="#">Sitemap</Link>
+                <Link to="#">Contact Us</Link>
               </li>
               <li>
-                <Link to="#">Privacy Statement</Link>
+                <Link to="#">Privacy Policy</Link>
               </li>
               <li>
                 <Link to="#">Terms of Use</Link>
               </li>
+              <li>
+                <Link to="#">Site Map</Link>
+              </li>
             </ul>
           </nav>
         </Col>
-        <Col lg={{ span: 3, order: 2}} xs={{ span: 12, order: 1}}>
-          <img alt="Evoke Giant alt logo" src={footerLogo} />
-        </Col>
       </Row>
-      <hr />
       <Row>
-        <Col className="bottom-footer">
-          <span>
-            © 2018 Evoke Giant Inc. All rights reserved. USA-XXX-XXXXXX(X) 11-18
-            <br />
-            This website is intended for US residents only.
-          </span>
+        <Col lg={{span: 6, offset: 0}}>
+          <h6 className='footer-text'>
+            Myfembree® and its associated logo are trademarks of Myovant Sciences GmbH. All other
+            trademarks are the property of their respective owners.
+          </h6>
+          <h6>
+            ©2021 Myovant Sciences GmbH and Pfizer Inc. All rights reserved. PP-US-REL-CT-2100061 06/21
+          </h6>
+        </Col>
+        <Col lg={{span: 4, offset: 2}}>
+          <div className='footer-logo-container'>
+            <img src={footerLogo} />
+          </div>
         </Col>
       </Row>
     </Container>
