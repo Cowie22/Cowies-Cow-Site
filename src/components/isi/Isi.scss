@@ -47,6 +47,9 @@
   bottom: 0;
   z-index: 10;
   transition: 0.5s;
+  &.tray-collapsed {
+    top: calc(100% - 50px);
+  }
   &.expanded {
     top: 150px;
   }
@@ -86,6 +89,17 @@
   height: 580px;
   min-height: fit-content;
   padding-bottom: 24px;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $purple;
+    border-radius: 5px;
+  }
 }
 
 #page-isi {

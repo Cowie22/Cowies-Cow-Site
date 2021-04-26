@@ -19,7 +19,7 @@ const CallNowCard = (props) => {
             <Col lg={{span: 3, offset: 0}}>
               <div class='call-now-inner-container'>
                 <div className='cta-btn-container call-now-btn-container'>
-                  <a>
+                  <a href="tel:833-693-3627">
                     <button className='cta-btn pink-btn'>
                       Call Now
                     </button>

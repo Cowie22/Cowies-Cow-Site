@@ -23,16 +23,11 @@ class HomeContent extends React.Component {
         <section className='home-container'>
           <Container>
             <Row>
-              <Col lg={{span: 5, offset: 1}}>
-                <h2 className='home-title'>
-                  COMING SOON
-                </h2>
-              </Col>
-              <Col lg={{span: 6, offset: 0}}>
+              <Col lg={{span: 6, offset: 6}}>
                 <h1 className='white'>
                   Myfembree–a new treatment for symptoms of uterine fibroids
                 </h1>
-                <h3 className='home-sub-title white'>
+                <h3 className='home-sub-title medium-green'>
                   Talk to your doctor today about Myfembree
                 </h3>
                 <p className='white'>
