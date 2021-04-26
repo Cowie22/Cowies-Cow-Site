@@ -13,7 +13,8 @@ const CallNowCard = (props) => {
               </h3>
               <p>
                 To find out more about the Myfembree® Support Program, call {' '}
-                <a className='call-now-text-link'>1-833-MYFEMBREE (1-833-693-3627)</a>, 8 AM–8 PM ET, Monday–Friday.
+                <a className='call-now-text-link' href="tel:833-693-3627">1-833-MYFEMBREE (1-833-693-3627)</a>, 8 AM–8
+                PM ET, Monday–Friday.
               </p>
             </Col>
             <Col lg={{span: 3, offset: 0}}>

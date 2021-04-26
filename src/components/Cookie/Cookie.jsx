@@ -4,16 +4,25 @@ import AppProvider, { AppContext } from '../../contexts/state';
 
 import ExternalLink from "../exitramp/ExternalLink.jsx"
 
-import closeIcon from '../../assets/images/Close.svg';
+import closeIcon from '../../assets/images/close.svg';
+import closeIconHovered from '../../assets/images/close-hovered.svg';
 
 class Cookie extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      hovered: false,
     }
   }
+
+  handleHovered = (val) => {
+    this.setState({
+      hovered: val,
+    })
+  }
+
   render() {
+    const { hovered } = this.state;
     return (
       <AppContext.Consumer>
         {(context) => {
@@ -28,7 +37,12 @@ class Cookie extends React.Component {
                       This website uses cookies to help us give you the best experience when you visit. By using
                       this website, you consent to the use of these cookies. Find out more about how we use
                       cookies and how to manage them by reading our
-                      <ExternalLink externalUrl={''} className='cookie-link'> Cookie Policy</ExternalLink>.
+                      <ExternalLink
+                        externalUrl={''}
+                        className='cookie-link'
+                      >
+                        {' '} Cookie Policy
+                      </ExternalLink>.
                     </p>
                   </Col>
                   <Col lg={2}>
@@ -41,10 +55,14 @@ class Cookie extends React.Component {
                     </div>
                   </Col>
                   <Col lg={1} xs={1}>
-                    <div className='close-icon-container'>
+                    <div
+                      className='close-icon-container'
+                      onMouseEnter={() => this.handleHovered(true)}
+                      onMouseLeave={() => this.handleHovered(false)}
+                    >
                       <img
                         loading='lazy'
-                        src={closeIcon}
+                        src={hovered ? closeIconHovered : closeIcon}
                         onClick={() => handleIsCookieVisible(false)}
                         className='header-close-icon'
                       />

@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import IsiContent from './IsiContent'
 
-import Plus from '../../assets/images/Plus.svg'
-import Minus from '../../assets/images/Minus.svg'
+import plus from '../../assets/images/plus.svg'
+import minus from '../../assets/images/minus.svg'
+import plusHovered from '../../assets/images/plus-hovered.svg'
+import minusHovered from '../../assets/images/minus-hovered.svg'
 
 
 class ISI extends React.Component {
@@ -14,6 +16,7 @@ class ISI extends React.Component {
       yDirection: 0,
       isIsiExpanded: false,
       nonExpandedISI: false,
+      hovered: false,
     }
   }
 
@@ -123,9 +126,14 @@ class ISI extends React.Component {
     }
   }
 
+  handleHovered = (val) => {
+    this.setState({
+      hovered: val,
+    })
+  }
+
   render() {
-    const { width, yDirection, isIsiExpanded, nonExpandedISI } = this.state
-    console.log('HERE', yDirection)
+    const { width, yDirection, isIsiExpanded, nonExpandedISI, hovered } = this.state
     return (
       <section className='isi' id='isi'>
         <div className={isIsiExpanded ? 'isi-overlay' : ''}>
@@ -165,18 +173,22 @@ class ISI extends React.Component {
                           </Col>
                       }
                       <Col lg={1} xs={2}>
-                        <div className='isi-tray-icon-container'>
+                        <div
+                          className='isi-tray-icon-container'
+                          onMouseEnter={() => this.handleHovered(true)}
+                          onMouseLeave={() => this.handleHovered(false)}
+                        >
                           {isIsiExpanded ? (
                             <img
                               loading='lazy'
-                              src={Minus}
+                              src={hovered ? minusHovered : minus}
                               width='12'
                               height='12'
                             />
                           ) : (
                             <img
                               loading='lazy'
-                              src={Plus}
+                              src={hovered ? plusHovered : plus}
                               width='12'
                               height='12'
                             />
@@ -191,8 +203,8 @@ class ISI extends React.Component {
                           <IsiContent
                             width={width}
                             yDirection={yDirection}
-                            Plus={Plus}
-                            Minus={Minus}
+                            plus={plus}
+                            minus={minus}
                             isIsiExpanded={isIsiExpanded}
                             nonExpandedISI={nonExpandedISI}
                           />
@@ -231,8 +243,8 @@ class ISI extends React.Component {
                 <IsiContent
                   width={width}
                   yDirection={yDirection}
-                  Plus={Plus}
-                  Minus={Minus}
+                  plus={plus}
+                  minus={minus}
                   isIsiExpanded={isIsiExpanded}
                   nonExpandedISI={nonExpandedISI}
                 />

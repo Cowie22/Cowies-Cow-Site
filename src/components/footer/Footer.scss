@@ -7,13 +7,14 @@ footer {
     padding: 16px 0 32px 0;
     li {
       a {
-        color: #A51890;
-        transition: font-weight .4s;
+        color: $pink;
+        transition: color .5s;
+        transition-delay: .2s;
         &:hover {
           cursor: pointer;
-          color: #A51890;
-          font-weight: bold;
-          transition: font-weight .4s;
+          color: $purple;
+          transition: color .5s;
+          transition-delay: .2s;
         }
       }
     }

@@ -48,7 +48,7 @@
   z-index: 10;
   transition: 0.5s;
   &.tray-collapsed {
-    top: calc(100% - 50px);
+    top: calc(100% - 74px);
   }
   &.expanded {
     top: 150px;
@@ -71,6 +71,9 @@
     justify-content: flex-end;
     align-items: center;
     height: 100%;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 

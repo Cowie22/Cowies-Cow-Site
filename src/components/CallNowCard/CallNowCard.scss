@@ -8,13 +8,15 @@
     padding-bottom: 16px;
   }
   .call-now-text-link {
-    color: #A51890;
+    color: $pink;
     white-space: nowrap;
-    transition: font-weight .4s ease-in-out;
+    transition: color .5s;
+    transition-delay: .2s;
     &:hover {
       cursor: pointer;
-      font-weight: bold;
-      transition: font-weight .4s ease-in-out;
+      color: $purple;
+      transition: color .5s;
+      transition-delay: .2s;
     }
   }
   .call-now-inner-container {

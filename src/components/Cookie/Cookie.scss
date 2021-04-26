@@ -2,13 +2,14 @@
   padding: 16px 0;
   .cookie-link {
     text-decoration: none;
-    color: $purple;
-    transition: font-weight .4s ease-in-out;
-    font-weight: normal;
+    color: $pink;
+    transition: color .5s;
+    transition-delay: .2s;
     &:hover {
       cursor: pointer;
-      font-weight: bold;
-      transition: font-weight .4s ease-in-out;
+      color: $purple;
+      transition: color .5s;
+      transition-delay: .2s;
     }
   }
   .close-icon-container {
