@@ -23,3 +23,18 @@
     }
   }
 }
+
+@media screen and (max-width: 991px) {
+  .cookie-container {
+    .cookie-btn-container {
+      display: flex;
+      justify-content: flex-end;
+      height: 100%;
+      .cookie-cta-container {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+      }
+    }
+  }
+}

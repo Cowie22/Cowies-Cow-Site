@@ -1,9 +1,9 @@
-import React, { useState } from "react"
-import { Helmet } from "react-helmet"
-import PropTypes from "prop-types"
-import { StickyContainer } from "react-sticky"
+import React, { useState, useEffect } from 'react'
+import { Helmet } from 'react-helmet'
+import PropTypes from 'prop-types'
+import { StickyContainer } from 'react-sticky'
 
-import AppProvider, { AppContext } from "../contexts/state"
+import AppProvider, { AppContext } from '../contexts/state'
 
 import Header from "./header/Header"
 import UtilityNav from "./header/UtilityNav"
@@ -12,27 +12,56 @@ import Footer from "./footer/Footer"
 import ExitRamp from "../components/exitramp/ExitRamp"
 import Cookie from '../components/Cookie/Cookie'
 
-import "bootstrap/dist/css/bootstrap.min.css"
-import "../pages/index.scss"
+import backToTop from '../assets/images/back-to-top.svg'
+import backToTopHovered from '../assets/images/back-to-top-hovered.svg'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import '../pages/index.scss'
 
 const Layout = ({ children }) => {
+  const [hovered, handleHovered] = useState(false);
+  const [yDirection, handleYDirection] = useState(0);
+
+  const handleScroll = () => {
+    window.addEventListener('scroll', () => {
+      let currentY = window.pageYOffset;
+      handleYDirection(currentY);
+    })
+  }
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  }
+
+  useEffect(() => {
+    handleScroll();
+  })
 
   return (
-    <div className="layout">
+    <div className='layout'>
       <StickyContainer>
         <Helmet>
-          <meta charSet="utf-8" />
+          <meta charSet='utf-8' />
           <title>Evoke Giant Starter</title>
           <meta
-            name="description"
-            content="Evoke Giant Starter description"
+            name='description'
+            content='Evoke Giant Starter description'
           />
         </Helmet>
         <Cookie />
         <UtilityNav />
 
         <Header />
-        <div className="main">{children}</div>
+        <div className='main'>{children}</div>
+        <div
+          className='back-to-top-container'
+          style={yDirection > 0 ? {display: 'inline'} : {display: 'none'}}
+          onMouseEnter={() => handleHovered(true)}
+          onMouseLeave={() => handleHovered(false)}
+          onClick={() => scrollToTop()}
+        >
+          <img src={hovered ? backToTopHovered : backToTop} />
+        </div>
         <Isi />
         <Footer />
       </StickyContainer>

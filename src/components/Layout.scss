@@ -7,5 +7,14 @@
   .main {
     flex: 1;
   }
+  .back-to-top-container {
+    position: fixed;
+    z-index: 9997;
+    right: 0;
+    top: 50%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
   // TODO: Remove lines above when body content has been inserted
 }

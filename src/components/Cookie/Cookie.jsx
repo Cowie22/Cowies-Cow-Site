@@ -32,7 +32,7 @@ class Cookie extends React.Component {
             <section className='cookie-container'>
               <Container>
                 <Row>
-                  <Col lg={9} xs={9}>
+                  <Col lg={9} xs={{span: 8}}>
                     <p>
                       This website uses cookies to help us give you the best experience when you visit. By using
                       this website, you consent to the use of these cookies. Find out more about how we use
@@ -45,27 +45,33 @@ class Cookie extends React.Component {
                       </ExternalLink>.
                     </p>
                   </Col>
-                  <Col lg={2}>
-                    <div className='cta-btn-container' onClick={() => handleIsCookieVisible(false)}>
-                      <a>
-                        <button className='cta-btn transparent-btn-pink'>
-                          Accept
-                        </button>
-                      </a>
-                    </div>
-                  </Col>
-                  <Col lg={1} xs={1}>
-                    <div
-                      className='close-icon-container'
-                      onMouseEnter={() => this.handleHovered(true)}
-                      onMouseLeave={() => this.handleHovered(false)}
-                    >
-                      <img
-                        loading='lazy'
-                        src={hovered ? closeIconHovered : closeIcon}
-                        onClick={() => handleIsCookieVisible(false)}
-                        className='header-close-icon'
-                      />
+                  <Col lg={3} xs={{span: 4}}>
+                    <div className='cookie-btn-container'>
+                      <Row>
+                        <Col lg={{span: 9, order: 1}} md={{order: 1}} xs={{order: 2}}>
+                          <div className='cta-btn-container cookie-cta-container' onClick={() => handleIsCookieVisible(false)}>
+                            <a>
+                              <button className='cta-btn transparent-btn-pink'>
+                                Accept
+                              </button>
+                            </a>
+                          </div>
+                        </Col>
+                        <Col lg={{span: 3, order: 2}}  md={{order: 2}} xs={{order: 1}}>
+                          <div
+                            className='close-icon-container'
+                            onMouseEnter={() => this.handleHovered(true)}
+                            onMouseLeave={() => this.handleHovered(false)}
+                          >
+                            <img
+                              loading='lazy'
+                              src={hovered ? closeIconHovered : closeIcon}
+                              onClick={() => handleIsCookieVisible(false)}
+                              className='header-close-icon'
+                            />
+                          </div>
+                        </Col>
+                      </Row>
                     </div>
                   </Col>
                 </Row>
