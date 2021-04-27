@@ -1,20 +1,25 @@
 footer {
   background: #F1F7F4;
   padding: 60px 0;
-  nav {
-    align-items: flex-end;
+  .footer-nav-container {
     height: fit-content;
+    width: 100%;
     padding: 16px 0 32px 0;
-    li {
-      a {
-        color: $pink;
-        transition: color .5s;
-        transition-delay: .2s;
-        &:hover {
-          cursor: pointer;
-          color: $purple;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      li {
+        a {
+          color: $pink;
           transition: color .5s;
           transition-delay: .2s;
+          &:hover {
+            cursor: pointer;
+            color: $purple;
+            transition: color .5s;
+            transition-delay: .2s;
+          }
         }
       }
     }
@@ -26,5 +31,30 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  footer {
+    padding: 40px 0;
+    .footer-top-title {
+      text-align: center;
+    }
+    .footer-nav-container {
+      padding: 24px 0;
+      ul {
+        display: inline;
+        li {
+          width: 100%;
+          padding-bottom: 24px;
+          &:last-of-type {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .footer-logo-container {
+    padding-bottom: 24px;
   }
 }
