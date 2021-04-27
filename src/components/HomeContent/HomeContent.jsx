@@ -20,7 +20,7 @@ class HomeContent extends React.Component {
   render() {
     return (
       <Layout>
-        <section className='home-container'>
+        <section className='home-container' title='Woman looking hopeful'>
           <Container>
             <Row>
               <Col lg={{span: 6, offset: 6}} xs={{span: 11, offset: 1}}>

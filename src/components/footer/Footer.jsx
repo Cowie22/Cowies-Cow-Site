@@ -16,13 +16,13 @@ export default () => (
           <nav className='footer-nav-container'>
             <ul>
               <li>
-                <Link to=''>Contact Us</Link>
+                <a href='https://www.myovant.com/contact-us/' target='_blank'>Contact Us</a>
               </li>
               <li>
-                <Link to=''>Privacy Policy</Link>
+                <a href='https://www.myovant.com/privacy-policy/' target='_blank'>Privacy Policy</a>
               </li>
               <li>
-                <Link to=''>Terms of Use</Link>
+                <a href='https://www.myovant.com/terms-of-use/' target='_blank'>Terms of Use</a>
               </li>
               <li>
                 <Link to='/sitemap/'>Site Map</Link>
