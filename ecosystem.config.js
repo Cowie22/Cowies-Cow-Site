@@ -2,10 +2,10 @@
  * Project configuration section
  */
 
-var project_name = "myovant-patient-gatsby"
+var project_name = "myovant-patient-gatsby-splash"
 var client_name = "myovant"
 var git_repo = "git@github.com:GiantAgency/Myovant-Patient-Gatsby.git"
-var git_branch = "master"
+var git_branch = "splash"
 var fontawesome =
   "npm config set @fortawesome:registry https://npm.fontawesome.com/EEFD84F8-907F-4B20-82D9-DC20387F3808"
 var fortawesome_cmd =
