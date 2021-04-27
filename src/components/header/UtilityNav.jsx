@@ -80,9 +80,8 @@ class UtilityNav extends React.Component {
                       <ul className='utility-left-container'>
                         <li>
                           <a
-                            target='_blank'
                             className='utility-header-nav'
-                            onClick={() => this.handlePopUp()}
+                            href='#isi'
                           >
                             Important Safety Information
                           </a>
@@ -109,12 +108,12 @@ class UtilityNav extends React.Component {
                       <div className='utility-nav-end-container'>
                         <ul>
                           <li>
-                            <ExternalLink
+                            <a
                               externalUrl={'https://www.google.com/'}
-                              // className='utility-header-nav'
+                              onClick={() => this.handlePopUp()}
                             >
                               Visit Healthcare Professional Site
-                            </ExternalLink>
+                            </a>
                           </li>
                         </ul>
                       </div>

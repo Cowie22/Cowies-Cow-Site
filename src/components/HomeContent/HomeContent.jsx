@@ -23,19 +23,19 @@ class HomeContent extends React.Component {
         <section className='home-container'>
           <Container>
             <Row>
-              <Col lg={{span: 6, offset: 6}}>
+              <Col lg={{span: 6, offset: 6}} xs={{span: 11, offset: 1}}>
                 <h1 className='white'>
                   Myfembree–a new treatment for symptoms of uterine fibroids
                 </h1>
                 <h3 className='home-sub-title medium-green'>
-                  Talk to your doctor today about Myfembree
+                  Talk to your doctor today <br className='d-xs-block d-md-none'></br> about Myfembree
                 </h3>
                 <p className='white'>
                   Myfembree is a prescription medicine that is used in the treatment of heavy
                   menstrual bleeding associated with uterine fibroids.
                 </p>
                 <Row>
-                  <Col lg={4}>
+                  <Col lg={4} xs={{span: 6}}>
                     <div className='cta-btn-container home-btn-container'>
                       <a>
                         <button className='cta-btn transparent-btn'>

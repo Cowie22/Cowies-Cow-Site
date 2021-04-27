@@ -1,5 +1,5 @@
 .call-now-container {
-  padding: 60px 19px;
+  padding: 60px 0px;
   background: #F1F7F4;
   border-radius: 20px;
   bottom: 0;
@@ -26,7 +26,6 @@
     height: 100%;
     width: 100%;
     .call-now-btn-container {
-      margin: 0 15px;
       width: 100%;
     }
   }
@@ -34,6 +33,13 @@
 
 @media screen and (max-width: 991px) {
   .call-now-container {
-
+    margin: -150px 0 0px 0;
+    padding: 40px 0px;
+    .call-now-text-link {
+      white-space: normal;
+    }
+    .call-now-inner-container {
+      padding-top: 24px;
+    }
   }
 }
