@@ -42,7 +42,7 @@ export default props => {
                     >
                       <img
                         loading='lazy'
-                        alt=''
+                        alt='Myovant logo'
                         className='header-logo'
                         src={logo}
                       />

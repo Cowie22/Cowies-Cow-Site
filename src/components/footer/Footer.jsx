@@ -43,7 +43,7 @@ export default () => (
         </Col>
         <Col lg={{span: 4, offset: 2, order: 2}} xs={{span: 10, offset: 1, order: 1}}>
           <div className='footer-logo-container'>
-            <img src={footerLogo} />
+            <img src={footerLogo} alt='Myovant logo' />
           </div>
         </Col>
       </Row>
