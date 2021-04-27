@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import IsiContent from './IsiContent'
 
-import plus from '../../assets/images/plus.svg'
-import minus from '../../assets/images/minus.svg'
+import plus from '../../assets/images/Plus.svg'
+import minus from '../../assets/images/Minus.svg'
 import plusHovered from '../../assets/images/plus-hovered.svg'
 import minusHovered from '../../assets/images/minus-hovered.svg'
 
