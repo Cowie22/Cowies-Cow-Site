@@ -24,7 +24,7 @@
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .cookie-container {
     .cookie-btn-container {
       display: flex;
@@ -34,6 +34,9 @@
         display: flex;
         align-items: flex-end;
         height: 100%;
+        .cookie-cta-btn {
+          padding: 8px 24px;
+        }
       }
     }
   }
