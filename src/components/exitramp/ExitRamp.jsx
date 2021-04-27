@@ -1,88 +1,112 @@
-import React, { useState, useEffect, useContext } from "react"
-import { Container, Row, Col } from "react-bootstrap"
-import { AppContext } from "../../contexts/state"
+import React, { useState, useEffect, useContext } from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import { AppContext } from '../../contexts/state'
 
-import Logo from "../../assets/images/header-logo.svg"
-import arrowRightWhite from "../../assets/images/arrowRightWhite.svg"
-import arrowRightGreen from "../../assets/images/arrowRightGreen.svg"
-import externalLinkWhite from "../../assets/images/externalLinkWhite.svg"
-import externalLinkGreen from "../../assets/images/externalLinkGreen.svg"
+import closeIcon from '../../assets/images/close.svg'
+import closeIconHovered from '../../assets/images/close-hovered.svg'
+import logo from '../../assets/images/popup-myfembree-logo.svg'
 
 export default props => {
-  const [hovered, handleHovered] = useState()
-  const state = useContext(AppContext)
+  const [hovered, handleHovered] = useState(false);
+  const [yDirection, handleYDirection] = useState(0);
+  const [xDirection, handleXDirection] = useState(0);
+  const state = useContext(AppContext);
 
   useEffect(() => {
-    if (state.isExitRampOpen) {
-      document.querySelector("body").classList.add("exit-ramp-opened")
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.removeEventListener('scroll', handleScroll);
+    let modalContainer = document.getElementById('exit-container');
+    if (state.isExitRampOpen === true) {
+      document.body.classList.add('modal-hidden');
+      modalContainer.classList.add('modal-overflow');
     } else {
-      document.querySelector("body").classList.remove("exit-ramp-opened")
+      document.body.classList.remove('modal-hidden');
+      modalContainer.classList.remove('modal-overflow');
     }
   })
 
+  const handleScroll = () => {
+    handleYDirection(window.pageYOffset);
+    handleXDirection(window.innerWidth);
+  }
+
   return (
-    <section className={state.isExitRampOpen ? "overlay" : "overlay hidden"}>
+    <>
+    <section
+        id='exit-container'
+        style={
+          xDirection < 426 ? {top: `${yDirection - 650}px`} :
+          xDirection < 769 ? {top: `${yDirection - 450}px`} :
+          {top: `${yDirection - 350}px`}
+        }
+        onClick={() => state.handleIsExitRampOpen()}
+      >
+    </section>
+    <section className={state.isExitRampOpen ? 'exit-popup-overlay' : ''}>
       <Container>
         <Row>
-          <Col lg={{ span: 10, offset: 1 }}>
-            <div className="exit-ramp text-center">
-              <img src={Logo} width={170} />
-              <p>
-                <strong>You are now leaving evokegiant.com.</strong>
-              </p>
+          <Col lg={{span: 4, offset: 4}}>
+            <div className={state.isExitRampOpen ? 'exit-popup-col' : 'exit-popup-col-hidden'}>
               <Row>
-                <Col
-                  lg={{ span: 6, order: 1 }}
-                  xs={{ span: 12, order: 12 }}
-                  className="link-wrapper"
-                >
-                  <button
-                    className="link text-center"
+                <Col lg={{span: 1, offset: 11}}>
+                  <div
+                    className='close-img-container'
+                    onMouseEnter={() => handleHovered(true)}
+                    onMouseLeave={() => handleHovered(false)}
                     onClick={() => state.handleIsExitRampOpen()}
-                    onMouseEnter={() => handleHovered(1)}
-                    onMouseLeave={() => handleHovered(0)}
                   >
-                    <span>Return to evokegiant.com</span>
-                    <div>
-                      <img
-                        src={hovered === 1 ? arrowRightWhite : arrowRightGreen}
-                        style={{ height: "13px", marginBottom: "1px" }}
-                      />
-                    </div>
-                  </button>
-                </Col>
-                <Col
-                  lg={{ span: 6, order: 12 }}
-                  xs={{ span: 12, order: 1 }}
-                  className="link-wrapper"
-                >
-                  <a
-                    className="link text-center"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={state.externalUrl}
-                    onClick={() =>
-                      state.handleIsExitRampOpen(state.externalUrl)
-                    }
-                    onMouseEnter={() => handleHovered(2)}
-                    onMouseLeave={() => handleHovered(0)}
-                  >
-                    <span style={{ paddingTop: "1px" }}>Continue to site</span>
-                    <div>
-                      <img
-                        src={
-                          hovered === 2 ? externalLinkGreen : externalLinkWhite
-                        }
-                        style={{ height: "13px", marginBottom: "1px" }}
-                      />
-                    </div>
-                  </a>
+                    <img
+                      src={hovered ? closeIconHovered : closeIcon}
+                      className='close-img'
+                    />
+                  </div>
                 </Col>
               </Row>
+              <Row>
+                <Col lg={{span: 6, offset: 3}}>
+                  <div className='popup-logo-container'>
+                    <img src={logo} />
+                  </div>
+                </Col>
+              </Row>
+              <h3 className='blue text-center'>
+                You are about to leave Myfembree.com
+              </h3>
+              <Row>
+                <Col>
+                  <div className='cta-btn-container exit-popup-btn-container'>
+                    <a
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='cta-btn'
+                      href={state.externalUrl}
+                      onClick={() =>
+                        state.handleIsExitRampOpen(state.externalUrl)
+                      }
+                    >
+                      <button className='cta-btn pink-btn'>
+                        Continue
+                      </button>
+                    </a>
+                  </div>
+                  <div className='cta-btn-container exit-popup-btn-container' onClick={() => state.handleIsExitRampOpen()}>
+                    <a>
+                      <button className='cta-btn transparent-btn-pink'>
+                        Stay on Myfembree.com
+                      </button>
+                    </a>
+                  </div>
+                </Col>
+              </Row>
+              <h6 className='text-center'>
+                The website you are linking to is neither owned nor controlled by Myovant Sciences GmbH or
+                Pfizer Inc. Myovant and Pfizer are not responsible for the content or services on the site.
+              </h6>
             </div>
           </Col>
         </Row>
       </Container>
     </section>
+    </>
   )
 }

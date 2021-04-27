@@ -38,7 +38,7 @@ class Cookie extends React.Component {
                       this website, you consent to the use of these cookies. Find out more about how we use
                       cookies and how to manage them by reading our
                       <ExternalLink
-                        externalUrl={''}
+                        externalUrl={'https://www.myovant.com/cookie-policy/'}
                         className='cookie-link'
                       >
                         {' '} Cookie Policy
