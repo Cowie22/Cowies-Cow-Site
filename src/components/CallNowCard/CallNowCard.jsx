@@ -9,7 +9,7 @@ const CallNowCard = (props) => {
           <Row>
             <Col lg={{span: 6, offset: 2}} xs={{span: 10, offset: 1}}>
               <h3 className='blue'>
-                Questions about getting Myfembree?
+                Questions about <br className='d-xs-block d-md-none'></br> getting Myfembree?
               </h3>
               <p>
                 To find out more about the Myfembree® Support Program, call {' '}

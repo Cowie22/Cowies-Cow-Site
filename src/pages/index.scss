@@ -95,14 +95,14 @@ h1 {
 h2 {
   font-family: $mulish;
   font-style: normal;
-  font-size: 30px;
-  line-height: 38px;
+  font-size: 28px;
+  line-height: 34px;
   font-weight: 500;
   color: #333333;
   margin: 0;
   @media screen and (max-width: 991px) {
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 22px;
+    line-height: 26px;
     font-weight: 700;
   }
 }
@@ -116,9 +116,9 @@ h3 {
   color: #333333;
   margin: 0;
   @media screen and (max-width: 991px) {
-    font-size: 18px;
-    line-height: 23px;
-    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
   }
 }
 
