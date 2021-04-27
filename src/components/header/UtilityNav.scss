@@ -6,6 +6,20 @@
     .utility-left-container {
       display: flex;
       justify-content: space-between;
+      li {
+        a {
+          transition: all .5s;
+          transition-delay: .2s;
+          color: $grey;
+        }
+        &:hover {
+          a {
+            transition: all .5s;
+            transition-delay: .2s;
+            color: $purple;
+          }
+        }
+      }
     }
   }
   p {
@@ -32,13 +46,6 @@
     justify-content: center;
     align-items: center;
     font-family: $sans;
-    transition: .5s all;
-    transition-delay: .2s;
-    &:hover {
-      transition: .5s all;
-      transition-delay: .2s;
-      color: $purple;
-    }
   }
   .utility-nav-end-container {
     background: #E3EFE9;
