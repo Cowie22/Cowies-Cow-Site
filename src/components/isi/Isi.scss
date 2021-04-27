@@ -53,9 +53,6 @@
   &.expanded {
     top: 150px;
   }
-  &.scroll {
-    top: calc(100% - 54px);
-  }
   &.hide {
     position: initial;
   }
@@ -118,9 +115,6 @@
     border-radius: 16px 0px 0px 0px;
     &.expanded {
       top: 170px;
-    }
-    &.scroll {
-      top: calc(100% - 64px);
     }
   }
 

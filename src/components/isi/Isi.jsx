@@ -25,8 +25,7 @@ class ISI extends React.Component {
     this.handleScroll();
     window.addEventListener('resize', this.updateWindowDimensions);
     window.addEventListener('scroll', this.handleScroll);
-    window.addEventListener('scroll', () => this.toggleIsiHeader())
-    window.addEventListener('scroll', () => this.toggleScrollIsi())
+    window.addEventListener('scroll', () => this.toggleIsiHeader());
   }
 
   componentWillUnmount = () => {
@@ -42,7 +41,7 @@ class ISI extends React.Component {
 
   handleScroll = (event) => {
     this.setState({
-      yDirection: window.pageYOffset
+      yDirection: window.pageYOffset,
     })
     let element = document.querySelector('.isi-tray');
     if (this.state.yDirection < 1) {
@@ -115,15 +114,6 @@ class ISI extends React.Component {
     this.state.isIsiExpanded
       ? body.classList.remove('isi-expanded')
       : body.classList.add('isi-expanded')
-  }
-
-  toggleScrollIsi = () => {
-    if (this.state.width < 768) {
-      let isiTray = document.getElementsByClassName('isi-tray')[0];
-      if (window.pageYOffset !== 0 && !isiTray.classList.contains('scroll')) {
-        isiTray.classList.add('scroll')
-      }
-    }
   }
 
   handleHovered = (val) => {
