@@ -32,9 +32,7 @@
     "react-slick": "^0.25.2",
     "react-sticky": "^6.0.3"
   },
-  "devDependencies": {
-    "prettier": "^1.16.4"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/GiantAgency/Myovant-Patient-Gatsby"
