@@ -74,46 +74,52 @@ class UtilityNav extends React.Component {
             </Row>
             <Row>
               <Col lg={{ span: 10, offset: 2 }}>
-                <nav>
-                  <ul>
-                    <li className='d-none d-lg-block'>
-                      <a
-                        target='_blank'
-                        className='utility-header-nav'
-                        onClick={() => this.handlePopUp()}
-                      >
-                        Important Safety Information
-                      </a>
-                    </li>
-                    <li className='d-none d-lg-block'>
-                      <a
-                        target='_blank'
-                        className='utility-header-nav'
-                      >
-                        Prescribing Information
-                      </a>
-                    </li>
-                    <li className='d-none d-lg-block'>
-                      <a
-                        target='_blank'
-                        // TODO: HERE IS HOW TO RUN THE CALL NOW BTN
-                        // href="tel:+15302772232"
-                        className='utility-header-nav'
-                      >
-                        Medication Guide
-                      </a>
-                    </li>
-                    <div className='utility-nav-end-container'>
-                      <li className='d-none d-lg-block'>
-                        <ExternalLink
-                          externalUrl={'https://www.google.com/'}
-                          className='utility-header-nav'
-                        >
-                          Visit Healthcare Professional Site
-                        </ExternalLink>
-                      </li>
-                    </div>
-                  </ul>
+                <nav className='utility-nav-container'>
+                  <Row>
+                    <Col lg={{span: 8}}>
+                      <ul className='utility-left-container'>
+                        <li>
+                          <a
+                            target='_blank'
+                            className='utility-header-nav'
+                            onClick={() => this.handlePopUp()}
+                          >
+                            Important Safety Information
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            target='_blank'
+                            className='utility-header-nav'
+                          >
+                            Prescribing Information
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            target='_blank'
+                            className='utility-header-nav'
+                          >
+                            Medication <br className='d-xs-block d-md-none'></br> Guide
+                          </a>
+                        </li>
+                      </ul>
+                    </Col>
+                    <Col lg={{span: 4}} className='utility-right-col'>
+                      <div className='utility-nav-end-container'>
+                        <ul>
+                          <li>
+                            <ExternalLink
+                              externalUrl={'https://www.google.com/'}
+                              // className='utility-header-nav'
+                            >
+                              Visit Healthcare Professional Site
+                            </ExternalLink>
+                          </li>
+                        </ul>
+                      </div>
+                    </Col>
+                  </Row>
                 </nav>
               </Col>
             </Row>

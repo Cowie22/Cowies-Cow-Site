@@ -37,7 +37,7 @@ nav {
         }
       }
       &:not(:last-of-type) {
-        margin-right: 28px;
+        // margin-right: 28px;
       }
     }
   }
@@ -63,22 +63,21 @@ nav {
 }
 
 
-@media screen and (max-width: 991px)  {
-  nav {
-    justify-content: space-evenly;
-    ul {
-      li {
-        text-align: center;
-        &:not(:last-of-type) {
-          padding: 5px 0px 5px 0px;
-          margin: 0;
-          border-right: 1px solid $white;
-        }
-        &:last-of-type {
-          padding: 5px 16px;
-          margin: 0;
-        }
-      }
-    }
-  }
-}
+// @media screen and (max-width: 991px)  {
+//   nav {
+//     justify-content: space-evenly;
+//     ul {
+//       li {
+//         text-align: center;
+//         &:not(:last-of-type) {
+//           padding: 5px 0px 5px 0px;
+//           margin: 0;
+//         }
+//         &:last-of-type {
+//           padding: 5px 16px;
+//           margin: 0;
+//         }
+//       }
+//     }
+//   }
+// }

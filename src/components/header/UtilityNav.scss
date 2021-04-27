@@ -1,6 +1,13 @@
 .utility-nav {
   background: #F1F7F4;
-  // padding: 8px 0;
+  .utility-nav-container {
+    width: 100%;
+    display: inline;
+    .utility-left-container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
   p {
     font-size: 12px;
   }
@@ -8,9 +15,6 @@
     color: $black;
     cursor: pointer;
     font-size: 12px;
-    &:hover {
-      color: $teal;
-    }
     &:visited {
       text-decoration: none;
     }
@@ -23,8 +27,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    margin-right: 34px;
-    padding: 8px 0;
+    padding: 8px 4px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,59 +37,76 @@
     &:hover {
       transition: .5s all;
       transition-delay: .2s;
-      color: #5C068C;
+      color: $purple;
     }
   }
   .utility-nav-end-container {
     background: #E3EFE9;
     text-align: center;
     font-family: $sans;
+    width: 100%;
+    height: 100%;
+    padding: 8px 24px;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
   }
   .utility-nav-end-container li {
-    margin: 0 0 0 34px;
+    color: #333333;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $sans;
+    a {
+      width: 100%;
+      transition: .5s all;
+      transition-delay: .2s;
+    }
+    &:hover {
+      cursor: pointer;
+      a {
+        transition: .5s all;
+        transition-delay: .2s;
+        color: $purple;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 991px)  {
-  .mobile-intended-container {
-    background: $white;
-    p {
-      font-size: 12px;
-    }
-  }
   .utility-nav {
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .right {
-      justify-content: space-between;
+    .utility-header-nav {
+      font-size: 12px;
+      line-height: 15px;
     }
-    ul {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+    .utility-nav-container {
+      .utility-left-container {
+        justify-content: space-between;
+        li {
+          width: 33%;
+          padding: 0px 4px;
+          border-right: 1px solid $white;
+          &:last-of-type {
+            border: none;
+          }
+        }
+      }
+      .utility-right-col {
+        padding: 0;
+      }
       li {
-        color: $black;
-        cursor: pointer;
+        text-align: center;
+        width: 100%;
         font-size: 12px;
-        line-height: 24px;
-        margin: 0px;
-        width: 50%;
-        &:hover {
-          color: $black;
-        }
-        a {
-          &:visited {
-            text-decoration: none;
-            color: $black;
-          }
-          &:active {
-            text-decoration: none;
-          }
-        }
+        line-height: 15px;
       }
     }
   }
