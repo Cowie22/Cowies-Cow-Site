@@ -62,16 +62,12 @@ class UtilityNav extends React.Component {
         onClick={() => this.handlePopUp()}
       >
       </section>
+      <NonUSPopUp
+        handlePopUp={this.handlePopUp}
+        popup={popup}
+      />
         <section className='utility-nav'>
           <Container>
-            <Row>
-              <Col>
-                <NonUSPopUp
-                  handlePopUp={this.handlePopUp}
-                  popup={popup}
-                />
-              </Col>
-            </Row>
             <Row>
               <Col lg={{ span: 10, offset: 2 }}>
                 <nav className='utility-nav-container'>

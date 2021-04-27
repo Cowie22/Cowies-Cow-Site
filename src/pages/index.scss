@@ -63,6 +63,9 @@ body {
   &.isi-expanded {
     overflow: hidden;
   }
+  &.modal-hidden {
+    overflow: hidden;
+  }
   &.exit-ramp-opened {
     overflow: hidden;
   }
@@ -141,7 +144,7 @@ h5 {
 h6 {
   font-family: $sans;
   font-style: normal;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: #333333;

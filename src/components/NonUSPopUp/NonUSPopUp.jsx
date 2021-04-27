@@ -3,7 +3,9 @@ import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import { Container, Row, Col } from 'react-bootstrap'
 
-import closeIcon from '../../assets/images/interstit-close.svg'
+import closeIcon from '../../assets/images/close.svg'
+import closeIconHovered from '../../assets/images/close-hovered.svg'
+import logo from '../../assets/images/popup-myfembree-logo.svg'
 
 class NonUSPopUp extends React.Component {
   constructor(props) {
@@ -11,6 +13,7 @@ class NonUSPopUp extends React.Component {
     this.state = {
       yDirection: 0,
       xDirection: 0,
+      hovered: false,
     }
   }
 
@@ -29,75 +32,68 @@ class NonUSPopUp extends React.Component {
     })
   }
 
+  handleHovered = (val) => {
+    this.setState({
+      hovered: val,
+    })
+  }
+
   render() {
-    const { yDirection, xDirection } = this.state;
+    const { yDirection, xDirection, hovered } = this.state;
     const { popup, handlePopUp } = this.props;
     return (
-      <section
-        className={popup ? 'non-us-popup-col' : 'non-us-popup-col-hidden'}
-        // style={
-        //   xDirection < 426 ? {top: '100px'} :
-        //   xDirection < 769 ? {top: '100px'} :
-        //   {top: `${yDirection + 100}px`}
-        // }
-      >
+      <section className={popup ? 'non-us-popup-overlay' : ''} onClick={() => handlePopUp()} >
         <Container>
           <Row>
-            <Col lg={12}>
-              <Row>
-                <Col lg={{span: 1, offset: 11}} className='close-img-container'>
-                  <img loading='lazy' src={closeIcon} className='close-img' onClick={() => handlePopUp()} />
-                </Col>
-              </Row>
-              <Row>
-                <Col lg={12}>
-                  <h2 className='popup-title text-center'>
-                    This site is intended for US healthcare providers only
-                  </h2>
-                </Col>
-              </Row>
-              <Row>
-                <Col
-                  lg={{ span: 5, order: 1, offset: 1 }}
-                  xs={{ span: 12, order: 12 }}
-                  className='link-wrapper'
-                >
-                  <div className='cta-btn-container'>
-                    <a
-                      className='text-center'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      href='https://www.google.com/'
+            <Col lg={{span: 4, offset: 4}}>
+              <div className={popup ? 'non-us-popup-col' : 'non-us-popup-col-hidden'}>
+                <Row>
+                  <Col lg={{span: 1, offset: 11}}>
+                    <div
+                      className='close-img-container'
+                      onMouseEnter={() => this.handleHovered(true)}
+                      onMouseLeave={() => this.handleHovered(false)}
+                      onClick={() => handlePopUp()}
                     >
-                      <button
-                        className='cta-btn text-center'
-                      >
-                        I am a healthcare provider in Canada
-                      </button>
-                    </a>
-                  </div>
-                </Col>
-                <Col
-                  lg={{ span: 5, order: 1, offset: 0 }}
-                  xs={{ span: 12, order: 12 }}
-                  className='link-wrapper'
-                >
-                  <div className='cta-btn-container'>
-                    <a
-                      className='text-center'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      href='https://www.google.com/'
-                    >
-                      <button
-                        className='cta-btn text-center'
-                      >
-                        I am a healthcare provider outside of US/Canada
-                      </button>
-                    </a>
-                  </div>
-                </Col>
-              </Row>
+                      <img
+                        src={hovered ? closeIconHovered : closeIcon}
+                        className='close-img'
+                      />
+                    </div>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col lg={{span: 6, offset: 3}}>
+                    <div className='popup-logo-container'>
+                      <img src={logo} />
+                    </div>
+                  </Col>
+                </Row>
+                <h6 className='text-center'>
+                  The information contained in this website is intended for US healthcare professionals only.
+                </h6>
+                <h3 className='blue text-center'>
+                  Are you a US healthcare professional?
+                </h3>
+                <Row>
+                  <Col>
+                    <div className='cta-btn-container non-us-popup-btn-container'>
+                      <a>
+                        <button className='cta-btn pink-btn'>
+                          Yes
+                        </button>
+                      </a>
+                    </div>
+                    <div className='cta-btn-container non-us-popup-btn-container' onClick={() => handlePopUp()}>
+                      <a>
+                        <button className='cta-btn transparent-btn-pink'>
+                          No
+                        </button>
+                      </a>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
             </Col>
           </Row>
         </Container>
