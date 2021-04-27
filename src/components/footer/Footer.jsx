@@ -1,9 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
-import { Container, Row, Col } from "react-bootstrap"
-// import BackToTop from "./backToTop"
+import React from 'react'
+import { Link } from 'gatsby'
+import { Container, Row, Col } from 'react-bootstrap'
+// import BackToTop from './backToTop'
 
-import footerLogo from "../../assets/images/footer-logo.svg"
+import footerLogo from '../../assets/images/footer-logo.svg'
 
 export default () => (
   <footer>
@@ -16,16 +16,16 @@ export default () => (
           <nav className='footer-nav-container'>
             <ul>
               <li>
-                <Link to="#">Contact Us</Link>
+                <Link to='#'>Contact Us</Link>
               </li>
               <li>
-                <Link to="#">Privacy Policy</Link>
+                <Link to='#'>Privacy Policy</Link>
               </li>
               <li>
-                <Link to="#">Terms of Use</Link>
+                <Link to='#'>Terms of Use</Link>
               </li>
               <li>
-                <Link to="#">Site Map</Link>
+                <Link to='/sitemap/'>Site Map</Link>
               </li>
             </ul>
           </nav>
