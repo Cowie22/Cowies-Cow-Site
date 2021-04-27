@@ -67,7 +67,7 @@ class SelectionNav extends React.Component {
                           </div>
                           <div className='selection-nav-list-container'>
                             <ul className='selection-nav-list'>
-                              <Link className='link-left header-nav' to='/previously-untreated-stage-III-IV-classical-hodgkin-lymphoma/'>
+                              <Link className='link-left header-nav' to=''>
                                 <li
                                   className='selection-nav-list-item'
                                   style={currentPage === 'chl-previously-untreated' ? {color: '#A51140'} : {}}
@@ -75,7 +75,7 @@ class SelectionNav extends React.Component {
                                   Previously untreated Stage III/IV cHL
                                 </li>
                               </Link>
-                              <Link className='link-left header-nav' to='/classical-hodgkin-lymphoma-post-auto-hsct-consolidation/'>
+                              <Link className='link-left header-nav' to=''>
                                 <li
                                   className='selection-nav-list-item'
                                   style={currentPage === 'chl-post-auto' ? {color: '#A51140'} : {}}
@@ -83,7 +83,7 @@ class SelectionNav extends React.Component {
                                   cHL post-auto-HSCT consolidation
                                 </li>
                               </Link>
-                              <Link className='link-left header-nav' to='/relapsed-classical-hodgkin-lymphoma/'>
+                              <Link className='link-left header-nav' to=''>
                                 <li
                                   className='selection-nav-list-item'
                                   style={currentPage === 'chl-relapsed' ? {color: '#A51140'} : {}}
@@ -97,7 +97,7 @@ class SelectionNav extends React.Component {
                         <Col lg={6}>
                           <div className='selection-nav-list-container'>
                             <ul className='selection-nav-list'>
-                              <Link className='link-right header-nav' to='/previously-untreated-salcl-cd30-expressing-ptcl/'>
+                              <Link className='link-right header-nav' to=''>
                                 <li
                                   className='selection-nav-list-item'
                                   style={currentPage === 'ptcl-previously-untreated' ? {color: '#006983'} : {}}
@@ -105,7 +105,7 @@ class SelectionNav extends React.Component {
                                   Previously untreated sALCL or other CD30-expressing PTCL
                                 </li>
                               </Link>
-                              <Link className='link-right header-nav' to='/relapsed-pcalcl-cd30-expressing-mf/'>
+                              <Link className='link-right header-nav' to=''>
                                 <li
                                   className='selection-nav-list-item'
                                   style={currentPage === 'ptcl-CD30-Expressing-MF' ? {color: '#006983'} : {}}
@@ -113,7 +113,7 @@ class SelectionNav extends React.Component {
                                   Relapsed pcALCL or CD30-expressing MF
                                 </li>
                               </Link>
-                              <Link className='link-right header-nav' to='/relapsed-salcl/'>
+                              <Link className='link-right header-nav' to=''>
                                 <li
                                   className='selection-nav-list-item'
                                   style={currentPage === 'ptcl-relapsed' ? {color: '#006983'} : {}}
