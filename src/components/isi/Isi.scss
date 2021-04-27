@@ -11,18 +11,24 @@
     line-height: 24px;
   }
 
-  a {
-    color: $teal;
-    font-weight: 600;
-    &:hover {
-      color: $blue;
-      text-decoration: none;
-    }
-  }
-
   .row {
     &:not(:first-of-type) {
       padding-top: 40px;
+    }
+  }
+
+  .lower-isi-callout {
+    padding-top: 16px;
+    .isi-link {
+      color: $pink;
+      transition: color .5s;
+      transition-delay: .2s;
+      &:hover {
+        color: $purple;
+        cursor: pointer;
+        transition: color .5s;
+        transition-delay: .2s;
+      }
     }
   }
 }
@@ -97,7 +103,7 @@
     border-radius: 5px;
   }
   &::-webkit-scrollbar-thumb {
-    background: $purple;
+    background: $pink;
     border-radius: 5px;
   }
 }

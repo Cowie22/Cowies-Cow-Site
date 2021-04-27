@@ -255,6 +255,10 @@ class IsiContent extends React.Component {
             <strong>Do not</strong> take 2 doses to make up for the missed dose.
           </li>
         </ul>
+        <p className='lower-isi-callout'>
+          Please see full <a className='isi-link' href=''>Prescribing Information</a>, including {' '}
+          <a className='isi-link' href=''>Medication Guide</a>.
+        </p>
       </section>
     )
   }
