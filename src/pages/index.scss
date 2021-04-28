@@ -81,9 +81,9 @@ a {
 h1 {
   font-family: $mulish;
   font-style: normal;
-  font-size: 36px;
-  line-height: 45px;
-  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
   color: #333333;
   margin: 0;
   @media screen and (max-width: 991px) {
@@ -95,15 +95,14 @@ h1 {
 h2 {
   font-family: $mulish;
   font-style: normal;
-  font-size: 28px;
-  line-height: 34px;
-  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 700;
   color: #333333;
   margin: 0;
   @media screen and (max-width: 991px) {
     font-size: 22px;
-    line-height: 26px;
-    font-weight: 700;
+    line-height: 28px;
   }
 }
 
@@ -117,8 +116,7 @@ h3 {
   margin: 0;
   @media screen and (max-width: 991px) {
     font-size: 20px;
-    line-height: 24px;
-    font-weight: 700;
+    line-height: 25px;
   }
 }
 
@@ -126,8 +124,8 @@ h4 {
   font-family: $sans;
   font-style: normal;
   font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
+  line-height: 23px;
+  font-weight: 400;
   color: #333333;
   margin: 0;
 }
