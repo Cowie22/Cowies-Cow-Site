@@ -1,7 +1,7 @@
 {
-  "name": "Myovant-Patient-Gatsby",
+  "name": "Myovant-HCP-Gatsby",
   "private": true,
-  "description": "Patient site for Myovant",
+  "description": "HCP site for Myovant",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GiantAgency/Myovant-Patient-Gatsby"
+    "url": "https://github.com/GiantAgency/Myovant-HCP-Gatsby"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
