@@ -94,7 +94,7 @@ class UtilityNav extends React.Component {
                           <a
                             target='_blank'
                             className='utility-header-nav'
-                            onClick={() => this.handlePopUp()}
+                            href='https://www.Myfembree.com'
                           >
                             Visit Patient Site
                           </a>

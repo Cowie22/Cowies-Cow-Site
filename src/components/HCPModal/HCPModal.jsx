@@ -60,15 +60,13 @@ class HCPModal extends React.Component {
                 </h3>
                 <Row>
                   <Col>
-                    <div className='cta-btn-container hcp-modal-btn-container'>
-                      <a>
-                        <button className='cta-btn pink-btn'>
-                          Yes
-                        </button>
-                      </a>
-                    </div>
                     <div className='cta-btn-container hcp-modal-btn-container' onClick={() => handleHCPModalVisible()}>
-                      <a>
+                      <button className='cta-btn pink-btn'>
+                        Yes
+                      </button>
+                    </div>
+                    <div className='cta-btn-container hcp-modal-btn-container'>
+                      <a href='https://www.Myfembree.com' target='_blank'>
                         <button className='cta-btn transparent-btn-pink'>
                           No
                         </button>
