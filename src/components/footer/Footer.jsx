@@ -3,7 +3,8 @@ import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 // import BackToTop from './backToTop'
 
-import footerLogo from '../../assets/images/footer-logo.svg'
+import pfizerLogo from '../../assets/images/pfizer-footer-logo.svg'
+import myovantLogo from '../../assets/images/myovant-footer-logo.svg'
 
 export default () => (
   <footer>
@@ -43,7 +44,26 @@ export default () => (
         </Col>
         <Col lg={{span: 4, offset: 2, order: 2}} xs={{span: 12, offset: 0, order: 1}}>
           <div className='footer-logo-container'>
-            <img src={footerLogo} alt='Myovant logo' />
+            <a
+              href='https://www.myovant.com'
+              target='_blank'
+            >
+              <img
+                src={myovantLogo}
+                alt='Myovant logo'
+                className='footer-logo'
+              />
+            </a>
+            <a
+              href='https://www.pfizer.com'
+              target='_blank'
+            >
+              <img
+                src={pfizerLogo}
+                alt='Pfizer logo'
+                className='footer-logo'
+              />
+            </a>
           </div>
         </Col>
       </Row>
