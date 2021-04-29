@@ -11,7 +11,7 @@ export default () => (
       <Row>
         <Col lg={{ span: 5, offset: 0}} xs={{span: 6, offset: 3}}>
           <h6 className='footer-top-title'>
-            For US Residents Only
+            For US Healthcare Professionals Only
           </h6>
           <nav className='footer-nav-container'>
             <ul>
@@ -38,7 +38,7 @@ export default () => (
             trademarks are the property of their respective owners.
           </h6>
           <h6>
-            ©2021 Myovant Sciences GmbH and Pfizer Inc. All rights reserved. PP-US-REL-CT-2100061 06/21
+            ©2021 Myovant Sciences GmbH and Pfizer Inc. All rights reserved. PP-US-REL-CT-2100058 06/21
           </h6>
         </Col>
         <Col lg={{span: 4, offset: 2, order: 2}} xs={{span: 10, offset: 1, order: 1}}>
