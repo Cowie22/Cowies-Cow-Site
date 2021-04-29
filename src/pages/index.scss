@@ -225,9 +225,9 @@ p {
 }
 
 .home-btn-container {
-  margin: 24px 0 0 0;
+  margin: 24px 0 40px 0;
   @media screen and (max-width: 991px) {
-    margin: 16px 0 0 0;
+    margin: 16px 0;
   }
 }
 
@@ -258,7 +258,8 @@ p {
 .transparent-btn {
   background: transparent;
   &:hover {
-    background: #A51890;
+    background: $white;
+    color: #A51890;
   }
 }
 
@@ -277,6 +278,16 @@ p {
   &:hover {
     color: #A51890;
     background: #FFFFFF;
+    border: 1px solid #A51890;
+  }
+}
+
+.white-btn {
+  background: $white;
+  color: #A51890;
+  &:hover {
+    color: $white;
+    background: #A51890;
     border: 1px solid #A51890;
   }
 }

@@ -4,14 +4,18 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 48px 0 180px 0;
+  padding: 120px 0;
   margin-bottom: 88px;
   position: relative;
   h1 {
-    padding-top: 32px;
+    letter-spacing: 0.5em;
+    font-weight: 600;
   }
   .home-sub-title {
-    padding: 16px 0;
+    padding: 16px 0 24px 0;
+    font-size: 38px;
+    line-height: 48px;
+    font-family: $mulish;
   }
 }
 
