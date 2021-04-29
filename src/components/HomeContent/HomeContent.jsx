@@ -3,7 +3,7 @@ import Layout from "../Layout"
 import { Container, Row, Col } from "react-bootstrap"
 import AppProvider, { AppContext } from '../../contexts/state'
 
-import CallNowCard from '../CallNowCard/CallNowCard'
+import RegisterCard from '../RegisterCard/RegisterCard'
 
 class HomeContent extends React.Component {
   constructor(props) {
@@ -68,7 +68,7 @@ class HomeContent extends React.Component {
         </section>
         <section className='home-callout-container'>
           <Container>
-            <CallNowCard />
+            <RegisterCard />
           </Container>
         </section>
       </Layout>

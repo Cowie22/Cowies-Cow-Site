@@ -5,7 +5,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 120px 0;
-  margin-bottom: 88px;
   position: relative;
   h1 {
     letter-spacing: 0.5em;
@@ -20,9 +19,8 @@
 }
 
 .home-callout-container {
-  position: relative;
-  width: 100%;
-  z-index: 10;
+  background: #F1F7F4;
+  padding: 60px 0;
 }
 
 @media screen and (max-width: 1200px) and (min-width: 992px)  {

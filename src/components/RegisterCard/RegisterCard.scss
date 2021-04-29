@@ -1,13 +1,15 @@
-.call-now-container {
-  padding: 60px 0px;
+.register-container {
   background: #F1F7F4;
   border-radius: 20px;
   bottom: 0;
-  // margin: -200px 0 40px 0;
-  h3 {
-    padding-bottom: 16px;
+  .register-icon-container {
+    display: flex;
+    align-items: center;
+    img {
+      padding-right: 24px;
+    }
   }
-  .call-now-text-link {
+  .register-text-link {
     color: $pink;
     white-space: nowrap;
     transition: color .5s;
@@ -19,13 +21,13 @@
       transition-delay: .2s;
     }
   }
-  .call-now-inner-container {
+  .register-inner-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-    .call-now-btn-container {
+    .register-btn-container {
       width: 100%;
     }
   }
