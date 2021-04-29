@@ -11,43 +11,51 @@ class IsiContent extends React.Component {
   render() {
     return (
       <section>
-        <h4 className='purple'>
-          Use
+        <h4 className='purple extra-bold'>
+          Indication
         </h4>
         <p>
-          Myfembree is a prescription medicine that is used in the treatment of heavy menstrual bleeding
-          associated with uterine fibroids.
+          Myfembree is indicated for the management of heavy menstrual bleeding associated with uterine
+          fibroids in premenopausal women. Use of Myfembree should be limited to 24 months due to risk
+          of continued bone loss, which may not be reversible.
         </p>
-        <h4 className='purple'>
+        <h4 className='purple extra-bold'>
           Important Safety Information
         </h4>
-        <p className='purple extra-bold'>
-          What is the most important information I should know about Myfembree?
+        <p className='extra-bold'>
+          WARNING: THROMBOEMBOLIC DISORDERS AND VASCULAR EVENTS
         </p>
         <p className='extra-bold'>
-          Myfembree may cause serious side effects, including:
+          Estrogen and progestin combination products, including MYFEMBREE, increase the risk of thrombotic
+          or thromboembolic disorders including pulmonary embolism, deep vein thrombosis, stroke and
+          myocardial infarction, especially in women at increased risk for these events.
+        </p>
+        <p className='purple extra-bold'>
+          CONTRAINDICATIONS
+        </p>
+        <p>
+          MYFEMBREE is contraindicated in women with current or a history of thrombotic or thromboembolic
+          disorders and in women at increased risk for these events, including women over 35 years of age
+          who smoke or women with uncontrolled hypertension.
         </p>
         <ul className='purple-ul'>
-          <li className='purple extra-bold'>
-            Cardiovascular Conditions
+          <li>
+            Myfembree may increase your chances of heart attack, stroke, or blood clots, especially
+            if you are over 35 years of age and smoke, have uncontrolled high blood pressure, high
+            cholesterol, diabetes, or are obese. <strong>Stop taking Myfembree and call your healthcare
+            provider right away or go to the nearest hospital emergency room right away if you have:</strong>
           </li>
           <ul className='purple-ul-dashed'>
             <li>
-              Myfembree may increase your chances of heart attack, stroke, or blood clots, especially
-              if you are over 35 years of age and smoke, have uncontrolled high blood pressure, high
-              cholesterol, diabetes, or are obese. <strong>Stop taking Myfembree and call your healthcare
-              provider right away or go to the nearest hospital emergency room right away if you have:</strong>
+              Leg pain or swelling that will not go away
+            </li>
+            <li>
+              Sudden shortness of breath
+            </li>
+            <li>
+              Double vision, bulging of the eyes, or sudden blindness (partial or complete)
             </li>
             <ul className='purple-ul'>
-              <li>
-                Leg pain or swelling that will not go away
-              </li>
-              <li>
-                Sudden shortness of breath
-              </li>
-              <li>
-                Double vision, bulging of the eyes, or sudden blindness (partial or complete)
-              </li>
               <li>
                 Pain or pressure in your chest, arm, or jaw
               </li>

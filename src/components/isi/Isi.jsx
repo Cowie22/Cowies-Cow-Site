@@ -140,20 +140,20 @@ class ISI extends React.Component {
                         !isIsiExpanded && width >= 991 ?
                         <>
                           <Col lg={7}>
-                            <h4 className='purple'>
+                            <h4 className='purple extra-bold'>
                               Important Safety Information
                             </h4>
                           </Col>
                           <Col lg={{span: 4, offset: 0}}>
-                            <h4 className='text-left purple'>
-                              Use
+                            <h4 className='text-left purple extra-bold'>
+                              Indication
                             </h4>
                           </Col>
                         </>
                         :
                         !isIsiExpanded && width < 991 ?
                           <Col xs={10}>
-                            <h4 className='purple'>
+                            <h4 className='purple extra-bold'>
                               Important Safety Information
                             </h4>
                           </Col>
@@ -202,18 +202,21 @@ class ISI extends React.Component {
                         :
                         <Row>
                           <Col lg={7}>
-                            <p>
-                              Myfembree (elagolix, estradiol, and norethindrone acetate capsules; elagolix capsules)
-                              may increase your chances of heart attack, stroke, or blood clots, especially if you
-                              are over 35 years of age and smoke, have uncontrolled high blood pressure, high
-                              cholesterol, diabetes, and/or are obese. Stop taking Myfembree and call a
-                              doctor right away…
+                            <p className='extra-bold'>
+                              WARNING: THROMBOEMBOLIC DISORDERS AND VASCULAR EVENTS
+                            </p>
+                            <p className='extra-bold'>
+                              Estrogen and progestin combination products, including MYFEMBREE, increase the
+                              risk of thrombotic or thromboembolic disorders including pulmonary embolism,
+                              deep vein thrombosis, stroke and myocardial infarction, especially in women
+                              at increased risk for these events.
                             </p>
                           </Col>
                           <Col lg={{span: 4, offset: 0}}>
                             <p>
-                              Myfembree is a prescription medicine that is used in the treatment of heavy menstrual
-                              bleeding associated with uterine fibroids.
+                              Myfembree is indicated for the management of heavy menstrual bleeding associated
+                              with uterine fibroids in premenopausal women. Use of Myfembree should be limited
+                              to 24 months due to risk of continued bone loss, which may not
                             </p>
                           </Col>
                         </Row>
