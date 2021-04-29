@@ -6,6 +6,7 @@ import AppProvider, { AppContext } from '../../contexts/state'
 import RegisterCard from '../RegisterCard/RegisterCard'
 import RectangleCard from '../RectangleCard/RectangleCard'
 import RectangleCardData from '../RectangleCard/RectangleCardData.js'
+import HCPModal from '../HCPModal/HCPModal'
 
 class HomeContent extends React.Component {
   constructor(props) {
@@ -21,8 +22,18 @@ class HomeContent extends React.Component {
 
   render() {
     const { HomeRectangleCardData1, HomeRectangleCardData2 } = RectangleCardData;
+    const { HCPModalVisible, handleHCPModalVisible } = this.props;
     return (
       <Layout>
+        <section
+          id='hcp-modal-container'
+          onClick={() => this.handleHCPModalVisible()}
+        >
+        </section>
+        <HCPModal
+          handleHCPModalVisible={handleHCPModalVisible}
+          HCPModalVisible={HCPModalVisible}
+        />
         <section className='home-container' title='Woman looking hopeful'>
           <Container>
             <Row>

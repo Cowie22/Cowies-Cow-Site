@@ -18,6 +18,8 @@ const defaultState = {
   handleSiteVisited: () => {},
   isCookieVisible: true,
   handleIsCookieVisible: () => {},
+  HCPModalVisible: true,
+  handleHCPModalVisible: () => {},
 }
 
 export const AppContext = React.createContext(defaultState)
@@ -62,6 +64,12 @@ class AppProvider extends Component {
       handleIsCookieVisible: (val) => {
         this.setState({
           isCookieVisible: val,
+        })
+      },
+      HCPModalVisible: true,
+      handleHCPModalVisible: (val) => {
+        this.setState({
+          HCPModalVisible: val,
         })
       },
     }
