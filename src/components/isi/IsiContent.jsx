@@ -11,7 +11,7 @@ class IsiContent extends React.Component {
   render() {
     return (
       <section>
-        <h4 className='purple extra-bold'>
+        <h4 className='purple extra-bold isi-header-text'>
           Indication
         </h4>
         <p>
@@ -19,7 +19,7 @@ class IsiContent extends React.Component {
           fibroids in premenopausal women. Use of Myfembree should be limited to 24 months due to risk
           of continued bone loss, which may not be reversible.
         </p>
-        <h4 className='purple extra-bold'>
+        <h4 className='purple extra-bold isi-header-text'>
           Important Safety Information
         </h4>
         <p className='extra-bold'>
@@ -30,7 +30,7 @@ class IsiContent extends React.Component {
           or thromboembolic disorders including pulmonary embolism, deep vein thrombosis, stroke and
           myocardial infarction, especially in women at increased risk for these events.
         </p>
-        <p className='purple extra-bold'>
+        <p className='purple extra-bold isi-header-text'>
           CONTRAINDICATIONS
         </p>
         <p>
