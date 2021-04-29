@@ -34,9 +34,9 @@ class Cookie extends React.Component {
                 <Row>
                   <Col lg={9} xs={{span: 8}}>
                     <p>
-                      This website uses cookies to help us give you the best experience when you visit. By using
-                      this website, you consent to the use of these cookies. Find out more about how we use
-                      cookies and how to manage them by reading our
+                      This website uses cookies to help us give you the best experience when you visit.
+                      By using this website, you consent to the use of these cookies. Find out more about
+                      how we use cookies and how to manage them by reading our
                       <ExternalLink
                         externalUrl={'https://www.myovant.com/cookie-policy/'}
                         className='cookie-link'

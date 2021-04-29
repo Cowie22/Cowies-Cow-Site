@@ -72,7 +72,7 @@ class UtilityNav extends React.Component {
               <Col lg={{ span: 10, offset: 2 }}>
                 <nav className='utility-nav-container'>
                   <Row>
-                    <Col lg={{span: 8}}>
+                    <Col lg={{span: 8, offset: 4}}>
                       <ul className='utility-left-container'>
                         <li>
                           <a
@@ -94,26 +94,26 @@ class UtilityNav extends React.Component {
                           <a
                             target='_blank'
                             className='utility-header-nav'
+                            onClick={() => this.handlePopUp()}
                           >
-                            Medication <br className='d-xs-block d-md-none'></br> Guide
+                            Visit Patient Site
                           </a>
                         </li>
                       </ul>
                     </Col>
-                    <Col lg={{span: 4}} className='utility-right-col'>
+                    {/* <Col lg={{span: 4}} className='utility-right-col'>
                       <div className='utility-nav-end-container'>
                         <ul>
                           <li>
                             <a
-                              externalUrl={'https://www.google.com/'}
-                              onClick={() => this.handlePopUp()}
+                              href=''
                             >
-                              Visit Healthcare Professional Site
+                              Request a Representative
                             </a>
                           </li>
                         </ul>
                       </div>
-                    </Col>
+                    </Col> */}
                   </Row>
                 </nav>
               </Col>

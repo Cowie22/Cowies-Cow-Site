@@ -48,15 +48,12 @@ export default props => {
                       />
                     </Link>
                   </Col>
-                  <Col lg={{span: 2, offset: 7}} xs={{span: 6, offset: 1}}>
+                  <Col lg={{span: 3, offset: 6}} xs={{span: 6, offset: 1}}>
                     <div className='header-call-now-container'>
-                      <h6>
-                        Questions? Call
-                      </h6>
-                      <div className='cta-btn-container'>
+                      <div className='cta-btn-container header-cta-btn-container'>
                         <a href='tel:1-833-693-3627'>
                           <button className='cta-btn transparent-btn-pink'>
-                            1-833-693-3627
+                            Register for Launch Broadcast
                           </button>
                         </a>
                       </div>

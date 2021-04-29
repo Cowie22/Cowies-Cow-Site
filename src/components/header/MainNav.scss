@@ -7,10 +7,11 @@
   .header-call-now-container {
     height: 100%;
     width: 100%;
-    padding: 20px 0;
-    h6 {
-      padding-bottom: 8px;
-      text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .header-cta-btn-container {
+      width: 100%;
     }
   }
   .nav-container {
