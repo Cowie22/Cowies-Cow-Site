@@ -17,7 +17,17 @@ class HomeContent extends React.Component {
   }
 
   componentDidMount = () => {
-    this.props.handleActiveHeaderNav('home');
+    const { handleActiveHeaderNav, HCPModalVisible } = this.props;
+
+    handleActiveHeaderNav('home');
+
+    if (document.getElementsByTagName('body')) {
+      if (HCPModalVisible) {
+        document.body.style.overflow = 'hidden'
+      } else {
+        document.body.style.overflow = 'scroll'
+      }
+    }
   }
 
   render() {

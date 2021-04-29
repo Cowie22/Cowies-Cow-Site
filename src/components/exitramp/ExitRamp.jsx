@@ -70,7 +70,7 @@ export default props => {
                 </Col>
               </Row>
               <h3 className='blue text-center'>
-                You are about to leave Myfembree.com
+                You are about to leave MyfembreeHCP.com
               </h3>
               <Row>
                 <Col>
@@ -92,15 +92,15 @@ export default props => {
                   <div className='cta-btn-container exit-popup-btn-container' onClick={() => state.handleIsExitRampOpen()}>
                     <a>
                       <button className='cta-btn transparent-btn-pink'>
-                        Stay on Myfembree.com
+                        Stay on MyfembreeHCP.com
                       </button>
                     </a>
                   </div>
                 </Col>
               </Row>
               <h6 className='text-center'>
-                The website you are linking to is neither owned nor controlled by Myovant Sciences GmbH or
-                Pfizer Inc. Myovant and Pfizer are not responsible for the content or services on the site.
+                The website you are linking to is neither owned nor controlled by Myovant Sciences GmbH
+                or Pfizer Inc. Myovant and Pfizer are not responsible for the content or services on the site.
               </h6>
             </div>
           </Col>

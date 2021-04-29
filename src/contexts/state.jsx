@@ -70,6 +70,14 @@ class AppProvider extends Component {
       handleHCPModalVisible: (val) => {
         this.setState({
           HCPModalVisible: val,
+        }, () => {
+          if (document.getElementsByTagName('body')) {
+            if (this.state.HCPModalVisible) {
+              document.body.style.overflow = 'hidden'
+            } else {
+              document.body.style.overflow = 'scroll'
+            }
+          }
         })
       },
     }
