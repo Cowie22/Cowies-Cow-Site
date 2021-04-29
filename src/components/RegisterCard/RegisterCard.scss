@@ -9,18 +9,6 @@
       padding-right: 24px;
     }
   }
-  .register-text-link {
-    color: $pink;
-    white-space: nowrap;
-    transition: color .5s;
-    transition-delay: .2s;
-    &:hover {
-      cursor: pointer;
-      color: $purple;
-      transition: color .5s;
-      transition-delay: .2s;
-    }
-  }
   .register-inner-container {
     display: flex;
     justify-content: center;
@@ -33,24 +21,12 @@
   }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 992px) {
-  .call-now-container {
-    margin: -140px 0 40px 0;
-  }
-}
-
 @media screen and (max-width: 992px) {
-  .call-now-container {
-    margin: -150px 0 0px 0;
-    padding: 40px 0px;
-    p {
-      padding-right: 24px;
-    }
-    .call-now-text-link {
-      white-space: normal;
-    }
-    .call-now-inner-container {
-      padding-top: 24px;
+  .register-container {
+    .register-inner-container {
+      .register-btn-container {
+        padding-top: 24px;
+      }
     }
   }
 }

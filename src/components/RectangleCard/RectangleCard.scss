@@ -13,3 +13,10 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .rectangle-card-container {
+    height: fit-content;
+    margin-bottom: 24px;
+  }
+}

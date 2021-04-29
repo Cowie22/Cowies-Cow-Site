@@ -9,7 +9,7 @@ const RegisterCard = (props) => {
       <Row>
         <Col lg={12}>
           <Row>
-            <Col lg={{span: 7, offset: 1}} xs={{span: 10, offset: 1}}>
+            <Col lg={{span: 7, offset: 1}} xs={{span: 12, offset: 0}}>
               <div className='register-icon-container'>
                 <img src={calendar} />
                 <h3 className='blue'>
@@ -17,7 +17,7 @@ const RegisterCard = (props) => {
                 </h3>
               </div>
             </Col>
-            <Col lg={{span: 3, offset: 0}} xs={{span: 10, offset: 1}}>
+            <Col lg={{span: 3, offset: 0}} xs={{span: 10, offset: 0}}>
               <div className='register-inner-container'>
                 <div className='cta-btn-container register-btn-container'>
                   <a>

@@ -4,7 +4,6 @@ import { Container, Row, Col } from 'react-bootstrap'
 const RectangleCard = (props) => {
   const { data } = props;
   const { title, content, icon } = data[0];
-  console.log('second', title)
   return (
     <Col lg={6}>
       <div className='rectangle-card-container'>

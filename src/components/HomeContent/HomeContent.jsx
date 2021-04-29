@@ -26,21 +26,25 @@ class HomeContent extends React.Component {
         <section className='home-container' title='Woman looking hopeful'>
           <Container>
             <Row>
-              <Col lg={{span: 9, offset: 0}} xs={{span: 11, offset: 1}}>
-                <h1 className='medium-green'>
+              <Col lg={{span: 9, offset: 0}} xs={{span: 12, offset: 0}}>
+                <h1 className='medium-green top-title'>
                   NOW APPROVED
                 </h1>
-                <h2 className='home-sub-title white'>
+              </Col>
+            </Row>
+            <Row>
+              <Col lg={{span: 9, offset: 0}} xs={{span: 11, offset: 0}}>
+                <h1 className='home-sub-title white'>
                   One small pill, once a day: <br /> Myfembree for heavy menstrual bleeding
                   associated with uterine fibroids
-                </h2>
+                </h1>
                 <h3 className='white'>
                   Set your calendars—available for use June 17, 2021
                 </h3>
               </Col>
             </Row>
             <Row>
-              <Col lg={3}>
+              <Col lg={3} xs={10}>
                 <div className='cta-btn-container home-btn-container'>
                   <a>
                     <button className='cta-btn white-btn'>
@@ -49,7 +53,7 @@ class HomeContent extends React.Component {
                   </a>
                 </div>
               </Col>
-              <Col lg={3}>
+              <Col lg={3} xs={10}>
                 <div className='cta-btn-container home-btn-container'>
                   <a>
                     <button className='cta-btn transparent-btn'>
@@ -60,8 +64,8 @@ class HomeContent extends React.Component {
               </Col>
             </Row>
             <Row>
-              <Col>
-                <h3 className='white'>
+              <Col lg={12} xs={11}>
+                <h3 className='white home-card-lower-content'>
                   To find out more about the Myfembree Support Program, <br /> call 1-833-MYFEMBREE (1-833-693-3627),
                   8 AM-8 PM ET, Monday-Friday.
                 </h3>

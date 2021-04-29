@@ -6,15 +6,15 @@
   background-size: cover;
   padding: 120px 0;
   position: relative;
-  h1 {
+  .top-title {
     letter-spacing: 0.5em;
     font-weight: 600;
   }
   .home-sub-title {
     padding: 16px 0 24px 0;
-    font-size: 38px;
-    line-height: 48px;
-    font-family: $mulish;
+  }
+  .home-card-lower-content {
+    padding-top: 24px;
   }
 }
 
@@ -27,18 +27,6 @@
   padding: 60px 0;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 992px)  {
-  .home-container {
-    padding: 40px 0 60px 0;
-    h1 {
-      padding-top: 0px;
-    }
-    .home-sub-title {
-      padding: 8px 0;
-    }
-  }
-}
-
 @media screen and (max-width: 992px) {
   .home-container {
     background-image: url('../assets/images/home-bg-img-mobile.webp');
@@ -46,12 +34,18 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 16px 0 300px 0;
-    h1 {
+    padding: 40px 0;
+    .home-title {
       padding: 0 40px 0 0;
     }
-    p {
-      padding: 0 40px 0 0;
+    .home-sub-title {
+      padding: 8px 0;
     }
+  }
+  .home-callout-container {
+    padding: 40px 0;
+  }
+  .home-card-container {
+    padding: 40px 0 8px 0;
   }
 }

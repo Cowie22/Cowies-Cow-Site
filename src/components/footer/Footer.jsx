@@ -9,7 +9,7 @@ export default () => (
   <footer>
     <Container>
       <Row>
-        <Col lg={{ span: 5, offset: 0}} xs={{span: 6, offset: 3}}>
+        <Col lg={{ span: 5, offset: 0}} xs={{span: 8, offset: 2}}>
           <h6 className='footer-top-title'>
             For US Healthcare Professionals Only
           </h6>
@@ -41,7 +41,7 @@ export default () => (
             ©2021 Myovant Sciences GmbH and Pfizer Inc. All rights reserved. PP-US-REL-CT-2100058 06/21
           </h6>
         </Col>
-        <Col lg={{span: 4, offset: 2, order: 2}} xs={{span: 10, offset: 1, order: 1}}>
+        <Col lg={{span: 4, offset: 2, order: 2}} xs={{span: 12, offset: 0, order: 1}}>
           <div className='footer-logo-container'>
             <img src={footerLogo} alt='Myovant logo' />
           </div>
