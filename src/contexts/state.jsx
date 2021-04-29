@@ -73,9 +73,9 @@ class AppProvider extends Component {
         }, () => {
           if (document.getElementsByTagName('body')) {
             if (this.state.HCPModalVisible) {
-              document.body.style.overflow = 'hidden'
+              document.body.classList.add('scroll-none');
             } else {
-              document.body.style.overflow = 'scroll'
+              document.body.classList.remove('scroll-none');
             }
           }
         })

@@ -54,7 +54,7 @@
   z-index: 10;
   transition: 0.5s;
   &.tray-collapsed {
-    top: calc(100% - 74px);
+    top: calc(100% - 65px);
   }
   &.expanded {
     top: 150px;

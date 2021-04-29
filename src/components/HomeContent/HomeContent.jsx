@@ -23,9 +23,9 @@ class HomeContent extends React.Component {
 
     if (document.getElementsByTagName('body')) {
       if (HCPModalVisible) {
-        document.body.style.overflow = 'hidden'
+        document.body.classList.add('scroll-none');
       } else {
-        document.body.style.overflow = 'scroll'
+        document.body.classList.remove('scroll-none');
       }
     }
   }
