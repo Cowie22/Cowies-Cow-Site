@@ -42,8 +42,9 @@ $light-teal: #9ed8cf;
 @import "../components/footer/Footer.scss";
 @import "../components/Layout.scss";
 
-@import "../components/RegisterCard/RegisterCard.scss";
 @import "../components/Cookie/Cookie.scss";
+@import "../components/RegisterCard/RegisterCard.scss";
+@import "../components/RectangleCard/RectangleCard.scss";
 
 html {
   // UI/UX use multiples of 8px

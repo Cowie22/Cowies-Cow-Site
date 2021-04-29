@@ -4,6 +4,8 @@ import { Container, Row, Col } from "react-bootstrap"
 import AppProvider, { AppContext } from '../../contexts/state'
 
 import RegisterCard from '../RegisterCard/RegisterCard'
+import RectangleCard from '../RectangleCard/RectangleCard'
+import RectangleCardData from '../RectangleCard/RectangleCardData.js'
 
 class HomeContent extends React.Component {
   constructor(props) {
@@ -18,6 +20,7 @@ class HomeContent extends React.Component {
   }
 
   render() {
+    const { HomeRectangleCardData1, HomeRectangleCardData2 } = RectangleCardData;
     return (
       <Layout>
         <section className='home-container' title='Woman looking hopeful'>
@@ -69,6 +72,14 @@ class HomeContent extends React.Component {
         <section className='home-callout-container'>
           <Container>
             <RegisterCard />
+          </Container>
+        </section>
+        <section className='home-card-container'>
+          <Container>
+            <Row>
+              <RectangleCard data={HomeRectangleCardData1} />
+              <RectangleCard data={HomeRectangleCardData2} />
+            </Row>
           </Container>
         </section>
       </Layout>
