@@ -39,7 +39,7 @@ class Cookie extends React.Component {
                       how we use cookies and how to manage them by reading our
                       <ExternalLink
                         externalUrl={'https://www.myovant.com/cookie-policy/'}
-                        className='cookie-link'
+                        className='cookie-link extra-bold'
                       >
                         {' '} Cookie Policy
                       </ExternalLink>.

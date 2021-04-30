@@ -33,7 +33,7 @@ export default () => (
         </Col>
       </Row>
       <Row>
-        <Col lg={{span: 6, offset: 0, order: 1}} xs={{span: 10, offset: 1, order: 2}}>
+        <Col lg={{span: 7, offset: 0, order: 1}} xs={{span: 10, offset: 1, order: 2}}>
           <h6 className='footer-text'>
             Myfembree® and its associated logo are trademarks of Myovant Sciences GmbH. All other
             trademarks are the property of their respective owners.
@@ -42,7 +42,7 @@ export default () => (
             ©2021 Myovant Sciences GmbH and Pfizer Inc. All rights reserved. PP-US-REL-CT-2100058 06/21
           </h6>
         </Col>
-        <Col lg={{span: 4, offset: 2, order: 2}} xs={{span: 12, offset: 0, order: 1}}>
+        <Col lg={{span: 4, offset: 1, order: 2}} xs={{span: 12, offset: 0, order: 1}}>
           <div className='footer-logo-container'>
             <a
               href='https://www.myovant.com'
