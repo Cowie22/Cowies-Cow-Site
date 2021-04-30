@@ -8,6 +8,8 @@ import RectangleCard from '../RectangleCard/RectangleCard'
 import RectangleCardData from '../RectangleCard/RectangleCardData.js'
 import HCPModal from '../HCPModal/HCPModal'
 
+import pill from '../../assets/images/pill-icon.svg'
+
 class HomeContent extends React.Component {
   constructor(props) {
     super(props);
@@ -49,19 +51,21 @@ class HomeContent extends React.Component {
             <Row>
               <Col lg={{span: 9, offset: 0}} xs={{span: 12, offset: 0}}>
                 <h1 className='medium-green top-title'>
-                  NOW APPROVED
+                  NOW AVAILABLE
                 </h1>
               </Col>
             </Row>
             <Row>
               <Col lg={{span: 9, offset: 0}} xs={{span: 11, offset: 0}}>
+                <div className='title-pill-container'>
+                  <img src={pill} />
+                  <h1 className='white'>
+                    One small pill, once a day:
+                  </h1>
+                </div>
                 <h1 className='home-sub-title white'>
-                  One small pill, once a day: <br /> Myfembree for heavy menstrual bleeding
-                  associated with uterine fibroids
+                  Myfembree for heavy menstrual bleeding associated with uterine fibroids
                 </h1>
-                <h3 className='white'>
-                  Set your calendars—available for use June 17, 2021
-                </h3>
               </Col>
             </Row>
             <Row>
@@ -87,9 +91,9 @@ class HomeContent extends React.Component {
             <Row>
               <Col lg={12} xs={11}>
                 <h3 className='white home-card-lower-content'>
-                  To find out more about the Myfembree Support Program, <br /> call {' '}
-                  <a href='tel:1-833-693-3627' className='call-now-link'>1-833-MYFEMBREE (1-833-693-3627)</a>
-                  {' '} 8 AM-8 PM ET, Monday-Friday.
+                  To find out more about the Myfembree<sup>®</sup> Support Program, <br /> call {' '}
+                  <a href='tel:1-833-693-3627' className='call-now-link'>1-833-MYFEMBREE (1-833-693-3627)</a>,
+                  {' '} 8 <sub>AM</sub>-8 <sub>PM</sub> ET, Monday-Friday.
                 </h3>
               </Col>
             </Row>

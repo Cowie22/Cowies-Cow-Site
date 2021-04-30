@@ -10,11 +10,18 @@
     letter-spacing: 0.5em;
     font-weight: 400;
   }
+  .title-pill-container {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    img {
+      margin-right: 24px;
+    }
+  }
   .home-sub-title {
     padding: 16px 0 24px 0;
   }
   .home-card-lower-content {
-    padding-top: 24px;
     .call-now-link {
       color: $white;
       transition: all .5s;
