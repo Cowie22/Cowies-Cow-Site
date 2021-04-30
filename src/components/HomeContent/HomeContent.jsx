@@ -44,7 +44,7 @@ class HomeContent extends React.Component {
           handleHCPModalVisible={handleHCPModalVisible}
           HCPModalVisible={HCPModalVisible}
         />
-        <section className='home-container' title='Woman looking hopeful'>
+        <section className='home-container'>
           <Container>
             <Row>
               <Col lg={{span: 9, offset: 0}} xs={{span: 12, offset: 0}}>
