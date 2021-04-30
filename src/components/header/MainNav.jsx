@@ -48,7 +48,12 @@ export default props => {
                       />
                     </Link>
                   </Col>
-                  <Col lg={{span: 3, offset: 6}} xs={{span: 6, offset: 1}} className='d-none d-lg-block'>
+                  <Col
+                    xl={{span: 3, offset: 6}}
+                    lg={{span: 4, offset: 5}}
+                    xs={{span: 6, offset: 1}}
+                    className='d-none d-lg-block'
+                  >
                     <div className='header-call-now-container'>
                       <div className='cta-btn-container header-cta-btn-container'>
                         <a href='tel:1-833-693-3627'>

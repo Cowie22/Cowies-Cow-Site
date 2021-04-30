@@ -65,7 +65,7 @@ class HomeContent extends React.Component {
               </Col>
             </Row>
             <Row>
-              <Col lg={3} xs={10}>
+              <Col xl={3} lg={4} xs={10}>
                 <div className='cta-btn-container home-btn-container'>
                   <a>
                     <button className='cta-btn white-btn'>
@@ -74,7 +74,7 @@ class HomeContent extends React.Component {
                   </a>
                 </div>
               </Col>
-              <Col lg={3} xs={10}>
+              <Col xl={3} lg={4} xs={10}>
                 <div className='cta-btn-container home-btn-container'>
                   <a>
                     <button className='cta-btn transparent-btn'>
