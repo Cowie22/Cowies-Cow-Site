@@ -88,8 +88,8 @@ class HomeContent extends React.Component {
               <Col lg={12} xs={11}>
                 <h3 className='white home-card-lower-content'>
                   To find out more about the Myfembree Support Program, <br /> call {' '}
-                  <a href='tel:1-833-693-3627' className='call-now-link'>1-833-MYFEMBREE (1-833-693-3627)</a>
-                  {' '} 8 AM-8 PM ET, Monday-Friday.
+                  <a href='tel:1-833-693-3627' className='call-now-link'>1-833-MYFEMBREE (1-833-693-3627)</a>,
+                  {' '} 8 <sub>AM</sub>-8 <sub>PM</sub>, Monday-Friday.
                 </h3>
               </Col>
             </Row>
