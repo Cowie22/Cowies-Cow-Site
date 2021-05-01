@@ -69,10 +69,10 @@ class UtilityNav extends React.Component {
         <section className='utility-nav'>
           <Container>
             <Row>
-              <Col lg={{ span: 10, offset: 2 }}>
+              <Col xl={{ span: 10, offset: 2 }} lg={{ span: 11, offset: 1 }}>
                 <nav className='utility-nav-container'>
                   <Row>
-                    <Col lg={{span: 8, offset: 4}}>
+                    <Col lg={{span: 8, offset: 0}}>
                       <ul className='utility-left-container'>
                         <li>
                           <a
@@ -101,7 +101,7 @@ class UtilityNav extends React.Component {
                         </li>
                       </ul>
                     </Col>
-                    {/* <Col lg={{span: 4}} className='utility-right-col'>
+                    <Col lg={{span: 4}} className='utility-right-col'>
                       <div className='utility-nav-end-container'>
                         <ul>
                           <li>
@@ -113,7 +113,7 @@ class UtilityNav extends React.Component {
                           </li>
                         </ul>
                       </div>
-                    </Col> */}
+                    </Col>
                   </Row>
                 </nav>
               </Col>

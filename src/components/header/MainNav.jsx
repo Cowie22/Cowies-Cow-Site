@@ -48,16 +48,27 @@ export default props => {
                       />
                     </Link>
                   </Col>
+                  <Col xl={{span: 2, offset: 4}} lg={{span: 3, offset: 2}}>
+                    <nav className='header-nav-container'>
+                      <ul>
+                        <li>
+                          <Link to='/resources/'>
+                            Access & Resources
+                          </Link>
+                        </li>
+                      </ul>
+                    </nav>
+                  </Col>
                   <Col
-                    xl={{span: 3, offset: 6}}
-                    lg={{span: 4, offset: 5}}
+                    xl={{span: 3, offset: 0}}
+                    lg={{span: 4, offset: 0}}
                     xs={{span: 6, offset: 1}}
                     className='d-none d-lg-block'
                   >
                     <div className='header-call-now-container'>
                       <div className='cta-btn-container header-cta-btn-container'>
                         <a href='tel:1-833-693-3627'>
-                          <button className='cta-btn transparent-btn-pink'>
+                          <button className='cta-btn pink-btn'>
                             Register for Launch Broadcast
                           </button>
                         </a>

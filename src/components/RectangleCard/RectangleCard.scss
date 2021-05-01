@@ -3,8 +3,10 @@
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   padding: 32px;
-  min-height: 256px;
+  min-height: 310px;
   height: fit-content;
+  flex-direction: column;
+  display: flex;
   .title-container {
     display: flex;
     align-items: center;
@@ -12,6 +14,12 @@
     img {
       padding-right: 8px;
     }
+  }
+  .rectangle-card-btn-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    width: 50%;
   }
 }
 

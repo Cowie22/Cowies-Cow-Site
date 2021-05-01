@@ -4,6 +4,27 @@
   .header-logo {
     height: 94px;
   }
+  .header-nav-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    ul {
+      li {
+        a {
+          font-weight: 700;
+          color: $pink;
+          transition: color .5s;
+          transition-delay: .2s;
+          &:hover {
+            cursor: pointer;
+            color: $purple;
+            transition: color .5s;
+            transition-delay: .2s;
+          }
+        }
+      }
+    }
+  }
   .header-call-now-container {
     height: 100%;
     width: 100%;

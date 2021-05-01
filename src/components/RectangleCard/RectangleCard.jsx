@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 const RectangleCard = (props) => {
   const { data } = props;
-  const { title, content, icon } = data[0];
+  const { title, content, icon, btnText } = data[0];
   return (
     <Col lg={6}>
       <div className='rectangle-card-container'>
@@ -16,6 +16,13 @@ const RectangleCard = (props) => {
         <p>
           {content}
         </p>
+        <div className='cta-btn-container rectangle-card-btn-container'>
+          <a>
+            <button className='cta-btn pink-btn'>
+              {btnText}
+            </button>
+          </a>
+        </div>
       </div>
     </Col>
   )

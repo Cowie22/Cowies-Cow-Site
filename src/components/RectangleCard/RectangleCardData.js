@@ -8,6 +8,7 @@ const HomeRectangleCardData1 = [
     title: 'Coming soon',
     content: 'Myfembree will be available at retail and mail-order pharmacies in June 2021.',
     icon: paperMoney,
+    btnText: 'Access Information',
   }
 ]
 
@@ -20,6 +21,7 @@ const HomeRectangleCardData2 = [
     program, other financial assistance options, and additional resources once patients have been
     prescribed Myfembree.`,
     icon: iphone,
+    btnText: 'Patient Support Program',
   }
 ]
 
