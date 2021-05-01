@@ -7,9 +7,54 @@
   position: absolute;
   top: 0;
   &.resources {
-    right: 50%;
+    right: 25%;
   }
   &.test {
     right: 30%;
+  }
+  .header-dropdown-ul {
+    list-style: none;
+    padding: 0 32px 0 16px;
+    margin: 0;
+    li {
+      padding-bottom: 16px;
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+      a {
+        font-weight: 700;
+        color: $pink;
+        transition: color .5s;
+        transition-delay: .2s;
+        &:hover {
+          cursor: pointer;
+          color: $purple;
+          transition: color .5s;
+          transition-delay: .2s;
+        }
+      }
+    }
+    .header-dropdown-active {
+      &::before {
+        content: "\2022";
+        color: $purple;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+      a {
+        font-weight: 700;
+        color: purple;
+        transition: color .5s;
+        transition-delay: .2s;
+        &:hover {
+          cursor: pointer;
+          color: $pink;
+          transition: color .5s;
+          transition-delay: .2s;
+        }
+      }
+    }
   }
 }

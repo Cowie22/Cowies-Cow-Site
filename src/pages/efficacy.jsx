@@ -15,12 +15,24 @@ class Efficacy extends React.Component {
     return (
       <AppContext.Consumer>
         {(context) => {
-          const { handleActiveHeaderDropdown, handleTabLink, activeHeaderDropdown } = context;
+          const {
+            currentPage,
+            handleCurrentPage,
+            handleActiveHeaderDropdown,
+            activeHeaderDropdown,
+            HCPModalVisible,
+            handleHCPModalVisible,
+            handleTabLink,
+          } = context;
           return (
             <EfficacyContent
+              currentPage={currentPage}
+              handleCurrentPage={handleCurrentPage}
               handleActiveHeaderDropdown={handleActiveHeaderDropdown}
               handleTabLink={handleTabLink}
               activeHeaderDropdown={activeHeaderDropdown}
+              HCPModalVisible={HCPModalVisible}
+              handleHCPModalVisible={handleHCPModalVisible}
             />
           )
         }}

@@ -12,18 +12,38 @@ class HeaderDropdown extends React.Component {
   }
 
   render() {
-    const { currentData } = this.props;
-    console.log('CHILD DATA', currentData)
+    const {
+      currentData,
+      activeDropdownLink,
+      handleActiveDropdownLink,
+      handleActiveHeaderDropdown,
+      currentPage,
+      handleCurrentPage,
+    } = this.props;
+    console.log(currentData.name)
     return (
       <Row>
         <Col lg={12}>
           <div className='header-dropdown-container' id='header-dropdown-container'>
-            <ul>
+            <ul className='header-dropdown-ul'>
               {
                 currentData.list.map((listData, i) => {
+                  const { listName, listLink } = listData;
                   return (
-                    <li>
-                      {listData.listName}
+                    <li
+                      key={i}
+                      className={
+                        (activeDropdownLink === i + 1 && currentData.name === currentPage) ?
+                        'header-dropdown-active' : ''
+                      }
+                      onClick={() => {
+                        handleActiveDropdownLink(i + 1);
+                        handleActiveHeaderDropdown('');
+                      }}
+                    >
+                      <Link to={listLink}>
+                        {listName}
+                      </Link>
                     </li>
                   )
                 })

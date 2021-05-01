@@ -9,10 +9,12 @@ const defaultState = {
   isExitRampOpen: false,
   handleIsExitRampOpen: () => {},
   externalUrl: '',
+  currentPage: '',
+  handleCurrentPage: () => {},
   activeHeaderDropdown: '',
   handleActiveHeaderDropdown: () => {},
-  activeHeaderDropdownData: '',
-  handleActiveHeaderDropdownData: () => {},
+  activeDropdownLink: '',
+  handleActiveDropdownLink: () => {},
   tabLink: '',
   tabBool: '',
   handleTabLink: () => {},
@@ -42,16 +44,22 @@ class AppProvider extends Component {
         })
       },
       externalUrl: '',
+      currentPage: '',
+      handleCurrentPage: (val) => {
+        this.setState({
+          currentPage: val,
+        })
+      },
       activeHeaderDropdown: '',
       handleActiveHeaderDropdown: (val) => {
         this.setState({
           activeHeaderDropdown: val,
         })
       },
-      activeHeaderDropdownData: {list: ['placeholder']},
-      handleActiveHeaderDropdownData: (val) => {
+      activeDropdownLink: '',
+      handleActiveDropdownLink: (val) => {
         this.setState({
-          activeHeaderDropdownData: val,
+          activeDropdownLink: val,
         })
       },
       tabLink: '',

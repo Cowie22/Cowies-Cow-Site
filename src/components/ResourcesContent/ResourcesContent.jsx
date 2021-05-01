@@ -12,19 +12,25 @@ class ResourcesContent extends React.Component {
   }
 
   componentDidMount = () => {
-    this.props.handleActiveHeaderDropdown('resources');
+    const { handleCurrentPage, handleActiveHeaderDropdown } = this.props;
+    // handleActiveHeaderDropdown('');
+    handleCurrentPage('resources');
   }
 
   render() {
     return (
       <Layout>
-        <Container>
-          <Row>
-            <Col>
-              <h1>Support And Resources Page</h1>
-            </Col>
-          </Row>
-        </Container>
+        <section className='resources-container'>
+          <Container>
+            <Row>
+              <Col>
+                <h1 className='white'>
+                  Access & Resources
+                </h1>
+              </Col>
+            </Row>
+          </Container>
+        </section>
       </Layout>
     )
   }

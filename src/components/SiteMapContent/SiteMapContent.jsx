@@ -13,7 +13,9 @@ class SiteMapContent extends React.Component {
   }
 
   componentDidMount = () => {
-    this.props.handleActiveHeaderDropdown('');
+    const { handleCurrentPage, handleActiveHeaderDropdown } = this.props;
+    handleActiveHeaderDropdown('');
+    handleCurrentPage('sitemap');
   }
 
   render() {

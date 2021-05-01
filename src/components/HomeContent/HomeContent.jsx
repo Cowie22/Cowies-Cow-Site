@@ -19,9 +19,9 @@ class HomeContent extends React.Component {
   }
 
   componentDidMount = () => {
-    const { handleActiveHeaderDropdown, HCPModalVisible } = this.props;
+    const { handleCurrentPage, HCPModalVisible } = this.props;
 
-    // handleActiveHeaderDropdown('home');
+    handleCurrentPage('home');
 
     if (document.getElementsByTagName('body')) {
       if (HCPModalVisible) {

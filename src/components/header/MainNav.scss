@@ -10,7 +10,7 @@
     align-items: center;
     ul {
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-end;
       width: 100%;
       li {
         font-weight: 700;
@@ -124,12 +124,15 @@
 }
 
 .header-dropdown-hidden {
-  display: none;
+  opacity: 0;
+  height: 0px;
 }
-.header-dropdown-hidden {
+
+.header-dropdown {
   opacity: 1;
   height: fit-content;
   transition: all 1s;
+  position: relative;
 }
 
 .mobile-nav {

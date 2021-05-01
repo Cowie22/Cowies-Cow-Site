@@ -12,7 +12,9 @@ class EfficacyContent extends React.Component {
   }
 
   componentDidMount = () => {
-    this.props.handleActiveHeaderDropdown('efficacy');
+    const { handleCurrentPage, handleActiveHeaderDropdown } = this.props;
+    // handleActiveHeaderDropdown('');
+    handleCurrentPage('efficacy');
   }
 
   render() {
