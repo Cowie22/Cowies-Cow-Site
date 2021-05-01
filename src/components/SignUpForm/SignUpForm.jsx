@@ -225,15 +225,15 @@ class SignUpForm extends React.Component {
                               <Form.Label column className={movePlaceholder === 1 ? 'first-name-focus' : firstName !== '' ? 'first-name-focus' : 'first-name'}>
                                 FIRST NAME*
                               </Form.Label>
-                                <Form.Control
-                                  type='text'
-                                  name='firstName'
-                                  value={firstName}
-                                  required
-                                  onChange={this.handleInputChange}
-                                  onFocus={() => this.handleMovePlaceholder(1)}
-                                  onBlur={this.handleReturnPlaceholder}
-                                />
+                              <Form.Control
+                                type='text'
+                                name='firstName'
+                                value={firstName}
+                                required
+                                onChange={this.handleInputChange}
+                                onFocus={() => this.handleMovePlaceholder(1)}
+                                onBlur={this.handleReturnPlaceholder}
+                              />
                               <Form.Control.Feedback type='invalid'>Please enter your first name</Form.Control.Feedback>
                             </Form.Group>
                             <Form.Group controlId='formHorizontalEmail'>
@@ -259,30 +259,30 @@ class SignUpForm extends React.Component {
                               <Form.Label column className={movePlaceholder === 2 ? 'last-name-focus' : lastName !== '' ? 'last-name-focus' : 'last-name'}>
                                 LAST NAME*
                               </Form.Label>
-                                <Form.Control
-                                  type='text'
-                                  name='lastName'
-                                  value={lastName}
-                                  required
-                                  onChange={this.handleInputChange}
-                                  onFocus={() => this.handleMovePlaceholder(2)}
-                                  onBlur={this.handleReturnPlaceholder}
-                                />
+                              <Form.Control
+                                type='text'
+                                name='lastName'
+                                value={lastName}
+                                required
+                                onChange={this.handleInputChange}
+                                onFocus={() => this.handleMovePlaceholder(2)}
+                                onBlur={this.handleReturnPlaceholder}
+                              />
                               <Form.Control.Feedback type='invalid'>Please enter your last name</Form.Control.Feedback>
                             </Form.Group>
                             <Form.Group controlId='formHorizontalEmail'>
                               <Form.Label column className={movePlaceholder === 3 ? 'email-focus' : email !== '' ? 'email-focus' : 'email'}>
                                 Confirm Email*
                               </Form.Label>
-                                <Form.Control
-                                  type='email'
-                                  name='email'
-                                  value={email}
-                                  required
-                                  onChange={this.handleInputChange}
-                                  onFocus={() => this.handleMovePlaceholder(3)}
-                                  onBlur={this.handleReturnPlaceholder}
-                                />
+                              <Form.Control
+                                type='email'
+                                name='email'
+                                value={email}
+                                required
+                                onChange={this.handleInputChange}
+                                onFocus={() => this.handleMovePlaceholder(3)}
+                                onBlur={this.handleReturnPlaceholder}
+                              />
                               <Form.Control.Feedback type='invalid'>
                                 {email === '' ? 'Please enter your email address' : 'Please enter a valid email address'}
                               </Form.Control.Feedback>
