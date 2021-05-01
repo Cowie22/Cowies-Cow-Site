@@ -74,11 +74,9 @@
     }
     &:hover {
       cursor: pointer;
-      a {
-        transition: .5s all;
-        transition-delay: .2s;
-        color: $purple;
-      }
+      transition: .5s all;
+      transition-delay: .2s;
+      color: $purple;
     }
   }
 }

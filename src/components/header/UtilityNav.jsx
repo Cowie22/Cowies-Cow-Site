@@ -4,12 +4,14 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 import ExternalLink from '../exitramp/ExternalLink.jsx'
 import NonUSPopUp from '../../components/NonUSPopUp/NonUSPopUp'
+import SignUpForm from '../SignUpForm/SignUpForm'
 
 class UtilityNav extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       popup: false,
+      signUpForm: false,
       yDirection: 0,
       xDirection: 0,
     }
@@ -32,27 +34,25 @@ class UtilityNav extends React.Component {
 
   handlePopUp = () => {
     if (document.getElementsByTagName('body')) {
-      let modalContainer = document.getElementById('non-us-modal-container');
-      {
-        if (this.state.popup === false) {
-          document.body.classList.add('modal-hidden');
-          modalContainer.classList.add('modal-overflow');
-        } else {
-          document.body.classList.remove('modal-hidden');
-          modalContainer.classList.remove('modal-overflow');
-        }
+      let modalContainer = document.getElementById('sign-up-modal-container');
+      if (this.state.signUpForm === false) {
+        document.body.classList.add('modal-hidden');
+        modalContainer.classList.add('modal-overflow');
+      } else {
+        document.body.classList.remove('modal-hidden');
+        modalContainer.classList.remove('modal-overflow');
       }
     }
     this.setState({
-      popup: !this.state.popup,
+      signUpForm: !this.state.signUpForm,
     })
   }
 
   render() {
-    const { xDirection, yDirection, popup } = this.state;
+    const { xDirection, yDirection, popup, signUpForm } = this.state;
     return (
       <>
-      <section
+      {/* <section
         id='non-us-modal-container'
         style={
           xDirection < 426 ? {top: `${yDirection - 650}px`} :
@@ -65,6 +65,20 @@ class UtilityNav extends React.Component {
       <NonUSPopUp
         handlePopUp={this.handlePopUp}
         popup={popup}
+      /> */}
+      <section
+        id='sign-up-modal-container'
+        // style={
+        //   xDirection < 426 ? {top: `${yDirection - 650}px`} :
+        //   xDirection < 769 ? {top: `${yDirection - 450}px`} :
+        //   {top: `${yDirection - 350}px`}
+        // }
+        onClick={() => this.handlePopUp()}
+      >
+      </section>
+      <SignUpForm
+        handlePopUp={this.handlePopUp}
+        signUpForm={signUpForm}
       />
         <section className='utility-nav'>
           <Container>
@@ -104,12 +118,8 @@ class UtilityNav extends React.Component {
                     <Col lg={{span: 4}} className='utility-right-col'>
                       <div className='utility-nav-end-container'>
                         <ul>
-                          <li>
-                            <a
-                              href=''
-                            >
-                              Request a Representative
-                            </a>
+                          <li onClick={() => this.handlePopUp()}>
+                            Request a Representative
                           </li>
                         </ul>
                       </div>
