@@ -10,7 +10,7 @@ const HeaderDropdownData = [
       },
       {
         listName: 'Patient Support Program',
-        listLink: '/resources/'
+        listLink: '/resources/#resource-patient-content'
       },
     ]
   },
