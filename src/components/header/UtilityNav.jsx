@@ -52,27 +52,8 @@ class UtilityNav extends React.Component {
     const { xDirection, yDirection, popup, signUpForm } = this.state;
     return (
       <>
-      {/* <section
-        id='non-us-modal-container'
-        style={
-          xDirection < 426 ? {top: `${yDirection - 650}px`} :
-          xDirection < 769 ? {top: `${yDirection - 450}px`} :
-          {top: `${yDirection - 350}px`}
-        }
-        onClick={() => this.handlePopUp()}
-      >
-      </section>
-      <NonUSPopUp
-        handlePopUp={this.handlePopUp}
-        popup={popup}
-      /> */}
       <section
         id='sign-up-modal-container'
-        // style={
-        //   xDirection < 426 ? {top: `${yDirection - 650}px`} :
-        //   xDirection < 769 ? {top: `${yDirection - 450}px`} :
-        //   {top: `${yDirection - 350}px`}
-        // }
         onClick={() => this.handlePopUp()}
       >
       </section>
