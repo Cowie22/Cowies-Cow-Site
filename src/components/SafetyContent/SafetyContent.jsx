@@ -12,7 +12,7 @@ class SafetyContent extends React.Component {
   }
 
   componentDidMount = () => {
-    this.props.handleActiveHeaderNav('safety');
+    this.props.handleActiveHeaderDropdown('safety');
   }
 
   render() {

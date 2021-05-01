@@ -12,7 +12,7 @@ class MOAContent extends React.Component {
   }
 
   componentDidMount = () => {
-    this.props.handleActiveHeaderNav('moa');
+    this.props.handleActiveHeaderDropdown('moa');
   }
 
   render() {

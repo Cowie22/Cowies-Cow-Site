@@ -9,8 +9,8 @@ const defaultState = {
   isExitRampOpen: false,
   handleIsExitRampOpen: () => {},
   externalUrl: '',
-  activeHeaderNav: '',
-  handleActiveHeaderNav: () => {},
+  activeHeaderDropdown: '',
+  handleActiveHeaderDropdown: () => {},
   tabLink: '',
   tabBool: '',
   handleTabLink: () => {},
@@ -40,10 +40,10 @@ class AppProvider extends Component {
         })
       },
       externalUrl: '',
-      activeHeaderNav: '',
-      handleActiveHeaderNav: (val) => {
+      activeHeaderDropdown: '',
+      handleActiveHeaderDropdown: (val) => {
         this.setState({
-          activeHeaderNav: val,
+          activeHeaderDropdown: val,
         })
       },
       tabLink: '',

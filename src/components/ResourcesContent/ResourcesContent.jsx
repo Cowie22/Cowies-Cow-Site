@@ -12,7 +12,7 @@ class ResourcesContent extends React.Component {
   }
 
   componentDidMount = () => {
-    this.props.handleActiveHeaderNav('resources');
+    this.props.handleActiveHeaderDropdown('resources');
   }
 
   render() {

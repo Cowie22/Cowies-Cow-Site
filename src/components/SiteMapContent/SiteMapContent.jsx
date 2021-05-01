@@ -13,7 +13,7 @@ class SiteMapContent extends React.Component {
   }
 
   componentDidMount = () => {
-    this.props.handleActiveHeaderNav('');
+    this.props.handleActiveHeaderDropdown('');
   }
 
   render() {

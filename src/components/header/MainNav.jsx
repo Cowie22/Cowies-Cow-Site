@@ -4,9 +4,10 @@ import { Container, Row, Col } from 'react-bootstrap'
 import AppProvider, { AppContext } from '../../contexts/state'
 
 import ExternalLink from '../exitramp/ExternalLink.jsx'
+import HeaderDropdown from '../HeaderDropdown/HeaderDropdown'
+import HeaderDropdownData from '../HeaderDropdown/HeaderDropdownData'
 
 import logo from '../../assets/images/header-logo.svg'
-import headerProviderIconMobile from '../../assets/images/header-provider-icon-mobile.svg'
 
 export default props => {
   const [isNavOpen, setNavOpen] = useState(false)
@@ -30,7 +31,8 @@ export default props => {
   return (
     <AppContext.Consumer>
       {(context) => {
-        const { activeHeaderNav, handleActiveHeaderNav, handleActiveSite } = context;
+        const { activeHeaderDropdown, handleActiveHeaderDropdown, handleActiveSite } = context;
+        console.log('FIRST', activeHeaderDropdown)
         return (
           <>
             <section className='main-nav'>
@@ -48,13 +50,20 @@ export default props => {
                       />
                     </Link>
                   </Col>
-                  <Col xl={{span: 2, offset: 4}} lg={{span: 3, offset: 2}}>
+                  <Col xl={{span: 4, offset: 2}} lg={{span: 5, offset: 0}}>
                     <nav className='header-nav-container'>
                       <ul>
-                        <li>
-                          <Link to='/resources/'>
-                            Access & Resources
-                          </Link>
+                        <li
+                          onMouseEnter={() => handleActiveHeaderDropdown('resources')}
+                          onMouseLeave={() => handleActiveHeaderDropdown('')}
+                        >
+                          Access & Resources
+                        </li>
+                        <li
+                          onMouseEnter={() => handleActiveHeaderDropdown('test')}
+                          onMouseLeave={() => handleActiveHeaderDropdown('')}
+                        >
+                          TEST
                         </li>
                       </ul>
                     </nav>
@@ -76,6 +85,12 @@ export default props => {
                     </div>
                   </Col>
                 </Row>
+                  {/* <div className={activeHeaderDropdown !== '' ? 'header-dropdown' : 'header-dropdown-hidden'}> */}
+                  <HeaderDropdown
+                      activeHeaderDropdown={activeHeaderDropdown}
+                      HeaderDropdownData={HeaderDropdownData}
+                    />
+                  {/* </div> */}
               </Container>
             </section>
           </>

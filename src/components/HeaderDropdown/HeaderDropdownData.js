@@ -1,0 +1,32 @@
+import React from 'react'
+
+const HeaderDropdownData = [
+  {
+    name: 'resources',
+    list: [
+      {
+        listName: 'Access Information',
+        listLink: ''
+      },
+      {
+        listName: 'Patient Support Program',
+        listLink: ''
+      },
+    ]
+  },
+  {
+    name: 'test',
+    list: [
+      {
+        listName: 'Test Information',
+        listLink: ''
+      },
+      {
+        listName: 'Test Support Program',
+        listLink: ''
+      },
+    ]
+  },
+]
+
+export default HeaderDropdownData

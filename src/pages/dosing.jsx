@@ -15,12 +15,12 @@ class Dosing extends React.Component {
     return (
       <AppContext.Consumer>
         {(context) => {
-          const { handleActiveHeaderNav, handleTabLink, activeHeaderNav } = context;
+          const { handleActiveHeaderDropdown, handleTabLink, activeHeaderDropdown } = context;
           return (
             <DosingContent
-              handleActiveHeaderNav={handleActiveHeaderNav}
+              handleActiveHeaderDropdown={handleActiveHeaderDropdown}
               handleTabLink={handleTabLink}
-              activeHeaderNav={activeHeaderNav}
+              activeHeaderDropdown={activeHeaderDropdown}
             />
           )
         }}

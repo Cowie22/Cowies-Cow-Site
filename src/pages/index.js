@@ -15,12 +15,12 @@ class Home extends React.Component {
     return (
       <AppContext.Consumer>
         {(context) => {
-          const { handleActiveHeaderNav, handleTabLink, activeHeaderNav, HCPModalVisible, handleHCPModalVisible } = context;
+          const { handleActiveHeaderDropdown, handleTabLink, activeHeaderDropdown, HCPModalVisible, handleHCPModalVisible } = context;
           return (
             <HomeContent
-              handleActiveHeaderNav={handleActiveHeaderNav}
+              handleActiveHeaderDropdown={handleActiveHeaderDropdown}
               handleTabLink={handleTabLink}
-              activeHeaderNav={activeHeaderNav}
+              activeHeaderDropdown={activeHeaderDropdown}
               HCPModalVisible={HCPModalVisible}
               handleHCPModalVisible={handleHCPModalVisible}
             />

@@ -12,7 +12,7 @@ class DosingContent extends React.Component {
   }
 
   componentDidMount = () => {
-    this.props.handleActiveHeaderNav('dosing');
+    this.props.handleActiveHeaderDropdown('dosing');
   }
 
   render() {
