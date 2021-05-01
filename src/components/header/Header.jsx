@@ -72,7 +72,7 @@ class Header extends React.Component {
     return (
       <AppContext.Consumer>
         {(context) => {
-          const { isCoronaVisible, activeSite, selectionNav } = context;
+          const { isCoronaVisible, activeSite, selectionNav, activeHeaderDropdown, handleActiveHeaderDropdown } = context;
           return (
             prevYValue > yDirection || isNavOpen ?
               <div style={{top: 0, zIndex: 9997}} className='sticky-header'>
@@ -97,6 +97,8 @@ class Header extends React.Component {
                     setNavOpen={this.setNavOpen}
                     popup={popup}
                     handlePopUp={this.handlePopUp}
+                    activeHeaderDropdown={activeHeaderDropdown}
+                    handleActiveHeaderDropdown={handleActiveHeaderDropdown}
                   />
                 </header>
               </div>
@@ -108,6 +110,8 @@ class Header extends React.Component {
                     setNavOpen={this.setNavOpen}
                     popup={popup}
                     handlePopUp={this.handlePopUp}
+                    activeHeaderDropdown={activeHeaderDropdown}
+                    handleActiveHeaderDropdown={handleActiveHeaderDropdown}
                   />
                 </header>
               </div>

@@ -11,6 +11,8 @@ const defaultState = {
   externalUrl: '',
   activeHeaderDropdown: '',
   handleActiveHeaderDropdown: () => {},
+  activeHeaderDropdownData: '',
+  handleActiveHeaderDropdownData: () => {},
   tabLink: '',
   tabBool: '',
   handleTabLink: () => {},
@@ -44,6 +46,12 @@ class AppProvider extends Component {
       handleActiveHeaderDropdown: (val) => {
         this.setState({
           activeHeaderDropdown: val,
+        })
+      },
+      activeHeaderDropdownData: {list: ['placeholder']},
+      handleActiveHeaderDropdownData: (val) => {
+        this.setState({
+          activeHeaderDropdownData: val,
         })
       },
       tabLink: '',
