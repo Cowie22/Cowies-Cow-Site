@@ -16,8 +16,11 @@ class SignUpForm extends React.Component {
       firstName: '',
       lastName: '',
       email: '',
-      NPINumber: '',
+      confirmEmail: '',
+      zipCode: '',
       specialty: '',
+      role: '',
+      NPINumber: '',
       HCPProfession: 'waiting',
       validated: false,
       isHCP: false,
@@ -102,7 +105,7 @@ class SignUpForm extends React.Component {
     }
     if (form.checkValidity() === true && this.state.HCPProfession !== '') {
       event.preventDefault();
-      navigate('/thank-you');
+      // navigate('/thank-you');
     }
     this.setState({
       validated: true,
@@ -135,18 +138,6 @@ class SignUpForm extends React.Component {
     })
   }
 
-  handleMovePlaceholder = (val) => {
-    this.setState({
-      movePlaceholder: val,
-    })
-  }
-
-  handleReturnPlaceholder = () => {
-    this.setState({
-      movePlaceholder: 0,
-    })
-  }
-
   handleRadioClicked = () => {
     this.setState({
       radioClicked: true,
@@ -167,16 +158,19 @@ class SignUpForm extends React.Component {
       firstName,
       lastName,
       email,
+      confirmEmail,
+      zipCode,
+      specialty,
+      role,
       NPINumber,
       HCPProfession,
       radioClicked,
       submitClicked,
-      specialty,
       hovered,
     } = this.state
     const { signUpForm, handlePopUp } = this.props;
     return (
-      <section className={signUpForm ? 'sign-up-popup-overlay' : ''} onClick={() => handlePopUp()}>
+      <section className={signUpForm ? 'sign-up-popup-overlay' : ''}>
         <Container className='sign-up-form-container'>
           <Row>
             <Col lg={{span: 10, offset: 1}}>
@@ -223,7 +217,7 @@ class SignUpForm extends React.Component {
                           <Col lg={{span: 5, offset: 1}}>
                             <Form.Group controlId='validationCustom01'>
                               <Form.Label column className={movePlaceholder === 1 ? 'first-name-focus' : firstName !== '' ? 'first-name-focus' : 'first-name'}>
-                                FIRST NAME*
+                                First Name*
                               </Form.Label>
                               <Form.Control
                                 type='text'
@@ -231,14 +225,12 @@ class SignUpForm extends React.Component {
                                 value={firstName}
                                 required
                                 onChange={this.handleInputChange}
-                                onFocus={() => this.handleMovePlaceholder(1)}
-                                onBlur={this.handleReturnPlaceholder}
                               />
                               <Form.Control.Feedback type='invalid'>Please enter your first name</Form.Control.Feedback>
                             </Form.Group>
                             <Form.Group controlId='formHorizontalEmail'>
-                              <Form.Label column className={movePlaceholder === 3 ? 'email-focus' : email !== '' ? 'email-focus' : 'email'}>
-                                EMAIL ADDRESS*
+                              <Form.Label column>
+                                Email*
                               </Form.Label>
                               <Form.Control
                                 type='email'
@@ -246,18 +238,40 @@ class SignUpForm extends React.Component {
                                 value={email}
                                 required
                                 onChange={this.handleInputChange}
-                                onFocus={() => this.handleMovePlaceholder(3)}
-                                onBlur={this.handleReturnPlaceholder}
                               />
                               <Form.Control.Feedback type='invalid'>
                                 {email === '' ? 'Please enter your email address' : 'Please enter a valid email address'}
                               </Form.Control.Feedback>
                             </Form.Group>
+                            <Form.Group controlId='form-hcp-dropdown'>
+                              {/* <Form.Label column>What is your specialty?*</Form.Label> */}
+                              <select as='select' required name='specialty' onChange={this.handleInputChange} className='form-dropdown-select'>
+                                <option selected>Select Specialty*</option>
+                                <option value='Neurologist'>Neurologist</option>
+                                <option value='Headache Specialist'>Headache Specialist</option>
+                                <option value='Pain Specialist'>Pain Specialist</option>
+                                <option value='Primary Care'>Primary Care</option>
+                                <option value='NP/PA'>NP/PA</option>
+                                <option value='Registered Nurse'>Registered Nurse</option>
+                                <option value='Allergy & Immunology'>Allergy & Immunology</option>
+                                <option value='Anesthesiology'>Anesthesiology</option>
+                                <option value='Dentistry'>Dentistry</option>
+                              </select>
+                              {HCPProfession === '' && submitClicked ?
+                                <p id='dropdown-invalid-warning'>
+                                  Please select one option
+                                </p>
+                                :
+                                <div>
+
+                                </div>
+                              }
+                            </Form.Group>
                           </Col>
                           <Col lg={{span: 5, offset: 0}}>
                             <Form.Group controlId='validationCustom02'>
-                              <Form.Label column className={movePlaceholder === 2 ? 'last-name-focus' : lastName !== '' ? 'last-name-focus' : 'last-name'}>
-                                LAST NAME*
+                              <Form.Label column>
+                                Last Name*
                               </Form.Label>
                               <Form.Control
                                 type='text'
@@ -265,195 +279,103 @@ class SignUpForm extends React.Component {
                                 value={lastName}
                                 required
                                 onChange={this.handleInputChange}
-                                onFocus={() => this.handleMovePlaceholder(2)}
-                                onBlur={this.handleReturnPlaceholder}
                               />
                               <Form.Control.Feedback type='invalid'>Please enter your last name</Form.Control.Feedback>
                             </Form.Group>
-                            <Form.Group controlId='formHorizontalEmail'>
-                              <Form.Label column className={movePlaceholder === 3 ? 'email-focus' : email !== '' ? 'email-focus' : 'email'}>
+                            <Form.Group controlId='formHorizontalConfirmEmail'>
+                              <Form.Label column>
                                 Confirm Email*
                               </Form.Label>
                               <Form.Control
                                 type='email'
-                                name='email'
-                                value={email}
+                                name='confirmEmail'
+                                value={confirmEmail}
                                 required
                                 onChange={this.handleInputChange}
-                                onFocus={() => this.handleMovePlaceholder(3)}
-                                onBlur={this.handleReturnPlaceholder}
                               />
                               <Form.Control.Feedback type='invalid'>
                                 {email === '' ? 'Please enter your email address' : 'Please enter a valid email address'}
                               </Form.Control.Feedback>
                             </Form.Group>
+                            <Form.Group controlId='form-hcp-dropdown'>
+                              {/* <Form.Label column>What is your specialty?*</Form.Label> */}
+                              <select as='select' required name='role' onChange={this.handleInputChange} className='form-dropdown-select'>
+                                <option selected>Select Role*</option>
+                                <option value='Neurologist'>Neurologist</option>
+                                <option value='Headache Specialist'>Headache Specialist</option>
+                                <option value='Pain Specialist'>Pain Specialist</option>
+                                <option value='Primary Care'>Primary Care</option>
+                                <option value='NP/PA'>NP/PA</option>
+                                <option value='Registered Nurse'>Registered Nurse</option>
+                                <option value='Allergy & Immunology'>Allergy & Immunology</option>
+                                <option value='Anesthesiology'>Anesthesiology</option>
+                                <option value='Dentistry'>Dentistry</option>
+                              </select>
+                              {HCPProfession === '' && submitClicked ?
+                                <p id='dropdown-invalid-warning'>
+                                  Please select one option
+                                </p>
+                                :
+                                <div>
+
+                                </div>
+                              }
+                            </Form.Group>
                           </Col>
                         </Row>
-                          {/* <fieldset>
-                            <Form.Group>
-                              <Form.Label as='legend' column>
-                                What is your interest in migraine?*
+                        <Row>
+                          <Col lg={{span: 6, offset: 3}}>
+                            <Form.Group controlId='validationCustom03'>
+                              <Form.Label column>
+                                ZIP Code*
                               </Form.Label>
-                              <Col>
-                                <Form.Check
-                                  type='radio'
-                                  label='I am a medical professional'
-                                  name='specialty'
-                                  value='1'
-                                  id='specialty1'
-                                  required
-                                  onChange={this.handleInputChange}
-                                  onClick={() => {
-                                    this.handleIsHCP();
-                                    this.handleRadioClicked();
-                                  }}
-                                />
-                                <Form.Check
-                                  type='radio'
-                                  label='I have migraine'
-                                  name='specialty'
-                                  value='2'
-                                  id='specialty2'
-                                  required
-                                  onChange={this.handleInputChange}
-                                  onClick={() => {
-                                    this.handleIsNotHCP();
-                                    this.handleRadioClicked();
-                                  }}
-                                />
-                                <Form.Check
-                                  type='radio'
-                                  label='I know someone with migraine'
-                                  name='specialty'
-                                  value='3'
-                                  id='specialty3'
-                                  required
-                                  onChange={this.handleInputChange}
-                                  onClick={() => {
-                                    this.handleIsNotHCP();
-                                    this.handleRadioClicked();
-                                  }}
-                                />
-                                <Form.Check
-                                  type='radio'
-                                  label='Other'
-                                  name='specialty'
-                                  value='4'
-                                  id='specialty4'
-                                  required
-                                  onChange={this.handleInputChange}
-                                  onClick={() => {
-                                    this.handleIsNotHCP();
-                                    this.handleRadioClicked();
-                                  }}
-                                  // feedback='Please select'
-                                >
-
+                              <Form.Control
+                                type='text'
+                                name='zipCode'
+                                value={zipCode}
+                                required
+                                onChange={this.handleInputChange}
+                              />
+                              <Form.Control.Feedback type='invalid'>Please enter your last name</Form.Control.Feedback>
+                            </Form.Group>
+                          </Col>
+                        </Row>
+                        <Row>
+                          <Col lg={{span: 10, offset: 1}}>
+                            <Form.Group controlId='validationCustom03'>
+                              <Col className='form-checkbox-col'>
+                                <Form.Check type='checkbox' id={`terms-and-conditions`}>
+                                  <Form.Check.Input type='checkbox' required />
+                                  <Form.Check.Label className='privacy-policy-container'>
+                                    <p className='upper-concent-content'>
+                                      By completing and submitting this form, you certify that you are a licensed
+                                      healthcare provider, and you agree to have a Myfembree representative contact
+                                      you. You also understand and agree that any information you provide on this
+                                      form will be used in accordance with the Myovant {' '}
+                                      <a className='pink extra-bold' href=''>Privacy Policy</a> and you agree to
+                                      the <a className='pink extra-bold' href=''>Terms of Use</a> for information
+                                      collected on this form.*
+                                    </p>
+                                  </Form.Check.Label>
+                                  <Form.Control.Feedback type='invalid' className='concent-feedback-label'>Please check the box to proceed</Form.Control.Feedback>
                                 </Form.Check>
                               </Col>
-                            {!radioClicked && submitClicked ?
-                              <p id='radio-invalid-warning'>
-                                Please select one option
-                              </p>
-                              :
-                              <div>
-
+                            </Form.Group>
+                          </Col>
+                        </Row>
+                        <Row>
+                          <Col lg={{span: 4, offset: 4}}>
+                            <Form.Group className='form-submit-btn-row'>
+                              <div className='cta-btn-container form-submit-btn-container'>
+                                <Button type='submit' id='form-submit-btn' className='cta-btn pink-btn'>
+                                  Sign Up Now
+                                </Button>
                               </div>
-                            }
                             </Form.Group>
-                          </fieldset> */}
-                          {/* {isHCP ?
-                          <div>
-                            <Form.Group controlId='form-hcp-dropdown'>
-                              <Form.Label column>What is your specialty?*</Form.Label>
-                              <Col>
-                                <select as='select' required name='HCPProfession' onChange={this.handleInputChange} className='form-dropdown-select'>
-                                  <option selected>Select one</option>
-                                  <option value='Neurologist'>Neurologist</option>
-                                  <option value='Headache Specialist'>Headache Specialist</option>
-                                  <option value='Pain Specialist'>Pain Specialist</option>
-                                  <option value='Primary Care'>Primary Care</option>
-                                  <option value='NP/PA'>NP/PA</option>
-                                  <option value='Registered Nurse'>Registered Nurse</option>
-                                  <option value='Allergy & Immunology'>Allergy & Immunology</option>
-                                  <option value='Anesthesiology'>Anesthesiology</option>
-                                  <option value='Dentistry'>Dentistry</option>
-                                  <option value='Dermatology'>Dermatology</option>
-                                  <option value='Diagnostic Radiology'>Diagnostic Radiology</option>
-                                  <option value='Emergency Medicine'>Emergency Medicine</option>
-                                  <option value='Internal Medicine'>Internal Medicine</option>
-                                  <option value='Medical Genetics'>Medical Genetics</option>
-                                  <option value='Nuclear Medicine'>Nuclear Medicine</option>
-                                  <option value='Obstetrics & Gynecology'>Obstetrics & Gynecology</option>
-                                  <option value='Ophthalmology'>Ophthalmology</option>
-                                  <option value='Pathology'>Pathology</option>
-                                  <option value='Physical Medicine & Rehabilitation'>Physical Medicine & Rehabilitation</option>
-                                  <option value='Preventative Medicine'>Preventative Medicine</option>
-                                  <option value='Psychiatry'>Psychiatry</option>
-                                  <option value='Radiation Oncology'>Radiation Oncology</option>
-                                  <option value='Surgery'>Surgery</option>
-                                  <option value='Urology'>Urology</option>
-                                  <option value='Other medical professional'>Other medical professional</option>
-                                </select>
-                                {HCPProfession === '' && submitClicked ?
-                                  <p id='dropdown-invalid-warning'>
-                                    Please select one option
-                                  </p>
-                                  :
-                                  <div>
-
-                                  </div>
-                                }
-                              </Col>
-                            </Form.Group>
-                            <Form.Group controlId='form-NPI-number'>
-                              <Form.Label column className={movePlaceholder === 4 ? 'NPI-Number-focus' : NPINumber !== '' ? 'NPI-Number-focus' : 'NPI-Number'}>
-                                NPI number
-                              </Form.Label>
-                              <Col>
-                                <Form.Control
-                                  size='lg'
-                                  type='text'
-                                  name='NPINumber'
-                                  value={NPINumber}
-                                  onChange={this.handleInputChange}
-                                  onFocus={() => this.handleMovePlaceholder(4)}
-                                  onBlur={this.handleReturnPlaceholder}
-                                />
-                              </Col>
-                            </Form.Group>
-                          </div>
-                            :
-                            <div>
-
-                            </div>
-                          } */}
-                          {/* <Form.Group controlId='validationCustom03'>
-                            <Col>
-                              <Form.Check type='checkbox' id={`terms-and-conditions`}>
-                                <Form.Check.Input type='checkbox' required />
-                                <Form.Check.Label className='privacy-policy-container'>
-                                  <p className='upper-concent-content'>
-                                    By checking this box, you are authorizing Lundbeck, its agents, or vendors acting on
-                                    behalf of Lundbeck to send you information regarding Lundbeck and its products and
-                                    services, send you additional health, medical, or patient education information,
-                                    and contact you to seek your participation in other surveys or programs.
-                                  </p>
-                                  <br />
-                                    Lundbeck will not sell the data you provide to any third party, at any time. View our {' '}
-                                  <a href='https://www.lundbeck.com/us/terms-of-use-and-privacy-policy' id='form-privacy-policy-link' target='_blank'>Terms of Use and Privacy Policy</a>.
-                                </Form.Check.Label>
-                                <Form.Control.Feedback type='invalid' className='concent-feedback-label'>Please check the box to proceed</Form.Control.Feedback>
-                              </Form.Check>
-                            </Col>
-                          </Form.Group> */}
-                          {/* <Form.Group className='form-submit-btn-row'>
-                            <Col lg={{ span: 6, offset: 3 }} md={{ span: 6, offset: 3 }} xs={{span: 12}} className='form-submit-btn-col'>
-                              <Button type='submit' id='form-submit-btn'>SUBMIT</Button>
-                            </Col>
-                          </Form.Group> */}
-                        </Form>
-                      </div>
+                          </Col>
+                        </Row>
+                      </Form>
+                    </div>
                   </Col>
                 </Row>
               </div>
