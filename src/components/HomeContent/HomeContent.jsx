@@ -48,7 +48,7 @@ class HomeContent extends React.Component {
           <Container>
             <Row>
               <Col lg={{span: 9, offset: 0}} xs={{span: 12, offset: 0}}>
-                <h1 className='medium-green top-title'>
+                <h1 className='top-title'>
                   NOW APPROVED
                 </h1>
               </Col>

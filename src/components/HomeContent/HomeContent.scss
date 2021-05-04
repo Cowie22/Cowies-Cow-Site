@@ -9,6 +9,9 @@
   .top-title {
     letter-spacing: 0.5em;
     font-weight: 400;
+    background: linear-gradient(90deg, rgba(175,212,196,1) 0%, rgba(255,255,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .home-sub-title {
     padding: 16px 0 24px 0;
