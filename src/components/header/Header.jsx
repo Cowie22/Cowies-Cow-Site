@@ -74,7 +74,7 @@ class Header extends React.Component {
         {(context) => {
           const { isCoronaVisible, activeSite, selectionNav } = context;
           return (
-            prevYValue > yDirection || isNavOpen ?
+            yDirection > 0 || isNavOpen ?
               <div style={{top: 0, zIndex: 9997}} className='sticky-header'>
                 <header className="main-header">
                   {/* Modal popup here */}

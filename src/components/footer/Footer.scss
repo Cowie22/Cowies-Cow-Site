@@ -14,6 +14,7 @@ footer {
           color: $pink;
           transition: color .5s;
           transition-delay: .2s;
+          font-family: $sans;
           &:hover {
             cursor: pointer;
             color: $purple;
@@ -32,12 +33,12 @@ footer {
     justify-content: flex-end;
     align-items: flex-start;
     .footer-logo {
-      &:last-of-type {
-        margin-left: 16px;
-      }
       &:hover {
         cursor: pointer;
       }
+    }
+    .footer-logo-left {
+      margin-left: 16px;
     }
   }
 }
@@ -61,8 +62,14 @@ footer {
         }
       }
     }
-  }
-  .footer-logo-container {
-    padding-bottom: 24px;
+    .footer-logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 24px;
+      .footer-logo-left {
+        margin-left: 16px;
+      }
+    }
   }
 }

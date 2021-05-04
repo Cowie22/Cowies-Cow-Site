@@ -52,9 +52,9 @@ class HCPModal extends React.Component {
                     </div>
                   </Col>
                 </Row>
-                <h6 className='text-center'>
+                <p className='text-center'>
                   The information contained in this website is intended for US healthcare professionals only.
-                </h6>
+                </p>
                 <h3 className='blue text-center'>
                   Are you a US healthcare professional?
                 </h3>
