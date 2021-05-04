@@ -230,19 +230,6 @@ class MainNav extends React.Component {
             </Row>
           </Container>
           </section>
-          <section className='mobile-register-btn d-block d-lg-none'>
-            <a href=''>
-              <Container>
-                <Row>
-                  <Col>
-                    <p className='white text-center'>
-                      Register for Launch Broadcast
-                    </p>
-                  </Col>
-                </Row>
-              </Container>
-            </a>
-          </section>
       </>
     )
   }

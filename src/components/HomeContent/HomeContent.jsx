@@ -46,6 +46,19 @@ class HomeContent extends React.Component {
           handleHCPModalVisible={handleHCPModalVisible}
           HCPModalVisible={HCPModalVisible}
         />
+        <section className='mobile-register-btn d-block d-lg-none'>
+          <a href=''>
+            <Container>
+              <Row>
+                <Col>
+                  <p className='white text-center'>
+                    Register for Launch Broadcast
+                  </p>
+                </Col>
+              </Row>
+            </Container>
+          </a>
+        </section>
         <section className='home-container'>
           <Container>
             <Row>
