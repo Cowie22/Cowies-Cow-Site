@@ -115,8 +115,27 @@
   }
 }
 
+.invalid-group {
+  .form-label {
+    color: #C70332;
+  }
+}
+
+.invalid-dropdown {
+  color: #C70332!important;
+}
+
+.invalid-feedback {
+  font-size: 14px;
+  line-height: 16px;
+  color: #C70332;
+  padding-top: 4px;
+  font-family: $sans;
+}
+
 .form-control.is-invalid, .was-validated .form-control:invalid {
   background-image: none;
+  border: 1px solid #C70332!important;
 }
 
 .form-control.is-invalid, .was-validated .form-control:valid {
@@ -157,16 +176,18 @@
 
 #radio-invalid-warning {
   width: 100%;
-  margin: 1.25rem 0 0 1.8rem;
-  font-size: 80%;
-  color: $red;
+  font-size: 14px;
+  line-height: 16px;
+  color: #C70332;
+  padding-top: 4px;
 }
 
 #dropdown-invalid-warning {
   width: 100%;
-  margin: 1.25rem 0 0 0rem;
-  font-size: 80%;
-  color: $red;
+  font-size: 14px;
+  line-height: 16px;
+  color: #C70332;
+  padding-top: 4px;
 }
 
 

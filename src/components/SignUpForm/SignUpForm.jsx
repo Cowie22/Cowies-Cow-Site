@@ -79,8 +79,8 @@ class SignUpForm extends React.Component {
         this.setState(newState);
       }
     }
-    else if (event.target.name === 'NPINumber') {
-      if ((!numsBool || event.target.value.length > 10) && event.target.value.length !== 0) {
+    else if (event.target.name === 'confirmEmail') {
+      if (event.target.value.length > 320) {
         event.preventDefault();
         event.stopPropagation();
       } else {
@@ -96,14 +96,14 @@ class SignUpForm extends React.Component {
 
   handleSubmit = (event) => {
     const form = event.currentTarget;
-    if (form.checkValidity() === false || this.state.HCPProfession === '') {
+    if (form.checkValidity() === false) {
       this.setState({
         submitClicked: true,
       })
       event.preventDefault();
       event.stopPropagation();
     }
-    if (form.checkValidity() === true && this.state.HCPProfession !== '') {
+    if (form.checkValidity() === true) {
       event.preventDefault();
       // navigate('/thank-you');
     }
@@ -115,9 +115,10 @@ class SignUpForm extends React.Component {
           firstName: this.state.firstName,
           lastName: this.state.lastName,
           email: this.state.email,
+          confirmEmail: this.state.confirmEmail,
+          zipCode: this.state.zipCode,
           specialty: this.state.specialty,
-          HCPProfession: this.state.HCPProfession,
-          NPINumber: this.state.NPINumber,
+          role: this.state.role,
         }
         this.postSignUpData(postData)
       }
@@ -212,11 +213,14 @@ class SignUpForm extends React.Component {
                         noValidate
                         validated={validated}
                         onSubmit={this.handleSubmit}
-                        >
+                      >
                         <Row>
                           <Col lg={{span: 5, offset: 1}}>
-                            <Form.Group controlId='validationCustom01'>
-                              <Form.Label column className={movePlaceholder === 1 ? 'first-name-focus' : firstName !== '' ? 'first-name-focus' : 'first-name'}>
+                            <Form.Group
+                              controlId='validationCustom01'
+                              className={(submitClicked === true && firstName === '') ? 'invalid-group' : ''}
+                            >
+                              <Form.Label column>
                                 First Name*
                               </Form.Label>
                               <Form.Control
@@ -226,9 +230,14 @@ class SignUpForm extends React.Component {
                                 required
                                 onChange={this.handleInputChange}
                               />
-                              <Form.Control.Feedback type='invalid'>Please enter your first name</Form.Control.Feedback>
+                              <Form.Control.Feedback type='invalid'>
+                                This field cannot be left blank.
+                              </Form.Control.Feedback>
                             </Form.Group>
-                            <Form.Group controlId='formHorizontalEmail'>
+                            <Form.Group
+                              controlId='formHorizontalEmail'
+                              className={(submitClicked === true && email === '') ? 'invalid-group' : ''}
+                            >
                               <Form.Label column>
                                 Email*
                               </Form.Label>
@@ -240,26 +249,29 @@ class SignUpForm extends React.Component {
                                 onChange={this.handleInputChange}
                               />
                               <Form.Control.Feedback type='invalid'>
-                                {email === '' ? 'Please enter your email address' : 'Please enter a valid email address'}
+                                {email === '' ? 'This field cannot be left blank.' : 'Please enter a valid email address.'}
                               </Form.Control.Feedback>
                             </Form.Group>
                             <Form.Group controlId='form-hcp-dropdown'>
                               {/* <Form.Label column>What is your specialty?*</Form.Label> */}
-                              <select as='select' required name='specialty' onChange={this.handleInputChange} className='form-dropdown-select'>
+                              <select
+                                as='select'
+                                required
+                                name='specialty'
+                                onChange={this.handleInputChange}
+                                className={(specialty === '' && submitClicked) ? 'form-dropdown-select invalid-dropdown' : 'form-dropdown-select'}
+                              >
                                 <option selected>Select Specialty*</option>
-                                <option value='Neurologist'>Neurologist</option>
-                                <option value='Headache Specialist'>Headache Specialist</option>
-                                <option value='Pain Specialist'>Pain Specialist</option>
-                                <option value='Primary Care'>Primary Care</option>
-                                <option value='NP/PA'>NP/PA</option>
-                                <option value='Registered Nurse'>Registered Nurse</option>
-                                <option value='Allergy & Immunology'>Allergy & Immunology</option>
-                                <option value='Anesthesiology'>Anesthesiology</option>
-                                <option value='Dentistry'>Dentistry</option>
+                                <option value='Gynecologic Oncology'>Gynecologic Oncology</option>
+                                <option value='Reproductive Endocrinology'>Reproductive Endocrinology</option>
+                                <option value='Maternal-Fetal Medicine'>Maternal-Fetal Medicine</option>
+                                <option value='Urogynecology'>Urogynecology</option>
+                                <option value='Generalist'>Generalist</option>
+                                <option value='Other'>Other</option>
                               </select>
-                              {HCPProfession === '' && submitClicked ?
+                              {specialty === '' && submitClicked ?
                                 <p id='dropdown-invalid-warning'>
-                                  Please select one option
+                                  Please select a specialty.
                                 </p>
                                 :
                                 <div>
@@ -269,7 +281,10 @@ class SignUpForm extends React.Component {
                             </Form.Group>
                           </Col>
                           <Col lg={{span: 5, offset: 0}}>
-                            <Form.Group controlId='validationCustom02'>
+                            <Form.Group
+                              controlId='validationCustom02'
+                              className={(submitClicked === true && lastName === '') ? 'invalid-group' : ''}
+                            >
                               <Form.Label column>
                                 Last Name*
                               </Form.Label>
@@ -280,9 +295,14 @@ class SignUpForm extends React.Component {
                                 required
                                 onChange={this.handleInputChange}
                               />
-                              <Form.Control.Feedback type='invalid'>Please enter your last name</Form.Control.Feedback>
+                              <Form.Control.Feedback type='invalid'>
+                                This field cannot be left blank.
+                              </Form.Control.Feedback>
                             </Form.Group>
-                            <Form.Group controlId='formHorizontalConfirmEmail'>
+                            <Form.Group
+                              controlId='formHorizontalConfirmEmail'
+                              className={(submitClicked === true && confirmEmail === '') ? 'invalid-group' : ''}
+                            >
                               <Form.Label column>
                                 Confirm Email*
                               </Form.Label>
@@ -294,26 +314,27 @@ class SignUpForm extends React.Component {
                                 onChange={this.handleInputChange}
                               />
                               <Form.Control.Feedback type='invalid'>
-                                {email === '' ? 'Please enter your email address' : 'Please enter a valid email address'}
+                                {confirmEmail !== email ? 'Confirmation email does not match email.' : 'This field cannot be left blank.'}
                               </Form.Control.Feedback>
                             </Form.Group>
                             <Form.Group controlId='form-hcp-dropdown'>
                               {/* <Form.Label column>What is your specialty?*</Form.Label> */}
-                              <select as='select' required name='role' onChange={this.handleInputChange} className='form-dropdown-select'>
+                              <select
+                                as='select'
+                                required
+                                name='role'
+                                onChange={this.handleInputChange}
+                                className={(role === '' && submitClicked) ? 'form-dropdown-select invalid-dropdown' : 'form-dropdown-select'}
+                              >
                                 <option selected>Select Role*</option>
-                                <option value='Neurologist'>Neurologist</option>
-                                <option value='Headache Specialist'>Headache Specialist</option>
-                                <option value='Pain Specialist'>Pain Specialist</option>
-                                <option value='Primary Care'>Primary Care</option>
-                                <option value='NP/PA'>NP/PA</option>
-                                <option value='Registered Nurse'>Registered Nurse</option>
-                                <option value='Allergy & Immunology'>Allergy & Immunology</option>
-                                <option value='Anesthesiology'>Anesthesiology</option>
-                                <option value='Dentistry'>Dentistry</option>
+                                <option value='Physician'>Physician</option>
+                                <option value='Physician Assistant'>Physician Assistant</option>
+                                <option value='Nurse'>Nurse</option>
+                                <option value='Nurse Practitioner'>Nurse Practitioner</option>
                               </select>
-                              {HCPProfession === '' && submitClicked ?
+                              {role === '' && submitClicked ?
                                 <p id='dropdown-invalid-warning'>
-                                  Please select one option
+                                  Please select a role.
                                 </p>
                                 :
                                 <div>
@@ -325,7 +346,10 @@ class SignUpForm extends React.Component {
                         </Row>
                         <Row>
                           <Col lg={{span: 6, offset: 3}}>
-                            <Form.Group controlId='validationCustom03'>
+                            <Form.Group
+                              controlId='validationCustom03'
+                              className={(submitClicked === true && zipCode === '') ? 'invalid-group' : ''}
+                            >
                               <Form.Label column>
                                 ZIP Code*
                               </Form.Label>
@@ -336,7 +360,9 @@ class SignUpForm extends React.Component {
                                 required
                                 onChange={this.handleInputChange}
                               />
-                              <Form.Control.Feedback type='invalid'>Please enter your last name</Form.Control.Feedback>
+                              <Form.Control.Feedback type='invalid'>
+                                This field cannot be left blank.
+                              </Form.Control.Feedback>
                             </Form.Group>
                           </Col>
                         </Row>
@@ -352,12 +378,15 @@ class SignUpForm extends React.Component {
                                       healthcare provider, and you agree to have a Myfembree representative contact
                                       you. You also understand and agree that any information you provide on this
                                       form will be used in accordance with the Myovant {' '}
-                                      <a className='pink extra-bold' href=''>Privacy Policy</a> and you agree to
-                                      the <a className='pink extra-bold' href=''>Terms of Use</a> for information
-                                      collected on this form.*
+                                      <a className='pink extra-bold' href='https://www.myovant.com/privacy-policy/'>
+                                      Privacy Policy</a> and you agree to the {' '}
+                                      <a className='pink extra-bold' href='https://www.myovant.com/terms-of-use/'>
+                                      Terms of Use</a> for information collected on this form.*
                                     </p>
                                   </Form.Check.Label>
-                                  <Form.Control.Feedback type='invalid' className='concent-feedback-label'>Please check the box to proceed</Form.Control.Feedback>
+                                  <Form.Control.Feedback type='invalid' className='concent-feedback-label'>
+                                    Please provide information.
+                                  </Form.Control.Feedback>
                                 </Form.Check>
                               </Col>
                             </Form.Group>
