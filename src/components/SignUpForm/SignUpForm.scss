@@ -229,6 +229,12 @@
 }
 
 @media screen and (max-width : 768px) {
+  .thank-you-popup-col {
+    height: 300px;
+    p {
+      padding: 0;
+    }
+  }
   .sign-up-form-container.container {
     .sign-up-form-title {
       padding: 0 40px 0px 10px;

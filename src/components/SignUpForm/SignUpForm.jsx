@@ -21,13 +21,8 @@ class SignUpForm extends React.Component {
       specialty: '',
       role: '',
       thankYou: false,
-      NPINumber: '',
-      HCPProfession: 'waiting',
       validated: false,
-      isHCP: false,
       count: 0,
-      movePlaceholder: 0,
-      radioClicked: false,
       submitClicked: false,
       hovered: false,
     }
@@ -46,7 +41,6 @@ class SignUpForm extends React.Component {
     let lastVal = event.target.value.slice(-1);
 
     const letters = new RegExp(/^[a-zA-Z]/.test(lastVal)).toString();
-    console.log(letters)
     let lettersBool = letters === '/false/' ? false : true;
 
     const nums = new RegExp(/\d+/g.test(lastVal)).toString();
@@ -129,26 +123,6 @@ class SignUpForm extends React.Component {
     });
   };
 
-  handleIsHCP = () => {
-    this.setState({
-      isHCP: true,
-      HCPProfession: '',
-    })
-  }
-
-  handleIsNotHCP = () => {
-    this.setState({
-      isHCP: false,
-      HCPProfession: 'waiting',
-    })
-  }
-
-  handleRadioClicked = () => {
-    this.setState({
-      radioClicked: true,
-    })
-  }
-
   handleHovered = (val) => {
     this.setState({
       hovered: val,
@@ -158,8 +132,6 @@ class SignUpForm extends React.Component {
   render() {
     const {
       validated,
-      isHCP,
-      movePlaceholder,
       firstName,
       lastName,
       email,
@@ -168,14 +140,10 @@ class SignUpForm extends React.Component {
       specialty,
       role,
       thankYou,
-      NPINumber,
-      HCPProfession,
-      radioClicked,
       submitClicked,
       hovered,
     } = this.state
     const { signUpForm, handlePopUp } = this.props;
-    console.log('here', thankYou)
     return (
       <section className={signUpForm ? 'sign-up-popup-overlay' : ''}>
         <Container className='sign-up-form-container'>
@@ -443,7 +411,7 @@ class SignUpForm extends React.Component {
                   </Col>
                 </Row>
                 <Row>
-                  <Col lg={{span: 10, offset: 1}}>
+                  <Col lg={{span: 10, offset: 1}} xs={{span: 10, offset: 1}}>
                     <h2 className='blue text-center'>
                       Thank You
                     </h2>

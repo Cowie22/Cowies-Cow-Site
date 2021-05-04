@@ -15,6 +15,23 @@ class MainNav extends React.Component {
     super(props);
     this.state = {
       currentData: {list: ['placeholder']},
+      isNavOpen: false,
+    }
+  }
+
+  toggleNav = () => {
+    document.querySelector('.mobile-nav').scrollTop = 0;
+    this.setState({
+      isNavOpen: !this.state.isNavOpen,
+    })
+    let isiTray = document.getElementsByClassName('isi-tray')[0];
+    if (this.state.isNavOpen) {
+      console.log('here', document.body.classList)
+      document.body.classList.remove('scroll-none');
+      isiTray.classList.remove('hide');
+    } else {
+      document.body.classList.add('scroll-none');
+      isiTray.classList.add('hide');
     }
   }
 
@@ -50,7 +67,7 @@ class MainNav extends React.Component {
   }
 
   render() {
-    const { currentData } = this.state;
+    const { currentData, isNavOpen } = this.state;
     const {
       activeHeaderDropdown,
       handleActiveHeaderDropdown,
@@ -69,7 +86,7 @@ class MainNav extends React.Component {
         >
           <Container>
             <Row>
-              <Col lg={3} xs={5} className='navbar-header'>
+              <Col lg={3} xs={12} className='navbar-header'>
                 <Link
                   to='/'
                 >
@@ -84,8 +101,20 @@ class MainNav extends React.Component {
                     }}
                   />
                 </Link>
+                <button
+                  type='button'
+                  className={isNavOpen ? 'navbar-toggle active' : 'navbar-toggle'}
+                  onClick={() => {
+                    this.toggleNav()
+                  }}
+                >
+                  <span className='sr-only'>Toggle navigation</span>
+                  <span className='icon-bar' />
+                  <span className='icon-bar' />
+                  <span className='icon-bar' />
+                </button>
               </Col>
-              <Col xl={{span: 3, offset: 3}} lg={{span: 3, offset: 2}}>
+              <Col xl={{span: 3, offset: 3}} lg={{span: 3, offset: 2}} className='d-none d-lg-block'>
                 <nav className='header-nav-container'>
                   <ul>
                     <li
@@ -131,7 +160,7 @@ class MainNav extends React.Component {
               </Col>
             </Row>
               <div
-                className={activeHeaderDropdown === '' ? 'header-dropdown-hidden' : 'header-dropdown'}
+                className={activeHeaderDropdown === '' ? 'header-dropdown-hidden d-none d-lg-block' : 'header-dropdown d-none d-lg-block'}
                 onMouseLeave={() => {
                   handleActiveHeaderDropdown('');
                   this.handleNavHover();
@@ -148,6 +177,72 @@ class MainNav extends React.Component {
               </div>
           </Container>
         </section>
+        <section className={isNavOpen ? 'mobile-nav opened' : 'mobile-nav'}>
+          <Container>
+            <Row>
+              <Col className='mobile-nav-col'>
+                <div className='mobile-nav-list-container'>
+                  <ul className='mobile-nav-links'>
+                    <li
+                      onClick={() => {
+                        this.toggleNav()
+                      }}
+                    >
+                      <Link
+                        to='/resources/'
+                        className='mobile-nav-link'
+                        onClick={() => {
+                          handleActiveDropdownLink(0);
+                          handleActiveHeaderDropdown('');
+                        }}
+                      >
+                        Access & Resources
+                      </Link>
+                      <ul className='header-dropdown-ul'>
+                        <li
+                          onClick={() => {
+                            handleActiveDropdownLink(1);
+                            handleActiveHeaderDropdown('');
+                          }}
+                          className={(activeDropdownLink === 1 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
+                        >
+                          <Link to='/resources/#resource-access-content'>
+                            Access Information
+                          </Link>
+                        </li>
+                        <li
+                          onClick={() => {
+                            handleActiveDropdownLink(2);
+                            handleActiveHeaderDropdown('');
+                          }}
+                          className={(activeDropdownLink === 2 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
+                        >
+                          <Link to='/resources/#resource-patient-content'>
+                            Patient Support Program
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div className='mobile-nav-overlay'>&nbsp;</div>
+              </Col>
+            </Row>
+          </Container>
+          </section>
+          <section className='mobile-register-btn d-block d-lg-none'>
+            <a href=''>
+              <Container>
+                <Row>
+                  <Col>
+                    <p className='white text-center'>
+                      Register for Launch Broadcast
+                    </p>
+                  </Col>
+                </Row>
+              </Container>
+            </a>
+          </section>
       </>
     )
   }

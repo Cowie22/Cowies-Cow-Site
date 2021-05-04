@@ -161,11 +161,14 @@
   }
 
   .mobile-nav-overlay {
-    background-color: $white;
+    background: rgba(184, 215, 201, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     background-size: cover;
     height: 100vh;
     z-index: 9999;
     position: relative;
+    overflow: hidden;
   }
 
   .mobile-nav-links {
@@ -174,45 +177,42 @@
     flex-direction: column;
     width: 100%;
     list-style: none;
-    padding: 0;
+    padding: 0 0 0 32px;
 
     li {
       width: 100%;
       padding: 0 15px;
       transition: 0.2s all;
+      color: $pink;
 
       &:hover {
-        color: $red;
+        color: $pink;
         transition: 0.2s color;
       }
 
-      &:first-child {
-        margin-top: 15px;
-      }
-
       a {
-        color: $black;
+        color: $pink;
         display: block;
-        padding: 10px 0;
+        padding: 8px 0;
         text-decoration: none;
         font-size: 16px;
-        line-height: 18px;
+        line-height: 20px;
+        font-weight: 700;
       }
     }
   }
 
   .mobile-utility-links {
     border-top: 1px solid #ffffff;
-    padding: 8px 0 0 0;
+    padding: 0px 0 0 0;
     list-style: none;
 
     li {
       padding: 0 15px;
-      font-weight: 600;
       a {
         color: #ffffff;
         display: block;
-        padding: 8px 0;
+        padding: 4px 0;
         font-size: 14px;
         transition: 0.2s all;
         &:hover {
@@ -224,31 +224,64 @@
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     .mobile-nav-col {
-      padding-left: 0px;
-      .header-discussion-container {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        border-top: 2px solid #eaeaea;
-        border-bottom: 2px solid #eaeaea;
-        padding: 24px 0;
-        .header-discussion-icon {
-          padding-left: 8px;
+      padding: 0px;
+      height: 250px;
+      background: $white;
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+      .mobile-nav-list-container {
+        padding: 16px 0;
+        border-left: 5px solid $pink;
+        .header-dropdown-ul {
+          list-style: none;
+          padding: 0 32px 0 16px;
+          margin: 0;
+          li {
+            &:last-of-type {
+              padding-bottom: 0;
+            }
+            a {
+              font-weight: 700;
+              color: $pink;
+              transition: color .5s;
+              transition-delay: .2s;
+              &:hover {
+                cursor: pointer;
+                color: $purple;
+                transition: color .5s;
+                transition-delay: .2s;
+              }
+            }
+          }
+        }
+        .header-dropdown-active {
+          height: fit-content;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          &::before {
+            content: "\2022";
+            color: $purple;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+          }
+          a {
+            font-weight: 700;
+            color: purple!important;
+            transition: color .5s;
+            transition-delay: .2s;
+            &:hover {
+              cursor: pointer;
+              color: $pink;
+              transition: color .5s;
+              transition-delay: .2s;
+            }
+          }
         }
       }
-      .header-providers-container {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        .header-providers-icon {
-          padding-left: 8px;
-        }
-      }
-    }
-    .header-logo {
-      height: 22px;
     }
   }
 
@@ -273,14 +306,14 @@
 
     &:active {
       .icon-bar {
-        background: $red;
+        background: $pink;
       }
       &:after {
-        color: $red;
+        color: $pink;
       }
       &.active {
         &:after {
-          color: $red;
+          color: $pink;
         }
       }
     }
@@ -310,7 +343,7 @@
         right: 2px;
         bottom: 0;
         margin-top: 3px;
-        color: $red;
+        color: $pink;
         font-size: 12px;
         font-weight: 700;
         line-height: normal;
@@ -323,7 +356,7 @@
       right: 2px;
       bottom: 0;
       margin-top: 3px;
-      color: $red;
+      color: $pink;
       font-size: 12px;
       font-weight: 700;
       line-height: normal;
@@ -336,7 +369,7 @@
     .icon-bar {
       margin: 0;
       display: block;
-      background: $red;
+      background: $pink;
       width: 42px;
       height: 2px;
       border-radius: 2px;
@@ -368,5 +401,13 @@
     .icon-bar:nth-child(4) {
       top: 19px;
     }
+  }
+  .scroll-none {
+    overflow: hidden;
+  }
+
+  .mobile-register-btn {
+    padding: 8px 0;
+    background: $pink;
   }
 }
