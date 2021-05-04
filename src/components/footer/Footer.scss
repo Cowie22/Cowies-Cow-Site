@@ -32,12 +32,12 @@ footer {
     justify-content: flex-end;
     align-items: flex-start;
     .footer-logo {
-      &:last-of-type {
-        margin-left: 16px;
-      }
       &:hover {
         cursor: pointer;
       }
+    }
+    .footer-logo-left {
+      margin-left: 16px;
     }
   }
 }
@@ -63,6 +63,13 @@ footer {
     }
   }
   .footer-logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 24px;
+    .footer-logo-left {
+      margin-left: 16px;
+    }
   }
 }

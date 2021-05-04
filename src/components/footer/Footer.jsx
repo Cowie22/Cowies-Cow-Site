@@ -61,7 +61,7 @@ export default () => (
               <img
                 src={pfizerLogo}
                 alt='Pfizer logo'
-                className='footer-logo'
+                className='footer-logo footer-logo-left'
               />
             </a>
           </div>
