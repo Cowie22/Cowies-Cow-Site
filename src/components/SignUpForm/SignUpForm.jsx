@@ -20,6 +20,7 @@ class SignUpForm extends React.Component {
       zipCode: '',
       specialty: '',
       role: '',
+      thankYou: false,
       NPINumber: '',
       HCPProfession: 'waiting',
       validated: false,
@@ -105,6 +106,9 @@ class SignUpForm extends React.Component {
     }
     if (form.checkValidity() === true) {
       event.preventDefault();
+      this.setState({
+        thankYou: true,
+      })
       // navigate('/thank-you');
     }
     this.setState({
@@ -163,6 +167,7 @@ class SignUpForm extends React.Component {
       zipCode,
       specialty,
       role,
+      thankYou,
       NPINumber,
       HCPProfession,
       radioClicked,
@@ -170,11 +175,14 @@ class SignUpForm extends React.Component {
       hovered,
     } = this.state
     const { signUpForm, handlePopUp } = this.props;
+    console.log('here', thankYou)
     return (
       <section className={signUpForm ? 'sign-up-popup-overlay' : ''}>
         <Container className='sign-up-form-container'>
           <Row>
             <Col lg={{span: 10, offset: 1}}>
+            {
+              !thankYou ?
               <div className={signUpForm ? 'sign-up-popup-col' : 'sign-up-popup-col-hidden'}>
                 <Row>
                   <Col lg={{span: 1, offset: 11}}>
@@ -192,7 +200,7 @@ class SignUpForm extends React.Component {
                   </Col>
                 </Row>
                 <Row>
-                  <Col lg={{span: 10, offset: 1}}>
+                  <Col lg={{span: 10, offset: 1}} xs={{span: 10, offset: 1}}>
                     <h2 className='blue text-center'>
                       Request a Representative
                     </h2>
@@ -215,7 +223,7 @@ class SignUpForm extends React.Component {
                         onSubmit={this.handleSubmit}
                       >
                         <Row>
-                          <Col lg={{span: 5, offset: 1}}>
+                          <Col lg={{span: 5, offset: 1, order: 1}} xs={{span: 10, offset: 1, order: 1}}>
                             <Form.Group
                               controlId='validationCustom01'
                               className={(submitClicked === true && firstName === '') ? 'invalid-group' : ''}
@@ -234,6 +242,8 @@ class SignUpForm extends React.Component {
                                 This field cannot be left blank.
                               </Form.Control.Feedback>
                             </Form.Group>
+                          </Col>
+                          <Col lg={{span: 5, offset: 1, order: 3}} xs={{span: 10, offset: 1, order: 3}}>
                             <Form.Group
                               controlId='formHorizontalEmail'
                               className={(submitClicked === true && email === '') ? 'invalid-group' : ''}
@@ -252,7 +262,9 @@ class SignUpForm extends React.Component {
                                 {email === '' ? 'This field cannot be left blank.' : 'Please enter a valid email address.'}
                               </Form.Control.Feedback>
                             </Form.Group>
-                            <Form.Group controlId='form-hcp-dropdown'>
+                          </Col>
+                          <Col lg={{span: 5, offset: 1, order: 5}} xs={{span: 10, offset: 1, order: 5}}>
+                            <Form.Group controlId='form-hcp-dropdown' className='select-form-group'>
                               {/* <Form.Label column>What is your specialty?*</Form.Label> */}
                               <select
                                 as='select'
@@ -280,7 +292,7 @@ class SignUpForm extends React.Component {
                               }
                             </Form.Group>
                           </Col>
-                          <Col lg={{span: 5, offset: 0}}>
+                          <Col lg={{span: 5, offset: 0, order: 2}} xs={{span: 10, offset: 1, order: 2}}>
                             <Form.Group
                               controlId='validationCustom02'
                               className={(submitClicked === true && lastName === '') ? 'invalid-group' : ''}
@@ -299,6 +311,8 @@ class SignUpForm extends React.Component {
                                 This field cannot be left blank.
                               </Form.Control.Feedback>
                             </Form.Group>
+                          </Col>
+                          <Col lg={{span: 5, offset: 0, order: 4}} xs={{span: 10, offset: 1, order: 4}}>
                             <Form.Group
                               controlId='formHorizontalConfirmEmail'
                               className={(submitClicked === true && confirmEmail === '') ? 'invalid-group' : ''}
@@ -312,12 +326,15 @@ class SignUpForm extends React.Component {
                                 value={confirmEmail}
                                 required
                                 onChange={this.handleInputChange}
+                                isInvalid={confirmEmail !== email}
                               />
                               <Form.Control.Feedback type='invalid'>
                                 {confirmEmail !== email ? 'Confirmation email does not match email.' : 'This field cannot be left blank.'}
                               </Form.Control.Feedback>
                             </Form.Group>
-                            <Form.Group controlId='form-hcp-dropdown'>
+                          </Col>
+                          <Col lg={{span: 5, offset: 0, order: 6}} xs={{span: 10, offset: 1, order: 6}}>
+                            <Form.Group controlId='form-hcp-dropdown' className='select-form-group'>
                               {/* <Form.Label column>What is your specialty?*</Form.Label> */}
                               <select
                                 as='select'
@@ -345,7 +362,7 @@ class SignUpForm extends React.Component {
                           </Col>
                         </Row>
                         <Row>
-                          <Col lg={{span: 6, offset: 3}}>
+                          <Col lg={{span: 6, offset: 3}} xs={{span: 10, offset: 1}}>
                             <Form.Group
                               controlId='validationCustom03'
                               className={(submitClicked === true && zipCode === '') ? 'invalid-group' : ''}
@@ -367,8 +384,8 @@ class SignUpForm extends React.Component {
                           </Col>
                         </Row>
                         <Row>
-                          <Col lg={{span: 10, offset: 1}}>
-                            <Form.Group controlId='validationCustom03'>
+                          <Col lg={{span: 10, offset: 1}} xs={{span: 10, offset: 1}}>
+                            <Form.Group controlId='validationCustom04'>
                               <Col className='form-checkbox-col'>
                                 <Form.Check type='checkbox' id={`terms-and-conditions`}>
                                   <Form.Check.Input type='checkbox' required />
@@ -393,7 +410,7 @@ class SignUpForm extends React.Component {
                           </Col>
                         </Row>
                         <Row>
-                          <Col lg={{span: 4, offset: 4}}>
+                          <Col lg={{span: 4, offset: 4}} xs={{span: 10, offset: 1}}>
                             <Form.Group className='form-submit-btn-row'>
                               <div className='cta-btn-container form-submit-btn-container'>
                                 <Button type='submit' id='form-submit-btn' className='cta-btn pink-btn'>
@@ -408,6 +425,37 @@ class SignUpForm extends React.Component {
                   </Col>
                 </Row>
               </div>
+              :
+              <div className={signUpForm ? 'thank-you-popup-col' : 'thank-you-popup-col-hidden'}>
+                <Row>
+                  <Col lg={{span: 1, offset: 11}}>
+                    <div
+                      className='close-img-container'
+                      onMouseEnter={() => this.handleHovered(true)}
+                      onMouseLeave={() => this.handleHovered(false)}
+                      onClick={() => handlePopUp()}
+                    >
+                      <img
+                        src={hovered ? closeIconHovered : closeIcon}
+                        className='close-img'
+                      />
+                    </div>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col lg={{span: 10, offset: 1}}>
+                    <h2 className='blue text-center'>
+                      Thank You
+                    </h2>
+                    <p className='text-center'>
+                      We have received your request for more information about Myfembree (relugolix, estradiol, and
+                      norethindrone acetate) tablets. A Myfembree representative in your area will follow up soon
+                      to get you the information you need.
+                    </p>
+                  </Col>
+                </Row>
+              </div>
+            }
             </Col>
           </Row>
         </Container>
