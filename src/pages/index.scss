@@ -296,6 +296,16 @@ p {
   }
 }
 
+.white-btn-hover-clear {
+  background: $white;
+  color: #A51890;
+  &:hover {
+    color: $white;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+  }
+}
+
 .overlay {
   position: fixed;
   top: 0;

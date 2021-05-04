@@ -89,7 +89,7 @@ class HomeContent extends React.Component {
               <Col xl={3} lg={4} xs={10}>
                 <div className='cta-btn-container home-btn-container'>
                   <a>
-                    <button className='cta-btn white-btn'>
+                    <button className='cta-btn white-btn-hover-clear'>
                       View Prescribing Information
                     </button>
                   </a>
