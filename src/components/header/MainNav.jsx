@@ -26,7 +26,6 @@ class MainNav extends React.Component {
     })
     let isiTray = document.getElementsByClassName('isi-tray')[0];
     if (this.state.isNavOpen) {
-      console.log('here', document.body.classList)
       document.body.classList.remove('scroll-none');
       isiTray.classList.remove('hide');
     } else {

@@ -103,7 +103,6 @@ class SignUpForm extends React.Component {
 
   handleSubmit = (event) => {
     const form = event.currentTarget;
-    console.log('here', this.state.captchaSuccess)
     if (form.checkValidity() === false || this.state.captchaSuccess === false) {
       this.setState({
         submitClicked: true,

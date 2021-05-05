@@ -20,7 +20,6 @@ class HeaderDropdown extends React.Component {
       currentPage,
       handleCurrentPage,
     } = this.props;
-    console.log(currentData.name)
     return (
       <Row>
         <Col lg={12}>
