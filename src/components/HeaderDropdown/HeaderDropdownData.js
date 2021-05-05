@@ -6,7 +6,7 @@ const HeaderDropdownData = [
     list: [
       {
         listName: 'Access Information',
-        listLink: '/resources/'
+        listLink: '/resources/#resource-access-content'
       },
       {
         listName: 'Patient Support Program',

@@ -122,8 +122,13 @@ class MainNav extends React.Component {
                         handleActiveHeaderDropdown('resources');
                         this.handleNavHover();
                       }}
+                      onClick={() => {
+                        handleActiveHeaderDropdown('');
+                      }}
                     >
-                      Access & Resources
+                      <Link to='/resources/'>
+                        Access & Resources
+                      </Link>
                     </li>
                     {/* <li
                       onMouseEnter={() => {

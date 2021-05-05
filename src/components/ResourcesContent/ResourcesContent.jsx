@@ -13,7 +13,7 @@ class ResourcesContent extends React.Component {
 
   componentDidMount = () => {
     const { handleCurrentPage, handleActiveHeaderDropdown } = this.props;
-    // handleActiveHeaderDropdown('');
+    handleActiveHeaderDropdown('');
     handleCurrentPage('resources');
   }
 
@@ -35,7 +35,10 @@ class ResourcesContent extends React.Component {
           <Container>
             <Row>
               <Col lg={11}>
-                <h2 className='blue' id='resource-access-content'>
+                <div id='resource-access-content' className='resource-drive-to-container'>
+
+                </div>
+                <h2 className='blue'>
                   Access information
                 </h2>
                 <p>
@@ -46,7 +49,10 @@ class ResourcesContent extends React.Component {
                   eleifend nisi. Vestibulum suscipit eros eget erat porta, ac dapibus massa convallis. Suspendisse
                   potenti. Cras vitae ligula at libero auctor porta ac id urna.
                 </p>
-                <h2 className='blue' id='resource-patient-content'>
+                <div id='resource-patient-content' className='resource-drive-to-container'>
+
+                </div>
+                <h2 className='blue'>
                   Patient Support Program
                 </h2>
                 <p>
