@@ -224,6 +224,12 @@ p {
   color: $light-grey;
 }
 
+sub {
+  vertical-align: baseline;
+  position: relative;
+  top: 0em;
+}
+
 .cta-btn-container {
   // margin: 24px 0;
 }
