@@ -107,24 +107,23 @@ class SignUpForm extends React.Component {
       this.setState({
         thankYou: true,
       })
-      // navigate('/thank-you');
-      this.setState({
-        validated: true,
-      }, () => {
-        if (this.state.validated === true) {
-          let postData = {
-            firstName: this.state.firstName,
-            lastName: this.state.lastName,
-            email: this.state.email,
-            confirmEmail: this.state.confirmEmail,
-            zipCode: this.state.zipCode,
-            specialty: this.state.specialty,
-            role: this.state.role,
-          }
-          this.postSignUpData(postData)
-        }
-      });
     }
+    this.setState({
+      validated: true,
+    }, () => {
+      if (form.checkValidity() === true && this.state.captchaSuccess === true) {
+        let postData = {
+          firstName: this.state.firstName,
+          lastName: this.state.lastName,
+          email: this.state.email,
+          confirmEmail: this.state.confirmEmail,
+          zipCode: this.state.zipCode,
+          specialty: this.state.specialty,
+          role: this.state.role,
+        }
+        this.postSignUpData(postData)
+      }
+    });
   };
 
   handleHovered = (val) => {

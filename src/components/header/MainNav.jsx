@@ -124,6 +124,7 @@ class MainNav extends React.Component {
                       }}
                       onClick={() => {
                         handleActiveHeaderDropdown('');
+                        handleActiveDropdownLink(0);
                       }}
                     >
                       <Link to='/resources/'>
