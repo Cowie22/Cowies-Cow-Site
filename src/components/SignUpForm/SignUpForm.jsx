@@ -4,6 +4,7 @@ import Layout from '../Layout'
 import { navigate } from 'gatsby'
 import Axios from 'axios'
 import { Container, Row, Col, Form, Button, Dropdown } from 'react-bootstrap'
+import ReCAPTCHA from "react-google-recaptcha"
 
 import closeIcon from '../../assets/images/close.svg'
 import closeIconHovered from '../../assets/images/close-hovered.svg'
@@ -12,6 +13,7 @@ import closeIconHovered from '../../assets/images/close-hovered.svg'
 class SignUpForm extends React.Component {
   constructor(props) {
     super(props);
+    this.recaptchaRef = React.createRef();
     this.state = {
       firstName: '',
       lastName: '',
@@ -24,6 +26,7 @@ class SignUpForm extends React.Component {
       validated: false,
       count: 0,
       submitClicked: false,
+      captchaSuccess: false,
       hovered: false,
     }
   }
@@ -91,41 +94,48 @@ class SignUpForm extends React.Component {
 
   handleSubmit = (event) => {
     const form = event.currentTarget;
-    if (form.checkValidity() === false) {
+    console.log('here', this.state.captchaSuccess)
+    if (form.checkValidity() === false || this.state.captchaSuccess === false) {
       this.setState({
         submitClicked: true,
       })
       event.preventDefault();
       event.stopPropagation();
     }
-    if (form.checkValidity() === true) {
+    if (form.checkValidity() === true && this.state.captchaSuccess === true) {
       event.preventDefault();
       this.setState({
         thankYou: true,
       })
       // navigate('/thank-you');
-    }
-    this.setState({
-      validated: true,
-    }, () => {
-      if (this.state.validated === true) {
-        let postData = {
-          firstName: this.state.firstName,
-          lastName: this.state.lastName,
-          email: this.state.email,
-          confirmEmail: this.state.confirmEmail,
-          zipCode: this.state.zipCode,
-          specialty: this.state.specialty,
-          role: this.state.role,
+      this.setState({
+        validated: true,
+      }, () => {
+        if (this.state.validated === true) {
+          let postData = {
+            firstName: this.state.firstName,
+            lastName: this.state.lastName,
+            email: this.state.email,
+            confirmEmail: this.state.confirmEmail,
+            zipCode: this.state.zipCode,
+            specialty: this.state.specialty,
+            role: this.state.role,
+          }
+          this.postSignUpData(postData)
         }
-        this.postSignUpData(postData)
-      }
-    });
+      });
+    }
   };
 
   handleHovered = (val) => {
     this.setState({
       hovered: val,
+    })
+  }
+
+  onCaptchaChange = (value) => {
+    this.setState({
+      captchaSuccess: true,
     })
   }
 
@@ -349,6 +359,17 @@ class SignUpForm extends React.Component {
                                 This field cannot be left blank.
                               </Form.Control.Feedback>
                             </Form.Group>
+                          </Col>
+                        </Row>
+                        <Row>
+                          <Col lg={{span: 6, offset: 3}}>
+                            <div className='captcha-container'>
+                              <ReCAPTCHA
+                                ref={this.recaptchaRef}
+                                sitekey="6LdRscYaAAAAABg_sAgI4cvBBBIdW2wRNsxh7lkH"
+                                onChange={this.onCaptchaChange}
+                              />
+                            </div>
                           </Col>
                         </Row>
                         <Row>
