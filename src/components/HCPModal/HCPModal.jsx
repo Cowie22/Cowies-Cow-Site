@@ -52,12 +52,20 @@ class HCPModal extends React.Component {
                     </div>
                   </Col>
                 </Row>
-                <p className='text-center'>
-                  The information contained in this website is intended for US healthcare professionals only.
-                </p>
-                <h3 className='blue text-center'>
-                  Are you a US healthcare professional?
-                </h3>
+                <Row>
+                  <Col lg={{span: 12, offset: 0}} xs={{span: 10, offset: 1}}>
+                    <p className='text-center'>
+                      The information contained in this website is intended for US healthcare professionals only.
+                    </p>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col lg={{span: 12, offset: 0}} xs={{span: 8, offset: 2}}>
+                    <h3 className='blue text-center'>
+                      Are you a US healthcare professional?
+                    </h3>
+                  </Col>
+                </Row>
                 <Row>
                   <Col>
                     <div className='cta-btn-container hcp-modal-btn-container' onClick={() => handleHCPModalVisible()}>

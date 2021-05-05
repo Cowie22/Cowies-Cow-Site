@@ -172,16 +172,18 @@ class SignUpForm extends React.Component {
               <div className={signUpForm ? 'sign-up-popup-col' : 'sign-up-popup-col-hidden'}>
                 <Row>
                   <Col lg={{span: 1, offset: 11}}>
-                    <div
-                      className='close-img-container'
-                      onMouseEnter={() => this.handleHovered(true)}
-                      onMouseLeave={() => this.handleHovered(false)}
-                      onClick={() => handlePopUp()}
-                    >
-                      <img
-                        src={hovered ? closeIconHovered : closeIcon}
-                        className='close-img'
-                      />
+                    <div className='close-img-outer-container'>
+                      <div
+                        className='close-img-container'
+                        onMouseEnter={() => this.handleHovered(true)}
+                        onMouseLeave={() => this.handleHovered(false)}
+                        onClick={() => handlePopUp()}
+                      >
+                        <img
+                          src={hovered ? closeIconHovered : closeIcon}
+                          className='close-img'
+                        />
+                      </div>
                     </div>
                   </Col>
                 </Row>
