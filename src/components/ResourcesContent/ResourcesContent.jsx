@@ -35,7 +35,7 @@ class ResourcesContent extends React.Component {
           <Container>
             <Row>
               <Col lg={11}>
-                <div id='resource-access-content' className='resource-drive-to-container'>
+                <div id='resource-access-content' className='drive-to-container'>
 
                 </div>
                 <h2 className='blue'>
@@ -49,7 +49,7 @@ class ResourcesContent extends React.Component {
                   eleifend nisi. Vestibulum suscipit eros eget erat porta, ac dapibus massa convallis. Suspendisse
                   potenti. Cras vitae ligula at libero auctor porta ac id urna.
                 </p>
-                <div id='resource-patient-content' className='resource-drive-to-container'>
+                <div id='resource-patient-content' className='drive-to-container'>
 
                 </div>
                 <h2 className='blue'>

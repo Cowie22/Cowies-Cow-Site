@@ -86,6 +86,15 @@ class SignUpForm extends React.Component {
         this.setState(newState);
       }
     }
+    else if (event.target.name === 'zipCode') {
+      if ((!numsBool || event.target.value.length > 10) && event.target.value.length !== 0) {
+        event.preventDefault();
+        event.stopPropagation();
+      } else {
+        newState[event.target.name] = event.target.value;
+        this.setState(newState);
+      }
+    }
     else {
       newState[event.target.name] = event.target.value;
       this.setState(newState);
