@@ -54,9 +54,9 @@ class HomeContent extends React.Component {
               </Col>
             </Row>
             <Row>
-              <Col lg={{span: 9, offset: 0}} xs={{span: 11, offset: 0}}>
+              <Col lg={{span: 8, offset: 0}} xs={{span: 11, offset: 0}}>
                 <h1 className='home-sub-title white'>
-                  One small pill, once a day: <br /> Myfembree for heavy menstrual bleeding
+                  One small pill, once a day: Myfembree for heavy menstrual bleeding
                   associated with uterine fibroids
                 </h1>
                 <h3 className='white'>
