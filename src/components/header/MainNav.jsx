@@ -8,6 +8,8 @@ import HeaderDropdown from '../HeaderDropdown/HeaderDropdown'
 import HeaderDropdownData from '../HeaderDropdown/HeaderDropdownData'
 
 import logo from '../../assets/images/header-logo.svg'
+import upArrow from '../../assets/images/upArrow.svg'
+import downArrow from '../../assets/images/downArrow.svg'
 
 
 class MainNav extends React.Component {
@@ -129,6 +131,7 @@ class MainNav extends React.Component {
                       <Link to='/resources/'>
                         Access & Resources
                       </Link>
+                      <img src={activeHeaderDropdown === 'resources' ? upArrow : downArrow} className='nav-arrow' />
                     </li>
                     {/* <li
                       onMouseEnter={() => {
@@ -155,7 +158,7 @@ class MainNav extends React.Component {
                   }}
                 >
                   <div className='cta-btn-container header-cta-btn-container'>
-                    <a href='tel:1-833-693-3627'>
+                    <a>
                       <button className='cta-btn pink-btn'>
                         Register for Launch Broadcast
                       </button>
