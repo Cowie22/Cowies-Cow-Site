@@ -233,7 +233,7 @@ class MainNav extends React.Component {
               </Col>
             </Row>
           </Container>
-                <div className='mobile-nav-overlay'>&nbsp;</div>
+          <div className='mobile-nav-overlay d-block d-lg-none'>&nbsp;</div>
           </section>
           <section className='mobile-register-btn d-block d-lg-none'>
             <a href=''>
