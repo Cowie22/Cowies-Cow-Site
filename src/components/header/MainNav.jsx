@@ -196,7 +196,12 @@ class MainNav extends React.Component {
           <Container>
             <Row>
               <Col className='mobile-nav-col'>
-                <div className='mobile-nav-list-container'>
+                <div
+                // className='mobile-nav-list-container'
+                className={
+                  mobileDropDown === 1 ? 'mobile-nav-list-container' : 'mobile-nav-list-container hidden'
+                }
+                >
                   <ul className='mobile-nav-links'>
                     <li
                       // onClick={() => {

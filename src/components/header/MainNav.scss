@@ -247,6 +247,9 @@
       .mobile-nav-list-container {
         padding: 16px 0;
         border-left: 5px solid $pink;
+        height: 180px;
+        max-height: fit-content;
+        transition: all 1s;
         .header-dropdown-ul {
           list-style: none;
           padding: 0 32px 0 16px;
@@ -254,6 +257,7 @@
           height: auto;
           transform: scaleY(1);
           transition: transform .7s;
+          transition-delay: .2s;
           transform-origin: top;
           li {
             &:last-of-type {
@@ -302,6 +306,10 @@
               transition-delay: .2s;
             }
           }
+        }
+        &.hidden {
+          height: 60px;
+          transition: all 1s;
         }
       }
     }
