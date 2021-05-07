@@ -18,7 +18,7 @@ class MainNav extends React.Component {
     this.state = {
       currentData: {list: ['placeholder']},
       isNavOpen: false,
-      mobileDropDown: '',
+      mobileDropDown: 0,
     }
   }
 
@@ -197,10 +197,10 @@ class MainNav extends React.Component {
             <Row>
               <Col className='mobile-nav-col'>
                 <div
-                // className='mobile-nav-list-container'
-                className={
-                  mobileDropDown === 1 ? 'mobile-nav-list-container' : 'mobile-nav-list-container hidden'
-                }
+                  className='mobile-nav-list-container'
+                  className={
+                    mobileDropDown !== 0 ? 'mobile-nav-list-container' : 'mobile-nav-list-container hidden'
+                  }
                 >
                   <ul className='mobile-nav-links'>
                     <li

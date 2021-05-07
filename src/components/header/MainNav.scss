@@ -240,16 +240,15 @@
   @media only screen and (max-width: 992px) {
     .mobile-nav-col {
       padding: 0px;
-      background: $white;
       border-top: 1px solid #DFE3DF;
       z-index: 9999;
       transition: 1s all;
       .mobile-nav-list-container {
         padding: 16px 0;
+        background: $white;
         border-left: 5px solid $pink;
         height: 180px;
-        max-height: fit-content;
-        transition: all 1s;
+        transition: 1s all;
         .header-dropdown-ul {
           list-style: none;
           padding: 0 32px 0 16px;
@@ -257,7 +256,6 @@
           height: auto;
           transform: scaleY(1);
           transition: transform .7s;
-          transition-delay: .1s;
           transform-origin: top;
           li {
             &:last-of-type {
@@ -279,6 +277,7 @@
           &.hidden {
             height: 0;
             transform: scaleY(0);
+            transition: transform 0.4s;
           }
         }
         .header-dropdown-active {
@@ -309,7 +308,7 @@
         }
         &.hidden {
           height: 60px;
-          transition: all 1s;
+          transition: 1s all;
         }
       }
     }
