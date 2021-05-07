@@ -14,7 +14,7 @@ const HomeRectangleCardData1 = [
 
 const HomeRectangleCardData2 = [
   {
-    title: <>Myfembree<sup>®</sup> Support Program</>,
+    title: <>Myfembree<sup>®</sup> Patient Support Program</>,
     content:
     <p>The Myfembree® Support Program is designed to help your patients throughout their
     treatment journey. The Support Program will offer insurance coverage support, a copay assistance

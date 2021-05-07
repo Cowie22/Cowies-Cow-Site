@@ -335,6 +335,7 @@ class SignUpForm extends React.Component {
                                 <option value='Physician Assistant'>Physician Assistant</option>
                                 <option value='Nurse'>Nurse</option>
                                 <option value='Nurse Practitioner'>Nurse Practitioner</option>
+                                <option value='Nurse Practitioner'>Other</option>
                               </select>
                               {role === '' && submitClicked ?
                                 <p id='dropdown-invalid-warning'>
