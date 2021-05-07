@@ -18,6 +18,7 @@ class MainNav extends React.Component {
     this.state = {
       currentData: {list: ['placeholder']},
       isNavOpen: false,
+      mobileDropDown: '',
     }
   }
 
@@ -67,8 +68,14 @@ class MainNav extends React.Component {
     })
   }
 
+  handleMobileDropDown = (val) => {
+    this.setState({
+      mobileDropDown: val,
+    })
+  }
+
   render() {
-    const { currentData, isNavOpen } = this.state;
+    const { currentData, isNavOpen, mobileDropDown } = this.state;
     const {
       activeHeaderDropdown,
       handleActiveHeaderDropdown,
@@ -192,25 +199,43 @@ class MainNav extends React.Component {
                 <div className='mobile-nav-list-container'>
                   <ul className='mobile-nav-links'>
                     <li
-                      onClick={() => {
-                        this.toggleNav()
-                      }}
+                      // onClick={() => {
+                      //   this.toggleNav()
+                      // }}
                     >
-                      <Link
-                        to='/resources/'
-                        className='mobile-nav-link'
+                      <div
+                        className='mobile-nav-dropdown-link'
                         onClick={() => {
-                          handleActiveDropdownLink(0);
-                          handleActiveHeaderDropdown('');
+                          mobileDropDown !== 1 ? this.handleMobileDropDown(1) : this.handleMobileDropDown(0)
                         }}
                       >
                         Access & Resources
-                      </Link>
-                      <ul className='header-dropdown-ul'>
+                        <img src={mobileDropDown === 1 ? upArrow : downArrow} className='nav-arrow' />
+                      </div>
+                      <ul
+                        className={
+                          mobileDropDown === 1 ? 'header-dropdown-ul' : 'header-dropdown-ul hidden'
+                        }
+                      >
+                        <li
+                          onClick={() => {
+                            handleActiveDropdownLink(0);
+                            handleActiveHeaderDropdown('');
+                            this.handleMobileDropDown(0)
+                            this.toggleNav();
+                          }}
+                          className={(activeDropdownLink === 0 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
+                        >
+                          <Link to='/resources/'>
+                            Access & Resources
+                          </Link>
+                        </li>
                         <li
                           onClick={() => {
                             handleActiveDropdownLink(1);
                             handleActiveHeaderDropdown('');
+                            this.handleMobileDropDown(0)
+                            this.toggleNav();
                           }}
                           className={(activeDropdownLink === 1 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
                         >
@@ -222,6 +247,8 @@ class MainNav extends React.Component {
                           onClick={() => {
                             handleActiveDropdownLink(2);
                             handleActiveHeaderDropdown('');
+                            this.handleMobileDropDown(0)
+                            this.toggleNav();
                           }}
                           className={(activeDropdownLink === 2 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
                         >
