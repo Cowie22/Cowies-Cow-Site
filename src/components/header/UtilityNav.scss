@@ -11,6 +11,7 @@
           transition: all .5s;
           transition-delay: .2s;
           color: $grey;
+          text-align: center;
         }
         &:hover {
           a {
@@ -48,6 +49,9 @@
     font-family: $sans;
   }
   .utility-nav-end-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #E3EFE9;
     text-align: center;
     font-family: $sans;
@@ -67,6 +71,14 @@
     font-size: 16px;
     line-height: 24px;
     font-family: $sans;
+    transition: .5s all;
+    transition-delay: .2s;
+    &:hover {
+      cursor: pointer;
+      transition: .5s all;
+      transition-delay: .2s;
+      color: $purple;
+    }
     a {
       width: 100%;
       transition: .5s all;
@@ -74,9 +86,22 @@
     }
     &:hover {
       cursor: pointer;
-      transition: .5s all;
-      transition-delay: .2s;
-      color: $purple;
+      a {
+        transition: .5s all;
+        transition-delay: .2s;
+        color: $purple;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .utility-nav {
+    .utility-header-nav {
+      line-height: 20px;
+    }
+    .center-nav {
+      width: 33%;
     }
   }
 }
@@ -96,12 +121,15 @@
       .utility-left-container {
         justify-content: space-between;
         li {
-          width: 33%;
+          // width: 25%;
           padding: 0px 4px;
           border-right: 1px solid $white;
           &:last-of-type {
             border: none;
           }
+        }
+        .center-nav {
+          width: 142%;
         }
       }
       .utility-right-col {
