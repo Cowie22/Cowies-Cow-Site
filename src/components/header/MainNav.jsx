@@ -275,7 +275,7 @@ class MainNav extends React.Component {
               <Container>
                 <Row>
                   <Col>
-                    <p className='white text-center'>
+                    <p className='white text-center mulish'>
                       Register for Launch Broadcast
                     </p>
                   </Col>
