@@ -69,10 +69,10 @@ class UtilityNav extends React.Component {
         <section className='utility-nav'>
           <Container>
             <Row>
-              <Col lg={{ span: 10, offset: 2 }}>
+              <Col xl={{ span: 12, offset: 0 }} lg={{ span: 12, offset: 0 }}>
                 <nav className='utility-nav-container'>
                   <Row>
-                    <Col lg={{span: 8, offset: 4}}>
+                    <Col xl={{span: 8, offset: 4}} lg={{span: 10, offset: 2}}>
                       <ul className='utility-left-container'>
                         <li>
                           <a
@@ -82,12 +82,12 @@ class UtilityNav extends React.Component {
                             Important Safety Information
                           </a>
                         </li>
-                        <li>
+                        <li className='center-nav'>
                           <a
                             target='_blank'
                             className='utility-header-nav'
                           >
-                            Prescribing Information
+                            Prescribing Information, including Boxed Warning
                           </a>
                         </li>
                         <li>

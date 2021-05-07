@@ -57,11 +57,19 @@ class HomeContent extends React.Component {
               <Col lg={{span: 8, offset: 0}} xs={{span: 11, offset: 0}}>
                 <h1 className='home-sub-title white'>
                   One small pill, once a day: Myfembree for heavy menstrual bleeding
-                  associated with uterine fibroids
+                  associated with uterine fibroids in premenopausal women
                 </h1>
-                <h3 className='white'>
-                  Set your calendars—available for use June 17, 2021
-                </h3>
+              </Col>
+            </Row>
+            <Row>
+              <Col lg={{span: 9, offset: 0}} xs={{span: 11, offset: 0}}>
+                <p className='white extra-bold'>
+                  Set your calendars—available on June 17, 2021
+                </p>
+                <p className='white extra-bold'>
+                  Use of Myfembree should be limited to 24 months due to the risk of continued bone loss which may
+                  not be reversible.
+                </p>
               </Col>
             </Row>
             <Row>

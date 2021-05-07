@@ -11,6 +11,7 @@
           transition: all .5s;
           transition-delay: .2s;
           color: $grey;
+          text-align: center;
         }
         &:hover {
           a {
@@ -48,6 +49,9 @@
     font-family: $sans;
   }
   .utility-nav-end-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #E3EFE9;
     text-align: center;
     font-family: $sans;
@@ -83,6 +87,17 @@
   }
 }
 
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .utility-nav {
+    .utility-header-nav {
+      line-height: 20px;
+    }
+    .center-nav {
+      width: 50%;
+    }
+  }
+}
+
 @media screen and (max-width: 992px)  {
   .utility-nav {
     padding: 0;
@@ -98,12 +113,15 @@
       .utility-left-container {
         justify-content: space-between;
         li {
-          width: 33%;
+          // width: 25%;
           padding: 0px 4px;
           border-right: 1px solid $white;
           &:last-of-type {
             border: none;
           }
+        }
+        .center-nav {
+          width: 142%;
         }
       }
       .utility-right-col {
