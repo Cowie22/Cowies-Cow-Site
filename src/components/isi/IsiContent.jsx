@@ -265,6 +265,7 @@ class IsiContent extends React.Component {
         </ul>
         <p className='lower-isi-callout'>
           Please see full <a className='isi-link extra-bold' href=''>Prescribing Information</a>, including {' '}
+          <strong className='pink extra-bold' href=''>BOXED WARNING</strong> and {' '}
           <a className='isi-link extra-bold' href=''>Medication Guide</a>.
         </p>
       </section>

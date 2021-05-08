@@ -193,7 +193,7 @@ class SignUpForm extends React.Component {
                     </h2>
                     <p className='text-center'>
                       Please provide the following information about yourself so we can put you in touch with a
-                      Myfembree<sup>®</sup> representative in your area.
+                      Myfembree® representative in your area.
                     </p>
                     <p className='text-center extra-bold'>
                       *Indicates a required field.
@@ -394,10 +394,22 @@ class SignUpForm extends React.Component {
                                       healthcare provider, and you agree to have a Myfembree representative contact
                                       you. You also understand and agree that any information you provide on this
                                       form will be used in accordance with the Myovant {' '}
-                                      <a className='pink extra-bold' href='https://www.myovant.com/privacy-policy/'>
-                                      Privacy Policy</a> and you agree to the {' '}
-                                      <a className='pink extra-bold' href='https://www.myovant.com/terms-of-use/'>
-                                      Terms of Use</a> for information collected on this form.*
+                                      <a
+                                        className='pink extra-bold'
+                                        target='_blank'
+                                        href='https://www.myovant.com/privacy-policy/'
+                                      >
+                                        Privacy Policy {' '}
+                                      </a>
+                                      and you agree to the {' '}
+                                      <a
+                                        className='pink extra-bold'
+                                        target='_blank'
+                                        href='https://www.myovant.com/terms-of-use/'
+                                      >
+                                        Terms of Use {' '}
+                                      </a>
+                                      for information collected on this form.*
                                     </p>
                                   </Form.Check.Label>
                                   <Form.Control.Feedback type='invalid' className='concent-feedback-label'>
