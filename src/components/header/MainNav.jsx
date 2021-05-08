@@ -232,7 +232,7 @@ class MainNav extends React.Component {
                           className={(activeDropdownLink === 0 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
                         >
                           <Link to='/resources/'>
-                            Access & Resources
+                            Overview
                           </Link>
                         </li>
                         <li
