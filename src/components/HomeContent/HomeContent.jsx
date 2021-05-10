@@ -66,9 +66,9 @@ class HomeContent extends React.Component {
               </Col>
             </Row>
             <Row>
-              <Col lg={{span: 9, offset: 0}} xs={{span: 9, offset: 0}}>
+              <Col lg={{span: 8, offset: 0}} xs={{span: 9, offset: 0}}>
                 <h1 className='home-sub-title white'>
-                  Myfembree for heavy menstrual bleeding associated with uterine fibroids
+                  Myfembree for heavy menstrual bleeding associated with uterine fibroids in premenopausal women
                 </h1>
               </Col>
             </Row>
