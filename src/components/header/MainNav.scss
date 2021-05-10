@@ -206,9 +206,9 @@
   .navbar-header {
     display: flex;
     justify-content: space-between;
-    // .header-logo {
-    //   width: 100%;
-    // }
+    .header-logo {
+      width: 100%;
+    }
   }
 
   .navbar-toggle {
