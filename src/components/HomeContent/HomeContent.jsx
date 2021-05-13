@@ -73,6 +73,13 @@ class HomeContent extends React.Component {
               </Col>
             </Row>
             <Row>
+              <Col lg={{span: 9, offset: 0}} xs={{span: 11, offset: 0}}>
+                <h4 className='white'>
+                  Treatment may be continued for up to 2 years.
+                </h4>
+              </Col>
+            </Row>
+            <Row>
               <Col xl={3} lg={4} xs={10}>
                 <div className='cta-btn-container home-btn-container'>
                   <a>
@@ -90,6 +97,13 @@ class HomeContent extends React.Component {
                     </button>
                   </a>
                 </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col lg={{span: 9, offset: 0}} xs={{span: 11, offset: 0}}>
+                <h4 className='white extra-bold'>
+                  Available on June 17, 2021
+                </h4>
               </Col>
             </Row>
             <Row>
