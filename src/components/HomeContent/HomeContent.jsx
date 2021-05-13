@@ -64,11 +64,7 @@ class HomeContent extends React.Component {
             <Row>
               <Col lg={{span: 9, offset: 0}} xs={{span: 11, offset: 0}}>
                 <p className='white extra-bold'>
-                  Set your calendars—available on June 17, 2021
-                </p>
-                <p className='white extra-bold'>
-                  Use of Myfembree should be limited to 24 months due to the risk of continued bone loss which may
-                  not be reversible.
+                  Treatment may be continued for up to 2 years.
                 </p>
               </Col>
             </Row>
@@ -90,6 +86,13 @@ class HomeContent extends React.Component {
                     </button>
                   </a>
                 </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col lg={{span: 9, offset: 0}} xs={{span: 11, offset: 0}}>
+                <p className='white extra-bold'>
+                  Available on June 17, 2021
+                </p>
               </Col>
             </Row>
             <Row>
