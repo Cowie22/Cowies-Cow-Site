@@ -91,7 +91,7 @@ class HomeContent extends React.Component {
             <Row>
               <Col lg={{span: 9, offset: 0}} xs={{span: 11, offset: 0}}>
                 <h4 className='white extra-bold home-bottom-text home-lower-title'>
-                  Available on June 17, 2021
+                  Available on June 17, 2021.
                 </h4>
               </Col>
             </Row>
@@ -100,7 +100,7 @@ class HomeContent extends React.Component {
                 <h3 className='white home-card-lower-content'>
                   To find out more about the Myfembree Support Program, <br /> call {' '}
                   <a href='tel:1-833-693-3627' className='call-now-link'><u>1-833-MYFEMBREE</u> (<u>1-833-693-3627</u>)</a>,
-                  {' '} 8 <sub>AM</sub>–8 <sub>PM</sub>, Monday–Friday.
+                  {' '} 8 <sub>AM</sub>–8 <sub>PM</sub> ET, Monday–Friday.
                 </h3>
               </Col>
             </Row>
