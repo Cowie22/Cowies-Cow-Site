@@ -63,9 +63,9 @@ class HomeContent extends React.Component {
             </Row>
             <Row>
               <Col lg={{span: 9, offset: 0}} xs={{span: 11, offset: 0}}>
-                <p className='white extra-bold'>
+                <h4 className='white'>
                   Treatment may be continued for up to 2 years.
-                </p>
+                </h4>
               </Col>
             </Row>
             <Row>
@@ -90,9 +90,9 @@ class HomeContent extends React.Component {
             </Row>
             <Row>
               <Col lg={{span: 9, offset: 0}} xs={{span: 11, offset: 0}}>
-                <p className='white extra-bold'>
+                <h4 className='white extra-bold'>
                   Available on June 17, 2021
-                </p>
+                </h4>
               </Col>
             </Row>
             <Row>
