@@ -144,12 +144,12 @@ class ISI extends React.Component {
                         !isIsiExpanded && width >= 991 ?
                         <>
                           <Col lg={7}>
-                            <h4 className='purple extra-bold'>
+                            <h4 className='purple extra-bold mulish'>
                               Important Safety Information
                             </h4>
                           </Col>
                           <Col lg={{span: 4, offset: 0}}>
-                            <h4 className='text-left purple extra-bold'>
+                            <h4 className='text-left purple extra-bold mulish'>
                               Indication
                             </h4>
                           </Col>
@@ -157,7 +157,7 @@ class ISI extends React.Component {
                         :
                         !isIsiExpanded && width < 991 ?
                           <Col xs={10}>
-                            <h4 className='purple extra-bold'>
+                            <h4 className='purple extra-bold mulish'>
                               Important Safety Information
                             </h4>
                           </Col>

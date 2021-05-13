@@ -11,7 +11,7 @@ class IsiContent extends React.Component {
   render() {
     return (
       <section>
-        <h4 className='purple extra-bold isi-header-text'>
+        <h4 className='purple extra-bold isi-header-text mulish'>
           Indication
         </h4>
         <p>
@@ -19,7 +19,7 @@ class IsiContent extends React.Component {
           fibroids in premenopausal women. Use of Myfembree should be limited to 24 months due to risk
           of continued bone loss, which may not be reversible.
         </p>
-        <h4 className='purple extra-bold isi-header-text'>
+        <h4 className='purple extra-bold isi-header-text mulish'>
           Important Safety Information
         </h4>
         <div className='black-box-container black-box-margin'>
