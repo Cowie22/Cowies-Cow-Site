@@ -202,21 +202,23 @@ class ISI extends React.Component {
                         :
                         <Row>
                           <Col lg={7}>
-                            <p className='extra-bold'>
-                              WARNING: THROMBOEMBOLIC DISORDERS AND VASCULAR EVENTS
-                            </p>
-                            <p className='extra-bold'>
-                              Estrogen and progestin combination products, including MYFEMBREE, increase the
-                              risk of thrombotic or thromboembolic disorders including pulmonary embolism,
-                              deep vein thrombosis, stroke and myocardial infarction, especially in women
-                              at increased risk for these events.
-                            </p>
+                            <div className='black-box-container'>
+                              <p className='extra-bold'>
+                                WARNING: THROMBOEMBOLIC DISORDERS AND VASCULAR EVENTS
+                              </p>
+                              <p className='extra-bold'>
+                                Estrogen and progestin combination products, including MYFEMBREE, increase the
+                                risk of thrombotic or thromboembolic disorders including pulmonary embolism,
+                                deep vein thrombosis, stroke and myocardial infarction, especially in women
+                                at increased risk for these events.
+                              </p>
+                            </div>
                           </Col>
                           <Col lg={{span: 4, offset: 0}}>
                             <p>
                               Myfembree is indicated for the management of heavy menstrual bleeding associated
                               with uterine fibroids in premenopausal women. Use of Myfembree should be limited
-                              to 24 months due to risk of continued bone loss, which may not
+                              to 24 months due to risk of continued bone loss, which may not be reversible.
                             </p>
                           </Col>
                         </Row>

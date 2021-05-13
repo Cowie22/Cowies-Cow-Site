@@ -33,6 +33,15 @@
   }
 }
 
+.black-box-container {
+  border: 2px solid #333333;
+  padding: 14px 8px;
+}
+
+.box-box-margin {
+  margin-right: 16px;
+}
+
 .isi-overlay {
   display: block;
   position: fixed;
@@ -49,7 +58,7 @@
 .isi-tray {
   width: 100%;
   position: fixed;
-  top: calc(100% - 170px);
+  top: calc(100% - 185px);
   bottom: 0;
   z-index: 10;
   transition: 0.5s;
