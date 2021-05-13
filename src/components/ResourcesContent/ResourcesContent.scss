@@ -5,11 +5,8 @@
 
 .resources-content-container {
   padding: 60px 0;
-  h2 {
-    padding: 24px 0;
-    &:first-of-type {
-      padding-top: 0;
-    }
+  .resource-sub-title {
+    padding-bottom: 24px;
   }
 }
 

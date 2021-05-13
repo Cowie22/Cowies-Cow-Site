@@ -3,6 +3,9 @@ import Layout from "../Layout"
 import { Container, Row, Col } from "react-bootstrap"
 import AppProvider, { AppContext } from '../../contexts/state'
 
+import ResourcesDownloadCard from '../ResourcesDownloadCard/ResourcesDownloadCard'
+import ResourcesDownloadCardData from '../ResourcesDownloadCard/ResourcesDownloadCardData.js'
+
 class ResourcesContent extends React.Component {
   constructor(props) {
     super(props);
@@ -18,6 +21,14 @@ class ResourcesContent extends React.Component {
   }
 
   render() {
+    const {
+      ResourceDownloadCardData1,
+      ResourceDownloadCardData2,
+      ResourceDownloadCardData3,
+      ResourceDownloadCardData4,
+      ResourceDownloadCardData5,
+      ResourceDownloadCardData6,
+    } = ResourcesDownloadCardData;
     return (
       <Layout>
         <section className='resources-container'>
@@ -25,7 +36,7 @@ class ResourcesContent extends React.Component {
             <Row>
               <Col>
                 <h1 className='white'>
-                  Access & Resources
+                  Myfembree<sup>®</sup> Support Program Resources
                 </h1>
               </Col>
             </Row>
@@ -34,35 +45,17 @@ class ResourcesContent extends React.Component {
         <section className='resources-content-container'>
           <Container>
             <Row>
-              <Col lg={11}>
-                <div id='resource-access-content' className='drive-to-container'>
-
-                </div>
-                <h2 className='blue'>
-                  Access information
-                </h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus purus eu nibh gravida,
-                  sit amet ultrices lacus malesuada. Fusce nulla libero, sagittis eu quam vitae, fringilla egestas
-                  mi. Nam ac risus ac neque elementum eleifend. Ut viverra ornare magna vitae consequat. Nullam
-                  elementum aliquet quam ac consequat. Praesent mi ligula, consectetur vitae mi vitae, ultricies
-                  eleifend nisi. Vestibulum suscipit eros eget erat porta, ac dapibus massa convallis. Suspendisse
-                  potenti. Cras vitae ligula at libero auctor porta ac id urna.
+              <Col lg={{span: 10, offset: 1}}>
+                <p className='resource-sub-title'>
+                  A number of helpful resources related to the Myfembree Support Program have been developed
+                  for use in your office. Below, you can find downloads for these resources.
                 </p>
-                <div id='resource-patient-content' className='drive-to-container'>
-
-                </div>
-                <h2 className='blue'>
-                  Patient Support Program
-                </h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus purus eu nibh gravida,
-                  sit amet ultrices lacus malesuada. Fusce nulla libero, sagittis eu quam vitae, fringilla egestas
-                  mi. Nam ac risus ac neque elementum eleifend. Ut viverra ornare magna vitae consequat. Nullam
-                  elementum aliquet quam ac consequat. Praesent mi ligula, consectetur vitae mi vitae, ultricies
-                  eleifend nisi. Vestibulum suscipit eros eget erat porta, ac dapibus massa convallis. Suspendisse
-                  potenti. Cras vitae ligula at libero auctor porta ac id urna.
-                </p>
+                <ResourcesDownloadCard data={ResourceDownloadCardData1} />
+                <ResourcesDownloadCard data={ResourceDownloadCardData2} />
+                <ResourcesDownloadCard data={ResourceDownloadCardData3} />
+                <ResourcesDownloadCard data={ResourceDownloadCardData4} />
+                <ResourcesDownloadCard data={ResourceDownloadCardData5} />
+                <ResourcesDownloadCard data={ResourceDownloadCardData6} />
               </Col>
             </Row>
           </Container>
