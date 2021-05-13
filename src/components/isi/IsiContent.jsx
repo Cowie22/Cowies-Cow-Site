@@ -22,14 +22,16 @@ class IsiContent extends React.Component {
         <h4 className='purple extra-bold isi-header-text'>
           Important Safety Information
         </h4>
-        <p className='extra-bold'>
-          WARNING: THROMBOEMBOLIC DISORDERS AND VASCULAR EVENTS
-        </p>
-        <p className='extra-bold'>
-          Estrogen and progestin combination products, including MYFEMBREE, increase the risk of thrombotic
-          or thromboembolic disorders including pulmonary embolism, deep vein thrombosis, stroke and
-          myocardial infarction, especially in women at increased risk for these events.
-        </p>
+        <div className='black-box-container black-box-margin'>
+          <p className='extra-bold'>
+            WARNING: THROMBOEMBOLIC DISORDERS AND VASCULAR EVENTS
+          </p>
+          <p className='extra-bold'>
+            Estrogen and progestin combination products, including MYFEMBREE, increase the risk of thrombotic
+            or thromboembolic disorders including pulmonary embolism, deep vein thrombosis, stroke and
+            myocardial infarction, especially in women at increased risk for these events.
+          </p>
+        </div>
         <p className='purple extra-bold isi-header-text'>
           CONTRAINDICATIONS
         </p>
