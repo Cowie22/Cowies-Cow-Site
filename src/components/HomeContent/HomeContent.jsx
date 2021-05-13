@@ -99,13 +99,6 @@ class HomeContent extends React.Component {
               </Col>
             </Row>
             <Row>
-              <Col lg={{span: 9, offset: 0}} xs={{span: 11, offset: 0}}>
-                <h4 className='white extra-bold home-bottom-text home-lower-title'>
-                  Available on June 17, 2021
-                </h4>
-              </Col>
-            </Row>
-            <Row>
               <Col lg={12} xs={11}>
                 <h3 className='white home-card-lower-content'>
                   To find out more about the Myfembree<sup>®</sup> Support Program, <br /> call {' '}
