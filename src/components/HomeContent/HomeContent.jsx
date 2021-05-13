@@ -90,7 +90,7 @@ class HomeContent extends React.Component {
             </Row>
             <Row>
               <Col lg={{span: 9, offset: 0}} xs={{span: 11, offset: 0}}>
-                <h4 className='white extra-bold'>
+                <h4 className='white extra-bold home-bottom-text'>
                   Available on June 17, 2021
                 </h4>
               </Col>
