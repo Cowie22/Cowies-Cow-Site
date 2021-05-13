@@ -10,6 +10,20 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "UA-135936033-10",
+        includeInDevelopment: true,
+        defaultDataLayer: { platform: "gatsby" },
+      },
+    },
+    // {
+    //   resolve: 'gatsby-plugin-brotli',
+    //   options: {
+    //     extensions: ['css', 'html', 'js', 'svg', 'jsx', 'webp', 'scss', 'png', 'jpg']
+    //   }
+    // },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
