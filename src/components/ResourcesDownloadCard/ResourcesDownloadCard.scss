@@ -7,13 +7,17 @@
   .resources-btn-container {
     .download-svg {
       margin-left: 8px;
+      path {
+        stroke: $pink;
+        transition: stroke .7s;
+        transition-delay: .1s;
+      }
     }
     .hovered-svg {
       path {
-        color: $white;
-        stroke {
-          color: $white;
-        }
+        stroke: $white;
+        transition: stroke .7s;
+        transition-delay: .1s;
       }
     }
   }

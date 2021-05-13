@@ -8,11 +8,6 @@ const ResourcesDownloadCard = (props) => {
   const { data } = props;
   const { title, subTitle, downloadLink } = data[0];
   const [hovered, handleHovered] = useState(false)
-  const fadeHovered = (val) => {
-    setTimeout(() => {
-      handleHovered(val)
-    }, 500)
-  }
   return (
     <Row>
       <Col lg={{span: 12}}>
@@ -29,8 +24,8 @@ const ResourcesDownloadCard = (props) => {
             <Col lg={{span: 4, offset: 1}}>
               <div
                 className='cta-btn-container resources-btn-container'
-                onMouseEnter={() => fadeHovered(true)}
-                onMouseLeave={() => fadeHovered(false)}
+                onMouseEnter={() => handleHovered(true)}
+                onMouseLeave={() => handleHovered(false)}
               >
                 <a href={downloadLink} target='_blank'>
                   <button className='cta-btn transparent-btn-pink'>
