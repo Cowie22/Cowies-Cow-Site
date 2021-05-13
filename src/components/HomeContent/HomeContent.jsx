@@ -56,18 +56,10 @@ class HomeContent extends React.Component {
               </Col>
             </Row>
             <Row>
-              <Col lg={{span: 9, offset: 0}} xs={{span: 12, offset: 0}}>
-                <div className='title-pill-container'>
-                  <h1 className='white'>
-                    One small pill, once a day:
-                  </h1>
-                </div>
-              </Col>
-            </Row>
-            <Row>
-              <Col lg={{span: 8, offset: 0}} xs={{span: 9, offset: 0}}>
+              <Col lg={{span: 8, offset: 0}} xs={{span: 11, offset: 0}}>
                 <h1 className='home-sub-title white'>
-                  Myfembree for heavy menstrual bleeding associated with uterine fibroids in premenopausal women
+                  One small pill, once a day: Myfembree for heavy menstrual bleeding
+                  associated with uterine fibroids in premenopausal women
                 </h1>
               </Col>
             </Row>
