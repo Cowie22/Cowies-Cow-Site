@@ -29,3 +29,37 @@
     padding: 24px 0 8px 0;
   }
 }
+
+.support-mid-container {
+  padding: 60px 0;
+  background: $white;
+  h2 {
+    padding-bottom: 40px;
+  }
+  .support-mid-container-lower-cards {
+    padding: 16px 0;
+    .support-mid-container-large-card {
+      padding: 32px;
+      height: 274px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      .icon-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        p {
+          &:first-of-type {
+            padding: 8px 0;
+          }
+        }
+      }
+      .less-right-padding {
+        padding-right: 0;
+      }
+    }
+  }
+}

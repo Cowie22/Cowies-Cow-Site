@@ -3,6 +3,12 @@ import Layout from "../Layout"
 import { Container, Row, Col } from "react-bootstrap"
 import AppProvider, { AppContext } from '../../contexts/state'
 
+import SupportIconCard from '../SupportIconCard/SupportIconCard'
+import SupportIconCardData from '../SupportIconCard/SupportIconCardData.js'
+import PurpleCallout from '../PurpleCallout/PurpleCallout'
+
+import calendar from '../../assets/images/hanging-calendar-icon.svg'
+
 class MyfembreeSupportProgramContent extends React.Component {
   constructor(props) {
     super(props);
@@ -16,6 +22,12 @@ class MyfembreeSupportProgramContent extends React.Component {
   }
 
   render() {
+    const {
+      SupportIconCardData1,
+      SupportIconCardData2,
+      SupportIconCardData3,
+      SupportIconCardData4,
+    } = SupportIconCardData;
     return (
       <Layout>
         <section className='support-container'>
@@ -54,6 +66,72 @@ class MyfembreeSupportProgramContent extends React.Component {
             </Row>
           </Container>
         </section>
+        <section className='support-mid-container'>
+          <Container>
+            <Row>
+              <Col lg={{span: 12}}>
+                <h2 className='blue'>
+                  Overview of patient support throughout the Myfembree treatment journey
+                </h2>
+                <Row>
+                  <SupportIconCard data={SupportIconCardData1} />
+                  <SupportIconCard data={SupportIconCardData2} />
+                  <SupportIconCard data={SupportIconCardData3} />
+                </Row>
+                <div className='support-mid-container-lower-cards'>
+                  <Row>
+                    <SupportIconCard data={SupportIconCardData4} />
+                    <Col lg={{span: 8}}>
+                      <div className='support-mid-container-large-card'>
+                        <Row>
+                          <Col lg={{span: 6}}>
+                            <div className='icon-container'>
+                              <img src={calendar} />
+                              <p className='extra-bold'>
+                                Free Medication Programs*
+                              </p>
+                              <p>
+                                Eligible patients with...
+                              </p>
+                            </div>
+                          </Col>
+                          <Col lg={{span: 6}}>
+                            <ul className='purple-ul less-right-padding'>
+                              <li>
+                                Commercial insurance may qualify for up to 4 months of a free supply of Myfembree
+                              </li>
+                              <li>
+                                Federal insurance may qualify for up to 2 months of a free supply of Myfembree
+                              </li>
+                              <li>
+                                No insurance or those with insurance denials may qualify to receive their medication
+                                at no cost from the Myovant Sciences Patient Assistance Program
+                              </li>
+                            </ul>
+                          </Col>
+                        </Row>
+                      </div>
+                    </Col>
+                  </Row>
+                </div>
+                <Row>
+                  <Col>
+                    <h6>
+                      *See below for full terms and conditions.
+                    </h6>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        <PurpleCallout
+          title={
+            <h2 className='white'>
+              The prescriber may submit Myfembree prescriptions directly to the patient's retail or mail-order pharmacy
+            </h2>
+          }
+        />
       </Layout>
     )
   }
