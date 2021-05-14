@@ -9,8 +9,11 @@ import PurpleCallout from '../PurpleCallout/PurpleCallout'
 import ListIconCard from '../ListIconCard/ListIconCard'
 import ListIconCardData from '../ListIconCard/ListIconCardData.js'
 import PurpleLineCallout from '../PurpleLineCallout/PurpleLineCallout'
+import PersonIconCard from '../PersonIconCard/PersonIconCard'
 
 import calendar from '../../assets/images/hanging-calendar-icon.svg'
+import telemarketer from '../../assets/images/telemarketer-icon.svg'
+import manager from '../../assets/images/manager-icon.svg'
 
 class MyfembreeSupportProgramContent extends React.Component {
   constructor(props) {
@@ -171,6 +174,16 @@ class MyfembreeSupportProgramContent extends React.Component {
                     </p>
                   }
                 />
+                <Row className='person-icon-row'>
+                  <PersonIconCard
+                    title={'Support Coordinators'}
+                    icon={telemarketer}
+                  />
+                  <PersonIconCard
+                    title={'Virtual Reimbursement Managers'}
+                    icon={manager}
+                  />
+                </Row>
               </Col>
             </Row>
           </Container>
