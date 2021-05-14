@@ -8,6 +8,7 @@ import SupportIconCardData from '../SupportIconCard/SupportIconCardData.js'
 import PurpleCallout from '../PurpleCallout/PurpleCallout'
 import ListIconCard from '../ListIconCard/ListIconCard'
 import ListIconCardData from '../ListIconCard/ListIconCardData.js'
+import PurpleLineCallout from '../PurpleLineCallout/PurpleLineCallout'
 
 import calendar from '../../assets/images/hanging-calendar-icon.svg'
 
@@ -152,10 +153,25 @@ class MyfembreeSupportProgramContent extends React.Component {
                 </p>
               </Col>
             </Row>
+            <div className='support-lower-inner-container'>
+              <Row>
+                <ListIconCard data={ListIconCardData1} />
+                <ListIconCard data={ListIconCardData2} />
+                <ListIconCard data={ListIconCardData3} />
+              </Row>
+            </div>
             <Row>
-              <ListIconCard data={ListIconCardData1} />
-              <ListIconCard data={ListIconCardData2} />
-              <ListIconCard data={ListIconCardData3} />
+              <Col lg={{span: 10, offset: 1}}>
+                <PurpleLineCallout
+                  title={
+                    <p className='extra-bold purple'>
+                      The office can call <a href='tel:1-833-693-3627'>1-833-MYFEMBREE (1-833-693-3627)</a> to speak
+                      to a Support Coordinator or Virtual Reimbursement Manager about access and reimbursement
+                      status questions
+                    </p>
+                  }
+                />
+              </Col>
             </Row>
           </Container>
         </section>

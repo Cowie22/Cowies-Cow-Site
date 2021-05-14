@@ -1,0 +1,17 @@
+.purple-line-callout-container {
+  padding: 8px 16px;
+  border-top: 2px solid #5C068C;
+  border-bottom: 2px solid #5C068C;
+  a {
+    color: $pink;
+    transition: color .5s;
+    transition-delay: .2s;
+    font-family: $sans;
+    &:hover {
+      cursor: pointer;
+      color: $purple;
+      transition: color .5s;
+      transition-delay: .2s;
+    }
+  }
+}
