@@ -13,6 +13,7 @@ import PersonIconCard from '../PersonIconCard/PersonIconCard'
 import ContentBTNCard from '../ContentBTNCard/ContentBTNCard'
 import SupportContentBlock from '../SupportContentBlock/SupportContentBlock'
 import SupportContentBlockData from '../SupportContentBlock/SupportContentBlockData.js'
+import SupportContentBlockLarge from '../SupportContentBlockLarge/SupportContentBlockLarge'
 
 import calendar from '../../assets/images/hanging-calendar-icon.svg'
 import telemarketer from '../../assets/images/telemarketer-icon.svg'
@@ -217,6 +218,7 @@ class MyfembreeSupportProgramContent extends React.Component {
             </h2>
           }
         />
+        <SupportContentBlockLarge />
         <SupportContentBlock
           data={SupportContentBlockData1}
         />
