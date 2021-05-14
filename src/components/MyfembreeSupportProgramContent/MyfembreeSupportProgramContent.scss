@@ -1,0 +1,31 @@
+.support-container {
+  background-image: url('../assets/images/home-bg-img.webp');
+  width: 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+  .top-title {
+    letter-spacing: 0.5em;
+    font-weight: 400;
+    background: linear-gradient(90deg, rgba(175,212,196,1) 0%, rgba(255,255,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .support-header-card-callout {
+    padding: 16px 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    margin-top: 32px;
+    h1 {
+      font-size: 60px;
+      line-height: 70px;
+      font-weight: 700;
+      color: $white;
+    }
+  }
+  .support-sub-title {
+    padding: 24px 0 8px 0;
+  }
+}

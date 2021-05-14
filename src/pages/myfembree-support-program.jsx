@@ -2,9 +2,9 @@ import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import AppProvider, { AppContext } from '../contexts/state'
 
-import MOAContent from '../components/MOAContent/MOAContent'
+import MyfembreeSupportProgramContent from '../components/MyfembreeSupportProgramContent/MyfembreeSupportProgramContent'
 
-class MOA extends React.Component {
+class MyfembreeSupportProgram extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -25,7 +25,7 @@ class MOA extends React.Component {
             handleTabLink,
           } = context;
           return (
-            <MOAContent
+            <MyfembreeSupportProgramContent
               currentPage={currentPage}
               handleCurrentPage={handleCurrentPage}
               handleActiveHeaderDropdown={handleActiveHeaderDropdown}
@@ -41,4 +41,4 @@ class MOA extends React.Component {
   }
 }
 
-export default MOA
+export default MyfembreeSupportProgram
