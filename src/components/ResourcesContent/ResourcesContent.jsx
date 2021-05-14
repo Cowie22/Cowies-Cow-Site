@@ -3,6 +3,7 @@ import Layout from "../Layout"
 import { Container, Row, Col } from "react-bootstrap"
 import AppProvider, { AppContext } from '../../contexts/state'
 
+import PurpleCallout from '../PurpleCallout/PurpleCallout'
 import ResourcesDownloadCard from '../ResourcesDownloadCard/ResourcesDownloadCard'
 import ResourcesDownloadCardData from '../ResourcesDownloadCard/ResourcesDownloadCardData.js'
 
@@ -31,17 +32,9 @@ class ResourcesContent extends React.Component {
     } = ResourcesDownloadCardData;
     return (
       <Layout>
-        <section className='resources-container'>
-          <Container>
-            <Row>
-              <Col>
-                <h1 className='white'>
-                  Myfembree<sup>®</sup> Support Program Resources
-                </h1>
-              </Col>
-            </Row>
-          </Container>
-        </section>
+        <PurpleCallout
+          title={<h1 className='white'>Myfembree<sup>®</sup> Support Program Resources</h1>}
+        />
         <section className='resources-content-container'>
           <Container>
             <Row>
