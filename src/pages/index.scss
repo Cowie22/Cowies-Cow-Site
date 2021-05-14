@@ -397,3 +397,28 @@ sub {
 .less-right-padding {
   padding-right: 0;
 }
+
+.black-box-ul {
+  padding: 4px 28px 4px 18px;
+  margin: 0;
+  list-style: none;
+  li {
+    font-family: $sans;
+    padding-bottom: 4px;
+    font-weight: 700;
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+  li::before {
+    content: "\2022";
+    color: $black;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  @media screen and (max-width: 991px) {
+    padding: 4px 15px 4px 18px;
+  }
+}
