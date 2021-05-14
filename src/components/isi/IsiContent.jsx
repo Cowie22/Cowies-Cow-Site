@@ -22,7 +22,7 @@ class IsiContent extends React.Component {
         <h4 className='purple extra-bold isi-header-text mulish'>
           Important Safety Information
         </h4>
-        <div className='black-box-container box-box-margin'>
+        {/* <div className='black-box-container box-box-margin'> */}
           <p className='extra-bold'>
             WARNING: THROMBOEMBOLIC DISORDERS AND VASCULAR EVENTS
           </p>
@@ -31,7 +31,7 @@ class IsiContent extends React.Component {
             or thromboembolic disorders including pulmonary embolism, deep vein thrombosis, stroke and
             myocardial infarction, especially in women at increased risk for these events.
           </p>
-        </div>
+        {/* </div> */}
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
         </p>
