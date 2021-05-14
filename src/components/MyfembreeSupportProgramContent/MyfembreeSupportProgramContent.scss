@@ -57,9 +57,14 @@
           }
         }
       }
-      .less-right-padding {
-        padding-right: 0;
-      }
     }
+  }
+}
+
+.support-lower-container {
+  padding: 60px 0;
+  background: $white;
+  .support-lower-sub-title {
+    padding: 16px 0 40px 0;
   }
 }

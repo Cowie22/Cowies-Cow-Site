@@ -6,6 +6,8 @@ import AppProvider, { AppContext } from '../../contexts/state'
 import SupportIconCard from '../SupportIconCard/SupportIconCard'
 import SupportIconCardData from '../SupportIconCard/SupportIconCardData.js'
 import PurpleCallout from '../PurpleCallout/PurpleCallout'
+import ListIconCard from '../ListIconCard/ListIconCard'
+import ListIconCardData from '../ListIconCard/ListIconCardData.js'
 
 import calendar from '../../assets/images/hanging-calendar-icon.svg'
 
@@ -28,6 +30,12 @@ class MyfembreeSupportProgramContent extends React.Component {
       SupportIconCardData3,
       SupportIconCardData4,
     } = SupportIconCardData;
+
+    const {
+      ListIconCardData1,
+      ListIconCardData2,
+      ListIconCardData3,
+    } = ListIconCardData;
     return (
       <Layout>
         <section className='support-container'>
@@ -132,6 +140,25 @@ class MyfembreeSupportProgramContent extends React.Component {
             </h2>
           }
         />
+        <section className='support-lower-container'>
+          <Container>
+            <Row>
+              <Col lg={{span: 10, offset: 1}}>
+                <h2 className='blue'>
+                  Enrolling patients in the Myfembree Support Program
+                </h2>
+                <p className='extra-bold support-lower-sub-title'>
+                  Enrollment can be accomplished by:
+                </p>
+              </Col>
+            </Row>
+            <Row>
+              <ListIconCard data={ListIconCardData1} />
+              <ListIconCard data={ListIconCardData2} />
+              <ListIconCard data={ListIconCardData3} />
+            </Row>
+          </Container>
+        </section>
       </Layout>
     )
   }
