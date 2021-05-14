@@ -66,7 +66,7 @@ class HomeContent extends React.Component {
             <Row>
               <Col lg={{span: 9, offset: 0}} xs={{span: 11, offset: 0}}>
                 <h4 className='white home-lower-title'>
-                  Treatment may be continued for up to 2 years.
+                  The recommended total duration of treatment is 24 months.
                 </h4>
               </Col>
             </Row>

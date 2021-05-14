@@ -206,7 +206,7 @@ class ISI extends React.Component {
                         :
                         <Row>
                           <Col lg={7}>
-                            <div className='black-box-container'>
+                            {/* <div className='black-box-container'> */}
                               <p className='extra-bold'>
                                 WARNING: THROMBOEMBOLIC DISORDERS AND VASCULAR EVENTS
                               </p>
@@ -216,7 +216,7 @@ class ISI extends React.Component {
                                 deep vein thrombosis, stroke and myocardial infarction, especially in women
                                 at increased risk for these events.
                               </p>
-                            </div>
+                            {/* </div> */}
                           </Col>
                           <Col lg={{span: 4, offset: 0}}>
                             <p>
