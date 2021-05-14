@@ -11,6 +11,8 @@ import ListIconCardData from '../ListIconCard/ListIconCardData.js'
 import PurpleLineCallout from '../PurpleLineCallout/PurpleLineCallout'
 import PersonIconCard from '../PersonIconCard/PersonIconCard'
 import ContentBTNCard from '../ContentBTNCard/ContentBTNCard'
+import SupportContentBlock from '../SupportContentBlock/SupportContentBlock'
+import SupportContentBlockData from '../SupportContentBlock/SupportContentBlockData.js'
 
 import calendar from '../../assets/images/hanging-calendar-icon.svg'
 import telemarketer from '../../assets/images/telemarketer-icon.svg'
@@ -41,6 +43,12 @@ class MyfembreeSupportProgramContent extends React.Component {
       ListIconCardData2,
       ListIconCardData3,
     } = ListIconCardData;
+
+    const {
+      SupportContentBlockData1,
+      SupportContentBlockData2,
+      SupportContentBlockData3,
+    } = SupportContentBlockData;
     return (
       <Layout>
         <section className='support-container'>
@@ -208,6 +216,15 @@ class MyfembreeSupportProgramContent extends React.Component {
               8 AM–8 PM ET, Monday–Friday
             </h2>
           }
+        />
+        <SupportContentBlock
+          data={SupportContentBlockData1}
+        />
+        <SupportContentBlock
+          data={SupportContentBlockData2}
+        />
+        <SupportContentBlock
+          data={SupportContentBlockData3}
         />
       </Layout>
     )
