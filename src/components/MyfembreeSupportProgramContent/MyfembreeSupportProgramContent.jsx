@@ -10,6 +10,7 @@ import ListIconCard from '../ListIconCard/ListIconCard'
 import ListIconCardData from '../ListIconCard/ListIconCardData.js'
 import PurpleLineCallout from '../PurpleLineCallout/PurpleLineCallout'
 import PersonIconCard from '../PersonIconCard/PersonIconCard'
+import ContentBTNCard from '../ContentBTNCard/ContentBTNCard'
 
 import calendar from '../../assets/images/hanging-calendar-icon.svg'
 import telemarketer from '../../assets/images/telemarketer-icon.svg'
@@ -184,10 +185,30 @@ class MyfembreeSupportProgramContent extends React.Component {
                     icon={manager}
                   />
                 </Row>
+                <ContentBTNCard
+                  title={
+                    `If your patient already has a Myfembree prescription, they can provide their e-consent
+                    for enrollment and sharing protected health information`
+                  }
+                  btnText={'Provide e-Consent'}
+                  link={''}
+                />
+                <h6 className='lower-content-footnote'>
+                  *See below for full terms and conditions.
+                </h6>
               </Col>
             </Row>
           </Container>
         </section>
+        <PurpleCallout
+          title={
+            <h2 className='white'>
+              If assistance is required during the enrollment process, call the Myfembree
+              Support Program at <a href='tel:1-833-693-3627'><u>1-833-MYFEMBREE</u> (<u>1-833-693-3627</u>)</a>,
+              8 AM–8 PM ET, Monday–Friday
+            </h2>
+          }
+        />
       </Layout>
     )
   }

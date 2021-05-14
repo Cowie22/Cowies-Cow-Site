@@ -1,0 +1,17 @@
+.content-btn-card-container {
+  padding: 40px 0;
+  background: #F1F7F4;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content-btn-card-btn-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .inner-btn-container {
+      width: 100%;
+    }
+  }
+}
