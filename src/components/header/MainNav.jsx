@@ -142,7 +142,17 @@ class MainNav extends React.Component {
                       <Link to='/resources/'>
                         Access & Resources
                       </Link>
-                      <img src={activeHeaderDropdown === 'resources' ? upArrow : downArrow} className='nav-arrow' />
+                      {/* <img src={activeHeaderDropdown === 'resources' ? upArrow : downArrow} className='nav-arrow' /> */}
+                      <svg
+                        width="12"
+                        height="6"
+                        viewBox="0 0 12 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className={activeHeaderDropdown === 'resources' ? 'nav-arrow' : 'nav-arrow rotated'}
+                      >
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99984 3.95775e-05C6.13245 3.95775e-05 6.25962 0.0527177 6.35339 0.146486L10.9367 4.72982C11.132 4.92508 11.132 5.24167 10.9367 5.43693C10.7415 5.63219 10.4249 5.63219 10.2296 5.43693L5.99984 1.20715L1.77006 5.43693C1.5748 5.63219 1.25821 5.63219 1.06295 5.43693C0.867688 5.24167 0.867688 4.92508 1.06295 4.72982L5.64628 0.146486C5.74005 0.0527177 5.86723 3.95775e-05 5.99984 3.95775e-05Z" fill="#A51890"/>
+                      </svg>
                     </li>
                     {/* <li
                       onMouseEnter={() => {

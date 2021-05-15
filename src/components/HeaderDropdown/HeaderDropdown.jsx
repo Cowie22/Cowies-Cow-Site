@@ -27,7 +27,7 @@ class HeaderDropdown extends React.Component {
             <ul className='header-dropdown-ul'>
               {
                 currentData.list.map((listData, i) => {
-                  const { listName, listLink } = listData;
+                  const { listName, listLink, innerPageNav } = listData;
                   return (
                     <li
                       key={i}
@@ -40,7 +40,7 @@ class HeaderDropdown extends React.Component {
                         handleActiveHeaderDropdown('');
                       }}
                     >
-                      <Link to={listLink}>
+                      <Link to={listLink} className={innerPageNav ? 'inner-page' : ''}>
                         {listName}
                       </Link>
                     </li>

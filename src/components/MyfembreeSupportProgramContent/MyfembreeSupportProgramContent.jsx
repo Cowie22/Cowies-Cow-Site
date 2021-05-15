@@ -28,7 +28,7 @@ class MyfembreeSupportProgramContent extends React.Component {
   }
 
   componentDidMount = () => {
-    this.props.handleActiveHeaderDropdown('support');
+    this.props.handleActiveHeaderDropdown('');
   }
 
   render() {

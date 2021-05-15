@@ -5,12 +5,39 @@ const HeaderDropdownData = [
     name: 'resources',
     list: [
       {
-        listName: 'Access Information',
-        listLink: '/resources/'
+        listName: 'Myfembree Support Program',
+        listLink: '/myfembree-support-program/',
+        innerPageNav: false,
       },
       {
-        listName: 'Patient Support Program',
-        listLink: '/myfembree-support-program/'
+        listName: 'Financial Assistance',
+        listLink: '/myfembree-support-program/',
+        innerPageNav: true,
+      },
+      {
+        listName: 'Bridge Program',
+        listLink: '/myfembree-support-program/',
+        innerPageNav: true,
+      },
+      {
+        listName: 'Quick Start Program',
+        listLink: '/myfembree-support-program/',
+        innerPageNav: true,
+      },
+      {
+        listName: 'Patient Assistance Program',
+        listLink: '/myfembree-support-program/',
+        innerPageNav: true,
+      },
+      {
+        listName: 'Patient e-consent',
+        listLink: '/myfembree-support-program/',
+        innerPageNav: true,
+      },
+      {
+        listName: 'Resources',
+        listLink: '/resources/',
+        innerPageNav: false,
       },
     ]
   },
