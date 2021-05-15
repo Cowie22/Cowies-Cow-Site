@@ -77,3 +77,31 @@
     padding: 16px 0 60px 0;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .support-container {
+    background-image: url('../assets/images/home-bg-img-mobile.webp');
+    // width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+    .top-title {
+      padding-bottom: 8px;
+    }
+    .support-header-card-callout {
+      margin-top: 16px;
+      h1 {
+        font-size: 34px;
+        line-height: 40px;
+      }
+    }
+    .support-sub-title {
+      padding: 16px 0 8px 0;
+    }
+  }
+
+  .support-mid-container {
+    padding: 40px 0;
+  }
+}
