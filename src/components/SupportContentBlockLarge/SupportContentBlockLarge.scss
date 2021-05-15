@@ -14,4 +14,15 @@
   .support-content-block-subtitle {
     padding: 24px 0 8px 0;
   }
+  .support-block-enroll-card-container {
+    padding: 24px 0;
+    background: #FFFFFF;
+    border: 1px solid $purple;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin: 40px 0 16px 0;
+    h3 {
+      padding-bottom: 8px;
+    }
+  }
 }

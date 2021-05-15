@@ -30,6 +30,23 @@ const SupportContentBlockLarge = (props) => {
         </Row>
         <Row>
           <Col lg={{span: 10, offset: 1}}>
+            <div className='support-block-enroll-card-container'>
+              <h3 className='blue text-center'>
+                Enroll today!
+              </h3>
+              <Row>
+                <Col lg={{span: 10, offset: 1}}>
+                  <p className='extra-bold'>
+                    Enrollment into this copay program is facilitated through the Myfembree website, over the
+                    phone, or by scanning a QR code included on select Myfembree Support Program resources
+                  </p>
+                </Col>
+              </Row>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col lg={{span: 10, offset: 1}}>
             <h6 className='extra-bold support-content-block-subtitle'>
               Myfembree Copay Assistance Program: Terms and Conditions
             </h6>
