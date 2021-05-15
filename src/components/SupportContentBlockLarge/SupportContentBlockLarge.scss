@@ -26,3 +26,16 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .support-content-block-large-container {
+    padding: 40px 0;
+    .support-block-large-img-container {
+      margin-bottom: 16px;
+    }
+    .support-block-enroll-card-container {
+      margin: 16px 0 0px 0;
+      padding: 24px;
+    }
+  }
+}

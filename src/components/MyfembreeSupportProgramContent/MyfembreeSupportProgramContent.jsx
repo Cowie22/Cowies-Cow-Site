@@ -91,10 +91,14 @@ class MyfembreeSupportProgramContent extends React.Component {
         <section className='support-mid-container'>
           <Container>
             <Row>
-              <Col lg={{span: 12}}>
+              <Col lg={{span: 12}} xs={{span: 11}}>
                 <h2 className='blue'>
                   Overview of patient support throughout the Myfembree treatment journey
                 </h2>
+              </Col>
+            </Row>
+            <Row>
+              <Col lg={{span: 12}}>
                 <Row>
                   <SupportIconCard data={SupportIconCardData1} />
                   <SupportIconCard data={SupportIconCardData2} />

@@ -11,13 +11,13 @@ const ResourcesDownloadCard = (props) => {
   return (
     <Row>
       <Col lg={{span: 12}}>
-        <div className='resources-download-car-container'>
+        <div className='resources-download-card-container'>
           <Row>
             <Col lg={{span: 5, offset: 1}}>
               <p className='pink extra-bold'>
                 {title}
               </p>
-              <p>
+              <p className='resources-download-card-subtitle'>
                 {subTitle}
               </p>
             </Col>

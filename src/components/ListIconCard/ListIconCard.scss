@@ -26,4 +26,15 @@
       transition-delay: .2s;
     }
   }
+  ul {
+    li {
+      padding-bottom: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .list-icon-card-container {
+    padding: 32px 24px;
+  }
 }

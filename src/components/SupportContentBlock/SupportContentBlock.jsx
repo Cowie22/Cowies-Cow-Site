@@ -27,7 +27,7 @@ const SupportContentBlock = (props) => {
             />
           </Col>
           <Col lg={{span: 5, offset: 0}}>
-            <p>
+            <p className='content-text'>
               {content}
             </p>
           </Col>

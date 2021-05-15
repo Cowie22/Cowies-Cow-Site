@@ -8,3 +8,12 @@
     padding: 24px 0 8px 0;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .support-content-block-container {
+    padding: 40px 0;
+    .content-text {
+      padding-top: 24px;
+    }
+  }
+}

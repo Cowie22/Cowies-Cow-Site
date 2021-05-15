@@ -103,5 +103,39 @@
 
   .support-mid-container {
     padding: 40px 0;
+    h2 {
+      padding-bottom: 24px;
+    }
+    .support-mid-container-lower-cards {
+      padding: 0;
+      .support-mid-container-large-card {
+        margin-bottom: 16px;
+        height: fit-content;
+        padding: 32px;
+        .icon-container {
+          p {
+            &:last-of-type {
+              padding: 0px 0 8px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .support-lower-container {
+    padding: 40px 0;
+    .support-lower-sub-title {
+      padding: 16px 0;
+    }
+    .support-lower-inner-container {
+      margin-bottom: 24px;
+    }
+    .person-icon-row {
+      padding: 24px 0;
+    }
+    .lower-content-footnote {
+      padding: 16px 0 0px 0;
+    }
   }
 }

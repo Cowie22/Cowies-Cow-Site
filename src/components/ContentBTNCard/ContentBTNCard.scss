@@ -15,3 +15,12 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .content-btn-card-container {
+    padding: 32px;
+    .content-btn-card-btn-container {
+      margin-top: 16px;
+    }
+  }
+}
