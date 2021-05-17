@@ -110,7 +110,7 @@ class MainNav extends React.Component {
                   />
                 </Link>
               </Col>
-              <Col xs={{span: 2, offset: 4}} className='d-block d-lg-none'>
+              <Col xs={{span: 3, offset: 3}} className='d-block d-lg-none'>
                 <div className='mobile-navbar-container'>
                   <button
                     type='button'
