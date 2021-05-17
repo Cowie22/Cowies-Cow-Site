@@ -224,13 +224,17 @@ class MyfembreeSupportProgramContent extends React.Component {
             </h2>
           }
         />
+        <div className='drive-to-container' id='financial-assistance'></div>
         <SupportContentBlockLarge />
+        <div className='drive-to-container' id='bridge-program'></div>
         <SupportContentBlock
           data={SupportContentBlockData1}
         />
+        <div className='drive-to-container' id='quick-start-program'></div>
         <SupportContentBlock
           data={SupportContentBlockData2}
         />
+        <div className='drive-to-container' id='patient-assistance-program'></div>
         <SupportContentBlock
           data={SupportContentBlockData3}
         />

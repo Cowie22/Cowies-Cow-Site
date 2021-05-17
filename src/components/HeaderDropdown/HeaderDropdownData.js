@@ -11,22 +11,22 @@ const HeaderDropdownData = [
       },
       {
         listName: 'Financial Assistance',
-        listLink: '/myfembree-support-program/',
+        listLink: '/myfembree-support-program/#financial-assistance',
         innerPageNav: true,
       },
       {
         listName: 'Bridge Program',
-        listLink: '/myfembree-support-program/',
+        listLink: '/myfembree-support-program/#bridge-program',
         innerPageNav: true,
       },
       {
         listName: 'Quick Start Program',
-        listLink: '/myfembree-support-program/',
+        listLink: '/myfembree-support-program/#quick-start-program',
         innerPageNav: true,
       },
       {
         listName: 'Patient Assistance Program',
-        listLink: '/myfembree-support-program/',
+        listLink: '/myfembree-support-program/#patient-assistance-program',
         innerPageNav: true,
       },
       {

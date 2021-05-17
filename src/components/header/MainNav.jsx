@@ -140,7 +140,7 @@ class MainNav extends React.Component {
                       }}
                     >
                       <Link to='/resources/'>
-                        Access & Resources
+                        Financial Support
                       </Link>
                       {/* <img src={activeHeaderDropdown === 'resources' ? upArrow : downArrow} className='nav-arrow' /> */}
                       <svg
