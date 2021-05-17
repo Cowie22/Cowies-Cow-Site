@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 import AppProvider, { AppContext } from '../../contexts/state'
 
+import ExternalLink from "../exitramp/ExternalLink.jsx"
+
 class HeaderDropdown extends React.Component {
   constructor(props) {
     super(props);
@@ -27,7 +29,7 @@ class HeaderDropdown extends React.Component {
             <ul className='header-dropdown-ul'>
               {
                 currentData.list.map((listData, i) => {
-                  const { listName, listLink, innerPageNav } = listData;
+                  const { listName, listLink, innerPageNav, externalLink } = listData;
                   return (
                     <li
                       key={i}
@@ -40,9 +42,19 @@ class HeaderDropdown extends React.Component {
                         handleActiveHeaderDropdown('');
                       }}
                     >
-                      <Link to={listLink} className={innerPageNav ? 'inner-page' : ''}>
-                        {listName}
-                      </Link>
+                      {
+                        !externalLink ?
+                        <Link to={listLink} className={innerPageNav ? 'inner-page' : ''}>
+                          {listName}
+                        </Link>
+                        :
+                        <ExternalLink
+                          className={innerPageNav ? 'inner-page' : ''}
+                          externalUrl={listLink}
+                        >
+                          {listName}
+                        </ExternalLink>
+                      }
                     </li>
                   )
                 })
