@@ -17,7 +17,7 @@ const RectangleCard = (props) => {
           {content}
         </p>
         <div className='cta-btn-container rectangle-card-btn-container'>
-          <a>
+          <a href='https://www.google.com/' target='_blank'>
             <button className='cta-btn pink-btn'>
               {btnText}
             </button>

@@ -206,7 +206,7 @@ class MyfembreeSupportProgramContent extends React.Component {
                     for enrollment and sharing protected health information`
                   }
                   btnText={'Provide e-Consent'}
-                  link={''}
+                  link={'https://www.google.com/'}
                 />
                 <h6 className='lower-content-footnote'>
                   *See below for full terms and conditions.
