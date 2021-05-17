@@ -43,18 +43,25 @@ class SiteMapContent extends React.Component {
                     </Link>
                   </li>
                   <li>
-                    <Link to='/resources/'>
-                      Access & Resources
+                    <Link to='/myfembree-support-program/'>
+                      Financial Support
                     </Link>
                     <ul className='purple-ul-dashed'>
                       <li>
-                        <Link to='/resources/#resource-access-content'>
-                          Access Information
+                        <Link to='/myfembree-support-program/'>
+                          Myfembree Support Program
                         </Link>
+                        <ul className='purple-ul-square'>
+                          <li>
+                            <Link to='/myfembree-support-program/#financial-assistance'>
+                              Financial Assistance
+                            </Link>
+                          </li>
+                        </ul>
                       </li>
                       <li>
-                        <Link to='/resources/#resource-patient-content'>
-                          Patient Support Program
+                        <Link to='/resources/'>
+                          Resources
                         </Link>
                       </li>
                     </ul>
