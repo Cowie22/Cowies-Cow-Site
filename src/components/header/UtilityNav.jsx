@@ -67,7 +67,7 @@ class UtilityNav extends React.Component {
               <Col xl={{ span: 12, offset: 0 }} lg={{ span: 12, offset: 0 }}>
                 <nav className='utility-nav-container'>
                   <Row>
-                    <Col lg={{span: 8, offset: 0}}>
+                    <Col xl={{span: 8, offset: 4}} lg={{span: 10, offset: 2}}>
                       <ul className='utility-left-container'>
                         <li>
                           <a
@@ -96,7 +96,7 @@ class UtilityNav extends React.Component {
                         </li>
                       </ul>
                     </Col>
-                    <Col lg={{span: 4}} className='utility-right-col'>
+                    {/* <Col lg={{span: 4}} className='utility-right-col'>
                       <div className='utility-nav-end-container'>
                         <ul>
                           <li onClick={() => this.handlePopUp()}>
@@ -104,7 +104,7 @@ class UtilityNav extends React.Component {
                           </li>
                         </ul>
                       </div>
-                    </Col>
+                    </Col> */}
                   </Row>
                 </nav>
               </Col>
