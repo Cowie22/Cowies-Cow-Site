@@ -333,7 +333,7 @@ sub {
   }
 }
 
-.purple-ul, .purple-ul-dashed {
+.purple-ul, .purple-ul-dashed, .purple-ul-square {
   padding: 4px 28px 4px 18px;
   margin: 0;
   list-style: none;
@@ -369,6 +369,27 @@ sub {
   .purple-ul {
     li::before {
       content: "\2022";
+      color: $purple;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+}
+
+.purple-ul-dashed {
+  li::before {
+    content: "-";
+    color: $purple;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  .purple-ul-square {
+    li::before {
+      content: "■";
       color: $purple;
       font-weight: bold;
       display: inline-block;
