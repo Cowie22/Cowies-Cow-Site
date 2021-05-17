@@ -228,7 +228,7 @@ class MainNav extends React.Component {
                           mobileDropDown !== 1 ? this.handleMobileDropDown(1) : this.handleMobileDropDown(0)
                         }}
                       >
-                        Access & Resources
+                        Financial Support
                         <img src={mobileDropDown === 1 ? upArrow : downArrow} className='nav-arrow' />
                       </div>
                       <ul
@@ -245,10 +245,77 @@ class MainNav extends React.Component {
                           }}
                           className={(activeDropdownLink === 0 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
                         >
-                          <Link to='/resources/'>
-                            Overview
+                          <Link to='/myfembree-support-program/'>
+                            Myfembree Support Program
                           </Link>
                         </li>
+                        <ul className='header-dropdown-ul'>
+                          <li
+                            onClick={() => {
+                              handleActiveDropdownLink(0.1);
+                              handleActiveHeaderDropdown('');
+                              this.handleMobileDropDown(0)
+                              this.toggleNav();
+                            }}
+                            className={(activeDropdownLink === 0.1 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
+                          >
+                            <Link to='/myfembree-support-program/#financial-assistance'>
+                              Financial Assistance
+                            </Link>
+                          </li>
+                          <li
+                            onClick={() => {
+                              handleActiveDropdownLink(0.2);
+                              handleActiveHeaderDropdown('');
+                              this.handleMobileDropDown(0)
+                              this.toggleNav();
+                            }}
+                            className={(activeDropdownLink === 0.2 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
+                          >
+                            <Link to='/myfembree-support-program/#bridge-program'>
+                              Bridge Program
+                            </Link>
+                          </li>
+                          <li
+                            onClick={() => {
+                              handleActiveDropdownLink(0.3);
+                              handleActiveHeaderDropdown('');
+                              this.handleMobileDropDown(0)
+                              this.toggleNav();
+                            }}
+                            className={(activeDropdownLink === 0.3 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
+                          >
+                            <Link to='/myfembree-support-program/#quick-start-program'>
+                              Quick Start Program
+                            </Link>
+                          </li>
+                          <li
+                            onClick={() => {
+                              handleActiveDropdownLink(0.4);
+                              handleActiveHeaderDropdown('');
+                              this.handleMobileDropDown(0)
+                              this.toggleNav();
+                            }}
+                            className={(activeDropdownLink === 0.4 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
+                          >
+                            <Link to='/myfembree-support-program/#patient-assistance-program'>
+                              Patient Assistance Program
+                            </Link>
+                          </li>
+                          <li
+                            onClick={() => {
+                              handleActiveDropdownLink(0.5);
+                              handleActiveHeaderDropdown('');
+                              this.handleMobileDropDown(0)
+                              this.toggleNav();
+                            }}
+                            className={(activeDropdownLink === 0.5 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
+                          >
+                            <Link to='/myfembree-support-program/'>
+                              Patient e-consent
+                            </Link>
+                          </li>
+                        </ul>
                         <li
                           onClick={() => {
                             handleActiveDropdownLink(1);
@@ -258,21 +325,8 @@ class MainNav extends React.Component {
                           }}
                           className={(activeDropdownLink === 1 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
                         >
-                          <Link to='/resources/#resource-access-content'>
-                            Access Information
-                          </Link>
-                        </li>
-                        <li
-                          onClick={() => {
-                            handleActiveDropdownLink(2);
-                            handleActiveHeaderDropdown('');
-                            this.handleMobileDropDown(0)
-                            this.toggleNav();
-                          }}
-                          className={(activeDropdownLink === 2 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
-                        >
-                          <Link to='/resources/#resource-patient-content'>
-                            Patient Support Program
+                          <Link to='/resources/'>
+                            Resources
                           </Link>
                         </li>
                       </ul>

@@ -206,7 +206,7 @@
 
     li {
       width: 100%;
-      padding: 0 15px;
+      padding: 0 16px 0 0;
       transition: 0.2s all;
       color: $pink;
 
@@ -259,11 +259,11 @@
         padding: 16px 0;
         background: $white;
         border-left: 5px solid $pink;
-        height: 180px;
+        height: 340px;
         transition: 1s all;
         .header-dropdown-ul {
           list-style: none;
-          padding: 0 32px 0 16px;
+          padding: 0 16px 0 16px;
           margin: 0;
           height: auto;
           transform: scaleY(1);
