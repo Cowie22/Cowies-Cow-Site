@@ -59,7 +59,7 @@ class MyfembreeSupportProgramContent extends React.Component {
             <Row>
               <Col lg={{span: 9, offset: 0}} xs={{span: 12, offset: 0}}>
                 <h1 className='top-title'>
-                  NOW AVAILABLE
+                  NOW AVAILABLE!
                 </h1>
                 <p className='white'>
                   Myfembree® is now available at retail or mail-order pharmacies.

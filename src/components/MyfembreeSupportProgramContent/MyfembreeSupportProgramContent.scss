@@ -9,13 +9,14 @@
   .top-title {
     letter-spacing: 0.5em;
     font-weight: 400;
+    padding-bottom: 8px;
     background: linear-gradient(90deg, rgba(175,212,196,1) 0%, rgba(255,255,255,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .support-header-card-callout {
     padding: 16px 40px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 16px;
     margin-top: 32px;
     h1 {
@@ -74,7 +75,17 @@
     padding: 16px 0 60px 0;
   }
   .lower-content-footnote {
-    padding: 16px 0 60px 0;
+    padding: 16px 0 0px 0;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .support-mid-container {
+    .support-mid-container-lower-cards {
+      .support-mid-container-large-card {
+        height: 340px;
+      }
+    }
   }
 }
 
@@ -88,9 +99,12 @@
     padding: 40px 0;
     .top-title {
       padding-bottom: 8px;
+      font-size: 22px;
+      line-height: 28px;
     }
     .support-header-card-callout {
       margin-top: 16px;
+      padding: 16px;
       h1 {
         font-size: 34px;
         line-height: 40px;
