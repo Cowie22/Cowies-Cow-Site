@@ -45,7 +45,7 @@ export default props => {
     <section className={state.isExitRampOpen ? 'exit-popup-overlay' : ''}>
       <Container>
         <Row>
-          <Col lg={{span: 4, offset: 4}}>
+          <Col lg={{span: 4, offset: 4}} md={{span: 6, offset: 3}}>
             <div className={state.isExitRampOpen ? 'exit-popup-col' : 'exit-popup-col-hidden'}>
               <Row>
                 <Col lg={{span: 1, offset: 11}}>

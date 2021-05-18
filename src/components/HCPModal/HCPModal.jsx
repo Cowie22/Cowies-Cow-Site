@@ -28,7 +28,7 @@ class HCPModal extends React.Component {
       <section className={HCPModalVisible ? 'hcp-modal-overlay' : ''} onClick={() => handleHCPModalVisible()} >
         <Container>
           <Row>
-            <Col lg={{span: 4, offset: 4}}>
+            <Col lg={{span: 4, offset: 4}} md={{span: 6, offset: 3}}>
               <div className={HCPModalVisible ? 'hcp-modal-col' : 'hcp-modal-col-hidden'}>
                 <Row>
                   <Col lg={{span: 1, offset: 11}}>
