@@ -12,7 +12,7 @@ class HomeContent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      width: 0,
     }
   }
 
@@ -33,6 +33,7 @@ class HomeContent extends React.Component {
   render() {
     const { HomeRectangleCardData1, HomeRectangleCardData2 } = RectangleCardData;
     const { HCPModalVisible, handleHCPModalVisible } = this.props;
+    const { width } = this.state;
     return (
       <Layout>
         <section
@@ -44,7 +45,14 @@ class HomeContent extends React.Component {
           handleHCPModalVisible={handleHCPModalVisible}
           HCPModalVisible={HCPModalVisible}
         />
-        <section className='home-container'>
+        <section
+          className='home-container'
+          style={
+            width > 991 ?
+            {backgroundImage: `url(${BGImg}), url(${BGImgFB})`} :
+            {backgroundImage: `url(${BGImgMobile}), url(${BGImgMobileFB})`}
+          }
+        >
           <Container>
             <Row>
               <Col lg={{span: 9, offset: 0}} xs={{span: 12, offset: 0}}>
