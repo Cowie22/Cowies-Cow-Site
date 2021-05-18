@@ -17,9 +17,12 @@ class HomeContent extends React.Component {
   }
 
   componentDidMount = () => {
-    const { handleActiveHeaderNav, HCPModalVisible } = this.props;
+    const { handleCurrentPage, HCPModalVisible } = this.props;
 
-    handleActiveHeaderNav('home');
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+
+    handleCurrentPage('home');
 
     if (document.getElementsByTagName('body')) {
       if (HCPModalVisible) {
@@ -28,6 +31,16 @@ class HomeContent extends React.Component {
         document.body.classList.remove('scroll-none');
       }
     }
+  }
+
+  componentWillUnmount = () => {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions = () => {
+    this.setState({
+      width: window.innerWidth,
+    })
   }
 
   render() {
