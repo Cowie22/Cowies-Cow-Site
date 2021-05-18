@@ -8,6 +8,11 @@ import RectangleCard from '../RectangleCard/RectangleCard'
 import RectangleCardData from '../RectangleCard/RectangleCardData.js'
 import HCPModal from '../HCPModal/HCPModal'
 
+import BGImg from '../../assets/images/home-bg-img.webp'
+import BGImgFB from '../../assets/images/home-bg-img.png'
+import BGImgMobile from '../../assets/images/home-bg-img-mobile.webp'
+import BGImgMobileFB from '../../assets/images/home-bg-img-mobile.png'
+
 class HomeContent extends React.Component {
   constructor(props) {
     super(props);
@@ -17,12 +22,12 @@ class HomeContent extends React.Component {
   }
 
   componentDidMount = () => {
-    const { handleCurrentPage, HCPModalVisible } = this.props;
+    const { handleActiveHeaderNav, HCPModalVisible } = this.props;
+
+    handleActiveHeaderNav('home');
 
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
-
-    handleCurrentPage('home');
 
     if (document.getElementsByTagName('body')) {
       if (HCPModalVisible) {
