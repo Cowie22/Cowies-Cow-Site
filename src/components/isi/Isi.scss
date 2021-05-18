@@ -18,7 +18,7 @@
   }
 
   .lower-isi-callout {
-    padding-top: 16px;
+    padding: 16px 0 40px 0;
     .isi-link {
       color: $pink;
       transition: color .5s;
@@ -105,9 +105,9 @@
 .isi-content-inner-container {
   margin-top: 8px;
   overflow-y: scroll;
-  height: 580px;
-  min-height: fit-content;
-  padding-bottom: 24px;
+  height: 600px;
+  // min-height: fit-content;
+  padding-bottom: 0px;
   &::-webkit-scrollbar {
     width: 10px;
   }
@@ -145,6 +145,10 @@
   }
 
   .isi {
+    .lower-isi-callout {
+      margin-bottom: 80px;
+      padding-bottom: 0;
+    }
     span {
       font-size: 16px;
     }
