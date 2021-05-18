@@ -13,7 +13,7 @@ const ResourcesDownloadCard = (props) => {
       <Col lg={{span: 12}}>
         <div className='resources-download-card-container'>
           <Row>
-            <Col lg={{span: 5, offset: 1}}>
+            <Col lg={{span: 5, offset: 1}} xs={{span: 10, offset: 1}}>
               <p className='pink extra-bold'>
                 {title}
               </p>
@@ -21,7 +21,7 @@ const ResourcesDownloadCard = (props) => {
                 {subTitle}
               </p>
             </Col>
-            <Col lg={{span: 4, offset: 1}}>
+            <Col lg={{span: 4, offset: 1}} xs={{span: 10, offset: 1}}>
               <div
                 className='cta-btn-container resources-btn-container'
                 onMouseEnter={() => handleHovered(true)}

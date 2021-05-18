@@ -67,7 +67,7 @@ class MyfembreeSupportProgramContent extends React.Component {
               </Col>
             </Row>
             <Row>
-              <Col lg={{span: 7, offset: 0}}>
+              <Col xl={{span: 7, offset: 0}} lg={{span: 8, offset: 0}}>
                 <div className='support-header-card-callout'>
                   <h1>
                     The Myfembree<sup>®</sup> Support Program
@@ -123,7 +123,7 @@ class MyfembreeSupportProgramContent extends React.Component {
                               </p>
                             </div>
                           </Col>
-                          <Col lg={{span: 6}}>
+                          <Col lg={{span: 6, offset: 0}} xs={{span: 10, offset: 1}}>
                             <ul className='purple-ul less-right-padding'>
                               <li>
                                 Commercial insurance may qualify for up to 4 months of a free supply of Myfembree

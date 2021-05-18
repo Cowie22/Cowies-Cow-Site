@@ -7,13 +7,17 @@ const SupportIconCard = (props) => {
   return (
     <Col lg={4}>
       <div className='support-card-container'>
-        <img src={icon} />
-        <p className='extra-bold'>
-          {title}
-        </p>
-        <p>
-          {content}
-        </p>
+        <Row>
+          <Col lg={{span: 12, offset: 0}} xs={{span: 10, offset: 1}}>
+            <img src={icon} />
+            <p className='extra-bold'>
+              {title}
+            </p>
+            <p>
+              {content}
+            </p>
+          </Col>
+        </Row>
       </div>
     </Col>
   )
