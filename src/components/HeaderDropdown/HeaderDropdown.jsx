@@ -44,7 +44,7 @@ class HeaderDropdown extends React.Component {
                     >
                       {
                         !externalLink ?
-                        <Link to={listLink} className={innerPageNav ? 'inner-page' : ''}>
+                        <Link to={`/${listLink}`} className={innerPageNav ? 'inner-page' : ''}>
                           {listName}
                         </Link>
                         :
