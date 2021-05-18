@@ -259,11 +259,16 @@ sub {
   line-height: 24px;
   transition: all .7s;
   transition-delay: .1s;
-  outline: none;
+  outline: none!important;
   &:hover {
     cursor: pointer;
+    outline: none;
     transition: all .7s;
     transition-delay: .1s;
+  }
+  &:visited {
+    text-decoration: none;
+    outline: none;
   }
 }
 
