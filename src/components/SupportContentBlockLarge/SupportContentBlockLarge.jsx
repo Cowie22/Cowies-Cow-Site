@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
 import cardImg from '../../assets/images/support-content-block-large-img.webp'
+import cardImgFB from '../../assets/images/support-content-block-large-img.png'
 
 const SupportContentBlockLarge = (props) => {
   return (
@@ -17,7 +18,12 @@ const SupportContentBlockLarge = (props) => {
         <Row>
           <Col lg={{span: 5, offset: 1}}>
             <div className='support-block-large-img-container'>
-              <img src={cardImg} />
+              <picture>
+                <source srcSet={cardImg} alt='' className='expand-story-img' type="image/webp" />
+                {/* <source srcSet={cardImgFB} alt='' className='expand-story-img' type="image/png" /> */}
+                <img loading='lazy' src={cardImgFB} className='expand-story-img' alt='' />
+              </picture>
+              {/* <img src={cardImg} /> */}
             </div>
           </Col>
           <Col lg={{span: 5, offset: 0}}>

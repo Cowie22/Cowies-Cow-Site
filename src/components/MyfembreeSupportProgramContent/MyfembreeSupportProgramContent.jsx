@@ -15,6 +15,10 @@ import SupportContentBlock from '../SupportContentBlock/SupportContentBlock'
 import SupportContentBlockData from '../SupportContentBlock/SupportContentBlockData.js'
 import SupportContentBlockLarge from '../SupportContentBlockLarge/SupportContentBlockLarge'
 
+import BGImg from '../../assets/images/home-bg-img.webp'
+import BGImgFB from '../../assets/images/home-bg-img.png'
+import BGImgMobile from '../../assets/images/home-bg-img-mobile.webp'
+import BGImgMobileFB from '../../assets/images/home-bg-img-mobile.png'
 import calendar from '../../assets/images/hanging-calendar-icon.svg'
 import telemarketer from '../../assets/images/telemarketer-icon.svg'
 import manager from '../../assets/images/manager-icon.svg'
@@ -23,7 +27,7 @@ class MyfembreeSupportProgramContent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      width: 0,
     }
   }
 
@@ -31,6 +35,19 @@ class MyfembreeSupportProgramContent extends React.Component {
     const { handleCurrentPage, handleActiveHeaderDropdown } = this.props;
     handleActiveHeaderDropdown('');
     handleCurrentPage('resources');
+
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount = () => {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions = () => {
+    this.setState({
+      width: window.innerWidth,
+    })
   }
 
   render() {
@@ -52,9 +69,18 @@ class MyfembreeSupportProgramContent extends React.Component {
       SupportContentBlockData2,
       SupportContentBlockData3,
     } = SupportContentBlockData;
+
+    const { width } = this.state;
     return (
       <Layout>
-        <section className='support-container'>
+        <section
+          className='support-container'
+          style={
+            width > 991 ?
+            {backgroundImage: `url(${BGImg}), url(${BGImgFB})`} :
+            {backgroundImage: `url(${BGImgMobile}), url(${BGImgMobileFB})`}
+          }
+        >
           <Container>
             <Row>
               <Col lg={{span: 9, offset: 0}} xs={{span: 12, offset: 0}}>

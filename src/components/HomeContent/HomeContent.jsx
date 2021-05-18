@@ -8,18 +8,25 @@ import RectangleCard from '../RectangleCard/RectangleCard'
 import RectangleCardData from '../RectangleCard/RectangleCardData.js'
 import HCPModal from '../HCPModal/HCPModal'
 
+import BGImg from '../../assets/images/home-bg-img.webp'
+import BGImgFB from '../../assets/images/home-bg-img.png'
+import BGImgMobile from '../../assets/images/home-bg-img-mobile.webp'
+import BGImgMobileFB from '../../assets/images/home-bg-img-mobile.png'
 import pill from '../../assets/images/pill-icon.svg'
 
 class HomeContent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      width: 0,
     }
   }
 
   componentDidMount = () => {
     const { handleCurrentPage, HCPModalVisible } = this.props;
+
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
 
     handleCurrentPage('home');
 
@@ -32,9 +39,20 @@ class HomeContent extends React.Component {
     }
   }
 
+  componentWillUnmount = () => {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions = () => {
+    this.setState({
+      width: window.innerWidth,
+    })
+  }
+
   render() {
     const { HomeRectangleCardData1, HomeRectangleCardData2 } = RectangleCardData;
     const { HCPModalVisible, handleHCPModalVisible } = this.props;
+    const { width } = this.state;
     return (
       <Layout>
         <section
@@ -46,7 +64,14 @@ class HomeContent extends React.Component {
           handleHCPModalVisible={handleHCPModalVisible}
           HCPModalVisible={HCPModalVisible}
         />
-        <section className='home-container'>
+        <section
+          className='home-container'
+          style={
+            width > 991 ?
+            {backgroundImage: `url(${BGImg}), url(${BGImgFB})`} :
+            {backgroundImage: `url(${BGImgMobile}), url(${BGImgMobileFB})`}
+          }
+        >
           <Container>
             <Row>
               <Col lg={{span: 9, offset: 0}} xs={{span: 12, offset: 0}}>
