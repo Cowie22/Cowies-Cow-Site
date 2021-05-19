@@ -35,7 +35,7 @@ const HeaderDropdownData = [
         externalLink: false,
       },
       {
-        listName: 'Patient e-consent',
+        listName: 'Patient e-Consent',
         listLink: 'https://www.google.com/',
         innerPageNav: true,
         externalLink: true,

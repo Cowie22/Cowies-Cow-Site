@@ -33,7 +33,9 @@ const SupportIconCardData3 = [
 const SupportIconCardData4 = [
   {
     title: 'Copay Assistance Program*',
-    content: `Eligible patients with commercial insurance may pay as little as $5 per each monthly prescription or $15 for a 90-day prescription, with a $2,000 annual cap`,
+    content:
+    `Eligible patients with commercial insurance may pay as little as $5 per each monthly
+    prescription or $15 for a 90-day prescription, with a $2000 annual cap`,
     icon: paperMoneyIcon,
   }
 ]

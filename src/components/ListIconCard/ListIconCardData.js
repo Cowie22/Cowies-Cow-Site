@@ -49,7 +49,7 @@ const ListIconCardData3 = [
   {
     title:
     <p className='extra-bold'>
-      Phone: <a href='tel:1-833-693-3627'>1-833-MYFEMBREE (1-833-693-3627)</a>, 8 AM – 8 PM ET, Monday – Friday
+      Phone: <a href='tel:1-833-693-3627'>1-833-MYFEMBREE (1-833-693-3627)</a>, 8 AM–8 PM ET, Monday–Friday
     </p>,
     content:
     <ul className='purple-ul less-right-padding'>

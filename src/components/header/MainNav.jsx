@@ -312,7 +312,7 @@ class MainNav extends React.Component {
                             className={(activeDropdownLink === 0.5 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
                           >
                             <Link to='/myfembree-support-program/'>
-                              Patient e-consent
+                              Patient e-Consent
                             </Link>
                           </li>
                         </ul>

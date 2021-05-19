@@ -74,7 +74,7 @@ class SiteMapContent extends React.Component {
                           </li>
                           <li>
                             <Link to='/myfembree-support-program/'>
-                              Patient e-consent
+                              Patient e-Consent
                             </Link>
                           </li>
                         </ul>
