@@ -4,6 +4,20 @@
   padding: 32px 0;
   width: 100%;
   margin-bottom: 16px;
+  .text-link {
+    p {
+      transition: color .5s;
+      transition-delay: .2s;
+    }
+    &:hover {
+      p {
+        cursor: pointer;
+        color: $purple;
+        transition: color .5s;
+        transition-delay: .2s;
+      }
+    }
+  }
   .resources-btn-container {
     .download-svg {
       margin-left: 8px;

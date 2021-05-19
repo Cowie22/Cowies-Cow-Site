@@ -1,9 +1,10 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import { Link } from 'gatsby'
 
 const RectangleCard = (props) => {
   const { data } = props;
-  const { title, content, icon, btnText } = data[0];
+  const { title, content, icon, btnText, btnLink } = data[0];
   return (
     <Col lg={6}>
       <div className='rectangle-card-container'>
@@ -17,11 +18,11 @@ const RectangleCard = (props) => {
           {content}
         </p>
         <div className='cta-btn-container rectangle-card-btn-container'>
-          <a href='https://www.google.com/' target='_blank'>
+          <Link to={`/${btnLink}`}>
             <button className='cta-btn pink-btn'>
               {btnText}
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </Col>

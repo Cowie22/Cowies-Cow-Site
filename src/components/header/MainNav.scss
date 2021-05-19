@@ -367,7 +367,7 @@
       }
       .icon-bar:nth-child(2) {
         transform: rotate(45deg);
-        top: 0px;
+        top: 17px;
       }
 
       .icon-bar:nth-child(3) {
@@ -376,7 +376,7 @@
 
       .icon-bar:nth-child(4) {
         transform: rotate(-45deg);
-        top: 23px;
+        top: 40px;
       }
 
       // &:after {
@@ -433,15 +433,15 @@
     }
 
     .icon-bar:nth-child(2) {
-      top: 1px;
+      top: 8px;
     }
 
     .icon-bar:nth-child(3) {
-      top: 14px;
+      top: 22px;
     }
 
     .icon-bar:nth-child(4) {
-      top: 28px;
+      top: 36px;
     }
   }
   .scroll-none {

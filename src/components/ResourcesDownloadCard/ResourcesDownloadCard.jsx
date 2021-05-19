@@ -14,9 +14,11 @@ const ResourcesDownloadCard = (props) => {
         <div className='resources-download-card-container'>
           <Row>
             <Col lg={{span: 5, offset: 1}} xs={{span: 10, offset: 1}}>
-              <p className='pink extra-bold'>
-                {title}
-              </p>
+              <a href={downloadLink} target='_blank' className='text-link'>
+                <p className='pink extra-bold'>
+                  {title}
+                </p>
+              </a>
               <p className='resources-download-card-subtitle'>
                 {subTitle}
               </p>
