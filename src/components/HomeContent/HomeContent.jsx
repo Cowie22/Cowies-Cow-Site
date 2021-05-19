@@ -134,7 +134,7 @@ class HomeContent extends React.Component {
         <section className='home-card-container'>
           <Container>
             <Row>
-              <RectangleCard data={HomeRectangleCardData1} />
+              {/* <RectangleCard data={HomeRectangleCardData1} /> */}
               <RectangleCard data={HomeRectangleCardData2} />
             </Row>
           </Container>

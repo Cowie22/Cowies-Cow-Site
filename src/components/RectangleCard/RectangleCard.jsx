@@ -6,7 +6,7 @@ const RectangleCard = (props) => {
   const { data } = props;
   const { title, content, icon, btnText, btnLink } = data[0];
   return (
-    <Col lg={6}>
+    <Col lg={12}>
       <div className='rectangle-card-container'>
         <div className='title-container'>
           <img src={icon} />
@@ -17,13 +17,17 @@ const RectangleCard = (props) => {
         <p>
           {content}
         </p>
-        <div className='cta-btn-container rectangle-card-btn-container'>
-          <Link to={`/${btnLink}`}>
-            <button className='cta-btn pink-btn'>
-              {btnText}
-            </button>
-          </Link>
-        </div>
+        <Row>
+          <Col lg={{span: 4}}>
+            <div className='cta-btn-container rectangle-card-btn-container'>
+              <Link to={`/${btnLink}`}>
+                <button className='cta-btn pink-btn'>
+                  {btnText}
+                </button>
+              </Link>
+            </div>
+          </Col>
+        </Row>
       </div>
     </Col>
   )
