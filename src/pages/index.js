@@ -1,5 +1,5 @@
-import React from "react"
-import { Container, Row, Col } from "react-bootstrap"
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 import AppProvider, { AppContext } from '../contexts/state'
 
 import HomeContent from '../components/HomeContent/HomeContent'
