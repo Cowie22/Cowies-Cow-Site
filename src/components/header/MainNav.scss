@@ -361,13 +361,13 @@
     }
 
     &.active {
-      width: 45px;
+      width: 50px;
       .icon-bar {
-        width: 35px;
+        width: 45px;
       }
       .icon-bar:nth-child(2) {
         transform: rotate(45deg);
-        top: 17px;
+        top: 10px;
       }
 
       .icon-bar:nth-child(3) {
