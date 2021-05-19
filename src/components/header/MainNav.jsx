@@ -139,7 +139,7 @@ class MainNav extends React.Component {
                         handleActiveDropdownLink(0);
                       }}
                     >
-                      <Link to='/resources/'>
+                      <Link to='/myfembree-support-program/'>
                         Financial Support
                       </Link>
                       {/* <img src={activeHeaderDropdown === 'resources' ? upArrow : downArrow} className='nav-arrow' /> */}
