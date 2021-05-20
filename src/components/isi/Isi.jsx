@@ -88,10 +88,7 @@ class ISI extends React.Component {
     let pageISI = document.querySelector('.page-isi').getBoundingClientRect();
     let pageWidth = window.innerWidth;
     let isiMobileImg = document.getElementById('isi-mobile-header-img-1');
-    let offSetWidth =
-      pageWidth > 1024 ? 700 :
-      pageWidth > 768 ? 600 :
-      500;
+    let offSetWidth = pageWidth > 765 ? 700 : 700;
     if (pageISI.bottom < (pageISI.height + offSetWidth)) {
       if (isiMobileImg) {
         isiMobileImg.classList.add('hidden-plus')
