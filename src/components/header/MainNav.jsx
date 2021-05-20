@@ -36,7 +36,7 @@ export default props => {
             <section className='main-nav'>
               <Container>
                 <Row>
-                  <Col lg={3} xs={5} className='navbar-header'>
+                  <Col lg={3} xs={7} className='navbar-header'>
                     <Link
                       to='/'
                     >
