@@ -78,7 +78,6 @@ export default props => {
                     <a
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='cta-btn'
                       href={state.externalUrl}
                       onClick={() =>
                         state.handleIsExitRampOpen(state.externalUrl)
