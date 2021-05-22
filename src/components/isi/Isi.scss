@@ -105,7 +105,8 @@
 .isi-content-inner-container {
   margin-top: 8px;
   overflow-y: scroll;
-  height: 600px;
+  height: 75vh;
+  // height: 600px;
   // min-height: fit-content;
   padding-bottom: 0px;
   &::-webkit-scrollbar {
@@ -161,6 +162,10 @@
     .black-box-warning {
       padding-top: 33px;
     }
+  }
+
+  .isi-content-inner-container {
+    height: 70vh;
   }
 
   #page-isi {
