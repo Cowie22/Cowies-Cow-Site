@@ -3,6 +3,31 @@
   background: $white;
   padding: 40px 0;
 
+  p {
+    padding-bottom: 4px;
+  }
+  ul {
+    padding: 0px 0px 0px 18px;
+    li {
+      &:last-of-type {
+        padding-bottom: 4px;
+      }
+    }
+  }
+  a {
+    color: $pink;
+    transition: color .5s;
+    transition-delay: .2s;
+    font-family: $sans;
+    font-weight: 700;
+    &:hover {
+      cursor: pointer;
+      color: $purple;
+      transition: color .5s;
+      transition-delay: .2s;
+    }
+  }
+
   span {
     text-transform: uppercase;
     color: $teal;
@@ -106,9 +131,9 @@
   margin-top: 8px;
   overflow-y: scroll;
   height: 75vh;
-  // height: 800px;
+  // height: 600px;
   // min-height: fit-content;
-  // padding-bottom: 200px;
+  padding: 0 24px 0 0px;
   &::-webkit-scrollbar {
     width: 10px;
   }
