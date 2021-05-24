@@ -138,12 +138,12 @@ class ISI extends React.Component {
                         <>
                           <Col lg={7}>
                             <h4 className='purple extra-bold mulish'>
-                              Important Safety Information
+                              IMPORTANT SAFETY INFORMATION
                             </h4>
                           </Col>
                           <Col lg={{span: 4, offset: 0}}>
                             <h4 className='text-left purple extra-bold mulish'>
-                              Indication
+                              INDICATION
                             </h4>
                           </Col>
                         </>
@@ -151,7 +151,7 @@ class ISI extends React.Component {
                         !isIsiExpanded && width < 991 ?
                           <Col xs={10}>
                             <h4 className='purple extra-bold mulish'>
-                              Important Safety Information
+                              IMPORTANT SAFETY INFORMATION
                             </h4>
                           </Col>
                         :
@@ -201,17 +201,20 @@ class ISI extends React.Component {
                           <Col lg={7}>
                             {/* <div className='black-box-container'> */}
                               <p className='extra-bold'>
-                                WARNING: THROMBOEMBOLIC DISORDERS AND VASCULAR EVENTS
+                                BOXED WARNING: THROMBOEMBOLIC DISORDERS AND VASCULAR EVENTS
                               </p>
                               <ul className='black-box-ul'>
                                 <li>
-                                  Estrogen and progestin combinations, including Myfembree, increase the risk of thrombotic or
-                                  thromboembolic disorders, especially in women at increased risk for these events.
+                                  Estrogen and progestin combination products, including Myfembree, increase the risk
+                                  of thrombotic or thromboembolic disorders including pulmonary embolism, deep
+                                  vein thrombosis, stroke and myocardial infarction, especially in women at
+                                  increased risk for these events.
                                 </li>
                                 <li>
-                                  Myfembree is contraindicated in women with current or a history of thrombotic or thromboembolic
-                                  disorders and in women at increased risk for these events, including women over 35 years of age
-                                  who smoke or women with uncontrolled hypertension.
+                                  Myfembree is contraindicated in women with current or a history of thrombotic or
+                                  thromboembolic disorders and in women at increased risk for these events,
+                                  including women over 35 years of age who smoke or women with uncontrolled
+                                  hypertension.
                                 </li>
                               </ul>
                             {/* </div> */}
@@ -219,8 +222,9 @@ class ISI extends React.Component {
                           <Col lg={{span: 4, offset: 0}}>
                             <p>
                               Myfembree is indicated for the management of heavy menstrual bleeding associated
-                              with uterine fibroids in premenopausal women. Use of Myfembree should be limited
-                              to 24 months due to risk of continued bone loss, which may not be reversible.
+                              with uterine leiomyomas (fibroids) in premenopausal women. <u>Limitations of Use</u>:
+                              Use of Myfembree should be limited to 24 months due to the risk of continued bone
+                              loss which may not be reversible.
                             </p>
                           </Col>
                         </Row>
