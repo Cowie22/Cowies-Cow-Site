@@ -132,11 +132,11 @@ class HomeContent extends React.Component {
             </Row>
           </Container>
         </section>
-        <section className='home-callout-container'>
+        {/* <section className='home-callout-container'>
           <Container>
             <RegisterCard />
           </Container>
-        </section>
+        </section> */}
         <section className='home-card-container'>
           <Container>
             <Row>

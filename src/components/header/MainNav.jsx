@@ -54,7 +54,7 @@ export default props => {
                     xs={{span: 6, offset: 1}}
                     className='d-none d-lg-block'
                   >
-                    <div className='header-call-now-container'>
+                    {/* <div className='header-call-now-container'>
                       <div className='cta-btn-container header-cta-btn-container'>
                         <a href='tel:1-833-693-3627'>
                           <button className='cta-btn transparent-btn-pink'>
@@ -62,7 +62,7 @@ export default props => {
                           </button>
                         </a>
                       </div>
-                    </div>
+                    </div> */}
                   </Col>
                 </Row>
               </Container>
