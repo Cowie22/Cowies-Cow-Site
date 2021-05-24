@@ -17,7 +17,7 @@ const HomeRectangleCardData2 = [
   {
     title: <>Myfembree<sup>®</sup> Support Program</>,
     content:
-    <p>The Myfembree® Support Program is designed to help your patients throughout their
+    <p>The Myfembree® Support Program is designed to help your eligible patients throughout their
     treatment journey. The Support Program will offer insurance coverage support, a copay assistance
     program, other financial assistance options, and additional resources once patients have been
     prescribed Myfembree.</p>,

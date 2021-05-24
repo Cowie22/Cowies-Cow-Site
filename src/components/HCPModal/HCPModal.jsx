@@ -25,7 +25,7 @@ class HCPModal extends React.Component {
     const { hovered } = this.state;
     const { HCPModalVisible, handleHCPModalVisible } = this.props;
     return (
-      <section className={HCPModalVisible ? 'hcp-modal-overlay' : ''} onClick={() => handleHCPModalVisible()} >
+      <section className={HCPModalVisible ? 'hcp-modal-overlay' : ''}>
         <Container>
           <Row>
             <Col lg={{span: 4, offset: 4}} md={{span: 6, offset: 3}}>
