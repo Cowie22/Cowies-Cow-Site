@@ -223,6 +223,11 @@ p {
   color: $light-grey;
 }
 
+sup {
+  font-size: 50%;
+  top: -0.79em;
+}
+
 sub {
   vertical-align: baseline;
   position: relative;
