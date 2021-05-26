@@ -24,7 +24,7 @@ class IsiContent extends React.Component {
         </h4>
         {/* <div className='black-box-container box-box-margin'> */}
           <p className='extra-bold'>
-            BOXED WARNING: THROMBOEMBOLIC DISORDERS AND VASCULAR EVENTS
+          <span className='purple'>BOXED WARNING:</span> THROMBOEMBOLIC DISORDERS AND VASCULAR EVENTS
           </p>
           <ul className='black-box-ul'>
             <li>
