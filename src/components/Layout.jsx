@@ -18,7 +18,7 @@ import backToTopHovered from '../assets/images/back-to-top-hovered.svg'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../pages/index.scss'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
   const [hovered, handleHovered] = useState(false);
   const [yDirection, handleYDirection] = useState(0);
 
@@ -41,12 +41,12 @@ const Layout = ({ children }) => {
     <div className='layout'>
       <StickyContainer>
         <Helmet>
-          <meta charSet='utf-8' />
-          <title>Evoke Giant Starter</title>
-          <meta
-            name='description'
-            content='Evoke Giant Starter description'
-          />
+          <meta charSet="utf-8" />
+          <title>{title}</title>
+          <meta name="title" content={pageTitle} />
+          <meta name="description" content={description} />
+          <link rel='canonical' href={canonicalURL} />
+          <meta name="url" content={canonicalURL} />
         </Helmet>
         <Cookie />
         <UtilityNav />
