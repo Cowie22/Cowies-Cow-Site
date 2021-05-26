@@ -37,12 +37,13 @@ class Cookie extends React.Component {
                       This website uses cookies to help us give you the best experience when you visit.
                       By using this website, you consent to the use of these cookies. Find out more about
                       how we use cookies and how to manage them by reading our
-                      <ExternalLink
-                        externalUrl={'https://www.myovant.com/cookie-policy/'}
+                      <a
+                        href='https://www.myovant.com/cookie-policy/'
                         className='cookie-link extra-bold'
+                        target='_blank'
                       >
                         {' '} Cookie Policy
-                      </ExternalLink>.
+                      </a>.
                     </p>
                   </Col>
                   <Col lg={3} xs={{span: 4}}>
