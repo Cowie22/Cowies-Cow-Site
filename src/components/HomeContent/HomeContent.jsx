@@ -104,7 +104,10 @@ class HomeContent extends React.Component {
             <Row>
               <Col xl={3} lg={4} xs={10}>
                 <div className='cta-btn-container home-btn-container'>
-                  <a href='https://www.google.com/' target='_blank'>
+                  <a
+                    href='https://www.google.com/'
+                    target='_blank'
+                  >
                     <button className='cta-btn white-btn-hover-clear'>
                       View Prescribing Information
                     </button>
@@ -113,7 +116,10 @@ class HomeContent extends React.Component {
               </Col>
               <Col xl={3} lg={4} xs={10}>
                 <div className='cta-btn-container home-btn-container'>
-                  <a href='https://www.google.com/' target='_blank'>
+                  <a
+                    href='https://investors.myovant.com/news-releases/news-release-details/myovant-sciences-and-pfizer-receive-fda-approval-myfembreer'
+                    target='_blank'
+                  >
                     <button className='cta-btn transparent-btn'>
                       View the Press Release
                     </button>
