@@ -50,7 +50,7 @@ export default () => (
             >
               <img
                 src={myovantLogo}
-                alt='Myovant logo'
+                alt='Myovant Sciences logo'
                 className='footer-logo'
               />
             </a>

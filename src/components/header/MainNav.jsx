@@ -100,7 +100,7 @@ class MainNav extends React.Component {
                 >
                   <img
                     loading='lazy'
-                    alt='Myovant logo'
+                    alt='Myfembree® (relugolix, estradiol, and norethindrone acetate) tablets 40 mg, 1 mg, 0.5 mg'
                     className='header-logo'
                     src={logo}
                     onMouseEnter={() => {

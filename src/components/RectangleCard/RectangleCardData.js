@@ -10,6 +10,7 @@ const HomeRectangleCardData1 = [
     icon: paperMoney,
     btnText: 'Access Information',
     btnLink: 'myfembree-support-program/#financial-assistance',
+    alt: 'Prescription card',
   }
 ]
 
@@ -24,6 +25,7 @@ const HomeRectangleCardData2 = [
     icon: iphone,
     btnText: 'Myfembree Support Program',
     btnLink: 'myfembree-support-program/',
+    alt: 'Cell phone',
   }
 ]
 
