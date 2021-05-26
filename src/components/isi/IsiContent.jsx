@@ -182,7 +182,7 @@ class IsiContent extends React.Component {
             href='https://www.myovant.com/myfembree-prescribing-information.pdf'
             target='_blank'
           >
-            Prescribing Information including BOXED WARNING
+            Prescribing Information, including BOXED WARNING
           </a>.
         </p>
       </section>
