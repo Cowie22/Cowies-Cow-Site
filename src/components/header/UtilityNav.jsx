@@ -84,6 +84,7 @@ class UtilityNav extends React.Component {
                         </li>
                         <li className='center-nav'>
                           <a
+                            href='https://www.myovant.com/myfembree-prescribing-information.pdf'
                             target='_blank'
                             className='utility-header-nav'
                           >
