@@ -83,7 +83,7 @@ class UtilityNav extends React.Component {
                             className='utility-header-nav'
                             href='https://www.myovant.com/myfembree-prescribing-information.pdf'
                           >
-                            <span>Prescribing Information including <b>BOXED WARNING</b></span>
+                            <span>Prescribing Information, including <b>BOXED WARNING</b></span>
                           </a>
                         </li>
                         <li>

@@ -205,7 +205,8 @@ class ISI extends React.Component {
                           <Col lg={7}>
                             {/* <div className='black-box-container'> */}
                               <p className='extra-bold'>
-                                BOXED WARNING: THROMBOEMBOLIC DISORDERS AND VASCULAR EVENTS
+                                <span className='purple'>BOXED WARNING:</span> THROMBOEMBOLIC DISORDERS AND
+                                VASCULAR EVENTS
                               </p>
                               <ul className='black-box-ul'>
                                 <li>
