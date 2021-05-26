@@ -18,7 +18,7 @@ const HomeRectangleCardData2 = [
     content:
     <p>The Myfembree® Support Program is designed to help your eligible patients throughout their
     treatment journey. The Support Program will offer insurance coverage support, a copay assistance
-    program, other financial assistance options, and additional resources once patients have been
+    program, other financial assistance options, and additional resources once eligible patients have been
     prescribed Myfembree.</p>,
     icon: iphone,
     alt: 'Cell phone',

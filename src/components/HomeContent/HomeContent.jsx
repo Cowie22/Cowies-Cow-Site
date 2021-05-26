@@ -130,7 +130,7 @@ class HomeContent extends React.Component {
             <Row>
               <Col lg={12} xs={11}>
                 <h3 className='white home-card-lower-content'>
-                  To find out more about the Myfembree Support Program, <br /> call {' '}
+                  To find out more about the Myfembree<sup>®</sup> Support Program, <br /> call {' '}
                   <a href='tel:1-833-693-3627' className='call-now-link'><u>1-833-MYFEMBREE</u> (<u>1-833-693-3627</u>)</a>,
                   {' '} 8 <sub>AM</sub>–8 <sub>PM</sub> ET, Monday–Friday.
                 </h3>
