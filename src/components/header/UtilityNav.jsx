@@ -87,7 +87,7 @@ class UtilityNav extends React.Component {
                             target='_blank'
                             className='utility-header-nav'
                           >
-                            <span>Prescribing Information, including <b>BOXED WARNING</b></span>
+                            <span>Prescribing Information including <b>BOXED WARNING</b></span>
                           </a>
                         </li>
                         <li>

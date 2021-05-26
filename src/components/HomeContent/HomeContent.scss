@@ -4,7 +4,7 @@
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 120px 0;
+  padding: 100px 0;
   position: relative;
   .top-title {
     letter-spacing: 0.5em;
@@ -20,6 +20,9 @@
     font-size: 20px;
     font-weight: 25px;
     font-family: $mulish;
+  }
+  .home-page-footnote {
+    padding-top: 40px;
   }
   .home-card-lower-content {
     padding-top: 24px;

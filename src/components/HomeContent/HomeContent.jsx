@@ -134,6 +134,9 @@ class HomeContent extends React.Component {
                   <a href='tel:1-833-693-3627' className='call-now-link'><u>1-833-MYFEMBREE</u> (<u>1-833-693-3627</u>)</a>,
                   {' '} 8 <sub>AM</sub>–8 <sub>PM</sub> ET, Monday–Friday.
                 </h3>
+                <h6 className='white home-page-footnote'>
+                  Actual pill size: 7.94 mm in diameter.
+                </h6>
               </Col>
             </Row>
           </Container>
