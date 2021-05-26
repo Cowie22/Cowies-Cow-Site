@@ -53,7 +53,12 @@ class HomeContent extends React.Component {
     const { HCPModalVisible, handleHCPModalVisible } = this.props;
     const { width } = this.state;
     return (
-      <Layout>
+      <Layout
+        canonicalURL='https://www.MyfembreeHCP.com'
+        title='Safety Info | Myfembree® (relugolix, estradiol, and norethindrone acetate) tablets | HCP Website'
+        pageTitle='Myfembree® Now Approved Homepage for US HCPs'
+        description='Myfembree® (relugolix, estradiol, and norethindrone acetate) tablets for oral use: Safety Information, full Prescribing Information including BOXED WARNING.'
+      >
         <section
           id='hcp-modal-container'
           onClick={() => this.handleHCPModalVisible()}
@@ -70,6 +75,7 @@ class HomeContent extends React.Component {
             {backgroundImage: `url(${BGImg}), url(${BGImgFB})`} :
             {backgroundImage: `url(${BGImgMobile}), url(${BGImgMobileFB})`}
           }
+          title='Myfembree® logo watermark'
         >
           <Container>
             <Row>

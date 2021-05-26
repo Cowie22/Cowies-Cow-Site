@@ -65,7 +65,10 @@ export default props => {
               <Row>
                 <Col lg={{span: 6, offset: 3}}>
                   <div className='popup-logo-container'>
-                    <img src={logo} />
+                    <img
+                      src={logo}
+                      alt='Myfembree® (relugolix, estradiol, and norethindrone acetate) tablets 40 mg, 1 mg, 0.5 mg'
+                    />
                   </div>
                 </Col>
               </Row>
