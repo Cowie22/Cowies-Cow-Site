@@ -81,7 +81,7 @@ class UtilityNav extends React.Component {
                           <a
                             target='_blank'
                             className='utility-header-nav'
-                            href='https://www.google.com/'
+                            href='https://www.myovant.com/myfembree-prescribing-information.pdf'
                           >
                             <span>Prescribing Information, including <b>BOXED WARNING</b></span>
                           </a>

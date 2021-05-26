@@ -105,7 +105,7 @@ class HomeContent extends React.Component {
               <Col xl={3} lg={4} xs={10}>
                 <div className='cta-btn-container home-btn-container'>
                   <a
-                    href='https://www.google.com/'
+                    href='https://www.myovant.com/myfembree-prescribing-information.pdf'
                     target='_blank'
                   >
                     <button className='cta-btn white-btn-hover-clear'>
