@@ -171,14 +171,12 @@ class ISI extends React.Component {
                         >
                           {isIsiExpanded ? (
                             <img
-                              loading='lazy'
                               src={hovered ? minusHovered : minus}
                               width='12'
                               height='12'
                             />
                           ) : (
                             <img
-                              loading='lazy'
                               src={hovered ? plusHovered : plus}
                               width='12'
                               height='12'
