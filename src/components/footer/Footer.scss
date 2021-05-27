@@ -73,3 +73,20 @@ footer {
     }
   }
 }
+
+@media only screen and (max-width: 320px) {
+  footer {
+    .footer-logo-container {
+      padding-bottom: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .footer-logo {
+        width: 90%;
+      }
+      .footer-logo-left {
+        margin-left: 16px;
+      }
+    }
+  }
+}
