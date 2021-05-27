@@ -18,3 +18,11 @@
   }
   // TODO: Remove lines above when body content has been inserted
 }
+
+@media screen and (max-width: 992px) {
+  .layout {
+    .back-to-top-container {
+      top: 60%;
+    }
+  }
+}
