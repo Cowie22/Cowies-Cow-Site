@@ -169,19 +169,39 @@ class ISI extends React.Component {
                           onMouseEnter={() => this.handleHovered(true)}
                           onMouseLeave={() => this.handleHovered(false)}
                         >
-                          {isIsiExpanded ? (
-                            <img
-                              src={hovered ? minusHovered : minus}
-                              width='12'
-                              height='12'
-                            />
-                          ) : (
-                            <img
-                              src={hovered ? plusHovered : plus}
-                              width='12'
-                              height='12'
-                            />
-                          )}
+                           {
+                            width > 991 ? (
+                              isIsiExpanded ? (
+                                <img
+                                  src={hovered ? minusHovered : minus}
+                                  width='12'
+                                  height='12'
+                                />
+                              ) : (
+                                <img
+                                  src={hovered ? plusHovered : plus}
+                                  width='12'
+                                  height='12'
+                                />
+                              )
+                            )
+                            :
+                            (
+                              isIsiExpanded ? (
+                                <img
+                                  src={minus}
+                                  width='12'
+                                  height='12'
+                                />
+                              ) : (
+                                <img
+                                  src={plus}
+                                  width='12'
+                                  height='12'
+                                />
+                              )
+                            )
+                          }
                         </div>
                       </Col>
                     </Row>
