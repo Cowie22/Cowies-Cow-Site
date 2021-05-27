@@ -183,7 +183,7 @@ class IsiContent extends React.Component {
             target='_blank'
           >
             Prescribing Information, including BOXED WARNING
-          </a>.
+          </a>
         </p>
       </section>
     )
