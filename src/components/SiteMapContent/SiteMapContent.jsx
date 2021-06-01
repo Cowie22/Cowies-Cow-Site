@@ -44,7 +44,7 @@ class SiteMapContent extends React.Component {
                   </li>
                   <li>
                     <Link to='/myfembree-support-program/'>
-                      Financial Support
+                    Access and Support
                     </Link>
                     <ul className='purple-ul-dashed sitemap-ul'>
                       <li>

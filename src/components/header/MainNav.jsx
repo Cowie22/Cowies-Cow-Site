@@ -140,7 +140,7 @@ class MainNav extends React.Component {
                       }}
                     >
                       <Link to='/myfembree-support-program/'>
-                        Financial Support
+                      Access and Support
                       </Link>
                       {/* <img src={activeHeaderDropdown === 'resources' ? upArrow : downArrow} className='nav-arrow' /> */}
                       <svg
@@ -228,7 +228,7 @@ class MainNav extends React.Component {
                           mobileDropDown !== 1 ? this.handleMobileDropDown(1) : this.handleMobileDropDown(0)
                         }}
                       >
-                        Financial Support
+                        Access and Support
                         <img src={mobileDropDown === 1 ? upArrow : downArrow} className='nav-arrow' />
                       </div>
                       <ul

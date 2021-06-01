@@ -232,7 +232,7 @@ class MyfembreeSupportProgramContent extends React.Component {
                     for enrollment and sharing protected health information`
                   }
                   btnText={'Provide e-Consent'}
-                  link={'https://www.google.com/'}
+                  link={'https://portal.trialcard.com/myovant/myfembree/consent/'}
                 />
                 <h6 className='lower-content-footnote'>
                   *See below for full terms and conditions.

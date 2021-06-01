@@ -36,9 +36,9 @@ const SupportContentBlockLarge = (props) => {
         <Row>
           <Col lg={{span: 10, offset: 1}}>
             <div className='support-block-enroll-card-container'>
-              <h3 className='blue text-center'>
-                Enroll today!
-              </h3>
+              
+                <a href='https://portal.trialcard.com/myovant/myfembree/copay/ ' target='_blank'><h3 className='blue text-center'>Enroll Today! </h3></a>
+             
               <Row>
                 <Col lg={{span: 10, offset: 1}}>
                   <p className='extra-bold'>

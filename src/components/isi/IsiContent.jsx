@@ -15,9 +15,7 @@ class IsiContent extends React.Component {
           INDICATION
         </h4>
         <p>
-          Myfembree is indicated for the management of heavy menstrual bleeding associated with uterine
-          leiomyomas (fibroids) in premenopausal women. <u>Limitations of Use</u>: Use of Myfembree
-          should be limited to 24 months due to the risk of continued bone loss which may not be reversible.
+          Myfembree is indicated for the management of heavy menstrual bleeding associated with uterine leiomyomas (fibroids) in premenopausal women. <u>Limitations of Use</u>: Use of Myfembree should be limited to 24 months due to the risk of continued bone loss which may not be reversible.
         </p>
         <h4 className='purple extra-bold isi-header-text mulish'>
           IMPORTANT SAFETY INFORMATION
@@ -28,14 +26,10 @@ class IsiContent extends React.Component {
           </p>
           <ul className='black-box-ul'>
             <li>
-              Estrogen and progestin combination products, including Myfembree, increase the risk of thrombotic
-              or thromboembolic disorders including pulmonary embolism, deep vein thrombosis, stroke and
-              myocardial infarction, especially in women at increased risk for these events.
+              Estrogen and progestin combination products, including Myfembree, increase the risk of thrombotic or thromboembolic disorders including pulmonary embolism, deep vein thrombosis, stroke and myocardial infarction, especially in women at increased risk for these events.
             </li>
             <li>
-              Myfembree is contraindicated in women with current or a history of thrombotic or thromboembolic
-              disorders and in women at increased risk for these events, including women over 35 years of age
-              who smoke or women with uncontrolled hypertension.
+              Myfembree is contraindicated in women with current or a history of thrombotic or thromboembolic disorders and in women at increased risk for these events, including women over 35 years of age who smoke or women with uncontrolled hypertension.
             </li>
           </ul>
         {/* </div> */}
@@ -43,40 +37,23 @@ class IsiContent extends React.Component {
           CONTRAINDICATIONS
         </h4>
         <p>
-          Myfembree is contraindicated in women with any of the following: high risk of arterial, venous
-          thrombotic, or thromboembolic disorder; pregnancy; known osteoporosis; current or history of breast
-          cancer or other hormone-sensitive malignancies; known hepatic impairment or disease; undiagnosed
-          abnormal uterine bleeding; known hypersensitivity to components of Myfembree.
+          Myfembree is contraindicated in women with any of the following: high risk of arterial, venous thrombotic, or thromboembolic disorder; pregnancy; known osteoporosis; current or history of breast cancer or other hormone-sensitive malignancies; known hepatic impairment or disease; undiagnosed abnormal uterine bleeding; known hypersensitivity to components of Myfembree.
         </p>
         <h4 className='purple extra-bold isi-header-text mulish'>
           WARNINGS AND PRECAUTIONS
         </h4>
         <p>
           <strong className='purple'>Thromboembolic Disorders:</strong> {' '}
-          Discontinue immediately if an arterial or venous
-          thrombotic, cardiovascular, or cerebrovascular event occurs or is suspected. Discontinue at
-          least 4 to 6 weeks before surgery associated with an increased risk of thromboembolism, or
-          during periods of prolonged immobilization, if feasible. Discontinue immediately if there is
-          sudden unexplained partial or complete loss of vision, proptosis, diplopia, papilledema, or
-          retinal vascular lesions and evaluate for retinal vein thrombosis as these have been reported
-          with estrogens and progestins.
+          Discontinue immediately if an arterial or venous thrombotic, cardiovascular, or cerebrovascular event occurs or is suspected. Discontinue at least 4 to 6 weeks before surgery associated with an increased risk of thromboembolism, or during periods of prolonged immobilization, if feasible. Discontinue immediately if there is sudden unexplained partial or complete loss of vision, proptosis, diplopia, papilledema, or retinal vascular lesions and evaluate for retinal vein thrombosis as these have been reported with estrogens and progestins.
         </p>
         <p>
           <strong className='purple'>Bone Loss:</strong> {' '}
-          Myfembree may cause a decrease in bone mineral density (BMD) in
-          some patients, which may be greater with increasing duration of use and may not be completely
-          reversible after stopping treatment. Consider the benefits and risks in patients with a history
-          of low trauma fracture or risk factors for osteoporosis or bone loss, including medications that
-          may decrease BMD. Assessment of BMD by dual-energy X-ray absorptiometry (DXA) is recommended at
-          baseline and periodically thereafter. Consider discontinuing Myfembree if the risk of bone loss
-          exceeds the potential benefit.
+          Myfembree may cause a decrease in bone mineral density (BMD) in some patients, which may be greater with increasing duration of use and may not be completely reversible after stopping treatment. Consider the benefits and risks in patients with a history of low trauma fracture or risk factors for osteoporosis or bone loss, including medications that may decrease BMD. Assessment of BMD by dual-energy X-ray absorptiometry (DXA) is recommended at baseline and periodically thereafter. Consider discontinuing Myfembree if the risk of bone loss exceeds the potential benefit. 
         </p>
         <p>
           <strong className='purple'>Hormone-Sensitive Malignancies:</strong> {' '}
-          Discontinue Myfembree if a hormone-sensitive
-          malignancy is diagnosed. Surveillance measures in accordance with standard of care, such as
-          breast examinations and mammography are recommended. Use of estrogen alone or estrogen plus
-          progestin has resulted in abnormal mammograms requiring further evaluation.
+          Discontinue Myfembree if a hormone-sensitive malignancy is diagnosed. Surveillance measures in accordance with standard of care, such as breast examinations and mammography are recommended. Use of estrogen alone or estrogen plus progestin has resulted in abnormal mammograms requiring further evaluation.
+          
         </p>
         <p>
           <strong className='purple'>Depression, Mood Disorders, and Suicidal Ideation:</strong> {' '}
