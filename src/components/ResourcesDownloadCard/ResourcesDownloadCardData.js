@@ -27,7 +27,7 @@ const ResourceDownloadCardData3 = [
 const ResourceDownloadCardData4 = [
   {
     title: 'Medical Necessity/Exception Sample Letter',
-    subTitle: 'PDF',
+    subTitle: 'Word Document',
     downloadLink: '',
   }
 ]
