@@ -58,7 +58,7 @@ class ISI extends React.Component {
       let isiMobileImg = document.getElementById('isi-mobile-header-img-1');
 
       // This is for when the ISI tray is currently visible.  
-      // As the trigger element should become visible above they ISI tray, before hiding the tray.
+      // As the trigger element should become visible above the ISI tray, before hiding the tray.
       let trayHideHeight = triggerElement.top + scrollTop - window.innerHeight + isiTrayHeight;
 
       // This is for when the ISI tray is already hidden.
