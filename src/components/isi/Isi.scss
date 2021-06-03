@@ -96,6 +96,11 @@
   &.hide {
     position: initial;
   }
+  &.hide-tray {
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s;
+  }
 }
 
 .isi-tray-container {

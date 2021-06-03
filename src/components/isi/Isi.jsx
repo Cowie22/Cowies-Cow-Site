@@ -50,55 +50,34 @@ class ISI extends React.Component {
   }
 
   toggleIsiHeader = () => {
-    const fadeInEffect = () => {
+    try {
+      let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+      let triggerElement = document.querySelector('.page-isi #trigger-tray').getBoundingClientRect();
+      let isiTrayHeight = document.querySelector('.isi-tray').getBoundingClientRect().height;
       let fadeTarget = document.querySelector('.isi-tray');
-      let fadeEffect = setInterval(function () {
-        if (fadeTarget.style.opacity) {
-          fadeTarget.style.opacity = 1;
-          fadeTarget.style.zIndex = 100;
+      let isiMobileImg = document.getElementById('isi-mobile-header-img-1');
+
+      // This is for when the ISI tray is currently visible.  
+      // As the trigger element should become visible above they ISI tray, before hiding the tray.
+      let trayHideHeight = triggerElement.top + scrollTop - window.innerHeight + isiTrayHeight;
+
+      // This is for when the ISI tray is already hidden.
+      // It should only appear when the trigger element hits the bottom of the viewport now instead.
+      let trayShowHeight = triggerElement.top + scrollTop - window.innerHeight;
+
+      if (scrollTop >= trayHideHeight) {
+        if (isiMobileImg) {
+          isiMobileImg.classList.add('hidden-plus');
         }
-        if (fadeTarget.style.opacity < 0) {
-          fadeTarget.style.opacity += 0.1;
-          fadeTarget.style.zIndex = 100;
-        } else {
-          clearInterval(fadeEffect);
+        fadeTarget.classList.add('hide-tray');
+      } else if (scrollTop < trayShowHeight) {
+        if (isiMobileImg) {
+          isiMobileImg.classList.remove('hidden-plus');
         }
-      }, 50);
-      this.setState({
-        nonExpandedISI: false,
-      })
-    }
-    const fadeOutEffect = () => {
-      let fadeTarget = document.querySelector('.isi-tray');
-      let fadeEffect = setInterval(function () {
-        if (!fadeTarget.style.opacity) {
-          fadeTarget.style.opacity = 1;
-        }
-        if (fadeTarget.style.opacity > 0) {
-          fadeTarget.style.opacity -= 0.1;
-          fadeTarget.style.zIndex = -1;
-        } else {
-          clearInterval(fadeEffect);
-        }
-      }, 50);
-      this.setState({
-        nonExpandedISI: true,
-      })
-    }
-    let pageISI = document.querySelector('.page-isi').getBoundingClientRect();
-    let pageWidth = window.innerWidth;
-    let isiMobileImg = document.getElementById('isi-mobile-header-img-1');
-    let offSetWidth = pageWidth > 765 ? 700 : 700
-    if (pageISI.bottom < (pageISI.height + offSetWidth)) {
-      if (isiMobileImg) {
-        isiMobileImg.classList.add('hidden-plus')
+        fadeTarget.classList.remove('hide-tray');
       }
-      fadeOutEffect()
-    } else {
-      if (isiMobileImg) {
-        isiMobileImg.classList.remove('hidden-plus')
-      }
-      fadeInEffect()
+    } catch (e) {
+      console.log(e);
     }
   }
 

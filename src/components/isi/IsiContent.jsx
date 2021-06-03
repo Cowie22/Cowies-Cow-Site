@@ -28,7 +28,7 @@ class IsiContent extends React.Component {
             <li>
               Estrogen and progestin combination products, including Myfembree, increase the risk of thrombotic or thromboembolic disorders including pulmonary embolism, deep vein thrombosis, stroke and myocardial infarction, especially in women at increased risk for these events.
             </li>
-            <li>
+            <li id="trigger-tray">
               Myfembree is contraindicated in women with current or a history of thrombotic or thromboembolic disorders and in women at increased risk for these events, including women over 35 years of age who smoke or women with uncontrolled hypertension.
             </li>
           </ul>
