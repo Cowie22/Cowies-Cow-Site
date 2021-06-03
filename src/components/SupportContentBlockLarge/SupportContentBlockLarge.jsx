@@ -46,6 +46,17 @@ const SupportContentBlockLarge = (props) => {
                     phone, or by scanning a QR code included on select Myfembree Support Program resources
                   </p>
                 </Col>
+                {/* <Col lg={{span: 3, offset: 1}} style={{paddingTop: '15px'}}>
+                  <a href='https://portal.trialcard.com/myovant/myfembree/copay/ ' target='_blank'>
+                    <button className='cta-btn pink-btn enroll-btn'>
+                      Enroll Today!
+                    </button>
+
+
+
+                  </a>
+                
+                </Col> */}
               </Row>
             </div>
           </Col>

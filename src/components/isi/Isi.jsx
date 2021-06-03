@@ -52,7 +52,7 @@ class ISI extends React.Component {
   toggleIsiHeader = () => {
     try {
       let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-      let triggerElement = window.innerWidth > '525px' ? document.querySelector('.page-isi #trigger-tray').getBoundingClientRect() : document.querySelector('.page-isi #trigger-mobile-tray').getBoundingClientRect();
+      let triggerElement = document.querySelector('.page-isi #trigger-tray').getBoundingClientRect();
       let isiTrayHeight = document.querySelector('.isi-tray').getBoundingClientRect().height;
       let fadeTarget = document.querySelector('.isi-tray');
       let isiMobileImg = document.getElementById('isi-mobile-header-img-1');
