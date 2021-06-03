@@ -36,7 +36,7 @@ const HeaderDropdownData = [
       },
       {
         listName: 'Patient e-Consent',
-        listLink: 'https://www.google.com/',
+        listLink: 'https://portal.trialcard.com/myovant/myfembree/consent/',
         innerPageNav: true,
         externalLink: true,
       },

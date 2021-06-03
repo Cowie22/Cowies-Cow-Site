@@ -311,9 +311,13 @@ class MainNav extends React.Component {
                             }}
                             className={(activeDropdownLink === 0.5 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
                           >
-                            <Link to='/myfembree-support-program/'>
+                            <a
+                                target='_blank'
+                                
+                                href='https://portal.trialcard.com/myovant/myfembree/consent/'
+                              >
                               Patient e-Consent
-                            </Link>
+                            </a>
                           </li>
                         </ul>
                         <li

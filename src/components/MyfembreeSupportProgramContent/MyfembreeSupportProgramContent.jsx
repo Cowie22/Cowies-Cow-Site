@@ -85,7 +85,7 @@ class MyfembreeSupportProgramContent extends React.Component {
             <Row>
               <Col lg={{span: 9, offset: 0}} xs={{span: 12, offset: 0}}>
                 <h1 className='top-title'>
-                  NOW AVAILABLE!
+                  NOW AVAILABLE
                 </h1>
                 <p className='white'>
                   Myfembree® is now available at retail or mail-order pharmacies.
@@ -246,7 +246,7 @@ class MyfembreeSupportProgramContent extends React.Component {
             <h2 className='white'>
               If assistance is required during the enrollment process, call the Myfembree
               Support Program at <a href='tel:1-833-693-3627'><u>1-833-MYFEMBREE</u> (<u>1-833-693-3627</u>)</a>,
-              8 AM–8 PM ET, Monday–Friday
+              8 <sub>AM</sub>–8 <sub>PM</sub> ET, Monday–Friday
             </h2>
           }
         />
