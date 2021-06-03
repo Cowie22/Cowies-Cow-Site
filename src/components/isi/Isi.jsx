@@ -130,6 +130,7 @@ class ISI extends React.Component {
         <div className={isIsiExpanded ? 'isi-overlay' : ''} onClick={() => this.toggleIsiTray()}>
           <div
             className={isIsiExpanded ? 'isi-tray expanded' : yDirection > 0 ? 'isi-tray tray-collapsed' : 'isi-tray'}
+           
             onClick={() => typeof window !== 'undefined' && window.innerWidth > 0 ? this.toggleIsiTray() : null}
           >
             <Container>

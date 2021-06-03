@@ -108,9 +108,9 @@ class MyfembreeSupportProgramContent extends React.Component {
                   the Myfembree Support Program
                 </h2>
                 <p className='white'>
-                  The Myfembree Support Program is designed to help your patients throughout their treatment
+                  The Myfembree Support Program is designed to help your eligible patients throughout their treatment
                   journey. We offer financial assistance options, dedicated support staff, and other helpful
-                  resources once patients have been prescribed Myfembree.
+                  resources once eligible patients have been prescribed Myfembree.
                 </p>
               </Col>
             </Row>
