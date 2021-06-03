@@ -35,6 +35,7 @@ const SupportContentBlockData2 = [
   {
     title: 'Myfembree Quick Start Program',
     purpleLineTitle: 'Eligible patients with federal insurance may receive Myfembree at no cost for up to 2 months',
+    
     content:
     `The Myfembree Quick Start Program can provide eligible patients with federal insurance who are newly
     prescribed Myfembree a temporary supply in cases of delayed insurance coverage.`,
@@ -60,7 +61,8 @@ const SupportContentBlockData2 = [
 const SupportContentBlockData3 = [
   {
     title: 'Myovant Sciences Patient Assistance Program',
-    purpleLineTitle: 'Eligible patients may be able to get Myfembree at no cost',
+    purpleLineTitle: 'Eligible patients may be able to get',
+    purpleLineTitle2: 'Myfembree at no cost',
     content:
     `The Myovant Sciences Patient Assistance Program (PAP) can provide Myfembree at no cost to eligible patients
     with a coverage denial or no insurance coverage.`,

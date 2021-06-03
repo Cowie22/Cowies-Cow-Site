@@ -5,7 +5,7 @@ import PurpleLineCallout from '../PurpleLineCallout/PurpleLineCallout'
 
 const SupportContentBlock = (props) => {
   const { data } = props;
-  const { title, purpleLineTitle, content, subTitle, footnote, bgColor} = data[0];
+  const { title, purpleLineTitle, purpleLineTitle2, content, subTitle, footnote, bgColor} = data[0];
   return (
     <section style={{background: bgColor}} className='support-content-block-container'>
       <Container>
@@ -21,7 +21,8 @@ const SupportContentBlock = (props) => {
             <PurpleLineCallout
               title={
                 <p className='extra-bold purple large-text'>
-                  {purpleLineTitle}
+                  {purpleLineTitle}<br/>
+                  {purpleLineTitle2}
                 </p>
               }
             />
