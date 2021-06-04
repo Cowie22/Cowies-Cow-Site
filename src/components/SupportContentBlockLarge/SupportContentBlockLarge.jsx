@@ -37,16 +37,16 @@ const SupportContentBlockLarge = (props) => {
           <Col lg={{span: 10, offset: 1}}>
             <div className='support-block-enroll-card-container'>
               
-                <a href='https://portal.trialcard.com/myovant/myfembree/copay/ ' target='_blank'><h3 className='blue text-center'>Enroll Today! </h3></a>
-             
+                {/* <a href='https://portal.trialcard.com/myovant/myfembree/copay/ ' target='_blank'><h3 className='blue text-center'>Enroll Today! </h3></a>
+              */}
               <Row>
-                <Col lg={{span: 10, offset: 1}}>
-                  <p className='extra-bold'>
+                <Col lg={{span: 6, offset: 1}}>
+                  <p className='extra-bold enroll-btn-text-top' >
                     Enrollment into this copay program is facilitated through the Myfembree website, over the
                     phone, or by scanning a QR code included on select Myfembree Support Program resources
                   </p>
                 </Col>
-                {/* <Col lg={{span: 3, offset: 1}} style={{paddingTop: '15px'}}>
+                <Col lg={{span: 3, offset: 1}} className='enroll-btn'>
                   <a href='https://portal.trialcard.com/myovant/myfembree/copay/ ' target='_blank'>
                     <button className='cta-btn pink-btn enroll-btn'>
                       Enroll Today!
@@ -56,7 +56,13 @@ const SupportContentBlockLarge = (props) => {
 
                   </a>
                 
-                </Col> */}
+                </Col>
+                <Col lg={{span: 5, offset: 1}}>
+                  <p className='extra-bold enroll-btn-text-btm'>
+                    Enrollment into this copay program is facilitated through the Myfembree website, over the
+                    phone, or by scanning a QR code included on select Myfembree Support Program resources
+                  </p>
+                </Col>
               </Row>
             </div>
           </Col>

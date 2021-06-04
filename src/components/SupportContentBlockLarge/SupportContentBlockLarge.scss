@@ -40,6 +40,45 @@
   }
 }
 
-// .enroll-btn {
-//   width: 207px !important
-// }
+.enroll.btn-text-btm {
+ 
+  padding-top: 15px
+
+}
+
+
+
+@media screen and (min-width: 992px) {
+  .enroll-btn-text-top {
+    display: block
+  }
+
+  .enroll-btn-text-btm {
+    display: none;
+    
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .enroll.btn-text-btm {
+    display: block;
+  
+  
+  }
+  .enroll-btn-text-top {
+    display: none
+  }
+
+  .enroll-btn {
+    padding-bottom: 15px;
+  }
+}
+
+.enroll-btn {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+
+
