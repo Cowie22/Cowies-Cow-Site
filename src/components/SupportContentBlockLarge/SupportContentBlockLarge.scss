@@ -48,35 +48,39 @@
 
 
 
-@media screen and (min-width: 992px) {
-  .enroll-btn-text-top {
-    display: block
-  }
+// @media screen and (min-width: 992px) {
+//   .enroll-btn-text-top {
+//     display: block
+//   }
 
-  .enroll-btn-text-btm {
-    display: none;
+//   .enroll-btn-text-btm {
+//     display: none;
     
-  }
-}
+//   }
+// }
 
-@media screen and (max-width: 991px) {
-  .enroll.btn-text-btm {
-    display: block;
+// @media screen and (max-width: 991px) {
+//   .enroll.btn-text-btm {
+//     display: block;
   
   
-  }
-  .enroll-btn-text-top {
-    display: none
-  }
+//   }
+//   .enroll-btn-text-top {
+//     display: none
+//   }
 
-  .enroll-btn {
-    padding-bottom: 15px;
-  }
-}
+//   .enroll-btn {
+//     padding-bottom: 15px;
+//   }
+// }
 
 .enroll-btn {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto;
+  padding-bottom: 16px;
+}
+
+.enroll-btn-text {
+  padding-left: 13px
 }
 
 
