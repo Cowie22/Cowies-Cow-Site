@@ -2,12 +2,8 @@
   position: relative;
   background: $white;
   padding: 40px 0;
-
-  
-
   p {
     padding-bottom: 4px;
-   
   }
   ul {
     padding: 0px 0px 0px 18px;
@@ -30,14 +26,6 @@
       transition-delay: .2s;
     }
   }
-
-  // span {
-  //   text-transform: uppercase;
-  //   color: $teal;
-  //   padding-bottom: 10px;
-  //   font-size: 18px;
-  //   line-height: 24px;
-  // }
 
   .row {
     &:not(:first-of-type) {
@@ -88,7 +76,7 @@
   position: fixed;
   top: calc(100% - 195px);
   bottom: 0;
-  z-index: 10;
+  z-index: 9990;
   transition: 0.5s;
   // &.tray-collapsed {
   //   top: calc(100% - 65px);
@@ -160,9 +148,15 @@
   top: -180px;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1200px) and (min-width: 992px) {
   .isi-tray {
-    top: calc(100% - 192px);
+    top: calc(100% - 245px);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .isi-tray {
+    top: calc(100% - 194px);
     background: #FFFFFF;
     box-shadow: 0px -1px 6px rgba(0, 0, 0, 0.3);
     border-radius: 16px 0px 0px 0px;
@@ -207,41 +201,14 @@
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 525px) {
   .isi-tray {
-    top: calc(100% - 245px)
+    top: calc(100% - 266px)
   }
- 
 }
 
-@media screen and (max-width: 465px) {
-  li {
-    line-height: 18px;
-  }
-
+@media screen and (max-width: 376px) {
   .isi-tray {
-    top: calc(100% - 225px)
+    top: calc(100% - 310px)
   }
-  
- }
-
-
- @media screen and (max-width: 410px) {
- 
-
-  .isi-tray {
-    top: calc(100% - 265px)
-  }
-  
- }
-
-
-
- @media screen and (max-width: 340px) {
- 
-
-  .isi-tray {
-    top: calc(100% - 285px)
-  }
-  
- }
+}

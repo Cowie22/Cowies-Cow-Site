@@ -48,12 +48,13 @@ class HeaderDropdown extends React.Component {
                           {listName}
                         </Link>
                         :
-                        <ExternalLink
+                        <a
+                          href='https://portal.trialcard.com/myovant/myfembree/consent/'
                           className={innerPageNav ? 'inner-page' : ''}
-                          externalUrl={listLink}
+                          target='_blank'
                         >
                           {listName}
-                        </ExternalLink>
+                        </a>
                       }
                     </li>
                   )

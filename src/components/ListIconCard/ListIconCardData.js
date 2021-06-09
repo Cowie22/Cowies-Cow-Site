@@ -38,7 +38,7 @@ const ListIconCardData2 = [
         The completed form is faxed from the office to the Myfembree Support Program
       </li>
       <li>
-        Fax completed forms to <a href='tel:1-877-328-0138'>1-877-328-0138</a>
+        Fax completed forms to 1-877-328-0138
       </li>
     </ul>,
     icon: paper,

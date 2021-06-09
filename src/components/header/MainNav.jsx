@@ -18,22 +18,23 @@ class MainNav extends React.Component {
     this.state = {
       currentData: {list: ['placeholder']},
       isNavOpen: false,
-      mobileDropDown: 0,
+      mobileDropDown: 1,
     }
   }
 
   toggleNav = () => {
     document.querySelector('.mobile-nav').scrollTop = 0;
+    this.props.setNavOpen();
     this.setState({
       isNavOpen: !this.state.isNavOpen,
     })
     let isiTray = document.getElementsByClassName('isi-tray')[0];
     if (this.state.isNavOpen) {
       document.body.classList.remove('scroll-none');
-      isiTray.classList.remove('hide');
+      // isiTray.classList.remove('hide');
     } else {
       document.body.classList.add('scroll-none');
-      isiTray.classList.add('hide');
+      // isiTray.classList.add('hide');
     }
   }
 
@@ -216,7 +217,7 @@ class MainNav extends React.Component {
                     mobileDropDown !== 0 ? 'mobile-nav-list-container' : 'mobile-nav-list-container hidden'
                   }
                 >
-                  <ul className='mobile-nav-links'>
+                  <ul className='mobile-nav-links' style={mobileDropDown !== 1 ? {overflow: 'hidden'} : {}}>
                     <li
                       // onClick={() => {
                       //   this.toggleNav()
@@ -312,10 +313,9 @@ class MainNav extends React.Component {
                             className={(activeDropdownLink === 0.5 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
                           >
                             <a
-                                target='_blank'
-                                
-                                href='https://portal.trialcard.com/myovant/myfembree/consent/'
-                              >
+                              target='_blank'
+                              href='https://portal.trialcard.com/myovant/myfembree/consent/'
+                            >
                               Patient e-Consent
                             </a>
                           </li>
@@ -340,7 +340,7 @@ class MainNav extends React.Component {
               </Col>
             </Row>
           </Container>
-          <div className='mobile-nav-overlay d-block d-lg-none'>&nbsp;</div>
+          {/* <div className='mobile-nav-overlay d-block d-lg-none'>&nbsp;</div> */}
           </section>
           <section className='mobile-register-btn d-block d-lg-none'>
             <a href=''>

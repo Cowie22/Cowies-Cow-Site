@@ -73,12 +73,10 @@ class SiteMapContent extends React.Component {
                             </Link>
                           </li>
                           <li>
-                            
                             <a
-                                target='_blank'
-                                
-                                href='https://portal.trialcard.com/myovant/myfembree/consent/'
-                              >
+                              target='_blank'
+                              href='https://portal.trialcard.com/myovant/myfembree/consent/'
+                            >
                               Patient e-Consent
                             </a>
                           </li>

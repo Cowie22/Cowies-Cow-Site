@@ -57,7 +57,7 @@ class ISI extends React.Component {
       let fadeTarget = document.querySelector('.isi-tray');
       let isiMobileImg = document.getElementById('isi-mobile-header-img-1');
 
-      // This is for when the ISI tray is currently visible.  
+      // This is for when the ISI tray is currently visible.
       // As the trigger element should become visible above the ISI tray, before hiding the tray.
       let trayHideHeight = triggerElement.top + scrollTop - window.innerHeight + isiTrayHeight;
 
@@ -109,7 +109,6 @@ class ISI extends React.Component {
         <div className={isIsiExpanded ? 'isi-overlay' : ''} onClick={() => this.toggleIsiTray()}>
           <div
             className={isIsiExpanded ? 'isi-tray expanded' : yDirection > 0 ? 'isi-tray tray-collapsed' : 'isi-tray'}
-           
             onClick={() => typeof window !== 'undefined' && window.innerWidth > 0 ? this.toggleIsiTray() : null}
           >
             <Container>
@@ -208,18 +207,25 @@ class ISI extends React.Component {
                               </p>
                               <ul className='black-box-ul'>
                                 <li>
-                                  Estrogen and progestin combination products, including Myfembree, increase the risk of thrombotic or thromboembolic disorders including pulmonary embolism, deep vein thrombosis, stroke and myocardial infarction, especially in women at increased risk for these events.
+                                  Estrogen and progestin combination products, including Myfembree, increase the risk
+                                  of thrombotic or thromboembolic disorders including pulmonary embolism, deep vein
+                                  thrombosis, stroke and myocardial infarction, especially in women at increased
+                                  risk for these events.
                                 </li>
                                 <li>
-                                  Myfembree is contraindicated in women with current or a history of thrombotic or thromboembolic disorders and in women at increased risk for these events, including women over 35 years of age who smoke or women with uncontrolled hypertension.
+                                  Myfembree is contraindicated in women with current or a history of thrombotic
+                                  or thromboembolic disorders and in women at increased risk for these events,
+                                  including women over 35 years of age who smoke or women with uncontrolled hypertension.
                                 </li>
                               </ul>
                             {/* </div> */}
                           </Col>
                           <Col lg={{span: 4, offset: 0}}>
                             <p>
-                            Myfembree is indicated for the management of heavy menstrual bleeding associated with uterine leiomyomas (fibroids) in premenopausal women. <u>Limitations of Use</u>:
-                            Use of Myfembree should be limited to 24 months due to the risk of continued bone loss which may not be reversible.
+                              Myfembree is indicated for the management of heavy menstrual bleeding associated
+                              with uterine leiomyomas (fibroids) in premenopausal women.&nbsp;&nbsp; <u>Limitations of
+                              Use</u>: Use of Myfembree should be limited to 24 months due to the risk of continued
+                              bone loss which may not be reversible.
                             </p>
                           </Col>
                         </Row>
