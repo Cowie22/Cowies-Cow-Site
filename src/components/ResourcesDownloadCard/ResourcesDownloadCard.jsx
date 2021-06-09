@@ -6,7 +6,7 @@ import downloadIconHovered from '../../assets/images/download-icon-white.svg'
 
 const ResourcesDownloadCard = (props) => {
   const { data } = props;
-  const { title, subTitle, downloadLink, wordDoc } = data[0];
+  const { title, subTitle, downloadLink, wordDoc, download } = data[0];
   const [hovered, handleHovered] = useState(false)
   return (
     <Row>
@@ -18,7 +18,7 @@ const ResourcesDownloadCard = (props) => {
                 href={downloadLink}
                 target='_blank'
                 className='text-link'
-                download={wordDoc ? wordDoc : false}
+                download={wordDoc ? download : false}
               >
                 <p className='pink extra-bold'>
                   {title}
@@ -38,7 +38,7 @@ const ResourcesDownloadCard = (props) => {
                   href={downloadLink}
                   target='_blank'
                   className='text-link'
-                  download={wordDoc ? wordDoc : false}
+                  download={wordDoc ? download : false}
                 >
                   <button className='cta-btn transparent-btn-pink'>
                     Download

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 import { StickyContainer } from 'react-sticky'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import AppProvider, { AppContext } from '../contexts/state'
 
@@ -52,6 +53,19 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
         <UtilityNav />
 
         <Header />
+        <section className='mobile-register-btn d-block d-lg-none'>
+          <a href='https://www.ufmanagement-learnmore.com/' target='_blank'>
+            <Container>
+              <Row>
+                <Col>
+                  <p className='white text-center mulish'>
+                    Register for Launch Broadcast
+                  </p>
+                </Col>
+              </Row>
+            </Container>
+          </a>
+        </section>
         <div className='main'>{children}</div>
         <div
           className='back-to-top-container'

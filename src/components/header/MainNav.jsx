@@ -342,21 +342,6 @@ class MainNav extends React.Component {
           </Container>
           {/* <div className='mobile-nav-overlay d-block d-lg-none'>&nbsp;</div> */}
           </section>
-          <section className='mobile-register-btn d-block d-lg-none'>
-            <a href=''>
-              <Container>
-                <Row>
-                  <Col>
-                    <a href='https://www.ufmanagement-learnmore.com/' target='_blank'>
-                      <p className='white text-center mulish'>
-                        Register for Launch Broadcast
-                      </p>
-                    </a>
-                  </Col>
-                </Row>
-              </Container>
-            </a>
-          </section>
       </>
     )
   }
