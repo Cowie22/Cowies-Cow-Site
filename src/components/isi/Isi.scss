@@ -155,6 +155,14 @@
 }
 
 @media screen and (max-width: 992px) {
+  .isi {
+    p {
+      line-height: 18px;
+    }
+    li {
+      line-height: 18px;
+    }
+  }
   .isi-tray {
     top: calc(100% - 194px);
     background: #FFFFFF;
