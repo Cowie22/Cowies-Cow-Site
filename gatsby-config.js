@@ -10,6 +10,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `docs`,
+        path: `${__dirname}/src/assets/docs`
+      }
+    },
+    `gatsby-transformer-ms-word`,
+    {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-MV77PCG",

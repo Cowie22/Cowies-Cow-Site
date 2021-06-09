@@ -6,7 +6,7 @@ import downloadIconHovered from '../../assets/images/download-icon-white.svg'
 
 const ResourcesDownloadCard = (props) => {
   const { data } = props;
-  const { title, subTitle, downloadLink } = data[0];
+  const { title, subTitle, downloadLink, docLink } = data[0];
   const [hovered, handleHovered] = useState(false)
   return (
     <Row>
@@ -14,7 +14,11 @@ const ResourcesDownloadCard = (props) => {
         <div className='resources-download-card-container'>
           <Row>
             <Col lg={{span: 5, offset: 1}} xs={{span: 10, offset: 1}}>
-              <a href={downloadLink} target='_blank' className='text-link'>
+              <a
+                href={downloadLink}
+                target='_blank'
+                className='text-link'
+              >
                 <p className='pink extra-bold'>
                   {title}
                 </p>
@@ -29,7 +33,11 @@ const ResourcesDownloadCard = (props) => {
                 onMouseEnter={() => handleHovered(true)}
                 onMouseLeave={() => handleHovered(false)}
               >
-                <a href={downloadLink} target='_blank'>
+                <a
+                  href={downloadLink}
+                  target='_blank'
+                  className='text-link'
+                >
                   <button className='cta-btn transparent-btn-pink'>
                     Download
                     <svg

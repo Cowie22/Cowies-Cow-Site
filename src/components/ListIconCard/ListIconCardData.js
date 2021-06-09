@@ -4,6 +4,8 @@ import computerIcon from '../../assets/images/computer-icon.svg'
 import paper from '../../assets/images/paper-dog-ear-icon.svg'
 import iphone from '../../assets/images/iphone-icon.svg'
 
+import enrollmentPDF from '../../assets/downloadables/myfembree-support-program-enrollment-form.pdf'
+
 const ListIconCardData1 = [
   {
     title: <p className='extra-bold'>Electronic Prescription Platform Enrollment (eRx)</p>,
@@ -32,7 +34,8 @@ const ListIconCardData2 = [
     content:
     <ul className='purple-ul less-right-padding'>
       <li>
-        Download a form <a href=''>here</a> or have it delivered by a Myfembree account manager
+        Download a form <a href={enrollmentPDF} target='_blank'>here</a> or have it delivered by a
+        Myfembree account manager
       </li>
       <li>
         The completed form is faxed from the office to the Myfembree Support Program
