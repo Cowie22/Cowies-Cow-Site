@@ -180,7 +180,7 @@ class MainNav extends React.Component {
                   }}
                 >
                   <div className='cta-btn-container header-cta-btn-container'>
-                    <a href='https://www.UFmanagement-learnmore.com/' target='_blank'>
+                    <a href='https://www.ufmanagement-learnmore.com/' target='_blank'>
                       <button className='cta-btn pink-btn'>
                         Register for Launch Broadcast
                       </button>
@@ -347,9 +347,11 @@ class MainNav extends React.Component {
               <Container>
                 <Row>
                   <Col>
-                    <p className='white text-center mulish'>
-                      Register for Launch Broadcast
-                    </p>
+                    <a href='https://www.ufmanagement-learnmore.com/' target='_blank'>
+                      <p className='white text-center mulish'>
+                        Register for Launch Broadcast
+                      </p>
+                    </a>
                   </Col>
                 </Row>
               </Container>
