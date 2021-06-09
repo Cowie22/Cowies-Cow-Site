@@ -12,6 +12,7 @@ const ResourceDownloadCardData1 = [
     title: 'Myfembree Support Program Enrollment Form',
     subTitle: 'PDF',
     downloadLink: enrollmentPDF,
+    wordDoc: false,
   }
 ]
 
@@ -20,6 +21,7 @@ const ResourceDownloadCardData2 = [
     title: 'Myfembree Support Program Patient Consent Form',
     subTitle: 'PDF',
     downloadLink: consentPDF,
+    wordDoc: false,
   }
 ]
 
@@ -28,6 +30,7 @@ const ResourceDownloadCardData3 = [
     title: 'Medical Necessity/Exception Considerations',
     subTitle: 'PDF',
     downloadLink: considerationsPDF,
+    wordDoc: false,
   }
 ]
 
@@ -35,7 +38,8 @@ const ResourceDownloadCardData4 = [
   {
     title: 'Medical Necessity/Exception Sample Letter',
     subTitle: 'Word Document',
-    downloadLink: 'https://thinkgiant.egnyte.com/dl/pmPtXobbbA/?',
+    downloadLink: '../../assets/docs/sample-letter-of-coverage-denial-appeal.docx',
+    wordDoc: true,
   }
 ]
 
@@ -44,6 +48,7 @@ const ResourceDownloadCardData5 = [
     title: 'PA Denial Appeal Considerations',
     subTitle: 'PDF',
     downloadLink: coveragePDF,
+    wordDoc: false,
   }
 ]
 
@@ -51,7 +56,8 @@ const ResourceDownloadCardData6 = [
   {
     title: 'PA Denial Appeal Sample Letter',
     subTitle: 'Word Document',
-    downloadLink: 'https://thinkgiant.egnyte.com/dl/996rXExxAU/?',
+    downloadLink: '../../assets/docs/sample-letter-of-medical-exception-and-necessity-template.docx',
+    wordDoc: true,
   }
 ]
 
