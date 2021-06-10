@@ -19,13 +19,14 @@ const SupportContentBlockData1 = [
     Government insurance, or any state patient or pharmaceutical assistance program. Patients and prescribers must
     complete the Myfembree Support Program enrollment form, and prescribers must provide a Myfembree Bridge
     prescription. Patients will receive their drug supply each month for up to 4 months or until they receive
-    insurance coverage approval, whichever occurs earlier. Program is not available to patients who are
-    uninsured or where prohibited by law such as Massachusetts and Minnesota. Patients may be asked to reverify
-    insurance coverage status during the course of the Program. Patients and participating prescribers agree
-    not to seek reimbursement for all, or any part of the benefit received by the patient through this Program.
-    No purchase necessary. Program is not health insurance, nor is participation a guarantee of insurance coverage.
-    Other limitations may apply. Myovant Sciences reserves the right to rescind, revoke, or amend the Program and
-    discontinue support at any time without notice.`,
+    insurance coverage approval, whichever occurs earlier. Patients must be residents of the United States or
+    US Territories. Program is not available to patients who are uninsured or where prohibited by law such as
+    Massachusetts and Minnesota. Patients may be asked to reverify insurance coverage status during the course of
+    the Program. Patients and participating prescribers agree not to seek reimbursement for all, or any part of
+    the benefit received by the patient through this Program. No purchase necessary. Program is not health
+    insurance, nor is participation a guarantee of insurance coverage. Other limitations may apply. Myovant
+    Sciences reserves the right to rescind, revoke, or amend the Program and discontinue support at any time
+    without notice.`,
     bgColor: '#FFFFFF',
   }
 ]
@@ -34,7 +35,6 @@ const SupportContentBlockData2 = [
   {
     title: 'Myfembree Quick Start Program',
     purpleLineTitle: 'Eligible patients with federal insurance may receive Myfembree at no cost for up to 2 months',
-    
     content:
     `The Myfembree Quick Start Program can provide eligible patients with federal insurance who are newly
     prescribed Myfembree a temporary supply in cases of delayed insurance coverage.`,
