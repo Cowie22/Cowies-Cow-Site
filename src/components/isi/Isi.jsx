@@ -50,31 +50,55 @@ class ISI extends React.Component {
   }
 
   toggleIsiHeader = () => {
+    let fadeTarget = document.querySelector('.isi-tray');
+
+    const fadeInEffect = () => {
+      let fadeEffect = setInterval(function () {
+        if (fadeTarget.style.opacity) {
+          fadeTarget.style.opacity = 1;
+          fadeTarget.style.zIndex = 100;
+        }
+        if (fadeTarget.style.opacity < 0) {
+          fadeTarget.style.opacity += 0.1;
+          fadeTarget.style.zIndex = 100;
+        } else {
+          clearInterval(fadeEffect);
+        }
+      }, 50);
+      this.setState({
+        nonExpandedISI: false,
+      })
+    }
+
+    const fadeOutEffect = () => {
+      let fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+          fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity > 0) {
+          fadeTarget.style.opacity -= 0.1;
+          fadeTarget.style.zIndex = -1;
+        } else {
+          clearInterval(fadeEffect);
+        }
+      }, 50);
+      this.setState({
+        nonExpandedISI: true,
+      })
+    }
+
     try {
       let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
       let triggerElement = document.querySelector('.page-isi #trigger-tray').getBoundingClientRect();
       let isiTrayHeight = document.querySelector('.isi-tray').getBoundingClientRect().height;
-      let fadeTarget = document.querySelector('.isi-tray');
-      let isiMobileImg = document.getElementById('isi-mobile-header-img-1');
 
-      // This is for when the ISI tray is currently visible.
-      // As the trigger element should become visible above the ISI tray, before hiding the tray.
       let trayHideHeight = triggerElement.top + scrollTop - window.innerHeight + isiTrayHeight;
-
-      // This is for when the ISI tray is already hidden.
-      // It should only appear when the trigger element hits the bottom of the viewport now instead.
-      let trayShowHeight = triggerElement.top + scrollTop - window.innerHeight;
+      let trayShowHeight = triggerElement.top + scrollTop - window.innerHeight + isiTrayHeight;
 
       if (scrollTop >= trayHideHeight) {
-        if (isiMobileImg) {
-          isiMobileImg.classList.add('hidden-plus');
-        }
-        fadeTarget.classList.add('hide-tray');
+        fadeOutEffect();
       } else if (scrollTop < trayShowHeight) {
-        if (isiMobileImg) {
-          isiMobileImg.classList.remove('hidden-plus');
-        }
-        fadeTarget.classList.remove('hide-tray');
+        fadeInEffect();
       }
     } catch (e) {
       console.log(e);
