@@ -164,7 +164,7 @@ class IsiContent extends React.Component {
           <strong className='purple'>DRUG INTERACTIONS:</strong>{' '}
           <strong className='purple'>P-gp Inhibitors:</strong> Avoid use of Myfembree with oral P-gp inhibitors.
           If use is unavoidable, take Myfembree first, separate dosing by at least 6 hours, and monitor patients
-          for adverse reactions. {' '}
+          for adverse reactions.&nbsp;&nbsp;
           <strong className='purple'>Combined P-gp and Strong CYP3A Inducers:</strong> Avoid use of Myfembree
           with combined P-gp and strong CYP3A inducers.
         </p>
