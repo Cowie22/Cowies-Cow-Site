@@ -31,7 +31,12 @@ class ResourcesContent extends React.Component {
       ResourceDownloadCardData6,
     } = ResourcesDownloadCardData;
     return (
-      <Layout>
+      <Layout
+        canonicalURL='https://www.myfembreehcp.com/resources/'
+        title='HCP Resources | Myfembree® (relugolix, estradiol, and norethindrone acetate) Tablets'
+        pageTitle='HCP Resources | Myfembree® (relugolix, estradiol, and norethindrone acetate) Tablets'
+        description='Find downloadable resources for the Myfembree® Support Program including a program enrollment form and a patient consent form. See benefits&risks&BOXED WARNING.'
+      >
         <PurpleCallout
           title={<h1 className='white'>Myfembree<sup>®</sup> Support Program Resources</h1>}
         />

@@ -72,7 +72,12 @@ class MyfembreeSupportProgramContent extends React.Component {
 
     const { width } = this.state;
     return (
-      <Layout>
+      <Layout
+        canonicalURL='https://www.myfembreehcp.com/myfembree-support-program/'
+        title='Support Program | Myfembree® (relugolix, estradiol, and norethindrone acetate) Tablets'
+        pageTitle='Support Program | Myfembree® (relugolix, estradiol, and norethindrone acetate) Tablets'
+        description='Learn about the Myfembree® Support Program to help your patients prescribed Myfembree®. See benefits & risks, including BOXED WARNING.'
+      >
         <section
           className='support-container'
           style={

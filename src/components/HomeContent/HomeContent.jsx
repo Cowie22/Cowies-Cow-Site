@@ -55,10 +55,10 @@ class HomeContent extends React.Component {
     const { width } = this.state;
     return (
       <Layout
-        canonicalURL='https://www.MyfembreeHCP.com'
-        title='Safety Info | Myfembree® (relugolix, estradiol, and norethindrone acetate) tablets | HCP Website'
-        pageTitle='Myfembree® Now Approved Homepage for US HCPs'
-        description='Myfembree® (relugolix, estradiol, and norethindrone acetate) tablets for oral use: Safety Information, full Prescribing Information including BOXED WARNING.'
+        canonicalURL='https://www.myfembreehcp.com/'
+        title='Myfembree® (relugolix, estradiol, and norethindrone acetate) Tablets HCP Site'
+        pageTitle='Myfembree® (relugolix, estradiol, and norethindrone acetate) Tablets HCP Site'
+        description='Visit the HCP website for more information about Myfembree® tablets for oral use. See benefits & risks, including BOXED WARNING.'
       >
         <section
           id='hcp-modal-container'
