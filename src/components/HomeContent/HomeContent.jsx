@@ -12,7 +12,6 @@ import BGImg from '../../assets/images/home-bg-img.webp'
 import BGImgFB from '../../assets/images/home-bg-img.png'
 import BGImgMobile from '../../assets/images/home-bg-img-mobile.webp'
 import BGImgMobileFB from '../../assets/images/home-bg-img-mobile.png'
-import pill from '../../assets/images/pill-icon.svg'
 
 class HomeContent extends React.Component {
   constructor(props) {

@@ -14,9 +14,7 @@ const RectangleCard = (props) => {
             {title}
           </h3>
         </div>
-        <p>
-          {content}
-        </p>
+        {content}
         <Row>
           <Col lg={{span: 4}}>
             <div className='cta-btn-container rectangle-card-btn-container'>

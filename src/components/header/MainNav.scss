@@ -214,7 +214,16 @@
       color: $pink;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding-bottom: 8px;
+      .nav-arrow {
+        transition: transform 0.5s;
+        height: 100%;
+        &.rotated {
+          transform: rotate(180deg);
+          transition: transform 0.5s;
+        }
+      }
     }
 
     li {

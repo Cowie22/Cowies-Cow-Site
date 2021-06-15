@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 
-import ExternalLink from '../exitramp/ExternalLink.jsx'
-import NonUSPopUp from '../../components/NonUSPopUp/NonUSPopUp'
-import SignUpForm from '../SignUpForm/SignUpForm'
+// import ExternalLink from '../exitramp/ExternalLink.jsx'
+// import NonUSPopUp from '../../components/NonUSPopUp/NonUSPopUp'
+// import SignUpForm from '../SignUpForm/SignUpForm'
 
 class UtilityNav extends React.Component {
   constructor(props) {
@@ -52,15 +52,15 @@ class UtilityNav extends React.Component {
     const { xDirection, yDirection, popup, signUpForm } = this.state;
     return (
       <>
-      <section
+      {/* <section
         id='sign-up-modal-container'
         onClick={() => this.handlePopUp()}
       >
-      </section>
-      <SignUpForm
+      </section> */}
+      {/* <SignUpForm
         handlePopUp={this.handlePopUp}
         signUpForm={signUpForm}
-      />
+      /> */}
         <section className='utility-nav'>
           <Container>
             <Row>

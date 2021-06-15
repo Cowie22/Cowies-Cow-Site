@@ -6,7 +6,7 @@ import iphone from '../../assets/images/iphone-icon.svg'
 const HomeRectangleCardData1 = [
   {
     title: 'Coming soon',
-    content: 'Myfembree will be available at retail and mail-order pharmacies in June 2021.',
+    content: <p>Myfembree will be available at retail and mail-order pharmacies in June 2021.</p>,
     icon: paperMoney,
     btnText: 'Access Information',
     btnLink: 'myfembree-support-program/#financial-assistance',
