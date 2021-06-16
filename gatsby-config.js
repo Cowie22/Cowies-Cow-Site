@@ -17,7 +17,7 @@ module.exports = {
         defaultDataLayer: { platform: "gatsby" },
       },
     },
-    {
+    // {
     //   resolve: 'gatsby-plugin-brotli',
     //   options: {
     //     extensions: ['css', 'html', 'js', 'svg', 'jsx', 'webp', 'scss', 'png', 'jpg']
