@@ -19,7 +19,7 @@ const SupportContentBlockLarge = (props) => {
           <Col lg={{span: 5, offset: 1}}>
             <div className='support-block-large-img-container'>
               <picture>
-                <source srcSet={cardImg} alt='' className='expand-story-img' type="image/webp" />
+                <source srcSet={cardImg} className='expand-story-img' type="image/webp" />
                 <img loading='lazy' src={cardImgFB} className='expand-story-img' alt='' />
               </picture>
               {/* <img src={cardImg} /> */}
