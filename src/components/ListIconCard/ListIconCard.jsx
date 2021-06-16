@@ -8,7 +8,7 @@ const ListIconCard = (props) => {
     <Col lg={{span: 10, offset: 1}}>
       <div className='list-icon-card-container'>
         <div className='icon-title-container'>
-          <img src={icon} />
+          <img src={icon} alt='' />
           {title}
         </div>
         {content}

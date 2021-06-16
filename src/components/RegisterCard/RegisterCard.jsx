@@ -11,7 +11,7 @@ const RegisterCard = (props) => {
           <Row>
             <Col lg={{span: 7, offset: 1}} xs={{span: 12, offset: 0}}>
               <div className='register-icon-container'>
-                <img src={calendar} />
+                <img src={calendar} alt='' />
                 <h3 className='blue'>
                   Register to attend the launch broadcast
                 </h3>

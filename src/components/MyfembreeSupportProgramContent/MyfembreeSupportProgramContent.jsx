@@ -145,7 +145,7 @@ class MyfembreeSupportProgramContent extends React.Component {
                         <Row>
                           <Col lg={{span: 6}}>
                             <div className='icon-container'>
-                              <img src={calendar} />
+                              <img src={calendar} alt='' />
                               <p className='extra-bold'>
                                 Free Medication Programs*
                               </p>

@@ -9,7 +9,7 @@ const SupportIconCard = (props) => {
       <div className='support-card-container'>
         <Row>
           <Col lg={{span: 12, offset: 0}} xs={{span: 10, offset: 1}}>
-            <img src={icon} />
+            <img src={icon} alt='' />
             <p className='extra-bold'>
               {title}
             </p>

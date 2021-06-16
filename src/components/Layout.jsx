@@ -48,6 +48,7 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
           <meta name="description" content={description} />
           <link rel='canonical' href={canonicalURL} />
           <meta name="url" content={canonicalURL} />
+          <html lang="en" />
         </Helmet>
         <Cookie />
         <UtilityNav />
@@ -74,7 +75,7 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
           onMouseLeave={() => handleHovered(false)}
           onClick={() => scrollToTop()}
         >
-          <img src={hovered ? backToTopHovered : backToTop} />
+          <img src={hovered ? backToTopHovered : backToTop} alt='' />
         </div>
         <Isi />
         <Footer />
