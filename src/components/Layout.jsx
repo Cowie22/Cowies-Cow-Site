@@ -55,7 +55,7 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
 
         <Header />
         <section className='mobile-register-btn d-block d-lg-none'>
-          <a href='https://www.ufmanagement-learnmore.com/' target='_blank'>
+          <a href='http://www.ufmanagement-learnmore.com/' target='_blank'>
             <Container>
               <Row>
                 <Col>

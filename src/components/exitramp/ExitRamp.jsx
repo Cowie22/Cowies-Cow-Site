@@ -58,6 +58,7 @@ export default props => {
                     <img
                       src={hovered ? closeIconHovered : closeIcon}
                       className='close-img'
+                      alt=''
                     />
                   </div>
                 </Col>

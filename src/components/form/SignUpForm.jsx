@@ -299,6 +299,7 @@ export default class SignUpForm extends Component {
                           : arrowDownGreen
                       }
                       style={{ height: "18px" }}
+                      alt=''
                     ></img>
                   </Dropdown.Toggle>
                   <Dropdown.Menu className="dropdown-menu">
@@ -432,6 +433,7 @@ export default class SignUpForm extends Component {
                         ? arrowRightGreen
                         : arrowRightWhite
                     }
+                    alt=''
                   />
                 </button>
               </Col>

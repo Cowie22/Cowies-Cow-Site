@@ -179,12 +179,14 @@ class ISI extends React.Component {
                                   src={hovered ? minusHovered : minus}
                                   width='12'
                                   height='12'
+                                  alt=''
                                 />
                               ) : (
                                 <img
                                   src={hovered ? plusHovered : plus}
                                   width='12'
                                   height='12'
+                                  alt=''
                                 />
                               )
                             )
@@ -195,12 +197,14 @@ class ISI extends React.Component {
                                   src={minus}
                                   width='12'
                                   height='12'
+                                  alt=''
                                 />
                               ) : (
                                 <img
                                   src={plus}
                                   width='12'
                                   height='12'
+                                  alt=''
                                 />
                               )
                             )

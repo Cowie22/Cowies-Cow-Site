@@ -68,6 +68,7 @@ class Cookie extends React.Component {
                               src={hovered ? closeIconHovered : closeIcon}
                               onClick={() => handleIsCookieVisible(false)}
                               className='header-close-icon'
+                              alt=''
                             />
                           </div>
                         </Col>

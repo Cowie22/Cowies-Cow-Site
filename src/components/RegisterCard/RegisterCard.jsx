@@ -20,7 +20,7 @@ const RegisterCard = (props) => {
             <Col lg={{span: 3, offset: 0}} xs={{span: 10, offset: 0}}>
               <div className='register-inner-container'>
                 <div className='cta-btn-container register-btn-container'>
-                  <a href='https://www.UFmanagement-learnmore.com/' target='_blank'>
+                  <a href='http://www.ufmanagement-learnmore.com/' target='_blank'>
                     <button className='cta-btn pink-btn'>
                       Register Here
                     </button>

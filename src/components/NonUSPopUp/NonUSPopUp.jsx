@@ -58,6 +58,7 @@ class NonUSPopUp extends React.Component {
                       <img
                         src={hovered ? closeIconHovered : closeIcon}
                         className='close-img'
+                        alt=''
                       />
                     </div>
                   </Col>
