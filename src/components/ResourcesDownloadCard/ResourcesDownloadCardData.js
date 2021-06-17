@@ -38,9 +38,9 @@ const ResourceDownloadCardData4 = [
   {
     title: 'Medical Necessity/Exception Sample Letter',
     subTitle: 'Word Document',
-    downloadLink: '/sample-letter-of-coverage-denial-appeal.docx',
+    downloadLink: '/sample-letter-of-medical-exception-and-necessity-template.docx',
     wordDoc: true,
-    download: '/sample-letter-of-coverage-denial-appeal.docx',
+    download: '/sample-letter-of-medical-exception-and-necessity-template.docx',
   }
 ]
 
@@ -57,9 +57,9 @@ const ResourceDownloadCardData6 = [
   {
     title: 'PA Denial Appeal Sample Letter',
     subTitle: 'Word Document',
-    downloadLink: '/sample-letter-of-medical-exception-and-necessity-template.docx',
+    downloadLink: '/sample-letter-of-coverage-denial-appeal.docx',
     wordDoc: true,
-    download: '/sample-letter-of-medical-exception-and-necessity-template.docx',
+    download: '/sample-letter-of-coverage-denial-appeal.docx',
   }
 ]
 

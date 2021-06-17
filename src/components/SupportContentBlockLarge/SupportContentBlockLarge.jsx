@@ -36,7 +36,6 @@ const SupportContentBlockLarge = (props) => {
         <Row>
           <Col lg={{span: 10, offset: 1}}>
             <div className='support-block-enroll-card-container'>
-              
                 {/* <a href='https://portal.trialcard.com/myovant/myfembree/copay/ ' target='_blank'><h3 className='blue text-center'>Enroll Today! </h3></a>
               */}
               <Row>
@@ -51,13 +50,8 @@ const SupportContentBlockLarge = (props) => {
                     <button className='cta-btn pink-btn enroll-btn'>
                       Enroll Today!
                     </button>
-
-
-
                   </a>
-                
                 </Col>
-                
               </Row>
               <Row>
                 <Col lg={{span: 10, offset: 1}}>
