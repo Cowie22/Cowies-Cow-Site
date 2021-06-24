@@ -3,8 +3,6 @@ import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 import AppProvider, { AppContext } from '../../contexts/state'
 
-import ExternalLink from "../exitramp/ExternalLink.jsx"
-
 class HeaderDropdown extends React.Component {
   constructor(props) {
     super(props);

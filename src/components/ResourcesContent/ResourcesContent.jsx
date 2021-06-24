@@ -1,8 +1,9 @@
-import React from "react"
-import Layout from "../Layout"
-import { Container, Row, Col } from "react-bootstrap"
+import React from 'react'
+import Layout from '../Layout'
+import { Container, Row, Col } from 'react-bootstrap'
 import AppProvider, { AppContext } from '../../contexts/state'
 
+import HeaderHero from '../HeaderHero/HeaderHero'
 import PurpleCallout from '../PurpleCallout/PurpleCallout'
 import ResourcesDownloadCard from '../ResourcesDownloadCard/ResourcesDownloadCard'
 import ResourcesDownloadCardData from '../ResourcesDownloadCard/ResourcesDownloadCardData.js'
@@ -37,8 +38,11 @@ class ResourcesContent extends React.Component {
         pageTitle='HCP Resources | Myfembree® (relugolix, estradiol, and norethindrone acetate) Tablets'
         description='Find downloadable resources for the Myfembree® Support Program including a program enrollment form and a patient consent form. See benefits&risks&BOXED WARNING.'
       >
-        <PurpleCallout
+        {/* <PurpleCallout
           title={<h1 className='white'>Myfembree<sup>®</sup> Support Program Resources</h1>}
+        /> */}
+        <HeaderHero
+          title={<>Myfembree<sup>®</sup> Support Program Resources</>}
         />
         <section className='resources-content-container'>
           <Container>

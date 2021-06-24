@@ -3,6 +3,7 @@
   background: $white;
   .header-logo {
     // height: 94px;
+    width: 100%;
   }
   .header-nav-container {
     display: flex;
@@ -10,7 +11,7 @@
     align-items: center;
     ul {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       width: 100%;
       li {
         font-weight: 700;

@@ -11,29 +11,28 @@ import logo from '../../assets/images/header-logo.svg'
 import upArrow from '../../assets/images/upArrow.svg'
 import downArrow from '../../assets/images/downArrow.svg'
 
-
 class MainNav extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      currentData: {list: ['placeholder']},
+      currentData: { list: ['placeholder'] },
       isNavOpen: false,
       mobileDropDown: 1,
     }
   }
 
   toggleNav = () => {
-    document.querySelector('.mobile-nav').scrollTop = 0;
-    this.props.setNavOpen();
+    document.querySelector('.mobile-nav').scrollTop = 0
+    this.props.setNavOpen()
     this.setState({
       isNavOpen: !this.state.isNavOpen,
     })
-    let isiTray = document.getElementsByClassName('isi-tray')[0];
+    let isiTray = document.getElementsByClassName('isi-tray')[0]
     if (this.state.isNavOpen) {
-      document.body.classList.remove('scroll-none');
+      document.body.classList.remove('scroll-none')
       // isiTray.classList.remove('hide');
     } else {
-      document.body.classList.add('scroll-none');
+      document.body.classList.add('scroll-none')
       // isiTray.classList.add('hide');
     }
   }
@@ -48,35 +47,35 @@ class MainNav extends React.Component {
   }
 
   headerDropdownPromise = () => {
-    const { activeHeaderDropdown } = this.props;
-    let updatedData = {list: ['placeholder']};
+    const { activeHeaderDropdown } = this.props
+    let updatedData = { list: ['placeholder'] }
 
     return new Promise((resolve, reject) => {
       let dataFilter = HeaderDropdownData.filter((data, i) => {
         if (data.name === activeHeaderDropdown) {
-          updatedData = data;
+          updatedData = data
         }
       })
-      dataFilter ? resolve(updatedData) : reject('ERROR');
+      dataFilter ? resolve(updatedData) : reject('ERROR')
     })
   }
 
   handleDropdown = (val, name) => {
-    let dropdownContainer = document.getElementById('header-dropdown-container');
-    dropdownContainer.classList = `header-dropdown-container ${name}`;
+    let dropdownContainer = document.getElementById('header-dropdown-container')
+    dropdownContainer.classList = `header-dropdown-container ${name}`
     this.setState({
       currentData: val,
     })
   }
 
-  handleMobileDropDown = (val) => {
+  handleMobileDropDown = val => {
     this.setState({
       mobileDropDown: val,
     })
   }
 
   render() {
-    const { currentData, isNavOpen, mobileDropDown } = this.state;
+    const { currentData, isNavOpen, mobileDropDown } = this.state
     const {
       activeHeaderDropdown,
       handleActiveHeaderDropdown,
@@ -84,38 +83,39 @@ class MainNav extends React.Component {
       handleActiveDropdownLink,
       currentPage,
       handleCurrentPage,
-    } = this.props;
+    } = this.props
     return (
       <>
-        <section className='main-nav'
+        <section
+          className='main-nav'
           onMouseLeave={() => {
-            handleActiveHeaderDropdown('');
+            handleActiveHeaderDropdown('')
             this.handleNavHover()
           }}
         >
           <Container>
             <Row>
               <Col lg={3} xs={7} className='navbar-header'>
-                <Link
-                  to='/'
-                >
+                <Link to='/'>
                   <img
                     loading='lazy'
                     alt='Myfembree® (relugolix, estradiol, and norethindrone acetate) tablets 40 mg, 1 mg, 0.5 mg'
                     className='header-logo'
                     src={logo}
                     onMouseEnter={() => {
-                      handleActiveHeaderDropdown('');
-                      this.handleNavHover();
+                      handleActiveHeaderDropdown('')
+                      this.handleNavHover()
                     }}
                   />
                 </Link>
               </Col>
-              <Col xs={{span: 3, offset: 2}} className='d-block d-lg-none'>
+              <Col xs={{ span: 3, offset: 2 }} className='d-block d-lg-none'>
                 <div className='mobile-navbar-container'>
                   <button
                     type='button'
-                    className={isNavOpen ? 'navbar-toggle active' : 'navbar-toggle'}
+                    className={
+                      isNavOpen ? 'navbar-toggle active' : 'navbar-toggle'
+                    }
                     onClick={() => {
                       this.toggleNav()
                     }}
@@ -127,84 +127,160 @@ class MainNav extends React.Component {
                   </button>
                 </div>
               </Col>
-              <Col xl={{span: 3, offset: 3}} lg={{span: 3, offset: 2}} className='d-none d-lg-block'>
+              <Col
+                xl={{ span: 9, offset: 0 }}
+                lg={{ span: 9, offset: 0 }}
+                className='d-none d-lg-block'
+              >
                 <nav className='header-nav-container'>
                   <ul>
                     <li
                       onMouseEnter={() => {
-                        handleActiveHeaderDropdown('resources');
-                        this.handleNavHover();
+                        handleActiveHeaderDropdown('')
+                        this.handleNavHover()
+                      }}
+                    >
+                      <Link to='/0nce-daily-dosing/'>
+                        Once-daily Dosing
+                      </Link>
+                    </li>
+                    <li
+                      onMouseEnter={() => {
+                        handleActiveHeaderDropdown('efficacy')
+                        this.handleNavHover()
                       }}
                       onClick={() => {
-                        handleActiveHeaderDropdown('');
-                        handleActiveDropdownLink(0);
+                        handleActiveHeaderDropdown('')
+                        handleActiveDropdownLink(0)
+                      }}
+                    >
+                      <Link to='/demonstrated-efficacy/'>
+                        Demonstrated Efficacy
+                      </Link>
+                      {/* <img src={activeHeaderDropdown === 'efficacy' ? upArrow : downArrow} className='nav-arrow' /> */}
+                      <svg
+                        width='12'
+                        height='6'
+                        viewBox='0 0 12 6'
+                        fill='none'
+                        xmlns='http://www.w3.org/2000/svg'
+                        className={
+                          activeHeaderDropdown === 'efficacy'
+                            ? 'nav-arrow'
+                            : 'nav-arrow rotated'
+                        }
+                      >
+                        <path
+                          fillRule='evenodd'
+                          clipRule='evenodd'
+                          d='M5.99984 3.95775e-05C6.13245 3.95775e-05 6.25962 0.0527177 6.35339 0.146486L10.9367 4.72982C11.132 4.92508 11.132 5.24167 10.9367 5.43693C10.7415 5.63219 10.4249 5.63219 10.2296 5.43693L5.99984 1.20715L1.77006 5.43693C1.5748 5.63219 1.25821 5.63219 1.06295 5.43693C0.867688 5.24167 0.867688 4.92508 1.06295 4.72982L5.64628 0.146486C5.74005 0.0527177 5.86723 3.95775e-05 5.99984 3.95775e-05Z'
+                          fill='#A51890'
+                        />
+                      </svg>
+                    </li>
+                    <li
+                      onMouseEnter={() => {
+                        handleActiveHeaderDropdown('')
+                        this.handleNavHover()
+                      }}
+                    >
+                      <Link to='/safety-and-tolerability/'>
+                        Safety & Tolerability
+                      </Link>
+                    </li>
+                    <li
+                      onMouseEnter={() => {
+                        handleActiveHeaderDropdown('resources')
+                        this.handleNavHover()
+                      }}
+                      onClick={() => {
+                        handleActiveHeaderDropdown('')
+                        handleActiveDropdownLink(0)
                       }}
                     >
                       <Link to='/myfembree-support-program/'>
-                      Access and Support
+                        Support & Savings
                       </Link>
                       {/* <img src={activeHeaderDropdown === 'resources' ? upArrow : downArrow} className='nav-arrow' /> */}
                       <svg
-                        width="12"
-                        height="6"
-                        viewBox="0 0 12 6"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className={activeHeaderDropdown === 'resources' ? 'nav-arrow' : 'nav-arrow rotated'}
+                        width='12'
+                        height='6'
+                        viewBox='0 0 12 6'
+                        fill='none'
+                        xmlns='http://www.w3.org/2000/svg'
+                        className={
+                          activeHeaderDropdown === 'resources'
+                            ? 'nav-arrow'
+                            : 'nav-arrow rotated'
+                        }
                       >
-                        <path fillRule="evenodd" clipRule="evenodd" d="M5.99984 3.95775e-05C6.13245 3.95775e-05 6.25962 0.0527177 6.35339 0.146486L10.9367 4.72982C11.132 4.92508 11.132 5.24167 10.9367 5.43693C10.7415 5.63219 10.4249 5.63219 10.2296 5.43693L5.99984 1.20715L1.77006 5.43693C1.5748 5.63219 1.25821 5.63219 1.06295 5.43693C0.867688 5.24167 0.867688 4.92508 1.06295 4.72982L5.64628 0.146486C5.74005 0.0527177 5.86723 3.95775e-05 5.99984 3.95775e-05Z" fill="#A51890"/>
+                        <path
+                          fillRule='evenodd'
+                          clipRule='evenodd'
+                          d='M5.99984 3.95775e-05C6.13245 3.95775e-05 6.25962 0.0527177 6.35339 0.146486L10.9367 4.72982C11.132 4.92508 11.132 5.24167 10.9367 5.43693C10.7415 5.63219 10.4249 5.63219 10.2296 5.43693L5.99984 1.20715L1.77006 5.43693C1.5748 5.63219 1.25821 5.63219 1.06295 5.43693C0.867688 5.24167 0.867688 4.92508 1.06295 4.72982L5.64628 0.146486C5.74005 0.0527177 5.86723 3.95775e-05 5.99984 3.95775e-05Z'
+                          fill='#A51890'
+                        />
                       </svg>
                     </li>
-                    {/* <li
+                    <li
                       onMouseEnter={() => {
-                        handleActiveHeaderDropdown('test');
-                        this.handleNavHover();
+                        handleActiveHeaderDropdown('')
+                        this.handleNavHover()
                       }}
                     >
-                      TEST
-                    </li> */}
+                      <Link to='/safety-and-tolerability/'>
+                        How It Works
+                      </Link>
+                    </li>
                   </ul>
                 </nav>
               </Col>
-              <Col
-                xl={{span: 3, offset: 0}}
-                lg={{span: 4, offset: 0}}
-                xs={{span: 6, offset: 1}}
+              {/* <Col
+                xl={{ span: 3, offset: 0 }}
+                lg={{ span: 4, offset: 0 }}
+                xs={{ span: 6, offset: 1 }}
                 className='d-none d-lg-block'
               >
                 <div
                   className='header-call-now-container'
                   onMouseEnter={() => {
-                    handleActiveHeaderDropdown('');
-                    this.handleNavHover();
+                    handleActiveHeaderDropdown('')
+                    this.handleNavHover()
                   }}
                 >
                   <div className='cta-btn-container header-cta-btn-container'>
-                    <a href='http://www.ufmanagement-learnmore.com/' target='_blank'>
+                    <a
+                      href='http://www.ufmanagement-learnmore.com/'
+                      target='_blank'
+                    >
                       <button className='cta-btn pink-btn'>
                         Register for Launch Broadcast
                       </button>
                     </a>
                   </div>
                 </div>
-              </Col>
+              </Col> */}
             </Row>
-              <div
-                className={activeHeaderDropdown === '' ? 'header-dropdown-hidden d-none d-lg-block' : 'header-dropdown d-none d-lg-block'}
-                onMouseLeave={() => {
-                  handleActiveHeaderDropdown('');
-                  this.handleNavHover();
-                }}
-              >
-                <HeaderDropdown
-                  currentData={currentData}
-                  activeDropdownLink={activeDropdownLink}
-                  handleActiveDropdownLink={handleActiveDropdownLink}
-                  handleActiveHeaderDropdown={handleActiveHeaderDropdown}
-                  currentPage={currentPage}
-                  handleCurrentPage={handleCurrentPage}
-                />
-              </div>
+            <div
+              className={
+                activeHeaderDropdown === ''
+                  ? 'header-dropdown-hidden d-none d-lg-block'
+                  : 'header-dropdown d-none d-lg-block'
+              }
+              onMouseLeave={() => {
+                handleActiveHeaderDropdown('')
+                this.handleNavHover()
+              }}
+            >
+              <HeaderDropdown
+                currentData={currentData}
+                activeDropdownLink={activeDropdownLink}
+                handleActiveDropdownLink={handleActiveDropdownLink}
+                handleActiveHeaderDropdown={handleActiveHeaderDropdown}
+                currentPage={currentPage}
+                handleCurrentPage={handleCurrentPage}
+              />
+            </div>
           </Container>
         </section>
         <section className={isNavOpen ? 'mobile-nav opened' : 'mobile-nav'}>
@@ -214,47 +290,70 @@ class MainNav extends React.Component {
                 <div
                   className='mobile-nav-list-container'
                   className={
-                    mobileDropDown !== 0 ? 'mobile-nav-list-container' : 'mobile-nav-list-container hidden'
+                    mobileDropDown !== 0
+                      ? 'mobile-nav-list-container'
+                      : 'mobile-nav-list-container hidden'
                   }
                 >
-                  <ul className='mobile-nav-links' style={mobileDropDown !== 1 ? {overflow: 'hidden'} : {}}>
+                  <ul
+                    className='mobile-nav-links'
+                    style={mobileDropDown !== 1 ? { overflow: 'hidden' } : {}}
+                  >
                     <li
-                      // onClick={() => {
-                      //   this.toggleNav()
-                      // }}
+                    // onClick={() => {
+                    //   this.toggleNav()
+                    // }}
                     >
                       <div
                         className='mobile-nav-dropdown-link'
                         onClick={() => {
-                          mobileDropDown !== 1 ? this.handleMobileDropDown(1) : this.handleMobileDropDown(0)
+                          mobileDropDown !== 1
+                            ? this.handleMobileDropDown(1)
+                            : this.handleMobileDropDown(0)
                         }}
                       >
                         Access and Support
                         {/* <img src={mobileDropDown === 1 ? upArrow : downArrow} className='nav-arrow' /> */}
                         <svg
-                          width="12"
-                          height="6"
-                          viewBox="0 0 12 6"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          className={mobileDropDown === 1 ? 'nav-arrow' : 'nav-arrow rotated'}
+                          width='12'
+                          height='6'
+                          viewBox='0 0 12 6'
+                          fill='none'
+                          xmlns='http://www.w3.org/2000/svg'
+                          className={
+                            mobileDropDown === 1
+                              ? 'nav-arrow'
+                              : 'nav-arrow rotated'
+                          }
                         >
-                          <path fillRule="evenodd" clipRule="evenodd" d="M5.99984 3.95775e-05C6.13245 3.95775e-05 6.25962 0.0527177 6.35339 0.146486L10.9367 4.72982C11.132 4.92508 11.132 5.24167 10.9367 5.43693C10.7415 5.63219 10.4249 5.63219 10.2296 5.43693L5.99984 1.20715L1.77006 5.43693C1.5748 5.63219 1.25821 5.63219 1.06295 5.43693C0.867688 5.24167 0.867688 4.92508 1.06295 4.72982L5.64628 0.146486C5.74005 0.0527177 5.86723 3.95775e-05 5.99984 3.95775e-05Z" fill="#A51890"/>
+                          <path
+                            fillRule='evenodd'
+                            clipRule='evenodd'
+                            d='M5.99984 3.95775e-05C6.13245 3.95775e-05 6.25962 0.0527177 6.35339 0.146486L10.9367 4.72982C11.132 4.92508 11.132 5.24167 10.9367 5.43693C10.7415 5.63219 10.4249 5.63219 10.2296 5.43693L5.99984 1.20715L1.77006 5.43693C1.5748 5.63219 1.25821 5.63219 1.06295 5.43693C0.867688 5.24167 0.867688 4.92508 1.06295 4.72982L5.64628 0.146486C5.74005 0.0527177 5.86723 3.95775e-05 5.99984 3.95775e-05Z'
+                            fill='#A51890'
+                          />
                         </svg>
                       </div>
                       <ul
                         className={
-                          mobileDropDown === 1 ? 'header-dropdown-ul' : 'header-dropdown-ul hidden'
+                          mobileDropDown === 1
+                            ? 'header-dropdown-ul'
+                            : 'header-dropdown-ul hidden'
                         }
                       >
                         <li
                           onClick={() => {
-                            handleActiveDropdownLink(0);
-                            handleActiveHeaderDropdown('');
+                            handleActiveDropdownLink(0)
+                            handleActiveHeaderDropdown('')
                             this.handleMobileDropDown(0)
-                            this.toggleNav();
+                            this.toggleNav()
                           }}
-                          className={(activeDropdownLink === 0 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
+                          className={
+                            activeDropdownLink === 0 &&
+                            currentPage === 'resources'
+                              ? 'header-dropdown-active'
+                              : ''
+                          }
                         >
                           <Link to='/myfembree-support-program/'>
                             Myfembree Support Program
@@ -263,12 +362,17 @@ class MainNav extends React.Component {
                         <ul className='header-dropdown-ul'>
                           <li
                             onClick={() => {
-                              handleActiveDropdownLink(0.1);
-                              handleActiveHeaderDropdown('');
+                              handleActiveDropdownLink(0.1)
+                              handleActiveHeaderDropdown('')
                               this.handleMobileDropDown(0)
-                              this.toggleNav();
+                              this.toggleNav()
                             }}
-                            className={(activeDropdownLink === 0.1 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
+                            className={
+                              activeDropdownLink === 0.1 &&
+                              currentPage === 'resources'
+                                ? 'header-dropdown-active'
+                                : ''
+                            }
                           >
                             <Link to='/myfembree-support-program/#financial-assistance'>
                               Financial Assistance
@@ -276,12 +380,17 @@ class MainNav extends React.Component {
                           </li>
                           <li
                             onClick={() => {
-                              handleActiveDropdownLink(0.2);
-                              handleActiveHeaderDropdown('');
+                              handleActiveDropdownLink(0.2)
+                              handleActiveHeaderDropdown('')
                               this.handleMobileDropDown(0)
-                              this.toggleNav();
+                              this.toggleNav()
                             }}
-                            className={(activeDropdownLink === 0.2 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
+                            className={
+                              activeDropdownLink === 0.2 &&
+                              currentPage === 'resources'
+                                ? 'header-dropdown-active'
+                                : ''
+                            }
                           >
                             <Link to='/myfembree-support-program/#bridge-program'>
                               Bridge Program
@@ -289,12 +398,17 @@ class MainNav extends React.Component {
                           </li>
                           <li
                             onClick={() => {
-                              handleActiveDropdownLink(0.3);
-                              handleActiveHeaderDropdown('');
+                              handleActiveDropdownLink(0.3)
+                              handleActiveHeaderDropdown('')
                               this.handleMobileDropDown(0)
-                              this.toggleNav();
+                              this.toggleNav()
                             }}
-                            className={(activeDropdownLink === 0.3 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
+                            className={
+                              activeDropdownLink === 0.3 &&
+                              currentPage === 'resources'
+                                ? 'header-dropdown-active'
+                                : ''
+                            }
                           >
                             <Link to='/myfembree-support-program/#quick-start-program'>
                               Quick Start Program
@@ -302,12 +416,17 @@ class MainNav extends React.Component {
                           </li>
                           <li
                             onClick={() => {
-                              handleActiveDropdownLink(0.4);
-                              handleActiveHeaderDropdown('');
+                              handleActiveDropdownLink(0.4)
+                              handleActiveHeaderDropdown('')
                               this.handleMobileDropDown(0)
-                              this.toggleNav();
+                              this.toggleNav()
                             }}
-                            className={(activeDropdownLink === 0.4 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
+                            className={
+                              activeDropdownLink === 0.4 &&
+                              currentPage === 'resources'
+                                ? 'header-dropdown-active'
+                                : ''
+                            }
                           >
                             <Link to='/myfembree-support-program/#patient-assistance-program'>
                               Patient Assistance Program
@@ -315,12 +434,17 @@ class MainNav extends React.Component {
                           </li>
                           <li
                             onClick={() => {
-                              handleActiveDropdownLink(0.5);
-                              handleActiveHeaderDropdown('');
+                              handleActiveDropdownLink(0.5)
+                              handleActiveHeaderDropdown('')
                               this.handleMobileDropDown(0)
-                              this.toggleNav();
+                              this.toggleNav()
                             }}
-                            className={(activeDropdownLink === 0.5 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
+                            className={
+                              activeDropdownLink === 0.5 &&
+                              currentPage === 'resources'
+                                ? 'header-dropdown-active'
+                                : ''
+                            }
                           >
                             <a
                               target='_blank'
@@ -332,16 +456,19 @@ class MainNav extends React.Component {
                         </ul>
                         <li
                           onClick={() => {
-                            handleActiveDropdownLink(1);
-                            handleActiveHeaderDropdown('');
+                            handleActiveDropdownLink(1)
+                            handleActiveHeaderDropdown('')
                             this.handleMobileDropDown(0)
-                            this.toggleNav();
+                            this.toggleNav()
                           }}
-                          className={(activeDropdownLink === 1 && currentPage === 'resources') ? 'header-dropdown-active' : ''}
+                          className={
+                            activeDropdownLink === 1 &&
+                            currentPage === 'resources'
+                              ? 'header-dropdown-active'
+                              : ''
+                          }
                         >
-                          <Link to='/resources/'>
-                            Resources
-                          </Link>
+                          <Link to='/resources/'>Resources</Link>
                         </li>
                       </ul>
                     </li>
@@ -351,7 +478,7 @@ class MainNav extends React.Component {
             </Row>
           </Container>
           {/* <div className='mobile-nav-overlay d-block d-lg-none'>&nbsp;</div> */}
-          </section>
+        </section>
       </>
     )
   }

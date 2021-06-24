@@ -49,7 +49,7 @@ const HeaderDropdownData = [
     ]
   },
   {
-    name: 'test',
+    name: 'efficacy',
     list: [
       {
         listName: 'Test Information',
