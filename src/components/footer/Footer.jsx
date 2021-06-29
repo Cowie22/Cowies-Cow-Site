@@ -39,7 +39,7 @@ export default () => (
             trademarks are the property of their respective owners.
           </h6>
           <h6>
-            ©2021 Myovant Sciences GmbH and Pfizer Inc. All rights reserved. PP-US-REL-CT-2100059 06/21
+            ©2021 Myovant Sciences GmbH and Pfizer Inc. All rights reserved. PP-US-REL-CT-2100143 07/2021
           </h6>
         </Col>
         <Col lg={{span: 4, offset: 1, order: 2}} xs={{span: 12, offset: 0, order: 1}}>
