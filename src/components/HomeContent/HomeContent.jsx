@@ -3,7 +3,7 @@ import Layout from "../Layout"
 import { Container, Row, Col } from "react-bootstrap"
 import AppProvider, { AppContext } from '../../contexts/state'
 
-import RegisterCard from '../RegisterCard/RegisterCard'
+// import RegisterCard from '../RegisterCard/RegisterCard'
 import RectangleCard from '../RectangleCard/RectangleCard'
 import RectangleCardData from '../RectangleCard/RectangleCardData.js'
 import HCPModal from '../HCPModal/HCPModal'
@@ -140,11 +140,11 @@ class HomeContent extends React.Component {
             </Row>
           </Container>
         </section>
-        <section className='home-callout-container'>
+        {/* <section className='home-callout-container'>
           <Container>
             <RegisterCard />
           </Container>
-        </section>
+        </section> */}
         <section className='home-card-container'>
           <Container>
             <Row>

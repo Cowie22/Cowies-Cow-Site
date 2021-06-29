@@ -127,7 +127,7 @@ class MainNav extends React.Component {
                   </button>
                 </div>
               </Col>
-              <Col xl={{span: 3, offset: 3}} lg={{span: 3, offset: 2}} className='d-none d-lg-block'>
+              <Col xl={{span: 3, offset: 6}} lg={{span: 3, offset: 6}} className='d-none d-lg-block'>
                 <nav className='header-nav-container'>
                   <ul>
                     <li
@@ -166,7 +166,7 @@ class MainNav extends React.Component {
                   </ul>
                 </nav>
               </Col>
-              <Col
+              {/* <Col
                 xl={{span: 3, offset: 0}}
                 lg={{span: 4, offset: 0}}
                 xs={{span: 6, offset: 1}}
@@ -187,7 +187,7 @@ class MainNav extends React.Component {
                     </a>
                   </div>
                 </div>
-              </Col>
+              </Col> */}
             </Row>
               <div
                 className={activeHeaderDropdown === '' ? 'header-dropdown-hidden d-none d-lg-block' : 'header-dropdown d-none d-lg-block'}
