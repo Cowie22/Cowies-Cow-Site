@@ -2,9 +2,9 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import AppProvider, { AppContext } from '../contexts/state'
 
-import OnceDailyDosingContent from '../components/OnceDailyDosingContent/OnceDailyDosingContent'
+import HowItWorksContent from '../components/HowItWorksContent/HowItWorksContent'
 
-class OnceDailyDosing extends React.Component {
+class HowItWorks extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -25,7 +25,7 @@ class OnceDailyDosing extends React.Component {
             handleTabLink,
           } = context;
           return (
-            <OnceDailyDosingContent
+            <HowItWorksContent
               currentPage={currentPage}
               handleCurrentPage={handleCurrentPage}
               handleActiveHeaderDropdown={handleActiveHeaderDropdown}
@@ -41,4 +41,4 @@ class OnceDailyDosing extends React.Component {
   }
 }
 
-export default OnceDailyDosing
+export default HowItWorks
