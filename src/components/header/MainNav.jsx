@@ -1,15 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
-import AppProvider, { AppContext } from '../../contexts/state'
 
 import ExternalLink from '../exitramp/ExternalLink.jsx'
 import HeaderDropdown from '../HeaderDropdown/HeaderDropdown'
 import HeaderDropdownData from '../HeaderDropdown/HeaderDropdownData'
 
 import logo from '../../assets/images/header-logo.svg'
-import upArrow from '../../assets/images/upArrow.svg'
-import downArrow from '../../assets/images/downArrow.svg'
 
 class MainNav extends React.Component {
   constructor(props) {
@@ -200,7 +197,7 @@ class MainNav extends React.Component {
                     </li>
                     <li
                       onMouseEnter={() => {
-                        handleActiveHeaderDropdown('resources')
+                        handleActiveHeaderDropdown('support')
                         this.handleNavHover()
                       }}
                       onClick={() => {
@@ -219,7 +216,7 @@ class MainNav extends React.Component {
                         fill='none'
                         xmlns='http://www.w3.org/2000/svg'
                         className={
-                          activeHeaderDropdown === 'resources'
+                          activeHeaderDropdown === 'support'
                             ? 'nav-arrow'
                             : 'nav-arrow rotated'
                         }
