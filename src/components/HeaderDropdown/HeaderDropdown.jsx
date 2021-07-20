@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 import AppProvider, { AppContext } from '../../contexts/state'
@@ -47,7 +47,7 @@ class HeaderDropdown extends React.Component {
                         </Link>
                         :
                         <a
-                          href='https://portal.trialcard.com/myovant/myfembree/consent/'
+                          href={listLink}
                           className={innerPageNav ? 'inner-page' : ''}
                           target='_blank'
                         >

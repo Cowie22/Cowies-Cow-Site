@@ -1,0 +1,22 @@
+.dosing-container {
+  padding: 60px 0;
+  .top-title {
+    letter-spacing: 0.5em;
+    font-weight: 400;
+    padding-bottom: 8px;
+    background: linear-gradient(90deg, rgba(175,212,196,1) 0%, rgba(255,255,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .dosing-container {
+    padding: 40px 0;
+    .top-title {
+      padding-bottom: 8px;
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+}

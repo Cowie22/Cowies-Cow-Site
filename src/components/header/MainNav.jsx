@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 import AppProvider, { AppContext } from '../../contexts/state'
@@ -140,8 +140,8 @@ class MainNav extends React.Component {
                         this.handleNavHover()
                       }}
                     >
-                      <Link to='/0nce-daily-dosing/'>
-                        Once-daily Dosing
+                      <Link to='/once-daily-dosing/'>
+                        Once-Daily Dosing
                       </Link>
                     </li>
                     <li
@@ -154,8 +154,8 @@ class MainNav extends React.Component {
                         handleActiveDropdownLink(0)
                       }}
                     >
-                      <Link to='/demonstrated-efficacy/'>
-                        Demonstrated Efficacy
+                      <Link to='/liberty-trials/'>
+                        Efficacy
                       </Link>
                       {/* <img src={activeHeaderDropdown === 'efficacy' ? upArrow : downArrow} className='nav-arrow' /> */}
                       <svg
@@ -184,8 +184,18 @@ class MainNav extends React.Component {
                         this.handleNavHover()
                       }}
                     >
-                      <Link to='/safety-and-tolerability/'>
-                        Safety & Tolerability
+                      <Link to='/safety-profile/'>
+                        Safety Profile
+                      </Link>
+                    </li>
+                    <li
+                      onMouseEnter={() => {
+                        handleActiveHeaderDropdown('')
+                        this.handleNavHover()
+                      }}
+                    >
+                      <Link to='/how-it-works/'>
+                        How It Works
                       </Link>
                     </li>
                     <li
@@ -221,16 +231,6 @@ class MainNav extends React.Component {
                           fill='#A51890'
                         />
                       </svg>
-                    </li>
-                    <li
-                      onMouseEnter={() => {
-                        handleActiveHeaderDropdown('')
-                        this.handleNavHover()
-                      }}
-                    >
-                      <Link to='/safety-and-tolerability/'>
-                        How It Works
-                      </Link>
                     </li>
                   </ul>
                 </nav>
@@ -350,7 +350,7 @@ class MainNav extends React.Component {
                           }}
                           className={
                             activeDropdownLink === 0 &&
-                            currentPage === 'resources'
+                            currentPage === 'support'
                               ? 'header-dropdown-active'
                               : ''
                           }
@@ -369,7 +369,7 @@ class MainNav extends React.Component {
                             }}
                             className={
                               activeDropdownLink === 0.1 &&
-                              currentPage === 'resources'
+                              currentPage === 'support'
                                 ? 'header-dropdown-active'
                                 : ''
                             }
@@ -387,7 +387,7 @@ class MainNav extends React.Component {
                             }}
                             className={
                               activeDropdownLink === 0.2 &&
-                              currentPage === 'resources'
+                              currentPage === 'support'
                                 ? 'header-dropdown-active'
                                 : ''
                             }
@@ -405,7 +405,7 @@ class MainNav extends React.Component {
                             }}
                             className={
                               activeDropdownLink === 0.3 &&
-                              currentPage === 'resources'
+                              currentPage === 'support'
                                 ? 'header-dropdown-active'
                                 : ''
                             }
@@ -423,7 +423,7 @@ class MainNav extends React.Component {
                             }}
                             className={
                               activeDropdownLink === 0.4 &&
-                              currentPage === 'resources'
+                              currentPage === 'support'
                                 ? 'header-dropdown-active'
                                 : ''
                             }
@@ -441,7 +441,7 @@ class MainNav extends React.Component {
                             }}
                             className={
                               activeDropdownLink === 0.5 &&
-                              currentPage === 'resources'
+                              currentPage === 'support'
                                 ? 'header-dropdown-active'
                                 : ''
                             }
