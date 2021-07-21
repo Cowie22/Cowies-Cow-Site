@@ -1,7 +1,12 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
+import InfoGraphic from '../../InfoGraphic/InfoGraphic'
+import InfoGraphicData from '../../InfoGraphic/InfoGraphicData.js'
+
 const TrialDesign = (props) => {
+  const { TrialDesignData1 } = InfoGraphicData;
+
   return (
     <div className='trial-design-container'>
       <h2 className='blue'>
@@ -42,6 +47,15 @@ const TrialDesign = (props) => {
             Proportion of women with anemia who achieved a hemoglobin response &#60;2 g/dL from baseline at Week 24
           </li>
         </ul>
+      </div>
+      <div className='skinny-callout-container'>
+        <p>
+          <strong>LIBERTY open-label extension study:</strong> 28-week, open-label extension study that enrolled
+          476 women from LIBERTY 1 and 2.<sup>2,†</sup>
+        </p>
+      </div>
+      <div className='graph-container'>
+        <InfoGraphic data={TrialDesignData1} />
       </div>
     </div>
   )
