@@ -125,7 +125,7 @@ class MainNav extends React.Component {
                 </div>
               </Col>
               <Col
-                xl={{ span: 9, offset: 0 }}
+                xl={{ span: 8, offset: 1 }}
                 lg={{ span: 9, offset: 0 }}
                 className='d-none d-lg-block'
               >

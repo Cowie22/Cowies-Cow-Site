@@ -75,18 +75,11 @@ const HomeContent = (props) => {
       >
         <Container>
           <Row>
-            <Col lg={{span: 9, offset: 0}} xs={{span: 12, offset: 0}}>
-              <h1 className='top-title'>
-                NOW AVAILABLE
-              </h1>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={{span: 8, offset: 0}} xs={{span: 11, offset: 0}}>
-              <h1 className='home-sub-title white'>
-                One small pill, once a day: Myfembree for heavy menstrual bleeding
-                associated with uterine fibroids in premenopausal women
-              </h1>
+            <Col lg={{span: 6, offset: 1}} xs={{span: 11, offset: 0}}>
+              <h2 className='home-title'>
+                The only FDA-approved once-daily pill to reduce heavy menstrual bleeding associated with
+                uterine fibroids in premenopausal women
+              </h2>
             </Col>
           </Row>
           <Row>
