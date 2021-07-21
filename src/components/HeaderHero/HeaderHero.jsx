@@ -6,17 +6,16 @@ import { Container, Row, Col } from 'react-bootstrap'
 // import HeaderHeroImgFB from '../../assets/images/header-hero-img.png'
 
 const HeaderHero = (props) => {
-  const { title, subTitleContent } = props;
+  const { title } = props;
   return (
     <section className='header-hero-container'>
       <Container>
         <Row>
           <Col lg={{span: 5}}>
             <div className='header-hero-content-container'>
-              <h1 className='white'>
+              <h1 className='gradient-title'>
                 {title}
               </h1>
-              {subTitleContent}
             </div>
           </Col>
           <Col lg={{span: 5, offset: 2}}>

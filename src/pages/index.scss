@@ -62,6 +62,7 @@ $light-teal: #9ed8cf;
 @import "../components/SupportContentBlock/SupportContentBlock.scss";
 @import "../components/SupportContentBlockLarge/SupportContentBlockLarge.scss";
 @import "../components/IconCalloutCard/IconCalloutCard.scss";
+@import "../components/PillBottleCallout/PillBottleCallout.scss";
 
 html {
   // UI/UX use multiples of 8px
@@ -104,8 +105,8 @@ a {
 h1 {
   font-family: $mulish;
   font-style: normal;
-  font-size: 36px;
-  line-height: 45px;
+  font-size: 32px;
+  line-height: 40px;
   font-weight: 700;
   color: #333333;
   margin: 0;
@@ -244,9 +245,15 @@ p {
 }
 
 .gradient-title {
-  background: -webkit-linear-gradient(0deg,#AE0ACF, #5C068C);
+  background: -webkit-linear-gradient(0deg,#A51890, #5C068C);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  sup {
+    // background: -webkit-linear-gradient(45deg,#AE0ACF, #5C068C);
+    background: #5C068C;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .mulish {

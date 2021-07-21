@@ -9,29 +9,13 @@
   // radial-gradient(118% 112% at top right,rgba(255, 255, 255, 0.0) 90%, #302D83 140%) top left;
   background-size: 56% 100%;
   background-repeat: no-repeat;
-  padding: 80px 0 0 0;
+  padding: 60px 0;
   .header-hero-content-container {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     height: 100%;
     padding-top: 0px;
-    h1 {
-      padding: 0px 0 64px 0;
-      background: -webkit-linear-gradient(0deg,#AE0ACF, #5C068C);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      sup {
-        background: -webkit-linear-gradient(45deg,#AE0ACF, #5C068C);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-    }
-  }
-  .header-hero-img-container {
-    .header-hero-img {
-      width: 100%;
-    }
   }
 }
 
@@ -49,12 +33,5 @@
         padding: 0px 0 16px 0;
       }
     }
-    .header-hero-img-container {
-      padding-top: 24px;
-    }
   }
-}
-
-.sage {
-  color :#E3EFE9;
 }

@@ -6,11 +6,6 @@
   background-size: cover;
   padding: 60px 0;
   position: relative;
-  .home-title {
-    background: -webkit-linear-gradient(0deg,#AE0ACF, #5C068C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
   .home-lower-title {
     padding: 16px 0;
   }
@@ -74,9 +69,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40px 0;
-    .home-title {
-      padding: 0 40px 0 0;
-    }
     .home-sub-title {
       padding: 8px 0;
     }
