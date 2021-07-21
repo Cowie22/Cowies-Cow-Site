@@ -11,6 +11,7 @@ $white: #FFFFFF;
 $grey: #333333;
 $medium-grey: #C1C1C1;
 $light-grey: #F1F1F1;
+$inactive-grey: #E5E5E5;
 
 $teal: #6eceb2;
 $salmon: #ee968a;
@@ -242,6 +243,10 @@ p {
 
 .light-grey {
   color: $light-grey;
+}
+
+.inactive-grey {
+  color: $inactive-grey;
 }
 
 .gradient-title {

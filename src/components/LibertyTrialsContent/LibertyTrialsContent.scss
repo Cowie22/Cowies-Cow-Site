@@ -1,5 +1,33 @@
 .liberty-trials-container {
   padding: 16px 0;
+  .tab-arrow-container {
+    transition: all .7s;
+    transition-delay: .1s;
+    &:hover {
+      cursor: pointer;
+    }
+    .purple-arrow {
+      path {
+        fill: $purple;
+        transition: all .7s;
+        transition-delay: .1s;
+      }
+    }
+    .grey-arrow {
+      path {
+        fill: $inactive-grey;
+        transition: all .7s;
+        transition-delay: .1s;
+      }
+    }
+    .pink-arrow {
+      path {
+        fill: $pink;
+        transition: all .7s;
+        transition-delay: .1s;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
