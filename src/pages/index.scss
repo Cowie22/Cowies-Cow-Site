@@ -61,6 +61,7 @@ $light-teal: #9ed8cf;
 @import "../components/ContentBTNCard/ContentBTNCard.scss";
 @import "../components/SupportContentBlock/SupportContentBlock.scss";
 @import "../components/SupportContentBlockLarge/SupportContentBlockLarge.scss";
+@import "../components/IconCalloutCard/IconCalloutCard.scss";
 
 html {
   // UI/UX use multiples of 8px
@@ -242,6 +243,12 @@ p {
   color: $light-grey;
 }
 
+.gradient-title {
+  background: -webkit-linear-gradient(0deg,#AE0ACF, #5C068C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .mulish {
   font-family: $mulish;
 }
@@ -265,13 +272,6 @@ sub {
   position: absolute;
   height: 0px;
   margin-top: -150px;
-}
-
-.home-btn-container {
-  margin: 24px 0 0px 0;
-  @media screen and (max-width: 991px) {
-    margin: 24px 0 0 0;
-  }
 }
 
 .cta-btn {
@@ -323,6 +323,7 @@ sub {
 
 .pink-btn {
   background: #A51890;
+  border: 1px solid #A51890;
   &:hover {
     color: #A51890;
     background: #FFFFFF;
@@ -369,7 +370,7 @@ sub {
   }
 }
 
-.purple-ul, .purple-ul-dashed, .purple-ul-square {
+.purple-ul, .purple-ul-dashed, .purple-ul-square, .purple-ul-nike {
   padding: 4px 28px 4px 18px;
   margin: 0;
   list-style: none;
@@ -439,6 +440,14 @@ sub {
       width: 1em;
       margin-left: -1em;
     }
+  }
+}
+
+.purple-ul-nike {
+  list-style-image: url('../assets/images/list-nike-icon.svg');
+  padding-top: 8px;
+  li::before {
+    content: none;
   }
 }
 

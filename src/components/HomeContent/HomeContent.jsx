@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useContext } from 'react'
+import { Link } from 'gatsby'
 import Layout from '../Layout'
 import { Container, Row, Col } from 'react-bootstrap'
 
-import RegisterCard from '../RegisterCard/RegisterCard'
+import IconCalloutCard from '../IconCalloutCard/IconCalloutCard'
+import IconCalloutCardData from '../IconCalloutCard/IconCalloutCardData.js'
 import RectangleCard from '../RectangleCard/RectangleCard'
 import RectangleCardData from '../RectangleCard/RectangleCardData.js'
 import HCPModal from '../HCPModal/HCPModal'
@@ -25,7 +27,16 @@ const HomeContent = (props) => {
     handleHCPModalVisible
   } = props;
 
-  const { HomeRectangleCardData1, HomeRectangleCardData2 } = RectangleCardData;
+  const {
+    HomeRectangleCardData1,
+    HomeRectangleCardData2
+  } = RectangleCardData;
+
+  const {
+    IconCalloutCardData1,
+    IconCalloutCardData2,
+    IconCalloutCardData3
+  } = IconCalloutCardData;
 
   useEffect(() => {
     handleActiveHeaderDropdown('');
@@ -76,62 +87,44 @@ const HomeContent = (props) => {
         <Container>
           <Row>
             <Col lg={{span: 6, offset: 1}} xs={{span: 11, offset: 0}}>
-              <h2 className='home-title'>
+              <h2 className='gradient-title'>
                 The only FDA-approved once-daily pill to reduce heavy menstrual bleeding associated with
                 uterine fibroids in premenopausal women
               </h2>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={{span: 9, offset: 0}} xs={{span: 11, offset: 0}}>
-              <h4 className='white home-lower-title'>
+              <p className='home-lower-title'>
                 The recommended total duration of treatment is 24 months.
-              </h4>
+              </p>
             </Col>
           </Row>
           <Row>
-            <Col xl={3} lg={4} xs={10}>
-              <div className='cta-btn-container home-btn-container'>
-                <a
-                  href='https://www.myovant.com/myfembree-prescribing-information.pdf'
-                  target='_blank'
+            <Col lg={{span: 3, offset: 1}}>
+              <div className='cta-btn-container'>
+                <Link
+                  to='/efficacy-data/'
                 >
-                  <button className='cta-btn white-btn-hover-clear'>
-                    View Prescribing Information
+                  <button className='cta-btn pink-btn'>
+                    See Efficacy Data
                   </button>
-                </a>
+                </Link>
               </div>
-            </Col>
-            <Col xl={3} lg={4} xs={10}>
-              <div className='cta-btn-container home-btn-container'>
-                <a
-                  href='https://investors.myovant.com/news-releases/news-release-details/myovant-sciences-and-pfizer-receive-fda-approval-myfembreer'
-                  target='_blank'
-                >
-                  <button className='cta-btn transparent-btn'>
-                    View the Press Release
-                  </button>
-                </a>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={12} xs={11}>
-              <h3 className='white home-card-lower-content'>
-                To find out more about the Myfembree<sup>®</sup> Support Program, <br /> call {' '}
-                <a href='tel:1-833-693-3627' className='call-now-link'><u>1-833-MYFEMBREE</u> (<u>1-833-693-3627</u>)</a>,
-                {' '} 8 <sub>AM</sub>–8 <sub>PM</sub> ET, Monday–Friday.
-              </h3>
-              <h6 className='white home-page-footnote'>
-                Actual pill size: 7.94 mm in diameter.
-              </h6>
             </Col>
           </Row>
         </Container>
       </section>
       <section className='home-callout-container'>
         <Container>
-          <RegisterCard />
+          <Row>
+            <Col>
+              <h2 className='blue'>
+                3 reasons to explore Myfembree
+              </h2>
+            </Col>
+          </Row>
+          <Row>
+            <IconCalloutCard data={IconCalloutCardData1} />
+            <IconCalloutCard data={IconCalloutCardData2} />
+            <IconCalloutCard data={IconCalloutCardData3} />
+          </Row>
         </Container>
       </section>
       <section className='home-card-container'>

@@ -1,7 +1,7 @@
 .home-container {
   // background-image: url('../assets/images/home-bg-img.webp');
   width: 100%;
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 60px 0;
@@ -12,9 +12,7 @@
     -webkit-text-fill-color: transparent;
   }
   .home-lower-title {
-    font-size: 20px;
-    font-weight: 25px;
-    font-family: $mulish;
+    padding: 16px 0;
   }
   .home-card-lower-content {
     padding-top: 24px;
@@ -35,11 +33,15 @@
 }
 
 .home-callout-container {
-  background: #F1F7F4;
+  background: #FFFFFF;
   padding: 60px 0;
+  h2 {
+    padding-bottom: 24px;
+  }
 }
 
 .home-card-container {
+  background: #F1F7F4;
   padding: 60px 0;
 }
 
@@ -56,12 +58,6 @@
     }
     .home-sub-title {
       padding: 8px 0;
-    }
-    .title-pill-container {
-      img {
-        height: 24px;
-        margin-right: 8px;
-      }
     }
     .home-card-lower-content {
       padding-top: 24px;
