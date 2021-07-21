@@ -5,6 +5,10 @@
     transition-delay: .1s;
     position: relative;
     top: 200px;
+    &.arrow-right-container {
+      display: flex;
+      justify-content: flex-end;
+    }
     &:hover {
       cursor: pointer;
     }
