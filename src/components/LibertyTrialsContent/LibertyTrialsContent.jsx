@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useContext } from 'react'
+import { Link } from 'gatsby'
 import Layout from '../Layout'
 import { Container, Row, Col } from 'react-bootstrap'
+
+import HeaderHero from '../HeaderHero/HeaderHero'
+import SliderTabNav from '../SliderTabNav/SliderTabNav'
 
 const LibertyTrialsContent = (props) => {
 
@@ -27,40 +31,20 @@ const LibertyTrialsContent = (props) => {
       pageTitle=''
       description=''
     >
+      <HeaderHero
+        title={
+          <>
+            The effect of Myfembree was consistent regardless of patient demographics and characteristics<sup>1</sup>
+          </>
+        }
+        columns={{span: 11}}
+      />
       <section className='liberty-trials-container'>
         <Container>
-          <Row>
-            <Col lg={{span: 9, offset: 0}} xs={{span: 12, offset: 0}}>
-              <h1 className='top-title'>
-                NOW AVAILABLE
-              </h1>
-              <p>
-                Myfembree® is now available at retail or mail-order pharmacies.
-              </p>
-            </Col>
-          </Row>
-          <Row>
-            <Col xl={{span: 7, offset: 0}} lg={{span: 8, offset: 0}}>
-              <div>
-                <h1>
-                  The Myfembree<sup>®</sup> Support Program
-                </h1>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={{span: 8, offset: 0}} xs={{span: 11, offset: 0}}>
-              <h2>
-                For your patients who have been prescribed Myfembree, support starts with enrollment into
-                the Myfembree Support Program
-              </h2>
-              <p>
-                The Myfembree Support Program is designed to help your eligible patients throughout their treatment
-                journey. We offer financial assistance options, dedicated support staff, and other helpful
-                resources once eligible patients have been prescribed Myfembree.
-              </p>
-            </Col>
-          </Row>
+          <SliderTabNav
+            tab1='Trial Design'
+            tab2='Demographics & Criteria'
+          />
         </Container>
       </section>
     </Layout>

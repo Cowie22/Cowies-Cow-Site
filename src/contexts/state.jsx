@@ -24,6 +24,8 @@ const defaultState = {
   handleIsCookieVisible: () => {},
   HCPModalVisible: true,
   handleHCPModalVisible: () => {},
+  currentTopTab: '',
+  handleCurrentTopTab: () => {},
 }
 
 export const AppContext = React.createContext(defaultState)
@@ -94,6 +96,12 @@ class AppProvider extends Component {
               document.body.classList.remove('scroll-none');
             }
           }
+        })
+      },
+      currentTopTab: 1,
+      handleCurrentTopTab: (val) => {
+        this.setState({
+          currentTopTab: val
         })
       },
     }
