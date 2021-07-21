@@ -8,18 +8,26 @@ const RectangleCard = (props) => {
   return (
     <Col lg={12}>
       <div className='rectangle-card-container'>
-        <div className='title-container'>
-          <img src={icon} alt={alt} />
-          <h3 className='blue'>
-            {title}
-          </h3>
-        </div>
-        {content}
         <Row>
-          <Col lg={{span: 4}}>
+          <Col lg={{span: 1}}>
+            <div className='icon-container'>
+              <img src={icon} alt={alt} />
+            </div>
+          </Col>
+          <Col lg={{span: 10}}>
+            <div className='title-container'>
+              <h3 className='blue'>
+                {title}
+              </h3>
+            </div>
+            {content}
+          </Col>
+        </Row>
+        <Row>
+          <Col lg={{span: 3, offset: 1}}>
             <div className='cta-btn-container rectangle-card-btn-container'>
               <Link to={`/${btnLink}`}>
-                <button className='cta-btn pink-btn'>
+                <button className='cta-btn transparent-btn-pink'>
                   {btnText}
                 </button>
               </Link>

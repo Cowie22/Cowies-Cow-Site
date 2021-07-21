@@ -127,11 +127,28 @@ const HomeContent = (props) => {
           </Row>
         </Container>
       </section>
-      <section className='home-card-container'>
+      <section className='home-green-card-container'>
         <Container>
           <Row>
-            {/* <RectangleCard data={HomeRectangleCardData1} /> */}
             <RectangleCard data={HomeRectangleCardData2} />
+          </Row>
+        </Container>
+      </section>
+      <section className='home-purple-card-container'>
+        <Container>
+          <Row>
+            <Col lg={{span: 10, offset: 1}}>
+              <h2 className='white'>
+                Myfembree is a combination therapy that includes a gonadotropin-releasing hormone receptor
+                antagonist, estradiol, and norethindrone acetate, and is the first of its class to be
+                approved in a single, once-daily pill.<sup>1</sup>
+              </h2>
+              <Link to='/once-daily-dosing/'>
+                <h3 className='white'>
+                  Discover the convenience of once-daily dosing with Myfembree
+                </h3>
+              </Link>
+            </Col>
           </Row>
         </Container>
       </section>

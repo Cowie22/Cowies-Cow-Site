@@ -40,9 +40,30 @@
   }
 }
 
-.home-card-container {
+.home-green-card-container {
   background: #F1F7F4;
   padding: 60px 0;
+}
+
+.home-purple-card-container {
+  background: linear-gradient(90deg, #302D83 0%, #4F1289 37.5%, #5C068C 100%);
+  padding: 60px 0;
+  a {
+    &:hover {
+      cursor: pointer;
+      h3 {
+        color: $light-pink;
+        transition: all .7s;
+        transition-delay: .1s;
+      }
+    }
+    h3 {
+      transition: all .7s;
+      transition-delay: .1s;
+      padding-top: 24px;
+      text-decoration: underline;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -66,7 +87,7 @@
   .home-callout-container {
     padding: 40px 0;
   }
-  .home-card-container {
+  .home-green-card-container {
     padding: 40px 0 8px 0;
   }
 }
