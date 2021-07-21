@@ -35,13 +35,29 @@
             transition: color .5s;
             transition-delay: .2s;
           }
+          &.active-link {
+            cursor: pointer;
+            color: $purple;
+            transition: color .5s;
+            transition-delay: .2s;
+          }
         }
         .nav-arrow {
           margin-left: 8px;
-          transition: transform 0.5s;
+          transition: all 0.5s;
+          transform: rotate(180deg);
+          path {
+            fill: #A51890;
+            &.active-link-arrow {
+              fill: #5C068C;
+            }
+          }
           &.rotated {
-            transform: rotate(180deg);
-            transition: transform 0.5s;
+            transform: rotate(0deg);
+            transition: all 0.5s;
+            path {
+              fill: #5C068C;
+            }
           }
         }
       }

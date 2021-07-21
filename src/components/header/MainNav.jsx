@@ -137,7 +137,10 @@ class MainNav extends React.Component {
                         this.handleNavHover()
                       }}
                     >
-                      <Link to='/once-daily-dosing/'>
+                      <Link
+                        to='/once-daily-dosing/'
+                        className={currentPage === 'dosing' ? 'active-link' : ''}
+                      >
                         Once-Daily Dosing
                       </Link>
                     </li>
@@ -151,7 +154,12 @@ class MainNav extends React.Component {
                         handleActiveDropdownLink(0)
                       }}
                     >
-                      <Link to='/liberty-trials/'>
+                      <Link
+                        to='/liberty-trials/'
+                        className={
+                          currentPage === 'efficacy-data' || currentPage === 'liberty-trials' ? 'active-link' : ''
+                        }
+                      >
                         Efficacy
                       </Link>
                       {/* <img src={activeHeaderDropdown === 'efficacy' ? upArrow : downArrow} className='nav-arrow' /> */}
@@ -163,15 +171,17 @@ class MainNav extends React.Component {
                         xmlns='http://www.w3.org/2000/svg'
                         className={
                           activeHeaderDropdown === 'efficacy'
-                            ? 'nav-arrow'
-                            : 'nav-arrow rotated'
+                            ? 'nav-arrow rotated'
+                            : 'nav-arrow'
                         }
                       >
                         <path
+                          className={
+                            currentPage === 'efficacy-data' || currentPage === 'liberty-trials' ? 'active-link-arrow' : ''
+                          }
                           fillRule='evenodd'
                           clipRule='evenodd'
                           d='M5.99984 3.95775e-05C6.13245 3.95775e-05 6.25962 0.0527177 6.35339 0.146486L10.9367 4.72982C11.132 4.92508 11.132 5.24167 10.9367 5.43693C10.7415 5.63219 10.4249 5.63219 10.2296 5.43693L5.99984 1.20715L1.77006 5.43693C1.5748 5.63219 1.25821 5.63219 1.06295 5.43693C0.867688 5.24167 0.867688 4.92508 1.06295 4.72982L5.64628 0.146486C5.74005 0.0527177 5.86723 3.95775e-05 5.99984 3.95775e-05Z'
-                          fill='#A51890'
                         />
                       </svg>
                     </li>
@@ -181,7 +191,10 @@ class MainNav extends React.Component {
                         this.handleNavHover()
                       }}
                     >
-                      <Link to='/safety-profile/'>
+                      <Link
+                        to='/safety-profile/'
+                        className={currentPage === 'safety' ? 'active-link' : ''}
+                      >
                         Safety Profile
                       </Link>
                     </li>
@@ -191,7 +204,10 @@ class MainNav extends React.Component {
                         this.handleNavHover()
                       }}
                     >
-                      <Link to='/how-it-works/'>
+                      <Link
+                        to='/how-it-works/'
+                        className={currentPage === 'how-it-works' ? 'active-link' : ''}
+                      >
                         How It Works
                       </Link>
                     </li>
@@ -205,7 +221,12 @@ class MainNav extends React.Component {
                         handleActiveDropdownLink(0)
                       }}
                     >
-                      <Link to='/myfembree-support-program/'>
+                      <Link
+                        to='/myfembree-support-program/'
+                        className={
+                          currentPage === 'support' || currentPage === 'resources' ? 'active-link' : ''
+                        }
+                      >
                         Support & Savings
                       </Link>
                       {/* <img src={activeHeaderDropdown === 'resources' ? upArrow : downArrow} className='nav-arrow' /> */}
@@ -217,15 +238,17 @@ class MainNav extends React.Component {
                         xmlns='http://www.w3.org/2000/svg'
                         className={
                           activeHeaderDropdown === 'support'
-                            ? 'nav-arrow'
-                            : 'nav-arrow rotated'
+                            ? 'nav-arrow rotated'
+                            : 'nav-arrow'
                         }
                       >
                         <path
+                          className={
+                            currentPage === 'support' || currentPage === 'resources' ? 'active-link-arrow' : ''
+                          }
                           fillRule='evenodd'
                           clipRule='evenodd'
                           d='M5.99984 3.95775e-05C6.13245 3.95775e-05 6.25962 0.0527177 6.35339 0.146486L10.9367 4.72982C11.132 4.92508 11.132 5.24167 10.9367 5.43693C10.7415 5.63219 10.4249 5.63219 10.2296 5.43693L5.99984 1.20715L1.77006 5.43693C1.5748 5.63219 1.25821 5.63219 1.06295 5.43693C0.867688 5.24167 0.867688 4.92508 1.06295 4.72982L5.64628 0.146486C5.74005 0.0527177 5.86723 3.95775e-05 5.99984 3.95775e-05Z'
-                          fill='#A51890'
                         />
                       </svg>
                     </li>
