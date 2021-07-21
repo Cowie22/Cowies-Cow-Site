@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 
 const NextPageBtn = (props) => {
-  const { btnText, btnLink, handleBtnTabOver } = props;
+  const { btnText, btnLink, handleBtnTabOver, handleBtnTabOverTwo } = props;
   const [hovered, handleHovered] = useState(false);
 
   return (
@@ -18,6 +18,8 @@ const NextPageBtn = (props) => {
         }}
         onClick={() => {
           handleBtnTabOver ? handleBtnTabOver()
+          :
+          handleBtnTabOverTwo ? handleBtnTabOverTwo()
           :
           null
         }}

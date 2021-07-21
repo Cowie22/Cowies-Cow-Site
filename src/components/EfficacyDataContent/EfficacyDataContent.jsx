@@ -51,6 +51,12 @@ const EfficacyDataContent = (props) => {
     }, 500)
   }
 
+  const handleBtnTabOverTwo = () => {
+    setTimeout(() => {
+      handleCurrentTopTab(3)
+    }, 500)
+  }
+
   return (
     <Layout
       canonicalURL=''
@@ -157,10 +163,16 @@ const EfficacyDataContent = (props) => {
                   btnLink='efficacy-data/'
                   handleBtnTabOver={handleBtnTabOver}
                 />
+              : currentTopTab === 2 ?
+                <NextPageBtn
+                  btnText='See Amenorrhea & Hemoglobin Response Data'
+                  btnLink='efficacy-data/'
+                  handleBtnTabOverTwo={handleBtnTabOverTwo}
+                />
               :
                 <NextPageBtn
-                  btnText='See Response Rates With Myfembree'
-                  btnLink='efficacy-data/'
+                  btnText='See Safety Profile for Myfembree'
+                  btnLink='safety/'
                 />
             }
           </Row>
