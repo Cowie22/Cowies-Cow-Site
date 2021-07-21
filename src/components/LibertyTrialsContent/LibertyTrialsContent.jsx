@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useContext } from 'react'
-import { Link } from 'gatsby'
 import Layout from '../Layout'
 import { Container, Row, Col } from 'react-bootstrap'
 import { AppContext } from '../../contexts/state'
@@ -152,7 +151,6 @@ const LibertyTrialsContent = (props) => {
                 <NextPageBtn
                   btnText='See Response Rates With Myfembree'
                   btnLink='efficacy-data/'
-                  handleBtnTabOver={handleBtnTabOver}
                 />
             }
           </Row>
