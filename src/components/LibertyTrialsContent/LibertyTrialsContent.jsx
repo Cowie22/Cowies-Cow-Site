@@ -7,7 +7,6 @@ import HeaderHero from '../HeaderHero/HeaderHero'
 import SliderTabNav from '../SliderTabNav/SliderTabNav'
 
 const LibertyTrialsContent = (props) => {
-
   const [width, handleWidth] = useState(0);
   const { currentPage, handleCurrentPage, handleActiveHeaderDropdown } = props;
 

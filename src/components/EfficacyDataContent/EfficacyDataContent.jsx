@@ -1,11 +1,22 @@
 import React, { useState, useEffect, useContext } from 'react'
+import { Link } from 'gatsby'
 import Layout from '../Layout'
 import { Container, Row, Col } from 'react-bootstrap'
+import { AppContext } from '../../contexts/state'
+
+import HeaderHero from '../HeaderHero/HeaderHero'
+import SliderTabNav from '../SliderTabNav/SliderTabNav'
 
 const EfficacyDataContent = (props) => {
-
   const [width, handleWidth] = useState(0);
-  const { currentPage, handleCurrentPage, handleActiveHeaderDropdown } = props;
+  const state = useContext(AppContext);
+  const {
+    currentPage,
+    handleCurrentPage,
+    handleActiveHeaderDropdown,
+    currentTopTab,
+    handleCurrentTopTab
+  } = state;
 
   useEffect(() => {
     handleActiveHeaderDropdown('');
@@ -27,40 +38,22 @@ const EfficacyDataContent = (props) => {
       pageTitle=''
       description=''
     >
-      <section className='efficacy-data-container'>
+      <HeaderHero
+        title={
+          <>
+            Myfembree delivered clinically significant response rates and sustained reductions in
+            menstrual bleeding<sup>1,2</sup>
+          </>
+        }
+        columns={{span: 12}}
+      />
+      <section className='liberty-trials-container'>
         <Container>
-          <Row>
-            <Col lg={{span: 9, offset: 0}} xs={{span: 12, offset: 0}}>
-              <h1 className='top-title'>
-                NOW AVAILABLE
-              </h1>
-              <p>
-                Myfembree® is now available at retail or mail-order pharmacies.
-              </p>
-            </Col>
-          </Row>
-          <Row>
-            <Col xl={{span: 7, offset: 0}} lg={{span: 8, offset: 0}}>
-              <div>
-                <h1>
-                  The Myfembree<sup>®</sup> Support Program
-                </h1>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={{span: 8, offset: 0}} xs={{span: 11, offset: 0}}>
-              <h2>
-                For your patients who have been prescribed Myfembree, support starts with enrollment into
-                the Myfembree Support Program
-              </h2>
-              <p>
-                The Myfembree Support Program is designed to help your eligible patients throughout their treatment
-                journey. We offer financial assistance options, dedicated support staff, and other helpful
-                resources once eligible patients have been prescribed Myfembree.
-              </p>
-            </Col>
-          </Row>
+          <SliderTabNav
+            tab1='Response Rates'
+            tab2='Reductions in Menstrual Bleeding'
+            tab3='Amenorrhea & Hemoglobin'
+          />
         </Container>
       </section>
     </Layout>
