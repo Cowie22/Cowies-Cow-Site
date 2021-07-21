@@ -69,6 +69,9 @@ $light-teal: #9ed8cf;
 
 @import "../components/LibertyTrialTabs/TrialDesign/TrialDesign.scss";
 @import "../components/LibertyTrialTabs/Demographics/Demographics.scss";
+@import "../components/EfficacyDataTabs/Amenorrhea/Amenorrhea.scss";
+@import "../components/EfficacyDataTabs/Reduction/Reduction.scss";
+@import "../components/EfficacyDataTabs/ResponseRates/ResponseRates.scss";
 
 html {
   // UI/UX use multiples of 8px

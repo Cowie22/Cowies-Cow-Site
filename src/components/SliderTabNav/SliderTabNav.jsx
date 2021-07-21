@@ -43,6 +43,15 @@ const SliderTabNav = (props) => {
             currentTopTab === 3 ? 'bottom-tab-border-right' :
             'bottom-tab-border-left'
           }
+          onMouseEnter={() => {
+            currentTopTab === 1 ? handleHovered(1) :
+            currentTopTab === 2 ? handleHovered(2) :
+            currentTopTab === 3 ? handleHovered(3) :
+            null
+          }}
+          onMouseLeave={() => {
+            handleHovered(0)
+          }}
         >
         </div>
         <div
@@ -55,6 +64,18 @@ const SliderTabNav = (props) => {
             currentTopTab === 3 ? 'hovered-tab-border-right' :
             ''
           }
+          onMouseEnter={() => {
+            hovered === 1 ? handleHovered(1) :
+            hovered === 2 ? handleHovered(2) :
+            hovered === 3 ? handleHovered(3) :
+            currentTopTab === 1 ? handleHovered(1) :
+            currentTopTab === 2 ? handleHovered(2) :
+            currentTopTab === 3 ? handleHovered(3) :
+            null
+          }}
+          onMouseLeave={() => {
+            handleHovered(0)
+          }}
         >
         </div>
         <h6
