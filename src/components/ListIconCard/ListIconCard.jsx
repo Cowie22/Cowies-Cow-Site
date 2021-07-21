@@ -3,10 +3,10 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 const ListIconCard = (props) => {
   const { data } = props;
-  const { title, content, icon } = data[0];
+  const { title, content, icon, columns, fixedDesktopHeight } = data[0];
   return (
-    <Col lg={{span: 10, offset: 1}}>
-      <div className='list-icon-card-container'>
+    <Col lg={columns}>
+      <div className={fixedDesktopHeight ? 'list-icon-card-container fixed-height' : 'list-icon-card-container'}>
         <div className='icon-title-container'>
           <img src={icon} alt='' />
           {title}

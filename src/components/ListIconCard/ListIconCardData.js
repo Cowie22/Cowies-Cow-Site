@@ -3,8 +3,13 @@ import React from 'react'
 import computerIcon from '../../assets/images/computer-icon.svg'
 import paper from '../../assets/images/paper-dog-ear-icon.svg'
 import iphone from '../../assets/images/iphone-icon.svg'
+import circleAndPowerBtnIcon from '../../assets/images/circle-and-power-btn-icon.svg'
+import circleAndCircleArrowIcon from '../../assets/images/circle-and-circle-arrow-icon.svg'
+import circleAndCloseIcon from '../../assets/images/circle-and-close-icon.svg'
 
 import enrollmentPDF from '../../assets/downloadables/myfembree-support-program-enrollment-form.pdf'
+
+// First three are for the myfembree-support-program page
 
 const ListIconCardData1 = [
   {
@@ -25,6 +30,8 @@ const ListIconCardData1 = [
       </li>
     </ul>,
     icon: computerIcon,
+    columns: {span: 10, offset: 1},
+    fixedDesktopHeight: false,
   }
 ]
 
@@ -45,6 +52,8 @@ const ListIconCardData2 = [
       </li>
     </ul>,
     icon: paper,
+    columns: {span: 10, offset: 1},
+    fixedDesktopHeight: false,
   }
 ]
 
@@ -64,6 +73,71 @@ const ListIconCardData3 = [
       </li>
     </ul>,
     icon: iphone,
+    columns: {span: 10, offset: 1},
+    fixedDesktopHeight: false,
+  }
+]
+
+// Next three are for the dosing page
+
+const ListIconCardData4 = [
+  {
+    title: <h3 className='extra-bold blue'>Starting treatment<sup>1</sup></h3>,
+    content:
+    <ul className='purple-ul less-right-padding'>
+      <li>
+        Start Myfembree as early as possible after the onset of menses, but no later than 7 days after
+        menses has started
+        <ul className='purple-ul-dashed less-right-padding'>
+          <li>
+            If begun later than 7 days after menses, irregular and/or heavy bleeding may initially occur
+          </li>
+        </ul>
+      </li>
+      <li>
+        Exclude pregnancy
+      </li>
+      <li>
+        Discontinue hormonal contraceptives; use nonhormonal contraceptives if needed
+      </li>
+      <li>
+        Take around the same time daily, with or without food
+      </li>
+    </ul>,
+    icon: circleAndPowerBtnIcon,
+    columns: {span: 4, offset: 0},
+    fixedDesktopHeight: true,
+  }
+]
+
+const ListIconCardData5 = [
+  {
+    title: <h3 className='extra-bold blue'>Treatment duration<sup>1</sup></h3>,
+    content:
+    <ul className='purple-ul less-right-padding'>
+      <li>
+        The recommended total duration of treatment is 24 months
+      </li>
+    </ul>,
+    icon: circleAndCircleArrowIcon,
+    columns: {span: 4, offset: 0},
+    fixedDesktopHeight: true,
+  }
+]
+
+const ListIconCardData6 = [
+  {
+    title: <h3 className='extra-bold blue'>For missed doses<sup>1</sup></h3>,
+    content:
+    <ul className='purple-ul less-right-padding'>
+      <li>
+        In cases of a missed dose, Myfembree should be taken as soon as possible on the same day, and
+        then resume regular dosing the next day at the usual time
+      </li>
+    </ul>,
+    icon: circleAndCloseIcon,
+    columns: {span: 4, offset: 0},
+    fixedDesktopHeight: true,
   }
 ]
 
@@ -72,6 +146,9 @@ const ListIconCardData = {
   ListIconCardData1,
   ListIconCardData2,
   ListIconCardData3,
+  ListIconCardData4,
+  ListIconCardData5,
+  ListIconCardData6
 }
 
 export default ListIconCardData
