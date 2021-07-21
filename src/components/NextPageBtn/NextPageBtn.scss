@@ -1,16 +1,21 @@
 .next-page-btn-container {
   a {
     button {
-      svg {
-        margin-left: 24px;
-        .btn-arrow {
-          fill: $white;
-          transition: all .7s;
-          transition-delay: .1s;
-          &.active-arrow {
-            fill: $pink;
+      .btn-content-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          margin: 4px 4px 0 16px;
+          .btn-arrow {
+            fill: $white;
             transition: all .7s;
             transition-delay: .1s;
+            &.active-arrow {
+              fill: $pink;
+              transition: all .7s;
+              transition-delay: .1s;
+            }
           }
         }
       }

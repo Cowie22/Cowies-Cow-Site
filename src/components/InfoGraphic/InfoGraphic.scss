@@ -1,5 +1,10 @@
 .info-graphic-container {
-  .graph-container {
+  .graph-title {
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 24px;
+  }
+  .graph-img-container {
     img {
       width: 100%;
     }

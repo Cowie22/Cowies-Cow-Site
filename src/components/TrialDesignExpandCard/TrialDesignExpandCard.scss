@@ -1,0 +1,88 @@
+.expand-card-container {
+  background: #F1F7F4;
+  border-radius: 10px;
+  padding: 32px 0;
+  margin-bottom: 60px;
+  height: 88%;
+  transition: all .7s;
+  &.not-expanded-container {
+    height: 60%;
+    transition: all 0.7s;
+  }
+  .toggle-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    transition-delay: .2s;
+    p {
+      padding-right: 8px;
+      transition: all .5s;
+      transition-delay: .2s;
+    }
+    .circle-icon {
+      path {
+        fill: $pink;
+        transition: all .5s;
+        transition-delay: .2s;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      p {
+        color: $purple;
+        transition: all .5s;
+        transition-delay: .2s;
+      }
+      .circle-icon {
+        path {
+          fill: $purple;
+          transition: all .5s;
+          transition-delay: .2s;
+        }
+      }
+    }
+  }
+  .expand-card-content-container {
+    margin: 0;
+    height: auto;
+    transform: scaleY(1);
+    transition: transform .7s;
+    transition-delay: .3s;
+    transform-origin: top;
+    &.not-expanded {
+      height: 0;
+      transform: scaleY(0);
+      transition: transform .3s;
+    }
+    p {
+      padding-bottom: 8px;
+      &:first-of-type {
+        padding-top: 16px;
+      }
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+    .expand-card-btn-container {
+      padding-top: 16px;
+      a {
+        button {
+          svg {
+            margin-left: 24px;
+            .btn-arrow {
+              fill: $pink;
+              transition: all .7s;
+              transition-delay: .1s;
+              &.active-arrow {
+                fill: $white;
+                transition: all .7s;
+                transition-delay: .1s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

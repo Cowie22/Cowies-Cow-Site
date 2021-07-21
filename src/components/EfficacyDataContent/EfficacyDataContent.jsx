@@ -9,6 +9,7 @@ import SliderTabNav from '../SliderTabNav/SliderTabNav'
 import Amenorrhea from '../EfficacyDataTabs/Amenorrhea/Amenorrhea'
 import Reduction from '../EfficacyDataTabs/Reduction/Reduction'
 import ResponseRates from '../EfficacyDataTabs/ResponseRates/ResponseRates'
+import TrialDesignExpandCard from '../TrialDesignExpandCard/TrialDesignExpandCard'
 import NextPageBtn from '../NextPageBtn/NextPageBtn'
 
 const EfficacyDataContent = (props) => {
@@ -146,11 +147,14 @@ const EfficacyDataContent = (props) => {
             </Col>
           </Row>
           <Row>
+            <TrialDesignExpandCard />
+          </Row>
+          <Row>
             {
               currentTopTab === 1 ?
                 <NextPageBtn
-                  btnText='See Demographics & Enrollment Criteria'
-                  btnLink='liberty-trials/'
+                  btnText='See Menstrual Bleeding Reductions Over Time'
+                  btnLink='efficacy-data/'
                   handleBtnTabOver={handleBtnTabOver}
                 />
               :

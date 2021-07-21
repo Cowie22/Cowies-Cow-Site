@@ -1,130 +1,36 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
-import ListIconCard from '../../ListIconCard/ListIconCard'
-import ListIconCardData from '../../ListIconCard/ListIconCardData.js'
+import InfoGraphic from '../../InfoGraphic/InfoGraphic'
+import InfoGraphicData from '../../InfoGraphic/InfoGraphicData.js'
 
 const ResponseRates = (props) => {
-  const {
-    ListIconCardData7,
-    ListIconCardData8,
-  } = ListIconCardData;
+  const { ResponseRatesData1 } = InfoGraphicData;
 
   return (
     <div className='response-rates-container'>
+      <h4 className='mulish purple'>
+        PRIMARY ENDPOINT
+      </h4>
       <h2 className='blue'>
-        Demographics and fibroid-related characteristics were generally balanced between Myfembree
-        and placebo arms<sup>2</sup>
+        Approximately 70% of women responded to treatment with Myfembree<sup>1,*</sup>
       </h2>
+      <p>
+        A response was defined as menstrual blood loss volume &#60;80 mL per cycle and ≥50% reduction in menstrual
+        bleeding from baseline* over the last 35 days of treatment.
+      </p>
       <Row>
         <Col lg={{span: 10, offset: 1}}>
-          <table class='interior-table'>
-            <tbody>
-              <tr>
-                <th colspan='2'>
-                  Patient demographics
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    Median age, years
-                  </p>
-                  <hr />
-                </td>
-                <td>
-                  <p>
-                    43 (range: 19-51)
-                  </p>
-                  <hr />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    Black patients, %
-                  </p>
-                  <hr />
-                </td>
-                <td>
-                  <p>
-                    53
-                  </p>
-                  <hr />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    White patients, %
-                  </p>
-                  <hr />
-                </td>
-                <td>
-                  <p>
-                    41
-                  </p>
-                  <hr />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    Mean BMI, kg/m<sup>2</sup>
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    31.6 (range: 16.0-62.8<sup>3</sup>)
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <th colspan='2'>
-                  Baseline fibroid-related characteristics
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    Mean menstrual blood loss volume mL (± SD)
-                  </p>
-                  <hr />
-                </td>
-                <td>
-                  <p>
-                    231 (± 156) (range: 82.8-1365.1<sup>3</sup>)
-                  </p>
-                  <hr />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>
-                    Mean hemoglobin, g/dL
-                  </p>
-                </td>
-                <td>
-                  <p>
-                    11.2 (range: 6.1-15.4)<sup>3</sup>
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div className='graph-container'>
+            <InfoGraphic data={ResponseRatesData1} />
+          </div>
         </Col>
       </Row>
-      <div className='liberty-trials-card-container'>
-        <Row>
-          <ListIconCard data={ListIconCardData7} />
-          <ListIconCard data={ListIconCardData8} />
-        </Row>
-      </div>
       <Row>
         <Col>
           <div className='footnote-container'>
             <h6>
-              BMI = body mass index; SD = standard deviation.
+              Mean menstrual blood loss volume at baseline was 231 mL (± 156).
             </h6>
           </div>
         </Col>

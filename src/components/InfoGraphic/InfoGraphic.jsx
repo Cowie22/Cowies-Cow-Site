@@ -34,7 +34,7 @@ const InfoGraphic = (props) => {
           {content}
         </Col>
         <Col lg={imgColumns}>
-          <div className='graph-container'>
+          <div className='graph-img-container'>
             <picture>
               <source srcSet={img} media='(min-width: 991px)' alt='' type="image/webp" />
               <source srcSet={fallBackImg} media='(min-width: 991px)' alt='' type="image/png" />
