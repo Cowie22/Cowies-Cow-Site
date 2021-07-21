@@ -53,8 +53,7 @@
     margin: 0 15px;
     z-index: 10;
     background: $purple;
-    transition: all .7s;
-    transition-delay: .1s;
+    transition: .5s left;
   }
   .hovered-tab-border-right {
     width: 95%;
@@ -65,8 +64,7 @@
     margin: 0 15px;
     z-index: 10;
     background: $purple;
-    transition: all .7s;
-    transition-delay: .1s;
+    transition: .5s left;
   }
   h6 {
     padding-bottom: 16px;

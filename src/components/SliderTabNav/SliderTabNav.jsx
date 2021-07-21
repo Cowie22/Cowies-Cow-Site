@@ -50,6 +50,9 @@ const SliderTabNav = (props) => {
             hovered === 1 ? 'hovered-tab-border-left' :
             hovered === 2 ? 'hovered-tab-border-center' :
             hovered === 3 ? 'hovered-tab-border-right' :
+            currentTopTab === 1 ? 'hovered-tab-border-left' :
+            currentTopTab === 2 ? 'hovered-tab-border-center' :
+            currentTopTab === 3 ? 'hovered-tab-border-right' :
             ''
           }
         >
