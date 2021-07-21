@@ -2,10 +2,10 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
 const PurpleLineCallout = (props) => {
-  const { title } = props;
+  const { content } = props;
   return (
     <div className='purple-line-callout-container'>
-      {title}
+      {content}
     </div>
   )
 }

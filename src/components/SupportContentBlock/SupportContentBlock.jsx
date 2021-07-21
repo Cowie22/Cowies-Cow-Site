@@ -19,7 +19,7 @@ const SupportContentBlock = (props) => {
         <Row>
           <Col lg={{span: 5, offset: 1}}>
             <PurpleLineCallout
-              title={
+              content={
                 <p className='extra-bold purple large-text'>
                   {purpleLineTitle}<br/>
                   {purpleLineTitle2}

@@ -203,7 +203,7 @@ const MyfembreeSupportProgramContent = (props) => {
           <Row>
             <Col lg={{span: 10, offset: 1}}>
               <PurpleLineCallout
-                title={
+                content={
                   <p className='extra-bold purple'>
                     The office can call <a href='tel:1-833-693-3627'>1-833-MYFEMBREE (1-833-693-3627)</a> to speak
                     to a Support Coordinator or Virtual Reimbursement Manager about access and reimbursement
