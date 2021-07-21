@@ -8,9 +8,9 @@ import HeaderHero from '../HeaderHero/HeaderHero'
 import SliderTabNav from '../SliderTabNav/SliderTabNav'
 import TrialDesign from '../LibertyTrialTabs/TrialDesign/TrialDesign'
 import Demographics from '../LibertyTrialTabs/Demographics/Demographics'
+import NextPageBtn from '../NextPageBtn/NextPageBtn'
 
 const LibertyTrialsContent = (props) => {
-  const [width, handleWidth] = useState(0);
   const [hovered, handleHovered] = useState(0);
   const state = useContext(AppContext);
   const {
@@ -25,15 +25,7 @@ const LibertyTrialsContent = (props) => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('liberty-trials');
     handleCurrentTopTab(1);
-
-    updateWindowDimensions();
-    window.addEventListener('resize', updateWindowDimensions);
-    return () => window.removeEventListener('resize', updateWindowDimensions)
   }, []);
-
-  const updateWindowDimensions = () => {
-    handleWidth(window.innerWidth);
-  }
 
   const handleArrowLeft = () => {
     if (currentTopTab === 1) {
@@ -49,6 +41,12 @@ const LibertyTrialsContent = (props) => {
     } else {
       handleCurrentTopTab(currentTopTab + 1)
     }
+  }
+
+  const handleBtnTabOver = () => {
+    setTimeout(() => {
+      handleCurrentTopTab(2)
+    }, 500)
   }
 
   return (
@@ -141,6 +139,13 @@ const LibertyTrialsContent = (props) => {
                 </svg>
               </div>
             </Col>
+          </Row>
+          <Row>
+            <NextPageBtn
+              btnText='See Demographics & Enrollment Criteria'
+              btnLink='liberty-trials/'
+              handleBtnTabOver={handleBtnTabOver}
+            />
           </Row>
         </Container>
       </section>

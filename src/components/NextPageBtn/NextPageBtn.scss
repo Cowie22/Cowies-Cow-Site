@@ -1,0 +1,19 @@
+.next-page-btn-container {
+  a {
+    button {
+      svg {
+        margin-left: 24px;
+        .btn-arrow {
+          fill: $white;
+          transition: all .7s;
+          transition-delay: .1s;
+          &.active-arrow {
+            fill: $pink;
+            transition: all .7s;
+            transition-delay: .1s;
+          }
+        }
+      }
+    }
+  }
+}

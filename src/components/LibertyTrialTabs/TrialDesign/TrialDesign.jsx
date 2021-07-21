@@ -57,6 +57,20 @@ const TrialDesign = (props) => {
       <div className='graph-container'>
         <InfoGraphic data={TrialDesignData1} />
       </div>
+      <div className='footnote-container'>
+        <h6>
+          *Heavy menstrual bleeding defined as menstrual blood loss volume of ≥80 mL per cycle for 2
+          menstrual cycles, or ≥160 mL during 1 cycle.<sup>2</sup>
+        </h6>
+        <h6>
+          †The open-label extension study evaluated efficacy and safety of Myfembree for a total
+          treatment duration of 12 months in eligible women from all 3 arms of the trials.<sup>2</sup>
+        </h6>
+        <h6>
+          ‡Evaluation of relugolix monotherapy was requested by the FDA, but is not approved in
+          the United States for heavy menstrual bleeding associated with uterine fibroids.
+        </h6>
+      </div>
     </div>
   )
 }
