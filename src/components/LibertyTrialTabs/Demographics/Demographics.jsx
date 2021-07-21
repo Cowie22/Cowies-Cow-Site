@@ -1,7 +1,15 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
+import ListIconCard from '../../ListIconCard/ListIconCard'
+import ListIconCardData from '../../ListIconCard/ListIconCardData.js'
+
 const Demographics = (props) => {
+  const {
+    ListIconCardData7,
+    ListIconCardData8,
+  } = ListIconCardData;
+
   return (
     <div className='demographics-container'>
       <h2 className='blue'>
@@ -104,6 +112,21 @@ const Demographics = (props) => {
               </tr>
             </tbody>
           </table>
+        </Col>
+      </Row>
+      <div className='liberty-trials-card-container'>
+        <Row>
+          <ListIconCard data={ListIconCardData7} />
+          <ListIconCard data={ListIconCardData8} />
+        </Row>
+      </div>
+      <Row>
+        <Col>
+          <div className='footnote-container'>
+            <h6>
+              BMI = body mass index; SD = standard deviation.
+            </h6>
+          </div>
         </Col>
       </Row>
     </div>

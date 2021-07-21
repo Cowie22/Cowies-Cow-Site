@@ -141,6 +141,63 @@ const ListIconCardData6 = [
   }
 ]
 
+// Next 2 are for the liberty trials page, both have no icon, so I use a boolean to change styles depending
+// On if the icon exists or not
+
+const ListIconCardData7 = [
+  {
+    title: <h3 className='extra-bold blue no-icon-title'>Key inclusion criteria<sup>1</sup></h3>,
+    content:
+    <ul className='purple-ul less-right-padding'>
+      <li>
+        Premenopausal women aged 18 to 50 years old
+      </li>
+      <li>
+        Regularly occurring menstrual periods of ≤14 days’ duration with a cycle of 21 to 38 days
+      </li>
+      <li>
+        Menstrual blood loss volume of ≥80 mL per cycle for 2 menstrual cycles, or ≥160 mL during 1 cycle
+      </li>
+      <li>
+        Ultrasound-confirmed diagnosis of uterine fibroids in which at least 1 fibroid met at least 1 of
+        the following criteria:
+        <ul className='purple-ul-dashed less-right-padding'>
+          <li>
+            Subserosal, intramural, or 	&#60;50% intracavitary submucosal fibroid with a diameter ≥2 cm; or
+          </li>
+          <li>
+            Multiple small fibroids with a total uterine volume of ≥130 cm<sup>3</sup>
+          </li>
+        </ul>
+      </li>
+    </ul>,
+    columns: {span: 6, offset: 0},
+    fixedDesktopHeight: true,
+  }
+]
+
+const ListIconCardData8 = [
+  {
+    title: <h3 className='extra-bold blue no-icon-title'>Key exclusion criteria<sup>1</sup></h3>,
+    content:
+    <ul className='purple-ul less-right-padding'>
+      <li>
+        Abnormal endometrial biopsies, osteoporosis, another metabolic bone disease, or another cause of
+        heavy menstrual bleeding
+      </li>
+      <li>
+        Contraindication to treatment with estradiol and norethindrone acetate; or use of certain
+        hormone therapies
+      </li>
+      <li>
+        Hemoglobin &#60;8.0 g/dL
+      </li>
+    </ul>,
+    columns: {span: 6, offset: 0},
+    fixedDesktopHeight: true,
+  }
+]
+
 
 const ListIconCardData = {
   ListIconCardData1,
@@ -148,7 +205,9 @@ const ListIconCardData = {
   ListIconCardData3,
   ListIconCardData4,
   ListIconCardData5,
-  ListIconCardData6
+  ListIconCardData6,
+  ListIconCardData7,
+  ListIconCardData8
 }
 
 export default ListIconCardData

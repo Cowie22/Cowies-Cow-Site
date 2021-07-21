@@ -141,11 +141,20 @@ const LibertyTrialsContent = (props) => {
             </Col>
           </Row>
           <Row>
-            <NextPageBtn
-              btnText='See Demographics & Enrollment Criteria'
-              btnLink='liberty-trials/'
-              handleBtnTabOver={handleBtnTabOver}
-            />
+            {
+              currentTopTab === 1 ?
+                <NextPageBtn
+                  btnText='See Demographics & Enrollment Criteria'
+                  btnLink='liberty-trials/'
+                  handleBtnTabOver={handleBtnTabOver}
+                />
+              :
+                <NextPageBtn
+                  btnText='See Response Rates With Myfembree'
+                  btnLink='efficacy-data/'
+                  handleBtnTabOver={handleBtnTabOver}
+                />
+            }
           </Row>
         </Container>
       </section>

@@ -8,7 +8,7 @@ const ListIconCard = (props) => {
     <Col lg={columns}>
       <div className={fixedDesktopHeight ? 'list-icon-card-container fixed-height' : 'list-icon-card-container'}>
         <div className='icon-title-container'>
-          <img src={icon} alt='' />
+          <img src={icon} alt='' className={icon ? '' : 'no-icon'} />
           {title}
         </div>
         {content}
