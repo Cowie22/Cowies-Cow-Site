@@ -6,6 +6,8 @@ import { AppContext } from '../../contexts/state'
 
 import HeaderHero from '../HeaderHero/HeaderHero'
 import SliderTabNav from '../SliderTabNav/SliderTabNav'
+import TrialDesign from '../LibertyTrialTabs/TrialDesign/TrialDesign'
+import Demographics from '../LibertyTrialTabs/Demographics/Demographics'
 
 const LibertyTrialsContent = (props) => {
   const [width, handleWidth] = useState(0);
@@ -33,6 +35,22 @@ const LibertyTrialsContent = (props) => {
     handleWidth(window.innerWidth);
   }
 
+  const handleArrowLeft = () => {
+    if (currentTopTab === 1) {
+      handleCurrentTopTab(1)
+    } else {
+      handleCurrentTopTab(currentTopTab - 1)
+    }
+  }
+
+  const handleArrowRight = () => {
+    if (currentTopTab === 2) {
+      handleCurrentTopTab(2)
+    } else {
+      handleCurrentTopTab(currentTopTab + 1)
+    }
+  }
+
   return (
     <Layout
       canonicalURL=''
@@ -58,6 +76,9 @@ const LibertyTrialsContent = (props) => {
             <Col lg={{span: 1}}>
               <div
                 className='tab-arrow-container arrow-left-container'
+                onClick={() => {
+                  handleArrowLeft()
+                }}
                 onMouseEnter={() =>{
                   handleHovered(1)
                 }}
@@ -83,11 +104,19 @@ const LibertyTrialsContent = (props) => {
               </div>
             </Col>
             <Col lg={{span: 10}}>
-
+              {
+                currentTopTab === 1 ?
+                <TrialDesign />
+                :
+                <Demographics />
+              }
             </Col>
             <Col lg={{span: 1}}>
               <div
                 className='tab-arrow-container arrow-right-container'
+                onClick={() => {
+                  handleArrowRight()
+                }}
                 onMouseEnter={() =>{
                   handleHovered(2)
                 }}

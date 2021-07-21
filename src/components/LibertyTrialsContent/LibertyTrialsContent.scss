@@ -3,6 +3,8 @@
   .tab-arrow-container {
     transition: all .7s;
     transition-delay: .1s;
+    position: relative;
+    top: 200px;
     &:hover {
       cursor: pointer;
     }

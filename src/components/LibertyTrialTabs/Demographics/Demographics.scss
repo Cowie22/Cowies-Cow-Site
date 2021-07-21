@@ -1,0 +1,12 @@
+.demographics-container {
+  padding: 60px 0;
+  h2 {
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .demographics-container {
+    padding: 40px 0;
+  }
+}
