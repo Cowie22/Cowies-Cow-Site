@@ -2,17 +2,26 @@ import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'gatsby'
 import Layout from '../Layout'
 import { Container, Row, Col } from 'react-bootstrap'
+import { AppContext } from '../../contexts/state'
 
 import HeaderHero from '../HeaderHero/HeaderHero'
 import SliderTabNav from '../SliderTabNav/SliderTabNav'
 
 const LibertyTrialsContent = (props) => {
   const [width, handleWidth] = useState(0);
-  const { currentPage, handleCurrentPage, handleActiveHeaderDropdown } = props;
+  const state = useContext(AppContext);
+  const {
+    currentPage,
+    handleCurrentPage,
+    handleActiveHeaderDropdown,
+    currentTopTab,
+    handleCurrentTopTab
+  } = state;
 
   useEffect(() => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('liberty-trials');
+    handleCurrentTopTab(1);
 
     updateWindowDimensions();
     window.addEventListener('resize', updateWindowDimensions);

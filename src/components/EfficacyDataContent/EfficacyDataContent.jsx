@@ -21,6 +21,7 @@ const EfficacyDataContent = (props) => {
   useEffect(() => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('efficacy-data');
+    handleCurrentTopTab(1);
 
     updateWindowDimensions();
     window.addEventListener('resize', updateWindowDimensions);
