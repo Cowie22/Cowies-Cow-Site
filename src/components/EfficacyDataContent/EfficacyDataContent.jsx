@@ -155,6 +155,21 @@ const EfficacyDataContent = (props) => {
           <Row>
             <TrialDesignExpandCard />
           </Row>
+          {
+            currentTopTab === 2 ?
+            <Row>
+              <Col>
+                <div className='efficacy-footnote-container'>
+                  <h6>
+                    L1 = LIBERTY 1; L2 = LIBERTY 2.
+                  </h6>
+                </div>
+              </Col>
+            </Row>
+            :
+            <>
+            </>
+          }
           <Row>
             {
               currentTopTab === 1 ?
