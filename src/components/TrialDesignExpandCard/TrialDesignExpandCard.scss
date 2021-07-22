@@ -2,11 +2,12 @@
   background: #F1F7F4;
   border-radius: 10px;
   padding: 32px 0;
-  margin-bottom: 60px;
-  height: 88%;
+  margin-bottom: 0px;
+  height: 100%;
   transition: all .7s;
   &.not-expanded-container {
-    height: 60%;
+    height: 88px;
+    padding: 32px 0;
     transition: all 0.7s;
   }
   .toggle-content-container {
