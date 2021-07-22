@@ -1,22 +1,43 @@
 .safety-container {
-  padding: 60px 0;
-  .top-title {
-    letter-spacing: 0.5em;
-    font-weight: 400;
-    padding-bottom: 8px;
-    background: linear-gradient(90deg, rgba(175,212,196,1) 0%, rgba(255,255,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  padding: 16px 0 0px 0;
+  .tab-arrow-container {
+    transition: all .7s;
+    transition-delay: .1s;
+    position: relative;
+    top: 200px;
+    &.arrow-right-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    .purple-arrow {
+      path {
+        fill: $purple;
+        transition: all .7s;
+        transition-delay: .1s;
+      }
+    }
+    .grey-arrow {
+      path {
+        fill: $inactive-grey;
+        transition: all .7s;
+        transition-delay: .1s;
+      }
+    }
+    .pink-arrow {
+      path {
+        fill: $pink;
+        transition: all .7s;
+        transition-delay: .1s;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 992px) {
   .safety-container {
     padding: 40px 0;
-    .top-title {
-      padding-bottom: 8px;
-      font-size: 22px;
-      line-height: 28px;
-    }
   }
 }

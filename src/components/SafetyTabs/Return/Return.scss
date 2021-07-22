@@ -1,0 +1,15 @@
+.response-rates-container {
+  padding: 60px 0;
+  h2 {
+    padding: 8px 0 24px 0;
+  }
+  .graph-container {
+    padding: 24px 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .response-rates-container {
+    padding: 40px 0;
+  }
+}

@@ -73,7 +73,7 @@ const EfficacyDataContent = (props) => {
         }
         columns={{span: 12}}
       />
-      <section className='liberty-trials-container'>
+      <section className='efficacy-data-container'>
         <Container>
           <SliderTabNav
             tab1='Response Rates'

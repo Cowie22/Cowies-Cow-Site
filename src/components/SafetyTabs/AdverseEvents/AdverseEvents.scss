@@ -1,0 +1,12 @@
+.adverse-events-container {
+  padding: 60px 0;
+  .circle-graph-container {
+    padding: 0 0 24px 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .adverse-events-container {
+    padding: 40px 0;
+  }
+}
