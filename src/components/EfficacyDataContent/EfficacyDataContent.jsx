@@ -167,6 +167,17 @@ const EfficacyDataContent = (props) => {
               </Col>
             </Row>
             :
+            currentTopTab === 3 ?
+            <Row>
+              <Col>
+                <div className='efficacy-footnote-container'>
+                  <h6>
+                    Hgb = hemoglobin.
+                  </h6>
+                </div>
+              </Col>
+            </Row>
+            :
             <>
             </>
           }
@@ -187,7 +198,7 @@ const EfficacyDataContent = (props) => {
               :
                 <NextPageBtn
                   btnText='See Safety Profile for Myfembree'
-                  btnLink='safety/'
+                  btnLink='safety-profile/'
                 />
             }
           </Row>

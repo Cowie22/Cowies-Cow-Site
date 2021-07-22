@@ -163,7 +163,7 @@ const ListIconCardData7 = [
         the following criteria:
         <ul className='purple-ul-dashed less-right-padding'>
           <li>
-            Subserosal, intramural, or 	&#60;50% intracavitary submucosal fibroid with a diameter ≥2 cm; or
+            Subserosal, intramural, or	&#60;50% intracavitary submucosal fibroid with a diameter ≥2 cm; or
           </li>
           <li>
             Multiple small fibroids with a total uterine volume of ≥130 cm<sup>3</sup>

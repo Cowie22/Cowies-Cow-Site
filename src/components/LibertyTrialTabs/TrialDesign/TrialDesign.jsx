@@ -44,7 +44,7 @@ const TrialDesign = (props) => {
             Proportion of women who achieved amenorrhea over the last 35 days of treatment
           </li>
           <li>
-            Proportion of women with anemia who achieved a hemoglobin response &#60;2 g/dL from baseline at Week 24
+            Proportion of women with anemia who achieved a hemoglobin response &#62;2 g/dL from baseline at Week 24
           </li>
         </ul>
       </div>

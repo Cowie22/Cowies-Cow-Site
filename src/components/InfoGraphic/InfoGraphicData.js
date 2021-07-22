@@ -20,6 +20,16 @@ import reductionGraph2FB from '../../assets/images/reduction-graph2.png'
 import reductionGraph2Mobile from '../../assets/images/reduction-graph2-mobile.webp'
 import reductionGraph2MobileFB from '../../assets/images/reduction-graph2-mobile.png'
 
+import amenorrheaGraph1 from '../../assets/images/amenorrhea-graph1.webp'
+import amenorrheaGraph1FB from '../../assets/images/amenorrhea-graph1.png'
+import amenorrheaGraph1Mobile from '../../assets/images/amenorrhea-graph1-mobile.webp'
+import amenorrheaGraph1MobileFB from '../../assets/images/amenorrhea-graph1-mobile.png'
+
+import amenorrheaGraph2 from '../../assets/images/amenorrhea-graph2.webp'
+import amenorrheaGraph2FB from '../../assets/images/amenorrhea-graph2.png'
+import amenorrheaGraph2Mobile from '../../assets/images/amenorrhea-graph2-mobile.webp'
+import amenorrheaGraph2MobileFB from '../../assets/images/amenorrhea-graph2-mobile.png'
+
 const TrialDesignData1 = [
   {
     content: '',
@@ -77,11 +87,44 @@ const ReductionData2 = [
   }
 ]
 
+const AmenorrheaData1 = [
+  {
+    content:
+    <h3 className='purple graph-title text-center'>
+      Proportion of women who attained amenorrhea in the last 35 days of treatment
+    </h3>,
+    img: amenorrheaGraph1,
+    fallBackImg: amenorrheaGraph1FB,
+    imgMobile: amenorrheaGraph1Mobile,
+    fallBackImgMobile: amenorrheaGraph1MobileFB,
+    contentColumns: {span: 8, offset: 2},
+    imgColumns: {span: 9, offset: 1}
+  }
+]
+
+const AmenorrheaData2 = [
+  {
+    content:
+    <h3 className='purple graph-title text-center'>
+      Proportion of women who had baseline Hgb ≤10.5 g/dL and had a &#62;2 g/dL improvement in Hgb levels from
+      baseline at Week 24
+    </h3>,
+    img: amenorrheaGraph2,
+    fallBackImg: amenorrheaGraph2FB,
+    imgMobile: amenorrheaGraph2Mobile,
+    fallBackImgMobile: amenorrheaGraph2MobileFB,
+    contentColumns: {span: 8, offset: 2},
+    imgColumns: {span: 9, offset: 1}
+  }
+]
+
 const InfoGraphicData = {
   TrialDesignData1,
   ResponseRatesData1,
   ReductionData1,
   ReductionData2,
+  AmenorrheaData1,
+  AmenorrheaData2,
 }
 
 export default InfoGraphicData
