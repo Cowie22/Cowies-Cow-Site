@@ -183,8 +183,8 @@ const SafetyProfileContent = (props) => {
                 />
               : currentTopTab === 2 ?
                 <NextPageBtn
-                  btnText='See Amenorrhea & Hemoglobin Response Data'
-                  btnLink='efficacy-data/'
+                  btnText='See Return-to-Menses Data'
+                  btnLink='safety-profile/'
                   handleBtnTabOverTwo={handleBtnTabOverTwo}
                 />
               :

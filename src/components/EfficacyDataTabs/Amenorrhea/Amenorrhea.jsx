@@ -4,7 +4,6 @@ import { Container, Row, Col } from 'react-bootstrap'
 import InfoGraphic from '../../InfoGraphic/InfoGraphic'
 import InfoGraphicData from '../../InfoGraphic/InfoGraphicData.js'
 
-import IIcon from '../../../assets/images/I-icon.svg'
 
 const Amenorrhea = (props) => {
   const { AmenorrheaData1, AmenorrheaData2 } = InfoGraphicData;

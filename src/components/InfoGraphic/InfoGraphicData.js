@@ -30,6 +30,21 @@ import amenorrheaGraph2FB from '../../assets/images/amenorrhea-graph2.png'
 import amenorrheaGraph2Mobile from '../../assets/images/amenorrhea-graph2-mobile.webp'
 import amenorrheaGraph2MobileFB from '../../assets/images/amenorrhea-graph2-mobile.png'
 
+import BMDGraph1 from '../../assets/images/BMD-graph1.webp'
+import BMDGraph1FB from '../../assets/images/BMD-graph1.png'
+import BMDGraph1Mobile from '../../assets/images/BMD-graph1-mobile.webp'
+import BMDGraph1MobileFB from '../../assets/images/BMD-graph1-mobile.png'
+
+import BMDGraph2 from '../../assets/images/BMD-graph2.webp'
+import BMDGraph2FB from '../../assets/images/BMD-graph2.png'
+import BMDGraph2Mobile from '../../assets/images/BMD-graph2-mobile.webp'
+import BMDGraph2MobileFB from '../../assets/images/BMD-graph2-mobile.png'
+
+import BMDGraph3 from '../../assets/images/BMD-graph3.webp'
+import BMDGraph3FB from '../../assets/images/BMD-graph3.png'
+import BMDGraph3Mobile from '../../assets/images/BMD-graph3-mobile.webp'
+import BMDGraph3MobileFB from '../../assets/images/BMD-graph3-mobile.png'
+
 const TrialDesignData1 = [
   {
     content: '',
@@ -118,6 +133,51 @@ const AmenorrheaData2 = [
   }
 ]
 
+const BMDData1 = [
+  {
+    content:
+    <h3 className='purple graph-title text-center'>
+      Pooled data from Myfembree Phase 3 trials at Month 6
+    </h3>,
+    img: BMDGraph1,
+    fallBackImg: BMDGraph1FB,
+    imgMobile: BMDGraph1Mobile,
+    fallBackImgMobile: BMDGraph1MobileFB,
+    contentColumns: {span: 10, offset: 1},
+    imgColumns: {span: 10, offset: 1}
+  }
+]
+
+const BMDData2 = [
+  {
+    content:
+    <h3 className='purple graph-title text-center'>
+      Open-label extension study of women treated with Myfembree (N = 163)
+    </h3>,
+    img: BMDGraph2,
+    fallBackImg: BMDGraph2FB,
+    imgMobile: BMDGraph2Mobile,
+    fallBackImgMobile: BMDGraph2MobileFB,
+    contentColumns: {span: 10, offset: 1},
+    imgColumns: {span: 10, offset: 1}
+  }
+]
+
+const BMDData3 = [
+  {
+    content:
+    <h3 className='purple graph-title text-center'>
+      Untreated women with uterine fibroids followed in an observational study (N = 262)
+    </h3>,
+    img: BMDGraph3,
+    fallBackImg: BMDGraph3FB,
+    imgMobile: BMDGraph3Mobile,
+    fallBackImgMobile: BMDGraph3MobileFB,
+    contentColumns: {span: 10, offset: 1},
+    imgColumns: {span: 10, offset: 1}
+  }
+]
+
 const InfoGraphicData = {
   TrialDesignData1,
   ResponseRatesData1,
@@ -125,6 +185,9 @@ const InfoGraphicData = {
   ReductionData2,
   AmenorrheaData1,
   AmenorrheaData2,
+  BMDData1,
+  BMDData2,
+  BMDData3
 }
 
 export default InfoGraphicData

@@ -1,23 +1,44 @@
 .reduction-container {
-  padding: 60px 0;
+  padding: 60px 0 0 0;
   h2 {
     padding: 8px 0 24px 0;
   }
-  .reduction-skinny-callout-container {
+  .bmd-skinny-callout-container {
     background: #F1F7F4;
     padding: 8px;
+    margin-bottom: 36px;
   }
   .graph-container {
     padding: 24px 0;
   }
-  .mid-section-container {
-    padding: 36px 0 24px 0;
+  .graph-footnote-container {
+    padding: 0 40px 60px 40px;
   }
-  .footnote-container {
-    h6 {
-      &:first-of-type {
-        padding-bottom: 24px;
+  .mid-section-container {
+    padding: 60px 0 0px 0;
+    border-top: 1px solid #ADADAD;
+    h2 {
+      padding-bottom: 60px;
+    }
+    .mid-footnote-container {
+      padding: 24px 0 0px 0;
+    }
+  }
+  .lower-section-container {
+    padding: 60px 0;
+    .lower-footnote-container {
+      padding: 24px 0 0px 0;
+      p {
+        padding-bottom: 8px;
+        &:last-of-type {
+          padding-bottom: 0px;
+        }
       }
+    }
+  }
+  .bmd-footnote-container {
+    h6 {
+      padding-bottom: 4px;
     }
   }
 }
