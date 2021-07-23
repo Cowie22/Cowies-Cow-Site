@@ -151,41 +151,34 @@ const SafetyProfileContent = (props) => {
               </div>
             </Col>
           </Row>
-          <Row>
-            <TrialDesignExpandCard />
-          </Row>
-          {
-            currentTopTab === 2 ?
+        </Container>
+      </section>
+      {
+        currentTopTab === 1 ?
+        <section className='safety-lower-container'>
+          <Container>
             <Row>
-              <Col>
-                <div className='efficacy-footnote-container'>
-                  <h6>
-                    L1 = LIBERTY 1; L2 = LIBERTY 2.
-                  </h6>
-                </div>
+              <Col lg={{span: 10, offset: 1}}>
+                <h2 className='white'>
+                  In the open-label extension study, the most commonly reported adverse events were similar
+                  to those in the Phase 3 trials<sup>1</sup>
+                </h2>
               </Col>
             </Row>
-            :
-            currentTopTab === 3 ?
-            <Row>
-              <Col>
-                <div className='efficacy-footnote-container'>
-                  <h6>
-                    Hgb = hemoglobin.
-                  </h6>
-                </div>
-              </Col>
-            </Row>
-            :
-            <>
-            </>
-          }
+          </Container>
+        </section>
+        :
+        <>
+        </>
+      }
+      <section>
+        <Container>
           <Row>
             {
               currentTopTab === 1 ?
                 <NextPageBtn
-                  btnText='See Menstrual Bleeding Reductions Over Time'
-                  btnLink='efficacy-data/'
+                  btnText='See Bone Mineral Density Data'
+                  btnLink='safety-profile/'
                   handleBtnTabOver={handleBtnTabOver}
                 />
               : currentTopTab === 2 ?

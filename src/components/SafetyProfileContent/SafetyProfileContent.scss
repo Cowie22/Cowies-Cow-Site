@@ -36,6 +36,11 @@
   }
 }
 
+.safety-lower-container {
+  background: linear-gradient(90deg, #302D83 0%, #4F1289 37.5%, #5C068C 100%);
+  padding: 60px 0;
+}
+
 @media screen and (max-width: 992px) {
   .safety-container {
     padding: 40px 0;
