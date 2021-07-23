@@ -19,4 +19,15 @@
       transition-delay: .2s;
     }
   }
+  .purple-line-pill-content-container {
+    display: flex;
+    justify-content: space-evenly;
+    .pill-content-left-container, .pill-content-right-container {
+      width: 36%;
+      h3 {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
 }

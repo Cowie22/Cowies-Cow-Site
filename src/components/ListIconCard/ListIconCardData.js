@@ -31,7 +31,6 @@ const ListIconCardData1 = [
     </ul>,
     icon: computerIcon,
     columns: {span: 10, offset: 1},
-    fixedDesktopHeight: false,
   }
 ]
 
@@ -53,7 +52,6 @@ const ListIconCardData2 = [
     </ul>,
     icon: paper,
     columns: {span: 10, offset: 1},
-    fixedDesktopHeight: false,
   }
 ]
 
@@ -74,7 +72,6 @@ const ListIconCardData3 = [
     </ul>,
     icon: iphone,
     columns: {span: 10, offset: 1},
-    fixedDesktopHeight: false,
   }
 ]
 
@@ -198,6 +195,51 @@ const ListIconCardData8 = [
   }
 ]
 
+const ListIconCardData9 = [
+  {
+    title: <h3 className='extra-bold blue no-icon-title'>Relugolix 40 mg<sup>1</sup></h3>,
+    content:
+    <ul className='purple-ul less-right-padding'>
+      <li>
+        The GnRH component of Myfembree <strong>reduces the release of luteinizing hormone and
+        follicle-stimulating hormone.</strong> As a result, serum concentrations of <strong>estradiol
+        and progesterone decrease, thereby reducing bleeding</strong> associated with uterine fibroids
+      </li>
+    </ul>,
+    columns: {span: 4, offset: 0},
+    lessFixedDesktopHeight: true,
+  }
+]
+
+const ListIconCardData10 = [
+  {
+    title: <h3 className='extra-bold blue no-icon-title'>Estradiol (E2) 1 mg<sup>1</sup></h3>,
+    content:
+    <>
+      <ul className='purple-ul less-right-padding'>
+        <li>
+          As a component of Myfembree, E2 <strong>may reduce the bone loss</strong> that can occur due to
+          GnRH receptor antagonism alone
+        </li>
+      </ul>
+      <h3 className='extra-bold blue no-icon-title second-title'>
+        Norethindrone acetate (NETA) 0.5 mg<sup>1</sup>
+      </h3>
+      <ul className='purple-ul less-right-padding'>
+        <li>
+          As a component of Myfembree, NETA <strong>may protect the uterus from the potential adverse
+          endometrial effects</strong> of unopposed estrogen
+        </li>
+      </ul>
+    </>,
+    columns: {span: 4, offset: 0},
+    lessFixedDesktopHeight: true,
+  }
+]
+
+// Next 2 are for the how it works page, both have no icon, so I use a boolean to change styles depending
+// On if the icon exists or not
+
 
 const ListIconCardData = {
   ListIconCardData1,
@@ -207,7 +249,9 @@ const ListIconCardData = {
   ListIconCardData5,
   ListIconCardData6,
   ListIconCardData7,
-  ListIconCardData8
+  ListIconCardData8,
+  ListIconCardData9,
+  ListIconCardData10
 }
 
 export default ListIconCardData

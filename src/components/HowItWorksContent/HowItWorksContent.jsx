@@ -1,24 +1,36 @@
 import React, { useState, useEffect, useContext } from 'react'
+import { Link } from 'gatsby'
 import Layout from '../Layout'
 import { Container, Row, Col } from 'react-bootstrap'
+import { AppContext } from '../../contexts/state'
+
+import HeaderHero from '../HeaderHero/HeaderHero'
+import PurpleLineCallout from '../PurpleLineCallout/PurpleLineCallout'
+import ListIconCard from '../ListIconCard/ListIconCard'
+import ListIconCardData from '../ListIconCard/ListIconCardData.js'
+import NextPageBtn from '../NextPageBtn/NextPageBtn'
+
+import pillIcon from '../../assets/images/pill-icon.svg'
+import womenOutlineIcon from '../../assets/images/women-outline-icon.svg'
 
 const HowItWorksContent = (props) => {
+  const state = useContext(AppContext);
 
-  const [width, handleWidth] = useState(0);
-  const { currentPage, handleCurrentPage, handleActiveHeaderDropdown } = props;
+  const {
+    ListIconCardData9,
+    ListIconCardData10,
+  } = ListIconCardData;
+
+  const {
+    currentPage,
+    handleCurrentPage,
+    handleActiveHeaderDropdown
+  } = state;
 
   useEffect(() => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('how-it-works');
-
-    updateWindowDimensions();
-    window.addEventListener('resize', updateWindowDimensions);
-    return () => window.removeEventListener('resize', updateWindowDimensions)
   }, []);
-
-  const updateWindowDimensions = () => {
-    handleWidth(window.innerWidth);
-  }
 
   return (
     <Layout
@@ -27,39 +39,79 @@ const HowItWorksContent = (props) => {
       pageTitle=''
       description=''
     >
+      <HeaderHero
+        title={
+        <>
+          Myfembree is a combination tablet consisting of relugolix, estradiol, and norethindrone acetate<sup>1</sup>
+        </>
+        }
+        columns={{span: 12}}
+      />
       <section className='how-it-works-container'>
         <Container>
           <Row>
-            <Col lg={{span: 9, offset: 0}} xs={{span: 12, offset: 0}}>
-              <h1 className='top-title'>
-                NOW AVAILABLE
-              </h1>
-              <p>
-                Myfembree® is now available at retail or mail-order pharmacies.
-              </p>
+            <Col lg={{span: 12}}>
+              <PurpleLineCallout
+                content={
+                  <Row>
+                    <Col lg={{span: 6, offset: 3}}>
+                      <div className='purple-line-pill-content-container'>
+                        <div className='pill-content-left-container'>
+                          <h3 className='purple text-right'>
+                            Relugolix
+                          </h3>
+                          <p className='text-right'>
+                            Gonadotropin-releasing hormone (GnRH) receptor antagonism in the pituitary
+                          </p>
+                        </div>
+                        <div className='pill-icon-container'>
+                          <img src={pillIcon} alt='' />
+                        </div>
+                        <div className='pill-content-right-container'>
+                          <h3 className='purple text-left'>
+                            E2/NETA
+                          </h3>
+                          <p className='text-left'>
+                            Systemic absorption
+                          </p>
+                        </div>
+                      </div>
+                    </Col>
+                  </Row>
+                }
+              />
             </Col>
-          </Row>
-          <Row>
-            <Col xl={{span: 7, offset: 0}} lg={{span: 8, offset: 0}}>
-              <div>
-                <h1>
-                  The Myfembree<sup>®</sup> Support Program
-                </h1>
+            <Col>
+              <div className='footnote-container'>
+                <h6 className='text-right'>
+                  Pill not shown at actual size. Actual pill size: 7.94 mm in diameter.
+                </h6>
               </div>
             </Col>
           </Row>
           <Row>
-            <Col lg={{span: 8, offset: 0}} xs={{span: 11, offset: 0}}>
-              <h2>
-                For your patients who have been prescribed Myfembree, support starts with enrollment into
-                the Myfembree Support Program
-              </h2>
-              <p>
-                The Myfembree Support Program is designed to help your eligible patients throughout their treatment
-                journey. We offer financial assistance options, dedicated support staff, and other helpful
-                resources once eligible patients have been prescribed Myfembree.
-              </p>
+            <ListIconCard data={ListIconCardData9} />
+            <Col lg={{span: 4}}>
+              <div className='how-it-works-img-container'>
+                <img src={womenOutlineIcon} alt='' />
+              </div>
             </Col>
+            <ListIconCard data={ListIconCardData10} />
+          </Row>
+          <Row>
+            <Col>
+              <div className='lower-footnote-container'>
+                <h6>
+                  E2 = estradiol; GnRH = gonadotropin-releasing hormone; NETA = norethindrone acetate.
+                </h6>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <NextPageBtn
+              btnText='Explore Once-Daily Dosing With Myfembree'
+              btnLink='once-daily-dosing/'
+            />
           </Row>
         </Container>
       </section>

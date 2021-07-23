@@ -8,6 +8,9 @@
   &.fixed-height {
     height: 450px;
   }
+  &.less-fixed-height {
+    height: 400px;
+  }
   .icon-title-container {
     display: flex;
     align-items: center;
@@ -44,6 +47,11 @@
     li {
       padding-bottom: 8px;
     }
+  }
+  .second-title {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 24px 0 16px 0;
   }
 }
 
