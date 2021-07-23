@@ -10,7 +10,7 @@ const Reduction = (props) => {
   const { BMDData1, BMDData2, BMDData3 } = InfoGraphicData;
 
   return (
-    <div className='reduction-container'>
+    <div className='bmd-container'>
       <h2 className='blue'>
         Changes in lumbar spine bone mineral density (BMD) with Myfembree over time<sup>1</sup>
       </h2>
@@ -110,7 +110,7 @@ const Reduction = (props) => {
       </Row>
       <Row>
         <Col lg={{span: 9}}>
-          <div className='bmd-footnote-container'>
+          <div className='footnote-container'>
             <h6>
               BMD = bone mineral density; DXA = dual-energy X-ray absorptiometry.
             </h6>

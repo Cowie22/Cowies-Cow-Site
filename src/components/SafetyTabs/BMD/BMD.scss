@@ -1,4 +1,4 @@
-.reduction-container {
+.bmd-container {
   padding: 60px 0 0 0;
   h2 {
     padding: 8px 0 24px 0;
@@ -36,7 +36,7 @@
       }
     }
   }
-  .bmd-footnote-container {
+  .footnote-container {
     h6 {
       padding-bottom: 4px;
     }
@@ -44,7 +44,7 @@
 }
 
 @media screen and (max-width: 992px) {
-  .reduction-container {
+  .bmd-container {
     padding: 40px 0;
   }
 }

@@ -1,10 +1,78 @@
-.response-rates-container {
-  padding: 60px 0;
+.return-rates-container {
+  padding: 60px 0 0 0;
   h2 {
-    padding: 8px 0 24px 0;
+    padding: 0px 0 24px 0;
   }
-  .graph-container {
-    padding: 24px 0;
+
+  .return-rates-table {
+    width: 100%;
+    tr th:nth-child(1) {
+      background: #FFFFFF;
+      padding: 12px 10px 12px 0;
+      text-align: right;
+      width: 14%;
+    }
+    tr th:nth-child(2) {
+      background: #5C068C;
+      border-radius: 20px 0px 0px 0px;
+      padding: 16px 60px;
+      color: $white;
+      text-align: center;
+      font-size: 20px;
+      line-height: 24px;
+      width: 44%;
+    }
+    tr th:nth-child(3) {
+      background: #5C068C;
+      border-radius: 0px;
+      padding: 16px 48px;
+      color: $white;
+      text-align: center;
+      font-size: 20px;
+      line-height: 24px;
+      width: 52%;
+    }
+    tr {
+      background: rgba(51, 51, 51, 0.07);
+      border-radius: 0px;
+    }
+    tr:not(:nth-of-type(1)) td:nth-child(1) {
+      background: #FFFFFF;
+      text-align: right;
+      padding: 4px 16px;
+    }
+    th:nth-child(2) {
+      border-right: 8px solid #FFFFFF;
+    }
+    td:nth-child(2) {
+      border-right: 8px solid #FFFFFF;
+    }
+    tr:not(:nth-of-type(1), :nth-of-type(3)) td:not(:nth-child(1)) p {
+      border-bottom: 0.5px solid #333333;
+      font-weight: bold;
+    }
+    tr {
+      &:nth-of-type(1), &:nth-of-type(3) {
+        td p {
+          border-bottom: none;
+        }
+      }
+    }
+    tr:not(:nth-of-type(1), :nth-of-type(4)) td:not(:nth-child(1)) {
+      p {
+        padding: 12px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    tr:not(:nth-of-type(1), :nth-of-type(4)) td:not(:nth-child(1)) {
+      padding: 0px 24px;
+    }
+  }
+
+  .chart-footnote-container {
+    padding-top: 24px;
   }
 }
 

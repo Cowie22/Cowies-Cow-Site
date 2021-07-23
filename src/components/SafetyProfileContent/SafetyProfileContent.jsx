@@ -189,8 +189,8 @@ const SafetyProfileContent = (props) => {
                 />
               :
                 <NextPageBtn
-                  btnText='See Safety Profile for Myfembree'
-                  btnLink='safety-profile/'
+                  btnText='See How Myfembree Works'
+                  btnLink='how-it-works/'
                 />
             }
           </Row>

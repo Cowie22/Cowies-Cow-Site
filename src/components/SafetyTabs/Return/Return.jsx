@@ -8,30 +8,79 @@ const ResponseRates = (props) => {
   const { ResponseRatesData1 } = InfoGraphicData;
 
   return (
-    <div className='response-rates-container'>
-      <h4 className='mulish purple'>
-        PRIMARY ENDPOINT
-      </h4>
+    <div className='return-rates-container'>
       <h2 className='blue'>
-        Approximately 70% of women responded to treatment with Myfembree<sup>1,*</sup>
+        97% of evaluated women returned to menses within a mean of 36 days following
+        treatment discontinuation<sup>1</sup>
       </h2>
-      <p>
-        A response was defined as menstrual blood loss volume &#60;80 mL per cycle and ≥50% reduction in menstrual
-        bleeding from baseline* over the last 35 days of treatment.
-      </p>
       <Row>
         <Col lg={{span: 10, offset: 1}}>
-          <div className='graph-container'>
-            <InfoGraphic data={ResponseRatesData1} />
-          </div>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <div className='footnote-container'>
-            <h6>
-              Mean menstrual blood loss volume at baseline was 231 mL (± 156).
-            </h6>
+          <table class='return-rates-table'>
+            <tbody>
+              <tr>
+                <th>
+
+                </th>
+                <th>
+                  Returned to menses % (n/N)
+                </th>
+                <th>
+                  Mean time from last dose (days)
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    LIBERTY 1
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    100% (35/35)
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    36
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    LIBERTY 2
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    93.3% (28/30)
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    30.7
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div className='chart-footnote-container'>
+            <ul className='purple-ul'>
+              <li>
+                Return-to-menses discontinuation data pertain to women treated with Myfembree who
+                prematurely discontinued the trial or did not continue into the open-label extension study
+              </li>
+              <li>
+                Mean time of return to menses was &#60;40 days, with longer occurrence for women who
+                achieved amenorrhea (40.6 days and 41.1 days in LIBERTY 1 and 2, respectively) compared
+                with women without amenorrhea (33.0 days and 26.6 days in LIBERTY 1 and 2, respectively) in
+                the last 35 days of treatment
+              </li>
+              <li>
+                Women who did not have a return to menses included those who had surgery, used alternative
+                medications associated with amenorrhea, entered menopause, and for whom the cause was unknown
+              </li>
+            </ul>
           </div>
         </Col>
       </Row>
