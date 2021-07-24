@@ -24,12 +24,14 @@ const HowItWorksContent = (props) => {
   const {
     currentPage,
     handleCurrentPage,
-    handleActiveHeaderDropdown
+    handleActiveHeaderDropdown,
+    setReferences
   } = state;
 
   useEffect(() => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('how-it-works');
+    setReferences([1]);
   }, []);
 
   return (

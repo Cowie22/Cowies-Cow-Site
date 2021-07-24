@@ -17,7 +17,7 @@ const LibertyTrialsContent = (props) => {
     handleCurrentPage,
     handleActiveHeaderDropdown,
     currentTopTab,
-    handleCurrentTopTab
+    handleCurrentTopTab,
   } = state;
 
   useEffect(() => {
@@ -74,7 +74,7 @@ const LibertyTrialsContent = (props) => {
               <div
                 className='tab-arrow-container arrow-left-container'
                 onClick={() => {
-                  handleArrowLeft()
+                  handleArrowLeft();
                 }}
                 onMouseEnter={() =>{
                   handleHovered(1)

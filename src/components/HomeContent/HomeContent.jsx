@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'gatsby'
 import Layout from '../Layout'
 import { Container, Row, Col } from 'react-bootstrap'
+import { AppContext } from '../../contexts/state'
 
 import IconCalloutCard from '../IconCalloutCard/IconCalloutCard'
 import IconCalloutCardData from '../IconCalloutCard/IconCalloutCardData.js'
@@ -16,16 +17,17 @@ import BGImgMobileFB from '../../assets/images/home-bg-img-mobile.png'
 
 
 const HomeContent = (props) => {
-
   const [width, handleWidth] = useState(0);
+  const state = useContext(AppContext);
 
   const {
     currentPage,
     handleCurrentPage,
     handleActiveHeaderDropdown,
     HCPModalVisible,
-    handleHCPModalVisible
-  } = props;
+    handleHCPModalVisible,
+    setReferences
+  } = state;
 
   const {
     HomeRectangleCardData1,
@@ -41,6 +43,7 @@ const HomeContent = (props) => {
   useEffect(() => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('home');
+    setReferences([1, 2]);
 
     if (document.getElementsByTagName('body')) {
       if (HCPModalVisible) {

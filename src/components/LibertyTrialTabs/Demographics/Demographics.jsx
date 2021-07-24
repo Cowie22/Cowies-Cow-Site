@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext, useRef } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import { AppContext } from '../../../contexts/state'
 
 import ListIconCard from '../../ListIconCard/ListIconCard'
 import ListIconCardData from '../../ListIconCard/ListIconCardData.js'
@@ -10,6 +11,21 @@ const Demographics = (props) => {
     ListIconCardData8,
   } = ListIconCardData;
 
+  const state = useContext(AppContext);
+  const {
+    setReferences
+  } = state;
+
+  const mounted = useRef(false);
+  useEffect(() => {
+    if (!mounted.current) {
+      setReferences([2, 1, 4]);
+      mounted.current = true;
+    } else {
+      setReferences([2, 1, 4]);
+    }
+  }, []);
+
   return (
     <div className='demographics-container'>
       <h2 className='blue'>
@@ -18,10 +34,10 @@ const Demographics = (props) => {
       </h2>
       <Row>
         <Col lg={{span: 10, offset: 1}}>
-          <table class='interior-table'>
+          <table className='interior-table'>
             <tbody>
               <tr>
-                <th colspan='2'>
+                <th colSpan='2'>
                   Patient demographics
                 </th>
               </tr>
@@ -80,7 +96,7 @@ const Demographics = (props) => {
                 </td>
               </tr>
               <tr>
-                <th colspan='2'>
+                <th colSpan='2'>
                   Baseline fibroid-related characteristics
                 </th>
               </tr>

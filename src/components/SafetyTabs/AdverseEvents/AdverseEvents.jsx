@@ -1,11 +1,27 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext, useRef } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import { AppContext } from '../../../contexts/state'
 
 import CircleGraphCallout from '../../CircleGraphCallout/CircleGraphCallout'
 import CircleGraphCalloutData from '../../CircleGraphCallout/CircleGraphCalloutData.js'
 
 
 const AdverseEvents = (props) => {
+  const state = useContext(AppContext);
+  const {
+    setReferences
+  } = state;
+
+  const mounted = useRef(false);
+  useEffect(() => {
+    if (!mounted.current) {
+      setReferences([1, 2]);
+      mounted.current = true;
+    } else {
+      setReferences([1, 2]);
+    }
+  }, []);
+
   const { CircleGraphCalloutData1, CircleGraphCalloutData2 } = CircleGraphCalloutData;
 
   return (
@@ -23,7 +39,7 @@ const AdverseEvents = (props) => {
       </Row>
       <Row>
         <Col lg={{span: 10, offset: 1}}>
-          <table class='interior-table'>
+          <table className='interior-table'>
             <tbody>
               <tr>
                 <th>

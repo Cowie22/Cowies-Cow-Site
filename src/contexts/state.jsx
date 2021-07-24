@@ -26,6 +26,8 @@ const defaultState = {
   handleHCPModalVisible: () => {},
   currentTopTab: '',
   handleCurrentTopTab: () => {},
+  references: '',
+  setReferences: () => {},
 }
 
 export const AppContext = React.createContext(defaultState)
@@ -102,6 +104,12 @@ class AppProvider extends Component {
       handleCurrentTopTab: (val) => {
         this.setState({
           currentTopTab: val
+        })
+      },
+      references: 0,
+      setReferences: (arr) => {
+        this.setState({
+          references: arr,
         })
       },
     }

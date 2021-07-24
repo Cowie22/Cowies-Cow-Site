@@ -1,10 +1,26 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext, useRef } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import { AppContext } from '../../../contexts/state'
 
 import InfoGraphic from '../../InfoGraphic/InfoGraphic'
 import InfoGraphicData from '../../InfoGraphic/InfoGraphicData.js'
 
 const ResponseRates = (props) => {
+  const state = useContext(AppContext);
+  const {
+    setReferences
+  } = state;
+
+  const mounted = useRef(false);
+  useEffect(() => {
+    if (!mounted.current) {
+      setReferences([1]);
+      mounted.current = true;
+    } else {
+      setReferences([1]);
+    }
+  }, []);
+
   const { ResponseRatesData1 } = InfoGraphicData;
 
   return (
@@ -15,7 +31,7 @@ const ResponseRates = (props) => {
       </h2>
       <Row>
         <Col lg={{span: 10, offset: 1}}>
-          <table class='return-rates-table'>
+          <table className='return-rates-table'>
             <tbody>
               <tr>
                 <th>

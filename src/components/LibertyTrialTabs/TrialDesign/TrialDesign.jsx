@@ -1,10 +1,26 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext, useRef } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import { AppContext } from '../../../contexts/state'
 
 import InfoGraphic from '../../InfoGraphic/InfoGraphic'
 import InfoGraphicData from '../../InfoGraphic/InfoGraphicData.js'
 
 const TrialDesign = (props) => {
+  const state = useContext(AppContext);
+  const {
+    setReferences
+  } = state;
+
+  const mounted = useRef(false);
+  useEffect(() => {
+    if (!mounted.current) {
+      setReferences([2, 1, 3]);
+      mounted.current = true;
+    } else {
+      setReferences([2, 1, 3]);
+    }
+  }, []);
+
   const { TrialDesignData1 } = InfoGraphicData;
 
   return (

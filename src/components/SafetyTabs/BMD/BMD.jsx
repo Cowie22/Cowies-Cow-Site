@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext, useRef } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import { AppContext } from '../../../contexts/state'
 
 import InfoGraphic from '../../InfoGraphic/InfoGraphic'
 import InfoGraphicData from '../../InfoGraphic/InfoGraphicData.js'
@@ -7,6 +8,21 @@ import InfoGraphicData from '../../InfoGraphic/InfoGraphicData.js'
 import IIcon from '../../../assets/images/I-icon.svg'
 
 const Reduction = (props) => {
+  const state = useContext(AppContext);
+  const {
+    setReferences
+  } = state;
+
+  const mounted = useRef(false);
+  useEffect(() => {
+    if (!mounted.current) {
+      setReferences([1]);
+      mounted.current = true;
+    } else {
+      setReferences([1]);
+    }
+  }, []);
+
   const { BMDData1, BMDData2, BMDData3 } = InfoGraphicData;
 
   return (

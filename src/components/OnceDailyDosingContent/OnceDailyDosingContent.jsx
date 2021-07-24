@@ -17,7 +17,8 @@ const OnceDailyDosingContent = (props) => {
   const {
     currentPage,
     handleCurrentPage,
-    handleActiveHeaderDropdown
+    handleActiveHeaderDropdown,
+    setReferences
   } = state;
 
   const {
@@ -29,6 +30,7 @@ const OnceDailyDosingContent = (props) => {
   useEffect(() => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('dosing');
+    setReferences([1]);
   }, []);
 
   return (

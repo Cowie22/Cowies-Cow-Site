@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 import { StickyContainer } from 'react-sticky'
@@ -6,11 +6,12 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 import AppProvider, { AppContext } from '../contexts/state'
 
-import Header from "./header/Header"
-import UtilityNav from "./header/UtilityNav"
-import Isi from "./isi/Isi"
-import Footer from "./footer/Footer"
-import ExitRamp from "../components/exitramp/ExitRamp"
+import Header from './header/Header'
+import UtilityNav from './header/UtilityNav'
+import Isi from './isi/Isi'
+import References from './References/References'
+import Footer from './footer/Footer'
+import ExitRamp from '../components/exitramp/ExitRamp'
 import Cookie from '../components/Cookie/Cookie'
 
 import backToTop from '../assets/images/back-to-top.svg'
@@ -22,6 +23,8 @@ import '../pages/index.scss'
 const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
   const [hovered, handleHovered] = useState(false);
   const [yDirection, handleYDirection] = useState(0);
+  const state = useContext(AppContext);
+  const { references } = state;
 
   const handleScroll = () => {
     window.addEventListener('scroll', () => {
@@ -42,13 +45,13 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
     <div className='layout'>
       <StickyContainer>
         <Helmet>
-          <meta charSet="utf-8" />
+          <meta charSet='utf-8' />
           <title>{title}</title>
-          <meta name="title" content={pageTitle} />
-          <meta name="description" content={description} />
+          <meta name='title' content={pageTitle} />
+          <meta name='description' content={description} />
           <link rel='canonical' href={canonicalURL} />
-          <meta name="url" content={canonicalURL} />
-          <html lang="en" />
+          <meta name='url' content={canonicalURL} />
+          <html lang='en' />
         </Helmet>
         <Cookie />
         <UtilityNav />
@@ -78,6 +81,7 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
           <img src={hovered ? backToTopHovered : backToTop} alt='' />
         </div>
         <Isi />
+        <References references={references} />
         <Footer />
       </StickyContainer>
       <ExitRamp />
