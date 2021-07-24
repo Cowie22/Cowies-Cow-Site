@@ -20,13 +20,15 @@ const EfficacyDataContent = (props) => {
     handleCurrentPage,
     handleActiveHeaderDropdown,
     currentTopTab,
-    handleCurrentTopTab
+    handleCurrentTopTab,
+    handleActiveDropdownLink
   } = state;
 
   useEffect(() => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('efficacy-data');
     handleCurrentTopTab(1);
+    handleActiveDropdownLink(2)
   }, []);
 
   const handleArrowLeft = () => {

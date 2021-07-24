@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import Layout from '../Layout'
 import { Container, Row, Col } from 'react-bootstrap'
+import { AppContext } from '../../contexts/state'
 
 import HeaderHero from '../HeaderHero/HeaderHero'
 import PurpleCallout from '../PurpleCallout/PurpleCallout'
@@ -8,8 +9,15 @@ import ResourcesDownloadCard from '../ResourcesDownloadCard/ResourcesDownloadCar
 import ResourcesDownloadCardData from '../ResourcesDownloadCard/ResourcesDownloadCardData.js'
 
 const ResourcesContent = (props) => {
-
-  const { currentPage, handleCurrentPage, handleActiveHeaderDropdown } = props;
+  const state = useContext(AppContext);
+  const {
+    currentPage,
+    handleCurrentPage,
+    handleActiveHeaderDropdown,
+    currentTopTab,
+    handleCurrentTopTab,
+    handleActiveDropdownLink,
+  } = state;
 
   const {
     ResourceDownloadCardData1,
@@ -23,6 +31,7 @@ const ResourcesContent = (props) => {
   useEffect(() => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('resources');
+    handleActiveDropdownLink(7)
   }, []);
 
   return (

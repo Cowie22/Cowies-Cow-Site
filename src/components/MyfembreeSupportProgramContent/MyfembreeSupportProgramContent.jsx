@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import Layout from '../Layout'
 import { Container, Row, Col } from 'react-bootstrap'
+import { AppContext } from '../../contexts/state'
 
 import SupportIconCard from '../SupportIconCard/SupportIconCard'
 import SupportIconCardData from '../SupportIconCard/SupportIconCardData.js'
@@ -24,10 +25,16 @@ import manager from '../../assets/images/manager-icon.svg'
 
 
 const MyfembreeSupportProgramContent = (props) => {
-
   const [width, handleWidth] = useState(0);
-
-  const { currentPage, handleCurrentPage, handleActiveHeaderDropdown } = props;
+  const state = useContext(AppContext);
+  const {
+    currentPage,
+    handleCurrentPage,
+    handleActiveHeaderDropdown,
+    currentTopTab,
+    handleCurrentTopTab,
+    handleActiveDropdownLink,
+  } = state;
 
   const {
     SupportIconCardData1,
@@ -51,6 +58,7 @@ const MyfembreeSupportProgramContent = (props) => {
   useEffect(() => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('support');
+    handleActiveDropdownLink(1);
 
     updateWindowDimensions();
     window.addEventListener('resize', updateWindowDimensions);

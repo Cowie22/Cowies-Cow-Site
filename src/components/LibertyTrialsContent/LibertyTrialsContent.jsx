@@ -18,12 +18,14 @@ const LibertyTrialsContent = (props) => {
     handleActiveHeaderDropdown,
     currentTopTab,
     handleCurrentTopTab,
+    handleActiveDropdownLink
   } = state;
 
   useEffect(() => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('liberty-trials');
     handleCurrentTopTab(1);
+    handleActiveDropdownLink(1)
   }, []);
 
   const handleArrowLeft = () => {
