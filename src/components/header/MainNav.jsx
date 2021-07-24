@@ -320,10 +320,22 @@ class MainNav extends React.Component {
                     style={mobileDropDown !== 1 ? { overflow: 'hidden' } : {}}
                   >
                     <li
-                    // onClick={() => {
-                    //   this.toggleNav()
-                    // }}
+                      onClick={() => {
+                        handleActiveDropdownLink(0)
+                        handleActiveHeaderDropdown('')
+                        this.handleMobileDropDown(0)
+                        this.toggleNav()
+                      }}
+                      className={
+                        activeDropdownLink === 0 &&
+                        currentPage === 'dosing'
+                          ? 'header-dropdown-active'
+                          : ''
+                      }
                     >
+                      <Link to='/once-daily-dosing/'>Once-Daily Dosing</Link>
+                    </li>
+                    <li>
                       <div
                         className='mobile-nav-dropdown-link'
                         onClick={() => {
@@ -332,7 +344,7 @@ class MainNav extends React.Component {
                             : this.handleMobileDropDown(0)
                         }}
                       >
-                        Access and Support
+                        Efficacy
                         {/* <img src={mobileDropDown === 1 ? upArrow : downArrow} className='nav-arrow' /> */}
                         <svg
                           width='12'
@@ -363,13 +375,125 @@ class MainNav extends React.Component {
                       >
                         <li
                           onClick={() => {
-                            handleActiveDropdownLink(0)
+                            handleActiveDropdownLink(1.1)
                             handleActiveHeaderDropdown('')
                             this.handleMobileDropDown(0)
                             this.toggleNav()
                           }}
                           className={
-                            activeDropdownLink === 0 &&
+                            activeDropdownLink === 1.1 &&
+                            currentPage === 'liberty-trials'
+                              ? 'header-dropdown-active'
+                              : ''
+                          }
+                        >
+                          <Link to='/liberty-trials/'>
+                            LIBERTY Trials
+                          </Link>
+                        </li>
+                        <li
+                          onClick={() => {
+                            handleActiveDropdownLink(1.2)
+                            handleActiveHeaderDropdown('')
+                            this.handleMobileDropDown(0)
+                            this.toggleNav()
+                          }}
+                          className={
+                            activeDropdownLink === 1.2 &&
+                            currentPage === 'efficacy-data'
+                              ? 'header-dropdown-active'
+                              : ''
+                          }
+                        >
+                          <Link to='/efficacy-data/'>
+                            Efficacy Data
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li
+                      onClick={() => {
+                        handleActiveDropdownLink(2)
+                        handleActiveHeaderDropdown('')
+                        this.handleMobileDropDown(0)
+                        this.toggleNav()
+                      }}
+                      className={
+                        activeDropdownLink === 2 &&
+                        currentPage === 'safety'
+                          ? 'header-dropdown-active'
+                          : ''
+                      }
+                    >
+                      <Link to='/safety-profile/'>Safety Profile</Link>
+                    </li>
+                    <li
+                      onClick={() => {
+                        handleActiveDropdownLink(3)
+                        handleActiveHeaderDropdown('')
+                        this.handleMobileDropDown(0)
+                        this.toggleNav()
+                      }}
+                      className={
+                        activeDropdownLink === 3 &&
+                        currentPage === 'how-it-works'
+                          ? 'header-dropdown-active'
+                          : ''
+                      }
+                    >
+                      <Link to='/how-it-works/'>How It Works</Link>
+                    </li>
+                    <li
+                    // onClick={() => {
+                    //   this.toggleNav()
+                    // }}
+                    >
+                      <div
+                        className='mobile-nav-dropdown-link'
+                        onClick={() => {
+                          mobileDropDown !== 2
+                            ? this.handleMobileDropDown(2)
+                            : this.handleMobileDropDown(0)
+                        }}
+                      >
+                        Support & Savings
+                        {/* <img src={mobileDropDown === 1 ? upArrow : downArrow} className='nav-arrow' /> */}
+                        <svg
+                          width='12'
+                          height='6'
+                          viewBox='0 0 12 6'
+                          fill='none'
+                          xmlns='http://www.w3.org/2000/svg'
+                          className={
+                            mobileDropDown === 1
+                              ? 'nav-arrow'
+                              : 'nav-arrow rotated'
+                          }
+                        >
+                          <path
+                            fillRule='evenodd'
+                            clipRule='evenodd'
+                            d='M5.99984 3.95775e-05C6.13245 3.95775e-05 6.25962 0.0527177 6.35339 0.146486L10.9367 4.72982C11.132 4.92508 11.132 5.24167 10.9367 5.43693C10.7415 5.63219 10.4249 5.63219 10.2296 5.43693L5.99984 1.20715L1.77006 5.43693C1.5748 5.63219 1.25821 5.63219 1.06295 5.43693C0.867688 5.24167 0.867688 4.92508 1.06295 4.72982L5.64628 0.146486C5.74005 0.0527177 5.86723 3.95775e-05 5.99984 3.95775e-05Z'
+                            fill='#A51890'
+                          />
+                        </svg>
+                      </div>
+                      <ul
+                        className={
+                          mobileDropDown === 2
+                            ? 'header-dropdown-ul'
+                            : 'header-dropdown-ul hidden'
+                        }
+                      >
+                        <li
+                          onClick={() => {
+                            handleActiveDropdownLink(4)
+                            handleActiveHeaderDropdown('')
+                            this.handleMobileDropDown(0)
+                            this.toggleNav()
+                          }}
+                          className={
+                            activeDropdownLink === 4 &&
                             currentPage === 'support'
                               ? 'header-dropdown-active'
                               : ''
@@ -382,13 +506,13 @@ class MainNav extends React.Component {
                         <ul className='header-dropdown-ul'>
                           <li
                             onClick={() => {
-                              handleActiveDropdownLink(0.1)
+                              handleActiveDropdownLink(4.1)
                               handleActiveHeaderDropdown('')
                               this.handleMobileDropDown(0)
                               this.toggleNav()
                             }}
                             className={
-                              activeDropdownLink === 0.1 &&
+                              activeDropdownLink === 4.1 &&
                               currentPage === 'support'
                                 ? 'header-dropdown-active'
                                 : ''
@@ -400,13 +524,13 @@ class MainNav extends React.Component {
                           </li>
                           <li
                             onClick={() => {
-                              handleActiveDropdownLink(0.2)
+                              handleActiveDropdownLink(4.2)
                               handleActiveHeaderDropdown('')
                               this.handleMobileDropDown(0)
                               this.toggleNav()
                             }}
                             className={
-                              activeDropdownLink === 0.2 &&
+                              activeDropdownLink === 4.2 &&
                               currentPage === 'support'
                                 ? 'header-dropdown-active'
                                 : ''
@@ -418,13 +542,13 @@ class MainNav extends React.Component {
                           </li>
                           <li
                             onClick={() => {
-                              handleActiveDropdownLink(0.3)
+                              handleActiveDropdownLink(4.3)
                               handleActiveHeaderDropdown('')
                               this.handleMobileDropDown(0)
                               this.toggleNav()
                             }}
                             className={
-                              activeDropdownLink === 0.3 &&
+                              activeDropdownLink === 4.3 &&
                               currentPage === 'support'
                                 ? 'header-dropdown-active'
                                 : ''
@@ -436,13 +560,13 @@ class MainNav extends React.Component {
                           </li>
                           <li
                             onClick={() => {
-                              handleActiveDropdownLink(0.4)
+                              handleActiveDropdownLink(4.4)
                               handleActiveHeaderDropdown('')
                               this.handleMobileDropDown(0)
                               this.toggleNav()
                             }}
                             className={
-                              activeDropdownLink === 0.4 &&
+                              activeDropdownLink === 4.4 &&
                               currentPage === 'support'
                                 ? 'header-dropdown-active'
                                 : ''
@@ -454,13 +578,13 @@ class MainNav extends React.Component {
                           </li>
                           <li
                             onClick={() => {
-                              handleActiveDropdownLink(0.5)
+                              handleActiveDropdownLink(4.5)
                               handleActiveHeaderDropdown('')
                               this.handleMobileDropDown(0)
                               this.toggleNav()
                             }}
                             className={
-                              activeDropdownLink === 0.5 &&
+                              activeDropdownLink === 4.5 &&
                               currentPage === 'support'
                                 ? 'header-dropdown-active'
                                 : ''
@@ -476,13 +600,13 @@ class MainNav extends React.Component {
                         </ul>
                         <li
                           onClick={() => {
-                            handleActiveDropdownLink(1)
+                            handleActiveDropdownLink(5)
                             handleActiveHeaderDropdown('')
                             this.handleMobileDropDown(0)
                             this.toggleNav()
                           }}
                           className={
-                            activeDropdownLink === 1 &&
+                            activeDropdownLink === 5 &&
                             currentPage === 'resources'
                               ? 'header-dropdown-active'
                               : ''
