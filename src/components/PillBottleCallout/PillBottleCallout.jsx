@@ -6,7 +6,7 @@ import pillBottle from '../../assets/images/pill-bottle.svg'
 const PillBottleCallout = (props) => {
   return (
     <Col lg={{span: 12}}>
-      <div section className='pill-bottle-callout-container'>
+      <div className='pill-bottle-callout-container'>
         <Row>
           <Col lg={{span: 2, offset: 1}}>
             <div className='pill-bottle-container'>

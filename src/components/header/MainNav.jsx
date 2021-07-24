@@ -14,7 +14,7 @@ class MainNav extends React.Component {
     this.state = {
       currentData: { list: ['placeholder'] },
       isNavOpen: false,
-      mobileDropDown: 1,
+      mobileDropDown: {efficacyDropdown: true, supportDropdown: true},
     }
   }
 
@@ -65,9 +65,12 @@ class MainNav extends React.Component {
     })
   }
 
-  handleMobileDropDown = val => {
+  handleMobileDropDown = (dropdown, bool) => {
+    const { mobileDropDown } = this.state;
+    let newDropdownObj = mobileDropDown;
+    newDropdownObj[dropdown] = bool;
     this.setState({
-      mobileDropDown: val,
+      mobileDropDown: newDropdownObj,
     })
   }
 
@@ -309,21 +312,20 @@ class MainNav extends React.Component {
               <Col className='mobile-nav-col'>
                 <div
                   className='mobile-nav-list-container'
-                  className={
-                    mobileDropDown !== 0
-                      ? 'mobile-nav-list-container'
-                      : 'mobile-nav-list-container hidden'
-                  }
+                  // className={
+                  //   mobileDropDown !== 0
+                  //     ? 'mobile-nav-list-container'
+                  //     : 'mobile-nav-list-container hidden'
+                  // }
                 >
                   <ul
                     className='mobile-nav-links'
-                    style={mobileDropDown !== 1 ? { overflow: 'hidden' } : {}}
                   >
                     <li
                       onClick={() => {
                         handleActiveDropdownLink(0)
                         handleActiveHeaderDropdown('')
-                        this.handleMobileDropDown(0)
+                        // this.handleMobileDropDown(0)
                         this.toggleNav()
                       }}
                       className={
@@ -333,15 +335,19 @@ class MainNav extends React.Component {
                           : ''
                       }
                     >
-                      <Link to='/once-daily-dosing/'>Once-Daily Dosing</Link>
+                      <Link to='/once-daily-dosing/'>
+                        Once-Daily Dosing
+                      </Link>
                     </li>
                     <li>
                       <div
                         className='mobile-nav-dropdown-link'
                         onClick={() => {
-                          mobileDropDown !== 1
-                            ? this.handleMobileDropDown(1)
-                            : this.handleMobileDropDown(0)
+                          // mobileDropDown !== 1
+                          //   ? this.handleMobileDropDown(1)
+                          //   : this.handleMobileDropDown(0)
+                          mobileDropDown.efficacyDropdown ? this.handleMobileDropDown('efficacyDropdown', false) :
+                          this.handleMobileDropDown('efficacyDropdown', true);
                         }}
                       >
                         Efficacy
@@ -353,7 +359,7 @@ class MainNav extends React.Component {
                           fill='none'
                           xmlns='http://www.w3.org/2000/svg'
                           className={
-                            mobileDropDown === 1
+                            mobileDropDown.efficacyDropdown
                               ? 'nav-arrow'
                               : 'nav-arrow rotated'
                           }
@@ -368,7 +374,7 @@ class MainNav extends React.Component {
                       </div>
                       <ul
                         className={
-                          mobileDropDown === 1
+                          mobileDropDown.efficacyDropdown
                             ? 'header-dropdown-ul'
                             : 'header-dropdown-ul hidden'
                         }
@@ -377,7 +383,7 @@ class MainNav extends React.Component {
                           onClick={() => {
                             handleActiveDropdownLink(1.1)
                             handleActiveHeaderDropdown('')
-                            this.handleMobileDropDown(0)
+                            // this.handleMobileDropDown(0)
                             this.toggleNav()
                           }}
                           className={
@@ -395,7 +401,7 @@ class MainNav extends React.Component {
                           onClick={() => {
                             handleActiveDropdownLink(1.2)
                             handleActiveHeaderDropdown('')
-                            this.handleMobileDropDown(0)
+                            // this.handleMobileDropDown(0)
                             this.toggleNav()
                           }}
                           className={
@@ -415,7 +421,7 @@ class MainNav extends React.Component {
                       onClick={() => {
                         handleActiveDropdownLink(2)
                         handleActiveHeaderDropdown('')
-                        this.handleMobileDropDown(0)
+                        // this.handleMobileDropDown(0)
                         this.toggleNav()
                       }}
                       className={
@@ -431,7 +437,7 @@ class MainNav extends React.Component {
                       onClick={() => {
                         handleActiveDropdownLink(3)
                         handleActiveHeaderDropdown('')
-                        this.handleMobileDropDown(0)
+                        // this.handleMobileDropDown(0)
                         this.toggleNav()
                       }}
                       className={
@@ -451,9 +457,11 @@ class MainNav extends React.Component {
                       <div
                         className='mobile-nav-dropdown-link'
                         onClick={() => {
-                          mobileDropDown !== 2
-                            ? this.handleMobileDropDown(2)
-                            : this.handleMobileDropDown(0)
+                          // mobileDropDown !== 1
+                          //   ? this.handleMobileDropDown(1)
+                          //   : this.handleMobileDropDown(0)
+                          mobileDropDown.supportDropdown ? this.handleMobileDropDown('supportDropdown', false) :
+                          this.handleMobileDropDown('supportDropdown', true);
                         }}
                       >
                         Support & Savings
@@ -465,7 +473,7 @@ class MainNav extends React.Component {
                           fill='none'
                           xmlns='http://www.w3.org/2000/svg'
                           className={
-                            mobileDropDown === 1
+                            mobileDropDown.supportDropdown
                               ? 'nav-arrow'
                               : 'nav-arrow rotated'
                           }
@@ -480,7 +488,7 @@ class MainNav extends React.Component {
                       </div>
                       <ul
                         className={
-                          mobileDropDown === 2
+                          mobileDropDown.supportDropdown
                             ? 'header-dropdown-ul'
                             : 'header-dropdown-ul hidden'
                         }
@@ -489,7 +497,7 @@ class MainNav extends React.Component {
                           onClick={() => {
                             handleActiveDropdownLink(4)
                             handleActiveHeaderDropdown('')
-                            this.handleMobileDropDown(0)
+                            // this.handleMobileDropDown(0)
                             this.toggleNav()
                           }}
                           className={
@@ -503,7 +511,7 @@ class MainNav extends React.Component {
                             Myfembree Support Program
                           </Link>
                         </li>
-                        <ul className='header-dropdown-ul'>
+                        {/* <ul className='header-dropdown-ul'>
                           <li
                             onClick={() => {
                               handleActiveDropdownLink(4.1)
@@ -597,12 +605,12 @@ class MainNav extends React.Component {
                               Patient e-Consent
                             </a>
                           </li>
-                        </ul>
+                        </ul> */}
                         <li
                           onClick={() => {
                             handleActiveDropdownLink(5)
                             handleActiveHeaderDropdown('')
-                            this.handleMobileDropDown(0)
+                            // this.handleMobileDropDown(0)
                             this.toggleNav()
                           }}
                           className={
@@ -612,7 +620,9 @@ class MainNav extends React.Component {
                               : ''
                           }
                         >
-                          <Link to='/resources/'>Resources</Link>
+                          <Link to='/resources/'>
+                            Resources
+                          </Link>
                         </li>
                       </ul>
                     </li>

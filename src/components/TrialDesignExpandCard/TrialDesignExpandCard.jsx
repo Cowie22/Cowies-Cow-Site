@@ -53,7 +53,7 @@ const TrialDesignExpandCard = (props) => {
               </p>
               <p>
                 <strong>Primary endpoints included:</strong>  The proportion of women in the Myfembree arm who
-                achieved menstrual blood loss volume &#60;80 mL per cycle; <stong><em>and</em></stong> ≥50%
+                achieved menstrual blood loss volume &#60;80 mL per cycle; <strong><em>and</em></strong> ≥50%
                 reduction in menstrual bleeding from baseline over the last 35 days of treatment compared
                 to placebo.<sup>1</sup>
               </p>
