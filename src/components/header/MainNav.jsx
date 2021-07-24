@@ -84,7 +84,7 @@ class MainNav extends React.Component {
       currentPage,
       handleCurrentPage,
     } = this.props
-    console.log('HERE', activeDropdownLink, currentPage)
+
     return (
       <>
         <section

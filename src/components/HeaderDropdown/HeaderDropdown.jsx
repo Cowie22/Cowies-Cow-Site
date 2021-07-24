@@ -2,10 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 
-
-
 const HeaderDropdown = (props) => {
-
   const {
     currentData,
     activeDropdownLink,
@@ -23,7 +20,6 @@ const HeaderDropdown = (props) => {
             {
               currentData.list.map((listData, i) => {
                 const { listName, listLink, innerPageNav, externalLink, pageName, activeDropdownVal } = listData;
-                console.log('second', activeDropdownLink, activeDropdownVal)
                 return (
                   <li
                     key={i}
