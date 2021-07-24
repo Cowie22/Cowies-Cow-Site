@@ -25,7 +25,7 @@ const LibertyTrialsContent = (props) => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('liberty-trials');
     handleCurrentTopTab(1);
-    handleActiveDropdownLink(1)
+    handleActiveDropdownLink(1.1)
   }, []);
 
   const handleArrowLeft = () => {

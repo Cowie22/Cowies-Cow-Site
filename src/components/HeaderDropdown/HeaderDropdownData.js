@@ -10,6 +10,7 @@ const HeaderDropdownData = [
         innerPageNav: false,
         externalLink: false,
         pageName: 'support',
+        activeDropdownVal: 4.1,
       },
       {
         listName: 'Financial Assistance',
@@ -52,6 +53,7 @@ const HeaderDropdownData = [
         innerPageNav: false,
         externalLink: false,
         pageName: 'resources',
+        activeDropdownVal: 4.2,
       },
     ]
   },
@@ -64,6 +66,7 @@ const HeaderDropdownData = [
         innerPageNav: false,
         externalLink: false,
         pageName: 'liberty-trials',
+        activeDropdownVal: 1.1,
       },
       {
         listName: 'Efficacy Data',
@@ -71,6 +74,7 @@ const HeaderDropdownData = [
         innerPageNav: false,
         externalLink: false,
         pageName: 'efficacy-data',
+        activeDropdownVal: 1.2,
       },
     ]
   },

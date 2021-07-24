@@ -22,16 +22,17 @@ const HeaderDropdown = (props) => {
           <ul className='header-dropdown-ul'>
             {
               currentData.list.map((listData, i) => {
-                const { listName, listLink, innerPageNav, externalLink, pageName } = listData;
+                const { listName, listLink, innerPageNav, externalLink, pageName, activeDropdownVal } = listData;
+                console.log('second', activeDropdownLink, activeDropdownVal)
                 return (
                   <li
                     key={i}
                     className={
-                      (activeDropdownLink === i + 1 && pageName === currentPage) ?
+                      (activeDropdownLink === activeDropdownVal && pageName === currentPage) ?
                       'header-dropdown-active' : ''
                     }
                     onClick={() => {
-                      handleActiveDropdownLink(i + 1);
+                      handleActiveDropdownLink(activeDropdownVal);
                       handleActiveHeaderDropdown('');
                     }}
                   >

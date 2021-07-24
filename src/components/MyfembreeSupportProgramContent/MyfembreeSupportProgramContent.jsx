@@ -58,7 +58,7 @@ const MyfembreeSupportProgramContent = (props) => {
   useEffect(() => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('support');
-    handleActiveDropdownLink(1);
+    handleActiveDropdownLink(4.1);
 
     updateWindowDimensions();
     window.addEventListener('resize', updateWindowDimensions);

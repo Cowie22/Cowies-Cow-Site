@@ -28,7 +28,7 @@ const EfficacyDataContent = (props) => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('efficacy-data');
     handleCurrentTopTab(1);
-    handleActiveDropdownLink(2)
+    handleActiveDropdownLink(1.2)
   }, []);
 
   const handleArrowLeft = () => {

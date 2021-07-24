@@ -84,6 +84,7 @@ class MainNav extends React.Component {
       currentPage,
       handleCurrentPage,
     } = this.props
+    console.log('HERE', activeDropdownLink, currentPage)
     return (
       <>
         <section
@@ -154,7 +155,7 @@ class MainNav extends React.Component {
                       }}
                       onClick={() => {
                         handleActiveHeaderDropdown('')
-                        handleActiveDropdownLink(0)
+                        handleActiveDropdownLink(1.1)
                       }}
                     >
                       <Link
@@ -165,7 +166,6 @@ class MainNav extends React.Component {
                       >
                         Efficacy
                       </Link>
-                      {/* <img src={activeHeaderDropdown === 'efficacy' ? upArrow : downArrow} className='nav-arrow' /> */}
                       <svg
                         width='12'
                         height='6'
@@ -221,7 +221,7 @@ class MainNav extends React.Component {
                       }}
                       onClick={() => {
                         handleActiveHeaderDropdown('')
-                        handleActiveDropdownLink(0)
+                        handleActiveDropdownLink(4.1)
                       }}
                     >
                       <Link
@@ -232,7 +232,6 @@ class MainNav extends React.Component {
                       >
                         Support & Savings
                       </Link>
-                      {/* <img src={activeHeaderDropdown === 'resources' ? upArrow : downArrow} className='nav-arrow' /> */}
                       <svg
                         width='12'
                         height='6'
@@ -258,31 +257,6 @@ class MainNav extends React.Component {
                   </ul>
                 </nav>
               </Col>
-              {/* <Col
-                xl={{ span: 3, offset: 0 }}
-                lg={{ span: 4, offset: 0 }}
-                xs={{ span: 6, offset: 1 }}
-                className='d-none d-lg-block'
-              >
-                <div
-                  className='header-call-now-container'
-                  onMouseEnter={() => {
-                    handleActiveHeaderDropdown('')
-                    this.handleNavHover()
-                  }}
-                >
-                  <div className='cta-btn-container header-cta-btn-container'>
-                    <a
-                      href='http://www.ufmanagement-learnmore.com/'
-                      target='_blank'
-                    >
-                      <button className='cta-btn pink-btn'>
-                        Register for Launch Broadcast
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </Col> */}
             </Row>
             <div
               className={
@@ -310,14 +284,7 @@ class MainNav extends React.Component {
           <Container>
             <Row>
               <Col className='mobile-nav-col'>
-                <div
-                  className='mobile-nav-list-container'
-                  // className={
-                  //   mobileDropDown !== 0
-                  //     ? 'mobile-nav-list-container'
-                  //     : 'mobile-nav-list-container hidden'
-                  // }
-                >
+                <div className='mobile-nav-list-container'>
                   <ul
                     className='mobile-nav-links'
                   >
@@ -325,7 +292,6 @@ class MainNav extends React.Component {
                       onClick={() => {
                         handleActiveDropdownLink(0)
                         handleActiveHeaderDropdown('')
-                        // this.handleMobileDropDown(0)
                         this.toggleNav()
                       }}
                       className={
@@ -343,15 +309,11 @@ class MainNav extends React.Component {
                       <div
                         className='mobile-nav-dropdown-link'
                         onClick={() => {
-                          // mobileDropDown !== 1
-                          //   ? this.handleMobileDropDown(1)
-                          //   : this.handleMobileDropDown(0)
                           mobileDropDown.efficacyDropdown ? this.handleMobileDropDown('efficacyDropdown', false) :
                           this.handleMobileDropDown('efficacyDropdown', true);
                         }}
                       >
                         Efficacy
-                        {/* <img src={mobileDropDown === 1 ? upArrow : downArrow} className='nav-arrow' /> */}
                         <svg
                           width='12'
                           height='6'
@@ -383,7 +345,6 @@ class MainNav extends React.Component {
                           onClick={() => {
                             handleActiveDropdownLink(1.1)
                             handleActiveHeaderDropdown('')
-                            // this.handleMobileDropDown(0)
                             this.toggleNav()
                           }}
                           className={
@@ -401,7 +362,6 @@ class MainNav extends React.Component {
                           onClick={() => {
                             handleActiveDropdownLink(1.2)
                             handleActiveHeaderDropdown('')
-                            // this.handleMobileDropDown(0)
                             this.toggleNav()
                           }}
                           className={
@@ -421,7 +381,6 @@ class MainNav extends React.Component {
                       onClick={() => {
                         handleActiveDropdownLink(2)
                         handleActiveHeaderDropdown('')
-                        // this.handleMobileDropDown(0)
                         this.toggleNav()
                       }}
                       className={
@@ -431,13 +390,14 @@ class MainNav extends React.Component {
                           : ''
                       }
                     >
-                      <Link to='/safety-profile/'>Safety Profile</Link>
+                      <Link to='/safety-profile/'>
+                        Safety Profile
+                      </Link>
                     </li>
                     <li
                       onClick={() => {
                         handleActiveDropdownLink(3)
                         handleActiveHeaderDropdown('')
-                        // this.handleMobileDropDown(0)
                         this.toggleNav()
                       }}
                       className={
@@ -447,25 +407,19 @@ class MainNav extends React.Component {
                           : ''
                       }
                     >
-                      <Link to='/how-it-works/'>How It Works</Link>
+                      <Link to='/how-it-works/'>
+                        How It Works
+                      </Link>
                     </li>
-                    <li
-                    // onClick={() => {
-                    //   this.toggleNav()
-                    // }}
-                    >
+                    <li>
                       <div
                         className='mobile-nav-dropdown-link'
                         onClick={() => {
-                          // mobileDropDown !== 1
-                          //   ? this.handleMobileDropDown(1)
-                          //   : this.handleMobileDropDown(0)
                           mobileDropDown.supportDropdown ? this.handleMobileDropDown('supportDropdown', false) :
                           this.handleMobileDropDown('supportDropdown', true);
                         }}
                       >
                         Support & Savings
-                        {/* <img src={mobileDropDown === 1 ? upArrow : downArrow} className='nav-arrow' /> */}
                         <svg
                           width='12'
                           height='6'
@@ -495,13 +449,12 @@ class MainNav extends React.Component {
                       >
                         <li
                           onClick={() => {
-                            handleActiveDropdownLink(4)
+                            handleActiveDropdownLink(4.1)
                             handleActiveHeaderDropdown('')
-                            // this.handleMobileDropDown(0)
                             this.toggleNav()
                           }}
                           className={
-                            activeDropdownLink === 4 &&
+                            activeDropdownLink === 4.1 &&
                             currentPage === 'support'
                               ? 'header-dropdown-active'
                               : ''
@@ -511,110 +464,14 @@ class MainNav extends React.Component {
                             Myfembree Support Program
                           </Link>
                         </li>
-                        {/* <ul className='header-dropdown-ul'>
-                          <li
-                            onClick={() => {
-                              handleActiveDropdownLink(4.1)
-                              handleActiveHeaderDropdown('')
-                              this.handleMobileDropDown(0)
-                              this.toggleNav()
-                            }}
-                            className={
-                              activeDropdownLink === 4.1 &&
-                              currentPage === 'support'
-                                ? 'header-dropdown-active'
-                                : ''
-                            }
-                          >
-                            <Link to='/myfembree-support-program/#financial-assistance'>
-                              Financial Assistance
-                            </Link>
-                          </li>
-                          <li
-                            onClick={() => {
-                              handleActiveDropdownLink(4.2)
-                              handleActiveHeaderDropdown('')
-                              this.handleMobileDropDown(0)
-                              this.toggleNav()
-                            }}
-                            className={
-                              activeDropdownLink === 4.2 &&
-                              currentPage === 'support'
-                                ? 'header-dropdown-active'
-                                : ''
-                            }
-                          >
-                            <Link to='/myfembree-support-program/#bridge-program'>
-                              Bridge Program
-                            </Link>
-                          </li>
-                          <li
-                            onClick={() => {
-                              handleActiveDropdownLink(4.3)
-                              handleActiveHeaderDropdown('')
-                              this.handleMobileDropDown(0)
-                              this.toggleNav()
-                            }}
-                            className={
-                              activeDropdownLink === 4.3 &&
-                              currentPage === 'support'
-                                ? 'header-dropdown-active'
-                                : ''
-                            }
-                          >
-                            <Link to='/myfembree-support-program/#quick-start-program'>
-                              Quick Start Program
-                            </Link>
-                          </li>
-                          <li
-                            onClick={() => {
-                              handleActiveDropdownLink(4.4)
-                              handleActiveHeaderDropdown('')
-                              this.handleMobileDropDown(0)
-                              this.toggleNav()
-                            }}
-                            className={
-                              activeDropdownLink === 4.4 &&
-                              currentPage === 'support'
-                                ? 'header-dropdown-active'
-                                : ''
-                            }
-                          >
-                            <Link to='/myfembree-support-program/#patient-assistance-program'>
-                              Patient Assistance Program
-                            </Link>
-                          </li>
-                          <li
-                            onClick={() => {
-                              handleActiveDropdownLink(4.5)
-                              handleActiveHeaderDropdown('')
-                              this.handleMobileDropDown(0)
-                              this.toggleNav()
-                            }}
-                            className={
-                              activeDropdownLink === 4.5 &&
-                              currentPage === 'support'
-                                ? 'header-dropdown-active'
-                                : ''
-                            }
-                          >
-                            <a
-                              target='_blank'
-                              href='https://portal.trialcard.com/myovant/myfembree/consent/'
-                            >
-                              Patient e-Consent
-                            </a>
-                          </li>
-                        </ul> */}
                         <li
                           onClick={() => {
-                            handleActiveDropdownLink(5)
+                            handleActiveDropdownLink(4.2)
                             handleActiveHeaderDropdown('')
-                            // this.handleMobileDropDown(0)
                             this.toggleNav()
                           }}
                           className={
-                            activeDropdownLink === 5 &&
+                            activeDropdownLink === 4.2 &&
                             currentPage === 'resources'
                               ? 'header-dropdown-active'
                               : ''
@@ -631,7 +488,6 @@ class MainNav extends React.Component {
               </Col>
             </Row>
           </Container>
-          {/* <div className='mobile-nav-overlay d-block d-lg-none'>&nbsp;</div> */}
         </section>
       </>
     )
