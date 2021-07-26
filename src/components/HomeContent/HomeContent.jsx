@@ -89,7 +89,7 @@ const HomeContent = (props) => {
       >
         <Container>
           <Row>
-            <Col lg={{span: 6, offset: 1}} xs={{span: 11, offset: 0}}>
+            <Col lg={{span: 6, offset: 1}} xs={{span: 9, offset: 0}}>
               <h2 className='gradient-title'>
                 The only FDA-approved once-daily pill to reduce heavy menstrual bleeding associated with
                 uterine fibroids in premenopausal women
@@ -100,7 +100,7 @@ const HomeContent = (props) => {
             </Col>
           </Row>
           <Row>
-            <Col lg={{span: 3, offset: 1}}>
+            <Col lg={{span: 3, offset: 1}} xs={{span: 10, offset: 0}}>
               <div className='cta-btn-container'>
                 <Link
                   to='/efficacy-data/'

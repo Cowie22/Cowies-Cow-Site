@@ -9,12 +9,12 @@ const RectangleCard = (props) => {
     <Col lg={12}>
       <div className='rectangle-card-container'>
         <Row>
-          <Col lg={{span: 1}}>
+          <Col lg={{span: 1}} xs={{span: 2}}>
             <div className='icon-container'>
               <img src={icon} alt={alt} />
             </div>
           </Col>
-          <Col lg={{span: 10}}>
+          <Col lg={{span: 10}} xs={{span: 10}}>
             <div className='title-container'>
               <h3 className='blue'>
                 {title}
@@ -24,7 +24,7 @@ const RectangleCard = (props) => {
           </Col>
         </Row>
         <Row>
-          <Col lg={{span: 3, offset: 1}}>
+          <Col lg={{span: 3, offset: 1}} xs={{span: 10, offset: 0}}>
             <div className='cta-btn-container rectangle-card-btn-container'>
               <Link to={`/${btnLink}`}>
                 <button className='cta-btn transparent-btn-pink'>
