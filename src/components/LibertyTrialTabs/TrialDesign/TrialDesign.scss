@@ -13,9 +13,11 @@
     }
     .list-header {
       padding-bottom: 8px;
+      font-family: $mulish;
     }
     .second-list-header {
       padding-top: 12px;
+      font-family: $mulish;
     }
   }
   .skinny-callout-container {
@@ -42,6 +44,9 @@
 
 @media screen and (max-width: 992px) {
   .trial-design-container {
-    padding: 40px 0;
+    padding: 40px 0 0 0;
+    h2 {
+      padding-bottom: 16px;
+    }
   }
 }

@@ -82,6 +82,31 @@
 
 @media screen and (max-width: 992px) {
   .demographics-container {
-    padding: 40px 0;
+    padding: 40px 0 0 0;
+    h2 {
+      padding-bottom: 16px;
+    }
+    .interior-table {
+      margin-bottom: 40px;
+      tr:nth-child(1) th {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 16px 0;
+      }
+      tr:nth-child(6) th {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 16px 0;
+      }
+      tr:not(:nth-of-type(1)) td:nth-of-type(2) {
+        width: 40%;
+      }
+      tr td:nth-of-type(1) {
+        width: 60%;
+      }
+    }
+    .liberty-trials-card-container {
+      padding: 40px 0 0px 0;
+    }
   }
 }

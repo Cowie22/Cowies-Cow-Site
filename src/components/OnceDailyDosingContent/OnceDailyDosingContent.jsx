@@ -74,7 +74,7 @@ const OnceDailyDosingContent = (props) => {
                       </ul>
                     </Col>
                     <Col lg={{span: 6}}>
-                      <p className='purple extra-bold text-left'>
+                      <p className='purple extra-bold text-left second-list-title'>
                         Lactation<sup>1</sup>
                       </p>
                       <ul className='purple-ul text-left'>
