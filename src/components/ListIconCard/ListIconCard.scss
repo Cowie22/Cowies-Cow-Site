@@ -7,9 +7,15 @@
   margin-bottom: 16px;
   &.fixed-height {
     height: 450px;
+    @media only screen and (max-width: 1200px) and (min-width: 991px) {
+      height: 530px;
+    }
   }
   &.less-fixed-height {
     height: 400px;
+    @media only screen and (max-width: 1200px) and (min-width: 991px) {
+      height: 430px;
+    }
   }
   .icon-title-container {
     display: flex;

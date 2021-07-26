@@ -195,6 +195,8 @@ const ListIconCardData8 = [
   }
 ]
 
+// Next 2 are for the how it works page
+
 const ListIconCardData9 = [
   {
     title: <h3 className='extra-bold blue no-icon-title'>Relugolix 40 mg<sup>1</sup></h3>,
