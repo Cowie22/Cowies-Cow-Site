@@ -32,7 +32,7 @@ class References extends React.Component {
   render() {
     const { pageReferences } = this.state;
     return (
-      <div className='reference-section'>
+      <div className='reference-container'>
         <Container>
           <Row>
             <Col>

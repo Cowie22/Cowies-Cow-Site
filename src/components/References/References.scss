@@ -1,4 +1,4 @@
-.reference-section {
+.reference-container {
   padding: 0 0 60px 0;
   .reference-header {
     padding-bottom: 8px;
@@ -20,5 +20,11 @@
         font-weight: 700;
       }
     }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .reference-container {
+    padding: 0 0 40px 0;
   }
 }
