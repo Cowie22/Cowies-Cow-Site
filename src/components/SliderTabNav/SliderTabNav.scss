@@ -82,15 +82,39 @@
 @media screen and (max-width: 768px) {
   .tab-column {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 0;
-    &:last-child {
-      padding-right: 4px;
-    }
+    flex-direction: column;
     h6 {
       padding-bottom: 16px;
       font-size: 16px;
+    }
+    .bottom-tab-border-left {
+      width: 86%;
+      left: 0;
+    }
+    .bottom-tab-border-center {
+      width: 86%;
+      left: 100%;
+    }
+    .bottom-tab-border-right {
+      width: 86%;
+      left: 200%;
+    }
+    .hovered-tab-border-left {
+      width: 86%;
+      left: 0;
+    }
+    .hovered-tab-border-center {
+      width: 86%;
+      left: 100%;
+    }
+    .hovered-tab-border-right {
+      width: 86%;
+      left: 200%;
+    }
+    .inactive-border {
+      width: 100%;
+      margin: 0;
+      margin-top: auto;
     }
   }
 }

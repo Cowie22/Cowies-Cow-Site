@@ -80,7 +80,7 @@ const SafetyProfileContent = (props) => {
             tab3='Return to Menses'
           />
           <Row>
-            <Col lg={{span: 1}}>
+            <Col lg={{span: 1}} className='d-none d-lg-block'>
               <div
                 className='tab-arrow-container arrow-left-container'
                 onClick={() => {
@@ -120,7 +120,7 @@ const SafetyProfileContent = (props) => {
                 <Return />
               }
             </Col>
-            <Col lg={{span: 1}}>
+            <Col lg={{span: 1}} className='d-none d-lg-block'>
               <div
                 className='tab-arrow-container arrow-right-container'
                 onClick={() => {

@@ -83,7 +83,7 @@ const EfficacyDataContent = (props) => {
             tab3='Amenorrhea & Hemoglobin'
           />
           <Row>
-            <Col lg={{span: 1}}>
+            <Col lg={{span: 1}} className='d-none d-lg-block'>
               <div
                 className='tab-arrow-container arrow-left-container'
                 onClick={() => {
@@ -123,7 +123,7 @@ const EfficacyDataContent = (props) => {
                 <Amenorrhea />
               }
             </Col>
-            <Col lg={{span: 1}}>
+            <Col lg={{span: 1}} className='d-none d-lg-block'>
               <div
                 className='tab-arrow-container arrow-right-container'
                 onClick={() => {
