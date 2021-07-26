@@ -58,5 +58,12 @@
 @media screen and (max-width: 992px) {
   .list-icon-card-container {
     padding: 32px 24px;
+    height: fit-content;
+    &.fixed-height {
+      height: fit-content;
+    }
+    &.less-fixed-height {
+      height: fit-content;
+    }
   }
 }

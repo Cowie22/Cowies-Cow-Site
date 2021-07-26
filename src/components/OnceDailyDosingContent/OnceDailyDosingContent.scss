@@ -12,5 +12,9 @@
 @media screen and (max-width: 992px) {
   .dosing-container {
     padding: 40px 0 0 0;
+    .dosing-icon-card-container {
+      display: inline;
+      padding: 40px 0;
+    }
   }
 }

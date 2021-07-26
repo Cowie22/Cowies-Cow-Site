@@ -18,3 +18,13 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .pill-bottle-callout-container {
+    .pill-bottle-container {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
