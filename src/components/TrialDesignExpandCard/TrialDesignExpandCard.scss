@@ -69,21 +69,60 @@
       padding-top: 16px;
       a {
         button {
-          svg {
-            margin-left: 24px;
-            .btn-arrow {
-              fill: $pink;
-              transition: all .7s;
-              transition-delay: .1s;
-              &.active-arrow {
-                fill: $white;
+          &:hover {
+            .btn-content-container {
+              p {
+                color: $white;
                 transition: all .7s;
                 transition-delay: .1s;
               }
             }
           }
+          .btn-content-container {
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+              color: $pink;
+              font-family: $mulish;
+              width: 90%;
+              text-align: center;
+              transition: all .7s;
+              transition-delay: .1s;
+              padding-top: 0;
+            }
+            .btn-arrow-container {
+              display: flex;
+              justify-content: flex-end;
+              align-items: flex-end;
+              svg {
+                margin: 4px 4px 0 16px;
+                .btn-arrow {
+                  fill: $pink;
+                  transition: all .7s;
+                  transition-delay: .1s;
+                  &.active-arrow {
+                    fill: $white;
+                    transition: all .7s;
+                    transition-delay: .1s;
+                  }
+                }
+              }
+            }
+          }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .expand-card-container {
+    padding: 32px;
+    &.not-expanded-container {
+      height: 56px;
+      padding: 16px 0;
     }
   }
 }
