@@ -126,5 +126,11 @@
         padding: 0px 12px;
       }
     }
+    .lower-content-container {
+      padding-bottom: 0;
+      .footnote-container {
+        padding: 16px 0;
+      }
+    }
   }
 }
