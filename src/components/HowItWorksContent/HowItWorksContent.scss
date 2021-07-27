@@ -15,6 +15,12 @@
 
 @media screen and (max-width: 992px) {
   .how-it-works-container {
-    padding: 40px 0;
+    padding: 40px 0 0 0;
+    .footnote-container {
+      padding: 16px 0 40px 0;
+    }
+    .lower-footnote-container {
+      padding: 24px 0 0 0;
+    }
   }
 }

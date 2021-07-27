@@ -93,7 +93,7 @@ const HowItWorksContent = (props) => {
           </Row>
           <Row>
             <ListIconCard data={ListIconCardData9} />
-            <Col lg={{span: 4}}>
+            <Col lg={{span: 4}} className='d-none d-lg-block'>
               <div className='how-it-works-img-container'>
                 <img src={womenOutlineIcon} alt='' />
               </div>
