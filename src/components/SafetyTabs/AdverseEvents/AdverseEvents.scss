@@ -6,7 +6,6 @@
   h2 {
     padding-bottom: 24px;
   }
-
   .interior-table {
     width: 100%;
     tr th:nth-child(1) {
@@ -88,5 +87,11 @@
 @media screen and (max-width: 992px) {
   .adverse-events-container {
     padding: 40px 0;
+    .circle-graph-container {
+      padding: 0 0 24px 0;
+    }
+    h2 {
+      padding-bottom: 16px;
+    }
   }
 }
