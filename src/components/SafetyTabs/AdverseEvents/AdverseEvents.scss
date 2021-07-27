@@ -93,5 +93,38 @@
     h2 {
       padding-bottom: 16px;
     }
+    .interior-table {
+      tr th:nth-child(1) {
+        font-size: 16px;
+        line-height: 20px;
+        width: 37%;
+      }
+      tr th:nth-child(2) {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 16px 12px;
+        width: 31%;
+      }
+      tr th:nth-child(3) {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 16px 12px;
+        width: 31%;
+      }
+      tr:not(:nth-of-type(1)) td:nth-child(1) {
+        padding: 0px 8px 16px 0;
+      }
+      tr:not(:nth-of-type(1), :nth-of-type(4)) td:not(:nth-child(1)) {
+        p {
+          padding: 24px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      tr:not(:nth-of-type(1), :nth-of-type(4)) td:not(:nth-child(1)) {
+        padding: 0px 12px;
+      }
+    }
   }
 }
