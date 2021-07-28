@@ -10,6 +10,7 @@ import closeIcon from '../../assets/images/close.svg'
 import closeIconHovered from '../../assets/images/close-hovered.svg'
 
 
+
 class SignUpForm extends React.Component {
   constructor(props) {
     super(props);
@@ -261,7 +262,7 @@ class SignUpForm extends React.Component {
                                 onChange={this.handleInputChange}
                                 className={(specialty === '' && submitClicked) ? 'form-dropdown-select invalid-dropdown' : 'form-dropdown-select'}
                               >
-                                <option selected>Select Specialty*</option>
+                                <option defaultValue>Select Specialty*</option>
                                 <option value='Gynecologic Oncology'>Gynecologic Oncology</option>
                                 <option value='Reproductive Endocrinology'>Reproductive Endocrinology</option>
                                 <option value='Maternal-Fetal Medicine'>Maternal-Fetal Medicine</option>
@@ -331,7 +332,7 @@ class SignUpForm extends React.Component {
                                 onChange={this.handleInputChange}
                                 className={(role === '' && submitClicked) ? 'form-dropdown-select invalid-dropdown' : 'form-dropdown-select'}
                               >
-                                <option selected>Select Role*</option>
+                                <option defaultValue>Select Role*</option>
                                 <option value='Physician'>Physician</option>
                                 <option value='Physician Assistant'>Physician Assistant</option>
                                 <option value='Nurse'>Nurse</option>
