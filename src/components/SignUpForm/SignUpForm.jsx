@@ -399,6 +399,7 @@ class SignUpForm extends React.Component {
                                       <a
                                         className='pink extra-bold'
                                         target='_blank'
+                                        rel='noopener noreferrer'
                                         href='https://www.myovant.com/privacy-policy/'
                                       >
                                         Privacy Policy {' '}
@@ -407,6 +408,7 @@ class SignUpForm extends React.Component {
                                       <a
                                         className='pink extra-bold'
                                         target='_blank'
+                                        rel='noopener noreferrer'
                                         href='https://www.myovant.com/terms-of-use/'
                                       >
                                         Terms of Use {' '}

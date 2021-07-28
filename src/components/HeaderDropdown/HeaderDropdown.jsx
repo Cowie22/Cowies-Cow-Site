@@ -52,6 +52,7 @@ const HeaderDropdown = (props) => {
                         href={listLink}
                         className={innerPageNav ? 'inner-page' : ''}
                         target='_blank'
+                        rel='noopener noreferrer'
                       >
                         {listName}
                       </a>

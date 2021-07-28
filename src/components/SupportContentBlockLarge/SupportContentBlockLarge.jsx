@@ -36,7 +36,11 @@ const SupportContentBlockLarge = (props) => {
           <Row>
             <Col lg={{span: 8, offset: 0}}>
               <div className='cta-btn-container'>
-                <a href='https://portal.trialcard.com/myovant/myfembree/copay/ ' target='_blank'>
+                <a
+                  href='https://portal.trialcard.com/myovant/myfembree/copay/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   <button className='cta-btn pink-btn'>
                     Enroll Today!
                   </button>

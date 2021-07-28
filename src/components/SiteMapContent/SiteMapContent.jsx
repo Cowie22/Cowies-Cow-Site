@@ -69,6 +69,7 @@ const SiteMapContent = (props) => {
                         <li>
                           <a
                             target='_blank'
+                            rel='noopener noreferrer'
                             href='https://portal.trialcard.com/myovant/myfembree/consent/'
                           >
                             Patient e-Consent

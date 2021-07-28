@@ -14,6 +14,7 @@ const ResourcesDownloadCard = (props) => {
               <a
                 href={downloadLink}
                 target='_blank'
+                rel='noopener noreferrer'
                 className='text-link'
                 download={wordDoc ? download : false}
               >
@@ -34,6 +35,7 @@ const ResourcesDownloadCard = (props) => {
                 <a
                   href={downloadLink}
                   target='_blank'
+                  rel='noopener noreferrer'
                   className='text-link'
                   download={wordDoc ? download : false}
                 >

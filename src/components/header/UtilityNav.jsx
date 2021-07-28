@@ -80,6 +80,7 @@ class UtilityNav extends React.Component {
                         <li className='center-nav'>
                           <a
                             target='_blank'
+                            rel='noopener noreferrer'
                             className='utility-header-nav'
                             href='https://www.myovant.com/myfembree-prescribing-information.pdf'
                           >
@@ -89,6 +90,7 @@ class UtilityNav extends React.Component {
                         <li>
                           <a
                             target='_blank'
+                            rel='noopener noreferrer'
                             className='utility-header-nav'
                             href='https://www.Myfembree.com'
                           >

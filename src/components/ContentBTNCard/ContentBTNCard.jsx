@@ -14,7 +14,7 @@ const ContentBTNCard = (props) => {
         <Col lg={{span: 4}}>
           <div className='content-btn-card-btn-container'>
             <div className='cta-btn-container inner-btn-container'>
-              <a href={link} target='_blank'>
+              <a href={link} target='_blank' rel='noopener noreferrer'>
                 <button className='cta-btn pink-btn'>
                   {btnText}
                 </button>

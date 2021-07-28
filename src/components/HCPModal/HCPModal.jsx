@@ -78,7 +78,7 @@ class HCPModal extends React.Component {
                       </button>
                     </div>
                     <div className='cta-btn-container hcp-modal-btn-container'>
-                      <a href='https://www.Myfembree.com' target='_blank'>
+                      <a href='https://www.Myfembree.com' target='_blank' rel='noopener noreferrer'>
                         <button className='cta-btn transparent-btn-pink'>
                           No
                         </button>

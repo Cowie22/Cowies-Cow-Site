@@ -225,6 +225,7 @@ class IsiContent extends React.Component {
             className='isi-link extra-bold'
             href='https://www.myovant.com/myfembree-prescribing-information.pdf'
             target='_blank'
+            rel='noopener noreferrer'
           >
             Prescribing Information, including BOXED WARNING
           </a>
