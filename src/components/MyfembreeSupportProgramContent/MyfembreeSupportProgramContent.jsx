@@ -216,14 +216,16 @@ const MyfembreeSupportProgramContent = (props) => {
             }
           />
         : currentTopTab === 2 ?
-          <PurpleCallout
-            title={
-              <h2 className='white'>
-                The prescriber may submit Myfembree prescriptions directly to the patient’s retail or
-                mail-order pharmacy
-              </h2>
-            }
-          />
+          <div className='extra-top-padding'>
+            <PurpleCallout
+              title={
+                <h2 className='white'>
+                  The prescriber may submit Myfembree prescriptions directly to the patient’s retail or
+                  mail-order pharmacy
+                </h2>
+              }
+            />
+          </div>
         :
           <>
           </>
