@@ -32,9 +32,16 @@
 
 @media screen and (max-width: 992px) {
   .overview-container {
-    padding: 40px 0;
+    padding: 40px 0 0 0;
     h2 {
-      padding: 8px 0 16px 0;
+      padding: 0px 0 24px 0;
+    }
+    .overview-container-lower-cards {
+      .overview-container-large-card {
+        ul {
+          padding-top: 8px;
+        }
+      }
     }
     .mid-section-container {
       padding: 16px 0;

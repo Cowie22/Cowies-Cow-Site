@@ -3,10 +3,10 @@ import { Container, Row, Col } from "react-bootstrap"
 
 const TermsAndConditions = props => {
   return (
-    <Col lg={{ span: 10, offset: 1 }}>
+    <Col lg={{ span: 10, offset: 1 }} xs={{span: 12, offset: 0}}>
       <div className="terms-and-conditions-container">
         <Row>
-          <Col lg={{ span: 12, offset: 0 }} xs={{ span: 10, offset: 1 }}>
+          <Col lg={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }}>
             <p className="extra-bold">
               Myfembree Copay Assistance Program: Terms and Conditions
             </p>

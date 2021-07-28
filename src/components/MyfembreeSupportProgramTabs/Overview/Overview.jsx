@@ -60,7 +60,7 @@ const Overview = (props) => {
                         </p>
                       </div>
                     </Col>
-                    <Col lg={{span: 8, offset: 0}} xs={{span: 10, offset: 1}}>
+                    <Col lg={{span: 8, offset: 0}} xs={{span: 12, offset: 0}}>
                       <ul className='purple-ul less-right-padding'>
                         <li>
                           Commercial insurance may qualify for up to 4 months of a free supply of Myfembree
