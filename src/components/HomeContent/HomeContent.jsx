@@ -155,6 +155,19 @@ const HomeContent = (props) => {
           </Row>
         </Container>
       </section>
+      <section className='home-footnote-container'>
+        <Container>
+          <Row>
+            <Col>
+              <div>
+                <h6>
+                  FDA = US Food and Drug Administration.
+                </h6>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </Layout>
   )
 }
