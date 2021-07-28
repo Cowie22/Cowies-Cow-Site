@@ -22,9 +22,9 @@ class ISI extends React.Component {
   componentDidMount = () => {
     this.updateWindowDimensions()
     this.handleScroll()
-    window.addEventListener('resize', this.updateWindowDimensions)
-    window.addEventListener('scroll', this.handleScroll)
-    window.addEventListener('scroll', this.toggleIsiHeader)
+    window.addEventListener('resize', this.updateWindowDimensions, { passive: true })
+    window.addEventListener('scroll', this.handleScroll, { passive: true })
+    window.addEventListener('scroll', this.toggleIsiHeader, { passive: true })
   }
 
   componentWillUnmount = () => {

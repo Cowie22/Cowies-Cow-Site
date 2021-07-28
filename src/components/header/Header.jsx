@@ -19,8 +19,8 @@ class Header extends React.Component {
   componentDidMount = () => {
     this.updateWindowDimensions();
     this.handleScroll();
-    window.addEventListener('resize', this.updateWindowDimensions);
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('resize', this.updateWindowDimensions, { passive: true });
+    window.addEventListener('scroll', this.handleScroll, { passive: true });
   }
 
   componentWillUnmount = () => {

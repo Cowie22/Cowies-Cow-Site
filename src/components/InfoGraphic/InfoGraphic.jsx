@@ -19,7 +19,7 @@ const InfoGraphic = (props) => {
 
   useEffect(() => {
     updateWindowDimensions();
-    window.addEventListener('resize', updateWindowDimensions);
+    window.addEventListener('resize', updateWindowDimensions, { passive: true });
     return function cleanUp() {
       window.removeEventListener('resize', updateWindowDimensions);
     }
