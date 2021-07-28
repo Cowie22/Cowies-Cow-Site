@@ -3,10 +3,10 @@ import Layout from '../Layout'
 import { Container, Row, Col } from 'react-bootstrap'
 import { AppContext } from '../../contexts/state'
 
-import HeaderHero from '../HeaderHero/HeaderHero'
 import PurpleCallout from '../PurpleCallout/PurpleCallout'
 import ResourcesDownloadCard from '../ResourcesDownloadCard/ResourcesDownloadCard'
 import ResourcesDownloadCardData from '../ResourcesDownloadCard/ResourcesDownloadCardData.js'
+import NextPageBtn from '../NextPageBtn/NextPageBtn'
 
 const ResourcesContent = (props) => {
   const state = useContext(AppContext);
@@ -41,18 +41,17 @@ const ResourcesContent = (props) => {
       pageTitle='HCP Resources | Myfembree® (relugolix, estradiol, and norethindrone acetate) Tablets'
       description='Find downloadable resources for the Myfembree® Support Program including a program enrollment form and a patient consent form. See benefits&risks&BOXED WARNING.'
     >
-      {/* <PurpleCallout
+      <PurpleCallout
         title={<h1 className='white'>Myfembree<sup>®</sup> Support Program Resources</h1>}
-      /> */}
-      <HeaderHero
-        title={<>Myfembree<sup>®</sup> Support Program Resources</>}
       />
       <section className='resources-content-container'>
         <Container>
           <Row>
             <Col lg={{span: 10, offset: 1}}>
               <p className='resource-sub-title'>
-                Access, download, and print helpful resources, information, and support for your patients.
+                A number of helpful resources related to the Myfembree Support Program have
+                been developed for use in your office. Below, you can find downloads for
+                these resources.
               </p>
               <ResourcesDownloadCard data={ResourceDownloadCardData1} />
               <ResourcesDownloadCard data={ResourceDownloadCardData2} />
@@ -61,6 +60,12 @@ const ResourcesContent = (props) => {
               <ResourcesDownloadCard data={ResourceDownloadCardData5} />
               <ResourcesDownloadCard data={ResourceDownloadCardData6} />
             </Col>
+          </Row>
+          <Row>
+            <NextPageBtn
+              btnText='Explore Once-Daily Dosing With Myfembree'
+              btnLink='once-daily-dosing/'
+            />
           </Row>
         </Container>
       </section>
