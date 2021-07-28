@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext, useRef } from 'react'
 import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
-import { StickyContainer } from 'react-sticky'
 import { Container, Row, Col } from 'react-bootstrap'
 
 import AppProvider, { AppContext } from '../contexts/state'
@@ -28,19 +27,20 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
 
   const mounted = useRef(false);
   useEffect(() => {
-    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
     if (!mounted.current) {
       handleURLTab();
     } else {
       handleURLTab();
     }
+    return function cleanUp() {
+      window.removeEventListener('scroll', handleScroll);
+    }
   }, [])
 
   const handleScroll = () => {
-    window.addEventListener('scroll', () => {
-      let currentY = window.pageYOffset;
-      handleYDirection(currentY);
-    })
+    let currentY = window.pageYOffset;
+    handleYDirection(currentY);
   }
 
   const scrollToTop = () => {
@@ -81,34 +81,32 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
 
   return (
     <div className='layout'>
-      <StickyContainer>
-        <Helmet>
-          <meta charSet='utf-8' />
-          <title>{title}</title>
-          <meta name='title' content={pageTitle} />
-          <meta name='description' content={description} />
-          <link rel='canonical' href={canonicalURL} />
-          <meta name='url' content={canonicalURL} />
-          <html lang='en' />
-        </Helmet>
-        <Cookie />
-        <UtilityNav />
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>{title}</title>
+        <meta name='title' content={pageTitle} />
+        <meta name='description' content={description} />
+        <link rel='canonical' href={canonicalURL} />
+        <meta name='url' content={canonicalURL} />
+        <html lang='en' />
+      </Helmet>
+      <Cookie />
+      <UtilityNav />
 
-        <Header />
-        <div className='main'>{children}</div>
-        <div
-          className='back-to-top-container'
-          style={yDirection > 0 ? {display: 'inline'} : {display: 'none'}}
-          onMouseEnter={() => handleHovered(true)}
-          onMouseLeave={() => handleHovered(false)}
-          onClick={() => scrollToTop()}
-        >
-          <img src={hovered ? backToTopHovered : backToTop} alt='' />
-        </div>
-        <Isi />
-        <References references={references} />
-        <Footer />
-      </StickyContainer>
+      <Header />
+      <div className='main'>{children}</div>
+      <div
+        className='back-to-top-container'
+        style={yDirection > 0 ? {display: 'inline'} : {display: 'none'}}
+        onMouseEnter={() => handleHovered(true)}
+        onMouseLeave={() => handleHovered(false)}
+        onClick={() => scrollToTop()}
+      >
+        <img src={hovered ? backToTopHovered : backToTop} alt='' />
+      </div>
+      <Isi />
+      <References references={references} />
+      <Footer />
       <ExitRamp />
     </div>
   )

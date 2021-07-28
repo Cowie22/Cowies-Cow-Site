@@ -32,6 +32,11 @@ const HowItWorksContent = (props) => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('how-it-works');
     setReferences([1]);
+    return function cleanUp() {
+      handleActiveHeaderDropdown;
+      handleCurrentPage;
+      setReferences;
+    }
   }, []);
 
   return (

@@ -36,12 +36,16 @@ const MyfembreeSupportProgramContent = (props) => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('support');
     activeDropdownLink !== 4.2 && activeDropdownLink !== 4.3 && activeDropdownLink !== 4.4 ?
+    handleCurrentTopTab(1) : null;
+    activeDropdownLink !== 4.2 && activeDropdownLink !== 4.3 && activeDropdownLink !== 4.4 ?
     handleActiveDropdownLink(4.1) : null;
     setReferences([]);
 
     updateWindowDimensions();
     window.addEventListener('resize', updateWindowDimensions);
-    return () => window.removeEventListener('resize', updateWindowDimensions)
+    return function cleanUp() {
+      window.removeEventListener('resize', updateWindowDimensions);
+    }
   }, []);
 
   const updateWindowDimensions = () => {

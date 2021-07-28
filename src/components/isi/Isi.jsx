@@ -24,12 +24,13 @@ class ISI extends React.Component {
     this.handleScroll()
     window.addEventListener('resize', this.updateWindowDimensions)
     window.addEventListener('scroll', this.handleScroll)
-    window.addEventListener('scroll', () => this.toggleIsiHeader())
+    window.addEventListener('scroll', this.toggleIsiHeader)
   }
 
   componentWillUnmount = () => {
     window.removeEventListener('resize', this.updateWindowDimensions)
     window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener('scroll', this.toggleIsiHeader)
   }
 
   updateWindowDimensions = () => {
@@ -86,28 +87,24 @@ class ISI extends React.Component {
       })
     }
 
-    try {
-      let scrollTop =
-        document.body.scrollTop || document.documentElement.scrollTop
-      let triggerElement = document
-        .querySelector('.page-isi #trigger-tray')
-        .getBoundingClientRect()
-      let isiTrayHeight = document
-        .querySelector('.isi-tray')
-        .getBoundingClientRect().height
+    let scrollTop =
+      document.body.scrollTop || document.documentElement.scrollTop
+    let triggerElement = document
+      .querySelector('.page-isi #trigger-tray')
+      .getBoundingClientRect()
+    let isiTrayHeight = document
+      .querySelector('.isi-tray')
+      .getBoundingClientRect().height
 
-      let trayHideHeight =
-        triggerElement.top + scrollTop - window.innerHeight + isiTrayHeight
-      let trayShowHeight =
-        triggerElement.top + scrollTop - window.innerHeight + isiTrayHeight
+    let trayHideHeight =
+      triggerElement.top + scrollTop - window.innerHeight + isiTrayHeight
+    let trayShowHeight =
+      triggerElement.top + scrollTop - window.innerHeight + isiTrayHeight
 
-      if (scrollTop >= trayHideHeight) {
-        fadeOutEffect()
-      } else if (scrollTop < trayShowHeight) {
-        fadeInEffect()
-      }
-    } catch (e) {
-      console.log(e)
+    if (scrollTop >= trayHideHeight) {
+      fadeOutEffect()
+    } else if (scrollTop < trayShowHeight) {
+      fadeInEffect()
     }
   }
 

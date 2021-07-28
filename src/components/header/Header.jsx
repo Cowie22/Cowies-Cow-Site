@@ -1,6 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Sticky, StickyContainer } from 'react-sticky'
 import AppProvider, { AppContext } from '../../contexts/state'
 
 import MainNav from './MainNav'

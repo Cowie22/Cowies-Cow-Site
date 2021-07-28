@@ -14,7 +14,6 @@ export default props => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
-    window.removeEventListener('scroll', handleScroll);
     let modalContainer = document.getElementById('exit-container');
     if (state.isExitRampOpen === true) {
       document.body.classList.add('modal-hidden');
@@ -23,7 +22,10 @@ export default props => {
       document.body.classList.remove('modal-hidden');
       modalContainer.classList.remove('modal-overflow');
     }
-  })
+    return function cleanUp() {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, [])
 
   const handleScroll = () => {
     handleYDirection(window.pageYOffset);
