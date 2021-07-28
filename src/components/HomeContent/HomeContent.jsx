@@ -10,10 +10,10 @@ import RectangleCard from '../RectangleCard/RectangleCard'
 import RectangleCardData from '../RectangleCard/RectangleCardData.js'
 import HCPModal from '../HCPModal/HCPModal'
 
-import BGImg from '../../assets/images/home-bg-img-1X.webp'
-import BGImgFB from '../../assets/images/home-bg-img-1X.png'
-import BGImgMobile from '../../assets/images/home-bg-img-1X-mobile.webp'
-import BGImgMobileFB from '../../assets/images/home-bg-img-1X-mobile.png'
+import BGImg from '../../assets/images/home-bg-img-1-2X.webp'
+import BGImgFB from '../../assets/images/home-bg-img-1-2X.png'
+import BGImgMobile from '../../assets/images/home-bg-img-1-2X-mobile.webp'
+import BGImgMobileFB from '../../assets/images/home-bg-img-1-2X-mobile.png'
 
 
 const HomeContent = (props) => {
