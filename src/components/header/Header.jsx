@@ -79,6 +79,7 @@ class Header extends React.Component {
             handleActiveHeaderDropdown,
             activeDropdownLink,
             handleActiveDropdownLink,
+            handleCurrentTopTab
           } = context;
           return (
             yDirection > 0 && !isNavOpen ?
@@ -110,6 +111,7 @@ class Header extends React.Component {
                     handleActiveHeaderDropdown={handleActiveHeaderDropdown}
                     activeDropdownLink={activeDropdownLink}
                     handleActiveDropdownLink={handleActiveDropdownLink}
+                    handleCurrentTopTab={handleCurrentTopTab}
                   />
                 </header>
               </div>
@@ -141,6 +143,7 @@ class Header extends React.Component {
                     handleActiveHeaderDropdown={handleActiveHeaderDropdown}
                     activeDropdownLink={activeDropdownLink}
                     handleActiveDropdownLink={handleActiveDropdownLink}
+                    handleCurrentTopTab={handleCurrentTopTab}
                   />
                 </header>
               </div>
@@ -158,6 +161,7 @@ class Header extends React.Component {
                     handleActiveHeaderDropdown={handleActiveHeaderDropdown}
                     activeDropdownLink={activeDropdownLink}
                     handleActiveDropdownLink={handleActiveDropdownLink}
+                    handleCurrentTopTab={handleCurrentTopTab}
                   />
                 </header>
               </div>
@@ -175,6 +179,7 @@ class Header extends React.Component {
                     handleActiveHeaderDropdown={handleActiveHeaderDropdown}
                     activeDropdownLink={activeDropdownLink}
                     handleActiveDropdownLink={handleActiveDropdownLink}
+                    handleCurrentTopTab={handleCurrentTopTab}
                   />
                 </header>
               </div>

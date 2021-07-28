@@ -31,7 +31,7 @@ const ResourcesContent = (props) => {
   useEffect(() => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('resources');
-    handleActiveDropdownLink(4.2)
+    handleActiveDropdownLink(4.5)
   }, []);
 
   return (

@@ -8,6 +8,7 @@ const HeaderDropdown = (props) => {
     activeDropdownLink,
     handleActiveDropdownLink,
     handleActiveHeaderDropdown,
+    handleCurrentTopTab,
     currentPage,
     handleCurrentPage,
   } = props;
@@ -19,7 +20,15 @@ const HeaderDropdown = (props) => {
           <ul className='header-dropdown-ul'>
             {
               currentData.list.map((listData, i) => {
-                const { listName, listLink, innerPageNav, externalLink, pageName, activeDropdownVal } = listData;
+                const {
+                  listName,
+                  listLink,
+                  innerPageNav,
+                  externalLink,
+                  pageName,
+                  activeDropdownVal,
+                  tabLink
+                } = listData;
                 return (
                   <li
                     key={i}
@@ -30,6 +39,7 @@ const HeaderDropdown = (props) => {
                     onClick={() => {
                       handleActiveDropdownLink(activeDropdownVal);
                       handleActiveHeaderDropdown('');
+                      tabLink ? handleCurrentTopTab(tabLink) : null;
                     }}
                   >
                     {

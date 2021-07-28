@@ -23,6 +23,9 @@ const SliderTabNav = (props) => {
 
   return (
     <Row>
+      <div id='drive-to-slider-nav' className='drive-to-container'>
+
+      </div>
       <Col
         xs={!tab3 ? 6 : 4}
         className='tab-column'

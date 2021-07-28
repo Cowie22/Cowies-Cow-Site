@@ -83,6 +83,7 @@ class MainNav extends React.Component {
       handleActiveDropdownLink,
       currentPage,
       handleCurrentPage,
+      handleCurrentTopTab,
     } = this.props
 
     return (
@@ -276,6 +277,7 @@ class MainNav extends React.Component {
                 handleActiveHeaderDropdown={handleActiveHeaderDropdown}
                 currentPage={currentPage}
                 handleCurrentPage={handleCurrentPage}
+                handleCurrentTopTab={handleCurrentTopTab}
               />
             </div>
           </Container>
@@ -466,12 +468,12 @@ class MainNav extends React.Component {
                         </li>
                         <li
                           onClick={() => {
-                            handleActiveDropdownLink(4.2)
+                            handleActiveDropdownLink(4.5)
                             handleActiveHeaderDropdown('')
                             this.toggleNav()
                           }}
                           className={
-                            activeDropdownLink === 4.2 &&
+                            activeDropdownLink === 4.5 &&
                             currentPage === 'resources'
                               ? 'header-dropdown-active'
                               : ''

@@ -8,7 +8,6 @@ import Enrollment from '../MyfembreeSupportProgramTabs/Enrollment/Enrollment'
 import Copay from '../MyfembreeSupportProgramTabs/Copay/Copay'
 import NextPageBtn from '../NextPageBtn/NextPageBtn'
 import TermsAndConditions from '../TermsAndConditions/TermsAndConditions'
-
 import SliderTabNav from '../SliderTabNav/SliderTabNav'
 import PurpleCallout from '../PurpleCallout/PurpleCallout'
 
@@ -28,13 +27,15 @@ const MyfembreeSupportProgramContent = (props) => {
     handleActiveHeaderDropdown,
     currentTopTab,
     handleCurrentTopTab,
+    activeDropdownLink,
     handleActiveDropdownLink,
   } = state;
 
   useEffect(() => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('support');
-    handleActiveDropdownLink(4.1);
+    activeDropdownLink !== 4.2 && activeDropdownLink !== 4.3 && activeDropdownLink !== 4.4 ?
+    handleActiveDropdownLink(4.1) : null;
 
     updateWindowDimensions();
     window.addEventListener('resize', updateWindowDimensions);
