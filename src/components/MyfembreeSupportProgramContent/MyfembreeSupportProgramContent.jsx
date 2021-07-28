@@ -7,6 +7,7 @@ import Overview from '../MyfembreeSupportProgramTabs/Overview/Overview'
 import Enrollment from '../MyfembreeSupportProgramTabs/Enrollment/Enrollment'
 import Copay from '../MyfembreeSupportProgramTabs/Copay/Copay'
 import NextPageBtn from '../NextPageBtn/NextPageBtn'
+import TermsAndConditions from '../TermsAndConditions/TermsAndConditions'
 
 import SliderTabNav from '../SliderTabNav/SliderTabNav'
 import PurpleCallout from '../PurpleCallout/PurpleCallout'
@@ -247,6 +248,15 @@ const MyfembreeSupportProgramContent = (props) => {
                 />
             }
           </Row>
+          {
+            currentTopTab === 1 || currentTopTab === 2 ?
+            <Row>
+              <TermsAndConditions />
+            </Row>
+            :
+            <>
+            </>
+          }
         </Container>
       </section>
     </Layout>

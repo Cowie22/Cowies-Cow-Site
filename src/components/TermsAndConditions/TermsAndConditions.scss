@@ -1,0 +1,18 @@
+.terms-and-conditions-container {
+  padding: 60px 0 0 0;
+  p {
+    padding-bottom: 8px;
+  }
+  h6 {
+    padding-bottom: 16px;
+    &:last-of-type {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .terms-and-conditions-container {
+    padding: 40px 0 0 0;
+  }
+}
