@@ -61,23 +61,6 @@
   }
 }
 
-.support-lower-container {
-  padding: 60px 0;
-  background: $white;
-  .support-lower-sub-title {
-    padding: 16px 0 40px 0;
-  }
-  .support-lower-inner-container {
-    margin-bottom: 40px;
-  }
-  .person-icon-row {
-    padding: 16px 0 60px 0;
-  }
-  .lower-content-footnote {
-    padding: 16px 0 0px 0;
-  }
-}
-
 @media screen and (max-width: 1200px) and (min-width: 992px) {
   .support-mid-container {
     .support-mid-container-lower-cards {
@@ -128,22 +111,6 @@
           }
         }
       }
-    }
-  }
-
-  .support-lower-container {
-    padding: 40px 0;
-    .support-lower-sub-title {
-      padding: 16px 0;
-    }
-    .support-lower-inner-container {
-      margin-bottom: 24px;
-    }
-    .person-icon-row {
-      padding: 24px 0;
-    }
-    .lower-content-footnote {
-      padding: 16px 0 0px 0;
     }
   }
 }

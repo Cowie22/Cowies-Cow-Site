@@ -1,29 +1,24 @@
 .support-content-block-large-container {
-  padding: 60px 0;
-  border-bottom: 2px solid #5C068C;
-  background: #F1F7F4;
+  padding: 0px 0 60px 0;
+  border-bottom: 1px solid #ADADAD;
+  background: #FFFFFF;
   h2 {
     padding-bottom: 24px;
   }
   .support-block-large-img-container {
     width: 100%;
     img {
-      width: 100%;
+      width: 90%;
     }
+  }
+  .copy-padding {
+    padding: 16px 0 32px 0;
   }
   .support-content-block-subtitle {
     padding: 24px 0 8px 0;
   }
-  .support-block-enroll-card-container {
-    padding: 24px 0;
-    background: #FFFFFF;
-    border: 1px solid $purple;
-    box-sizing: border-box;
-    border-radius: 16px;
-    margin: 40px 0 16px 0;
-    h3 {
-      padding-bottom: 8px;
-    }
+  .no-col-padding {
+    padding: 0;
   }
 }
 
@@ -33,54 +28,7 @@
     .support-block-large-img-container {
       margin-bottom: 16px;
     }
-    .support-block-enroll-card-container {
-      margin: 16px 0 0px 0;
-      padding: 24px;
-    }
   }
-}
-
-.enroll.btn-text-btm {
- 
-  padding-top: 15px
-
-}
-
-
-
-// @media screen and (min-width: 992px) {
-//   .enroll-btn-text-top {
-//     display: block
-//   }
-
-//   .enroll-btn-text-btm {
-//     display: none;
-    
-//   }
-// }
-
-// @media screen and (max-width: 991px) {
-//   .enroll.btn-text-btm {
-//     display: block;
-  
-  
-//   }
-//   .enroll-btn-text-top {
-//     display: none
-//   }
-
-//   .enroll-btn {
-//     padding-bottom: 15px;
-//   }
-// }
-
-.enroll-btn {
-  margin: auto;
-  padding-bottom: 16px;
-}
-
-.enroll-btn-text {
-  padding-left: 13px
 }
 
 

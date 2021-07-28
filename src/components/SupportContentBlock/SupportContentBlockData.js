@@ -53,7 +53,7 @@ const SupportContentBlockData2 = [
     calculating the out-of-pocket threshold for Medicare Part D plans. No purchase necessary. Program is not health
     insurance, nor is participation a guarantee of insurance coverage. Other limitations may apply. Myovant Sciences
     reserves the right to rescind, revoke, or amend the Program and discontinue support at any time without notice.`,
-    bgColor: '#F1F7F4',
+    bgColor: '#FFFFFF',
   }
 ]
 

@@ -9,63 +9,46 @@ const SupportContentBlockLarge = (props) => {
     <section className='support-content-block-large-container'>
       <Container>
         <Row>
-          <Col lg={{span: 10, offset: 1}}>
+          <Col lg={{span: 12, offset: 0}} className='no-col-padding'>
             <h2 className='blue'>
               Myfembree Copay Assistance Program
             </h2>
           </Col>
         </Row>
         <Row>
-          <Col lg={{span: 5, offset: 1}}>
+          <Col lg={{span: 6, offset: 0}} className='no-col-padding'>
             <div className='support-block-large-img-container'>
               <picture>
                 <source srcSet={cardImg} className='expand-story-img' type="image/webp" />
                 <img loading='lazy' src={cardImgFB} className='expand-story-img' alt='' />
               </picture>
-              {/* <img src={cardImg} /> */}
             </div>
           </Col>
-          <Col lg={{span: 5, offset: 0}}>
+          <Col lg={{span: 6, offset: 0}} className='no-col-padding'>
             <p>
               The Myfembree Copay Assistance Program can provide financial assistance to eligible patients
               with commercial insurance when they get their prescription from their retail or mail-order
               pharmacy during the cost-sharing portion of their insurance benefit.
             </p>
-          </Col>
-        </Row>
-        <Row>
-          <Col lg={{span: 10, offset: 1}}>
-            <div className='support-block-enroll-card-container'>
-                {/* <a href='https://portal.trialcard.com/myovant/myfembree/copay/ ' target='_blank'><h3 className='blue text-center'>Enroll Today! </h3></a>
-              */}
-              <Row>
-                {/* <Col lg={{span: 6, offset: 1}}>
-                  <p className='extra-bold enroll-btn-text-top' >
-                    Enrollment into this copay program is facilitated through the Myfembree website, over the
-                    phone, or by scanning a QR code included on select Myfembree Support Program resources
-                  </p>
-                </Col> */}
-                <Col lg={{span: 3, offset: 1}} className='enroll-btn'>
+            <p className='extra-bold copy-padding'>
+              Enrollment into this copay program is facilitated through the Myfembree website, over the phone,
+              or by scanning a QR code included on select Myfembree Support Program resources.
+            </p>
+            <Row>
+              <Col lg={{span: 8, offset: 0}}>
+                <div className='cta-btn-container'>
                   <a href='https://portal.trialcard.com/myovant/myfembree/copay/ ' target='_blank'>
-                    <button className='cta-btn pink-btn enroll-btn'>
+                    <button className='cta-btn pink-btn'>
                       Enroll Today!
                     </button>
                   </a>
-                </Col>
-              </Row>
-              <Row>
-                <Col lg={{span: 10, offset: 1}}>
-                  <p className='extra-bold enroll-btn-text'>
-                    Enrollment into this copay program is facilitated through the Myfembree website, over the
-                    phone, or by scanning a QR code included on select Myfembree Support Program resources
-                  </p>
-                </Col>
-              </Row>
-            </div>
+                </div>
+              </Col>
+            </Row>
           </Col>
         </Row>
         <Row>
-          <Col lg={{span: 10, offset: 1}}>
+          <Col lg={{span: 12, offset: 0}} className='no-col-padding'>
             <h6 className='extra-bold support-content-block-subtitle'>
               Myfembree Copay Assistance Program: Terms and Conditions
             </h6>

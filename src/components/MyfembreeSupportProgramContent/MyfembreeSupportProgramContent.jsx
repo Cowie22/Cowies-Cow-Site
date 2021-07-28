@@ -10,17 +10,11 @@ import NextPageBtn from '../NextPageBtn/NextPageBtn'
 
 import SliderTabNav from '../SliderTabNav/SliderTabNav'
 import PurpleCallout from '../PurpleCallout/PurpleCallout'
-import PersonIconCard from '../PersonIconCard/PersonIconCard'
-import SupportContentBlock from '../SupportContentBlock/SupportContentBlock'
-import SupportContentBlockData from '../SupportContentBlock/SupportContentBlockData.js'
-import SupportContentBlockLarge from '../SupportContentBlockLarge/SupportContentBlockLarge'
 
 import BGImg from '../../assets/images/support-bg-img.webp'
 import BGImgFB from '../../assets/images/support-bg-img.png'
 import BGImgMobile from '../../assets/images/support-bg-img-mobile.webp'
 import BGImgMobileFB from '../../assets/images/support-bg-img-mobile.png'
-import telemarketer from '../../assets/images/telemarketer-icon.svg'
-import manager from '../../assets/images/manager-icon.svg'
 
 
 const MyfembreeSupportProgramContent = (props) => {
@@ -35,12 +29,6 @@ const MyfembreeSupportProgramContent = (props) => {
     handleCurrentTopTab,
     handleActiveDropdownLink,
   } = state;
-
-  const {
-    SupportContentBlockData1,
-    SupportContentBlockData2,
-    SupportContentBlockData3,
-  } = SupportContentBlockData;
 
   useEffect(() => {
     handleActiveHeaderDropdown('');
@@ -254,62 +242,13 @@ const MyfembreeSupportProgramContent = (props) => {
                 />
               :
                 <NextPageBtn
-                  btnText='See Safety Profile for Myfembree'
-                  btnLink='myfembree-support-program/'
+                  btnText='Explore Once-Daily Dosing With Myfembree'
+                  btnLink='once-daily-dosing/'
                 />
             }
           </Row>
         </Container>
       </section>
-
-
-
-
-      <section className='support-lower-container'>
-        <Container>
-          <Row>
-            <Col lg={{span: 10, offset: 1}}>
-              <h2 className='blue'>
-                Enrolling patients in the Myfembree Support Program
-              </h2>
-              <p className='extra-bold support-lower-sub-title'>
-                Enrollment can be accomplished by:
-              </p>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={{span: 10, offset: 1}}>
-              <Row className='person-icon-row'>
-                <PersonIconCard
-                  title={'Support Coordinators'}
-                  icon={telemarketer}
-                />
-                <PersonIconCard
-                  title={'Virtual Reimbursement Managers'}
-                  icon={manager}
-                />
-              </Row>
-              <h6 className='lower-content-footnote'>
-                *See below for full terms and conditions.
-              </h6>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      <div className='drive-to-container' id='financial-assistance'></div>
-      <SupportContentBlockLarge />
-      <div className='drive-to-container' id='bridge-program'></div>
-      <SupportContentBlock
-        data={SupportContentBlockData1}
-      />
-      <div className='drive-to-container' id='quick-start-program'></div>
-      <SupportContentBlock
-        data={SupportContentBlockData2}
-      />
-      <div className='drive-to-container' id='patient-assistance-program'></div>
-      <SupportContentBlock
-        data={SupportContentBlockData3}
-      />
     </Layout>
   )
 }
