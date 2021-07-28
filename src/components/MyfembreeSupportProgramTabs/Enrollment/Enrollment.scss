@@ -1,0 +1,45 @@
+.enrollment-container {
+  padding: 60px 0;
+  h2 {
+    padding: 8px 0 24px 0;
+  }
+  .reduction-skinny-callout-container {
+    background: #F1F7F4;
+    padding: 8px;
+  }
+  .graph-container {
+    padding: 24px 0;
+  }
+  .mid-section-container {
+    padding: 36px 0 24px 0;
+  }
+  .footnote-container {
+    h6 {
+      &:first-of-type {
+        padding-bottom: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .enrollment-container {
+    padding: 40px 0;
+    h2 {
+      padding: 8px 0 16px 0;
+    }
+    .graph-container {
+      padding: 16px 0;
+    }
+    .mid-section-container {
+      padding: 24px 0 16px 0;
+    }
+    .footnote-container {
+      h6 {
+        &:first-of-type {
+          padding-bottom: 16px;
+        }
+      }
+    }
+  }
+}

@@ -77,6 +77,9 @@ $light-teal: #9ed8cf;
 @import "../components/SafetyTabs/AdverseEvents/AdverseEvents.scss";
 @import "../components/SafetyTabs/BMD/BMD.scss";
 @import "../components/SafetyTabs/Return/Return.scss";
+@import "../components/MyfembreeSupportProgramTabs/Overview/Overview.scss";
+@import "../components/MyfembreeSupportProgramTabs/Enrollment/Enrollment.scss";
+@import "../components/MyfembreeSupportProgramTabs/Copay/Copay.scss";
 
 html {
   // UI/UX use multiples of 8px

@@ -6,14 +6,6 @@
   background-size: cover;
   padding: 60px 0;
   position: relative;
-  .top-title {
-    letter-spacing: 0.5em;
-    font-weight: 400;
-    padding-bottom: 8px;
-    background: linear-gradient(90deg, rgba(175,212,196,1) 0%, rgba(255,255,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
   .support-header-card-callout {
     padding: 16px 40px;
     background: rgba(255, 255, 255, 0.3);
@@ -27,36 +19,43 @@
     }
   }
   .support-sub-title {
-    padding: 24px 0 8px 0;
+    padding: 32px 0 8px 0;
   }
 }
 
 .support-mid-container {
-  padding: 60px 0;
-  background: $white;
-  h2 {
-    padding-bottom: 40px;
-  }
-  .support-mid-container-lower-cards {
-    padding: 16px 0;
-    .support-mid-container-large-card {
-      padding: 32px;
-      height: 274px;
-      background: #FFFFFF;
-      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
-      border-radius: 16px;
-      .icon-container {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        p {
-          &:first-of-type {
-            padding: 8px 0;
-          }
-        }
+  padding: 16px 0 0px 0;
+  .tab-arrow-container {
+    transition: all .7s;
+    transition-delay: .1s;
+    position: relative;
+    top: 200px;
+    &.arrow-right-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    .purple-arrow {
+      path {
+        fill: $purple;
+        transition: all .7s;
+        transition-delay: .1s;
+      }
+    }
+    .grey-arrow {
+      path {
+        fill: $inactive-grey;
+        transition: all .7s;
+        transition-delay: .1s;
+      }
+    }
+    .pink-arrow {
+      path {
+        fill: $pink;
+        transition: all .7s;
+        transition-delay: .1s;
       }
     }
   }
@@ -97,11 +96,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40px 0;
-    .top-title {
-      padding-bottom: 8px;
-      font-size: 22px;
-      line-height: 28px;
-    }
     .support-header-card-callout {
       margin-top: 16px;
       padding: 16px;
