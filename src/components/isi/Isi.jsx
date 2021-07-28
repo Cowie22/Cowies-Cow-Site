@@ -135,7 +135,7 @@ class ISI extends React.Component {
     } = this.state
     return (
       <>
-        <div id='isi' className='drive-to-container'></div>
+        <div id='isi'></div>
         <section className='isi'>
           <div
             className={isIsiExpanded ? 'isi-overlay' : ''}
