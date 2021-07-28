@@ -7,9 +7,9 @@ const ContentBTNCard = (props) => {
     <div className='content-btn-card-container'>
       <Row>
         <Col lg={{span: 6, offset: 1}}>
-          <h3 className='purple'>
+          <p className='purple extra-bold'>
             {title}
-          </h3>
+          </p>
         </Col>
         <Col lg={{span: 4}}>
           <div className='content-btn-card-btn-container'>

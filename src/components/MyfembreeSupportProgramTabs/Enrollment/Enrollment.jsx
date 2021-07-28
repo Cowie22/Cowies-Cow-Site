@@ -2,10 +2,12 @@ import React, { useState, useEffect, useContext, useRef } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { AppContext } from '../../../contexts/state'
 
-import InfoGraphic from '../../InfoGraphic/InfoGraphic'
-import InfoGraphicData from '../../InfoGraphic/InfoGraphicData.js'
+import ContentBTNCard from '../../ContentBTNCard/ContentBTNCard'
+import ListIconCard from '../../ListIconCard/ListIconCard'
+import ListIconCardData from '../../ListIconCard/ListIconCardData.js'
+import PurpleLineCallout from '../../PurpleLineCallout/PurpleLineCallout'
 
-import IIcon from '../../../assets/images/I-icon.svg'
+import personSupportIcon from '../../../assets/images/man-and-women-support-icon.svg'
 
 const Enrollment = (props) => {
   const state = useContext(AppContext);
@@ -23,58 +25,53 @@ const Enrollment = (props) => {
     }
   }, []);
 
-  const { ReductionData1, ReductionData2 } = InfoGraphicData;
+  const {
+    ListIconCardData1,
+    ListIconCardData2,
+    ListIconCardData3,
+  } = ListIconCardData;
 
   return (
     <div className='enrollment-container'>
-      <h4 className='mulish purple'>
-        KEY SECONDARY ENDPOINT
-      </h4>
+      <ContentBTNCard
+        title={
+          `If your patient already has a Myfembree prescription, they can provide their e-consent for
+          enrollment and sharing protected health information`
+        }
+        btnText={'Provide e-Consent'}
+        link={'https://portal.trialcard.com/myovant/myfembree/consent/'}
+      />
       <h2 className='blue'>
-        Myfembree delivered substantial and sustained reductions in menstrual bleeding<sup>1,2</sup>
+        3 ways to enroll patients in the Myfembree Support Program
       </h2>
-      <div className='reduction-skinny-callout-container'>
-        <ul className='purple-ul'>
-          <li>
-            Menstrual blood loss volume assessment at Week 4 through Week 20 was prespecified, but not
-            adjusted for multiplicity<sup>2</sup>
-          </li>
-        </ul>
-      </div>
       <Row>
-        <Col lg={{span: 12, offset: 0}}>
-          <div className='graph-container'>
-            <InfoGraphic data={ReductionData1} />
-          </div>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <div className='mid-section-container'>
-            <h4 className='mulish purple'>
-              ADDITIONAL ENDPOINT
-            </h4>
-            <h2 className='blue'>
-              Myfembree maintained improvement in menstrual bleeding through 1 year<sup>4</sup>
-            </h2>
-            <div className='lower-graph-container'>
-              <InfoGraphic data={ReductionData2} />
-            </div>
-          </div>
-        </Col>
+        <ListIconCard data={ListIconCardData1} />
+        <ListIconCard data={ListIconCardData2} />
+        <ListIconCard data={ListIconCardData3} />
       </Row>
       <Row>
         <Col lg={{span: 9}}>
           <div className='footnote-container'>
             <h6>
-              The <img src={IIcon} alt='' /> indicates standard error of the mean.
-            </h6>
-            <h6>
-              Patients who completed LIBERTY 1 and 2 and met enrollment criteria were eligible for the
-              LIBERTY open-label extension study. Data shown are only for patients who continued
-              enrollment in the open-label extension study.
+              *See below for full terms and conditions.
             </h6>
           </div>
+        </Col>
+      </Row>
+      <Row>
+        <Col lg={{span: 12}}>
+          <PurpleLineCallout
+            content={
+              <div className='enrolment-purple-line-card-content-container'>
+                <img src={personSupportIcon} alt='' />
+                <p className='extra-bold purple'>
+                  The office can call <a href='tel:1-833-693-3627'>1-833-MYFEMBREE (1-833-693-3627)</a> to speak
+                  to a Support Coordinator or Virtual Reimbursement Manager about access and reimbursement
+                  status questions
+                </p>
+              </div>
+            }
+          />
         </Col>
       </Row>
     </div>

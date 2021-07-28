@@ -30,7 +30,7 @@ const ListIconCardData1 = [
       </li>
     </ul>,
     icon: computerIcon,
-    columns: {span: 10, offset: 1},
+    columns: {span: 12, offset: 0},
   }
 ]
 
@@ -51,7 +51,7 @@ const ListIconCardData2 = [
       </li>
     </ul>,
     icon: paper,
-    columns: {span: 10, offset: 1},
+    columns: {span: 12, offset: 0},
   }
 ]
 
@@ -71,7 +71,7 @@ const ListIconCardData3 = [
       </li>
     </ul>,
     icon: iphone,
-    columns: {span: 10, offset: 1},
+    columns: {span: 12, offset: 0},
   }
 ]
 

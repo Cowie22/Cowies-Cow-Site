@@ -10,11 +10,7 @@ import NextPageBtn from '../NextPageBtn/NextPageBtn'
 
 import SliderTabNav from '../SliderTabNav/SliderTabNav'
 import PurpleCallout from '../PurpleCallout/PurpleCallout'
-import ListIconCard from '../ListIconCard/ListIconCard'
-import ListIconCardData from '../ListIconCard/ListIconCardData.js'
-import PurpleLineCallout from '../PurpleLineCallout/PurpleLineCallout'
 import PersonIconCard from '../PersonIconCard/PersonIconCard'
-import ContentBTNCard from '../ContentBTNCard/ContentBTNCard'
 import SupportContentBlock from '../SupportContentBlock/SupportContentBlock'
 import SupportContentBlockData from '../SupportContentBlock/SupportContentBlockData.js'
 import SupportContentBlockLarge from '../SupportContentBlockLarge/SupportContentBlockLarge'
@@ -39,12 +35,6 @@ const MyfembreeSupportProgramContent = (props) => {
     handleCurrentTopTab,
     handleActiveDropdownLink,
   } = state;
-
-  const {
-    ListIconCardData1,
-    ListIconCardData2,
-    ListIconCardData3,
-  } = ListIconCardData;
 
   const {
     SupportContentBlockData1,
@@ -222,13 +212,59 @@ const MyfembreeSupportProgramContent = (props) => {
           </Row>
         </Container>
       </section>
-      <PurpleCallout
-        title={
-          <h2 className='white'>
-            The prescriber may submit Myfembree prescriptions directly to the patient's retail or mail-order pharmacy
-          </h2>
-        }
-      />
+      {
+        currentTopTab === 1 ?
+          <PurpleCallout
+            title={
+              <h2 className='white'>
+                If assistance is required during the enrollment process, call the Myfembree
+                Support Program at <a href='tel:1-833-693-3627'><u>1-833-MYFEMBREE</u> (<u>1-833-693-3627</u>)</a>,
+                8 <sub>AM</sub>–8 <sub>PM</sub> ET, Monday–Friday
+              </h2>
+            }
+          />
+        : currentTopTab === 2 ?
+          <PurpleCallout
+            title={
+              <h2 className='white'>
+                The prescriber may submit Myfembree prescriptions directly to the patient’s retail or
+                mail-order pharmacy
+              </h2>
+            }
+          />
+        :
+          <>
+          </>
+      }
+      <section>
+        <Container>
+          <Row>
+            {
+              currentTopTab === 1 ?
+                <NextPageBtn
+                  btnText='Get Enrollment & e-Consent Information'
+                  btnLink='myfembree-support-program/'
+                  handleBtnTabOver={handleBtnTabOver}
+                />
+              : currentTopTab === 2 ?
+                <NextPageBtn
+                  btnText='Explore Our Support Programs'
+                  btnLink='myfembree-support-program/'
+                  handleBtnTabOverTwo={handleBtnTabOverTwo}
+                />
+              :
+                <NextPageBtn
+                  btnText='See Safety Profile for Myfembree'
+                  btnLink='myfembree-support-program/'
+                />
+            }
+          </Row>
+        </Container>
+      </section>
+
+
+
+
       <section className='support-lower-container'>
         <Container>
           <Row>
@@ -241,24 +277,8 @@ const MyfembreeSupportProgramContent = (props) => {
               </p>
             </Col>
           </Row>
-          <div className='support-lower-inner-container'>
-            <Row>
-              <ListIconCard data={ListIconCardData1} />
-              <ListIconCard data={ListIconCardData2} />
-              <ListIconCard data={ListIconCardData3} />
-            </Row>
-          </div>
           <Row>
             <Col lg={{span: 10, offset: 1}}>
-              <PurpleLineCallout
-                content={
-                  <p className='extra-bold purple'>
-                    The office can call <a href='tel:1-833-693-3627'>1-833-MYFEMBREE (1-833-693-3627)</a> to speak
-                    to a Support Coordinator or Virtual Reimbursement Manager about access and reimbursement
-                    status questions
-                  </p>
-                }
-              />
               <Row className='person-icon-row'>
                 <PersonIconCard
                   title={'Support Coordinators'}
@@ -269,14 +289,6 @@ const MyfembreeSupportProgramContent = (props) => {
                   icon={manager}
                 />
               </Row>
-              <ContentBTNCard
-                title={
-                  `If your patient already has a Myfembree prescription, they can provide their e-consent
-                  for enrollment and sharing protected health information`
-                }
-                btnText={'Provide e-Consent'}
-                link={'https://portal.trialcard.com/myovant/myfembree/consent/'}
-              />
               <h6 className='lower-content-footnote'>
                 *See below for full terms and conditions.
               </h6>
@@ -284,15 +296,6 @@ const MyfembreeSupportProgramContent = (props) => {
           </Row>
         </Container>
       </section>
-      <PurpleCallout
-        title={
-          <h2 className='white'>
-            If assistance is required during the enrollment process, call the Myfembree
-            Support Program at <a href='tel:1-833-693-3627'><u>1-833-MYFEMBREE</u> (<u>1-833-693-3627</u>)</a>,
-            8 <sub>AM</sub>–8 <sub>PM</sub> ET, Monday–Friday
-          </h2>
-        }
-      />
       <div className='drive-to-container' id='financial-assistance'></div>
       <SupportContentBlockLarge />
       <div className='drive-to-container' id='bridge-program'></div>
