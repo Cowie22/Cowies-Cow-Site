@@ -28,7 +28,7 @@ const Reduction = (props) => {
   return (
     <div className='bmd-container'>
       <h2 className='blue'>
-        Changes in lumbar spine bone mineral density (BMD) with Myfembree over time<sup>1</sup>
+        Change in lumbar spine bone mineral density (BMD) with Myfembree<sup>1</sup>
       </h2>
       <div className='bmd-skinny-callout-container'>
         <ul className='purple-ul'>
@@ -77,22 +77,11 @@ const Reduction = (props) => {
         <Col>
           <div className='mid-section-container'>
             <h2 className='blue'>
-              BMD changes in women treated with Myfembree can be assessed by observing changes over the
-              same time period in untreated women with uterine fibroids<sup>1</sup>
+              12-month BMD changes in Myfembree-treated and untreated women with uterine fibroids<sup>1</sup>
             </h2>
             <div>
               <InfoGraphic data={BMDData2} />
             </div>
-            <Row>
-              <Col lg={{span: 10, offset: 1}}>
-                <div className='mid-footnote-container'>
-                  <p>
-                    In the LIBERTY open-label extension study, continued bone loss was observed
-                    with 12 months of continuous treatment with Myfembree.
-                  </p>
-                </div>
-              </Col>
-            </Row>
           </div>
         </Col>
       </Row>

@@ -52,10 +52,10 @@ const TrialDesignExpandCard = (props) => {
                 bleeding associated with uterine fibroids.<sup>1</sup>
               </p>
               <p>
-                <strong>Primary endpoints included:</strong>  The proportion of women in the Myfembree arm who
-                achieved menstrual blood loss volume &#60;80 mL per cycle; <strong><em>and</em></strong> ≥50%
-                reduction in menstrual bleeding from baseline over the last 35 days of treatment compared
-                to placebo.<sup>1</sup>
+                <strong>Primary endpoint:</strong> The proportion of women in the Myfembree arm who
+                achieved menstrual blood loss volume &#60;80 mL; <strong><em>and</em></strong> ≥50%
+                reduction in menstrual blood loss volume from baseline over the last 35 days of
+                treatment compared to placebo.<sup>1</sup>
               </p>
               <p>
                 <strong>Key secondary endpoints included:</strong> Mean reduction in menstrual blood loss volume

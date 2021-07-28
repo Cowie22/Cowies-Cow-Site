@@ -42,19 +42,19 @@ const TrialDesign = (props) => {
         </p>
         <ul className='purple-ul'>
           <li>
-            Menstrual blood loss volume &#60;80 mL per cycle; <strong><em>and</em></strong>
+            Menstrual blood loss volume &#60;80 mL; <strong><em>and</em></strong>
           </li>
           <li>
-            ≥50% reduction in menstrual bleeding from baseline over the last 35 days of treatment
+            ≥50% reduction in menstrual blood loss volume from baseline over the last 35 days of treatment
             compared to placebo
           </li>
         </ul>
         <p className='purple extra-bold second-list-header'>
-          Key secondary endpoints <sup>2</sup>:
+          Key secondary endpoints <sup>1,2</sup>:
         </p>
         <ul className='purple-ul'>
           <li>
-            Mean reduction in menstrual bleeding from baseline to Week 24
+            Mean reduction in menstrual blood loss volume from baseline to Week 24
           </li>
           <li>
             Proportion of women who achieved amenorrhea over the last 35 days of treatment

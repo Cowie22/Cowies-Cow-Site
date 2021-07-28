@@ -60,8 +60,8 @@ const TrialDesignData1 = [
 const ResponseRatesData1 = [
   {
     content:
-    <h3 className='purple graph-title'>
-      Proportion of women who achieved a clinically significant bleeding reduction
+    <h3 className='purple graph-title text-center'>
+      Menstrual blood loss response rate
     </h3>,
     img: ResponseRatesGraph,
     fallBackImg: ResponseRatesGraphFB,
@@ -76,13 +76,13 @@ const ReductionData1 = [
   {
     content:
     <h3 className='purple graph-title text-center'>
-      Menstrual bleeding reductions from baseline up to Week 24<sup>1</sup>
+      Key secondary endpoint: reduction in MBL volume from baseline up to Week 24<sup>1</sup>
     </h3>,
     img: reductionGraph1,
     fallBackImg: reductionGraph1FB,
     imgMobile: reductionGraph1Mobile,
     fallBackImgMobile: reductionGraph1MobileFB,
-    contentColumns: {span: 9, offset: 0},
+    contentColumns: {span: 11, offset: 0},
     imgColumns: {span: 12, offset: 0}
   }
 ]
@@ -91,7 +91,7 @@ const ReductionData2 = [
   {
     content:
     <h3 className='purple graph-title text-center'>
-      Menstrual bleeding reduction up to Week 52: LIBERTY 1 and 2 and LIBERTY open-label extension study
+      LIBERTY 1 and 2 and LIBERTY open-label extension study results
     </h3>,
     img: reductionGraph2,
     fallBackImg: reductionGraph2FB,
@@ -137,7 +137,7 @@ const BMDData1 = [
   {
     content:
     <h3 className='purple graph-title text-center'>
-      Pooled data from Myfembree Phase 3 trials at Month 6
+      Pooled data from LIBERTY 1 and 2 at Month 6
     </h3>,
     img: BMDGraph1,
     fallBackImg: BMDGraph1FB,
@@ -152,13 +152,13 @@ const BMDData2 = [
   {
     content:
     <h3 className='purple graph-title text-center'>
-      Open-label extension study of women treated with Myfembree (N = 163)
+      LIBERTY open-label extension study: change in BMD at Month 6 and 12 (N = 163)
     </h3>,
     img: BMDGraph2,
     fallBackImg: BMDGraph2FB,
     imgMobile: BMDGraph2Mobile,
     fallBackImgMobile: BMDGraph2MobileFB,
-    contentColumns: {span: 10, offset: 1},
+    contentColumns: {span: 12, offset: 0},
     imgColumns: {span: 10, offset: 1}
   }
 ]
@@ -167,7 +167,8 @@ const BMDData3 = [
   {
     content:
     <h3 className='purple graph-title text-center'>
-      Untreated women with uterine fibroids followed in an observational study (N = 262)
+      Natural history observational study: change in BMD at Month 6 and 12 in untreated women with uterine
+      fibroids (N = 262)
     </h3>,
     img: BMDGraph3,
     fallBackImg: BMDGraph3FB,

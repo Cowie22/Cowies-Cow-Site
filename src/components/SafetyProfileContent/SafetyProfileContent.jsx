@@ -160,8 +160,8 @@ const SafetyProfileContent = (props) => {
             <Row>
               <Col lg={{span: 10, offset: 1}}>
                 <h2 className='white'>
-                  In the open-label extension study, the most commonly reported adverse events were similar
-                  to those in the Phase 3 trials<sup>1</sup>
+                  In the LIBERTY open-label extension study, the most commonly reported adverse events were similar
+                  to those in LIBERTY 1 and 2<sup>1</sup>
                 </h2>
               </Col>
             </Row>

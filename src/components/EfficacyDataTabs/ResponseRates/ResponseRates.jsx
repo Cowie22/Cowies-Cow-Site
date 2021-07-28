@@ -26,14 +26,14 @@ const ResponseRates = (props) => {
   return (
     <div className='response-rates-container'>
       <h4 className='mulish purple'>
-        PRIMARY ENDPOINT
+        PRIMARY ENDPOINT: PROPORTION OF WOMEN WHO ACHIEVED A MENSTRUAL BLOOD LOSS RESPONSE
       </h4>
       <h2 className='blue'>
         Approximately 70% of women responded to treatment with Myfembree<sup>1,*</sup>
       </h2>
       <p>
-        A response was defined as menstrual blood loss volume &#60;80 mL per cycle and ≥50% reduction in menstrual
-        bleeding from baseline* over the last 35 days of treatment.
+        A response was defined as menstrual blood loss (MBL) volume &#60;80 mL <strong><em>and</em></strong> ≥50%
+        reduction in menstrual blood loss volume from baseline* over the last 35 days of treatment.
       </p>
       <Row>
         <Col lg={{span: 10, offset: 1}}>
@@ -46,7 +46,10 @@ const ResponseRates = (props) => {
         <Col>
           <div className='footnote-container'>
             <h6>
-              Mean menstrual blood loss volume at baseline was 231 mL (± 156).
+              *Mean menstrual blood loss volume (± SD) at baseline was 231 mL (± 156).
+            </h6>
+            <h6>
+              MBL = menstrual blood loss.
             </h6>
           </div>
         </Col>

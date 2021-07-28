@@ -267,7 +267,7 @@ class SignUpForm extends React.Component {
                                 <option value='Reproductive Endocrinology'>Reproductive Endocrinology</option>
                                 <option value='Maternal-Fetal Medicine'>Maternal-Fetal Medicine</option>
                                 <option value='Urogynecology'>Urogynecology</option>
-                                <option value='Generalist'>Generalist</option>
+                                <option value='Obstetrics & gynecology'>Obstetrics & gynecology</option>
                                 <option value='Other'>Other</option>
                               </select>
                               {specialty === '' && submitClicked ?

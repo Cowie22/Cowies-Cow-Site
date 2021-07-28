@@ -131,6 +131,9 @@ const ListIconCardData6 = [
         In cases of a missed dose, Myfembree should be taken as soon as possible on the same day, and
         then resume regular dosing the next day at the usual time
       </li>
+      <li>
+        2 doses of Myfembree should not be taken at once to make up for a missed dose
+      </li>
     </ul>,
     icon: circleAndCloseIcon,
     columns: {span: 4, offset: 0},

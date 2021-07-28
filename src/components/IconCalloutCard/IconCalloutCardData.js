@@ -25,13 +25,13 @@ const IconCalloutCardData2 = [
     content:
     <ul className='purple-ul-nike'>
       <li>
-        Response to treatment
+        Response to treatment*
       </li>
       <li>
-        Change in menstrual bleeding from baseline
+        Change in menstrual blood loss volume from baseline
       </li>
       <li>
-        Amenorrhea response
+        Amenorrhea
       </li>
       <li>
         Hemoglobin response in women with anemia
@@ -46,11 +46,11 @@ const IconCalloutCardData2 = [
 const IconCalloutCardData3 = [
   {
     title: <h3 className='blue'>Myfembree safety profile<sup>1,2</sup></h3>,
-    subTitle: 'The safety and tolerability of Myfembree were assessed across:',
+    subTitle: 'The safety and tolerability of Myfembree were assessed in:',
     content:
     <div className='icon-callout-purple-line-container'>
       <h4 className='gradient-title text-center'>
-        768 WOMEN IN PHASE 3 CLINICAL TRIALS
+        768 WOMEN ACROSS 2 PHASE 3 CLINICAL TRIALS
       </h4>
     </div>,
     btnText: 'See Safety Profile',

@@ -120,7 +120,7 @@ const HomeContent = (props) => {
           <Row>
             <Col>
               <h2 className='blue'>
-                3 reasons to explore Myfembree
+                3 reasons to consider Myfembree
               </h2>
             </Col>
           </Row>
@@ -128,6 +128,14 @@ const HomeContent = (props) => {
             <IconCalloutCard data={IconCalloutCardData1} />
             <IconCalloutCard data={IconCalloutCardData2} />
             <IconCalloutCard data={IconCalloutCardData3} />
+          </Row>
+          <Row>
+            <Col>
+              <h6>
+                *A response was defined as menstrual blood loss volume &#60;80 mL <strong><em>and</em></strong> ≥50%
+                reduction in MBL volume from baseline over the last 35 days of treatment.
+              </h6>
+            </Col>
           </Row>
         </Container>
       </section>
@@ -143,9 +151,9 @@ const HomeContent = (props) => {
           <Row>
             <Col lg={{span: 10, offset: 1}}>
               <h2 className='white'>
-                Myfembree is a combination therapy that includes a gonadotropin-releasing hormone receptor
-                antagonist, estradiol, and norethindrone acetate, and is the first of its class to be
-                approved in a single, once-daily pill.<sup>1</sup>
+                Myfembree is a combination therapy that includes relugolix (a gonadotropin-releasing
+                hormone receptor antagonist), estradiol, and norethindrone acetate, and is the first
+                of its class to be approved in a single, once-daily pill.<sup>1</sup>
               </h2>
               <Link to='/once-daily-dosing/'>
                 <h3 className='white'>

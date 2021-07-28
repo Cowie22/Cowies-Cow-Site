@@ -69,8 +69,7 @@ const EfficacyDataContent = (props) => {
       <HeaderHero
         title={
           <>
-            Myfembree delivered clinically significant response rates and sustained reductions in
-            menstrual bleeding<sup>1,2</sup>
+            Myfembree delivered clinically significant efficacy across multiple endpoints<sup>1,2</sup>
           </>
         }
         columns={{span: 12}}
@@ -79,7 +78,7 @@ const EfficacyDataContent = (props) => {
         <Container>
           <SliderTabNav
             tab1='Response Rates'
-            tab2='Reductions in Menstrual Bleeding'
+            tab2='Menstrual Blood Loss Volume'
             tab3='Amenorrhea & Hemoglobin'
           />
           <Row>
@@ -163,7 +162,7 @@ const EfficacyDataContent = (props) => {
               <Col>
                 <div className='efficacy-footnote-container'>
                   <h6>
-                    L1 = LIBERTY 1; L2 = LIBERTY 2.
+                    L1 = LIBERTY 1; L2 = LIBERTY 2; MBL = menstrual blood loss.
                   </h6>
                 </div>
               </Col>
@@ -187,7 +186,7 @@ const EfficacyDataContent = (props) => {
             {
               currentTopTab === 1 ?
                 <NextPageBtn
-                  btnText='See Menstrual Bleeding Reductions Over Time'
+                  btnText='See Menstrual Blood Loss Volume Data'
                   btnLink='efficacy-data/'
                   handleBtnTabOver={handleBtnTabOver}
                 />

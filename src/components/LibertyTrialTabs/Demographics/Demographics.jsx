@@ -91,7 +91,7 @@ const Demographics = (props) => {
                 </td>
                 <td>
                   <p>
-                    31.6 (range: 16.0-62.8<sup>3</sup>)
+                    31.6 (range: 16.0-62.8)<sup>3</sup>
                   </p>
                 </td>
               </tr>
@@ -103,13 +103,13 @@ const Demographics = (props) => {
               <tr>
                 <td>
                   <p>
-                    Mean menstrual blood loss volume mL (± SD)
+                    Mean menstrual blood loss volume mL, (± SD)
                   </p>
                   <hr />
                 </td>
                 <td>
                   <p>
-                    231 (± 156) (range: 82.8-1365.1<sup>3</sup>)
+                    231 (± 156) (range: 82.8-1365.1)<sup>3</sup>
                   </p>
                   <hr />
                 </td>
@@ -122,7 +122,7 @@ const Demographics = (props) => {
                 </td>
                 <td>
                   <p>
-                    11.2 (range: 6.1-15.4)<sup>3</sup>
+                    11.2
                   </p>
                 </td>
               </tr>

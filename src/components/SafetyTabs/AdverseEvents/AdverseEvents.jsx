@@ -33,12 +33,16 @@ const AdverseEvents = (props) => {
             <CircleGraphCallout data={CircleGraphCalloutData2} />
           </div>
           <h2 className='blue'>
-            Most common adverse events seen in Phase 3 clinical trials
+            Most common adverse events seen in LIBERTY 1 and 2
           </h2>
         </Col>
       </Row>
       <Row>
         <Col lg={{span: 10, offset: 1}}>
+          <h3 className='purple graph-title'>
+            Adverse events occurring in ≥3% of women treated with Myfembree and at a greater
+            incidence than placebo.
+          </h3>
           <table className='interior-table'>
             <tbody>
               <tr>
@@ -127,10 +131,6 @@ const AdverseEvents = (props) => {
       <Row>
         <Col lg={{span: 10, offset: 1}}>
           <div className='lower-content-container'>
-            <p>
-              Adverse events occurring in ≥3% of women treated with Myfembree and at a greater
-              incidence than placebo.
-            </p>
             <div className='footnote-container'>
               <h6>
                 *Includes menorrhagia, metrorrhagia, vaginal hemorrhage, polymenorrhea, and irregular menstruation.
