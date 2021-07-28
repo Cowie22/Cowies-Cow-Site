@@ -29,6 +29,7 @@ const MyfembreeSupportProgramContent = (props) => {
     handleCurrentTopTab,
     activeDropdownLink,
     handleActiveDropdownLink,
+    setReferences
   } = state;
 
   useEffect(() => {
@@ -36,6 +37,7 @@ const MyfembreeSupportProgramContent = (props) => {
     handleCurrentPage('support');
     activeDropdownLink !== 4.2 && activeDropdownLink !== 4.3 && activeDropdownLink !== 4.4 ?
     handleActiveDropdownLink(4.1) : null;
+    setReferences([]);
 
     updateWindowDimensions();
     window.addEventListener('resize', updateWindowDimensions);

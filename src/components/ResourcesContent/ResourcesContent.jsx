@@ -17,6 +17,7 @@ const ResourcesContent = (props) => {
     currentTopTab,
     handleCurrentTopTab,
     handleActiveDropdownLink,
+    setReferences
   } = state;
 
   const {
@@ -31,7 +32,8 @@ const ResourcesContent = (props) => {
   useEffect(() => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('resources');
-    handleActiveDropdownLink(4.5)
+    handleActiveDropdownLink(4.5);
+    setReferences([]);
   }, []);
 
   return (

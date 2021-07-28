@@ -15,10 +15,10 @@ const Copay = (props) => {
   const mounted = useRef(false);
   useEffect(() => {
     if (!mounted.current) {
-      setReferences([1, 2]);
+      setReferences([]);
       mounted.current = true;
     } else {
-      setReferences([1, 2]);
+      setReferences([]);
     }
   }, []);
 

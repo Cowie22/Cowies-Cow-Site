@@ -18,10 +18,10 @@ const Enrollment = (props) => {
   const mounted = useRef(false);
   useEffect(() => {
     if (!mounted.current) {
-      setReferences([1, 2, 4, 3]);
+      setReferences([]);
       mounted.current = true;
     } else {
-      setReferences([1, 2, 4, 3]);
+      setReferences([]);
     }
   }, []);
 
