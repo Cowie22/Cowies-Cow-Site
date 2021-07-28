@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext, useRef } from 'react'
 import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 import { StickyContainer } from 'react-sticky'
@@ -24,7 +24,17 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
   const [hovered, handleHovered] = useState(false);
   const [yDirection, handleYDirection] = useState(0);
   const state = useContext(AppContext);
-  const { references } = state;
+  const { references, handleCurrentTopTab, currentTopTab } = state;
+
+  const mounted = useRef(false);
+  useEffect(() => {
+    handleScroll();
+    if (!mounted.current) {
+      handleURLTab();
+    } else {
+      handleURLTab();
+    }
+  }, [])
 
   const handleScroll = () => {
     window.addEventListener('scroll', () => {
@@ -37,9 +47,37 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
     window.scrollTo(0, 0);
   }
 
-  useEffect(() => {
-    handleScroll();
-  })
+  // Below function will handle tabs for the entire site, for when a third party want to drive to a specific tab
+  // On the page.  This will be done when a URL has a hashtag at the end.  If the URL contains a hash tag, the nested
+  // Function handleHash will determine if currentTopTab (located in /context/state.js or the global state for the site)
+  // Should be updated or not.
+
+  const handleURLTab = () => {
+    if (typeof window !== "undefined") {
+      let path = window.location.href;
+      let hash = path.split('#')[1];
+      const handleHash = () => {
+        hash === 'trial-design' || hash === 'mbl-response'
+        || hash === 'adverse-events' || hash === 'overview' ?
+        handleCurrentTopTab(1)
+        :
+        hash === 'demographics' || hash === 'mbl-volume-reduction'
+        || hash === 'bone-mineral-density' || hash === 'enrollment' ?
+        handleCurrentTopTab(2)
+        :
+        hash === 'amenorrhea-and-hemoglobin' || hash === 'menses-return'
+        || hash === 'copay-program' ?
+        handleCurrentTopTab(3)
+        :
+        null;
+      }
+      if (hash) {
+        setTimeout(() => {
+          handleHash()
+        }, 500)
+      }
+    }
+  }
 
   return (
     <div className='layout'>

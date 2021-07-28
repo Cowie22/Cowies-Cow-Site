@@ -1,13 +1,13 @@
-import React from "react"
-import { Container, Row, Col } from "react-bootstrap"
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 
 const TermsAndConditions = props => {
   return (
     <Col lg={{ span: 10, offset: 1 }} xs={{span: 12, offset: 0}}>
-      <div className="terms-and-conditions-container">
+      <div className='terms-and-conditions-container'>
         <Row>
           <Col lg={{ span: 12, offset: 0 }} xs={{ span: 12, offset: 0 }}>
-            <p className="extra-bold">
+            <p className='extra-bold'>
               Myfembree Copay Assistance Program: Terms and Conditions
             </p>
             <h6>
@@ -47,11 +47,11 @@ const TermsAndConditions = props => {
               Myfembree Copay Assistance Program is good through December 31,
               2022.
             </h6>
-            <p className="extra-bold">
+            <p className='extra-bold'>
               Myfembree Bridge Program: Terms and Conditions
             </p>
             <h6>
-              The Myfembree Bridge Program ("Program") provides Myfembree at no
+              The Myfembree Bridge Program ('Program') provides Myfembree at no
               cost for a limited period to eligible patients with commercial
               insurance who have been prescribed Myfembree for an FDA-approved
               indication, and whose insurance coverage is delayed or who
@@ -80,11 +80,11 @@ const TermsAndConditions = props => {
               reserves the right to rescind, revoke, or amend the Program and
               discontinue support at any time without notice.
             </h6>
-            <p className="extra-bold">
+            <p className='extra-bold'>
               Myfembree Quick Start Program: Terms and Conditions
             </p>
             <h6>
-              The Myfembree Quick Start Program (“Program") provides a one-month
+              The Myfembree Quick Start Program (“Program') provides a one-month
               supply of Myfembree at no cost to eligible patients with
               government insurance who are newly prescribed Myfembree for an
               FDA-approved indication, and whose insurance coverage is delayed 5
@@ -108,11 +108,11 @@ const TermsAndConditions = props => {
               the right to rescind, revoke, or amend the Program and discontinue
               support at any time without notice.
             </h6>
-            <p className="extra-bold">
+            <p className='extra-bold'>
               Myovant Sciences Patient Assistance Program: Terms and Conditions
             </p>
             <h6>
-              The Myovant Sciences Patient Assistance Program (“Program")
+              The Myovant Sciences Patient Assistance Program (“Program')
               provides Myfembree at no cost to eligible patients who are
               prescribed Myfembree for an FDA-approved indication. Patients and
               prescribers must complete the Myfembree Support Program enrollment
