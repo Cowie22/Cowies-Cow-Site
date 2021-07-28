@@ -1,70 +1,32 @@
 .tab-column {
   cursor: pointer;
-  .bottom-tab-border-left {
+  .bottom-tab-border {
     width: 95%;
     height: 3px;
     position: absolute;
-    left: 0;
     bottom: 0;
     margin: 0 15px;
     z-index: 10;
     background: $purple;
     transition: .5s left;
+  }
+  .bottom-tab-border-left {
+    left: 0;
   }
   .bottom-tab-border-center {
-    width: 95%;
-    height: 3px;
-    position: absolute;
     left: 100%;
-    bottom: 0;
-    margin: 0 15px;
-    z-index: 10;
-    background: $purple;
-    transition: .5s left;
   }
   .bottom-tab-border-right {
-    width: 95%;
-    height: 3px;
-    position: absolute;
     left: 200%;
-    bottom: 0;
-    margin: 0 15px;
-    z-index: 10;
-    background: $purple;
-    transition: .5s left;
   }
   .hovered-tab-border-left {
-    width: 95%;
-    height: 3px;
-    position: absolute;
     left: 0;
-    bottom: 0;
-    margin: 0 15px;
-    z-index: 10;
-    background: $purple;
-    transition: .5s left;
   }
   .hovered-tab-border-center {
-    width: 95%;
-    height: 3px;
-    position: absolute;
     left: 100%;
-    bottom: 0;
-    margin: 0 15px;
-    z-index: 10;
-    background: $purple;
-    transition: .5s left;
   }
   .hovered-tab-border-right {
-    width: 95%;
-    height: 3px;
-    position: absolute;
     left: 200%;
-    bottom: 0;
-    margin: 0 15px;
-    z-index: 10;
-    background: $purple;
-    transition: .5s left;
   }
   h6 {
     padding-bottom: 16px;
@@ -86,34 +48,39 @@
     h6 {
       padding-bottom: 8px;
     }
-    .bottom-tab-border-left {
+    .bottom-tab-border {
       width: 84%;
+    }
+    .bottom-tab-border-left {
       left: 0;
     }
     .bottom-tab-border-center {
-      width: 84%;
       left: 100%;
     }
     .bottom-tab-border-right {
-      width: 84%;
       left: 200%;
     }
     .hovered-tab-border-left {
-      width: 84%;
       left: 0;
     }
     .hovered-tab-border-center {
-      width: 84%;
       left: 100%;
     }
     .hovered-tab-border-right {
-      width: 84%;
       left: 200%;
     }
     .inactive-border {
       width: 100%;
       margin: 0;
       margin-top: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 526px) {
+  .tab-column {
+    .bottom-tab-border {
+      width: 88%;
     }
   }
 }

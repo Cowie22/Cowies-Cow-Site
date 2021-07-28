@@ -38,10 +38,10 @@ const SliderTabNav = (props) => {
       >
         <div
           className={
-            currentTopTab === 1 ? 'bottom-tab-border-left' :
-            currentTopTab === 2 ? 'bottom-tab-border-center' :
-            currentTopTab === 3 ? 'bottom-tab-border-right' :
-            'bottom-tab-border-left'
+            currentTopTab === 1 ? 'bottom-tab-border bottom-tab-border-left' :
+            currentTopTab === 2 ? 'bottom-tab-border bottom-tab-border-center' :
+            currentTopTab === 3 ? 'bottom-tab-border bottom-tab-border-right' :
+            'bottom-tab-border bottom-tab-border-left'
           }
           onMouseEnter={() => {
             currentTopTab === 1 ? handleHovered(1) :
@@ -56,12 +56,12 @@ const SliderTabNav = (props) => {
         </div>
         <div
           className={
-            hovered === 1 ? 'hovered-tab-border-left' :
-            hovered === 2 ? 'hovered-tab-border-center' :
-            hovered === 3 ? 'hovered-tab-border-right' :
-            currentTopTab === 1 ? 'hovered-tab-border-left' :
-            currentTopTab === 2 ? 'hovered-tab-border-center' :
-            currentTopTab === 3 ? 'hovered-tab-border-right' :
+            hovered === 1 ? 'bottom-tab-border hovered-tab-border-left' :
+            hovered === 2 ? 'bottom-tab-border hovered-tab-border-center' :
+            hovered === 3 ? 'bottom-tab-border hovered-tab-border-right' :
+            currentTopTab === 1 ? 'bottom-tab-border hovered-tab-border-left' :
+            currentTopTab === 2 ? 'bottom-tab-border hovered-tab-border-center' :
+            currentTopTab === 3 ? 'bottom-tab-border hovered-tab-border-right' :
             ''
           }
           onMouseEnter={() => {

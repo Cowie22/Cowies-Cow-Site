@@ -13,7 +13,9 @@
     line-height: 24px;
   }
   .circle-icon-container {
-
+    img {
+      width: 100%;
+    }
   }
   .circle-graph-content-container {
     display: flex;

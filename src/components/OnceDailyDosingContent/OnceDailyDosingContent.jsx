@@ -42,7 +42,7 @@ const OnceDailyDosingContent = (props) => {
     >
       <HeaderHero
         title={<>One small pill. Once a day.<sup>1</sup></>}
-        columns={{span: 5}}
+        columns={{span: 6}}
       />
       <section className='dosing-container'>
         <Container>
