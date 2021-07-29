@@ -20,6 +20,54 @@
       }
     }
   }
+  .cover-graph-container {
+    position: absolute;
+    background: $white;
+    width: 90%;
+    height: 47%;
+    top: 31.6%;
+    left: 9.5%;
+    z-index: 10;
+    &.uncover {
+      animation: imgScale 2s;
+      transform-origin: 100%;
+      animation-direction: normal;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+  }
+  .cover-graph-line-container {
+    position: absolute;
+    background: $white;
+    width: 90%;
+    height: 2%;
+    top: 32%;
+    left: 10.6%;
+    z-index: 10;
+    &.uncover {
+      animation: imgScale 3s;
+      transform-origin: 100%;
+      animation-direction: normal;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+  }
+  @keyframes imgScale {
+    from {
+      transform: scaleX(1);
+    }
+    to {
+      transform: scaleX(0);
+    }
+  }
+  .graph-footnote {
+    opacity: 1;
+    transition: all 1s;
+    &.hidden {
+      opacity: 0;
+      transition: all 1s;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -40,6 +88,19 @@
           padding-bottom: 16px;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .reduction-container {
+    .cover-graph-container {
+      top: 36.4%;
+      left: 9.7%;
+      height: 41.2%;
+    }
+    .cover-graph-line-container {
+      top: 36%;
     }
   }
 }

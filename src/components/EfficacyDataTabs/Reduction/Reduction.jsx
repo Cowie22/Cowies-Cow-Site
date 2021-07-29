@@ -8,6 +8,7 @@ import InfoGraphicData from '../../InfoGraphic/InfoGraphicData.js'
 import IIcon from '../../../assets/images/I-icon.svg'
 
 const Reduction = (props) => {
+  const [hideImg, handleHideImg] = useState(false);
   const state = useContext(AppContext);
   const {
     setReferences
@@ -22,6 +23,38 @@ const Reduction = (props) => {
       setReferences([1, 2, 4, 3]);
     }
   }, []);
+
+  const handleUncover = () => {
+    console.log('START2')
+    handleHideImg(1);
+    setTimeout(() => {
+      handleHideImg(2);
+    }, 1000)
+    setTimeout(() => {
+      handleHideImg(3);
+    }, 3000)
+  }
+
+  const useOnScreen = (refVal) => {
+    const [isIntersecting, setIntersecting] = useState(false)
+    const [called, handleCalled] = useState(false)
+    const observer = new IntersectionObserver(
+      ([entry]) => setIntersecting(entry.isIntersecting)
+    )
+    useEffect(() => {
+      isIntersecting ? handleUncover : null;
+      observer.observe(refVal.current)
+      return () => { observer.disconnect() }
+    }, [])
+    if (isIntersecting && !called) {
+      handleCalled(true)
+      handleUncover()
+    }
+    return isIntersecting
+  }
+
+  const ref = useRef()
+  const isVisible = useOnScreen(ref)
 
   const { ReductionData1, ReductionData2 } = InfoGraphicData;
 
@@ -43,11 +76,27 @@ const Reduction = (props) => {
       </div> */}
       <Row>
         <Col lg={{span: 12, offset: 0}}>
+          <div
+            className={
+            hideImg > 1 ? 'cover-graph-line-container uncover d-none d-lg-block' :
+            'cover-graph-line-container d-none d-lg-block'
+          }
+            id='cover-graph-container'
+          >
+          </div>
+          <div
+            className={
+            hideImg > 0 ? 'cover-graph-container uncover d-none d-lg-block' :
+            'cover-graph-container d-none d-lg-block'
+          }
+            id='cover-graph-container'
+          >
+          </div>
           <div className='graph-container'>
             <InfoGraphic data={ReductionData1} />
           </div>
           <div>
-            <h6>
+            <h6 className={hideImg > 2 ? 'graph-footnote' : 'graph-footnote hidden'}>
               Menstrual blood loss volume assessment at Week 4 through Week 20 was prespecified, but not
               adjusted for multiplicity.<sup>2</sup>
             </h6>
@@ -55,7 +104,7 @@ const Reduction = (props) => {
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col ref={ref}>
           <div className='mid-section-container'>
             <h4 className='mulish purple'>
               ADDITIONAL ENDPOINT
