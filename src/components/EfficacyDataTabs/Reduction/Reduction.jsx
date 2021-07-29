@@ -25,13 +25,9 @@ const Reduction = (props) => {
   }, []);
 
   const handleUncover = () => {
-    console.log('START2')
     handleHideImg(1);
     setTimeout(() => {
       handleHideImg(2);
-    }, 1000)
-    setTimeout(() => {
-      handleHideImg(3);
     }, 3000)
   }
 
@@ -66,24 +62,8 @@ const Reduction = (props) => {
       <h2 className='blue'>
         Myfembree delivered sustained reductions in menstrual blood loss (MBL) volume<sup>1,2</sup>
       </h2>
-      {/* <div className='reduction-skinny-callout-container'>
-        <ul className='purple-ul'>
-          <li>
-            Menstrual blood loss volume assessment at Week 4 through Week 20 was prespecified, but not
-            adjusted for multiplicity<sup>2</sup>
-          </li>
-        </ul>
-      </div> */}
       <Row>
         <Col lg={{span: 12, offset: 0}}>
-          <div
-            className={
-            hideImg > 1 ? 'cover-graph-line-container uncover d-none d-lg-block' :
-            'cover-graph-line-container d-none d-lg-block'
-          }
-            id='cover-graph-container'
-          >
-          </div>
           <div
             className={
             hideImg > 0 ? 'cover-graph-container uncover d-none d-lg-block' :
@@ -96,7 +76,7 @@ const Reduction = (props) => {
             <InfoGraphic data={ReductionData1} />
           </div>
           <div>
-            <h6 className={hideImg > 2 ? 'graph-footnote' : 'graph-footnote hidden'}>
+            <h6 className={hideImg > 1 ? 'graph-footnote' : 'graph-footnote hidden'}>
               Menstrual blood loss volume assessment at Week 4 through Week 20 was prespecified, but not
               adjusted for multiplicity.<sup>2</sup>
             </h6>

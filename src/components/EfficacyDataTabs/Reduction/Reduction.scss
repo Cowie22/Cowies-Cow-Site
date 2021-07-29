@@ -3,10 +3,6 @@
   h2 {
     padding: 8px 0 24px 0;
   }
-  .reduction-skinny-callout-container {
-    background: #F1F7F4;
-    padding: 8px;
-  }
   .graph-container {
     padding: 24px 0;
   }
@@ -30,22 +26,6 @@
     z-index: 10;
     &.uncover {
       animation: imgScale 2s;
-      transform-origin: 100%;
-      animation-direction: normal;
-      animation-timing-function: linear;
-      animation-fill-mode: forwards;
-    }
-  }
-  .cover-graph-line-container {
-    position: absolute;
-    background: $white;
-    width: 90%;
-    height: 2%;
-    top: 32%;
-    left: 10.6%;
-    z-index: 10;
-    &.uncover {
-      animation: imgScale 3s;
       transform-origin: 100%;
       animation-direction: normal;
       animation-timing-function: linear;
@@ -98,9 +78,6 @@
       top: 36.4%;
       left: 9.7%;
       height: 41.2%;
-    }
-    .cover-graph-line-container {
-      top: 36%;
     }
   }
 }
