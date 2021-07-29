@@ -60,7 +60,7 @@ const LibertyTrialsContent = (props) => {
       <HeaderHero
         title={
           <>
-            The effect of Myfembree was consistent regardless of patient demographics and characteristics<sup>1</sup>
+            Efficacy and safety of Myfembree were evaluated in 2 Phase 3 clinical trials<sup>1</sup>
           </>
         }
         columns={{span: 11}}

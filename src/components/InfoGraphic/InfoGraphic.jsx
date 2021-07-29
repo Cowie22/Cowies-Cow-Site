@@ -38,10 +38,10 @@ const InfoGraphic = (props) => {
         <Col lg={imgColumns}>
           <div className='graph-img-container'>
             <picture>
-              <source srcSet={img} media='(min-width: 991px)' alt='' type="image/webp" />
-              <source srcSet={fallBackImg} media='(min-width: 991px)' alt='' type="image/png" />
-              <source srcSet={imgMobile} media='(max-width: 991px)' alt='' type="image/webp" />
-              <source srcSet={fallBackImgMobile} media='(max-width: 991px)' alt='' type="image/png" />
+              <source srcSet={img} media='(min-width: 991px)' alt='' type='image/webp' />
+              <source srcSet={fallBackImg} media='(min-width: 991px)' alt='' type='image/png' />
+              <source srcSet={imgMobile} media='(max-width: 991px)' alt='' type='image/webp' />
+              <source srcSet={fallBackImgMobile} media='(max-width: 991px)' alt='' type='image/png' />
               <img
                 loading='lazy'
                 src={width < 991 ? fallBackImgMobile : fallBackImg}

@@ -12,8 +12,8 @@ const PillBottleCallout = (props) => {
           <Col lg={{span: 3, offset: 1, order: 1}} xs={{span: 4, offset: 4, order: 2}}>
             <div className='pill-bottle-container'>
               <picture>
-                <source srcSet={pillBottle} className='expand-story-img' type="image/webp" />
-                <img src={pillBottleFB} className='expand-story-img' alt='' />
+                <source srcSet={pillBottle} type='image/webp' />
+                <img src={pillBottleFB} alt='' />
               </picture>
             </div>
           </Col>

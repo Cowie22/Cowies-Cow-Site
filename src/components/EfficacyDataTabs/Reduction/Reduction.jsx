@@ -17,10 +17,10 @@ const Reduction = (props) => {
   const mounted = useRef(false);
   useEffect(() => {
     if (!mounted.current) {
-      setReferences([1, 2, 4, 3]);
+      setReferences([1, 2, 3, 4]);
       mounted.current = true;
     } else {
-      setReferences([1, 2, 4, 3]);
+      setReferences([1, 2, 3, 4]);
     }
   }, []);
 
@@ -110,7 +110,7 @@ const Reduction = (props) => {
               ADDITIONAL ENDPOINT
             </h4>
             <h2 className='blue'>
-              Change in MBL volume at 52 weeks<sup>4</sup>
+              Change in MBL volume at 52 weeks<sup>3,4</sup>
             </h2>
             <div className='lower-graph-container'>
               <InfoGraphic data={ReductionData2} />

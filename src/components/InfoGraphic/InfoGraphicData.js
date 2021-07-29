@@ -61,7 +61,7 @@ const ResponseRatesData1 = [
   {
     content:
     <h3 className='purple graph-title text-center'>
-      Menstrual blood loss response rate
+      Proportion of women who achieved a clinically significant MBL response rate
     </h3>,
     img: ResponseRatesGraph,
     fallBackImg: ResponseRatesGraphFB,
@@ -152,13 +152,13 @@ const BMDData2 = [
   {
     content:
     <h3 className='purple graph-title text-center'>
-      LIBERTY open-label extension study: change in BMD at Month 6 and 12 (N = 163)
+      LIBERTY open-label extension study: change in BMD in women treated with Myfembree at Month 6 and 12 (N = 163)
     </h3>,
     img: BMDGraph2,
     fallBackImg: BMDGraph2FB,
     imgMobile: BMDGraph2Mobile,
     fallBackImgMobile: BMDGraph2MobileFB,
-    contentColumns: {span: 12, offset: 0},
+    contentColumns: {span: 10, offset: 1},
     imgColumns: {span: 10, offset: 1}
   }
 ]
@@ -167,8 +167,8 @@ const BMDData3 = [
   {
     content:
     <h3 className='purple graph-title text-center'>
-      Natural history observational study: change in BMD at Month 6 and 12 in untreated women with uterine
-      fibroids (N = 262)
+      Natural history observational study: change in BMD at Month 6 and 12 in untreated women
+      with uterine fibroids (N = 262)
     </h3>,
     img: BMDGraph3,
     fallBackImg: BMDGraph3FB,

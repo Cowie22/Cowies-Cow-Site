@@ -3,14 +3,18 @@ import React from 'react'
 import circleAndNikeIcon from '../../assets/images/circle-and-nike-icon.svg'
 import bloodDropDownArrowIcon from '../../assets/images/blood-drop-down-arrow-icon.svg'
 import shieldAndCrossIcon from '../../assets/images/shield-and-cross-icon.svg'
-import pillBottleWithText from '../../assets/images/pill-bottle-with-text.svg'
+import pillBottleWithText from '../../assets/images/pill-bottle-with-text.webp'
+import pillBottleWithTextFB from '../../assets/images/pill-bottle-with-text.png'
 
 const IconCalloutCardData1 = [
   {
     title: <h3 className='blue'>Convenience of once-daily dosing<sup>1</sup></h3>,
     content:
     <div className='pill-img-container'>
-      <img src={pillBottleWithText} className='pill-img' alt='' />
+      <picture>
+        <source srcSet={pillBottleWithText} className='pill-img' type='image/webp' />
+        <img src={pillBottleWithTextFB} className='pill-img' alt='' />
+      </picture>
     </div>,
     btnText: 'See Dosing Considerations',
     btnLink: 'once-daily-dosing/',
