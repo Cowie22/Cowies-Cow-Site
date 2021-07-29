@@ -16,6 +16,7 @@ import BGImgMobile from '../../assets/images/home-bg-img-1-2X-mobile.webp'
 import BGImgMobileFB from '../../assets/images/home-bg-img-1-2X-mobile.png'
 
 
+
 const HomeContent = (props) => {
   const [width, handleWidth] = useState(0);
   const state = useContext(AppContext);

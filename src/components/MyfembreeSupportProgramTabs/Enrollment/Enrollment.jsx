@@ -7,7 +7,7 @@ import ListIconCard from '../../ListIconCard/ListIconCard'
 import ListIconCardData from '../../ListIconCard/ListIconCardData.js'
 import PurpleLineCallout from '../../PurpleLineCallout/PurpleLineCallout'
 
-import personSupportIcon from '../../../assets/images/man-and-women-support-icon.svg'
+import personSupportIcon from '../../../assets/images/man-and-women-support-icon.png'
 
 const Enrollment = (props) => {
   const state = useContext(AppContext);
@@ -63,7 +63,11 @@ const Enrollment = (props) => {
           <PurpleLineCallout
             content={
               <div className='enrolment-purple-line-card-content-container'>
-                <img src={personSupportIcon} alt='' />
+                <Row>
+                  <Col lg={{span: 2, offset: 5}}>
+                    <img src={personSupportIcon} alt='' />
+                  </Col>
+                </Row>
                 <p className='extra-bold purple'>
                   The office can call <a href='tel:1-833-693-3627'>1-833-MYFEMBREE (1-833-693-3627)</a> to speak
                   to a Support Coordinator or Virtual Reimbursement Manager about access and reimbursement
