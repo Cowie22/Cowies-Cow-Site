@@ -417,7 +417,7 @@ class SignUpForm extends React.Component {
                                     </p>
                                   </Form.Check.Label>
                                   <Form.Control.Feedback type='invalid' className='concent-feedback-label'>
-                                    Please provide information.
+                                    Please provide confirmation.
                                   </Form.Control.Feedback>
                                 </Form.Check>
                               </Col>
