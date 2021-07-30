@@ -83,8 +83,8 @@ const TrialDesign = (props) => {
           treatment duration of 12 months in eligible women from all 3 arms of the trials.<sup>2</sup>
         </h6>
         <h6>
-          ‡Evaluation of relugolix monotherapy was requested by the FDA, but is not approved in
-          the United States for heavy menstrual bleeding associated with uterine fibroids.
+          ‡Relugolix monotherapy is not approved in the United States for heavy menstrual bleeding
+          associated with uterine fibroids.
         </h6>
       </div>
     </div>
