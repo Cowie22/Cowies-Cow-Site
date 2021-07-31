@@ -37,8 +37,40 @@ const SiteMapContent = (props) => {
                   </Link>
                 </li>
                 <li>
+                  <Link to='/once-daily-dosing/'>
+                    Once-Daily Dosing
+                  </Link>
+                </li>
+                <li>
+                  <Link to='/liberty-trials/'>
+                    Efficacy
+                  </Link>
+                  <ul className='purple-ul-dashed sitemap-ul'>
+                    <li>
+                      <Link to='/liberty-trials/'>
+                        LIBERTY Trials
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to='/efficacy-data/'>
+                        Efficacy Data
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <Link to='/safety-profile/'>
+                    Safety Profile
+                  </Link>
+                </li>
+                <li>
+                  <Link to='/how-it-works/'>
+                    How It Works
+                  </Link>
+                </li>
+                <li>
                   <Link to='/myfembree-support-program/'>
-                  Access and Support
+                    Support & Savings
                   </Link>
                   <ul className='purple-ul-dashed sitemap-ul'>
                     <li>

@@ -4,7 +4,6 @@ import Layout from '../Layout'
 import { navigate } from 'gatsby'
 import Axios from 'axios'
 import { Container, Row, Col, Form, Button, Dropdown } from 'react-bootstrap'
-import ReCAPTCHA from "react-google-recaptcha"
 
 import closeIcon from '../../assets/images/close.svg'
 import closeIconHovered from '../../assets/images/close-hovered.svg'
@@ -14,7 +13,6 @@ import closeIconHovered from '../../assets/images/close-hovered.svg'
 class SignUpForm extends React.Component {
   constructor(props) {
     super(props);
-    this.recaptchaRef = React.createRef();
     this.state = {
       firstName: '',
       lastName: '',
@@ -371,17 +369,6 @@ class SignUpForm extends React.Component {
                                 This field cannot be left blank.
                               </Form.Control.Feedback>
                             </Form.Group>
-                          </Col>
-                        </Row>
-                        <Row>
-                          <Col lg={{span: 6, offset: 3}}>
-                            <div className='captcha-container'>
-                              <ReCAPTCHA
-                                ref={this.recaptchaRef}
-                                sitekey="6LdRscYaAAAAABg_sAgI4cvBBBIdW2wRNsxh7lkH"
-                                onChange={this.onCaptchaChange}
-                              />
-                            </div>
                           </Col>
                         </Row>
                         <Row>

@@ -28,7 +28,7 @@ const Reduction = (props) => {
     handleHideImg(1);
     setTimeout(() => {
       handleHideImg(2);
-    }, 3000)
+    }, 700)
   }
 
   const useOnScreen = (refVal) => {
