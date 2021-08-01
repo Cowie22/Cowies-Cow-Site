@@ -2,11 +2,18 @@ import React, { useState, useEffect, useContext } from 'react'
 import Layout from '../Layout'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
+import { AppContext } from '../../contexts/state'
 
 
 const SiteMapContent = (props) => {
+  const state = useContext(AppContext);
 
-  const { currentPage, handleCurrentPage, handleActiveHeaderDropdown } = props;
+  const {
+    currentPage,
+    handleCurrentPage,
+    handleActiveHeaderDropdown,
+    handleCurrentTopTab
+  } = state;
 
   useEffect(() => {
     handleActiveHeaderDropdown('');
@@ -79,33 +86,31 @@ const SiteMapContent = (props) => {
                       </Link>
                       <ul className='purple-ul-square sitemap-ul'>
                         <li>
-                          <Link to='/myfembree-support-program/#financial-assistance'>
-                            Financial Assistance
+                          <Link to='/myfembree-support-program/#drive-to-slider-nav'>
+                            Overview
                           </Link>
                         </li>
-                        <li>
-                          <Link to='/myfembree-support-program/#bridge-program'>
-                            Bridge Program
+                        <li
+                          onClick={() => {
+                            setTimeout(() => {
+                              handleCurrentTopTab(2)
+                            }, 500)
+                          }}
+                        >
+                          <Link to='/myfembree-support-program/#drive-to-slider-nav'>
+                            Enrollment & e-Consent
                           </Link>
                         </li>
-                        <li>
-                          <Link to='/myfembree-support-program/#quick-start-program'>
-                            Quick Start Program
+                        <li
+                          onClick={() => {
+                            setTimeout(() => {
+                              handleCurrentTopTab(3)
+                            }, 500)
+                          }}
+                        >
+                          <Link to='/myfembree-support-program/#drive-to-slider-nav'>
+                            Copay & Savings Programs
                           </Link>
-                        </li>
-                        <li>
-                          <Link to='/myfembree-support-program/#patient-assistance-program'>
-                            Patient Assistance Program
-                          </Link>
-                        </li>
-                        <li>
-                          <a
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            href='https://portal.trialcard.com/myovant/myfembree/consent/'
-                          >
-                            Patient e-Consent
-                          </a>
                         </li>
                       </ul>
                     </li>
