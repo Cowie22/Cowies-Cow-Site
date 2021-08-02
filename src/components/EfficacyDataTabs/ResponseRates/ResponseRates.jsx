@@ -45,7 +45,7 @@ const ResponseRates = (props) => {
       <Row>
         <Col>
           <div className='footnote-container'>
-            <h6>
+            <h6 className='hanging-footnote'>
               *Mean MBL volume (± SD) at baseline was 231 mL (± 156).
             </h6>
             <h6>
