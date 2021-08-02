@@ -74,7 +74,7 @@ const TrialDesignExpandCard = props => {
               <p>
                 <strong>Primary endpoint:</strong> The proportion of women in
                 the Myfembree arm who achieved menstrual blood loss volume
-                &#60;80 mL;{' '}
+                &#60;80 mL{' '}
                 <strong>
                   <em>and</em>
                 </strong>{' '}

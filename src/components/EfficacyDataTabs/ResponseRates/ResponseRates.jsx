@@ -46,7 +46,7 @@ const ResponseRates = (props) => {
         <Col>
           <div className='footnote-container'>
             <h6>
-              *Mean MBL volume at baseline was 231 mL with a standard deviation of 156 mL.
+              *Mean MBL volume (± SD) at baseline was 231 mL (± 156).
             </h6>
             <h6>
               MBL = menstrual blood loss.

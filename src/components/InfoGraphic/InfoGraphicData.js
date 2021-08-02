@@ -61,7 +61,7 @@ const ResponseRatesData1 = [
   {
     content:
     <h3 className='purple graph-title text-center'>
-      Proportion of women who achieved a clinically significant MBL response rate
+      MBL response rate
     </h3>,
     img: ResponseRatesGraph,
     fallBackImg: ResponseRatesGraphFB,

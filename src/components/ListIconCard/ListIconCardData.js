@@ -132,7 +132,7 @@ const ListIconCardData6 = [
         then resume regular dosing the next day at the usual time
       </li>
       <li>
-        2 doses of Myfembree should not be taken at once to make up for a missed dose
+        Two doses of Myfembree should not be taken at once to make up for a missed dose
       </li>
     </ul>,
     icon: circleAndCloseIcon,

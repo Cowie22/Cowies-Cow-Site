@@ -62,7 +62,7 @@ export default () => (
           </h6>
           <h6>
             ©2021 Myovant Sciences GmbH and Pfizer Inc. All rights reserved.
-            PP-US-REL-CT-2100059 06/21
+            PP-US-REL-CT-2100059 08/02
           </h6>
         </Col>
         <Col

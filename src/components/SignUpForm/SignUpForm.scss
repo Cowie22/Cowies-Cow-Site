@@ -105,6 +105,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
+        font-family: $sans;
         min-height: 88px;
         color: $grey;
         .form-label {
@@ -117,6 +118,7 @@
           border-radius: 4px;
           background-color: #FFFFFF;
           font-size: 16px;
+          font-family: $sans;
         }
         .form-check {
           .form-check-input {
@@ -129,6 +131,7 @@
             font-size: 16px;
             line-height: 24px;
             font-weight: 400;
+            font-family: $sans;
           }
         }
       }
@@ -239,6 +242,7 @@
   width: 100%;
   font-size: 14px;
   line-height: 16px;
+  font-family: $sans;
   color: #C70332;
   padding-top: 4px;
 }
@@ -247,6 +251,7 @@
   width: 100%;
   font-size: 14px;
   line-height: 16px;
+  font-family: $sans;
   color: #C70332;
   padding-top: 4px;
 }

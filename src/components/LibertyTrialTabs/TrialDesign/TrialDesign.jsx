@@ -35,14 +35,14 @@ const TrialDesign = (props) => {
           bleeding* associated with uterine fibroids.<sup>2</sup>
         </p>
         <p className='purple extra-bold list-header'>
-          Primary endpoint <sup>2</sup>:
+          Primary endpoint<sup>2</sup>:
         </p>
         <p className='extra-bold'>
           The proportion of women in the Myfembree arm who achieved:
         </p>
         <ul className='purple-ul'>
           <li>
-            Menstrual blood loss volume &#60;80 mL; <strong><em>and</em></strong>
+            Menstrual blood loss volume &#60;80 mL <strong><em>and</em></strong>
           </li>
           <li>
             ≥50% reduction in menstrual blood loss volume from baseline over the last 35 days of treatment
@@ -50,7 +50,7 @@ const TrialDesign = (props) => {
           </li>
         </ul>
         <p className='purple extra-bold second-list-header'>
-          Key secondary endpoints <sup>1,2</sup>:
+          Key secondary endpoints<sup>1,2</sup>:
         </p>
         <ul className='purple-ul'>
           <li>

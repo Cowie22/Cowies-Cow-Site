@@ -192,7 +192,7 @@ class SignUpForm extends React.Component {
                       Request a Representative
                     </h2>
                     <p className='text-center'>
-                      Please provide the following information about yourself so we can put you in touch with a
+                      Please provide the following information so we can put you in touch with a
                       Myfembree® representative in your area.
                     </p>
                     <p className='text-center extra-bold'>
@@ -216,7 +216,7 @@ class SignUpForm extends React.Component {
                               className={(submitClicked === true && firstName === '') ? 'invalid-group' : ''}
                             >
                               <Form.Label column>
-                                First Name*
+                                First name*
                               </Form.Label>
                               <Form.Control
                                 type='text'
@@ -260,12 +260,12 @@ class SignUpForm extends React.Component {
                                 onChange={this.handleInputChange}
                                 className={(specialty === '' && submitClicked) ? 'form-dropdown-select invalid-dropdown' : 'form-dropdown-select'}
                               >
-                                <option defaultValue>Select Specialty*</option>
-                                <option value='Gynecologic Oncology'>Gynecologic Oncology</option>
-                                <option value='Reproductive Endocrinology'>Reproductive Endocrinology</option>
-                                <option value='Maternal-Fetal Medicine'>Maternal-Fetal Medicine</option>
+                                <option defaultValue>Select specialty*</option>
+                                <option value='Gynecologic Oncology'>Gynecologic oncology</option>
+                                <option value='Reproductive Endocrinology'>Reproductive endocrinology</option>
+                                <option value='Maternal-Fetal Medicine'>Maternal-fetal medicine</option>
                                 <option value='Urogynecology'>Urogynecology</option>
-                                <option value='Obstetrics & gynecology'>Obstetrics & gynecology</option>
+                                <option value='Obstetrics & gynecology'>Generalist</option>
                                 <option value='Other'>Other</option>
                               </select>
                               {specialty === '' && submitClicked ?
@@ -285,7 +285,7 @@ class SignUpForm extends React.Component {
                               className={(submitClicked === true && lastName === '') ? 'invalid-group' : ''}
                             >
                               <Form.Label column>
-                                Last Name*
+                                Last name*
                               </Form.Label>
                               <Form.Control
                                 type='text'
@@ -305,7 +305,7 @@ class SignUpForm extends React.Component {
                               className={(submitClicked === true && confirmEmail === '') ? 'invalid-group' : ''}
                             >
                               <Form.Label column>
-                                Confirm Email*
+                                Confirm email*
                               </Form.Label>
                               <Form.Control
                                 type='email'
@@ -330,11 +330,11 @@ class SignUpForm extends React.Component {
                                 onChange={this.handleInputChange}
                                 className={(role === '' && submitClicked) ? 'form-dropdown-select invalid-dropdown' : 'form-dropdown-select'}
                               >
-                                <option defaultValue>Select Role*</option>
+                                <option defaultValue>Select role*</option>
                                 <option value='Physician'>Physician</option>
-                                <option value='Physician Assistant'>Physician Assistant</option>
+                                <option value='Physician Assistant'>Physician assistant</option>
                                 <option value='Nurse'>Nurse</option>
-                                <option value='Nurse Practitioner'>Nurse Practitioner</option>
+                                <option value='Nurse Practitioner'>Nurse practitioner</option>
                                 <option value='Nurse Practitioner'>Other</option>
                               </select>
                               {role === '' && submitClicked ?
@@ -356,7 +356,7 @@ class SignUpForm extends React.Component {
                               className={(submitClicked === true && zipCode === '') ? 'invalid-group' : ''}
                             >
                               <Form.Label column>
-                                ZIP Code*
+                                ZIP code*
                               </Form.Label>
                               <Form.Control
                                 type='text'
@@ -389,7 +389,7 @@ class SignUpForm extends React.Component {
                                         rel='noopener noreferrer'
                                         href='https://www.myovant.com/privacy-policy/'
                                       >
-                                        Privacy Policy {' '}
+                                        Privacy Policy, {' '}
                                       </a>
                                       and you agree to the {' '}
                                       <a
@@ -400,7 +400,7 @@ class SignUpForm extends React.Component {
                                       >
                                         Terms of Use {' '}
                                       </a>
-                                      for information collected on this form.*
+                                      for information collected on this form.
                                     </p>
                                   </Form.Check.Label>
                                   <Form.Control.Feedback type='invalid' className='concent-feedback-label'>
