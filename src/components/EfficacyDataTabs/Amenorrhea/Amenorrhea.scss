@@ -13,6 +13,12 @@
   .mid-section-container {
     padding: 36px 0 24px 0;
   }
+  .footnote-container {
+    .hanging-footnote {
+      padding-left: 0.1em;
+      text-indent: -0.4em;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {

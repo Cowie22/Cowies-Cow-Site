@@ -9,7 +9,7 @@ const PillBottleCallout = (props) => {
     <Col lg={{span: 12}}>
       <div className='pill-bottle-callout-container'>
         <Row>
-          <Col lg={{span: 3, offset: 1, order: 1}} xs={{span: 4, offset: 4, order: 2}}>
+          <Col lg={{span: 3, offset: 1, order: 1}} xs={{span: 6, offset: 3, order: 2}}>
             <div className='pill-bottle-container'>
               <picture>
                 <source srcSet={pillBottle} type='image/webp' />

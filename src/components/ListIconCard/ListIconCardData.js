@@ -208,7 +208,7 @@ const ListIconCardData9 = [
       <li>
         The GnRH component of Myfembree <strong>reduces the release of luteinizing hormone and
         follicle-stimulating hormone.</strong> As a result, serum concentrations of <strong>estradiol
-        and progesterone decrease, thereby reducing bleeding</strong> associated with uterine fibroids
+        and progesterone decrease,</strong> thereby <strong> reducing bleeding</strong> associated with uterine fibroids
       </li>
     </ul>,
     columns: {span: 4, offset: 0},

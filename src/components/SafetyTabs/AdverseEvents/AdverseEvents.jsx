@@ -132,13 +132,13 @@ const AdverseEvents = (props) => {
         <Col lg={{span: 10, offset: 1}}>
           <div className='lower-content-container'>
             <div className='footnote-container'>
-              <h6>
+              <h6 className='hanging-footnote'>
                 *Includes menorrhagia, metrorrhagia, vaginal hemorrhage, polymenorrhea, and irregular menstruation.
               </h6>
-              <h6>
+              <h6 className='hanging-footnote'>
                 †Alopecia includes alopecia, hair loss, and hair thinning, in no specific pattern.
               </h6>
-              <h6>
+              <h6 className='hanging-footnote'>
                 ‡Includes decreased libido and loss of libido.
               </h6>
             </div>

@@ -54,7 +54,7 @@ const Amenorrhea = (props) => {
       <Row>
         <Col lg={{span: 9, offset: 1}}>
           <div className='footnote-container'>
-            <h6>
+            <h6 className='hanging-footnote'>
               *Iron therapy was required for women with Hgb ≥8 g/dL and ≤10 g/dL.
             </h6>
           </div>
