@@ -41,7 +41,7 @@ const AdverseEvents = (props) => {
         <Col lg={{span: 10, offset: 1}}>
           <h3 className='purple graph-title'>
             Adverse events occurring in ≥3% of women treated with Myfembree and at a greater
-            incidence than placebo.
+            incidence than placebo
           </h3>
           <table className='interior-table'>
             <tbody>
@@ -50,10 +50,10 @@ const AdverseEvents = (props) => {
 
                 </th>
                 <th>
-                  Myfembree (n = 254) %
+                  Myfembree (N = 254) %
                 </th>
                 <th>
-                  Placebo (n = 256) %
+                  Placebo (N = 256) %
                 </th>
               </tr>
               <tr>

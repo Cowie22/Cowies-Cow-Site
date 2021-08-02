@@ -43,7 +43,7 @@ const Amenorrhea = (props) => {
         <Col>
           <div className='mid-section-container'>
             <h2 className='blue'>
-              Myfembree improved hemoglobin (Hgb) response in women with anemia<sup>1,*</sup>
+              Myfembree improved hemoglobin (Hgb) response in women with anemia<sup>1,</sup>*
             </h2>
             <div className='lower-graph-container'>
               <InfoGraphic data={AmenorrheaData2} />

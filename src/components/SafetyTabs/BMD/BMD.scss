@@ -39,6 +39,13 @@
   .footnote-container {
     h6 {
       padding-bottom: 4px;
+      &:last-of-type {
+        padding-bottom: 0px;
+      }
+      &.hanging-footnote {
+        padding-left: 0.1em;
+        text-indent: -0.4em;
+      }
     }
   }
 }

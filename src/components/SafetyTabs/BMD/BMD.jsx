@@ -122,7 +122,7 @@ const Reduction = (props) => {
             <h6>
               The <img src={IIcon} alt='' /> indicates 95% confidence intervals.
             </h6>
-            <h6>
+            <h6 className='hanging-footnote'>
               *Baseline and Month 6 assessments include only those participants from LIBERTY 1 and 2 who
               participated in the LIBERTY open-label extension study.
             </h6>

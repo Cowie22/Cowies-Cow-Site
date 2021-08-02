@@ -77,7 +77,7 @@ const TrialDesignExpandCard = props => {
                 &#60;80 mL{' '}
                 <strong>
                   <em>and</em>
-                </strong>{' '}
+                </strong>&nbsp;
                 ≥50% reduction in menstrual blood loss volume from baseline over
                 the last 35 days of treatment compared to placebo.<sup>1</sup>
               </p>

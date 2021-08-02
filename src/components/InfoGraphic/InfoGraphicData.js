@@ -167,8 +167,8 @@ const BMDData3 = [
   {
     content:
     <h3 className='graph-title text-center'>
-      Natural history observational study: change in BMD at Month 6 and 12 in untreated women
-      with uterine fibroids (N = 262)
+      Natural history observational study: change in BMD in untreated women with uterine fibroids
+      at Months 6 and 12 (N = 262)
     </h3>,
     img: BMDGraph3,
     fallBackImg: BMDGraph3FB,

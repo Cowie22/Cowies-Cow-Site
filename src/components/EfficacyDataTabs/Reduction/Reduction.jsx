@@ -77,7 +77,7 @@ const Reduction = (props) => {
           </div>
           <div>
             <h6 className={hideImg > 1 ? 'graph-footnote' : 'graph-footnote hidden'}>
-              Menstrual blood loss volume assessment at Week 4 through Week 20 was prespecified, but not
+              MBL volume assessment at Week 4 through Week 20 was prespecified, but not
               adjusted for multiplicity.<sup>2</sup>
             </h6>
           </div>

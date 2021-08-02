@@ -133,7 +133,7 @@ const HomeContent = (props) => {
           <Row>
             <Col>
               <h6>
-                *A response was defined as menstrual blood loss volume &#60;80 mL <strong><em>and</em></strong> ≥50%
+                *A response was defined as menstrual blood loss volume &#60;80 mL <strong><em>and</em></strong>&nbsp; ≥50%
                 reduction in MBL volume from baseline over the last 35 days of treatment.
               </h6>
             </Col>

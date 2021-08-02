@@ -32,7 +32,7 @@ const ResponseRates = (props) => {
         Approximately 70% of women responded to treatment with Myfembree<sup>1</sup>
       </h2>
       <p>
-        A response was defined as MBL volume &#60;80 mL <strong><em>and</em></strong> ≥50%
+        A response was defined as MBL volume &#60;80 mL <strong><em>and</em></strong>&nbsp; ≥50%
         reduction in MBL volume from baseline* over the last 35 days of treatment.
       </p>
       <Row>
