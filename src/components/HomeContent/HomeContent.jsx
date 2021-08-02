@@ -171,7 +171,7 @@ const HomeContent = (props) => {
             <Col>
               <div>
                 <h6>
-                  FDA = US Food and Drug Administration.
+                  FDA = US Food and Drug Administration; MBL = menstrual blood loss.
                 </h6>
               </div>
             </Col>
