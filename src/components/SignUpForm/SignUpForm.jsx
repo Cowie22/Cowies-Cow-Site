@@ -443,9 +443,9 @@ class SignUpForm extends React.Component {
                       Thank You
                     </h2>
                     <p className='text-center'>
-                      We have received your request for more information about Myfembree (relugolix, estradiol, and
-                      norethindrone acetate) tablets. A Myfembree representative in your area will follow up soon
-                      to get you the information you need.
+                      We have received your request for more information about Myfembree<sup>®</sup>
+                      (relugolix, estradiol, and norethindrone acetate) tablets. A Myfembree representative
+                      in your area will follow up soon to get you the information you need.
                     </p>
                   </Col>
                 </Row>
