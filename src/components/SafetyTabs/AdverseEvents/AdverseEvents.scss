@@ -140,6 +140,10 @@
       padding-bottom: 0;
       .footnote-container {
         padding: 16px 0;
+        .hanging-footnote {
+          padding-left: 0.1em;
+          text-indent: -0.4em;
+        }
       }
     }
   }

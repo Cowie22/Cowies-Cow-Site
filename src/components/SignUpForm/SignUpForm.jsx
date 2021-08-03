@@ -25,7 +25,6 @@ class SignUpForm extends React.Component {
       validated: false,
       count: 0,
       submitClicked: false,
-      captchaSuccess: false,
       hovered: false,
     }
   }
@@ -102,14 +101,14 @@ class SignUpForm extends React.Component {
 
   handleSubmit = (event) => {
     const form = event.currentTarget;
-    if (form.checkValidity() === false || this.state.captchaSuccess === false) {
+    if (form.checkValidity() === false) {
       this.setState({
         submitClicked: true,
       })
       event.preventDefault();
       event.stopPropagation();
     }
-    if (form.checkValidity() === true && this.state.captchaSuccess === true) {
+    if (form.checkValidity() === true) {
       event.preventDefault();
       this.setState({
         thankYou: true,
@@ -118,7 +117,7 @@ class SignUpForm extends React.Component {
     this.setState({
       validated: true,
     }, () => {
-      if (form.checkValidity() === true && this.state.captchaSuccess === true) {
+      if (form.checkValidity() === true) {
         let postData = {
           firstName: this.state.firstName,
           lastName: this.state.lastName,
@@ -136,12 +135,6 @@ class SignUpForm extends React.Component {
   handleHovered = (val) => {
     this.setState({
       hovered: val,
-    })
-  }
-
-  onCaptchaChange = (value) => {
-    this.setState({
-      captchaSuccess: true,
     })
   }
 
@@ -226,7 +219,7 @@ class SignUpForm extends React.Component {
                                 onChange={this.handleInputChange}
                               />
                               <Form.Control.Feedback type='invalid'>
-                                This field cannot be left blank.
+                                This field cannot be blank.
                               </Form.Control.Feedback>
                             </Form.Group>
                           </Col>
@@ -246,7 +239,7 @@ class SignUpForm extends React.Component {
                                 onChange={this.handleInputChange}
                               />
                               <Form.Control.Feedback type='invalid'>
-                                {email === '' ? 'This field cannot be left blank.' : 'Please enter a valid email address.'}
+                                {email === '' ? 'This field cannot be blank.' : 'Please enter a valid email address.'}
                               </Form.Control.Feedback>
                             </Form.Group>
                           </Col>
@@ -263,7 +256,6 @@ class SignUpForm extends React.Component {
                                 <option defaultValue>Select specialty*</option>
                                 <option value='Gynecologic Oncology'>Gynecologic oncology</option>
                                 <option value='Reproductive Endocrinology'>Reproductive endocrinology</option>
-                                <option value='Maternal-Fetal Medicine'>Maternal-fetal medicine</option>
                                 <option value='Urogynecology'>Urogynecology</option>
                                 <option value='Obstetrics & gynecology'>Generalist</option>
                                 <option value='Other'>Other</option>
@@ -295,7 +287,7 @@ class SignUpForm extends React.Component {
                                 onChange={this.handleInputChange}
                               />
                               <Form.Control.Feedback type='invalid'>
-                                This field cannot be left blank.
+                                This field cannot be blank.
                               </Form.Control.Feedback>
                             </Form.Group>
                           </Col>
@@ -316,7 +308,7 @@ class SignUpForm extends React.Component {
                                 isInvalid={confirmEmail !== email}
                               />
                               <Form.Control.Feedback type='invalid'>
-                                {confirmEmail !== email ? 'Confirmation email does not match email.' : 'This field cannot be left blank.'}
+                                {confirmEmail !== email ? 'Confirmation email does not match email.' : 'This field cannot be blank.'}
                               </Form.Control.Feedback>
                             </Form.Group>
                           </Col>
@@ -366,7 +358,7 @@ class SignUpForm extends React.Component {
                                 onChange={this.handleInputChange}
                               />
                               <Form.Control.Feedback type='invalid'>
-                                This field cannot be left blank.
+                                This field cannot be blank.
                               </Form.Control.Feedback>
                             </Form.Group>
                           </Col>

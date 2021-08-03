@@ -15,10 +15,10 @@ const Amenorrhea = (props) => {
   const mounted = useRef(false);
   useEffect(() => {
     if (!mounted.current) {
-      setReferences([1, 2, 4]);
+      setReferences([1, 2, 4, 3]);
       mounted.current = true;
     } else {
-      setReferences([1, 2, 4]);
+      setReferences([1, 2, 4, 3]);
     }
   }, []);
 

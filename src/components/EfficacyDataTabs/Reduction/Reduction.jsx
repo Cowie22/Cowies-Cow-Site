@@ -17,10 +17,10 @@ const Reduction = (props) => {
   const mounted = useRef(false);
   useEffect(() => {
     if (!mounted.current) {
-      setReferences([1, 2, 3, 4]);
+      setReferences([1, 2, 4, 3]);
       mounted.current = true;
     } else {
-      setReferences([1, 2, 3, 4]);
+      setReferences([1, 2, 4, 3]);
     }
   }, []);
 
@@ -75,8 +75,14 @@ const Reduction = (props) => {
           <div className='graph-container'>
             <InfoGraphic data={ReductionData1} />
           </div>
-          <div>
+          <div className='d-none d-lg-block'>
             <h6 className={hideImg > 1 ? 'graph-footnote' : 'graph-footnote hidden'}>
+              MBL volume assessment at Week 4 through Week 20 was prespecified, but not
+              adjusted for multiplicity.<sup>2</sup>
+            </h6>
+          </div>
+          <div className='d-block d-lg-none'>
+            <h6>
               MBL volume assessment at Week 4 through Week 20 was prespecified, but not
               adjusted for multiplicity.<sup>2</sup>
             </h6>

@@ -20,7 +20,7 @@ const PillBottleCallout = (props) => {
           <Col lg={{span: 7, offset: 0, order: 2}} xs={{span: 10, offset: 1, order: 1}}>
             <div className='content-container'>
               <h2 className='white'>
-                Myfembree delivers the convenience of one dose, once-daily<sup>1</sup>
+                Myfembree delivers the convenience of one dose, once daily<sup>1</sup>
               </h2>
               <h6 className='white'>
                 Actual pill size: 7.94 mm in diameter. NDC 72974-415-01
