@@ -51,7 +51,7 @@ const TermsAndConditions = props => {
               Myfembree Bridge Program: Terms and Conditions
             </p>
             <h6>
-              The Myfembree Bridge Program ('Program') provides Myfembree at no
+              The Myfembree Bridge Program (“Program”) provides Myfembree at no
               cost for a limited period to eligible patients with commercial
               insurance who have been prescribed Myfembree for an FDA-approved
               indication, and whose insurance coverage is delayed or who
@@ -84,7 +84,7 @@ const TermsAndConditions = props => {
               Myfembree Quick Start Program: Terms and Conditions
             </p>
             <h6>
-              The Myfembree Quick Start Program (“Program') provides a one-month
+              The Myfembree Quick Start Program (“Program”) provides a one-month
               supply of Myfembree at no cost to eligible patients with
               government insurance who are newly prescribed Myfembree for an
               FDA-approved indication, and whose insurance coverage is delayed 5
@@ -112,7 +112,7 @@ const TermsAndConditions = props => {
               Myovant Sciences Patient Assistance Program: Terms and Conditions
             </p>
             <h6>
-              The Myovant Sciences Patient Assistance Program (“Program')
+              The Myovant Sciences Patient Assistance Program (“Program”)
               provides Myfembree at no cost to eligible patients who are
               prescribed Myfembree for an FDA-approved indication. Patients and
               prescribers must complete the Myfembree Support Program enrollment
