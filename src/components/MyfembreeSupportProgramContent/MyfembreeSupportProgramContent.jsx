@@ -171,8 +171,10 @@ const MyfembreeSupportProgramContent = (props) => {
                 <Overview />
                 : currentTopTab === 2 ?
                 <Enrollment />
-                :
+                : currentTopTab === 3 ?
                 <Copay />
+                :
+                <Overview />
               }
             </Col>
             <Col lg={{span: 1}} className='d-none d-lg-block'>
