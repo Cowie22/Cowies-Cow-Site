@@ -35,11 +35,13 @@ const MyfembreeSupportProgramContent = (props) => {
   useEffect(() => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('support');
-    activeDropdownLink !== 4.2 && activeDropdownLink !== 4.3 && activeDropdownLink !== 4.4 ?
-    handleCurrentTopTab(1) : null;
-    activeDropdownLink !== 4.2 && activeDropdownLink !== 4.3 && activeDropdownLink !== 4.4 ?
-    handleActiveDropdownLink(4.1) : null;
+    handleCurrentTopTab(1);
+    handleActiveDropdownLink(4.1);
     setReferences([]);
+    // activeDropdownLink !== 4.2 && activeDropdownLink !== 4.3 && activeDropdownLink !== 4.4 ?
+    // handleCurrentTopTab(1) : null;
+    // activeDropdownLink !== 4.2 && activeDropdownLink !== 4.3 && activeDropdownLink !== 4.4 ?
+    // handleActiveDropdownLink(4.1) : null;
 
     updateWindowDimensions();
     window.addEventListener('resize', updateWindowDimensions, { passive: true });
@@ -254,8 +256,8 @@ const MyfembreeSupportProgramContent = (props) => {
                 />
               :
                 <NextPageBtn
-                  btnText='Explore Once-Daily Dosing With Myfembree'
-                  btnLink='once-daily-dosing/'
+                  btnText='Explore Myfembree Support Program Resources'
+                  btnLink='resources/'
                 />
             }
           </Row>
