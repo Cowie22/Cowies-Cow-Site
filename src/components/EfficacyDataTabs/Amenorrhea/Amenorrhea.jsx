@@ -15,10 +15,10 @@ const Amenorrhea = (props) => {
   const mounted = useRef(false);
   useEffect(() => {
     if (!mounted.current) {
-      setReferences([1, 2, 4, 3]);
+      setReferences([1, 2, 3, 4]);
       mounted.current = true;
     } else {
-      setReferences([1, 2, 4, 3]);
+      setReferences([1, 2, 3, 4]);
     }
   }, []);
 
@@ -30,7 +30,7 @@ const Amenorrhea = (props) => {
         KEY SECONDARY ENDPOINTS
       </h4>
       <h2 className='blue'>
-        50% of women achieved amenorrhea with Myfembree<sup>1,3</sup>
+        50% of women achieved amenorrhea with Myfembree<sup>4</sup>
       </h2>
       <Row>
         <Col lg={{span: 12, offset: 0}}>
