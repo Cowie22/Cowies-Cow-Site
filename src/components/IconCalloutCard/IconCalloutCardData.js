@@ -32,7 +32,7 @@ const IconCalloutCardData2 = [
         Response to treatment*
       </li>
       <li>
-        Change in menstrual blood loss (MBL) volume from baseline
+        Change in menstrual blood loss volume from baseline
       </li>
       <li>
         Amenorrhea

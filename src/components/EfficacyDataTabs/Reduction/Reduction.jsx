@@ -60,7 +60,7 @@ const Reduction = (props) => {
         KEY SECONDARY ENDPOINT
       </h4>
       <h2 className='blue'>
-        Myfembree delivered sustained reductions in menstrual blood loss (MBL) volume<sup>1,2</sup>
+        Myfembree delivered sustained reductions in menstrual blood loss volume<sup>1,2</sup>
       </h2>
       <Row>
         <Col lg={{span: 12, offset: 0}}>
@@ -77,13 +77,13 @@ const Reduction = (props) => {
           </div>
           <div className='d-none d-lg-block'>
             <p className={hideImg > 1 ? 'graph-footnote' : 'graph-footnote hidden'}>
-              MBL volume assessment at Week 4 through Week 20 was prespecified, but not
+              menstrual blood loss volume assessment at Week 4 through Week 20 was prespecified, but not
               adjusted for multiplicity.<sup>2</sup>
             </p>
           </div>
           <div className='d-block d-lg-none'>
             <p>
-              MBL volume assessment at Week 4 through Week 20 was prespecified, but not
+              menstrual blood loss volume assessment at Week 4 through Week 20 was prespecified, but not
               adjusted for multiplicity.<sup>2</sup>
             </p>
           </div>
@@ -96,7 +96,7 @@ const Reduction = (props) => {
               ADDITIONAL ENDPOINT
             </h4>
             <h2 className='blue'>
-              Change in MBL volume at 52 weeks<sup>3,4</sup>
+              Change in menstrual blood loss volume at 52 weeks<sup>3,4</sup>
             </h2>
             <div className='lower-graph-container'>
               <InfoGraphic data={ReductionData2} />

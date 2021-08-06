@@ -92,7 +92,7 @@ const TrialDesignExpandCard = props => {
               <p>
                 <strong>LIBERTY open-label extension study:</strong> 28-week,
                 open-label extension study that enrolled 476 women from LIBERTY
-                1 and 2. An additional endpoint included change in MBL volume at
+                1 and 2. An additional endpoint included change in menstrual blood loss volume at
                 52 weeks.<sup>3</sup>
               </p>
             </Col>

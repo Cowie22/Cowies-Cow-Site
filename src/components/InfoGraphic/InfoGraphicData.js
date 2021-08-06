@@ -61,7 +61,7 @@ const ResponseRatesData1 = [
   {
     content:
     <h3 className='purple graph-title text-center'>
-      MBL response rate
+      Menstrual blood loss response rate
     </h3>,
     img: ResponseRatesGraph,
     fallBackImg: ResponseRatesGraphFB,
@@ -76,13 +76,13 @@ const ReductionData1 = [
   {
     content:
     <h3 className='purple graph-title text-center'>
-      Key secondary endpoint: reduction in MBL volume from baseline up to Week 24<sup>1</sup>
+      Key secondary endpoint: reduction in menstrual blood loss volume from baseline up to Week 24<sup>1</sup>
     </h3>,
     img: reductionGraph1,
     fallBackImg: reductionGraph1FB,
     imgMobile: reductionGraph1Mobile,
     fallBackImgMobile: reductionGraph1MobileFB,
-    contentColumns: {span: 11, offset: 0},
+    contentColumns: {span: 12, offset: 0},
     imgColumns: {span: 12, offset: 0}
   }
 ]
