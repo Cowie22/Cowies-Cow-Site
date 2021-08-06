@@ -67,7 +67,7 @@ class UtilityNav extends React.Component {
               <Col xl={{ span: 12, offset: 0 }} lg={{ span: 12, offset: 0 }}>
                 <nav className='utility-nav-container'>
                   <Row>
-                    <Col xl={{span: 9, offset: 3}} lg={{span: 9, offset: 3}}>
+                    <Col xl={{span: 9, offset: 3}} lg={{span: 10, offset: 2}}>
                       <ul className='utility-left-container'>
                         <li>
                           <a
