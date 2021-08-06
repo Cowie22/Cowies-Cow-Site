@@ -97,7 +97,7 @@ class MainNav extends React.Component {
         >
           <Container>
             <Row>
-              <Col lg={3} xs={7} className='navbar-header'>
+              <Col lg={3} xs={6} className='navbar-header'>
                 <Link to='/'>
                   <img
                     loading='lazy'
@@ -111,7 +111,7 @@ class MainNav extends React.Component {
                   />
                 </Link>
               </Col>
-              <Col xs={{ span: 3, offset: 2 }} className='d-block d-lg-none'>
+              <Col xs={{ span: 3, offset: 3 }} className='d-block d-lg-none'>
                 <div className='mobile-navbar-container'>
                   <button
                     type='button'
