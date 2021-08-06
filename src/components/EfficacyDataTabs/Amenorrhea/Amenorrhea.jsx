@@ -30,7 +30,7 @@ const Amenorrhea = (props) => {
         KEY SECONDARY ENDPOINTS
       </h4>
       <h2 className='blue'>
-        50% of women achieved amenorrhea with Myfembree<sup>4</sup>
+        50% of women achieved amenorrhea with Myfembree<sup>1,4</sup>
       </h2>
       <Row>
         <Col lg={{span: 12, offset: 0}}>
