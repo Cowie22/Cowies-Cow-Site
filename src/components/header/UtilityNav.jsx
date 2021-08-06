@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 
-import ExternalLink from '../exitramp/ExternalLink.jsx'
-import NonUSPopUp from '../../components/NonUSPopUp/NonUSPopUp'
-import SignUpForm from '../SignUpForm/SignUpForm'
+// import ExternalLink from '../exitramp/ExternalLink.jsx'
+// import NonUSPopUp from '../../components/NonUSPopUp/NonUSPopUp'
+// import SignUpForm from '../SignUpForm/SignUpForm'
 
 class UtilityNav extends React.Component {
   constructor(props) {
@@ -57,17 +57,17 @@ class UtilityNav extends React.Component {
         onClick={() => this.handlePopUp()}
       >
       </section>
-      <SignUpForm
+      {/* <SignUpForm
         handlePopUp={this.handlePopUp}
         signUpForm={signUpForm}
-      />
+      /> */}
         <section className='utility-nav'>
           <Container>
             <Row>
               <Col xl={{ span: 12, offset: 0 }} lg={{ span: 12, offset: 0 }}>
                 <nav className='utility-nav-container'>
                   <Row>
-                    <Col xl={{span: 8, offset: 0}} lg={{span: 8, offset: 0}}>
+                    <Col xl={{span: 9, offset: 3}} lg={{span: 9, offset: 3}}>
                       <ul className='utility-left-container'>
                         <li>
                           <a
@@ -99,7 +99,7 @@ class UtilityNav extends React.Component {
                         </li>
                       </ul>
                     </Col>
-                    <Col lg={{span: 4}} className='utility-right-col'>
+                    {/* <Col lg={{span: 4}} className='utility-right-col'>
                       <div className='utility-nav-end-container'>
                         <ul>
                           <li onClick={() => this.handlePopUp()}>
@@ -107,7 +107,7 @@ class UtilityNav extends React.Component {
                           </li>
                         </ul>
                       </div>
-                    </Col>
+                    </Col> */}
                   </Row>
                 </nav>
               </Col>

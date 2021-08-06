@@ -1,11 +1,11 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import IsiContent from './IsiContent'
+import React from "react"
+import { Container, Row, Col } from "react-bootstrap"
+import IsiContent from "./IsiContent"
 
-import plus from '../../assets/images/Plus.svg'
-import minus from '../../assets/images/Minus.svg'
-import plusHovered from '../../assets/images/plus-hovered.svg'
-import minusHovered from '../../assets/images/minus-hovered.svg'
+import plus from "../../assets/images/Plus.svg"
+import minus from "../../assets/images/Minus.svg"
+import plusHovered from "../../assets/images/plus-hovered.svg"
+import minusHovered from "../../assets/images/minus-hovered.svg"
 
 class ISI extends React.Component {
   constructor(props) {
@@ -22,15 +22,17 @@ class ISI extends React.Component {
   componentDidMount = () => {
     this.updateWindowDimensions()
     this.handleScroll()
-    window.addEventListener('resize', this.updateWindowDimensions, { passive: true })
-    window.addEventListener('scroll', this.handleScroll, { passive: true })
-    window.addEventListener('scroll', this.toggleIsiHeader, { passive: true })
+    window.addEventListener("resize", this.updateWindowDimensions, {
+      passive: true,
+    })
+    window.addEventListener("scroll", this.handleScroll, { passive: true })
+    window.addEventListener("scroll", this.toggleIsiHeader, { passive: true })
   }
 
   componentWillUnmount = () => {
-    window.removeEventListener('resize', this.updateWindowDimensions)
-    window.removeEventListener('scroll', this.handleScroll)
-    window.removeEventListener('scroll', this.toggleIsiHeader)
+    window.removeEventListener("resize", this.updateWindowDimensions)
+    window.removeEventListener("scroll", this.handleScroll)
+    window.removeEventListener("scroll", this.toggleIsiHeader)
   }
 
   updateWindowDimensions = () => {
@@ -43,14 +45,14 @@ class ISI extends React.Component {
     this.setState({
       yDirection: window.pageYOffset,
     })
-    let element = document.querySelector('.isi-tray')
+    let element = document.querySelector(".isi-tray")
     if (this.state.yDirection < 1) {
-      element.classList.remove('scroll')
+      element.classList.remove("scroll")
     }
   }
 
   toggleIsiHeader = () => {
-    let fadeTarget = document.querySelector('.isi-tray')
+    let fadeTarget = document.querySelector(".isi-tray")
 
     const fadeInEffect = () => {
       let fadeEffect = setInterval(function() {
@@ -90,10 +92,10 @@ class ISI extends React.Component {
     let scrollTop =
       document.body.scrollTop || document.documentElement.scrollTop
     let triggerElement = document
-      .querySelector('.page-isi #trigger-tray')
+      .querySelector(".page-isi #trigger-tray")
       .getBoundingClientRect()
     let isiTrayHeight = document
-      .querySelector('.isi-tray')
+      .querySelector(".isi-tray")
       .getBoundingClientRect().height
 
     let trayHideHeight =
@@ -113,10 +115,10 @@ class ISI extends React.Component {
       isIsiExpanded: !this.state.isIsiExpanded,
     })
     // setIsiExpanded(!isIsiExpanded)
-    let body = document.getElementsByTagName('body')[0]
+    let body = document.getElementsByTagName("body")[0]
     this.state.isIsiExpanded
-      ? body.classList.remove('isi-expanded')
-      : body.classList.add('isi-expanded')
+      ? body.classList.remove("isi-expanded")
+      : body.classList.add("isi-expanded")
   }
 
   handleHovered = val => {
@@ -135,22 +137,22 @@ class ISI extends React.Component {
     } = this.state
     return (
       <>
-        <div id='isi'></div>
-        <section className='isi'>
+        <div id="isi"></div>
+        <section className="isi">
           <div
-            className={isIsiExpanded ? 'isi-overlay' : ''}
+            className={isIsiExpanded ? "isi-overlay" : ""}
             onClick={() => this.toggleIsiTray()}
           >
             <div
               className={
                 isIsiExpanded
-                  ? 'isi-tray expanded'
+                  ? "isi-tray expanded"
                   : yDirection > 0
-                  ? 'isi-tray tray-collapsed'
-                  : 'isi-tray'
+                  ? "isi-tray tray-collapsed"
+                  : "isi-tray"
               }
               onClick={() =>
-                typeof window !== 'undefined' && window.innerWidth > 0
+                typeof window !== "undefined" && window.innerWidth > 0
                   ? this.toggleIsiTray()
                   : null
               }
@@ -158,24 +160,24 @@ class ISI extends React.Component {
               <Container>
                 <Row>
                   <Col lg={{ span: 12, offset: 0 }}>
-                    <div className='isi-tray-container'>
+                    <div className="isi-tray-container">
                       <Row>
                         {!isIsiExpanded && width >= 991 ? (
                           <>
                             <Col lg={7}>
-                              <h4 className='purple extra-bold mulish'>
+                              <h4 className="purple extra-bold mulish">
                                 IMPORTANT SAFETY INFORMATION
                               </h4>
                             </Col>
                             <Col lg={{ span: 4, offset: 0 }}>
-                              <h4 className='text-left purple extra-bold mulish'>
+                              <h4 className="text-left purple extra-bold mulish">
                                 INDICATION
                               </h4>
                             </Col>
                           </>
                         ) : !isIsiExpanded && width < 991 ? (
                           <Col xs={10}>
-                            <h4 className='purple extra-bold mulish'>
+                            <h4 className="purple extra-bold mulish">
                               IMPORTANT SAFETY INFORMATION
                             </h4>
                           </Col>
@@ -184,7 +186,7 @@ class ISI extends React.Component {
                         )}
                         <Col lg={1} xs={2}>
                           <div
-                            className='isi-tray-icon-container'
+                            className="isi-tray-icon-container"
                             onMouseEnter={() => this.handleHovered(true)}
                             onMouseLeave={() => this.handleHovered(false)}
                           >
@@ -192,29 +194,29 @@ class ISI extends React.Component {
                               isIsiExpanded ? (
                                 <img
                                   src={hovered ? minusHovered : minus}
-                                  width='12'
-                                  height='12'
-                                  alt=''
+                                  width="12"
+                                  height="12"
+                                  alt=""
                                 />
                               ) : (
                                 <img
                                   src={hovered ? plusHovered : plus}
-                                  width='12'
-                                  height='12'
-                                  alt=''
+                                  width="12"
+                                  height="12"
+                                  alt=""
                                 />
                               )
                             ) : isIsiExpanded ? (
-                              <img src={minus} width='12' height='12' alt='' />
+                              <img src={minus} width="12" height="12" alt="" />
                             ) : (
-                              <img src={plus} width='12' height='12' alt='' />
+                              <img src={plus} width="12" height="12" alt="" />
                             )}
                           </div>
                         </Col>
                       </Row>
-                      <div className='isi-content'>
+                      <div className="isi-content">
                         {isIsiExpanded ? (
-                          <div className='isi-content-inner-container'>
+                          <div className="isi-content-inner-container">
                             <IsiContent
                               width={width}
                               yDirection={yDirection}
@@ -228,11 +230,11 @@ class ISI extends React.Component {
                           <Row>
                             <Col lg={7}>
                               {/* <div className='black-box-container'> */}
-                              <p className='extra-bold'>
-                                <span className='purple'>BOXED WARNING:</span>{' '}
+                              <p className="extra-bold">
+                                <span className="purple">BOXED WARNING:</span>{" "}
                                 THROMBOEMBOLIC DISORDERS AND VASCULAR EVENTS
                               </p>
-                              <ul className='black-box-ul'>
+                              <ul className="black-box-ul">
                                 <li>
                                   Estrogen and progestin combination products,
                                   including Myfembree, increase the risk of
@@ -255,15 +257,13 @@ class ISI extends React.Component {
                             </Col>
                             <Col lg={{ span: 4, offset: 0 }}>
                               <p>
-                                Myfembree (relugolix, estradiol, and
-                                norethindrone acetate) is indicated for the
-                                management of heavy menstrual bleeding
-                                associated with uterine leiomyomas (fibroids) in
-                                premenopausal women.&nbsp;&nbsp;{' '}
-                                <u>Limitations of Use</u>: Use of Myfembree
-                                should be limited to 24 months due to the risk
-                                of continued bone loss which may not be
-                                reversible.
+                                Myfembree is indicated for the management of
+                                heavy menstrual bleeding associated with uterine
+                                leiomyomas (fibroids) in premenopausal
+                                women.&nbsp;&nbsp; <u>Limitations of Use</u>:
+                                Use of Myfembree should be limited to 24 months
+                                due to the risk of continued bone loss which may
+                                not be reversible.
                               </p>
                             </Col>
                           </Row>
@@ -275,8 +275,8 @@ class ISI extends React.Component {
               </Container>
             </div>
           </div>
-          <div id='page-isi' />
-          <div className='page-isi'>
+          <div id="page-isi" />
+          <div className="page-isi">
             <Container>
               <Row>
                 <Col>
