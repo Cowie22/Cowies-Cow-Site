@@ -77,13 +77,13 @@ const Reduction = (props) => {
           </div>
           <div className='d-none d-lg-block'>
             <p className={hideImg > 1 ? 'graph-footnote' : 'graph-footnote hidden'}>
-              menstrual blood loss volume assessment at Week 4 through Week 20 was prespecified, but not
+              Menstrual blood loss volume assessment at Week 4 through Week 20 was prespecified, but not
               adjusted for multiplicity.<sup>2</sup>
             </p>
           </div>
           <div className='d-block d-lg-none'>
             <p>
-              menstrual blood loss volume assessment at Week 4 through Week 20 was prespecified, but not
+              Menstrual blood loss volume assessment at Week 4 through Week 20 was prespecified, but not
               adjusted for multiplicity.<sup>2</sup>
             </p>
           </div>
