@@ -75,15 +75,19 @@ const Reduction = (props) => {
           <div className='graph-container'>
             <InfoGraphic data={ReductionData1} />
           </div>
+          {/*
+            This sentence is used twice, once for mobile and once for desktop because of animation that is used
+            On desktop, but not mobile.  If updates to copy happen, make sure to do it in both spots.
+          */}
           <div className='d-none d-lg-block'>
             <p className={hideImg > 1 ? 'graph-footnote' : 'graph-footnote hidden'}>
-              Menstrual blood loss volume assessment at Week 4 through Week 20 was prespecified, but not
+              Menstrual blood loss volume (MBL) assessment at Week 4 through Week 20 was prespecified, but not
               adjusted for multiplicity.<sup>2</sup>
             </p>
           </div>
           <div className='d-block d-lg-none'>
             <p>
-              Menstrual blood loss volume assessment at Week 4 through Week 20 was prespecified, but not
+              Menstrual blood loss volume (MBL) assessment at Week 4 through Week 20 was prespecified, but not
               adjusted for multiplicity.<sup>2</sup>
             </p>
           </div>
