@@ -27,11 +27,11 @@ const SupportContentBlockLarge = (props) => {
           <p>
             The Myfembree Copay Assistance Program can provide financial assistance to eligible patients
             with commercial insurance when they get their prescription from their retail or mail-order
-            pharmacy during the cost-sharing portion of their insurance benefit.
+            pharmacy.
           </p>
           <p className='extra-bold copy-padding'>
-            Enrollment into this copay program is facilitated through the Myfembree website, over the phone,
-            or by scanning a QR code included on select Myfembree Support Program resources.
+            Enrollment into this copay program is facilitated over the phone, by scanning a QR code
+            included on select Myfembree Support Program resources, or by clicking below.
           </p>
           <Row>
             <Col lg={{span: 8, offset: 0}}>

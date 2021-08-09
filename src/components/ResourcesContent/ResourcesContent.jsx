@@ -51,9 +51,7 @@ const ResourcesContent = (props) => {
           <Row>
             <Col lg={{span: 10, offset: 1}}>
               <p className='resource-sub-title'>
-                A number of helpful resources related to the Myfembree Support Program have
-                been developed for use in your office. Below, you can find downloads for
-                these resources.
+                Access, download, and print helpful resources, information, and support for your patients.
               </p>
               <ResourcesDownloadCard data={ResourceDownloadCardData1} />
               <ResourcesDownloadCard data={ResourceDownloadCardData2} />

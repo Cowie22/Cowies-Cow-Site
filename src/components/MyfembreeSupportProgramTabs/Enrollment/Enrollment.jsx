@@ -36,7 +36,7 @@ const Enrollment = (props) => {
       <ContentBTNCard
         title={
           `If your patient already has a Myfembree prescription, they can provide their e-consent for
-          enrollment and sharing protected health information`
+          enrollment and HIPAA authorization`
         }
         btnText={'Provide e-Consent'}
         link={'https://portal.trialcard.com/myovant/myfembree/consent/'}
