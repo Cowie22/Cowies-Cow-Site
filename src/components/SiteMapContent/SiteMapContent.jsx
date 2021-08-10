@@ -94,7 +94,7 @@ const SiteMapContent = (props) => {
                       <Link to='/myfembree-support-program/'>
                         Myfembree Support Program
                       </Link>
-                      <ul className='purple-ul-square sitemap-ul'>
+                      {/* <ul className='purple-ul-square sitemap-ul'>
                         <li>
                           <Link to='/myfembree-support-program/#drive-to-slider-nav'>
                             Overview
@@ -122,7 +122,7 @@ const SiteMapContent = (props) => {
                             Copay & Savings Programs
                           </Link>
                         </li>
-                      </ul>
+                      </ul> */}
                     </li>
                     <li>
                       <Link to='/resources/'>
