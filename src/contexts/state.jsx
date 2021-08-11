@@ -118,8 +118,9 @@ class AppProvider extends Component {
     // AppContext.Provider is a built in function for context, it is important that
     // this.props.children is used and to note that this.state is passed in.
 
-    // The class AppProvider will then wrap the outermost component(s) in the app,
-    // In our case at the moment, App.jsx
+    // The class AppProvider will then wrap the outermost component(s) in the app.
+    // For Gatsby, there is a special way to handle this, and the wrapper will be
+    // Used in gatsby-browser.js and gatsby-ssr.js.
     return (
       <AppContext.Provider value={this.state}>
         {this.props.children}
