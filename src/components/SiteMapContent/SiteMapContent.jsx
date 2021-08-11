@@ -94,35 +94,6 @@ const SiteMapContent = (props) => {
                       <Link to='/myfembree-support-program/'>
                         Myfembree Support Program
                       </Link>
-                      {/* <ul className='purple-ul-square sitemap-ul'>
-                        <li>
-                          <Link to='/myfembree-support-program/#drive-to-slider-nav'>
-                            Overview
-                          </Link>
-                        </li>
-                        <li
-                          onClick={() => {
-                            setTimeout(() => {
-                              handleCurrentTopTab(2)
-                            }, 500)
-                          }}
-                        >
-                          <Link to='/myfembree-support-program/#drive-to-slider-nav'>
-                            Enrollment & e-Consent
-                          </Link>
-                        </li>
-                        <li
-                          onClick={() => {
-                            setTimeout(() => {
-                              handleCurrentTopTab(3)
-                            }, 500)
-                          }}
-                        >
-                          <Link to='/myfembree-support-program/#drive-to-slider-nav'>
-                            Copay & Savings Programs
-                          </Link>
-                        </li>
-                      </ul> */}
                     </li>
                     <li>
                       <Link to='/resources/'>
