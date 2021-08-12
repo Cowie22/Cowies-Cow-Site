@@ -70,14 +70,14 @@ export default () => (
           xs={{ span: 12, offset: 0, order: 1 }}
         >
           <div className="footer-logo-container">
-            <a href="https://www.myovant.com" target="_blank">
+            <a href="https://www.myovant.com" target="_blank" rel='noopener noreferrer'>
               <img
                 src={myovantLogo}
                 alt="Myovant Sciences logo"
                 className="footer-logo"
               />
             </a>
-            <a href="https://www.pfizer.com" target="_blank">
+            <a href="https://www.pfizer.com" target="_blank" rel='noopener noreferrer'>
               <img
                 src={pfizerLogo}
                 alt="Pfizer logo"

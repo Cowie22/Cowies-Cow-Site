@@ -69,7 +69,7 @@ const Enrollment = (props) => {
                   </Col>
                 </Row>
                 <p className='extra-bold purple'>
-                  The office can call <a href='tel:1-833-693-3627'>1-833-MYFEMBREE (1-833-693-3627)</a> to speak
+                  The office can call <a href='tel:1-833-693-3627' rel='noopener noreferrer'>1-833-MYFEMBREE (1-833-693-3627)</a> to speak
                   to a Support Coordinator or Virtual Reimbursement Manager about access and reimbursement
                   status questions
                 </p>

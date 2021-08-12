@@ -218,7 +218,7 @@ const MyfembreeSupportProgramContent = (props) => {
             title={
               <h2 className='white'>
                 If assistance is required during the enrollment process, call the Myfembree
-                Support Program at <a href='tel:1-833-693-3627'><u>1-833-MYFEMBREE</u> (<u>1-833-693-3627</u>)</a>,
+                Support Program at <a href='tel:1-833-693-3627' rel='noopener noreferrer'><u>1-833-MYFEMBREE</u> (<u>1-833-693-3627</u>)</a>,
                 8 <sub>AM</sub>–8 <sub>PM</sub> ET, Monday–Friday
               </h2>
             }
