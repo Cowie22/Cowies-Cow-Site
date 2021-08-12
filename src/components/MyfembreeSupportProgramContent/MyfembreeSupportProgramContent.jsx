@@ -38,10 +38,6 @@ const MyfembreeSupportProgramContent = (props) => {
     handleCurrentTopTab(1);
     handleActiveDropdownLink(4.1);
     setReferences([]);
-    // activeDropdownLink !== 4.2 && activeDropdownLink !== 4.3 && activeDropdownLink !== 4.4 ?
-    // handleCurrentTopTab(1) : null;
-    // activeDropdownLink !== 4.2 && activeDropdownLink !== 4.3 && activeDropdownLink !== 4.4 ?
-    // handleActiveDropdownLink(4.1) : null;
 
     updateWindowDimensions();
     window.addEventListener('resize', updateWindowDimensions, { passive: true });
