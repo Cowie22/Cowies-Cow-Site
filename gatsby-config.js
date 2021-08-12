@@ -17,12 +17,12 @@ module.exports = {
         defaultDataLayer: { platform: "gatsby" },
       },
     },
-    {
-      resolve: 'gatsby-plugin-brotli',
-      options: {
-        extensions: ['css', 'html', 'js', 'svg', 'jsx', 'webp', 'scss', 'png', 'jpg']
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-brotli',
+    //   options: {
+    //     extensions: ['css', 'html', 'js', 'svg', 'jsx', 'webp', 'scss', 'png', 'jpg']
+    //   }
+    // },
     {
       resolve: `gatsby-plugin-google-fonts-with-attributes`,
       options: {
