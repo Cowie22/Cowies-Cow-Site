@@ -11,16 +11,19 @@ import smallPillBottleIcon from '../../../assets/images/small-green-pill-bottle-
 const Overview = (props) => {
   const state = useContext(AppContext);
   const {
-    setReferences
+    setReferences,
+    handleCurrentTopTab,
   } = state;
 
   const mounted = useRef(false);
   useEffect(() => {
     if (!mounted.current) {
       setReferences([]);
+      handleCurrentTopTab(1);
       mounted.current = true;
     } else {
       setReferences([]);
+      handleCurrentTopTab(1);
     }
   }, []);
 
