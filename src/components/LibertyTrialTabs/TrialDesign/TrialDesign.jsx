@@ -70,9 +70,13 @@ const TrialDesign = (props) => {
           476 women from LIBERTY 1 and 2.<sup>2,†</sup>
         </p>
       </div>
-      <div className='graph-container'>
-        <InfoGraphic data={TrialDesignData1} />
-      </div>
+      <Row>
+        <Col>
+          <div className='graph-container'>
+            <InfoGraphic data={TrialDesignData1} />
+          </div>
+        </Col>
+      </Row>
       <div className='footnote-container'>
         <h6>
           *Heavy menstrual bleeding defined as menstrual blood loss volume of ≥80 mL per cycle for 2

@@ -1,3 +1,7 @@
+// In order to use PM2 and deploy to the staging server, you need to comment out gatsby-plugin-minify and gatsby-plugin-brotli.
+// However, these two plugins dramatically increase page speeds, so make sure to utilize them before building the code you intend
+// To use for production.
+
 module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
