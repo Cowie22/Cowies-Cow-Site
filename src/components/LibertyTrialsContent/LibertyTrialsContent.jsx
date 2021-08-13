@@ -106,8 +106,10 @@ const LibertyTrialsContent = (props) => {
               {
                 currentTopTab === 1 ?
                 <TrialDesign />
-                :
+                : currentTopTab === 2 ?
                 <Demographics />
+                :
+                <TrialDesign />
               }
             </Col>
             <Col lg={{span: 1}} className='d-none d-lg-block'>

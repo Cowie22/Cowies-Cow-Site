@@ -116,8 +116,10 @@ const SafetyProfileContent = (props) => {
                 <AdverseEvents />
                 : currentTopTab === 2 ?
                 <BMD />
-                :
+                : currentTopTab === 3 ?
                 <Return />
+                :
+                <AdverseEvents />
               }
             </Col>
             <Col lg={{span: 1}} className='d-none d-lg-block'>

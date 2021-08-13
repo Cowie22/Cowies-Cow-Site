@@ -118,8 +118,10 @@ const EfficacyDataContent = (props) => {
                 <ResponseRates />
                 : currentTopTab === 2 ?
                 <Reduction />
-                :
+                : currentTopTab === 3 ?
                 <Amenorrhea />
+                :
+                <ResponseRates />
               }
             </Col>
             <Col lg={{span: 1}} className='d-none d-lg-block'>
