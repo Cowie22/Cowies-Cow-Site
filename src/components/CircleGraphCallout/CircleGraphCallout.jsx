@@ -14,12 +14,12 @@ const CircleGraphCallout = (props) => {
           <Row>
             <Col lg={{span: 3}} xs={{span: 6, offset: 0}}>
               <div className='circle-icon-container'>
-                <img src={circleIconOne} alt='' />
+                <img src={circleIconOne} alt='' loading='lazy' />
               </div>
             </Col>
             <Col lg={{span: 3}} xs={{span: 6, offset: 0}}>
               <div className='circle-icon-container'>
-                <img src={circleIconTwo} alt='' />
+                <img src={circleIconTwo} alt='' loading='lazy' />
               </div>
             </Col>
             <Col lg={{span: 6}}>

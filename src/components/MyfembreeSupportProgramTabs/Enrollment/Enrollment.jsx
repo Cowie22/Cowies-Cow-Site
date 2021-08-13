@@ -65,7 +65,7 @@ const Enrollment = (props) => {
               <div className='enrolment-purple-line-card-content-container'>
                 <Row>
                   <Col lg={{span: 2, offset: 5}} md={{span: 4, offset: 4}} xs={{span: 6, offset: 3}}>
-                    <img src={personSupportIcon} alt='' />
+                    <img src={personSupportIcon} alt='' loading='lazy' />
                   </Col>
                 </Row>
                 <p className='extra-bold purple'>

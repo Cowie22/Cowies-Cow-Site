@@ -11,7 +11,7 @@ const RectangleCard = (props) => {
         <Row>
           <Col lg={{span: 1}} xs={{span: 2}}>
             <div className='icon-container'>
-              <img src={icon} alt={alt} />
+              <img src={icon} alt={alt} loading='lazy' />
             </div>
           </Col>
           <Col lg={{span: 10}} xs={{span: 10}}>

@@ -51,7 +51,7 @@ const Overview = (props) => {
                   <Row>
                     <Col lg={{span: 4}}>
                       <div className='icon-container'>
-                        <img src={smallPillBottleIcon} alt='' />
+                        <img src={smallPillBottleIcon} alt='' loading='lazy' />
                         <p className='extra-bold'>
                           Free Medication Programs*
                         </p>

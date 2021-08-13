@@ -13,7 +13,7 @@ const IconCalloutCardData1 = [
     <div className='pill-img-container'>
       <picture>
         <source srcSet={pillBottleWithText} className='pill-img' type='image/webp' />
-        <img src={pillBottleWithTextFB} className='pill-img' alt='' />
+        <img src={pillBottleWithTextFB} className='pill-img' alt='' loading='lazy' />
       </picture>
     </div>,
     btnText: 'See Dosing Considerations',

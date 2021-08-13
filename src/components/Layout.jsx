@@ -102,7 +102,7 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
         onMouseLeave={() => handleHovered(false)}
         onClick={() => scrollToTop()}
       >
-        <img src={hovered ? backToTopHovered : backToTop} alt='' />
+        <img src={hovered ? backToTopHovered : backToTop} alt='' loading='lazy' />
       </div>
       <Isi />
       <References references={references} />

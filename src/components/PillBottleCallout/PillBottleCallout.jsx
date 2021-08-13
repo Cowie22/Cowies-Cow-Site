@@ -13,7 +13,7 @@ const PillBottleCallout = (props) => {
             <div className='pill-bottle-container'>
               <picture>
                 <source srcSet={pillBottle} type='image/webp' />
-                <img src={pillBottleFB} alt='' />
+                <img src={pillBottleFB} alt='' loading='lazy' />
               </picture>
             </div>
           </Col>

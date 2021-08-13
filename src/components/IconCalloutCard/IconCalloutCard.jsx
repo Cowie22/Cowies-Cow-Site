@@ -9,7 +9,7 @@ const IconCalloutCard = (props) => {
     <Col lg={{span: 4, offset: 0}}>
       <div className='icon-callout-card-container'>
         <div className='icon-title-container'>
-          <img src={icon} alt='' />
+          <img src={icon} alt='' loading='lazy' />
           {title}
         </div>
         <p className='purple extra-bold'>

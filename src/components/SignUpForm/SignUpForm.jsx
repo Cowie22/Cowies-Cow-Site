@@ -174,6 +174,7 @@ class SignUpForm extends React.Component {
                           src={hovered ? closeIconHovered : closeIcon}
                           className='close-img'
                           alt=''
+                          loading='lazy'
                         />
                       </div>
                     </div>
@@ -433,6 +434,7 @@ class SignUpForm extends React.Component {
                         src={hovered ? closeIconHovered : closeIcon}
                         className='close-img'
                         alt=''
+                        loading='lazy'
                       />
                     </div>
                   </Col>

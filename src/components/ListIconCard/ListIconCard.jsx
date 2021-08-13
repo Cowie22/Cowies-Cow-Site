@@ -14,7 +14,7 @@ const ListIconCard = (props) => {
         }
       >
         <div className='icon-title-container'>
-          <img src={icon} alt='' className={icon ? '' : 'no-icon'} />
+          <img src={icon} alt='' className={icon ? '' : 'no-icon'} loading='lazy' />
           {title}
         </div>
         {content}

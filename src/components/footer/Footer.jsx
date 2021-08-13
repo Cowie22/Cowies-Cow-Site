@@ -75,6 +75,7 @@ export default () => (
                 src={myovantLogo}
                 alt="Myovant Sciences logo"
                 className="footer-logo"
+                loading='lazy'
               />
             </a>
             <a href="https://www.pfizer.com" target="_blank" rel='noopener noreferrer'>
@@ -82,6 +83,7 @@ export default () => (
                 src={pfizerLogo}
                 alt="Pfizer logo"
                 className="footer-logo footer-logo-left"
+                loading='lazy'
               />
             </a>
           </div>

@@ -197,6 +197,7 @@ class ISI extends React.Component {
                                   width="12"
                                   height="12"
                                   alt=""
+                                  loading='lazy'
                                 />
                               ) : (
                                 <img
@@ -204,12 +205,13 @@ class ISI extends React.Component {
                                   width="12"
                                   height="12"
                                   alt=""
+                                  loading='lazy'
                                 />
                               )
                             ) : isIsiExpanded ? (
-                              <img src={minus} width="12" height="12" alt="" />
+                              <img src={minus} width="12" height="12" alt="" loading='lazy' />
                             ) : (
-                              <img src={plus} width="12" height="12" alt="" />
+                              <img src={plus} width="12" height="12" alt="" loading='lazy' />
                             )}
                           </div>
                         </Col>

@@ -61,6 +61,7 @@ export default props => {
                       src={hovered ? closeIconHovered : closeIcon}
                       className='close-img'
                       alt=''
+                      loading='lazy'
                     />
                   </div>
                 </Col>
@@ -71,6 +72,7 @@ export default props => {
                     <img
                       src={logo}
                       alt='Myfembree® (relugolix, estradiol, and norethindrone acetate) tablets 40 mg, 1 mg, 0.5 mg'
+                      loading='lazy'
                     />
                   </div>
                 </Col>

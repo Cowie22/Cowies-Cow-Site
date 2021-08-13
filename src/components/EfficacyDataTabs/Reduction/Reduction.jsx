@@ -112,7 +112,7 @@ const Reduction = (props) => {
         <Col lg={{span: 9}}>
           <div className='footnote-container'>
             <h6>
-              The <img src={IIcon} alt='' /> indicates standard error of the mean.
+              The <img src={IIcon} alt='' loading='lazy' /> indicates standard error of the mean.
             </h6>
             <h6>
               Patients who completed LIBERTY 1 and 2 and met enrollment criteria were eligible for the

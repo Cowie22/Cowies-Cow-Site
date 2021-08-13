@@ -19,7 +19,7 @@ const SupportContentBlockLarge = (props) => {
           <div className='support-block-large-img-container'>
             <picture>
               <source srcSet={cardImg} className='expand-story-img' type='image/webp' />
-              <img loading='lazy' src={cardImgFB} className='expand-story-img' alt='' />
+              <img loading='lazy' src={cardImgFB} className='expand-story-img' alt='' loading='lazy' />
             </picture>
           </div>
         </Col>

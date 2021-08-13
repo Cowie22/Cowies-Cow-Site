@@ -72,7 +72,7 @@ const HowItWorksContent = (props) => {
                           </p>
                         </div>
                         <div className='pill-icon-container'>
-                          <img src={pillIcon} alt='' />
+                          <img src={pillIcon} alt='' loading='lazy' />
                         </div>
                         <div className='pill-content-right-container'>
                           <h3 className='purple text-left'>
@@ -100,7 +100,7 @@ const HowItWorksContent = (props) => {
             <ListIconCard data={ListIconCardData9} />
             <Col lg={{span: 4}} className='d-none d-lg-block'>
               <div className='how-it-works-img-container'>
-                <img src={womenOutlineIcon} alt='' />
+                <img src={womenOutlineIcon} alt='' loading='lazy' />
               </div>
             </Col>
             <ListIconCard data={ListIconCardData10} />
