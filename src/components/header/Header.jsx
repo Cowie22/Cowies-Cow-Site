@@ -2,7 +2,7 @@ import React from 'react'
 import AppProvider, { AppContext } from '../../contexts/state'
 
 import MainNav from './MainNav'
-import NonUSPopUp from '../NonUSPopUp/NonUSPopUp'
+// import NonUSPopUp from '../NonUSPopUp/NonUSPopUp'
 
 class Header extends React.Component {
   constructor(props) {
@@ -94,10 +94,10 @@ class Header extends React.Component {
                     onClick={() => this.handlePopUp()}
                   >
                   </section>
-                  <NonUSPopUp
+                  {/* <NonUSPopUp
                     handlePopUp={this.handlePopUp}
                     popup={popup}
-                  />
+                  /> */}
                   <MainNav
                     isNavOpen={isNavOpen}
                     setNavOpen={this.setNavOpen}
@@ -126,10 +126,10 @@ class Header extends React.Component {
                     onClick={() => this.handlePopUp()}
                   >
                   </section>
-                  <NonUSPopUp
+                  {/* <NonUSPopUp
                     handlePopUp={this.handlePopUp}
                     popup={popup}
-                  />
+                  /> */}
                   <MainNav
                     isNavOpen={isNavOpen}
                     setNavOpen={this.setNavOpen}
