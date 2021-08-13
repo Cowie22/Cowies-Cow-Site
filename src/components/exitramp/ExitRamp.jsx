@@ -67,7 +67,7 @@ export default props => {
                 </Col>
               </Row>
               <Row>
-                <Col lg={{span: 8, offset: 2}}>
+                <Col lg={{span: 8, offset: 2}} xs={{span: 8, offset: 2}}>
                   <div className='popup-logo-container'>
                     <img
                       src={logo}
@@ -97,11 +97,9 @@ export default props => {
                     </a>
                   </div>
                   <div className='cta-btn-container exit-popup-btn-container' onClick={() => state.handleIsExitRampOpen()}>
-                    <a>
-                      <button className='cta-btn transparent-btn-pink'>
-                        Stay on MyfembreeHCP.com
-                      </button>
-                    </a>
+                    <button className='cta-btn transparent-btn-pink'>
+                      Stay on MyfembreeHCP.com
+                    </button>
                   </div>
                 </Col>
               </Row>
