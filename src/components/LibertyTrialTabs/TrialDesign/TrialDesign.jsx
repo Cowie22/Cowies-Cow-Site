@@ -71,7 +71,7 @@ const TrialDesign = (props) => {
         </p>
       </div>
       <Row>
-        <Col>
+        <Col lg={{span: 12, offset: 0}}>
           <div className='graph-container'>
             <InfoGraphic data={TrialDesignData1} />
           </div>
