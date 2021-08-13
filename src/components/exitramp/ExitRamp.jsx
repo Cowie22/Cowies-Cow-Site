@@ -67,7 +67,7 @@ export default props => {
                 </Col>
               </Row>
               <Row>
-                <Col lg={{span: 6, offset: 3}}>
+                <Col lg={{span: 8, offset: 2}}>
                   <div className='popup-logo-container'>
                     <img
                       src={logo}
