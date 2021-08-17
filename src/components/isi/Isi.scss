@@ -108,7 +108,7 @@
   .isi-tray-icon-container {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
     height: 100%;
     &:hover {
       cursor: pointer;
@@ -170,7 +170,7 @@
     }
   }
   .isi-tray {
-    top: calc(100% - 158px);
+    top: calc(100% - 180px);
     background: #FFFFFF;
     box-shadow: 0px -1px 6px rgba(0, 0, 0, 0.3);
     border-radius: 16px 0px 0px 0px;
@@ -217,12 +217,12 @@
 
 @media screen and (max-width: 525px) {
   .isi-tray {
-    top: calc(100% - 210px)
+    top: calc(100% - 250px)
   }
 }
 
 @media screen and (max-width: 410px) {
   .isi-tray {
-    top: calc(100% - 254px)
+    top: calc(100% - 293px)
   }
 }
