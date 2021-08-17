@@ -13,6 +13,7 @@ import NextPageBtn from '../NextPageBtn/NextPageBtn'
 
 const SafetyProfileContent = (props) => {
   const [hovered, handleHovered] = useState(0);
+  const [loaded, handleLoaded] = useState(false);
   const state = useContext(AppContext);
   const {
     currentPage,
@@ -26,6 +27,7 @@ const SafetyProfileContent = (props) => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('safety');
     handleCurrentTopTab(1);
+    handleLoaded(true)
   }, []);
 
   const handleArrowLeft = () => {
@@ -55,8 +57,8 @@ const SafetyProfileContent = (props) => {
       handleCurrentTopTab(3)
     }, 500)
   }
-  console.log('HERE', currentTopTab)
   return (
+    loaded ?
     <Layout
       canonicalURL=''
       title=''
@@ -211,6 +213,9 @@ const SafetyProfileContent = (props) => {
         </Container>
       </section>
     </Layout>
+    :
+    <>
+    </>
   )
 }
 
