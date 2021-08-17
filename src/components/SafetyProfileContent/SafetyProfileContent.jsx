@@ -156,7 +156,10 @@ const SafetyProfileContent = (props) => {
         </Container>
       </section>
       {
-        currentTopTab === 1 ?
+        currentTopTab !== 1 ?
+        <>
+        </>
+        :
         <section className='safety-lower-container'>
           <Container>
             <Row>
@@ -169,9 +172,6 @@ const SafetyProfileContent = (props) => {
             </Row>
           </Container>
         </section>
-        :
-        <>
-        </>
       }
       <section>
         <Container>
