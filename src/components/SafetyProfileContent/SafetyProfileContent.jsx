@@ -9,7 +9,6 @@ import SliderTabNav from '../SliderTabNav/SliderTabNav'
 import AdverseEvents from '../SafetyTabs/AdverseEvents/AdverseEvents'
 import BMD from '../SafetyTabs/BMD/BMD'
 import Return from '../SafetyTabs/Return/Return'
-import TrialDesignExpandCard from '../TrialDesignExpandCard/TrialDesignExpandCard'
 import NextPageBtn from '../NextPageBtn/NextPageBtn'
 
 const SafetyProfileContent = (props) => {
@@ -56,7 +55,7 @@ const SafetyProfileContent = (props) => {
       handleCurrentTopTab(3)
     }, 500)
   }
-
+  console.log('HERE', currentTopTab)
   return (
     <Layout
       canonicalURL=''
