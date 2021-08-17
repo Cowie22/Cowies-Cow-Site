@@ -176,7 +176,7 @@ class ISI extends React.Component {
                             </Col>
                           </>
                         ) : !isIsiExpanded && width < 991 ? (
-                          <Col xs={10}>
+                          <Col xs={11}>
                             <p>
                               The recommended total duration of treatment is 24 months.
                             </p>
@@ -185,9 +185,9 @@ class ISI extends React.Component {
                             </h4>
                           </Col>
                         ) : (
-                          <Col lg={11} xs={10}></Col>
+                          <Col lg={11} xs={11}></Col>
                         )}
-                        <Col lg={1} xs={2}>
+                        <Col lg={1} xs={1}>
                           <div
                             className="isi-tray-icon-container"
                             onMouseEnter={() => this.handleHovered(true)}
