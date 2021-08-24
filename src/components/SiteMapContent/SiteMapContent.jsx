@@ -77,7 +77,7 @@ const SiteMapContent = (props) => {
                 </li>
                 <li>
                   <Link to='/safety-profile/'>
-                    Safety Profile
+                    Safety
                   </Link>
                 </li>
                 <li>

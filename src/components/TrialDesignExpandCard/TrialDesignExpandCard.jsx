@@ -86,7 +86,7 @@ const TrialDesignExpandCard = props => {
                 reduction in menstrual blood loss volume to Week 24; proportion
                 of women who achieved amenorrhea over the last 35 days of
                 treatment; and proportion of women with anemia who achieved a
-                hemoglobin response &#62;2 g/dL from baseline at Week 24.
+                hemoglobin response &#62;2 g/dL from baseline to Week 24.
                 <sup>1,2</sup>
               </p>
               <p>

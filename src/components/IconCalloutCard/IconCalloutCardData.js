@@ -49,7 +49,7 @@ const IconCalloutCardData2 = [
 
 const IconCalloutCardData3 = [
   {
-    title: <h3 className='blue'>Myfembree safety profile<sup>1,2</sup></h3>,
+    title: <h3 className='blue'>Myfembree safety<sup>1,2</sup></h3>,
     subTitle: 'The safety and tolerability of Myfembree were assessed in:',
     content:
     <div className='icon-callout-purple-line-container'>
@@ -57,7 +57,7 @@ const IconCalloutCardData3 = [
         768 WOMEN ACROSS 2 PHASE 3 CLINICAL TRIALS
       </h4>
     </div>,
-    btnText: 'See Safety Profile',
+    btnText: 'See Safety',
     btnLink: 'safety-profile/',
     icon: shieldAndCrossIcon,
   }

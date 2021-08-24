@@ -76,7 +76,7 @@ const ReductionData1 = [
   {
     content:
     <h3 className='purple graph-title text-center'>
-      Key secondary endpoint: reduction in menstrual blood loss volume from baseline up to Week 24<sup>1</sup>
+      Reduction in menstrual blood loss volume from baseline to Week 24<sup>1</sup>
     </h3>,
     img: reductionGraph1,
     fallBackImg: reductionGraph1FB,
@@ -122,7 +122,7 @@ const AmenorrheaData2 = [
     content:
     <h3 className='purple graph-title text-center'>
       Proportion of women who had baseline Hgb ≤10.5 g/dL and had a &#62;2 g/dL improvement in Hgb levels from
-      baseline at Week 24
+      baseline to Week 24
     </h3>,
     img: amenorrheaGraph2,
     fallBackImg: amenorrheaGraph2FB,

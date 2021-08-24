@@ -199,7 +199,7 @@ class MainNav extends React.Component {
                         to='/safety-profile/'
                         className={currentPage === 'safety' ? 'active-link' : ''}
                       >
-                        Safety Profile
+                        Safety
                       </Link>
                     </li>
                     <li
@@ -393,7 +393,7 @@ class MainNav extends React.Component {
                       }
                     >
                       <Link to='/safety-profile/'>
-                        Safety Profile
+                        Safety
                       </Link>
                     </li>
                     <li

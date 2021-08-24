@@ -103,7 +103,7 @@ const Demographics = (props) => {
               <tr>
                 <td>
                   <p>
-                    Mean menstrual blood loss volume mL, (± SD)
+                    Mean menstrual blood loss volume, mL (± SD)
                   </p>
                   <hr />
                 </td>
