@@ -57,7 +57,7 @@ const IconCalloutCardData3 = [
         768 WOMEN ACROSS 2 PHASE 3 CLINICAL TRIALS
       </h4>
     </div>,
-    btnText: 'See Safety',
+    btnText: 'See Safety Data',
     btnLink: 'safety-profile/',
     icon: shieldAndCrossIcon,
   }
