@@ -82,10 +82,15 @@ const ResponseRates = (props) => {
                 prematurely discontinued the trial or did not continue into the open-label extension study
               </li>
               <li>
-                Mean time of return to menses was 33.7 days, with longer occurrence for women who
-                achieved amenorrhea (40.6 days and 41.1 days in LIBERTY 1 and 2, respectively) compared
-                with women without amenorrhea (33.0 days and 26.6 days in LIBERTY 1 and 2, respectively) in
-                the last 35 days of treatment<sup>2</sup>
+                In LIBERTY 1 and 2, the mean time of return to menses was 33.7 days in the last 35 days of treatment
+                <ul className='purple-ul-dashed'>
+                  <li>
+                    In women who achieved amenorrhea, mean return to menses was 40.8 days (40.6 days and 41.1 days respectively)
+                  </li>
+                  <li>
+                    In women without amenorrhea, mean return to menses was 29.8 days (33.0 days and 26.6 days respectively)
+                  </li>
+                </ul>   
               </li>
               <li>
                 Women who did not have a return to menses included those who had surgery, used alternative

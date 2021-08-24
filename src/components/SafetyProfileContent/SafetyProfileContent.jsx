@@ -68,7 +68,7 @@ const SafetyProfileContent = (props) => {
       <HeaderHero
         title={
           <>
-            Myfembree safety profile
+            Myfembree safety data
           </>
         }
         columns={{span: 12}}

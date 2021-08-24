@@ -200,7 +200,7 @@ const EfficacyDataContent = (props) => {
                 />
               :
                 <NextPageBtn
-                  btnText='See Safety Profile for Myfembree'
+                  btnText='See Safety Data for Myfembree'
                   btnLink='safety-profile/'
                 />
             }
