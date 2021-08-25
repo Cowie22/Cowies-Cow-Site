@@ -70,6 +70,7 @@ const HomeContent = (props) => {
       title='Myfembree® (relugolix, estradiol, and norethindrone acetate) Tablets HCP Site'
       pageTitle='Myfembree® (relugolix, estradiol, and norethindrone acetate) Tablets HCP Site'
       description='Visit the HCP website for more information about Myfembree® tablets for oral use. See benefits & risks, including BOXED WARNING.'
+      preLoadImg={true}
     >
       <section
         id='hcp-modal-container'

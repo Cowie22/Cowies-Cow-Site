@@ -15,19 +15,24 @@ import Cookie from '../components/Cookie/Cookie'
 
 import backToTop from '../assets/images/back-to-top.svg'
 import backToTopHovered from '../assets/images/back-to-top-hovered.svg'
+import BGImg from '../assets/images/home-bg-img-1-2X.webp'
+import BGImgMobile from '../assets/images/home-bg-img-1-2X-mobile.webp'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../pages/index.scss'
 
-const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
+const Layout = ({ children, title, pageTitle, description, canonicalURL, preLoadImg }) => {
   const [hovered, handleHovered] = useState(false);
   const [yDirection, handleYDirection] = useState(0);
+  const [width, handleWidth] = useState(0);
   const state = useContext(AppContext);
-  const { references, handleCurrentTopTab, currentTopTab } = state;
+  const { references, handleCurrentTopTab, currentTopTab, currentPage } = state;
 
   const mounted = useRef(false);
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
+    updateWindowDimensions();
+    window.addEventListener('resize', updateWindowDimensions, { passive: true });
     if (!mounted.current) {
       handleURLTab();
     } else {
@@ -35,6 +40,7 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
     }
     return function cleanUp() {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', updateWindowDimensions);
     }
   }, [])
 
@@ -45,6 +51,10 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
+  }
+
+  const updateWindowDimensions = () => {
+    handleWidth(window.innerWidth);
   }
 
   // Below function will handle tabs for the entire site, for when a third party want to drive to a specific tab
@@ -89,6 +99,7 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
         <link rel='canonical' href={canonicalURL} />
         <meta name='url' content={canonicalURL} />
         <html lang='en' />
+        <link rel='preload' as='image' href={width > 991 && preLoadImg ? BGImg : width <= 991 && preLoadImg ? BGImgMobile : ''} />
       </Helmet>
       <Cookie />
       <UtilityNav />

@@ -58,7 +58,6 @@ const SafetyProfileContent = (props) => {
     }, 500)
   }
   return (
-    loaded ?
     <Layout
       canonicalURL=''
       title=''
@@ -157,18 +156,26 @@ const SafetyProfileContent = (props) => {
         </Container>
       </section>
       {
-        currentTopTab === 1 ?
-        <section className='safety-lower-container'>
-          <Container>
-            <Row>
-              <Col lg={{span: 10, offset: 1}}>
-                <h2 className='white'>
-                  In the LIBERTY open-label extension study, the most commonly reported adverse events were similar
-                  to those in LIBERTY 1 and 2<sup>1</sup>
-                </h2>
-              </Col>
-            </Row>
-          </Container>
+        loaded ?
+        <section>
+          {
+            currentTopTab === 1 ?
+            <section className='safety-lower-container'>
+              <Container>
+                <Row>
+                  <Col lg={{span: 10, offset: 1}}>
+                    <h2 className='white'>
+                      In the LIBERTY open-label extension study, the most commonly reported adverse events were similar
+                      to those in LIBERTY 1 and 2<sup>1</sup>
+                    </h2>
+                  </Col>
+                </Row>
+              </Container>
+            </section>
+            :
+            <>
+            </>
+          }
         </section>
         :
         <>
@@ -200,9 +207,6 @@ const SafetyProfileContent = (props) => {
         </Container>
       </section>
     </Layout>
-    :
-    <>
-    </>
   )
 }
 
