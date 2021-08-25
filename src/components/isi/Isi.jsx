@@ -177,9 +177,6 @@ class ISI extends React.Component {
                           </>
                         ) : !isIsiExpanded && width < 991 ? (
                           <Col xs={11}>
-                            <p>
-                              The recommended total duration of treatment is 24 months.
-                            </p>
                             <h4 className="purple extra-bold mulish">
                               IMPORTANT SAFETY INFORMATION
                             </h4>

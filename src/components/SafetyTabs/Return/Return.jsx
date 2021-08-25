@@ -83,7 +83,7 @@ const ResponseRates = (props) => {
               </li>
               <li>
                 In LIBERTY 1 and 2, the mean time of return to menses was 33.7 days, with longer occurrence for women
-                who achieved amenorrhea (40.8 days), compared with women without amenorrhea (29.8 days) in the last 35
+                who achieved amenorrhea (40.8 days) compared with women without amenorrhea (29.8 days) in the last 35
                 days of treatment 
               </li>
               <li>
