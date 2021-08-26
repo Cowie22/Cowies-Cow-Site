@@ -90,6 +90,7 @@ const HomeContent = (props) => {
         }
         title='Myfembree® logo watermark'
       >
+        <img src={width > 991 ? BGImg : BGImgMobile} style={{display: 'none'}} />
         <Container>
           <Row>
             <Col lg={{span: 6, offset: 1}} xs={{span: 9, offset: 0}}>
