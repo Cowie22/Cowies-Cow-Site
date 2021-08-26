@@ -59,3 +59,17 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  .icon-callout-card-container {
+    .pill-img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      picture {
+        width: 70%;
+        height: 70%;
+      }
+    }
+  }
+}

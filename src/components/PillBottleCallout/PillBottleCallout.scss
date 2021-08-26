@@ -40,3 +40,17 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  .pill-bottle-callout-container {
+    .pill-bottle-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      picture {
+        width: 70%;
+        height: 70%;
+      }
+    }
+  }
+}

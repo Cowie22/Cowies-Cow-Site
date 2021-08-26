@@ -14,7 +14,8 @@ const InfoGraphic = (props) => {
     imgMobile,
     fallBackImgMobile,
     contentColumns,
-    imgColumns
+    imgColumns,
+    imgColumnsMobile
   } = data[0];
 
   useEffect(() => {
@@ -35,7 +36,7 @@ const InfoGraphic = (props) => {
         <Col lg={contentColumns}>
           {content}
         </Col>
-        <Col lg={imgColumns}>
+        <Col lg={imgColumns} md={imgColumnsMobile}>
           <div className='graph-img-container'>
             <picture>
               <source srcSet={img} media='(min-width: 991px)' alt='' type='image/webp' />

@@ -53,7 +53,8 @@ const TrialDesignData1 = [
     imgMobile: TrialDesignGraphMobile,
     fallBackImgMobile: TrialDesignGraphMobileFB,
     contentColumns: {},
-    imgColumns: {span: 12}
+    imgColumns: {span: 12, offset: 0},
+    imgColumnsMobile: {span: 8, offset: 2}
   }
 ]
 
@@ -68,7 +69,8 @@ const ResponseRatesData1 = [
     imgMobile: ResponseRatesGraphMobile,
     fallBackImgMobile: ResponseRatesGraphMobileFB,
     contentColumns: {span: 12, offset: 0},
-    imgColumns: {span: 12, offset: 0}
+    imgColumns: {span: 12, offset: 0},
+    imgColumnsMobile: {span: 8, offset: 2}
   }
 ]
 
@@ -83,7 +85,8 @@ const ReductionData1 = [
     imgMobile: reductionGraph1Mobile,
     fallBackImgMobile: reductionGraph1MobileFB,
     contentColumns: {span: 12, offset: 0},
-    imgColumns: {span: 12, offset: 0}
+    imgColumns: {span: 12, offset: 0},
+    imgColumnsMobile: {span: 8, offset: 2}
   }
 ]
 
@@ -98,7 +101,8 @@ const ReductionData2 = [
     imgMobile: reductionGraph2Mobile,
     fallBackImgMobile: reductionGraph2MobileFB,
     contentColumns: {span: 9, offset: 0},
-    imgColumns: {span: 12, offset: 0}
+    imgColumns: {span: 12, offset: 0},
+    imgColumnsMobile: {span: 8, offset: 2}
   }
 ]
 
@@ -113,7 +117,8 @@ const AmenorrheaData1 = [
     imgMobile: amenorrheaGraph1Mobile,
     fallBackImgMobile: amenorrheaGraph1MobileFB,
     contentColumns: {span: 8, offset: 2},
-    imgColumns: {span: 9, offset: 1}
+    imgColumns: {span: 9, offset: 1},
+    imgColumnsMobile: {span: 8, offset: 2}
   }
 ]
 
@@ -129,7 +134,8 @@ const AmenorrheaData2 = [
     imgMobile: amenorrheaGraph2Mobile,
     fallBackImgMobile: amenorrheaGraph2MobileFB,
     contentColumns: {span: 8, offset: 2},
-    imgColumns: {span: 9, offset: 1}
+    imgColumns: {span: 9, offset: 1},
+    imgColumnsMobile: {span: 8, offset: 2}
   }
 ]
 
@@ -144,7 +150,8 @@ const BMDData1 = [
     imgMobile: BMDGraph1Mobile,
     fallBackImgMobile: BMDGraph1MobileFB,
     contentColumns: {span: 10, offset: 1},
-    imgColumns: {span: 10, offset: 1}
+    imgColumns: {span: 10, offset: 1},
+    imgColumnsMobile: {span: 8, offset: 2}
   }
 ]
 
@@ -159,7 +166,8 @@ const BMDData2 = [
     imgMobile: BMDGraph2Mobile,
     fallBackImgMobile: BMDGraph2MobileFB,
     contentColumns: {span: 10, offset: 1},
-    imgColumns: {span: 10, offset: 1}
+    imgColumns: {span: 10, offset: 1},
+    imgColumnsMobile: {span: 8, offset: 2}
   }
 ]
 
@@ -175,7 +183,8 @@ const BMDData3 = [
     imgMobile: BMDGraph3Mobile,
     fallBackImgMobile: BMDGraph3MobileFB,
     contentColumns: {span: 10, offset: 1},
-    imgColumns: {span: 10, offset: 1}
+    imgColumns: {span: 10, offset: 1},
+    imgColumnsMobile: {span: 8, offset: 2}
   }
 ]
 
