@@ -14,12 +14,15 @@ const SiteMapContent = (props) => {
     currentPage,
     handleCurrentPage,
     handleActiveHeaderDropdown,
-    handleCurrentTopTab
+    handleCurrentTopTab,
+    setReferences,
+    references
   } = state;
 
   useEffect(() => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('sitemap');
+    setReferences([]);
   }, []);
 
   return (
