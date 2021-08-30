@@ -54,7 +54,7 @@ class HCPModal extends React.Component {
                         src={logo}
                         alt='Myfembree® (relugolix, estradiol, and norethindrone acetate) tablets 40 mg, 1 mg, 0.5 mg'
                         loading='lazy'
-                        width='80%'
+                        width='100%'
                         // height='90%'
                       />
                     </div>
