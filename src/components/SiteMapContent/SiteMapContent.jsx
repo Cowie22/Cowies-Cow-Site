@@ -15,8 +15,7 @@ const SiteMapContent = (props) => {
     handleCurrentPage,
     handleActiveHeaderDropdown,
     handleCurrentTopTab,
-    setReferences,
-    references
+    setReferences
   } = state;
 
   useEffect(() => {
