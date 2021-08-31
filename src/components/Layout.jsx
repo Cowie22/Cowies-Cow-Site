@@ -15,8 +15,8 @@ import Cookie from '../components/Cookie/Cookie'
 
 import backToTop from '../assets/images/back-to-top.svg'
 import backToTopHovered from '../assets/images/back-to-top-hovered.svg'
-import BGImg from '../assets/images/home-bg-img-1-2X.webp'
-import BGImgMobile from '../assets/images/home-bg-img-1-2X-mobile.webp'
+import BGImg from '../assets/images/home-bg-img-2X.webp'
+import BGImgMobile from '../assets/images/home-bg-img-mobile-2X.webp'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../pages/index.scss'

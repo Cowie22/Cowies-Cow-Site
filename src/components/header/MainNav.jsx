@@ -108,6 +108,8 @@ class MainNav extends React.Component {
                       handleActiveHeaderDropdown('')
                       this.handleNavHover()
                     }}
+                    width={'86%'}
+                    height={'100%'}
                   />
                 </Link>
               </Col>

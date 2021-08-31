@@ -10,10 +10,10 @@ import RectangleCard from '../RectangleCard/RectangleCard'
 import RectangleCardData from '../RectangleCard/RectangleCardData.js'
 import HCPModal from '../HCPModal/HCPModal'
 
-import BGImg from '../../assets/images/home-bg-img-1-2X.webp'
-import BGImgFB from '../../assets/images/home-bg-img-1-2X.png'
-import BGImgMobile from '../../assets/images/home-bg-img-1-2X-mobile.webp'
-import BGImgMobileFB from '../../assets/images/home-bg-img-1-2X-mobile.png'
+import BGImg from '../../assets/images/home-bg-img-2X.webp'
+import BGImgFB from '../../assets/images/home-bg-img-2X.png'
+import BGImgMobile from '../../assets/images/home-bg-img-mobile-2X.webp'
+import BGImgMobileFB from '../../assets/images/home-bg-img-mobile-2X.png'
 
 
 
@@ -90,7 +90,7 @@ const HomeContent = (props) => {
         }
         title='Myfembree® logo watermark'
       >
-        <img src={width > 991 ? BGImg : BGImgMobile} style={{display: 'none'}} />
+        {/* <img src={width > 991 ? BGImg : BGImgMobile} style={{display: 'none'}} /> */}
         <Container>
           <Row>
             <Col lg={{span: 6, offset: 1}} xs={{span: 9, offset: 0}}>
