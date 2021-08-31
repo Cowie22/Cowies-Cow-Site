@@ -6,6 +6,7 @@ exports[`Layout snapshot matches 1`] = `
 >
   <section
     class="cookie-container"
+    data-testid="Cookie Visible"
   >
     <div
       class="container"
@@ -73,9 +74,6 @@ exports[`Layout snapshot matches 1`] = `
     </div>
   </section>
   <section
-    id="sign-up-modal-container"
-  />
-  <section
     class="utility-nav"
   >
     <div
@@ -112,6 +110,7 @@ exports[`Layout snapshot matches 1`] = `
                   >
                     <a
                       class="utility-header-nav"
+                      data-testid="Prescribing Information"
                       href="https://www.myovant.com/myfembree-prescribing-information.pdf"
                       rel="noopener noreferrer"
                       target="_blank"
@@ -127,7 +126,7 @@ exports[`Layout snapshot matches 1`] = `
                   <li>
                     <a
                       class="utility-header-nav"
-                      href="https://www.Myfembree.com"
+                      href="https://www.Myfembree.com/"
                       rel="noopener noreferrer"
                       target="_blank"
                     >

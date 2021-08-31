@@ -25,6 +25,7 @@ const UtilityNav = (props) => {
                         rel='noopener noreferrer'
                         className='utility-header-nav'
                         href='https://www.myovant.com/myfembree-prescribing-information.pdf'
+                        data-testid='Prescribing Information'
                       >
                         <span>Prescribing Information, including <b>BOXED WARNING</b></span>
                       </a>
@@ -34,7 +35,7 @@ const UtilityNav = (props) => {
                         target='_blank'
                         rel='noopener noreferrer'
                         className='utility-header-nav'
-                        href='https://www.Myfembree.com'
+                        href='https://www.Myfembree.com/'
                       >
                         Visit Patient Site
                       </a>

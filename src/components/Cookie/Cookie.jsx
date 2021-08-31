@@ -29,7 +29,7 @@ class Cookie extends React.Component {
           const { isCookieVisible, handleIsCookieVisible } = context;
           return (
             isCookieVisible ?
-            <section className='cookie-container'>
+            <section className='cookie-container' data-testid='Cookie Visible'>
               <Container>
                 <Row>
                   <Col lg={9} xs={{span: 8}}>
@@ -77,7 +77,7 @@ class Cookie extends React.Component {
               </Container>
             </section>
             :
-            <div>
+            <div data-testid='Cookie Hidden'>
 
             </div>
           )
