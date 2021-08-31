@@ -10,6 +10,10 @@ import RectangleCard from '../RectangleCard/RectangleCard'
 import RectangleCardData from '../RectangleCard/RectangleCardData.js'
 import HCPModal from '../HCPModal/HCPModal'
 
+import HolderBGImg from '../../assets/images/home-bg-img-1X.webp'
+import HolderBGImgFB from '../../assets/images/home-bg-img-1X.png'
+import HolderBGImgMobile from '../../assets/images/home-bg-img-mobile-1X.webp'
+import HolderBGImgMobileFB from '../../assets/images/home-bg-img-mobile-1X.png'
 import BGImg from '../../assets/images/home-bg-img-2X.webp'
 import BGImgFB from '../../assets/images/home-bg-img-2X.png'
 import BGImgMobile from '../../assets/images/home-bg-img-mobile-2X.webp'
@@ -84,9 +88,13 @@ const HomeContent = (props) => {
       <section
         className='home-container'
         style={
-          width > 991 ?
+          width > 991 && !HCPModalVisible ?
           {backgroundImage: `url(${BGImg}), url(${BGImgFB})`} :
-          {backgroundImage: `url(${BGImgMobile}), url(${BGImgMobileFB})`}
+          width < 991 && !HCPModalVisible ?
+          {backgroundImage: `url(${BGImgMobile}), url(${BGImgMobileFB})`} :
+          width > 991 && HCPModalVisible ?
+          {backgroundImage: `url(${HolderBGImg}), url(${HolderBGImgFB})`} :
+          {backgroundImage: `url(${HolderBGImgMobile}), url(${HolderBGImgMobileFB})`}
         }
         title='Myfembree® logo watermark'
       >
@@ -97,7 +105,7 @@ const HomeContent = (props) => {
           there is a preload link for this image as well.  Ensuring that the image is preloaded, but only if we are currently on the homepage.
           No need to preload this image on any other page, as it is not used and would slow down the site.
         */}
-        <img src={width > 991 ? BGImg : BGImgMobile} style={{display: 'none'}} />
+        {/* <img src={width > 991 ? BGImg : BGImgMobile} style={{display: 'none'}} /> */}
         <Container>
           <Row>
             <Col lg={{span: 6, offset: 1}} xs={{span: 9, offset: 0}}>
