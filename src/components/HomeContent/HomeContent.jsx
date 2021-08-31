@@ -90,7 +90,14 @@ const HomeContent = (props) => {
         }
         title='Myfembree® logo watermark'
       >
-        {/* <img src={width > 991 ? BGImg : BGImgMobile} style={{display: 'none'}} /> */}
+        {/* 
+          This image, with a style of display: none, helps to optimize the very taxing background image for the home page.  Background images
+          have a low priority when loading, so this image hacks around the issue, making sure the image is already loaded, before the background
+          image loading is taken into consideration.  Furthermore, if you check the Gatsby Helmet Component, within ../Layout.jsx, you can see
+          there is a preload link for this image as well.  Ensuring that the image is preloaded, but only if we are currently on the homepage.
+          No need to preload this image on any other page, as it is not used and would slow down the site.
+        */}
+        <img src={width > 991 ? BGImg : BGImgMobile} style={{display: 'none'}} />
         <Container>
           <Row>
             <Col lg={{span: 6, offset: 1}} xs={{span: 9, offset: 0}}>
