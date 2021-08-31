@@ -147,6 +147,7 @@ class MainNav extends React.Component {
                       <Link
                         to='/once-daily-dosing/'
                         className={currentPage === 'dosing' ? 'active-link' : ''}
+                        data-testid='Once-Daily Dosing'
                       >
                         Once-Daily Dosing
                       </Link>
@@ -166,6 +167,7 @@ class MainNav extends React.Component {
                         className={
                           currentPage === 'efficacy-data' || currentPage === 'liberty-trials' ? 'active-link' : ''
                         }
+                        data-testid='Efficacy'
                       >
                         Efficacy
                       </Link>
@@ -200,6 +202,7 @@ class MainNav extends React.Component {
                       <Link
                         to='/safety-profile/'
                         className={currentPage === 'safety' ? 'active-link' : ''}
+                        data-testid='Safety'
                       >
                         Safety
                       </Link>
@@ -213,6 +216,7 @@ class MainNav extends React.Component {
                       <Link
                         to='/how-it-works/'
                         className={currentPage === 'how-it-works' ? 'active-link' : ''}
+                        data-testid='How It Works'
                       >
                         How It Works
                       </Link>
@@ -232,6 +236,7 @@ class MainNav extends React.Component {
                         className={
                           currentPage === 'support' || currentPage === 'resources' ? 'active-link' : ''
                         }
+                        data-testid='Support & Savings'
                       >
                         Support & Savings
                       </Link>
@@ -305,7 +310,7 @@ class MainNav extends React.Component {
                           : ''
                       }
                     >
-                      <Link to='/once-daily-dosing/'>
+                      <Link to='/once-daily-dosing/' data-testid='Once-Daily Dosing Mobile'>
                         Once-Daily Dosing
                       </Link>
                     </li>
@@ -394,7 +399,7 @@ class MainNav extends React.Component {
                           : ''
                       }
                     >
-                      <Link to='/safety-profile/'>
+                      <Link to='/safety-profile/' data-testid='Safety Mobile'>
                         Safety
                       </Link>
                     </li>
@@ -411,7 +416,7 @@ class MainNav extends React.Component {
                           : ''
                       }
                     >
-                      <Link to='/how-it-works/'>
+                      <Link to='/how-it-works/' data-testid='How It Works Mobile'>
                         How It Works
                       </Link>
                     </li>
