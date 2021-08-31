@@ -39,8 +39,8 @@ test('Header links have appropriate href', () => {
   expect(support.getAttribute('href')).toBe('/myfembree-support-program/')
 })
 
-// test('Header snapshot matches', () => {
+test('Header snapshot matches', () => {
 //   return
-//   // once the component is done, use snapshot
-//   // expect(container.firstChild).toMatchSnapshot()
-// })
+  // once the component is done, use snapshot
+  expect(container.firstChild).toMatchSnapshot()
+})

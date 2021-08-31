@@ -30,8 +30,8 @@ test('Footer links have appropriate href', () => {
   expect(siteMapLink.getAttribute('href')).toBe('/sitemap/')
 })
 
-// test('Header snapshot matches', () => {
-//   return
-//   // once the component is done, use snapshot
-//   // expect(container.firstChild).toMatchSnapshot()
-// })
+test('Footer snapshot matches', () => {
+  // return
+  // once the component is done, use snapshot
+  expect(container.firstChild).toMatchSnapshot()
+})
