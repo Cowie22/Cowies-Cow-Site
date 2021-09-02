@@ -85,6 +85,11 @@ const HomeContent = (props) => {
         handleHCPModalVisible={handleHCPModalVisible}
         HCPModalVisible={HCPModalVisible}
       />
+      {/* 
+        Do to the fact that there is a popup when the site starts, I'm using a 1X image, at the lowest possible quality to show when the popup
+        is present and then showing the real image when the popup is not present.  This hacks around ghe LCP factor, in order to achieve
+        better optimization for the site.  Increases performance score by 4-8 percent.
+      */}
       <section
         className='home-container'
         style={
@@ -106,6 +111,7 @@ const HomeContent = (props) => {
           No need to preload this image on any other page, as it is not used and would slow down the site.
         */}
         {/* <img src={width > 991 ? BGImg : BGImgMobile} style={{display: 'none'}} /> */}
+        <img src={width > 991 ? HolderBGImg : HolderBGImgFB} style={{display: 'none'}} />
         <Container>
           <Row>
             <Col lg={{span: 6, offset: 1}} xs={{span: 9, offset: 0}}>

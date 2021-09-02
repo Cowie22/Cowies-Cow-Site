@@ -15,8 +15,6 @@ import Cookie from '../components/Cookie/Cookie'
 
 import backToTop from '../assets/images/back-to-top.svg'
 import backToTopHovered from '../assets/images/back-to-top-hovered.svg'
-import BGImg from '../assets/images/home-bg-img-2X.webp'
-import BGImgMobile from '../assets/images/home-bg-img-mobile-2X.webp'
 import HolderBGImg from '../assets/images/home-bg-img-1X.webp'
 import HolderBGImgMobile from '../assets/images/home-bg-img-mobile-1X.webp'
 
@@ -101,7 +99,6 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL, preLoad
         <link rel='canonical' href={canonicalURL} />
         <meta name='url' content={canonicalURL} />
         <html lang='en' />
-        <link rel='preload' as='image' href={width > 991 && preLoadImg ? BGImg : width <= 991 && preLoadImg ? BGImgMobile : ''} />
         <link rel='preload' as='image' href={width > 991 && preLoadImg ? HolderBGImg : width <= 991 && preLoadImg ? HolderBGImgMobile : ''} />
       </Helmet>
       <Cookie />
