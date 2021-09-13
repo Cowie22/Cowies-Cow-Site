@@ -14,10 +14,10 @@ import HolderBGImg from '../../assets/images/home-bg-img-1X.webp'
 import HolderBGImgFB from '../../assets/images/home-bg-img-1X.png'
 import HolderBGImgMobile from '../../assets/images/home-bg-img-mobile-1X.webp'
 import HolderBGImgMobileFB from '../../assets/images/home-bg-img-mobile-1X.png'
-import BGImg from '../../assets/images/home-bg-img-2X.webp'
-import BGImgFB from '../../assets/images/home-bg-img-2X.png'
-import BGImgMobile from '../../assets/images/home-bg-img-mobile-2X.webp'
-import BGImgMobileFB from '../../assets/images/home-bg-img-mobile-2X.png'
+import BGImg from '../../assets/images/home-bg-img-2X-test.webp'
+import BGImgFB from '../../assets/images/home-bg-img-2X-test.png'
+import BGImgMobile from '../../assets/images/home-bg-img-mobile-2X-test.webp'
+import BGImgMobileFB from '../../assets/images/home-bg-img-mobile-2X-test.png'
 
 
 
