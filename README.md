@@ -149,13 +149,13 @@
         Code reuse and strategies were implemented to reuse components wherever possible, thus keeping the code D.R.Y. and clean.
       </li>
       <li>
-        Cache policies are used
+        Cache policies are used.
       </li>
       <li>
-        Lazy Loading is used
+        Lazy Loading is used.
       </li>
       <li>
-        Further techniques were used, based on recommendations from lighthouse
+        Further techniques were used, based on recommendations from lighthouse and research.
       </li>
     </ul>
     <li>
