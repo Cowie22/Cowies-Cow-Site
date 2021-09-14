@@ -224,6 +224,18 @@
   </li>
 </ul>
 
+<h2>
+  Tests
+</h2>
+<ul>
+  <li>
+    There's only so much that you can test on a static website, but they are located in the /components/__tests__ directory.
+  </li>
+  <li>
+    Jest and React Testing Library are used to make tests.
+  </li>
+</ul>
+
 
 
 
