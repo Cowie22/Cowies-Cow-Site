@@ -9,12 +9,19 @@
   }
   .back-to-top-container {
     position: fixed;
-    z-index: 9997;
+    z-index: 10;
     right: 0;
-    top: 50%;
+    top: 70%;
+    @media screen and (max-width: 992px) {
+      top: 50%;
+    }
     &:hover {
       cursor: pointer;
     }
+  }
+  .mobile-register-btn {
+    padding: 8px 0;
+    background: $pink;
   }
   // TODO: Remove lines above when body content has been inserted
 }

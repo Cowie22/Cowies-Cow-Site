@@ -1,0 +1,87 @@
+.bmd-container {
+  padding: 60px 0 0 0;
+  h2 {
+    padding: 0px 0 24px 0;
+  }
+  .bmd-skinny-callout-container {
+    background: #F1F7F4;
+    padding: 8px;
+    margin-bottom: 36px;
+  }
+  .graph-container {
+    padding: 24px 0;
+  }
+  .graph-footnote-container {
+    padding: 0 40px 60px 40px;
+  }
+  .mid-section-container {
+    padding: 60px 0 0px 0;
+    border-top: 1px solid #ADADAD;
+    h2 {
+      padding-bottom: 60px;
+    }
+    .mid-footnote-container {
+      padding: 24px 0 0px 0;
+    }
+  }
+  .lower-section-container {
+    padding: 60px 0;
+    .lower-footnote-container {
+      padding: 24px 0 0px 0;
+      p {
+        padding-bottom: 8px;
+        &:last-of-type {
+          padding-bottom: 0px;
+        }
+      }
+    }
+  }
+  .footnote-container {
+    h6 {
+      padding-bottom: 4px;
+      &:last-of-type {
+        padding-bottom: 0px;
+      }
+      &.hanging-footnote {
+        padding-left: 0.1em;
+        text-indent: -0.4em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .bmd-container {
+    padding: 40px 0 0 0;
+    h2 {
+      padding: 0px 0 16px 0;
+    }
+    .bmd-skinny-callout-container {
+      margin-bottom: 24px;
+    }
+    .graph-container {
+      padding: 16px 0;
+    }
+    .graph-footnote-container {
+      padding: 0 0px 40px 0px;
+    }
+    .mid-section-container {
+      padding: 40px 0 0px 0;
+      h2 {
+        padding-bottom: 16px;
+      }
+    }
+    .lower-section-container {
+      padding: 40px 0 16px 0;
+      .lower-footnote-container {
+        padding: 16px 0 0px 0;
+        p {
+          padding-bottom: 8px;
+          &:last-of-type {
+            padding-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}

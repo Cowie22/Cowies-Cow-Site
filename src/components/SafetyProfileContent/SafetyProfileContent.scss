@@ -1,0 +1,51 @@
+.safety-container {
+  padding: 16px 0 0px 0;
+  .tab-arrow-container {
+    transition: all .7s;
+    transition-delay: .1s;
+    position: relative;
+    top: 200px;
+    &.arrow-right-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    .purple-arrow {
+      path {
+        fill: $purple;
+        transition: all .7s;
+        transition-delay: .1s;
+      }
+    }
+    .grey-arrow {
+      path {
+        fill: $inactive-grey;
+        transition: all .7s;
+        transition-delay: .1s;
+      }
+    }
+    .pink-arrow {
+      path {
+        fill: $pink;
+        transition: all .7s;
+        transition-delay: .1s;
+      }
+    }
+  }
+}
+
+.safety-lower-container {
+  background: linear-gradient(90deg, #302D83 0%, #4F1289 37.5%, #5C068C 100%);
+  padding: 60px 0;
+}
+
+@media screen and (max-width: 992px) {
+  .safety-container {
+    padding: 8px 0 0 0;
+  }
+  .safety-lower-container {
+    padding: 40px 0;
+  }
+}

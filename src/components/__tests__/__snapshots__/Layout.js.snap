@@ -1,0 +1,1087 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout snapshot matches 1`] = `
+<div
+  class="layout"
+>
+  <section
+    class="cookie-container"
+    data-testid="Cookie Visible"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-lg-9 col-8"
+        >
+          <p>
+            This website uses cookies to help us give you the best experience when you visit. By using this website, you consent to the use of these cookies. Find out more about how we use cookies and how to manage them by reading our
+            <a
+              class="cookie-link extra-bold"
+              href="https://www.myovant.com/cookie-policy/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+               
+               Cookie Policy
+            </a>
+            .
+          </p>
+        </div>
+        <div
+          class="col-lg-3 col-4"
+        >
+          <div
+            class="cookie-btn-container"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="col-lg-9 col-md col order-lg-1 order-md-1 order-2"
+              >
+                <div
+                  class="cta-btn-container cookie-cta-container"
+                >
+                  <button
+                    class="cta-btn transparent-btn-pink cookie-cta-btn"
+                  >
+                    Accept
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md col order-lg-2 order-md-2 order-1"
+              >
+                <div
+                  class="close-icon-container"
+                >
+                  <img
+                    alt=""
+                    class="header-close-icon"
+                    loading="lazy"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="utility-nav"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-xl-12 col-lg-12 offset-xl-0 offset-lg-0"
+        >
+          <nav
+            class="utility-nav-container"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="col-xl-9 col-lg-10 offset-xl-3 offset-lg-2"
+              >
+                <ul
+                  class="utility-left-container"
+                >
+                  <li>
+                    <a
+                      class="utility-header-nav"
+                      href="#isi"
+                    >
+                      Important Safety Information
+                    </a>
+                  </li>
+                  <li
+                    class="center-nav"
+                  >
+                    <a
+                      class="utility-header-nav"
+                      data-testid="Prescribing Information"
+                      href="https://www.myovant.com/myfembree-prescribing-information.pdf"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <span>
+                        Prescribing Information, including 
+                        <b>
+                          BOXED WARNING
+                        </b>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="utility-header-nav"
+                      href="https://www.Myfembree.com/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Visit Patient Site
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div
+    style="position: relative; top: 0px; z-index: 9989; width: 100%;"
+  >
+    <header
+      class="main-header"
+    >
+      <section
+        class="main-nav"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="navbar-header col-lg-3 col-6"
+            >
+              <a
+                href="/"
+              >
+                <img
+                  alt="Myfembree® (relugolix, estradiol, and norethindrone acetate) tablets 40 mg, 1 mg, 0.5 mg"
+                  class="header-logo"
+                  height="100%"
+                  loading="lazy"
+                  src="test-file-stub"
+                  width="86%"
+                />
+              </a>
+            </div>
+            <div
+              class="d-block d-lg-none col-3 offset-3"
+            >
+              <div
+                class="mobile-navbar-container"
+              >
+                <button
+                  class="navbar-toggle"
+                  type="button"
+                >
+                  <span
+                    class="sr-only"
+                  >
+                    Toggle navigation
+                  </span>
+                  <span
+                    class="icon-bar"
+                  />
+                  <span
+                    class="icon-bar"
+                  />
+                  <span
+                    class="icon-bar"
+                  />
+                </button>
+              </div>
+            </div>
+            <div
+              class="d-none d-lg-block col-xl-8 col-lg-9 offset-xl-1 offset-lg-0"
+            >
+              <nav
+                class="header-nav-container"
+              >
+                <ul>
+                  <li>
+                    <a
+                      class=""
+                      data-testid="Once-Daily Dosing"
+                      href="/once-daily-dosing/"
+                    >
+                      Once-Daily Dosing
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class=""
+                      data-testid="Efficacy"
+                      href="/liberty-trials/"
+                    >
+                      Efficacy
+                    </a>
+                    <svg
+                      class="nav-arrow"
+                      fill="none"
+                      height="6"
+                      viewBox="0 0 12 6"
+                      width="12"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class=""
+                        clip-rule="evenodd"
+                        d="M5.99984 3.95775e-05C6.13245 3.95775e-05 6.25962 0.0527177 6.35339 0.146486L10.9367 4.72982C11.132 4.92508 11.132 5.24167 10.9367 5.43693C10.7415 5.63219 10.4249 5.63219 10.2296 5.43693L5.99984 1.20715L1.77006 5.43693C1.5748 5.63219 1.25821 5.63219 1.06295 5.43693C0.867688 5.24167 0.867688 4.92508 1.06295 4.72982L5.64628 0.146486C5.74005 0.0527177 5.86723 3.95775e-05 5.99984 3.95775e-05Z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </li>
+                  <li>
+                    <a
+                      class=""
+                      data-testid="Safety"
+                      href="/safety-profile/"
+                    >
+                      Safety
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class=""
+                      data-testid="How It Works"
+                      href="/how-it-works/"
+                    >
+                      How It Works
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class=""
+                      data-testid="Support & Savings"
+                      href="/myfembree-support-program/"
+                    >
+                      Support & Savings
+                    </a>
+                    <svg
+                      class="nav-arrow"
+                      fill="none"
+                      height="6"
+                      viewBox="0 0 12 6"
+                      width="12"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class=""
+                        clip-rule="evenodd"
+                        d="M5.99984 3.95775e-05C6.13245 3.95775e-05 6.25962 0.0527177 6.35339 0.146486L10.9367 4.72982C11.132 4.92508 11.132 5.24167 10.9367 5.43693C10.7415 5.63219 10.4249 5.63219 10.2296 5.43693L5.99984 1.20715L1.77006 5.43693C1.5748 5.63219 1.25821 5.63219 1.06295 5.43693C0.867688 5.24167 0.867688 4.92508 1.06295 4.72982L5.64628 0.146486C5.74005 0.0527177 5.86723 3.95775e-05 5.99984 3.95775e-05Z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div
+            class="header-dropdown-hidden d-none d-lg-block"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="col-lg-12"
+              >
+                <div
+                  class="header-dropdown-container"
+                  id="header-dropdown-container"
+                >
+                  <ul
+                    class="header-dropdown-ul"
+                  >
+                    <li
+                      class=""
+                    >
+                      <a
+                        class=""
+                        href="/undefined"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="mobile-nav"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="mobile-nav-col col"
+            >
+              <div
+                class="mobile-nav-list-container"
+              >
+                <ul
+                  class="mobile-nav-links"
+                >
+                  <li
+                    class=""
+                  >
+                    <a
+                      data-testid="Once-Daily Dosing Mobile"
+                      href="/once-daily-dosing/"
+                    >
+                      Once-Daily Dosing
+                    </a>
+                  </li>
+                  <li>
+                    <div
+                      class="mobile-nav-dropdown-link"
+                    >
+                      Efficacy
+                      <svg
+                        class="nav-arrow"
+                        fill="none"
+                        height="6"
+                        viewBox="0 0 12 6"
+                        width="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M5.99984 3.95775e-05C6.13245 3.95775e-05 6.25962 0.0527177 6.35339 0.146486L10.9367 4.72982C11.132 4.92508 11.132 5.24167 10.9367 5.43693C10.7415 5.63219 10.4249 5.63219 10.2296 5.43693L5.99984 1.20715L1.77006 5.43693C1.5748 5.63219 1.25821 5.63219 1.06295 5.43693C0.867688 5.24167 0.867688 4.92508 1.06295 4.72982L5.64628 0.146486C5.74005 0.0527177 5.86723 3.95775e-05 5.99984 3.95775e-05Z"
+                          fill="#A51890"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <ul
+                      class="header-dropdown-ul"
+                    >
+                      <li
+                        class=""
+                      >
+                        <a
+                          href="/liberty-trials/"
+                        >
+                          LIBERTY Trials
+                        </a>
+                      </li>
+                      <li
+                        class=""
+                      >
+                        <a
+                          href="/efficacy-data/"
+                        >
+                          Efficacy Data
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class=""
+                  >
+                    <a
+                      data-testid="Safety Mobile"
+                      href="/safety-profile/"
+                    >
+                      Safety
+                    </a>
+                  </li>
+                  <li
+                    class=""
+                  >
+                    <a
+                      data-testid="How It Works Mobile"
+                      href="/how-it-works/"
+                    >
+                      How It Works
+                    </a>
+                  </li>
+                  <li>
+                    <div
+                      class="mobile-nav-dropdown-link"
+                    >
+                      Support & Savings
+                      <svg
+                        class="nav-arrow"
+                        fill="none"
+                        height="6"
+                        viewBox="0 0 12 6"
+                        width="12"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M5.99984 3.95775e-05C6.13245 3.95775e-05 6.25962 0.0527177 6.35339 0.146486L10.9367 4.72982C11.132 4.92508 11.132 5.24167 10.9367 5.43693C10.7415 5.63219 10.4249 5.63219 10.2296 5.43693L5.99984 1.20715L1.77006 5.43693C1.5748 5.63219 1.25821 5.63219 1.06295 5.43693C0.867688 5.24167 0.867688 4.92508 1.06295 4.72982L5.64628 0.146486C5.74005 0.0527177 5.86723 3.95775e-05 5.99984 3.95775e-05Z"
+                          fill="#A51890"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <ul
+                      class="header-dropdown-ul"
+                    >
+                      <li
+                        class=""
+                      >
+                        <a
+                          href="/myfembree-support-program/"
+                        >
+                          Myfembree Support Program
+                        </a>
+                      </li>
+                      <li
+                        class=""
+                      >
+                        <a
+                          href="/resources/"
+                        >
+                          Resources
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+  </div>
+  <div
+    class="main"
+  >
+    <div>
+      test
+    </div>
+  </div>
+  <div
+    class="back-to-top-container"
+    style="display: none;"
+  >
+    <img
+      alt=""
+      loading="lazy"
+      src="test-file-stub"
+    />
+  </div>
+  <div
+    id="isi"
+  />
+  <section
+    class="isi"
+  >
+    <div
+      class=""
+    >
+      <div
+        class="isi-tray"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="col-lg-12 offset-lg-0"
+            >
+              <div
+                class="isi-tray-container"
+              >
+                <div
+                  class="row"
+                >
+                  <div
+                    class="col-lg-7"
+                  >
+                    <h4
+                      class="purple extra-bold mulish"
+                    >
+                      IMPORTANT SAFETY INFORMATION
+                    </h4>
+                  </div>
+                  <div
+                    class="col-lg-4 offset-lg-0"
+                  >
+                    <h4
+                      class="text-left purple extra-bold mulish"
+                    >
+                      INDICATION
+                    </h4>
+                  </div>
+                  <div
+                    class="col-lg-1 col-1"
+                  >
+                    <div
+                      class="isi-tray-icon-container"
+                    >
+                      <img
+                        alt=""
+                        height="12"
+                        loading="lazy"
+                        src="test-file-stub"
+                        width="12"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="isi-content"
+                >
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col-lg-7"
+                    >
+                      <p
+                        class="extra-bold"
+                      >
+                        <span
+                          class="purple"
+                        >
+                          BOXED WARNING:
+                        </span>
+                         
+                        THROMBOEMBOLIC DISORDERS AND VASCULAR EVENTS
+                      </p>
+                      <ul
+                        class="black-box-ul"
+                      >
+                        <li>
+                          Estrogen and progestin combination products, including Myfembree, increase the risk of thrombotic or thromboembolic disorders including pulmonary embolism, deep vein thrombosis, stroke and myocardial infarction, especially in women at increased risk for these events.
+                        </li>
+                        <li>
+                          Myfembree is contraindicated in women with current or a history of thrombotic or thromboembolic disorders and in women at increased risk for these events, including women over 35 years of age who smoke or women with uncontrolled hypertension.
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="col-lg-4 offset-lg-0"
+                    >
+                      <p>
+                        Myfembree is indicated for the management of heavy menstrual bleeding associated with uterine leiomyomas (fibroids) in premenopausal women.   
+                        <u>
+                          Limitations of Use
+                        </u>
+                        : Use of Myfembree should be limited to 24 months due to the risk of continued bone loss which may not be reversible.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="page-isi"
+    />
+    <div
+      class="page-isi"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="col"
+          >
+            <section>
+              <h4
+                class="purple extra-bold isi-header-text mulish"
+              >
+                INDICATION
+              </h4>
+              <p>
+                Myfembree is indicated for the management of heavy menstrual bleeding associated with uterine leiomyomas (fibroids) in premenopausal women.   
+                <u>
+                  Limitations of Use
+                </u>
+                : Use of Myfembree should be limited to 24 months due to the risk of continued bone loss which may not be reversible.
+              </p>
+              <h4
+                class="purple extra-bold isi-header-text mulish"
+              >
+                IMPORTANT SAFETY INFORMATION
+              </h4>
+              <p
+                class="extra-bold"
+              >
+                <span
+                  class="purple"
+                >
+                  BOXED WARNING:
+                </span>
+                 THROMBOEMBOLIC DISORDERS AND VASCULAR EVENTS
+              </p>
+              <ul
+                class="black-box-ul"
+              >
+                <li>
+                  Estrogen and progestin combination products, including Myfembree, increase the risk of thrombotic or thromboembolic disorders including pulmonary embolism, deep vein thrombosis, stroke and myocardial infarction, especially in women at increased risk for these events.
+                </li>
+                <li
+                  id="trigger-mobile-tray"
+                >
+                  Myfembree is contraindicated in women with current or a history of thrombotic or thromboembolic disorders and in women at increased risk for these events, including women over 35 years of age who smoke or women with uncontrolled hypertension.
+                </li>
+              </ul>
+              <h4
+                class="purple extra-bold isi-header-text mulish"
+                id="trigger-tray"
+              >
+                CONTRAINDICATIONS
+              </h4>
+              <p>
+                Myfembree is contraindicated in women with any of the following: high risk of arterial, venous thrombotic, or thromboembolic disorder; pregnancy; known osteoporosis; current or history of breast cancer or other hormone-sensitive malignancies; known hepatic impairment or disease; undiagnosed abnormal uterine bleeding; known hypersensitivity to components of Myfembree.
+              </p>
+              <h4
+                class="purple extra-bold isi-header-text mulish"
+              >
+                WARNINGS AND PRECAUTIONS
+              </h4>
+              <p>
+                <strong
+                  class="purple"
+                >
+                  Thromboembolic Disorders:
+                </strong>
+                 
+                Discontinue immediately if an arterial or venous thrombotic, cardiovascular, or cerebrovascular event occurs or is suspected. Discontinue at least 4 to 6 weeks before surgery associated with an increased risk of thromboembolism, or during periods of prolonged immobilization, if feasible. Discontinue immediately if there is sudden unexplained partial or complete loss of vision, proptosis, diplopia, papilledema, or retinal vascular lesions and evaluate for retinal vein thrombosis as these have been reported with estrogens and progestins.
+              </p>
+              <p>
+                <strong
+                  class="purple"
+                >
+                  Bone Loss:
+                </strong>
+                 Myfembree may cause a decrease in bone mineral density (BMD) in some patients, which may be greater with increasing duration of use and may not be completely reversible after stopping treatment. Consider the benefits and risks in patients with a history of low trauma fracture or risk factors for osteoporosis or bone loss, including medications that may decrease BMD. Assessment of BMD by dual-energy X-ray absorptiometry (DXA) is recommended at baseline and periodically thereafter. Consider discontinuing Myfembree if the risk of bone loss exceeds the potential benefit.
+              </p>
+              <p>
+                <strong
+                  class="purple"
+                >
+                  Hormone-Sensitive Malignancies:
+                </strong>
+                 
+                Discontinue Myfembree if a hormone-sensitive malignancy is diagnosed. Surveillance measures in accordance with standard of care, such as breast examinations and mammography are recommended. Use of estrogen alone or estrogen plus progestin has resulted in abnormal mammograms requiring further evaluation.
+              </p>
+              <p>
+                <strong
+                  class="purple"
+                >
+                  Depression, Mood Disorders, and Suicidal Ideation:
+                </strong>
+                 
+                Promptly evaluate patients with mood changes and depressive symptoms including shortly after initiating treatment, to determine whether the risks of continued therapy outweigh the benefits. Patients with new or worsening depression, anxiety, or other mood changes should be referred to a mental health professional, as appropriate. Advise patients to seek immediate medical attention for suicidal ideation and behavior and reevaluate the benefits and risks of continuing Myfembree.
+              </p>
+              <p>
+                <strong
+                  class="purple"
+                >
+                  Hepatic Impairment and Transaminase Elevations:
+                </strong>
+                 
+                Steroid hormones may be poorly metabolized in these patients. Instruct women to promptly seek medical attention for symptoms or signs that may reflect liver injury, such as jaundice or right upper abdominal pain. Acute liver test abnormalities may necessitate the discontinuation of Myfembree use until the liver tests return to normal and Myfembree causation has been excluded.
+              </p>
+              <p>
+                <strong
+                  class="purple"
+                >
+                  Gallbladder Disease or History of Cholestatic Jaundice:
+                </strong>
+                 
+                Discontinue Myfembree if signs or symptoms of gallbladder disease or jaundice occur. For women with a history of cholestatic jaundice associated with past estrogen use or with pregnancy, assess the risk-benefit of continuing therapy. Studies among estrogen users suggest a small increased relative risk of developing gallbladder disease.
+              </p>
+              <p>
+                <strong
+                  class="purple"
+                >
+                  Elevated Blood Pressure:
+                </strong>
+                 For women with well-controlled hypertension, monitor blood pressure and stop Myfembree if blood pressure rises significantly.
+              </p>
+              <p>
+                <strong
+                  class="purple"
+                >
+                  Change in Menstrual Bleeding Pattern and Reduced Ability to Recognize Pregnancy:
+                </strong>
+                 
+                Advise women to use non-hormonal contraception during treatment and for one week after discontinuing Myfembree. Avoid concomitant use of hormonal contraceptives. Myfembree may delay the ability to recognize pregnancy because it alters menstrual bleeding. Perform testing if pregnancy is suspected and discontinue Myfembree if pregnancy is confirmed.
+              </p>
+              <p>
+                <strong
+                  class="purple"
+                >
+                  Risk of Early Pregnancy Loss:
+                </strong>
+                 
+                Myfembree can cause early pregnancy loss. Exclude pregnancy before initiating and advise women to use effective non-hormonal contraception.
+              </p>
+              <p>
+                <strong
+                  class="purple"
+                >
+                  Uterine Fibroid Prolapse or Expulsion:
+                </strong>
+                 
+                Advise women with known or suspected submucosal uterine fibroids about the possibility of uterine fibroid prolapse or expulsion and instruct them to contact their physician if severe bleeding and/or cramping occurs.
+              </p>
+              <p>
+                <strong
+                  class="purple"
+                >
+                  Alopecia:
+                </strong>
+                 Alopecia, hair loss, and hair thinning were reported in phase 3 trials with Myfembree. Consider discontinuing Myfembree if hair loss becomes a concern. Whether the hair loss is reversible is unknown.
+              </p>
+              <p>
+                <strong
+                  class="purple"
+                >
+                  Effects on Carbohydrate and Lipid Metabolism:
+                </strong>
+                 
+                More frequent monitoring in Myfembree-treated women with prediabetes and diabetes may be necessary. Myfembree may decrease glucose tolerance and result in increased blood glucose concentrations. Monitor lipid levels and consider discontinuing if hypercholesterolemia or hypertriglyceridemia worsens. In women with pre-existing hypertriglyceridemia, estrogen therapy may be associated with elevations in triglycerides levels leading to pancreatitis. Use of Myfembree is associated with increases in total cholesterol and LDL-C.
+              </p>
+              <p>
+                <strong
+                  class="purple"
+                >
+                  Effect on Other Laboratory Results:
+                </strong>
+                 
+                Patients with hypothyroidism and hypoadrenalism may require higher doses of thyroid hormone or cortisol replacement therapy. Use of estrogen and progestin combinations may raise serum concentrations of binding proteins (e.g., thyroid-binding globulin, corticosteroid-binding globulin), which may reduce free thyroid or corticosteroid hormone levels. Use of estrogen and progestin may also affect the levels of sex hormone-binding globulin, and coagulation factors.
+              </p>
+              <p>
+                <strong
+                  class="purple"
+                >
+                  Hypersensitivity Reactions:
+                </strong>
+                 
+                Immediately discontinue Myfembree if a hypersensitivity reaction occurs.
+              </p>
+              <p>
+                <strong
+                  class="purple"
+                >
+                  ADVERSE REACTIONS:
+                </strong>
+                 
+                <strong
+                  class="purple"
+                >
+                  Most common adverse reactions
+                </strong>
+                 for Myfembree (incidence ≥3% and greater than placebo) were hot flush/hyperhidrosis/night sweats, abnormal uterine bleeding, alopecia, and decreased libido. These are not all the possible side effects of Myfembree.
+              </p>
+              <p>
+                <strong
+                  class="purple"
+                >
+                  DRUG INTERACTIONS:
+                </strong>
+                 
+                <strong
+                  class="purple"
+                >
+                  P-gp Inhibitors:
+                </strong>
+                 Avoid use of Myfembree with oral P-gp inhibitors. If use is unavoidable, take Myfembree first, separate dosing by at least 6 hours, and monitor patients for adverse reactions.  
+                <strong
+                  class="purple"
+                >
+                  Combined P-gp and Strong CYP3A Inducers:
+                </strong>
+                 
+                Avoid use of Myfembree with combined P-gp and strong CYP3A inducers.
+              </p>
+              <p>
+                <strong
+                  class="purple"
+                >
+                  LACTATION:
+                </strong>
+                 Advise women not to breastfeed while taking Myfembree.
+              </p>
+              <p
+                class="lower-isi-callout"
+              >
+                <strong>
+                  Please see full
+                </strong>
+                 
+                <a
+                  class="isi-link extra-bold"
+                  href="https://www.myovant.com/myfembree-prescribing-information.pdf"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Prescribing Information, including BOXED WARNING
+                </a>
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div
+    class="reference-container d-none"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+          <div
+            class="references"
+          >
+            <p
+              class="extra-bold reference-header"
+            >
+              References
+            </p>
+            <ol
+              class="reference-ordered-list"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-lg-5 col-8 offset-lg-0 offset-2"
+        >
+          <h6
+            class="footer-top-title"
+          >
+            For US Healthcare Professionals Only
+          </h6>
+          <nav
+            class="footer-nav-container"
+          >
+            <ul>
+              <li>
+                <a
+                  href="https://www.myovant.com/contact-us/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.myovant.com/privacy-policy/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.myovant.com/terms-of-use/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Terms of Use
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/sitemap/"
+                >
+                  Site Map
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col-lg-7 col-10 order-lg-1 offset-lg-0 order-2 offset-1"
+        >
+          <h6
+            class="footer-text"
+          >
+            Myfembree® and its associated logo are trademarks of Myovant Sciences GmbH. All other trademarks are the property of their respective owners.
+          </h6>
+          <h6>
+            ©2021 Myovant Sciences GmbH and Pfizer Inc. All rights reserved. PP-US-REL-CT-2100142 08/21
+          </h6>
+        </div>
+        <div
+          class="col-lg-4 col-12 order-lg-2 offset-lg-1 order-1 offset-0"
+        >
+          <div
+            class="footer-logo-container"
+          >
+            <a
+              href="https://www.myovant.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Myovant Sciences logo"
+                class="footer-logo"
+                loading="lazy"
+                src="test-file-stub"
+              />
+            </a>
+            <a
+              href="https://www.pfizer.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Pfizer logo"
+                class="footer-logo footer-logo-left"
+                loading="lazy"
+                src="test-file-stub"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section
+    id="exit-container"
+    style="top: -650px;"
+  />
+  <section
+    class=""
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-lg-4 col-md-6 offset-lg-4 offset-md-3"
+        >
+          <div
+            class="exit-popup-col-hidden"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="col-lg-1 offset-lg-11"
+              >
+                <div
+                  class="close-img-container"
+                >
+                  <img
+                    alt=""
+                    class="close-img"
+                    loading="lazy"
+                    src="test-file-stub"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="col-lg-8 col-8 offset-lg-2 offset-2"
+              >
+                <div
+                  class="popup-logo-container"
+                >
+                  <img
+                    alt="Myfembree® (relugolix, estradiol, and norethindrone acetate) tablets 40 mg, 1 mg, 0.5 mg"
+                    height="100%"
+                    loading="lazy"
+                    src="test-file-stub"
+                    width="100%"
+                  />
+                </div>
+              </div>
+            </div>
+            <h3
+              class="blue text-center"
+            >
+              You are about to leave MyfembreeHCP.com
+            </h3>
+            <div
+              class="row"
+            >
+              <div
+                class="col"
+              >
+                <div
+                  class="cta-btn-container exit-popup-btn-container"
+                >
+                  <a
+                    href=""
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <button
+                      class="cta-btn pink-btn"
+                    >
+                      Continue
+                    </button>
+                  </a>
+                </div>
+                <div
+                  class="cta-btn-container exit-popup-btn-container"
+                >
+                  <button
+                    class="cta-btn transparent-btn-pink"
+                  >
+                    Stay on MyfembreeHCP.com
+                  </button>
+                </div>
+              </div>
+            </div>
+            <h6
+              class="text-center"
+            >
+              The website you are linking to is neither owned nor controlled by Myovant Sciences GmbH or Pfizer Inc. Myovant and Pfizer are not responsible for the content or services on the site.
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

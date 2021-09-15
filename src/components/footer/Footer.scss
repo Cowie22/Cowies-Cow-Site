@@ -14,6 +14,7 @@ footer {
           color: $pink;
           transition: color .5s;
           transition-delay: .2s;
+          font-family: $sans;
           &:hover {
             cursor: pointer;
             color: $purple;
@@ -31,10 +32,18 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    .footer-logo {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .footer-logo-left {
+      margin-left: 16px;
+    }
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
   footer {
     padding: 40px 0;
     .footer-top-title {
@@ -53,8 +62,31 @@ footer {
         }
       }
     }
+    .footer-logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 24px;
+      .footer-logo-left {
+        margin-left: 16px;
+      }
+    }
   }
-  .footer-logo-container {
-    padding-bottom: 24px;
+}
+
+@media only screen and (max-width: 320px) {
+  footer {
+    .footer-logo-container {
+      padding-bottom: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .footer-logo {
+        width: 90%;
+      }
+      .footer-logo-left {
+        margin-left: 16px;
+      }
+    }
   }
 }

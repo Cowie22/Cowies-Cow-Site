@@ -1,10 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Sticky, StickyContainer } from "react-sticky"
+import React from 'react'
 import AppProvider, { AppContext } from '../../contexts/state'
 
-import MainNav from "./MainNav"
-import NonUSPopUp from '../NonUSPopUp/NonUSPopUp'
+import MainNav from './MainNav'
+// import NonUSPopUp from '../NonUSPopUp/NonUSPopUp'
 
 class Header extends React.Component {
   constructor(props) {
@@ -21,8 +19,8 @@ class Header extends React.Component {
   componentDidMount = () => {
     this.updateWindowDimensions();
     this.handleScroll();
-    window.addEventListener('resize', this.updateWindowDimensions);
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('resize', this.updateWindowDimensions, { passive: true });
+    window.addEventListener('scroll', this.handleScroll, { passive: true });
   }
 
   componentWillUnmount = () => {
@@ -72,11 +70,19 @@ class Header extends React.Component {
     return (
       <AppContext.Consumer>
         {(context) => {
-          const { isCoronaVisible, activeSite, selectionNav } = context;
+          const {
+            currentPage,
+            handleCurrentPage,
+            activeHeaderDropdown,
+            handleActiveHeaderDropdown,
+            activeDropdownLink,
+            handleActiveDropdownLink,
+            handleCurrentTopTab
+          } = context;
           return (
-            prevYValue > yDirection || isNavOpen ?
-              <div style={{top: 0, zIndex: 9997}} className='sticky-header'>
-                <header className="main-header">
+            yDirection > 0 && !isNavOpen ?
+              <div style={{top: 0, zIndex: 9989, width: '100%'}} className='sticky-header'>
+                <header className='main-header'>
                   {/* Modal popup here */}
                   <section
                     id='non-us-modal-container-2'
@@ -88,26 +94,90 @@ class Header extends React.Component {
                     onClick={() => this.handlePopUp()}
                   >
                   </section>
-                  <NonUSPopUp
+                  {/* <NonUSPopUp
                     handlePopUp={this.handlePopUp}
                     popup={popup}
-                  />
+                  /> */}
                   <MainNav
                     isNavOpen={isNavOpen}
                     setNavOpen={this.setNavOpen}
                     popup={popup}
                     handlePopUp={this.handlePopUp}
+                    currentPage={currentPage}
+                    handleCurrentPage={handleCurrentPage}
+                    activeHeaderDropdown={activeHeaderDropdown}
+                    handleActiveHeaderDropdown={handleActiveHeaderDropdown}
+                    activeDropdownLink={activeDropdownLink}
+                    handleActiveDropdownLink={handleActiveDropdownLink}
+                    handleCurrentTopTab={handleCurrentTopTab}
+                  />
+                </header>
+              </div>
+            : yDirection > 0 && isNavOpen ?
+              <div style={{position: 'fixed', top: 0, zIndex: 9989, width: '100%'}}>
+                <header className='main-header'>
+                  <section
+                    id='non-us-modal-container-2'
+                    style={
+                      xDirection < 426 ? {top: `${0}px`} :
+                      xDirection < 769 ? {top: `${0}px`} :
+                      {top: `${yDirection - 350}px`}
+                    }
+                    onClick={() => this.handlePopUp()}
+                  >
+                  </section>
+                  {/* <NonUSPopUp
+                    handlePopUp={this.handlePopUp}
+                    popup={popup}
+                  /> */}
+                  <MainNav
+                    isNavOpen={isNavOpen}
+                    setNavOpen={this.setNavOpen}
+                    popup={popup}
+                    handlePopUp={this.handlePopUp}
+                    currentPage={currentPage}
+                    handleCurrentPage={handleCurrentPage}
+                    activeHeaderDropdown={activeHeaderDropdown}
+                    handleActiveHeaderDropdown={handleActiveHeaderDropdown}
+                    activeDropdownLink={activeDropdownLink}
+                    handleActiveDropdownLink={handleActiveDropdownLink}
+                    handleCurrentTopTab={handleCurrentTopTab}
+                  />
+                </header>
+              </div>
+            : isNavOpen ?
+              <div style={{position: 'absolute', top: 0, zIndex: 9989, width: '100%'}}>
+                <header className='main-header'>
+                  <MainNav
+                    isNavOpen={isNavOpen}
+                    setNavOpen={this.setNavOpen}
+                    popup={popup}
+                    handlePopUp={this.handlePopUp}
+                    currentPage={currentPage}
+                    handleCurrentPage={handleCurrentPage}
+                    activeHeaderDropdown={activeHeaderDropdown}
+                    handleActiveHeaderDropdown={handleActiveHeaderDropdown}
+                    activeDropdownLink={activeDropdownLink}
+                    handleActiveDropdownLink={handleActiveDropdownLink}
+                    handleCurrentTopTab={handleCurrentTopTab}
                   />
                 </header>
               </div>
             :
-              <div style={{position: 'relative', top: 0, zIndex: 9997}}>
-                <header className="main-header">
+              <div style={{position: 'relative', top: 0, zIndex: 9989, width: '100%'}}>
+                <header className='main-header'>
                   <MainNav
                     isNavOpen={isNavOpen}
                     setNavOpen={this.setNavOpen}
                     popup={popup}
                     handlePopUp={this.handlePopUp}
+                    currentPage={currentPage}
+                    handleCurrentPage={handleCurrentPage}
+                    activeHeaderDropdown={activeHeaderDropdown}
+                    handleActiveHeaderDropdown={handleActiveHeaderDropdown}
+                    activeDropdownLink={activeDropdownLink}
+                    handleActiveDropdownLink={handleActiveDropdownLink}
+                    handleCurrentTopTab={handleCurrentTopTab}
                   />
                 </header>
               </div>

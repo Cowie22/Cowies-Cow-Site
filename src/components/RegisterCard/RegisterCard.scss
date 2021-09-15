@@ -1,0 +1,32 @@
+.register-container {
+  background: #F1F7F4;
+  border-radius: 20px;
+  bottom: 0;
+  .register-icon-container {
+    display: flex;
+    align-items: center;
+    img {
+      padding-right: 24px;
+    }
+  }
+  .register-inner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    .register-btn-container {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .register-container {
+    .register-inner-container {
+      .register-btn-container {
+        padding-top: 24px;
+      }
+    }
+  }
+}

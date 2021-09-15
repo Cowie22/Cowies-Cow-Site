@@ -24,8 +24,12 @@
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .cookie-container {
+    p {
+      font-size: 14px;
+      line-height: 16px;
+    }
     .cookie-btn-container {
       display: flex;
       justify-content: flex-end;
@@ -34,6 +38,9 @@
         display: flex;
         align-items: flex-end;
         height: 100%;
+        .cookie-cta-btn {
+          padding: 8px 24px;
+        }
       }
     }
   }

@@ -1,7 +1,12 @@
+// In order to use PM2 and deploy to the staging server, you need to comment out gatsby-plugin-minify and gatsby-plugin-brotli.
+// However, these two plugins dramatically increase page speeds, so make sure to utilize them before building the code you intend
+// To use for production.
+
 module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-minify`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -10,13 +15,30 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: "gatsby-plugin-google-tagmanager-delayed",
+      options: {
+        id: "GTM-MV77PCG",
+        includeInDevelopment: true,
+        defaultDataLayer: { platform: "gatsby" },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-brotli',
+      options: {
+        extensions: ['css', 'html', 'js', 'svg', 'jsx', 'webp', 'scss', 'png', 'jpg']
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts-with-attributes`,
       options: {
         fonts: [
           `Mulish\:400,500,700`,
           `Source Sans Pro\:400,500,700`,
         ],
-        display: 'swap'
+        display: 'swap',
+        attributes: {
+          rel: "stylesheet preload prefetch",
+        },
       }
     },
   ],

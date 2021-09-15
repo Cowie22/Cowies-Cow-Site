@@ -1,0 +1,20 @@
+.resources-container {
+  background: linear-gradient(292.73deg, #B8D7C9 6.91%, #A51890 40.02%, #790D8E 66.85%, #5C068C 87.39%);
+  padding: 60px 0;
+}
+
+.resources-content-container {
+  padding: 60px 0 0px 0;
+  .resource-sub-title {
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .resources-container {
+    padding: 40px 0;
+  }
+  .resources-content-container {
+    padding: 40px 0 0 0;
+  }
+}

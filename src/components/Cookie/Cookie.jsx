@@ -29,17 +29,17 @@ class Cookie extends React.Component {
           const { isCookieVisible, handleIsCookieVisible } = context;
           return (
             isCookieVisible ?
-            <section className='cookie-container'>
+            <section className='cookie-container' data-testid='Cookie Visible'>
               <Container>
                 <Row>
                   <Col lg={9} xs={{span: 8}}>
                     <p>
-                      This website uses cookies to help us give you the best experience when you visit. By using
-                      this website, you consent to the use of these cookies. Find out more about how we use
-                      cookies and how to manage them by reading our
+                      This website uses cookies to help us give you the best experience when you visit.
+                      By using this website, you consent to the use of these cookies. Find out more about
+                      how we use cookies and how to manage them by reading our
                       <ExternalLink
-                        externalUrl={''}
-                        className='cookie-link'
+                        externalUrl={'https://www.myovant.com/cookie-policy/'}
+                        className='cookie-link extra-bold'
                       >
                         {' '} Cookie Policy
                       </ExternalLink>.
@@ -50,11 +50,9 @@ class Cookie extends React.Component {
                       <Row>
                         <Col lg={{span: 9, order: 1}} md={{order: 1}} xs={{order: 2}}>
                           <div className='cta-btn-container cookie-cta-container' onClick={() => handleIsCookieVisible(false)}>
-                            <a>
-                              <button className='cta-btn transparent-btn-pink'>
-                                Accept
-                              </button>
-                            </a>
+                            <button className='cta-btn transparent-btn-pink cookie-cta-btn'>
+                              Accept
+                            </button>
                           </div>
                         </Col>
                         <Col lg={{span: 3, order: 2}}  md={{order: 2}} xs={{order: 1}}>
@@ -68,6 +66,7 @@ class Cookie extends React.Component {
                               src={hovered ? closeIconHovered : closeIcon}
                               onClick={() => handleIsCookieVisible(false)}
                               className='header-close-icon'
+                              alt=''
                             />
                           </div>
                         </Col>
@@ -78,7 +77,7 @@ class Cookie extends React.Component {
               </Container>
             </section>
             :
-            <div>
+            <div data-testid='Cookie Hidden'>
 
             </div>
           )

@@ -1,0 +1,54 @@
+.next-page-btn-container {
+  padding-top: 60px;
+  a {
+    button {
+      &:hover {
+        .btn-content-container {
+          p {
+            color: $pink;
+            transition: all .7s;
+            transition-delay: .1s;
+          }
+        }
+      }
+      .btn-content-container {
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          color: $white;
+          font-family: $mulish;
+          width: 90%;
+          text-align: center;
+          transition: all .7s;
+          transition-delay: .1s;
+        }
+        .btn-arrow-container {
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          svg {
+            margin: 4px 4px 0 16px;
+            .btn-arrow {
+              fill: $white;
+              transition: all .7s;
+              transition-delay: .1s;
+              &.active-arrow {
+                fill: $pink;
+                transition: all .7s;
+                transition-delay: .1s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .next-page-btn-container {
+    padding-top: 40px;
+  }
+}

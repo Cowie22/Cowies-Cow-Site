@@ -9,8 +9,12 @@ const defaultState = {
   isExitRampOpen: false,
   handleIsExitRampOpen: () => {},
   externalUrl: '',
-  activeHeaderNav: '',
-  handleActiveHeaderNav: () => {},
+  currentPage: '',
+  handleCurrentPage: () => {},
+  activeHeaderDropdown: '',
+  handleActiveHeaderDropdown: () => {},
+  activeDropdownLink: '',
+  handleActiveDropdownLink: () => {},
   tabLink: '',
   tabBool: '',
   handleTabLink: () => {},
@@ -18,6 +22,12 @@ const defaultState = {
   handleSiteVisited: () => {},
   isCookieVisible: true,
   handleIsCookieVisible: () => {},
+  HCPModalVisible: true,
+  handleHCPModalVisible: () => {},
+  currentTopTab: '',
+  handleCurrentTopTab: () => {},
+  references: '',
+  setReferences: () => {},
 }
 
 export const AppContext = React.createContext(defaultState)
@@ -38,10 +48,22 @@ class AppProvider extends Component {
         })
       },
       externalUrl: '',
-      activeHeaderNav: '',
-      handleActiveHeaderNav: (val) => {
+      currentPage: '',
+      handleCurrentPage: (val) => {
         this.setState({
-          activeHeaderNav: val,
+          currentPage: val,
+        })
+      },
+      activeHeaderDropdown: '',
+      handleActiveHeaderDropdown: (val) => {
+        this.setState({
+          activeHeaderDropdown: val,
+        })
+      },
+      activeDropdownLink: '',
+      handleActiveDropdownLink: (val) => {
+        this.setState({
+          activeDropdownLink: val,
         })
       },
       tabLink: '',
@@ -64,14 +86,41 @@ class AppProvider extends Component {
           isCookieVisible: val,
         })
       },
+      HCPModalVisible: true,
+      handleHCPModalVisible: (val) => {
+        this.setState({
+          HCPModalVisible: val,
+        }, () => {
+          if (document.getElementsByTagName('body')) {
+            if (this.state.HCPModalVisible) {
+              document.body.classList.add('scroll-none');
+            } else {
+              document.body.classList.remove('scroll-none');
+            }
+          }
+        })
+      },
+      currentTopTab: 1,
+      handleCurrentTopTab: (val) => {
+        this.setState({
+          currentTopTab: val
+        })
+      },
+      references: 0,
+      setReferences: (arr) => {
+        this.setState({
+          references: arr,
+        })
+      },
     }
   }
   render() {
     // AppContext.Provider is a built in function for context, it is important that
     // this.props.children is used and to note that this.state is passed in.
 
-    // The class AppProvider will then wrap the outermost component(s) in the app,
-    // In our case at the moment, App.jsx
+    // The class AppProvider will then wrap the outermost component(s) in the app.
+    // For Gatsby, there is a special way to handle this, and the wrapper will be
+    // Used in gatsby-browser.js and gatsby-ssr.js.
     return (
       <AppContext.Provider value={this.state}>
         {this.props.children}

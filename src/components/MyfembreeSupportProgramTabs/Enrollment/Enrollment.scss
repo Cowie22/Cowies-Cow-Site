@@ -1,0 +1,21 @@
+.enrollment-container {
+  padding: 60px 0;
+  h2 {
+    padding: 40px 0;
+  }
+  .footnote-container {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .enrollment-container {
+    padding: 40px 0 0 0;
+    h2 {
+      padding: 32px 0 24px 0;
+    }
+    .footnote-container {
+      padding-bottom: 32px;
+    }
+  }
+}

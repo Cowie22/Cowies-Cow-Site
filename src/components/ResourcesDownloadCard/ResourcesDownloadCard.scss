@@ -1,0 +1,47 @@
+.resources-download-card-container {
+  background: #F1F7F4;
+  border-radius: 10px;
+  padding: 32px 0;
+  width: 100%;
+  margin-bottom: 16px;
+  .text-link {
+    p {
+      transition: color .5s;
+      transition-delay: .2s;
+    }
+    &:hover {
+      p {
+        cursor: pointer;
+        color: $purple;
+        transition: color .5s;
+        transition-delay: .2s;
+      }
+    }
+  }
+  .resources-btn-container {
+    .download-svg {
+      margin-left: 8px;
+      path {
+        stroke: $pink;
+        transition: stroke .7s;
+        transition-delay: .1s;
+      }
+    }
+    .hovered-svg {
+      path {
+        stroke: $white;
+        transition: stroke .7s;
+        transition-delay: .1s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .resources-download-card-container {
+    // padding: 32px;
+    .resources-download-card-subtitle {
+      padding: 4px 0 16px 0;
+    }
+  }
+}

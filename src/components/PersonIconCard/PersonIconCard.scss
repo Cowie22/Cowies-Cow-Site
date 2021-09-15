@@ -1,0 +1,20 @@
+
+.person-icon-card-container {
+  padding: 32px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .person-icon-card-container {
+    margin-bottom: 16px;
+    justify-content: flex-start;
+  }
+}

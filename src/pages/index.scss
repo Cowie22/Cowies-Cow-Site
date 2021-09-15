@@ -11,10 +11,11 @@ $white: #FFFFFF;
 $grey: #333333;
 $medium-grey: #C1C1C1;
 $light-grey: #F1F1F1;
+$inactive-grey: #E5E5E5;
 
 $teal: #6eceb2;
 $salmon: #ee968a;
-$red: #a51140;
+$red: #C70332;
 
 // fonts
 $mulish: 'Mulish', sans-serif;
@@ -24,26 +25,62 @@ $sans: 'Source Sans Pro', sans-serif;
 $light-teal: #9ed8cf;
 
 @import "../components/HomeContent/HomeContent.scss";
-@import "../components/DosingContent/DosingContent.scss";
-@import "../components/EfficacyContent/EfficacyContent.scss";
-@import "../components/MOAContent/MOAContent.scss";
+@import "../components/MyfembreeSupportProgramContent/MyfembreeSupportProgramContent.scss";
 @import "../components/ResourcesContent/ResourcesContent.scss";
-@import "../components/SafetyContent/SafetyContent.scss";
+@import "../components/OnceDailyDosingContent/OnceDailyDosingContent.scss";
+@import "../components/LibertyTrialsContent/LibertyTrialsContent.scss";
+@import "../components/EfficacyDataContent/EfficacyDataContent.scss";
+@import "../components/SafetyProfileContent/SafetyProfileContent.scss";
+@import "../components/HowItWorksContent/HowItWorksContent.scss";
 @import "../components/SiteMapContent/SiteMapContent.scss";
+@import "../components/404Content/404Content.scss";
 
 @import "../components/header/UtilityNav.scss";
 @import "../components/header/Header.scss";
 @import "../components/header/MainNav.scss";
 @import "../components/NonUSPopUp/NonUSPopUp.scss";
-@import "../components/SelectionNav/SelectionNav.scss";
 @import "../components/exitramp/ExitRamp.scss";
 @import "../components/isi/Isi.scss";
-@import "../components/form/SignUpForm.scss";
 @import "../components/footer/Footer.scss";
 @import "../components/Layout.scss";
 
-@import "../components/CallNowCard/CallNowCard.scss";
 @import "../components/Cookie/Cookie.scss";
+@import "../components/HeaderHero/HeaderHero.scss";
+@import "../components/RegisterCard/RegisterCard.scss";
+@import "../components/RectangleCard/RectangleCard.scss";
+@import "../components/HCPModal/HCPModal.scss";
+@import "../components/HeaderDropdown/HeaderDropdown.scss";
+@import "../components/SignUpForm/SignUpForm.scss";
+@import "../components/ResourcesDownloadCard/ResourcesDownloadCard.scss";
+@import "../components/PurpleCallout/PurpleCallout.scss";
+@import "../components/SupportIconCard/SupportIconCard.scss";
+@import "../components/ListIconCard/ListIconCard.scss";
+@import "../components/PurpleLineCallout/PurpleLineCallout.scss";
+@import "../components/PersonIconCard/PersonIconCard.scss";
+@import "../components/ContentBTNCard/ContentBTNCard.scss";
+@import "../components/SupportContentBlock/SupportContentBlock.scss";
+@import "../components/SupportContentBlockLarge/SupportContentBlockLarge.scss";
+@import "../components/IconCalloutCard/IconCalloutCard.scss";
+@import "../components/PillBottleCallout/PillBottleCallout.scss";
+@import "../components/SliderTabNav/SliderTabNav.scss";
+@import "../components/InfoGraphic/InfoGraphic.scss";
+@import "../components/NextPageBtn/NextPageBtn.scss";
+@import "../components/TrialDesignExpandCard/TrialDesignExpandCard.scss";
+@import "../components/CircleGraphCallout/CircleGraphCallout.scss";
+@import "../components/References/References.scss";
+@import "../components/TermsAndConditions/TermsAndConditions.scss";
+
+@import "../components/LibertyTrialTabs/TrialDesign/TrialDesign.scss";
+@import "../components/LibertyTrialTabs/Demographics/Demographics.scss";
+@import "../components/EfficacyDataTabs/Amenorrhea/Amenorrhea.scss";
+@import "../components/EfficacyDataTabs/Reduction/Reduction.scss";
+@import "../components/EfficacyDataTabs/ResponseRates/ResponseRates.scss";
+@import "../components/SafetyTabs/AdverseEvents/AdverseEvents.scss";
+@import "../components/SafetyTabs/BMD/BMD.scss";
+@import "../components/SafetyTabs/Return/Return.scss";
+@import "../components/MyfembreeSupportProgramTabs/Overview/Overview.scss";
+@import "../components/MyfembreeSupportProgramTabs/Enrollment/Enrollment.scss";
+@import "../components/MyfembreeSupportProgramTabs/Copay/Copay.scss";
 
 html {
   // UI/UX use multiples of 8px
@@ -58,6 +95,7 @@ html {
 body {
   font-family: $mulish;
   font-size: 2rem;
+  color: #333333;
   &.scroll-none {
     overflow: hidden;
   }
@@ -76,14 +114,18 @@ a {
   &:hover {
     text-decoration: none;
   }
+  &:visited {
+    text-decoration: none;
+    outline: none;
+  }
 }
 
 h1 {
   font-family: $mulish;
   font-style: normal;
-  font-size: 36px;
-  line-height: 45px;
-  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
   color: #333333;
   margin: 0;
   @media screen and (max-width: 991px) {
@@ -97,13 +139,12 @@ h2 {
   font-style: normal;
   font-size: 30px;
   line-height: 38px;
-  font-weight: 500;
+  font-weight: 700;
   color: #333333;
   margin: 0;
   @media screen and (max-width: 991px) {
-    font-size: 18px;
-    line-height: 23px;
-    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 
@@ -116,9 +157,8 @@ h3 {
   color: #333333;
   margin: 0;
   @media screen and (max-width: 991px) {
-    font-size: 18px;
-    line-height: 23px;
-    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 
@@ -126,8 +166,8 @@ h4 {
   font-family: $sans;
   font-style: normal;
   font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
+  line-height: 23px;
+  font-weight: 400;
   color: #333333;
   margin: 0;
 }
@@ -222,21 +262,51 @@ p {
   color: $light-grey;
 }
 
+.inactive-grey {
+  color: $inactive-grey;
+}
+
+.gradient-title {
+  background: -webkit-linear-gradient(0deg,#A51890, #5C068C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  sup {
+    background: -webkit-linear-gradient(45deg,#AE0ACF, #5C068C);
+    // background: #5C068C;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.mulish {
+  font-family: $mulish;
+}
+
+sup {
+  font-size: 50%;
+  top: -0.79em;
+}
+
+sub {
+  vertical-align: baseline;
+  position: relative;
+  top: 0em;
+}
+
 .cta-btn-container {
   // margin: 24px 0;
 }
 
-.home-btn-container {
-  margin: 24px 0 0 0;
-  @media screen and (max-width: 991px) {
-    margin: 16px 0 0 0;
-  }
+.drive-to-container {
+  position: absolute;
+  height: 0px;
+  margin-top: -150px;
 }
 
 .cta-btn {
   color: $white;
   border: 1px solid $white;
-  padding: 8px 24px;
+  padding: 8px 0px;
   display: block;
   width: 100%;
   max-width: 100%;
@@ -249,18 +319,24 @@ p {
   line-height: 24px;
   transition: all .7s;
   transition-delay: .1s;
-  outline: none;
+  outline: none!important;
   &:hover {
     cursor: pointer;
     transition: all .7s;
     transition-delay: .1s;
+    outline: none;
+  }
+  &:visited {
+    text-decoration: none;
+    outline: none;
   }
 }
 
 .transparent-btn {
   background: transparent;
   &:hover {
-    background: #A51890;
+    background: $white;
+    color: #A51890;
   }
 }
 
@@ -276,10 +352,31 @@ p {
 
 .pink-btn {
   background: #A51890;
+  border: 1px solid #A51890;
   &:hover {
     color: #A51890;
     background: #FFFFFF;
     border: 1px solid #A51890;
+  }
+}
+
+.white-btn {
+  background: $white;
+  color: #A51890;
+  &:hover {
+    color: $white;
+    background: #A51890;
+    border: 1px solid #A51890;
+  }
+}
+
+.white-btn-hover-clear {
+  background: $white;
+  color: #A51890;
+  &:hover {
+    color: $white;
+    background: transparent;
+    border: 1px solid #FFFFFF;
   }
 }
 
@@ -302,7 +399,7 @@ p {
   }
 }
 
-.purple-ul, .purple-ul-dashed {
+.purple-ul, .purple-ul-dashed, .purple-ul-square, .purple-ul-nike {
   padding: 4px 28px 4px 18px;
   margin: 0;
   list-style: none;
@@ -326,6 +423,13 @@ p {
   }
 }
 
+.sitemap-ul {
+  padding-top: 16px;
+  li {
+    padding-bottom: 16px;
+  }
+}
+
 .purple-ul-dashed {
   li::before {
     content: "-";
@@ -344,5 +448,63 @@ p {
       width: 1em;
       margin-left: -1em;
     }
+  }
+}
+
+.purple-ul-dashed {
+  li::before {
+    content: "-";
+    color: $purple;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  .purple-ul-square {
+    li::before {
+      content: "■";
+      color: $purple;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+}
+
+.purple-ul-nike {
+  list-style-image: url('../assets/images/list-nike-icon.svg');
+  padding-top: 8px;
+  li::before {
+    content: none;
+  }
+}
+
+.less-right-padding {
+  padding-right: 0;
+}
+
+.black-box-ul {
+  padding: 4px 28px 4px 18px;
+  margin: 0;
+  list-style: none;
+  li {
+    font-family: $sans;
+    padding-bottom: 4px;
+    font-weight: 700;
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+  li::before {
+    content: "\2022";
+    color: $black;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  @media screen and (max-width: 991px) {
+    padding: 4px 15px 4px 18px;
   }
 }

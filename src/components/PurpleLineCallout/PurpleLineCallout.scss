@@ -1,0 +1,68 @@
+.purple-line-callout-container {
+  padding: 16px 0px;
+  border-top: 2px solid #5C068C;
+  border-bottom: 2px solid #5C068C;
+  text-align: center;
+  .large-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  a {
+    color: $pink;
+    transition: color .5s;
+    transition-delay: .2s;
+    font-family: $sans;
+    &:hover {
+      cursor: pointer;
+      color: $purple;
+      transition: color .5s;
+      transition-delay: .2s;
+    }
+  }
+  .purple-line-pill-content-container {
+    display: flex;
+    justify-content: space-evenly;
+    .pill-content-left-container, .pill-content-right-container {
+      width: 36%;
+      h3 {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+  .enrolment-purple-line-card-content-container {
+    padding: 0 80px;
+    p {
+      padding-top: 8px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .purple-line-callout-container {
+    .purple-line-pill-content-container {
+      display: flex;
+      justify-content: space-between;
+      .pill-content-left-container, .pill-content-right-container {
+        width: 100%;
+        h3 {
+          font-size: 16px;
+          line-height: 20px;
+          padding-bottom: 4px;
+        }
+      }
+      .pill-icon-container {
+        img {
+          width: 54px;
+        }
+      }
+    }
+    .enrolment-purple-line-card-content-container {
+      padding: 0;
+    }
+  }
+}
