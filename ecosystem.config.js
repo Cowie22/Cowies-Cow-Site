@@ -2,6 +2,7 @@
  * Project configuration section
  */
 
+
 var project_name = "myovant-hcp-gatsby-full-site"
 var client_name = "myovant"
 var git_repo = "git@github.com:GiantAgency/Myovant-HCP-Gatsby.git"
