@@ -35,7 +35,6 @@ $light-teal: #9ed8cf;
 @import "../components/SiteMapContent/SiteMapContent.scss";
 @import "../components/404Content/404Content.scss";
 
-@import "../components/header/UtilityNav.scss";
 @import "../components/header/Header.scss";
 @import "../components/header/MainNav.scss";
 @import "../components/NonUSPopUp/NonUSPopUp.scss";
@@ -44,11 +43,9 @@ $light-teal: #9ed8cf;
 @import "../components/footer/Footer.scss";
 @import "../components/Layout.scss";
 
-@import "../components/Cookie/Cookie.scss";
 @import "../components/HeaderHero/HeaderHero.scss";
 @import "../components/RegisterCard/RegisterCard.scss";
 @import "../components/RectangleCard/RectangleCard.scss";
-@import "../components/HCPModal/HCPModal.scss";
 @import "../components/HeaderDropdown/HeaderDropdown.scss";
 @import "../components/SignUpForm/SignUpForm.scss";
 @import "../components/ResourcesDownloadCard/ResourcesDownloadCard.scss";

@@ -8,18 +8,11 @@ import IconCalloutCard from '../IconCalloutCard/IconCalloutCard'
 import IconCalloutCardData from '../IconCalloutCard/IconCalloutCardData.js'
 import RectangleCard from '../RectangleCard/RectangleCard'
 import RectangleCardData from '../RectangleCard/RectangleCardData.js'
-import HCPModal from '../HCPModal/HCPModal'
 
-import HolderBGImg from '../../assets/images/home-bg-img-1X.webp'
-import HolderBGImgFB from '../../assets/images/home-bg-img-1X.png'
-import HolderBGImgMobile from '../../assets/images/home-bg-img-mobile-1X.webp'
-import HolderBGImgMobileFB from '../../assets/images/home-bg-img-mobile-1X.png'
 import BGImg from '../../assets/images/home-bg-img-2X-test.webp'
 import BGImgFB from '../../assets/images/home-bg-img-2X-test.png'
 import BGImgMobile from '../../assets/images/home-bg-img-mobile-2X-test.webp'
 import BGImgMobileFB from '../../assets/images/home-bg-img-mobile-2X-test.png'
-
-
 
 const HomeContent = (props) => {
   const [width, handleWidth] = useState(0);
@@ -29,8 +22,6 @@ const HomeContent = (props) => {
     currentPage,
     handleCurrentPage,
     handleActiveHeaderDropdown,
-    HCPModalVisible,
-    handleHCPModalVisible,
     setReferences
   } = state;
 
@@ -48,14 +39,6 @@ const HomeContent = (props) => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('home');
     setReferences([1, 2]);
-
-    if (document.getElementsByTagName('body')) {
-      if (HCPModalVisible) {
-        document.body.classList.add('scroll-none');
-      } else {
-        document.body.classList.remove('scroll-none');
-      }
-    }
 
     updateWindowDimensions();
     window.addEventListener('resize', updateWindowDimensions, { passive: true });
@@ -77,41 +60,14 @@ const HomeContent = (props) => {
       preLoadImg={true}
     >
       <section
-        id='hcp-modal-container'
-        onClick={() => this.handleHCPModalVisible()}
-      >
-      </section>
-      <HCPModal
-        handleHCPModalVisible={handleHCPModalVisible}
-        HCPModalVisible={HCPModalVisible}
-      />
-      {/* 
-        Do to the fact that there is a popup when the site starts, I'm using a 1X image, at the lowest possible quality to show when the popup
-        is present and then showing the real image when the popup is not present.  This hacks around ghe LCP factor, in order to achieve
-        better optimization for the site.  Increases performance score by 4-8 percent.
-      */}
-      <section
         className='home-container'
         style={
-          width > 991 && !HCPModalVisible ?
+          width > 991 ?
           {backgroundImage: `url(${BGImg}), url(${BGImgFB})`} :
-          width < 991 && !HCPModalVisible ?
-          {backgroundImage: `url(${BGImgMobile}), url(${BGImgMobileFB})`} :
-          width > 991 && HCPModalVisible ?
-          {backgroundImage: `url(${HolderBGImg}), url(${HolderBGImgFB})`} :
-          {backgroundImage: `url(${HolderBGImgMobile}), url(${HolderBGImgMobileFB})`}
+          {backgroundImage: `url(${BGImgMobile}), url(${BGImgMobileFB})`}
         }
         title='Myfembree® logo watermark'
       >
-        {/* 
-          This image, with a style of display: none, helps to optimize the very taxing background image for the home page.  Background images
-          have a low priority when loading, so this image hacks around the issue, making sure the image is already loaded, before the background
-          image loading is taken into consideration.  Furthermore, if you check the Gatsby Helmet Component, within ../Layout.jsx, you can see
-          there is a preload link for this image as well.  Ensuring that the image is preloaded, but only if we are currently on the homepage.
-          No need to preload this image on any other page, as it is not used and would slow down the site.
-        */}
-        {/* <img src={width > 991 ? BGImg : BGImgMobile} style={{display: 'none'}} /> */}
-        <img src={width > 991 ? HolderBGImg : HolderBGImgFB} style={{display: 'none'}} />
         <Container>
           <Row>
             <Col lg={{span: 6, offset: 1}} xs={{span: 9, offset: 0}}>

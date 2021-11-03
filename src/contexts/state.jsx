@@ -18,12 +18,6 @@ const defaultState = {
   tabLink: '',
   tabBool: '',
   handleTabLink: () => {},
-  siteVisited: '',
-  handleSiteVisited: () => {},
-  isCookieVisible: true,
-  handleIsCookieVisible: () => {},
-  HCPModalVisible: true,
-  handleHCPModalVisible: () => {},
   currentTopTab: '',
   handleCurrentTopTab: () => {},
   references: '',
@@ -72,32 +66,6 @@ class AppProvider extends Component {
         this.setState({
           tabLink: val,
           tabBool: bool,
-        })
-      },
-      siteVisited: false,
-      handleSiteVisited: () => {
-        this.setState({
-          siteVisited: true,
-        })
-      },
-      isCookieVisible: true,
-      handleIsCookieVisible: (val) => {
-        this.setState({
-          isCookieVisible: val,
-        })
-      },
-      HCPModalVisible: true,
-      handleHCPModalVisible: (val) => {
-        this.setState({
-          HCPModalVisible: val,
-        }, () => {
-          if (document.getElementsByTagName('body')) {
-            if (this.state.HCPModalVisible) {
-              document.body.classList.add('scroll-none');
-            } else {
-              document.body.classList.remove('scroll-none');
-            }
-          }
         })
       },
       currentTopTab: 1,

@@ -7,18 +7,6 @@
   .main {
     flex: 1;
   }
-  .back-to-top-container {
-    position: fixed;
-    z-index: 10;
-    right: 0;
-    top: 70%;
-    @media screen and (max-width: 992px) {
-      top: 50%;
-    }
-    &:hover {
-      cursor: pointer;
-    }
-  }
   .mobile-register-btn {
     padding: 8px 0;
     background: $pink;

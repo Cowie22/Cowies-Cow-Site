@@ -6,17 +6,13 @@ import { Container, Row, Col } from 'react-bootstrap'
 import AppProvider, { AppContext } from '../contexts/state'
 
 import Header from './header/Header'
-import UtilityNav from './header/UtilityNav'
 import Isi from './isi/Isi'
 import References from './References/References'
 import Footer from './footer/Footer'
 import ExitRamp from '../components/exitramp/ExitRamp'
-import Cookie from '../components/Cookie/Cookie'
 
 import backToTop from '../assets/images/back-to-top.svg'
 import backToTopHovered from '../assets/images/back-to-top-hovered.svg'
-import HolderBGImg from '../assets/images/home-bg-img-1X.webp'
-import HolderBGImgMobile from '../assets/images/home-bg-img-mobile-1X.webp'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../pages/index.scss'
@@ -99,22 +95,10 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL, preLoad
         <link rel='canonical' href={canonicalURL} />
         <meta name='url' content={canonicalURL} />
         <html lang='en' />
-        <link rel='preload' as='image' href={width > 991 && preLoadImg ? HolderBGImg : width <= 991 && preLoadImg ? HolderBGImgMobile : ''} />
       </Helmet>
-      <Cookie />
-      <UtilityNav />
 
       <Header />
       <div className='main'>{children}</div>
-      <div
-        className='back-to-top-container'
-        style={yDirection > 0 ? {display: 'inline'} : {display: 'none'}}
-        onMouseEnter={() => handleHovered(true)}
-        onMouseLeave={() => handleHovered(false)}
-        onClick={() => scrollToTop()}
-      >
-        <img src={hovered ? backToTopHovered : backToTop} alt='' loading='lazy' />
-      </div>
       <Isi />
       <References references={references} />
       <Footer />
