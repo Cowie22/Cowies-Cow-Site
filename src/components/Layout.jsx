@@ -6,13 +6,9 @@ import { Container, Row, Col } from 'react-bootstrap'
 import AppProvider, { AppContext } from '../contexts/state'
 
 import Header from './header/Header'
-import Isi from './isi/Isi'
 import References from './References/References'
 import Footer from './footer/Footer'
 import ExitRamp from '../components/exitramp/ExitRamp'
-
-import backToTop from '../assets/images/back-to-top.svg'
-import backToTopHovered from '../assets/images/back-to-top-hovered.svg'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../pages/index.scss'
@@ -43,10 +39,6 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL, preLoad
   const handleScroll = () => {
     let currentY = window.pageYOffset;
     handleYDirection(currentY);
-  }
-
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
   }
 
   const updateWindowDimensions = () => {
@@ -99,7 +91,6 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL, preLoad
 
       <Header />
       <div className='main'>{children}</div>
-      <Isi />
       <References references={references} />
       <Footer />
       <ExitRamp />

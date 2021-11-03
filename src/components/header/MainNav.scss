@@ -1,11 +1,6 @@
 .main-nav {
-  padding: 8px 0;
-  background: $white;
-  border-bottom: 1px solid #DFE3DF;
-  .header-logo {
-    max-width: 86%;
-    height: 100%;
-  }
+  padding: 24px 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(62, 64, 76, 0) 100%);
   .header-nav-container {
     display: flex;
     justify-content: flex-end;
@@ -41,24 +36,6 @@
             color: $yellow;
             transition: color .5s;
             transition-delay: .2s;
-          }
-        }
-        .nav-arrow {
-          margin-left: 8px;
-          transition: all 0.5s;
-          transform: rotate(180deg);
-          path {
-            fill: #A51890;
-            &.active-link-arrow {
-              fill: #5C068C;
-            }
-          }
-          &.rotated {
-            transform: rotate(0deg);
-            transition: all 0.5s;
-            path {
-              fill: #5C068C;
-            }
           }
         }
       }
@@ -234,27 +211,16 @@
       justify-content: space-between;
       align-items: center;
       padding: 8px 0;
-      .nav-arrow {
-        transition: transform 0.5s;
-        height: 100%;
-        &.rotated {
-          transform: rotate(180deg);
-          transition: transform 0.5s;
-        }
-      }
     }
-
     li {
       width: 100%;
       padding: 0 16px 0 0;
       transition: 0.2s all;
       color: $pink;
-
       &:hover {
         color: $pink;
         transition: 0.2s color;
       }
-
       a {
         color: $pink;
         display: block;
