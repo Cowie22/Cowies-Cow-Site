@@ -19,7 +19,7 @@ nav {
     padding: 0;
     margin: 0;
     li {
-      font-family: $mulish;
+      font-family: $barlow;
       color: $black;
       display: flex;
       align-items: center;
@@ -29,7 +29,7 @@ nav {
         transition: .2s all;
         &:hover {
           text-decoration: none;
-          color: $red;
+          color: $dark-grey;
           font-weight: normal;
           transition: .2s all
         }
@@ -45,12 +45,12 @@ nav {
   &.text-white {
     ul {
       li {
-        font-family: $mulish;
+        font-family: $barlow;
         a {
           color: white;
           transition: .2s all;
           &:hover {
-            color: $red;
+            color: $dark-grey;
             font-weight: normal;
             transition: .2s all
           }

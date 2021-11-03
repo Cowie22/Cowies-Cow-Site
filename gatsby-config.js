@@ -32,8 +32,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts-with-attributes`,
       options: {
         fonts: [
-          `Mulish\:400,500,700`,
-          `Source Sans Pro\:400,500,700`,
+          `Barlow\:400,500,700`,
         ],
         display: 'swap',
         attributes: {

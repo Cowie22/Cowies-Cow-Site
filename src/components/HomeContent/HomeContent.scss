@@ -17,7 +17,7 @@
       transition: all .5s;
       transition-delay: .2s;
       &:hover {
-        color: $light-pink;
+        color: $pink;
         transition: all .5s;
         transition-delay: .2s;
       }
@@ -51,7 +51,7 @@
     &:hover {
       cursor: pointer;
       h3 {
-        color: $light-pink;
+        color: $pink;
         transition: all .7s;
         transition-delay: .1s;
       }

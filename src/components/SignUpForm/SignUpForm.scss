@@ -105,7 +105,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        font-family: $sans;
+        font-family: $barlow;
         min-height: 88px;
         color: $grey;
         .form-label {
@@ -118,20 +118,20 @@
           border-radius: 4px;
           background-color: #FFFFFF;
           font-size: 16px;
-          font-family: $sans;
+          font-family: $barlow;
         }
         .form-check {
           .form-check-input {
-            // border-color: $purple;
-            // color: $purple;
-            // background: $purple;
+            // border-color: $yellow;
+            // color: $yellow;
+            // background: $yellow;
           }
           .form-check-label {
             padding: 0 16px;
             font-size: 16px;
             line-height: 24px;
             font-weight: 400;
-            font-family: $sans;
+            font-family: $barlow;
           }
         }
       }
@@ -151,7 +151,7 @@
               transition-delay: .2s;
               &:hover {
                 cursor: pointer;
-                color: $purple;
+                color: $yellow;
                 transition: color .5s;
                 transition-delay: .2s;
               }
@@ -195,7 +195,7 @@
   line-height: 16px;
   color: #C70332;
   padding-top: 4px;
-  font-family: $sans;
+  font-family: $barlow;
 }
 
 .form-control.is-invalid, .was-validated .form-control:invalid {
@@ -242,7 +242,7 @@
   width: 100%;
   font-size: 14px;
   line-height: 16px;
-  font-family: $sans;
+  font-family: $barlow;
   color: #C70332;
   padding-top: 4px;
 }
@@ -251,7 +251,7 @@
   width: 100%;
   font-size: 14px;
   line-height: 16px;
-  font-family: $sans;
+  font-family: $barlow;
   color: #C70332;
   padding-top: 4px;
 }

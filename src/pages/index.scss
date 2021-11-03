@@ -1,25 +1,14 @@
 // Primary colors
-$purple: #5C068C;
-$blue: #055964;
-$green: #B8D7C9;
-$medium-green: #D4E7DF;
-$light-green: #F1F7F4;
-$pink: #A51890;
-$light-pink: #FCDEE2;
+$yellow: #E3FF39;
+$pink: #997F8A;
 $black: #000000;
 $white: #FFFFFF;
-$grey: #333333;
-$medium-grey: #C1C1C1;
-$light-grey: #F1F1F1;
-$inactive-grey: #E5E5E5;
-
-$teal: #6eceb2;
-$salmon: #ee968a;
-$red: #C70332;
+$grey: #C1C7C8;
+$dark-grey: #3E404C;
+$light-grey: #E6E9E9;
 
 // fonts
-$mulish: 'Mulish', sans-serif;
-$sans: 'Source Sans Pro', sans-serif;
+$barlow: 'Barlow', sans-serif;
 
 // Other
 $light-teal: #9ed8cf;
@@ -90,7 +79,7 @@ html {
 }
 
 body {
-  font-family: $mulish;
+  font-family: $barlow;
   font-size: 2rem;
   color: #333333;
   &.scroll-none {
@@ -118,85 +107,97 @@ a {
 }
 
 h1 {
-  font-family: $mulish;
+  font-family: $barlow;
   font-style: normal;
-  font-size: 32px;
-  line-height: 40px;
-  font-weight: 700;
-  color: #333333;
+  font-size: 64px;
+  line-height: 68px;
+  font-weight: 500;
+  color: #3E404C;
   margin: 0;
   @media screen and (max-width: 991px) {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 38px;
+    line-height: 42px;
   }
 }
 
 h2 {
-  font-family: $mulish;
+  font-family: $barlow;
   font-style: normal;
-  font-size: 30px;
-  line-height: 38px;
-  font-weight: 700;
-  color: #333333;
+  font-size: 39px;
+  line-height: 48px;
+  font-weight: 500;
+  color: #3E404C;
   margin: 0;
   @media screen and (max-width: 991px) {
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 29px;
+    line-height: 36px;
   }
 }
 
 h3 {
-  font-family: $mulish;
+  font-family: $barlow;
   font-style: normal;
   font-size: 26px;
-  line-height: 32px;
-  font-weight: 700;
-  color: #333333;
+  line-height: 34px;
+  font-weight: 500;
+  color: #3E404C;
   margin: 0;
   @media screen and (max-width: 991px) {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 23px;
+    line-height: 30px;
   }
 }
 
 h4 {
-  font-family: $sans;
+  font-family: $barlow;
   font-style: normal;
-  font-size: 18px;
-  line-height: 23px;
-  font-weight: 400;
-  color: #333333;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #3E404C;
   margin: 0;
+  @media screen and (max-width: 991px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 h5 {
-  font-family: $sans;
+  font-family: $barlow;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #3E404C;
+  margin: 0;
+  @media screen and (max-width: 991px) {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+
+h6 {
+  font-family: $barlow;
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #333333;
-  margin: 0;
-}
-
-h6 {
-  font-family: $sans;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #333333;
+  color: #3E404C;
   margin: 0;
 }
 
 p {
-  font-family: $sans;
+  font-family: $barlow;
   font-style: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  color: #333333;
+  color: #3E404C;
   margin: 0;
+  @media screen and (max-width: 991px) {
+    font-size: 17px;
+    line-height: 24px;
+  }
 }
 
 .normal-weight {
@@ -211,32 +212,12 @@ p {
   font-weight: 700;
 }
 
-.purple {
-  color: $purple;
-}
-
-.blue {
-  color: $blue;
-}
-
-.green {
-  color: $green;
-}
-
-.medium-green {
-  color: $medium-green;
-}
-
-.light-green {
-  color: $light-green;
+.yellow {
+  color: $yellow;
 }
 
 .pink {
   color: $pink;
-}
-
-.light-pink {
-  color: $light-pink;
 }
 
 .black {
@@ -251,16 +232,12 @@ p {
   color: $grey;
 }
 
-.medium-grey {
-  color: $medium-grey;
+.dark-grey {
+  color: $dark-grey;
 }
 
 .light-grey {
   color: $light-grey;
-}
-
-.inactive-grey {
-  color: $inactive-grey;
 }
 
 .gradient-title {
@@ -275,8 +252,8 @@ p {
   }
 }
 
-.mulish {
-  font-family: $mulish;
+.barlow {
+  font-family: $barlow;
 }
 
 sup {
@@ -310,7 +287,7 @@ sub {
   min-height: fit-content;
   text-align: center;
   border-radius: 6px;
-  font-family: $mulish;
+  font-family: $barlow;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -401,7 +378,7 @@ sub {
   margin: 0;
   list-style: none;
   li {
-    font-family: $sans;
+    font-family: $barlow;
     padding-bottom: 4px;
     &:last-of-type {
       padding-bottom: 0;
@@ -409,7 +386,7 @@ sub {
   }
   li::before {
     content: "\2022";
-    color: $purple;
+    color: $yellow;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -430,7 +407,7 @@ sub {
 .purple-ul-dashed {
   li::before {
     content: "-";
-    color: $purple;
+    color: $yellow;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -439,7 +416,7 @@ sub {
   .purple-ul {
     li::before {
       content: "\2022";
-      color: $purple;
+      color: $yellow;
       font-weight: bold;
       display: inline-block;
       width: 1em;
@@ -451,7 +428,7 @@ sub {
 .purple-ul-dashed {
   li::before {
     content: "-";
-    color: $purple;
+    color: $yellow;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -460,7 +437,7 @@ sub {
   .purple-ul-square {
     li::before {
       content: "■";
-      color: $purple;
+      color: $yellow;
       font-weight: bold;
       display: inline-block;
       width: 1em;
@@ -486,7 +463,7 @@ sub {
   margin: 0;
   list-style: none;
   li {
-    font-family: $sans;
+    font-family: $barlow;
     padding-bottom: 4px;
     font-weight: 700;
     &:last-of-type {

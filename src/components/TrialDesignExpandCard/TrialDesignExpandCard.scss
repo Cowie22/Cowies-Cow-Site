@@ -31,13 +31,13 @@
     &:hover {
       cursor: pointer;
       p {
-        color: $purple;
+        color: $yellow;
         transition: all .5s;
         transition-delay: .2s;
       }
       .circle-icon {
         path {
-          fill: $purple;
+          fill: $yellow;
           transition: all .5s;
           transition-delay: .2s;
         }
@@ -85,7 +85,7 @@
             align-items: center;
             p {
               color: $pink;
-              font-family: $mulish;
+              font-family: $barlow;
               width: 90%;
               text-align: center;
               transition: all .7s;
