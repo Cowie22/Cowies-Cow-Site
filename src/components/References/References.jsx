@@ -43,7 +43,7 @@ class References extends React.Component {
                     pageReferences.map((reference, i) => {
                       return (
                         <>
-                          <span className='extra-bold'> {i + 1}. </span>{reference}
+                          <span className='extra-bold'> {i + 1}. </span> {reference}
                         </>
                       )
                     })

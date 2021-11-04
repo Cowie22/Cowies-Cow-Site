@@ -46,7 +46,7 @@ const HomeContent = (props) => {
   useEffect(() => {
     handleActiveHeaderDropdown('');
     handleCurrentPage('home');
-    setReferences([1, 2]);
+    setReferences([1, 2, 3, 4, 5, 6, 7]);
 
     updateWindowDimensions();
     window.addEventListener('resize', updateWindowDimensions, { passive: true });
