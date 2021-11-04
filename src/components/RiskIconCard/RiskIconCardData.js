@@ -13,6 +13,7 @@ const RiskIconCardData1 = [
       `More likely to occur in patients of Southeast Asian descent`,
       `Specific genes, including HLA A2, HLA B46, and HLA B17`,
     ],
+    paddingClass: '',
   }
 ]
 
@@ -20,12 +21,13 @@ const RiskIconCardData2 = [
   {
     icon: leafInHouseIcon,
     title: <>ENVIRONMENTAL<sup>2,10</sup></>,
-    columns: {span: 3, offset: 1},
+    columns: {span: 4, offset: 0},
     list: [
       `Alcohol and tobacco use`,
       `Eating preserved meats and fish containing nitrosamines`,
       `Occupational exposure to dust, smoke, and formaldehyde`,
     ],
+    paddingClass: 'extra-card-padding',
   }
 ]
 
@@ -33,11 +35,12 @@ const RiskIconCardData3 = [
   {
     icon: virusIcon,
     title: <>VIRAL<sup>3,9</sup></>,
-    columns: {span: 3, offset: 1},
+    columns: {span: 3, offset: 0},
     list: [
       `HPV is a possible factor in WHO type 1`,
       `EBV is strongly associated with WHO types 2 and 3`,
     ],
+    paddingClass: '',
   }
 ]
 

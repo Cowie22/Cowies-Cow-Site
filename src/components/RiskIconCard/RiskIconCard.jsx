@@ -11,11 +11,12 @@ const RiskIconCard = (props) => {
     icon,
     columns,
     list,
+    paddingClass,
   } = data[0];
   
   return (
     <Col lg={columns}>
-      <div className='risk-icon-card-container'>
+      <div className={`risk-icon-card-container ${paddingClass}`}>
         <div className='risk-icon-icon-container'>
           <img src={icon} alt='' />
           <p className='text-center bolder'>
