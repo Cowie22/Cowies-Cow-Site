@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext, useRef, useCallback  } from 'react'
+import { Link } from 'gatsby'
 import Layout from '../Layout'
 import { Container, Row, Col } from 'react-bootstrap'
 import { AppContext } from '../../contexts/state'
@@ -350,6 +351,28 @@ const AboutContent = (props) => {
                 <RiskIconCard data={RiskIconCardData2} />
                 <RiskIconCard data={RiskIconCardData3} />
               </Row>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={{span: 10, offset: 1}}>
+              <div className='about-risk-rectangle-callout'>
+                <h3 className='text-center'>
+                  NPC has a very distinct profile based on diverse etiology and risk factors.
+                </h3>
+                <Row>
+                  <Col lg={{span: 6, offset: 3}}>
+                    <div className='cta-btn-container'>
+                      <Link
+                        to={'/'}
+                      >
+                        <button className='cta-btn dark-grey-btn'>
+                          Learn more about the unmet need in NPC
+                        </button>
+                      </Link>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
             </Col>
           </Row>
         </Container>

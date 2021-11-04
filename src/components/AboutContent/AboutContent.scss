@@ -121,11 +121,19 @@
 }
 
 .about-risk-container {
-  padding: 80px 0 60px 0;
+  padding: 80px 0 0px 0;
   .about-risk-title-container {
     padding-bottom: 60px;
     h2 {
       padding-bottom: 16px;
+    }
+  }
+  .about-risk-rectangle-callout {
+    margin-top: 60px;
+    padding: 32px;
+    background: #C1C7C8;
+    h3 {
+      padding-bottom: 40px;
     }
   }
 }
