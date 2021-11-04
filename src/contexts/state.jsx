@@ -11,6 +11,8 @@ const defaultState = {
   externalUrl: '',
   currentPage: '',
   handleCurrentPage: () => {},
+  slider: false,
+  handleSlider: () => {},
   activeHeaderDropdown: '',
   handleActiveHeaderDropdown: () => {},
   activeDropdownLink: '',
@@ -46,6 +48,12 @@ class AppProvider extends Component {
       handleCurrentPage: (val) => {
         this.setState({
           currentPage: val,
+        })
+      },
+      slider: false,
+      handleSlider: (val) => {
+        this.setState({
+          slider: val,
         })
       },
       activeHeaderDropdown: '',

@@ -1,9 +1,14 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
+import { AppContext } from '../../contexts/state'
 
 const ToggleBTN = (props) => {
-  const [slider, handleSlider] = useState(false)
+  const state = useContext(AppContext);
+  const {
+    slider,
+    handleSlider,
+  } = state;
 
   return (
     <Col lg={{span: 6, offset: 3}}>
