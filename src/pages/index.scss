@@ -210,18 +210,6 @@ p {
   color: $light-grey;
 }
 
-.gradient-title {
-  background: -webkit-linear-gradient(0deg,#A51890, #5C068C);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  sup {
-    background: -webkit-linear-gradient(45deg,#AE0ACF, #5C068C);
-    // background: #5C068C;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
-
 .barlow {
   font-family: $barlow;
 }
@@ -354,12 +342,5 @@ sub {
     display: inline-block;
     width: 1em;
     margin-left: -1em;
-  }
-}
-
-.sitemap-ul {
-  padding-top: 16px;
-  li {
-    padding-bottom: 16px;
   }
 }
