@@ -1,0 +1,25 @@
+
+
+.risk-icon-card-container {
+  width: 100%;
+  .risk-icon-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p {
+      padding: 24px 0 16px 0;
+    }
+  }
+  .risk-icon-ul {
+    li {
+      font-weight: 400;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .risk-icon-card-container {
+
+  }
+}

@@ -31,6 +31,7 @@ $barlow: 'Barlow', sans-serif;
 @import "../components/HomeSliderContent/RightContent/RightContent.scss";
 @import "../components/HomeSliderContent/LeftContent/LeftContent.scss";
 @import "../components/DemographicsCards/DemographicsCards.scss";
+@import "../components/RiskIconCard/RiskIconCard.scss";
 
 @import "../components/HeaderHero/HeaderHero.scss";
 @import "../components/RegisterCard/RegisterCard.scss";
@@ -343,7 +344,7 @@ sub {
   }
 }
 
-.light-grey-ul, .white-ul, .purple-ul-dashed, .purple-ul-square, .purple-ul-nike {
+.light-grey-ul, .white-ul, .dark-grey-ul {
   padding: 4px 0px 4px 18px;
   margin: 0;
   list-style: none;
@@ -386,51 +387,23 @@ sub {
   }
 }
 
+.dark-grey-ul {
+  li {
+    color: $dark-grey;
+  }
+  li::before {
+    content: "\2022";
+    color: $dark-grey;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+}
+
 .sitemap-ul {
   padding-top: 16px;
   li {
     padding-bottom: 16px;
-  }
-}
-
-.purple-ul-dashed {
-  li::before {
-    content: "-";
-    color: $gold;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-  }
-  .purple-ul {
-    li::before {
-      content: "\2022";
-      color: $gold;
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-    }
-  }
-}
-
-.purple-ul-dashed {
-  li::before {
-    content: "-";
-    color: $gold;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-  }
-  .purple-ul-square {
-    li::before {
-      content: "■";
-      color: $gold;
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-    }
   }
 }

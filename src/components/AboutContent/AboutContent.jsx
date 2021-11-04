@@ -7,6 +7,8 @@ import { useInView } from 'react-intersection-observer'
 import CircleTypeCard from '../CircleTypeCard/CircleTypeCard'
 import CircleTypeCardData from '../CircleTypeCard/CircleTypeCardData.js'
 import DemographicsCards from '../DemographicsCards/DemographicsCards'
+import RiskIconCard from '../RiskIconCard/RiskIconCard'
+import RiskIconCardData from '../RiskIconCard/RiskIconCardData.js'
 
 import BGImg from '../../assets/images/pages/about/about-bg-img-2X.webp'
 import BGImgFB from '../../assets/images/pages/about/about-bg-img-2X.png'
@@ -63,6 +65,12 @@ const AboutContent = (props) => {
     CircleTypeCardData2,
     CircleTypeCardData3,
   } = CircleTypeCardData;
+
+  const {
+    RiskIconCardData1,
+    RiskIconCardData2,
+    RiskIconCardData3,
+  } = RiskIconCardData;
 
   return (
     <Layout
@@ -315,6 +323,32 @@ const AboutContent = (props) => {
                     </ul>
                   </div>
                 </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section className='about-risk-container'>
+        <Container>
+          <Row>
+            <Col lg={{span: 10, offset: 1}}>
+              <div className='about-risk-title-container'>
+                <h2>
+                  Risk factors for nasopharyngeal carcinoma
+                </h2>
+                <p>
+                  NPC is distinct from other cancers, in part due to its etiology and risk factors.
+                </p>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={{span: 12, offset: 0}}>
+              <Row>
+                <RiskIconCard data={RiskIconCardData1} />
+                <RiskIconCard data={RiskIconCardData2} />
+                <RiskIconCard data={RiskIconCardData3} />
               </Row>
             </Col>
           </Row>
