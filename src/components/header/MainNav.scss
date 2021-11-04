@@ -92,6 +92,39 @@
       }
     }
   }
+  .secondary-nav {
+    justify-content: flex-start;
+    align-items: flex-start;
+    &.none {
+      display: none;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      li {
+        a {
+          font-size: 14px;
+          line-height: 16px;
+          color: $white;
+          text-align: center;
+          transition: color .5s;
+          transition-delay: .2s;
+          &:first-of-type {
+            padding-right: 40px;
+          }
+        }
+        &:hover {
+          a {
+            cursor: pointer;
+            color: $gold;
+            transition: color .5s;
+            transition-delay: .2s;
+          }
+        }
+      }
+    }
+  }
   .header-call-now-container {
     height: 100%;
     width: 100%;

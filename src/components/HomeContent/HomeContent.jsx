@@ -8,6 +8,7 @@ import BGImg from '../../assets/images/pages/home/home-bg-img-2X.webp'
 import BGImgFB from '../../assets/images/pages/home/home-bg-img-2X.png'
 import BGImgMobile from '../../assets/images/pages/home/home-bg-img-2X-mobile.webp'
 import BGImgMobileFB from '../../assets/images/pages/home/home-bg-img-2X-mobile.png'
+import downArrow from '../../assets/images/global/down-arrow-yellow.svg'
 
 const HomeContent = (props) => {
   const [width, handleWidth] = useState(0);
@@ -72,6 +73,7 @@ const HomeContent = (props) => {
               <p className='white home-lower-text'>
                 Explore the facts below.
               </p>
+              <img src={downArrow} alt=''  />
             </Col>
             <Col lg={{span: 7, offset: 1}}>
               <div className='home-box-section'>
