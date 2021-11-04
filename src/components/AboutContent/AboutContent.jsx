@@ -31,7 +31,7 @@ const AboutContent = (props) => {
 
   useEffect(() => {
     handleCurrentPage('about');
-    setReferences([]);
+    setReferences([8, 9, 10, 11, 12, 13, 14, 15, 5, 16]);
   }, []);
 
   return (
