@@ -1,0 +1,49 @@
+
+.circle-animation-img-container {
+  .full-circle-line {
+    stroke: #997F8A;
+    stroke-dasharray: 597;
+    stroke-dashoffset: 597;
+    animation-name: draw1;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    @keyframes draw1 {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+  .yellow-line {
+    stroke: #E3FF39;
+    stroke-dasharray: 597;
+    stroke-dashoffset: 597;
+    animation-name: draw2, fill1;
+    animation-delay: 2s, 4s;
+    animation-duration: 2s, 2s;
+    animation-direction: normal, normal;
+    animation-timing-function: linear, linear;
+    animation-fill-mode: forwards, forwards;
+    @keyframes draw2 {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    @keyframes fill1 {
+      from {
+        fill: #FFFFFF;
+      }
+      to {
+        fill: #E3FF39;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .circle-animation-img-container {
+
+  }
+}

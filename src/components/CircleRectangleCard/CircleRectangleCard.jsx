@@ -2,6 +2,8 @@ import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 
+import CircleAnimation from '../CircleAnimation/CircleAnimation'
+
 const CircleRectangleCard = (props) => {
   const { title, content, image } = props;
   
@@ -17,7 +19,9 @@ const CircleRectangleCard = (props) => {
           </p>
         </div>
         <div className='circle-rectangle-img-container'>
-          {image}
+          <CircleAnimation 
+            image={image}
+          />
         </div>
       </div>
     </Col>
