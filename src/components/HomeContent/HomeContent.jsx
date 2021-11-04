@@ -4,15 +4,10 @@ import Layout from '../Layout'
 import { Container, Row, Col } from 'react-bootstrap'
 import { AppContext } from '../../contexts/state'
 
-import IconCalloutCard from '../IconCalloutCard/IconCalloutCard'
-import IconCalloutCardData from '../IconCalloutCard/IconCalloutCardData.js'
-import RectangleCard from '../RectangleCard/RectangleCard'
-import RectangleCardData from '../RectangleCard/RectangleCardData.js'
-
-import BGImg from '../../assets/images/home-bg-img-2X-test.webp'
-import BGImgFB from '../../assets/images/home-bg-img-2X-test.png'
-import BGImgMobile from '../../assets/images/home-bg-img-mobile-2X-test.webp'
-import BGImgMobileFB from '../../assets/images/home-bg-img-mobile-2X-test.png'
+import BGImg from '../../assets/images/pages/home/home-bg-img-2X.webp'
+import BGImgFB from '../../assets/images/pages/home/home-bg-img-2X.png'
+import BGImgMobile from '../../assets/images/pages/home/home-bg-img-2X-mobile.webp'
+import BGImgMobileFB from '../../assets/images/pages/home/home-bg-img-2X-mobile.png'
 
 const HomeContent = (props) => {
   const [width, handleWidth] = useState(0);
@@ -24,16 +19,6 @@ const HomeContent = (props) => {
     handleActiveHeaderDropdown,
     setReferences
   } = state;
-
-  const {
-    HomeRectangleCardData2
-  } = RectangleCardData;
-
-  const {
-    IconCalloutCardData1,
-    IconCalloutCardData2,
-    IconCalloutCardData3
-  } = IconCalloutCardData;
 
   useEffect(() => {
     handleActiveHeaderDropdown('');
@@ -66,92 +51,99 @@ const HomeContent = (props) => {
           {backgroundImage: `url(${BGImg}), url(${BGImgFB})`} :
           {backgroundImage: `url(${BGImgMobile}), url(${BGImgMobileFB})`}
         }
-        title='Myfembree® logo watermark'
+        title=''
       >
         <Container>
           <Row>
-            <Col lg={{span: 6, offset: 1}} xs={{span: 9, offset: 0}}>
-              <h2 className='gradient-title'>
-                The only FDA-approved once-daily pill to reduce heavy menstrual bleeding associated with
-                uterine fibroids in premenopausal women
-              </h2>
-              <p className='home-lower-title'>
-                The recommended total duration of treatment is 24 months.
+            <Col lg={{span: 4, offset: 0}}>
+              <h3 className='white'>
+                NASOPHARYNGEAL CARCINOMA:
+              </h3>
+              <h1 className='white'>
+                FACING THE SURVIVAL FACTS
+              </h1>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={{span: 4, offset: 0}}>
+              <p className='white'>
+                Nasopharyngeal carcinoma (NPC) is a distinct cancer with a unique etiology and prognosis. Key data highlight the poor outcomes of patients with recurrent/metastatic nasopharyngeal carcinoma (R/M NPC).
+              </p>
+              <p className='white home-lower-text'>
+                Explore the facts below.
               </p>
             </Col>
-          </Row>
-          <Row>
-            <Col lg={{span: 3, offset: 1}} xs={{span: 10, offset: 0}}>
-              <div className='cta-btn-container'>
-                <Link
-                  to='/efficacy-data/'
-                >
-                  <button className='cta-btn pink-btn'>
-                    See Efficacy Data
-                  </button>
-                </Link>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      <section className='home-callout-container'>
-        <Container>
-          <Row>
-            <Col>
-              <h2 className='blue'>
-                3 reasons to consider Myfembree
-              </h2>
-            </Col>
-          </Row>
-          <Row>
-            <IconCalloutCard data={IconCalloutCardData1} />
-            <IconCalloutCard data={IconCalloutCardData2} />
-            <IconCalloutCard data={IconCalloutCardData3} />
-          </Row>
-          <Row>
-            <Col>
-              <h6>
-                *A response was defined as menstrual blood loss volume &#60;80 mL <strong><em>and</em></strong>&nbsp; ≥50%
-                reduction in menstrual blood loss volume from baseline over the last 35 days of treatment.
-              </h6>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      <section className='home-green-card-container'>
-        <Container>
-          <Row>
-            <RectangleCard data={HomeRectangleCardData2} />
-          </Row>
-        </Container>
-      </section>
-      <section className='home-purple-card-container'>
-        <Container>
-          <Row>
-            <Col lg={{span: 10, offset: 1}}>
-              <h2 className='white'>
-                Myfembree is a combination therapy that includes relugolix (a gonadotropin-releasing
-                hormone receptor antagonist), estradiol, and norethindrone acetate, and is the first
-                of its class to be approved in a single, once-daily pill.<sup>1</sup>
-              </h2>
-              <Link to='/once-daily-dosing/'>
-                <h3 className='white'>
-                  Discover the convenience of once-daily dosing with Myfembree
-                </h3>
-              </Link>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      <section className='home-footnote-container'>
-        <Container>
-          <Row>
-            <Col>
-              <div>
-                <h6>
-                  FDA = US Food and Drug Administration.
-                </h6>
+            <Col lg={{span: 7, offset: 1}}>
+              <div className='home-box-section'>
+                <div className='home-box-section-title-container'>
+                  <div className='home-box-title-border'>
+
+                  </div>
+                  <p className='white'>
+                    HEAD AND NECK CANCER
+                  </p>
+                  <h4 className='gold'>
+                    1-YEAR PROGRESSION-FREE SURVIVAL
+                  </h4>
+                  <div className='home-box-title-border'>
+
+                  </div>
+                </div>
+                <div className='home-box-container'>
+                  <div className='home-box-left-container'>
+                    <div className='home-box gold-box'>
+                      <h1 className='text-center white large-percent'>
+                        20%
+                      </h1>
+                      <p className='text-center white'>
+                        R/m Nasopharyngeal<sup>1*</sup>
+                      </p>
+                    </div>
+                    <div className='home-box'>
+                      <div className='home-box-percent-container'>
+                        <h2 className='white'>
+                          43%
+                        </h2>
+                        <p className='white'>
+                          Metastatic Oral cavity<sup>3‡</sup>
+                        </p>
+                      </div>
+                    </div>
+                    <div className='home-box'>
+                      <div className='home-box-percent-container'>
+                        <h2 className='white'>
+                          91%
+                        </h2>
+                        <p className='white'>
+                          STAGE IV laryngeal<sup>4§</sup>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='home-box-right-container'>
+                    <div className='home-box'>
+                      <p className='white'>
+                        METASTATIC OROPHARYNGEAL<sup>2†</sup>
+                      </p>
+                      <div className='home-box-percent-container'>
+                        <h2 className='white'>
+                          76%
+                        </h2>
+                        <p className='white'>
+                          HPV+
+                        </p>
+                      </div>
+                      <div className='home-box-percent-container'>
+                        <h2 className='white'>
+                          39%
+                        </h2>
+                        <p className='white'>
+                          HPV-
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </Col>
           </Row>

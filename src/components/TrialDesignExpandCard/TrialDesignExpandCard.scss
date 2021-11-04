@@ -31,13 +31,13 @@
     &:hover {
       cursor: pointer;
       p {
-        color: $yellow;
+        color: $gold;
         transition: all .5s;
         transition-delay: .2s;
       }
       .circle-icon {
         path {
-          fill: $yellow;
+          fill: $gold;
           transition: all .5s;
           transition-delay: .2s;
         }

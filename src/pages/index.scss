@@ -1,5 +1,5 @@
 // Primary colors
-$yellow: #E3FF39;
+$gold: #E3FF39;
 $pink: #997F8A;
 $black: #000000;
 $white: #FFFFFF;
@@ -210,8 +210,8 @@ p {
   font-weight: 700;
 }
 
-.yellow {
-  color: $yellow;
+.gold {
+  color: $gold;
 }
 
 .pink {
@@ -384,7 +384,7 @@ sub {
   }
   li::before {
     content: "\2022";
-    color: $yellow;
+    color: $gold;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -405,7 +405,7 @@ sub {
 .purple-ul-dashed {
   li::before {
     content: "-";
-    color: $yellow;
+    color: $gold;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -414,7 +414,7 @@ sub {
   .purple-ul {
     li::before {
       content: "\2022";
-      color: $yellow;
+      color: $gold;
       font-weight: bold;
       display: inline-block;
       width: 1em;
@@ -426,7 +426,7 @@ sub {
 .purple-ul-dashed {
   li::before {
     content: "-";
-    color: $yellow;
+    color: $gold;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -435,7 +435,7 @@ sub {
   .purple-ul-square {
     li::before {
       content: "■";
-      color: $yellow;
+      color: $gold;
       font-weight: bold;
       display: inline-block;
       width: 1em;

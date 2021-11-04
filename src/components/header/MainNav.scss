@@ -1,6 +1,9 @@
 .main-nav {
   padding: 24px 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(62, 64, 76, 0) 100%);
+  z-index: 100;
+  position: fixed;
+  width: 100%;
   .header-nav-container {
     display: flex;
     justify-content: flex-end;
@@ -24,7 +27,7 @@
         transition-delay: .2s;
         &:hover {
           cursor: pointer;
-          color: $yellow;
+          color: $gold;
           transition: color .5s;
           transition-delay: .2s;
         }
@@ -35,7 +38,7 @@
           transition-delay: .2s;
           &:hover {
             cursor: pointer;
-            color: $yellow;
+            color: $gold;
             transition: color .5s;
             transition-delay: .2s;
           }
@@ -335,7 +338,7 @@
               transition-delay: .2s;
               &:hover {
                 cursor: pointer;
-                color: $yellow;
+                color: $gold;
                 transition: color .5s;
                 transition-delay: .2s;
               }
@@ -354,7 +357,7 @@
           align-items: center;
           &::before {
             content: "\2022";
-            color: $yellow;
+            color: $gold;
             font-weight: bold;
             display: inline-block;
             width: 1em;
