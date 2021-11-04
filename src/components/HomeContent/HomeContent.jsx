@@ -15,7 +15,6 @@ import BGImgFB from '../../assets/images/pages/home/home-bg-img-2X.png'
 import BGImgMobile from '../../assets/images/pages/home/home-bg-img-2X-mobile.webp'
 import BGImgMobileFB from '../../assets/images/pages/home/home-bg-img-2X-mobile.png'
 import downArrow from '../../assets/images/global/down-arrow-yellow.svg'
-import fiftyPercentCircle from '../../assets/images/pages/home/50-percent-circle.svg'
 
 const HomeContent = (props) => {
   const [width, handleWidth] = useState(0);

@@ -2,8 +2,8 @@
 .circle-animation-img-container {
   .full-circle-line {
     stroke: #997F8A;
-    stroke-dasharray: 765;
-    stroke-dashoffset: 765;
+    stroke-dasharray: 820;
+    stroke-dashoffset: 820;
     animation-name: draw1;
     animation-delay: 0s;
     animation-duration: 2s;
@@ -18,8 +18,8 @@
   }
   .yellow-line {
     stroke: #E3FF39;
-    stroke-dasharray: 765;
-    stroke-dashoffset: 765;
+    stroke-dasharray: 820;
+    stroke-dashoffset: 820;
     animation-name: draw2, fill1;
     animation-delay: 2s, 4s;
     animation-duration: 2s, 2s;
