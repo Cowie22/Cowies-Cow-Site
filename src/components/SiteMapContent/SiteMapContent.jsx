@@ -13,7 +13,6 @@ const SiteMapContent = (props) => {
   const {
     currentPage,
     handleCurrentPage,
-    handleCurrentTopTab,
     setReferences
   } = state;
 

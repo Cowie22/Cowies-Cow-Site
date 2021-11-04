@@ -12,12 +12,12 @@ const MainNav = props => {
   const {
     currentPage,
     handleCurrentPage,
-    handleCurrentTopTab,
+    setNavOpen,
   } = props
 
   const toggleNav = () => {
-    document.querySelector('.mobile-nav').scrollTop = 0
-    this.props.setNavOpen()
+    // document.querySelector('.mobile-nav').scrollTop = 0
+    props.setNavOpen()
     handleIsNavOpen(!isNavOpen)
 
     if (isNavOpen) {
@@ -42,7 +42,7 @@ const MainNav = props => {
   return (
     <>
       <section
-        className={yDirection > 0 ? 'main-nav dark-nav' : 'main-nav'}
+        className={yDirection > 0 ? 'main-nav dark-nav d-none d-lg-block' : 'main-nav d-none d-lg-block'}
       >
         <Container>
           <Row>
@@ -58,25 +58,7 @@ const MainNav = props => {
                 />
               </Link>
             </Col>
-            <Col xs={{ span: 3, offset: 3 }} className='d-block d-lg-none'>
-              <div className='mobile-navbar-container'>
-                <button
-                  type='button'
-                  className={
-                    isNavOpen ? 'navbar-toggle active' : 'navbar-toggle'
-                  }
-                  onClick={() => {
-                    toggleNav()
-                  }}
-                >
-                  <span className='sr-only'>Toggle navigation</span>
-                  <span className='icon-bar' />
-                  <span className='icon-bar' />
-                  <span className='icon-bar' />
-                </button>
-              </div>
-            </Col>
-            <Col lg={{ span: 5, offset: 5 }} className='d-none d-lg-block'>
+            <Col lg={{ span: 5, offset: 5 }}>
               <nav className='header-nav-container'>
                 <ul>
                   <li
@@ -141,18 +123,61 @@ const MainNav = props => {
           </Row>
         </Container>
       </section>
-      <section className={isNavOpen ? 'mobile-nav opened' : 'mobile-nav'}>
+
+      <section
+        className={
+          yDirection > 0 ? 'header-section-mobile dark-nav d-block d-lg-none' :
+          'header-section-mobile dark-nav d-block d-lg-none'
+        }
+      >
         <Container>
           <Row>
-            <Col className='mobile-nav-col'>
-              <div className='mobile-nav-list-container'>
-                <ul className='mobile-nav-links'>
+            <Col xs={{span: 4, offset: 0}}>
+              <div className='header-logo-container'>
+                <Link to='/'>
+                  <img
+                    loading='lazy'
+                    alt=''
+                    className='header-logo'
+                    src={logo}
+                    width={'86%'}
+                    height={'100%'}
+                  />
+                </Link>
+              </div>
+            </Col>
+            <Col xs={{ span: 2, offset: 6 }}>
+              <div className='mobile-navbar-container'>
+                <button
+                  type='button'
+                  className={
+                    isNavOpen ? 'navbar-toggle active' : 'navbar-toggle'
+                  }
+                  onClick={() => {
+                    toggleNav()
+                  }}
+                >
+                  <span className='sr-only'>Toggle navigation</span>
+                  <span className='icon-bar' />
+                  <span className='icon-bar' />
+                  <span className='icon-bar' />
+                </button>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={{span: 12, offset: 0}}>
+              <nav
+                className={
+                  isNavOpen ? 'header-nav-container-mobile' : 'header-nav-container-mobile hidden-dropdown'}
+                >
+                <ul className='header-nav-list'>
                   <li
                     onClick={() => {
                       toggleNav()
                     }}
                   >
-                    <Link to='/once-daily-dosing/'>Once-Daily Dosing</Link>
+                    <Link to='/'>Home</Link>
                   </li>
                   <li
                     onClick={() => {
@@ -162,7 +187,7 @@ const MainNav = props => {
                     <Link to='/about/'>About</Link>
                   </li>
                 </ul>
-              </div>
+              </nav>
             </Col>
           </Row>
         </Container>

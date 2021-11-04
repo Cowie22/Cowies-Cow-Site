@@ -73,27 +73,11 @@ class Header extends React.Component {
           const {
             currentPage,
             handleCurrentPage,
-            handleCurrentTopTab
           } = context;
           return (
             yDirection > 0 && !isNavOpen ?
               <div style={{top: 0, zIndex: 9989, width: '100%'}} className='sticky-header'>
                 <header className='main-header'>
-                  {/* Modal popup here */}
-                  <section
-                    id='non-us-modal-container-2'
-                    style={
-                      xDirection < 426 ? {top: `${0}px`} :
-                      xDirection < 769 ? {top: `${0}px`} :
-                      {top: `${yDirection - 350}px`}
-                    }
-                    onClick={() => this.handlePopUp()}
-                  >
-                  </section>
-                  {/* <NonUSPopUp
-                    handlePopUp={this.handlePopUp}
-                    popup={popup}
-                  /> */}
                   <MainNav
                     isNavOpen={isNavOpen}
                     setNavOpen={this.setNavOpen}
@@ -101,27 +85,12 @@ class Header extends React.Component {
                     handlePopUp={this.handlePopUp}
                     currentPage={currentPage}
                     handleCurrentPage={handleCurrentPage}
-                    handleCurrentTopTab={handleCurrentTopTab}
                   />
                 </header>
               </div>
             : yDirection > 0 && isNavOpen ?
               <div style={{position: 'fixed', top: 0, zIndex: 9989, width: '100%'}}>
                 <header className='main-header'>
-                  <section
-                    id='non-us-modal-container-2'
-                    style={
-                      xDirection < 426 ? {top: `${0}px`} :
-                      xDirection < 769 ? {top: `${0}px`} :
-                      {top: `${yDirection - 350}px`}
-                    }
-                    onClick={() => this.handlePopUp()}
-                  >
-                  </section>
-                  {/* <NonUSPopUp
-                    handlePopUp={this.handlePopUp}
-                    popup={popup}
-                  /> */}
                   <MainNav
                     isNavOpen={isNavOpen}
                     setNavOpen={this.setNavOpen}
@@ -129,7 +98,6 @@ class Header extends React.Component {
                     handlePopUp={this.handlePopUp}
                     currentPage={currentPage}
                     handleCurrentPage={handleCurrentPage}
-                    handleCurrentTopTab={handleCurrentTopTab}
                   />
                 </header>
               </div>
@@ -143,7 +111,6 @@ class Header extends React.Component {
                     handlePopUp={this.handlePopUp}
                     currentPage={currentPage}
                     handleCurrentPage={handleCurrentPage}
-                    handleCurrentTopTab={handleCurrentTopTab}
                   />
                 </header>
               </div>
@@ -157,7 +124,6 @@ class Header extends React.Component {
                     handlePopUp={this.handlePopUp}
                     currentPage={currentPage}
                     handleCurrentPage={handleCurrentPage}
-                    handleCurrentTopTab={handleCurrentTopTab}
                   />
                 </header>
               </div>

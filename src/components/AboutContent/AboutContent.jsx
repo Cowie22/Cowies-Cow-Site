@@ -29,8 +29,6 @@ const AboutContent = (props) => {
   const {
     currentPage,
     handleCurrentPage,
-    currentTopTab,
-    handleCurrentTopTab,
     setReferences
   } = state;
 

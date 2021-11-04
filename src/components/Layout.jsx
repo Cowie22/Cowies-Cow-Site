@@ -18,18 +18,14 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL, preLoad
   const [yDirection, handleYDirection] = useState(0);
   const [width, handleWidth] = useState(0);
   const state = useContext(AppContext);
-  const { references, handleCurrentTopTab, currentTopTab, currentPage } = state;
+  const { references, currentPage } = state;
 
   const mounted = useRef(false);
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     updateWindowDimensions();
     window.addEventListener('resize', updateWindowDimensions, { passive: true });
-    if (!mounted.current) {
-      handleURLTab();
-    } else {
-      handleURLTab();
-    }
+
     return function cleanUp() {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', updateWindowDimensions);
@@ -43,38 +39,6 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL, preLoad
 
   const updateWindowDimensions = () => {
     handleWidth(window.innerWidth);
-  }
-
-  // Below function will handle tabs for the entire site, for when a third party want to drive to a specific tab
-  // On the page.  This will be done when a URL has a hashtag at the end.  If the URL contains a hash tag, the nested
-  // Function handleHash will determine if currentTopTab (located in /context/state.js or the global state for the site)
-  // Should be updated or not.
-
-  const handleURLTab = () => {
-    if (typeof window !== "undefined") {
-      let path = window.location.href;
-      let hash = path.split('#')[1];
-      const handleHash = () => {
-        hash === 'trial-design' || hash === 'mbl-response'
-        || hash === 'adverse-events' || hash === 'overview' ?
-        handleCurrentTopTab(1)
-        :
-        hash === 'demographics' || hash === 'mbl-volume-reduction'
-        || hash === 'bone-mineral-density' || hash === 'enrollment' ?
-        handleCurrentTopTab(2)
-        :
-        hash === 'amenorrhea-and-hemoglobin' || hash === 'menses-return'
-        || hash === 'copay-program' ?
-        handleCurrentTopTab(3)
-        :
-        null;
-      }
-      if (hash) {
-        setTimeout(() => {
-          handleHash()
-        }, 500)
-      }
-    }
   }
 
   return (

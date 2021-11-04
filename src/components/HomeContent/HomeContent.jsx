@@ -63,7 +63,6 @@ const HomeContent = (props) => {
       title='Myfembree® (relugolix, estradiol, and norethindrone acetate) Tablets HCP Site'
       pageTitle='Myfembree® (relugolix, estradiol, and norethindrone acetate) Tablets HCP Site'
       description='Visit the HCP website for more information about Myfembree® tablets for oral use. See benefits & risks, including BOXED WARNING.'
-      preLoadImg={true}
     >
       <section
         className='home-container'
@@ -76,7 +75,7 @@ const HomeContent = (props) => {
       >
         <Container>
           <Row>
-            <Col lg={{span: 4, offset: 0}}>
+            <Col lg={{span: 4, offset: 0}} xs={{span: 11, offset: 0}}>
               <h3 className='white'>
                 NASOPHARYNGEAL CARCINOMA:
               </h3>
@@ -86,16 +85,16 @@ const HomeContent = (props) => {
             </Col>
           </Row>
           <Row>
-            <Col lg={{span: 4, offset: 0}}>
+            <Col lg={{span: 4, offset: 0, order: 1}} xs={{span: 12, offset: 0, order: 2}}>
               <p className='white'>
                 Nasopharyngeal carcinoma (NPC) is a distinct cancer with a unique etiology and prognosis. Key data highlight the poor outcomes of patients with recurrent/metastatic nasopharyngeal carcinoma (R/M NPC).
               </p>
               <p className='white home-lower-text'>
                 Explore the facts below.
               </p>
-              <img src={downArrow} alt=''  />
+              <img src={downArrow} alt='' className='d-none d-lg-block'  />
             </Col>
-            <Col lg={{span: 7, offset: 1}}>
+            <Col lg={{span: 7, offset: 1, order: 2}} xs={{span: 9, offset: 3, order: 1}}>
               <div className='home-box-section'>
                 <div className='home-box-section-title-container'>
                   <div className='home-box-title-border'>

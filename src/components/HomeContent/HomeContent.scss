@@ -130,12 +130,91 @@
 
 @media screen and (max-width: 992px) {
   .home-container {
-    padding: 24px 0;
-    z-index: 100;
-    position: fixed;
-    width: 100%;
-    .home-sub-title {
-      padding: 8px 0;
+    padding: 144px 0 0px 0;
+    .home-lower-text {
+      padding: 8px 0 24px 0;
+    }
+    .home-box-section {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 100px;
+      .home-box-section-title-container {
+        .home-box-title-border {
+          height: 2px;
+          width: 34%;
+          background: #D8D6E3;
+          &:first-of-type {
+            margin-bottom: 24px;
+          }
+          &:last-of-type {
+            margin: 24px 0 72px 0;
+          }
+        }
+      }
+      .home-box-container {
+        display: flex;
+        .home-box {
+          padding: 12px 8px;
+          max-height: 98px;
+          margin-bottom: 4px;
+          .home-box-percent-container {
+            display: flex;
+            align-items: flex-end;
+            h2 {
+              padding-right: 8px;
+              font-weight: 600;
+            }
+            p {
+              text-transform: uppercase;
+              font-weight: 600;
+              font-size: 10px;
+              line-height: 14px;
+            }
+          }
+        }
+        .home-box-left-container {
+          .home-box {
+            margin-right: 4px;
+            width: 138px;
+            &.gold-box {
+              border: 6px solid #E3FF39;
+            }
+            .large-percent {
+              font-size: 60px;
+              line-height: 48px;
+              padding-bottom: 4px;
+            }
+            h2 {
+              font-size: 18px;
+              line-height: 100%;
+              padding-bottom: 4px;
+            }
+            p {
+              font-size: 10px;
+              line-height: 14px;
+              font-weight: 600;
+              // letter-spacing: 0.01em;
+              text-transform: uppercase;
+            }
+          }
+        }
+        .home-box-right-container {
+          .home-box {
+            width: 108px;
+            height: 98px;
+            h2 {
+              font-size: 18px;
+              line-height: 100%;
+              padding-bottom: 4px;
+            }
+            p {
+              font-size: 10px;
+              line-height: 14px;
+              padding-bottom: 4px;
+            }
+          }
+        }
+      }
     }
   }
 }
