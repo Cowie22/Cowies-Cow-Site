@@ -1,0 +1,40 @@
+
+.toggle-btn-container {
+  position: relative;
+  padding:  14px 32px;
+  margin: 40px 0;
+  border: 1px solid #E3FF39;
+  box-sizing: border-box;
+  border-radius: 99px;
+  .slider-btn {
+    position: absolute;
+    top: 0;
+    width: 52%;
+    height: 100%;
+    background: #E3FF39;
+    box-sizing: border-box;
+    border-radius: 99px;
+    transition: all .5s;
+    transition-delay: .1s;
+    &.right {
+      left: 48.2%;
+      transition: all .5s;
+      transition-delay: .1s;
+    }
+    &.left {
+      left: 0;
+      transition: all .5s;
+      transition-delay: .1s;
+    }
+  }
+  h4 {
+    transition: all .5s;
+    transition-delay: .1s;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .toggle-btn-container {
+
+  }
+}

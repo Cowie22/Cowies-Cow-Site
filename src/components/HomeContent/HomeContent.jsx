@@ -6,6 +6,7 @@ import { AppContext } from '../../contexts/state'
 import { useInView } from 'react-intersection-observer'
 
 import CircleRectangleCard from '../../components/CircleRectangleCard/CircleRectangleCard'
+import ToggleBTN from '../../components/ToggleBTN/ToggleBTN'
 
 import BGImg from '../../assets/images/pages/home/home-bg-img-2X.webp'
 import BGImgFB from '../../assets/images/pages/home/home-bg-img-2X.png'
@@ -256,6 +257,28 @@ const HomeContent = (props) => {
           </Row>
         </Container>
       </section>
+
+      <section className='home-outcomes-section' id='outcomes'>
+        <Container>
+          <Row>
+            <Col lg={{span: 12}}>
+              <h2 className='white text-center'>
+                5-year overall survival (OS) for NPC (ALL STAGES) varies greatly across histologies
+              </h2>
+              <h2 className='white text-center'>
+                Rates are low in R/M disease for common patient types<sup>7¶</sup>
+              </h2>
+              <p className='white text-center bolder'>
+                Click the buttons below to see OS rates by race.
+              </p>
+            </Col>
+          </Row>
+          <Row>
+            <ToggleBTN />
+          </Row>
+        </Container>
+      </section>
+
     </Layout>
   )
 }
