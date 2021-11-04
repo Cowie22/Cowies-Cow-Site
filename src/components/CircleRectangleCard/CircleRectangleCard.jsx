@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 const CircleRectangleCard = (props) => {
   const { title, content, image } = props;
+  
   return (
     <Col lg={{span: 6, offset: 0}}>
       <div className='circle-rectangle-card-container'>
