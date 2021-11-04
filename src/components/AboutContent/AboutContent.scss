@@ -18,10 +18,14 @@
   }
 }
 
-.about-content-container {
-  padding: 60px 0 0px 0;
-  .about-sub-title {
-    padding-bottom: 24px;
+.about-circle-container {
+  padding: 120px 0;
+  background: #3E404C;
+  .about-circle-title-container {
+    padding-bottom: 64px;
+    h2 {
+      padding-bottom: 16px;
+    }
   }
 }
 

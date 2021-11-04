@@ -75,6 +75,23 @@ const AboutContent = (props) => {
           </Row>
         </Container>
       </section>
+
+      <section className='about-circle-container'>
+        <Container>
+          <Row>
+            <Col>
+              <div className='about-circle-title-container'>
+                <h2 className='white'>
+                  Histological classifications of nasopharyngeal carcinoma
+                </h2>
+                <p className='white'>
+                  The World Health Organization (WHO) categorizes NPC into three different histological subtypes.<sup>2</sup>
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </Layout>
   )
 }
