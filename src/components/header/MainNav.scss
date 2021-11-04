@@ -6,12 +6,20 @@
     justify-content: flex-end;
     align-items: center;
     ul {
+      position: relative;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       width: 100%;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #FFFFFF;
       li {
-        font-weight: 700;
-        color: $pink;
+        color: $white;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        width: 100%;
         transition: color .5s;
         transition-delay: .2s;
         &:hover {
@@ -21,8 +29,8 @@
           transition-delay: .2s;
         }
         a {
-          font-weight: 700;
-          color: $pink;
+          color: $white;
+          font-weight: 600;
           transition: color .5s;
           transition-delay: .2s;
           &:hover {
@@ -31,12 +39,49 @@
             transition: color .5s;
             transition-delay: .2s;
           }
-          &.active-link {
-            cursor: pointer;
-            color: $yellow;
-            transition: color .5s;
-            transition-delay: .2s;
-          }
+        }
+      }
+      .active-link {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        background: #E3FF39;
+        height: 4px;
+        cursor: pointer;
+        transition: all .5s;
+        transition-delay: .2s;
+        &.home {
+          left: 0;
+          transition: all .5s;
+          transition-delay: .1s;
+        }
+        &.about {
+          left: 50%;
+          transition: all .5s;
+          transition-delay: .1s;
+        }
+      }
+      .active-link-hovered {
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        cursor: pointer;
+        transition: all .5s;
+        &.home {
+          left: 0;
+          background: #E3FF39;
+          height: 4px;
+          width: 50%;
+          transition: all .5s;
+        }
+        &.about {
+          left: 50%;
+          background: #E3FF39;
+          height: 4px;
+          width: 50%;
+          transition: all .5s;
         }
       }
     }

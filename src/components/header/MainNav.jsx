@@ -1,27 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 
 import logo from '../../assets/images/global/header-logo.svg'
 
-class MainNav extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      currentData: { list: ['placeholder'] },
-      isNavOpen: false,
-      mobileDropDown: {efficacyDropdown: true, supportDropdown: true},
-    }
-  }
 
-  toggleNav = () => {
+const MainNav = (props) => {
+
+  const [isNavOpen, handleIsNavOpen] = useState(false)
+  const [currentTabHovered, handleCurrentTabHovered] = useState('')
+
+  const {
+    activeHeaderDropdown,
+    handleActiveHeaderDropdown,
+    activeDropdownLink,
+    handleActiveDropdownLink,
+    currentPage,
+    handleCurrentPage,
+    handleCurrentTopTab,
+  } = props
+
+  const toggleNav = () => {
     document.querySelector('.mobile-nav').scrollTop = 0
     this.props.setNavOpen()
-    this.setState({
-      isNavOpen: !this.state.isNavOpen,
-    })
+    handleIsNavOpen(!isNavOpen)
+    
     let isiTray = document.getElementsByClassName('isi-tray')[0]
-    if (this.state.isNavOpen) {
+    if (isNavOpen) {
       document.body.classList.remove('scroll-none')
       // isiTray.classList.remove('hide');
     } else {
@@ -30,148 +35,158 @@ class MainNav extends React.Component {
     }
   }
 
-  render() {
-    const { currentData, isNavOpen, mobileDropDown } = this.state
-    const {
-      activeHeaderDropdown,
-      handleActiveHeaderDropdown,
-      activeDropdownLink,
-      handleActiveDropdownLink,
-      currentPage,
-      handleCurrentPage,
-      handleCurrentTopTab,
-    } = this.props
-
-    return (
-      <>
-        <section
-          className='main-nav'
-          onMouseLeave={() => {
-            handleActiveHeaderDropdown('')
-          }}
-        >
-          <Container>
-            <Row>
-              <Col lg={2} xs={6} className='navbar-header'>
-                <Link to='/'>
-                  <img
-                    loading='lazy'
-                    alt='Myfembree® (relugolix, estradiol, and norethindrone acetate) tablets 40 mg, 1 mg, 0.5 mg'
-                    className='header-logo'
-                    src={logo}
+  return (
+    <>
+      <section
+        className='main-nav'
+        onMouseLeave={() => {
+          handleActiveHeaderDropdown('')
+        }}
+      >
+        <Container>
+          <Row>
+            <Col lg={2} xs={6} className='navbar-header'>
+              <Link to='/'>
+                <img
+                  loading='lazy'
+                  alt='Myfembree® (relugolix, estradiol, and norethindrone acetate) tablets 40 mg, 1 mg, 0.5 mg'
+                  className='header-logo'
+                  src={logo}
+                  onMouseEnter={() => {
+                    handleActiveHeaderDropdown('')
+                  }}
+                  width={'86%'}
+                  height={'100%'}
+                />
+              </Link>
+            </Col>
+            <Col xs={{ span: 3, offset: 3 }} className='d-block d-lg-none'>
+              <div className='mobile-navbar-container'>
+                <button
+                  type='button'
+                  className={
+                    isNavOpen ? 'navbar-toggle active' : 'navbar-toggle'
+                  }
+                  onClick={() => {
+                    toggleNav()
+                  }}
+                >
+                  <span className='sr-only'>Toggle navigation</span>
+                  <span className='icon-bar' />
+                  <span className='icon-bar' />
+                  <span className='icon-bar' />
+                </button>
+              </div>
+            </Col>
+            <Col
+              lg={{ span: 5, offset: 5 }}
+              className='d-none d-lg-block'
+            >
+              <nav className='header-nav-container'>
+                <ul>
+                  <li
                     onMouseEnter={() => {
-                      handleActiveHeaderDropdown('')
+                      handleCurrentTabHovered('home')
                     }}
-                    width={'86%'}
-                    height={'100%'}
-                  />
-                </Link>
-              </Col>
-              <Col xs={{ span: 3, offset: 3 }} className='d-block d-lg-none'>
-                <div className='mobile-navbar-container'>
-                  <button
-                    type='button'
+                    onMouseLeave={() => {
+                      handleCurrentTabHovered('')
+                    }}
+                  >
+                    <Link
+                      to='/'
+                    >
+                      HOME
+                    </Link>
+                  </li>
+                  <div
                     className={
-                      isNavOpen ? 'navbar-toggle active' : 'navbar-toggle'
+                      currentPage === 'home' ? 'active-link home' : 
+                      currentPage === 'about' ? 'active-link about' : 
+                      'active-link home'
                     }
-                    onClick={() => {
-                      this.toggleNav()
+                  >
+
+                  </div>
+                  <div
+                    className={
+                      currentTabHovered === 'home' ? 'active-link-hovered home' : 
+                      currentTabHovered === 'about' ? 'active-link-hovered about' : 
+                      'active-link-hovered'
+                    }
+                  >
+
+                  </div>
+                  <li
+                    onMouseEnter={() => {
+                      handleCurrentTabHovered('about')
+                    }}
+                    onMouseLeave={() => {
+                      handleCurrentTabHovered('')
                     }}
                   >
-                    <span className='sr-only'>Toggle navigation</span>
-                    <span className='icon-bar' />
-                    <span className='icon-bar' />
-                    <span className='icon-bar' />
-                  </button>
-                </div>
-              </Col>
-              <Col
-                lg={{ span: 5, offset: 5 }}
-                className='d-none d-lg-block'
-              >
-                <nav className='header-nav-container'>
-                  <ul>
-                    <li
-                      onMouseEnter={() => {
-                        handleActiveHeaderDropdown('')
-                      }}
+                    <Link
+                      to='/safety-profile/'
                     >
-                      <Link
-                        to='/'
-                        className={currentPage === 'dosing' ? 'active-link' : ''}
-                      >
-                        Home
-                      </Link>
-                    </li>
-                    <li
-                      onMouseEnter={() => {
-                        handleActiveHeaderDropdown('')
-                      }}
-                    >
-                      <Link
-                        to='/safety-profile/'
-                        className={currentPage === 'safety' ? 'active-link' : ''}
-                      >
-                        Safety
-                      </Link>
-                    </li>
-                  </ul>
-                </nav>
-              </Col>
-            </Row>
-          </Container>
-        </section>
-        <section className={isNavOpen ? 'mobile-nav opened' : 'mobile-nav'}>
-          <Container>
-            <Row>
-              <Col className='mobile-nav-col'>
-                <div className='mobile-nav-list-container'>
-                  <ul
-                    className='mobile-nav-links'
+                      ABOUT NPC
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section className={isNavOpen ? 'mobile-nav opened' : 'mobile-nav'}>
+        <Container>
+          <Row>
+            <Col className='mobile-nav-col'>
+              <div className='mobile-nav-list-container'>
+                <ul
+                  className='mobile-nav-links'
+                >
+                  <li
+                    onClick={() => {
+                      handleActiveDropdownLink(0)
+                      handleActiveHeaderDropdown('')
+                      toggleNav()
+                    }}
+                    className={
+                      activeDropdownLink === 0 &&
+                      currentPage === 'dosing'
+                        ? 'header-dropdown-active'
+                        : ''
+                    }
                   >
-                    <li
-                      onClick={() => {
-                        handleActiveDropdownLink(0)
-                        handleActiveHeaderDropdown('')
-                        this.toggleNav()
-                      }}
-                      className={
-                        activeDropdownLink === 0 &&
-                        currentPage === 'dosing'
-                          ? 'header-dropdown-active'
-                          : ''
-                      }
-                    >
-                      <Link to='/once-daily-dosing/'>
-                        Once-Daily Dosing
-                      </Link>
-                    </li>
-                    <li
-                      onClick={() => {
-                        handleActiveDropdownLink(2)
-                        handleActiveHeaderDropdown('')
-                        this.toggleNav()
-                      }}
-                      className={
-                        activeDropdownLink === 2 &&
-                        currentPage === 'safety'
-                          ? 'header-dropdown-active'
-                          : ''
-                      }
-                    >
-                      <Link to='/safety-profile/'>
-                        Safety
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </Col>
-            </Row>
-          </Container>
-        </section>
-      </>
-    )
-  }
+                    <Link to='/once-daily-dosing/'>
+                      Once-Daily Dosing
+                    </Link>
+                  </li>
+                  <li
+                    onClick={() => {
+                      handleActiveDropdownLink(2)
+                      handleActiveHeaderDropdown('')
+                      toggleNav()
+                    }}
+                    className={
+                      activeDropdownLink === 2 &&
+                      currentPage === 'safety'
+                        ? 'header-dropdown-active'
+                        : ''
+                    }
+                  >
+                    <Link to='/safety-profile/'>
+                      Safety
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </>
+
+  )
 }
 
 export default MainNav
