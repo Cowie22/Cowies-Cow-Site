@@ -13,16 +13,9 @@ $barlow: 'Barlow', sans-serif;
 
 @import "../components/HomeContent/HomeContent.scss";
 @import "../components/AboutContent/AboutContent.scss";
-
-@import "../components/MyfembreeSupportProgramContent/MyfembreeSupportProgramContent.scss";
-@import "../components/ResourcesContent/ResourcesContent.scss";
-@import "../components/OnceDailyDosingContent/OnceDailyDosingContent.scss";
-@import "../components/LibertyTrialsContent/LibertyTrialsContent.scss";
-@import "../components/EfficacyDataContent/EfficacyDataContent.scss";
-@import "../components/SafetyProfileContent/SafetyProfileContent.scss";
-@import "../components/HowItWorksContent/HowItWorksContent.scss";
 @import "../components/SiteMapContent/SiteMapContent.scss";
 @import "../components/404Content/404Content.scss";
+
 
 @import "../components/header/Header.scss";
 @import "../components/header/MainNav.scss";
@@ -30,6 +23,8 @@ $barlow: 'Barlow', sans-serif;
 @import "../components/exitramp/ExitRamp.scss";
 @import "../components/footer/Footer.scss";
 @import "../components/Layout.scss";
+
+@import "../components/CircleRectangleCard/CircleRectangleCard.scss";
 
 @import "../components/HeaderHero/HeaderHero.scss";
 @import "../components/RegisterCard/RegisterCard.scss";
@@ -65,6 +60,16 @@ $barlow: 'Barlow', sans-serif;
 @import "../components/MyfembreeSupportProgramTabs/Overview/Overview.scss";
 @import "../components/MyfembreeSupportProgramTabs/Enrollment/Enrollment.scss";
 @import "../components/MyfembreeSupportProgramTabs/Copay/Copay.scss";
+
+
+@import "../components/MyfembreeSupportProgramContent/MyfembreeSupportProgramContent.scss";
+@import "../components/ResourcesContent/ResourcesContent.scss";
+@import "../components/OnceDailyDosingContent/OnceDailyDosingContent.scss";
+@import "../components/LibertyTrialsContent/LibertyTrialsContent.scss";
+@import "../components/EfficacyDataContent/EfficacyDataContent.scss";
+@import "../components/SafetyProfileContent/SafetyProfileContent.scss";
+@import "../components/HowItWorksContent/HowItWorksContent.scss";
+
 
 html {
   // UI/UX use multiples of 8px
@@ -204,6 +209,10 @@ p {
 
 .bold {
   font-weight: 500;
+}
+
+.bolder {
+  font-weight: 600;
 }
 
 .extra-bold {

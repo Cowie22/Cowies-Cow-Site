@@ -1,0 +1,50 @@
+
+.circle-rectangle-card-container {
+  background: #3E404C;
+  padding: 32px;
+  display: flex;
+  .circle-rectangle-content-container {
+    p {
+      &:first-of-type {
+        padding-bottom: 16px;
+      }
+    }
+  }
+  .circle-rectangle-img-container {
+    padding-left: 16px;
+    .yellow-line {
+      stroke-dasharray: 597;
+      // stroke-width: 0%;
+      stroke-dashoffset: 597;
+      stroke: #E3FF39;
+      // fill: #E3FF39;
+      animation-name: draw;
+      animation-delay: 2s;
+      animation-duration: 4s;
+      animation-direction: normal;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+      @keyframes draw {
+        to {
+          stroke-dashoffset: 0;
+          // stroke-width: 8px;
+          // stroke: #FFFFFF;
+        }
+      }
+      // @keyframes fillIn {
+      //   from {
+      //     fill: #FFFFFF;
+      //   }
+      //   to {
+      //     fill: #E3FF39
+      //   }
+      // }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .circle-rectangle-card-container {
+
+  }
+}

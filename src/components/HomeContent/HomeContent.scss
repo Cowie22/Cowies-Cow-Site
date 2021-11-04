@@ -45,15 +45,18 @@
           align-items: flex-end;
           h2 {
             padding-right: 8px;
+            font-weight: 600;
           }
           p {
             text-transform: uppercase;
+            font-weight: 600;
           }
         }
       }
       .home-box-left-container {
         .home-box {
           margin-right: 8px;
+          width: 220px;
           &.gold-box {
             border: 6px solid #E3FF39;
           }
@@ -68,10 +71,21 @@
       }
       .home-box-right-container {
         .home-box {
-          
+          max-width: 182px;
         }
       }
     }
+  }
+}
+
+.home-cancer-section {
+  padding: 96px 0;
+  background: #C1C7C8;
+  h2 {
+    padding: 16px 0;
+  }
+  .home-cancer-card-section {
+    padding: 40px 0;
   }
 }
 

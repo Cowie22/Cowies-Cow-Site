@@ -131,7 +131,7 @@ const MainNav = props => {
                     </a>
                   </li>
                   <li>
-                    <a href='#outcomes'>
+                    <a href='#treatment'>
                       Treatment options
                     </a>
                   </li>
