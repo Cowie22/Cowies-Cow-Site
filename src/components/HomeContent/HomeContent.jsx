@@ -7,6 +7,8 @@ import { useInView } from 'react-intersection-observer'
 
 import CircleRectangleCard from '../../components/CircleRectangleCard/CircleRectangleCard'
 import ToggleBTN from '../../components/ToggleBTN/ToggleBTN'
+import HomeSliderRightContent from '../../components/HomeSliderContent/RightContent/RightContent'
+import HomeSlideLeftContent from '../../components/HomeSliderContent/LeftContent/LeftContent'
 
 import BGImg from '../../assets/images/pages/home/home-bg-img-2X.webp'
 import BGImgFB from '../../assets/images/pages/home/home-bg-img-2X.png'
@@ -18,12 +20,19 @@ import fiftyPercentCircle from '../../assets/images/pages/home/50-percent-circle
 const HomeContent = (props) => {
   const [width, handleWidth] = useState(0);
   const state = useContext(AppContext);
+  const {
+    currentPage,
+    handleCurrentPage,
+    handleActiveHeaderDropdown,
+    setReferences,
+    slider,
+    handleSlider,
+  } = state;
 
   const circle1Ref = useRef();
   const circle2Ref = useRef();
   const [circle1View, circle1InView] = useInView();
   const [circle2View, circle2InView] = useInView();
-
   const setRefs = useCallback(
     (node) => {
       circle1Ref.current = node;
@@ -31,7 +40,6 @@ const HomeContent = (props) => {
     },
     [circle1View],
   );
-
   const setRefs2 = useCallback(
     (node) => {
       circle2Ref.current = node;
@@ -39,13 +47,6 @@ const HomeContent = (props) => {
     },
     [circle2View],
   );
-
-  const {
-    currentPage,
-    handleCurrentPage,
-    handleActiveHeaderDropdown,
-    setReferences
-  } = state;
 
   useEffect(() => {
     handleActiveHeaderDropdown('');
@@ -275,6 +276,14 @@ const HomeContent = (props) => {
           </Row>
           <Row>
             <ToggleBTN />
+          </Row>
+          <Row>
+            {
+              !slider ?
+              <HomeSlideLeftContent />
+              :
+              <HomeSliderRightContent />
+            }
           </Row>
         </Container>
       </section>

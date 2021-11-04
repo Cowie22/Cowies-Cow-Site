@@ -6,6 +6,9 @@
   border: 1px solid #E3FF39;
   box-sizing: border-box;
   border-radius: 99px;
+  &:hover {
+    cursor: pointer;
+  }
   .slider-btn {
     position: absolute;
     top: 0;
