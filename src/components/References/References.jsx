@@ -37,19 +37,19 @@ class References extends React.Component {
           <Row>
             <Col>
               <div className='references'>
-                <p className='extra-bold reference-header'>
-                  References
-                </p>
-                <ol className='reference-ordered-list'>
+                <h6>
+                  <span className='extra-bold'>References:</span>
                   {
                     pageReferences.map((reference, i) => {
                       return (
-                        <li key={i}>
-                          {reference}
-                        </li>
+                        <>
+                          <span className='extra-bold'> {i + 1}. </span>{reference}
+                        </>
                       )
                     })
                   }
+                </h6>
+                <ol className='reference-ordered-list'>
                 </ol>
               </div>
             </Col>
