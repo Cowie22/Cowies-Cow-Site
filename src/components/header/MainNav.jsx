@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 
@@ -6,6 +6,7 @@ import logo from '../../assets/images/global/header-logo.svg'
 
 const MainNav = props => {
   const [isNavOpen, handleIsNavOpen] = useState(false)
+  const [yDirection, handleYDirection] = useState(0);
   const [currentTabHovered, handleCurrentTabHovered] = useState('')
 
   const {
@@ -33,10 +34,22 @@ const MainNav = props => {
     }
   }
 
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return function cleanUp() {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, [])
+
+  const handleScroll = () => {
+    let currentY = window.pageYOffset;
+    handleYDirection(currentY);
+  }
+
   return (
     <>
       <section
-        className='main-nav'
+        className={yDirection > 0 ? 'main-nav dark-nav' : 'main-nav'}
         onMouseLeave={() => {
           handleActiveHeaderDropdown('')
         }}
@@ -126,14 +139,14 @@ const MainNav = props => {
               <nav className={currentPage === 'home' ? 'secondary-nav' : 'secondary-nav none'}>
                 <ul>
                   <li>
-                    <Link to='#outcomes'>
+                    <a href='#outcomes'>
                       NPC outcomes
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to='#treatment'>
+                    <a href='#treatment'>
                       Treatment options
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </nav>
