@@ -158,6 +158,22 @@ const AboutContent = (props) => {
                   }
                 />
               </Row>
+              <Row>
+                <Col lg={{span: 10, offset: 1}}>
+                  <div className='about-circle-rectangle-callout'>
+                    <Row>
+                      <Col lg={{span: 10, offset: 1}}>
+                        <h3 className='text-center'>
+                          The incidence of NPC type 2 has been increasing by approximately 3% annually in the US.<sup>5</sup>
+                        </h3>
+                      </Col>
+                    </Row>
+                  </div>
+                </Col>
+              </Row>
+              <h6 className='white'>
+                HPV = human papillomavirus; EBV = Epstein-Barr virus.
+              </h6>
             </Col>
           </Row>
         </Container>

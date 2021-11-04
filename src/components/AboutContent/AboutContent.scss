@@ -30,6 +30,14 @@
   h3 {
     padding-bottom: 32px;
   }
+  .about-circle-rectangle-callout {
+    margin: 64px 0;
+    padding: 32px 0;
+    background: $light-grey;
+    h3 {
+      padding-bottom: 0px;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
