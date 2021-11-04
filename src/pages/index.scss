@@ -10,10 +10,10 @@ $light-grey: #E6E9E9;
 // fonts
 $barlow: 'Barlow', sans-serif;
 
-// Other
-$light-teal: #9ed8cf;
 
 @import "../components/HomeContent/HomeContent.scss";
+@import "../components/AboutContent/AboutContent.scss";
+
 @import "../components/MyfembreeSupportProgramContent/MyfembreeSupportProgramContent.scss";
 @import "../components/ResourcesContent/ResourcesContent.scss";
 @import "../components/OnceDailyDosingContent/OnceDailyDosingContent.scss";

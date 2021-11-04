@@ -50,7 +50,7 @@
         height: 4px;
         cursor: pointer;
         transition: all .5s;
-        transition-delay: .2s;
+        transition-delay: .1s;
         &.home {
           left: 0;
           transition: all .5s;
@@ -69,12 +69,14 @@
         height: 0;
         cursor: pointer;
         transition: all .5s;
+        transition-delay: .1s;
         &.home {
           left: 0;
           background: #E3FF39;
           height: 4px;
           width: 50%;
           transition: all .5s;
+          transition-delay: .1s;
         }
         &.about {
           left: 50%;
@@ -82,6 +84,7 @@
           height: 4px;
           width: 50%;
           transition: all .5s;
+          transition-delay: .1s;
         }
       }
     }

@@ -4,9 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 import logo from '../../assets/images/global/header-logo.svg'
 
-
-const MainNav = (props) => {
-
+const MainNav = props => {
   const [isNavOpen, handleIsNavOpen] = useState(false)
   const [currentTabHovered, handleCurrentTabHovered] = useState('')
 
@@ -24,7 +22,7 @@ const MainNav = (props) => {
     document.querySelector('.mobile-nav').scrollTop = 0
     this.props.setNavOpen()
     handleIsNavOpen(!isNavOpen)
-    
+
     let isiTray = document.getElementsByClassName('isi-tray')[0]
     if (isNavOpen) {
       document.body.classList.remove('scroll-none')
@@ -49,7 +47,7 @@ const MainNav = (props) => {
               <Link to='/'>
                 <img
                   loading='lazy'
-                  alt='Myfembree® (relugolix, estradiol, and norethindrone acetate) tablets 40 mg, 1 mg, 0.5 mg'
+                  alt=''
                   className='header-logo'
                   src={logo}
                   onMouseEnter={() => {
@@ -78,10 +76,7 @@ const MainNav = (props) => {
                 </button>
               </div>
             </Col>
-            <Col
-              lg={{ span: 5, offset: 5 }}
-              className='d-none d-lg-block'
-            >
+            <Col lg={{ span: 5, offset: 5 }} className='d-none d-lg-block'>
               <nav className='header-nav-container'>
                 <ul>
                   <li
@@ -92,30 +87,30 @@ const MainNav = (props) => {
                       handleCurrentTabHovered('')
                     }}
                   >
-                    <Link
-                      to='/'
-                    >
-                      HOME
-                    </Link>
+                    <Link to='/'>HOME</Link>
                   </li>
                   <div
                     className={
-                      currentPage === 'home' ? 'active-link home' : 
-                      currentPage === 'about' ? 'active-link about' : 
-                      'active-link home'
+                      currentPage === 'home'
+                        ? 'active-link home'
+                        : currentPage === 'about'
+                        ? 'active-link about'
+                        : 'active-link home'
                     }
-                  >
-
-                  </div>
+                  ></div>
                   <div
                     className={
-                      currentTabHovered === 'home' ? 'active-link-hovered home' : 
-                      currentTabHovered === 'about' ? 'active-link-hovered about' : 
-                      'active-link-hovered'
+                      currentTabHovered === 'home'
+                        ? 'active-link-hovered home'
+                        : currentTabHovered === 'about'
+                        ? 'active-link-hovered about'
+                        : currentTabHovered === '' && currentPage === 'home'
+                        ? 'active-link-hovered home'
+                        : currentTabHovered === '' && currentPage === 'about'
+                        ? 'active-link-hovered about'
+                        : 'active-link-hovered'
                     }
-                  >
-
-                  </div>
+                  ></div>
                   <li
                     onMouseEnter={() => {
                       handleCurrentTabHovered('about')
@@ -124,11 +119,7 @@ const MainNav = (props) => {
                       handleCurrentTabHovered('')
                     }}
                   >
-                    <Link
-                      to='/safety-profile/'
-                    >
-                      ABOUT NPC
-                    </Link>
+                    <Link to='/about/'>ABOUT NPC</Link>
                   </li>
                 </ul>
               </nav>
@@ -141,9 +132,7 @@ const MainNav = (props) => {
           <Row>
             <Col className='mobile-nav-col'>
               <div className='mobile-nav-list-container'>
-                <ul
-                  className='mobile-nav-links'
-                >
+                <ul className='mobile-nav-links'>
                   <li
                     onClick={() => {
                       handleActiveDropdownLink(0)
@@ -151,15 +140,12 @@ const MainNav = (props) => {
                       toggleNav()
                     }}
                     className={
-                      activeDropdownLink === 0 &&
-                      currentPage === 'dosing'
+                      activeDropdownLink === 0 && currentPage === 'dosing'
                         ? 'header-dropdown-active'
                         : ''
                     }
                   >
-                    <Link to='/once-daily-dosing/'>
-                      Once-Daily Dosing
-                    </Link>
+                    <Link to='/once-daily-dosing/'>Once-Daily Dosing</Link>
                   </li>
                   <li
                     onClick={() => {
@@ -168,15 +154,12 @@ const MainNav = (props) => {
                       toggleNav()
                     }}
                     className={
-                      activeDropdownLink === 2 &&
-                      currentPage === 'safety'
+                      activeDropdownLink === 2 && currentPage === 'about'
                         ? 'header-dropdown-active'
                         : ''
                     }
                   >
-                    <Link to='/safety-profile/'>
-                      Safety
-                    </Link>
+                    <Link to='/about/'>About</Link>
                   </li>
                 </ul>
               </div>
@@ -185,7 +168,6 @@ const MainNav = (props) => {
         </Container>
       </section>
     </>
-
   )
 }
 
