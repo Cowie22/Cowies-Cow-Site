@@ -29,10 +29,8 @@ const AboutContent = (props) => {
   const {
     currentPage,
     handleCurrentPage,
-    handleActiveHeaderDropdown,
     currentTopTab,
     handleCurrentTopTab,
-    handleActiveDropdownLink,
     setReferences
   } = state;
 

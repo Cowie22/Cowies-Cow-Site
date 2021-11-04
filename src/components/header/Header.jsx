@@ -73,10 +73,6 @@ class Header extends React.Component {
           const {
             currentPage,
             handleCurrentPage,
-            activeHeaderDropdown,
-            handleActiveHeaderDropdown,
-            activeDropdownLink,
-            handleActiveDropdownLink,
             handleCurrentTopTab
           } = context;
           return (
@@ -105,10 +101,6 @@ class Header extends React.Component {
                     handlePopUp={this.handlePopUp}
                     currentPage={currentPage}
                     handleCurrentPage={handleCurrentPage}
-                    activeHeaderDropdown={activeHeaderDropdown}
-                    handleActiveHeaderDropdown={handleActiveHeaderDropdown}
-                    activeDropdownLink={activeDropdownLink}
-                    handleActiveDropdownLink={handleActiveDropdownLink}
                     handleCurrentTopTab={handleCurrentTopTab}
                   />
                 </header>
@@ -137,10 +129,6 @@ class Header extends React.Component {
                     handlePopUp={this.handlePopUp}
                     currentPage={currentPage}
                     handleCurrentPage={handleCurrentPage}
-                    activeHeaderDropdown={activeHeaderDropdown}
-                    handleActiveHeaderDropdown={handleActiveHeaderDropdown}
-                    activeDropdownLink={activeDropdownLink}
-                    handleActiveDropdownLink={handleActiveDropdownLink}
                     handleCurrentTopTab={handleCurrentTopTab}
                   />
                 </header>
@@ -155,10 +143,6 @@ class Header extends React.Component {
                     handlePopUp={this.handlePopUp}
                     currentPage={currentPage}
                     handleCurrentPage={handleCurrentPage}
-                    activeHeaderDropdown={activeHeaderDropdown}
-                    handleActiveHeaderDropdown={handleActiveHeaderDropdown}
-                    activeDropdownLink={activeDropdownLink}
-                    handleActiveDropdownLink={handleActiveDropdownLink}
                     handleCurrentTopTab={handleCurrentTopTab}
                   />
                 </header>
@@ -173,10 +157,6 @@ class Header extends React.Component {
                     handlePopUp={this.handlePopUp}
                     currentPage={currentPage}
                     handleCurrentPage={handleCurrentPage}
-                    activeHeaderDropdown={activeHeaderDropdown}
-                    handleActiveHeaderDropdown={handleActiveHeaderDropdown}
-                    activeDropdownLink={activeDropdownLink}
-                    handleActiveDropdownLink={handleActiveDropdownLink}
                     handleCurrentTopTab={handleCurrentTopTab}
                   />
                 </header>

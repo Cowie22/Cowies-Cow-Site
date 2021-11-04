@@ -400,32 +400,6 @@
             transition: transform 0.4s;
           }
         }
-        .header-dropdown-active {
-          height: fit-content;
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          &::before {
-            content: "\2022";
-            color: $gold;
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-          }
-          a {
-            font-weight: 700;
-            color: purple!important;
-            transition: color .5s;
-            transition-delay: .2s;
-            &:hover {
-              cursor: pointer;
-              color: $pink;
-              transition: color .5s;
-              transition-delay: .2s;
-            }
-          }
-        }
         &.hidden {
           height: 60px;
           transition: 1s all;

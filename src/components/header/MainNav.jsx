@@ -10,10 +10,6 @@ const MainNav = props => {
   const [currentTabHovered, handleCurrentTabHovered] = useState('')
 
   const {
-    activeHeaderDropdown,
-    handleActiveHeaderDropdown,
-    activeDropdownLink,
-    handleActiveDropdownLink,
     currentPage,
     handleCurrentPage,
     handleCurrentTopTab,
@@ -24,13 +20,10 @@ const MainNav = props => {
     this.props.setNavOpen()
     handleIsNavOpen(!isNavOpen)
 
-    let isiTray = document.getElementsByClassName('isi-tray')[0]
     if (isNavOpen) {
       document.body.classList.remove('scroll-none')
-      // isiTray.classList.remove('hide');
     } else {
       document.body.classList.add('scroll-none')
-      // isiTray.classList.add('hide');
     }
   }
 
@@ -50,9 +43,6 @@ const MainNav = props => {
     <>
       <section
         className={yDirection > 0 ? 'main-nav dark-nav' : 'main-nav'}
-        onMouseLeave={() => {
-          handleActiveHeaderDropdown('')
-        }}
       >
         <Container>
           <Row>
@@ -63,9 +53,6 @@ const MainNav = props => {
                   alt=''
                   className='header-logo'
                   src={logo}
-                  onMouseEnter={() => {
-                    handleActiveHeaderDropdown('')
-                  }}
                   width={'86%'}
                   height={'100%'}
                 />
@@ -162,29 +149,15 @@ const MainNav = props => {
                 <ul className='mobile-nav-links'>
                   <li
                     onClick={() => {
-                      handleActiveDropdownLink(0)
-                      handleActiveHeaderDropdown('')
                       toggleNav()
                     }}
-                    className={
-                      activeDropdownLink === 0 && currentPage === 'dosing'
-                        ? 'header-dropdown-active'
-                        : ''
-                    }
                   >
                     <Link to='/once-daily-dosing/'>Once-Daily Dosing</Link>
                   </li>
                   <li
                     onClick={() => {
-                      handleActiveDropdownLink(2)
-                      handleActiveHeaderDropdown('')
                       toggleNav()
                     }}
-                    className={
-                      activeDropdownLink === 2 && currentPage === 'about'
-                        ? 'header-dropdown-active'
-                        : ''
-                    }
                   >
                     <Link to='/about/'>About</Link>
                   </li>

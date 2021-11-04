@@ -13,15 +13,6 @@ const defaultState = {
   handleCurrentPage: () => {},
   slider: false,
   handleSlider: () => {},
-  activeHeaderDropdown: '',
-  handleActiveHeaderDropdown: () => {},
-  activeDropdownLink: '',
-  handleActiveDropdownLink: () => {},
-  tabLink: '',
-  tabBool: '',
-  handleTabLink: () => {},
-  currentTopTab: '',
-  handleCurrentTopTab: () => {},
   references: '',
   setReferences: () => {},
 }
@@ -54,32 +45,6 @@ class AppProvider extends Component {
       handleSlider: (val) => {
         this.setState({
           slider: val,
-        })
-      },
-      activeHeaderDropdown: '',
-      handleActiveHeaderDropdown: (val) => {
-        this.setState({
-          activeHeaderDropdown: val,
-        })
-      },
-      activeDropdownLink: '',
-      handleActiveDropdownLink: (val) => {
-        this.setState({
-          activeDropdownLink: val,
-        })
-      },
-      tabLink: '',
-      tabBool: '',
-      handleTabLink: (val, bool) => {
-        this.setState({
-          tabLink: val,
-          tabBool: bool,
-        })
-      },
-      currentTopTab: 1,
-      handleCurrentTopTab: (val) => {
-        this.setState({
-          currentTopTab: val
         })
       },
       references: 0,

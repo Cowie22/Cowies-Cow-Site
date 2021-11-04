@@ -27,7 +27,6 @@ const HomeContent = (props) => {
   const {
     currentPage,
     handleCurrentPage,
-    handleActiveHeaderDropdown,
     setReferences,
     slider,
     handleSlider,
@@ -44,7 +43,6 @@ const HomeContent = (props) => {
   );
 
   useEffect(() => {
-    handleActiveHeaderDropdown('');
     handleCurrentPage('home');
     setReferences([1, 2, 3, 4, 5, 6, 7]);
 
