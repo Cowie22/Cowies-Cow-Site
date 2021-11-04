@@ -5,6 +5,7 @@
   position: fixed;
   width: 100%;
   .header-nav-container {
+    height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -15,6 +16,7 @@
       width: 100%;
       padding-bottom: 16px;
       border-bottom: 1px solid #FFFFFF;
+      list-style: none;
       li {
         color: $white;
         font-weight: 600;
@@ -93,8 +95,10 @@
     }
   }
   .secondary-nav {
-    justify-content: flex-start;
+    height: 100%;
+    display: flex;
     align-items: flex-start;
+    justify-content: flex-start;
     &.none {
       display: none;
     }
@@ -102,6 +106,9 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
+      list-style: none;
+      padding: 0;
+      margin: 0;
       li {
         a {
           font-size: 14px;

@@ -12,14 +12,14 @@ class References extends React.Component {
   }
 
   componentDidUpdate() {
-    const { references } = this.props;
-    const { pageReferences } = this.state;
-    let referencesNeeded = references || [];
-    let currentReferences = [];
+    const { references } = this.props
+    const { pageReferences } = this.state
+    let referencesNeeded = references || []
+    let currentReferences = []
 
     for (let i = 0; i < referencesNeeded.length; i++) {
-      let referenceNum = referencesNeeded[i];
-      currentReferences.push(ReferencesData[referenceNum]);
+      let referenceNum = referencesNeeded[i]
+      currentReferences.push(ReferencesData[referenceNum])
     }
 
     if (JSON.stringify(pageReferences) !== JSON.stringify(currentReferences)) {
@@ -30,27 +30,31 @@ class References extends React.Component {
   }
 
   render() {
-    const { pageReferences } = this.state;
+    const { pageReferences } = this.state
     return (
-      <div className={pageReferences.length > 0 ? 'reference-container' : 'reference-container d-none'}>
+      <div
+        className={
+          pageReferences.length > 0
+            ? 'reference-container'
+            : 'reference-container d-none'
+        }
+      >
         <Container>
           <Row>
             <Col>
               <div className='references'>
                 <h6>
                   <span className='extra-bold'>References:</span>
-                  {
-                    pageReferences.map((reference, i) => {
-                      return (
-                        <>
-                          <span className='extra-bold'> {i + 1}. </span> {reference}
-                        </>
-                      )
-                    })
-                  }
+                  {pageReferences.map((reference, i) => {
+                    return (
+                      <>
+                        <span className='extra-bold'> {i + 1}. </span>{' '}
+                        {reference}
+                      </>
+                    )
+                  })}
                 </h6>
-                <ol className='reference-ordered-list'>
-                </ol>
+                <ol className='reference-ordered-list'></ol>
               </div>
             </Col>
           </Row>
