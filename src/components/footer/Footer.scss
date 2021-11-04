@@ -35,9 +35,8 @@ footer {
   }
   .footer-logo-container {
     img {
-      &:hover {
-        cursor: pointer;
-      }
+      width: 100%;
+      height: auto;
     }
   }
 }

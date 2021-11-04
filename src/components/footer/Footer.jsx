@@ -40,6 +40,11 @@ export default () => (
                 </h6>
               </div>
             </Col>
+            <Col lg={{ span: 2, offset: 1 }}>
+              <div className='footer-logo-container'>
+                <img src={footerLogo} alt='' />
+              </div>
+            </Col>
           </Row>
         </Col>
       </Row>
