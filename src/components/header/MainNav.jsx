@@ -126,14 +126,14 @@ const MainNav = props => {
               <nav className={currentPage === 'home' ? 'secondary-nav' : 'secondary-nav none'}>
                 <ul>
                   <li>
-                    <a href='#outcomes'>
+                    <Link to='#outcomes'>
                       NPC outcomes
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href='#treatment'>
+                    <Link to='#treatment'>
                       Treatment options
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>

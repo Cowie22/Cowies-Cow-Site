@@ -14,7 +14,12 @@ import BGImg from '../../assets/images/pages/home/home-bg-img-2X.webp'
 import BGImgFB from '../../assets/images/pages/home/home-bg-img-2X.png'
 import BGImgMobile from '../../assets/images/pages/home/home-bg-img-2X-mobile.webp'
 import BGImgMobileFB from '../../assets/images/pages/home/home-bg-img-2X-mobile.png'
+import TreatmentBGImg from '../../assets/images/pages/home/treatment-bg-img-2X.webp'
+import TreatmentBGImgFB from '../../assets/images/pages/home/treatment-bg-img-2X.png'
+import TreatmentBGImgMobile from '../../assets/images/pages/home/treatment-bg-img-2X-mobile.webp'
+import TreatmentBGImgMobileFB from '../../assets/images/pages/home/treatment-bg-img-2X-mobile.png'
 import downArrow from '../../assets/images/global/down-arrow-yellow.svg'
+import boxArrowIcon from '../../assets/images/pages/home/box-arrow-icon.svg'
 
 const HomeContent = (props) => {
   const [width, handleWidth] = useState(0);
@@ -274,6 +279,70 @@ const HomeContent = (props) => {
               :
               <HomeSliderRightContent />
             }
+          </Row>
+        </Container>
+      </section>
+
+      <section
+        className='home-treatment-container'
+        id='treatment'
+        style={
+          width > 991 ?
+          {backgroundImage: `url(${TreatmentBGImg}), url(${TreatmentBGImgFB})`} :
+          {backgroundImage: `url(${TreatmentBGImgMobile}), url(${TreatmentBGImgMobileFB})`}
+        }
+        title=''
+      >
+        <Container>
+          <Row>
+            <Col lg={{span: 12, offset: 0}}>
+              <Row>
+                <Col lg={{span: 6, offset: 0}}>
+                  <h2 className='dark-grey'>
+                    Current treatment options in R/M NPC are limited.
+                  </h2>
+                </Col>
+              </Row>
+              <Row>
+                <Col lg={{span: 2, offset: 0}}>
+                  <div className='treatment-box-image-container'>
+                    <img src={boxArrowIcon} alt='' />
+                  </div>
+                </Col>
+                <Col lg={{span: 5, offset: 0}}>
+                  <div className='treatment-box-content-container'>
+                    <p>
+                      Standard of care chemotherapy (gemcitabine/cisplatin) is unique to NPC and was established <span className='extra-bold'>in a single phase 3 trial in 2016</span><sup>1,5</sup>
+                    </p>
+                    <p>
+                      <span className='extra-bold'>Still no FDA-approved treatments</span>, including I/O agents <br />
+                      <span className='extra-bold'>Still no PREFERRED I/O treatments</span> in NCCN® Guidelines
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+              <Row>
+                <Col lg={{span: 6, offset: 0}}>
+                  <div className='home-treatment-lower-container'>
+                    <p className='bolder'>
+                      Current NCCN Guidelines only recommend 2 PD-1 inhibitors for 2nd line R/M NPC based on Category 2B evidence<sup>5</sup>
+                    </p>
+                    <div className='cta-btn-container'>
+                      <Link
+                        to={'/about/'}
+                      >
+                        <button className='cta-btn dark-grey-btn'>
+                          Learn more about this distinct cancer
+                        </button>
+                      </Link>
+                    </div>
+                    <h6>
+                      NCCN = National Comprehensive Cancer Network.
+                    </h6>
+                  </div>
+                </Col>
+              </Row>
+            </Col>
           </Row>
         </Container>
       </section>

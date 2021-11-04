@@ -278,10 +278,6 @@ sub {
   top: 0em;
 }
 
-.cta-btn-container {
-  // margin: 24px 0;
-}
-
 .drive-to-container {
   position: absolute;
   height: 0px;
@@ -289,27 +285,27 @@ sub {
 }
 
 .cta-btn {
-  color: $white;
-  border: 1px solid $white;
-  padding: 8px 0px;
+  color: $gold;
+  border: 1px solid $dark-grey;
+  padding: 16px 0px;
   display: block;
   width: 100%;
   max-width: 100%;
   min-height: fit-content;
   text-align: center;
-  border-radius: 6px;
   font-family: $barlow;
-  font-weight: 400;
-  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
   line-height: 24px;
   transition: all .7s;
   transition-delay: .1s;
   outline: none!important;
   &:hover {
     cursor: pointer;
+    outline: none;
     transition: all .7s;
     transition-delay: .1s;
-    outline: none;
   }
   &:visited {
     text-decoration: none;
@@ -317,51 +313,12 @@ sub {
   }
 }
 
-.transparent-btn {
-  background: transparent;
+.dark-grey-btn {
+  background: $dark-grey;
   &:hover {
-    background: $white;
-    color: #A51890;
-  }
-}
-
-.transparent-btn-pink {
-  background: transparent;
-  border: 1px solid #A51890;
-  color: #A51890;
-  &:hover {
-    background: #A51890;
-    color: $white;
-  }
-}
-
-.pink-btn {
-  background: #A51890;
-  border: 1px solid #A51890;
-  &:hover {
-    color: #A51890;
-    background: #FFFFFF;
-    border: 1px solid #A51890;
-  }
-}
-
-.white-btn {
-  background: $white;
-  color: #A51890;
-  &:hover {
-    color: $white;
-    background: #A51890;
-    border: 1px solid #A51890;
-  }
-}
-
-.white-btn-hover-clear {
-  background: $white;
-  color: #A51890;
-  &:hover {
-    color: $white;
-    background: transparent;
-    border: 1px solid #FFFFFF;
+    background: $gold;
+    border: 1px solid $gold;
+    color: $dark-grey;
   }
 }
 
