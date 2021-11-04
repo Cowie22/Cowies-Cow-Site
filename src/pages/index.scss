@@ -16,13 +16,12 @@ $barlow: 'Barlow', sans-serif;
 @import "../components/SiteMapContent/SiteMapContent.scss";
 @import "../components/404Content/404Content.scss";
 
-
 @import "../components/header/Header.scss";
 @import "../components/header/MainNav.scss";
-@import "../components/NonUSPopUp/NonUSPopUp.scss";
 @import "../components/exitramp/ExitRamp.scss";
 @import "../components/Footer/Footer.scss";
 @import "../components/Layout.scss";
+@import "../components/References/References.scss";
 
 @import "../components/CircleRectangleCard/CircleRectangleCard.scss";
 @import "../components/CircleTypeCard/CircleTypeCard.scss";
@@ -32,50 +31,7 @@ $barlow: 'Barlow', sans-serif;
 @import "../components/HomeSliderContent/LeftContent/LeftContent.scss";
 @import "../components/DemographicsCards/DemographicsCards.scss";
 @import "../components/RiskIconCard/RiskIconCard.scss";
-
-@import "../components/HeaderHero/HeaderHero.scss";
-@import "../components/RegisterCard/RegisterCard.scss";
-@import "../components/RectangleCard/RectangleCard.scss";
 @import "../components/SignUpForm/SignUpForm.scss";
-@import "../components/ResourcesDownloadCard/ResourcesDownloadCard.scss";
-@import "../components/PurpleCallout/PurpleCallout.scss";
-@import "../components/SupportIconCard/SupportIconCard.scss";
-@import "../components/ListIconCard/ListIconCard.scss";
-@import "../components/PurpleLineCallout/PurpleLineCallout.scss";
-@import "../components/PersonIconCard/PersonIconCard.scss";
-@import "../components/ContentBTNCard/ContentBTNCard.scss";
-@import "../components/SupportContentBlock/SupportContentBlock.scss";
-@import "../components/SupportContentBlockLarge/SupportContentBlockLarge.scss";
-@import "../components/IconCalloutCard/IconCalloutCard.scss";
-@import "../components/PillBottleCallout/PillBottleCallout.scss";
-@import "../components/SliderTabNav/SliderTabNav.scss";
-@import "../components/InfoGraphic/InfoGraphic.scss";
-@import "../components/NextPageBtn/NextPageBtn.scss";
-@import "../components/TrialDesignExpandCard/TrialDesignExpandCard.scss";
-@import "../components/CircleGraphCallout/CircleGraphCallout.scss";
-@import "../components/References/References.scss";
-@import "../components/TermsAndConditions/TermsAndConditions.scss";
-
-@import "../components/LibertyTrialTabs/TrialDesign/TrialDesign.scss";
-@import "../components/LibertyTrialTabs/Demographics/Demographics.scss";
-@import "../components/EfficacyDataTabs/Amenorrhea/Amenorrhea.scss";
-@import "../components/EfficacyDataTabs/Reduction/Reduction.scss";
-@import "../components/EfficacyDataTabs/ResponseRates/ResponseRates.scss";
-@import "../components/SafetyTabs/AdverseEvents/AdverseEvents.scss";
-@import "../components/SafetyTabs/BMD/BMD.scss";
-@import "../components/SafetyTabs/Return/Return.scss";
-@import "../components/MyfembreeSupportProgramTabs/Overview/Overview.scss";
-@import "../components/MyfembreeSupportProgramTabs/Enrollment/Enrollment.scss";
-@import "../components/MyfembreeSupportProgramTabs/Copay/Copay.scss";
-
-
-@import "../components/MyfembreeSupportProgramContent/MyfembreeSupportProgramContent.scss";
-@import "../components/ResourcesContent/ResourcesContent.scss";
-@import "../components/OnceDailyDosingContent/OnceDailyDosingContent.scss";
-@import "../components/LibertyTrialsContent/LibertyTrialsContent.scss";
-@import "../components/EfficacyDataContent/EfficacyDataContent.scss";
-@import "../components/SafetyProfileContent/SafetyProfileContent.scss";
-@import "../components/HowItWorksContent/HowItWorksContent.scss";
 
 
 html {
