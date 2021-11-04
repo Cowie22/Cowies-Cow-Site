@@ -40,6 +40,48 @@
   }
 }
 
+.about-demographics-container {
+  padding: 80px 0;
+  .about-demographics-content-container {
+    padding-bottom: 24px;
+    h2 {
+      padding-bottom: 16px;
+    }
+    p {
+      padding-bottom: 40px;
+    }
+  }
+  .demographic-race-card-container {
+    height: 170px;
+    padding-bottom: 24px;
+    .row {
+      height: 100%;
+      .demographic-left-card-col {
+        padding: 0 8px;
+        .demographic-left-card-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          background: #997F8A;
+        }
+      }
+      .demographic-right-card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        background: #E6E9E9;
+        h4 {
+          font-size: 22px;
+          line-height: 34px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 992px) {
   .about-container {
     padding: 40px 0;

@@ -1,0 +1,36 @@
+
+.demographic-card-container {
+  height: 170px;
+  padding-bottom: 24px;
+  .row {
+    height: 100%;
+    .demographic-left-card-col {
+      padding: 0 8px;
+      .demographic-left-card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background: #997F8A;
+      }
+    }
+    .demographic-right-card-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+      background: #E6E9E9;
+      h4 {
+        padding-top: 8px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .demographic-card-container {
+
+  }
+}

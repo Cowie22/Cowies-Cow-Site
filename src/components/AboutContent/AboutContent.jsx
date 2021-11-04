@@ -6,6 +6,7 @@ import { useInView } from 'react-intersection-observer'
 
 import CircleTypeCard from '../CircleTypeCard/CircleTypeCard'
 import CircleTypeCardData from '../CircleTypeCard/CircleTypeCardData.js'
+import DemographicsCards from '../DemographicsCards/DemographicsCards'
 
 import BGImg from '../../assets/images/pages/about/about-bg-img-2X.webp'
 import BGImgFB from '../../assets/images/pages/about/about-bg-img-2X.png'
@@ -174,6 +175,81 @@ const AboutContent = (props) => {
               <h6 className='white'>
                 HPV = human papillomavirus; EBV = Epstein-Barr virus.
               </h6>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section className='about-demographics-container'>
+        <Container>
+          <Row>
+            <Col lg={{span: 10, offset: 1}}>
+              <div className='about-demographics-content-container'>
+                <h2 className='text-center'>
+                  The demographics of nasopharyngeal carcinoma (NPC)
+                </h2>
+                <p className='text-center'>
+                  NPC is more common in people from Southeast Asia, Northern Africa, and the Middle East. That increased risk remains for them and their descendants, even if they move to lower-risk areas such as the US.<sup>1-2</sup>
+                </p>
+                <h3 className='text-center'>
+                  NPC by the numbers
+                </h3>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={{span: 12, offset: 0}}>
+              <DemographicsCards
+                demographic={`GENDER`}
+                title={`Men are 2-3 times more likely than women`}
+                text={<>to be diagnosed with NPC worldwide<sup>2</sup></>}
+              />
+              <DemographicsCards
+                demographic={`AGE`}
+                title={`The median age at NPC diagnosis is 55,`}
+                text={<>although it can be diagnosed at any age<sup>1</sup></>}
+              />
+              <DemographicsCards
+                demographic={`FREQUENCY`}
+                title={`<1 case per 100,000 patients`}
+                text={<>is diagnosed per year in the US<sup>1</sup></>}
+              />
+              <div className='demographic-race-card-container'>
+                <Row>
+                  <Col lg={{span: 2, offset: 1}} className='demographic-left-card-col'>
+                    <div className='demographic-left-card-container'>
+                      <h3 className='white text-center'>
+                        RACE
+                      </h3>
+                    </div>
+                  </Col>
+                  <Col lg={{span: 4, offset: 0}} className=''>
+                    <div className='demographic-right-card-container center-card'>
+                      <h4 className='text-center'>
+                        Caucasian males make up 33%
+                      </h4>
+                      <h4 className='text-center bold'>
+                        of NPC patients in the US<sup>6</sup>
+                      </h4>
+                    </div>
+                  </Col>
+                  <Col lg={{span: 4, offset: 0}}>
+                    <div className='demographic-right-card-container'>
+                      <h4 className='text-center'>
+                        Males of Asian descent make up 
+                      </h4>
+                      <h4 className='text-center bold'>
+                        <span className='extra-bold'>23%</span> of NPC patients in the US<sup>6</sup>
+                      </h4>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+              <DemographicsCards
+                demographic={`WHO TYPE`}
+                title={`Types 1 and 3 are the most common histologies`}
+                text={<>in the US, but type 2 is increasing<sup>2</sup></>}
+              />
             </Col>
           </Row>
         </Container>
