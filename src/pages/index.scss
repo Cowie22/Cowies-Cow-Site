@@ -25,6 +25,7 @@ $barlow: 'Barlow', sans-serif;
 @import "../components/Layout.scss";
 
 @import "../components/CircleRectangleCard/CircleRectangleCard.scss";
+@import "../components/CircleTypeCard/CircleTypeCard.scss";
 @import "../components/CircleAnimation/CircleAnimation.scss";
 @import "../components/ToggleBTN/ToggleBTN.scss";
 @import "../components/HomeSliderContent/RightContent/RightContent.scss";
@@ -341,20 +342,25 @@ sub {
   }
 }
 
-.purple-ul, .purple-ul-dashed, .purple-ul-square, .purple-ul-nike {
+.light-grey-ul, .purple-ul-dashed, .purple-ul-square, .purple-ul-nike {
   padding: 4px 28px 4px 18px;
   margin: 0;
   list-style: none;
   li {
     font-family: $barlow;
-    padding-bottom: 4px;
+    color: $light-grey;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 8px;
     &:last-of-type {
       padding-bottom: 0;
     }
   }
   li::before {
     content: "\2022";
-    color: $gold;
+    color: $light-grey;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -411,42 +417,5 @@ sub {
       width: 1em;
       margin-left: -1em;
     }
-  }
-}
-
-.purple-ul-nike {
-  list-style-image: url('../assets/images/list-nike-icon.svg');
-  padding-top: 8px;
-  li::before {
-    content: none;
-  }
-}
-
-.less-right-padding {
-  padding-right: 0;
-}
-
-.black-box-ul {
-  padding: 4px 28px 4px 18px;
-  margin: 0;
-  list-style: none;
-  li {
-    font-family: $barlow;
-    padding-bottom: 4px;
-    font-weight: 700;
-    &:last-of-type {
-      padding-bottom: 0;
-    }
-  }
-  li::before {
-    content: "\2022";
-    color: $black;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-  }
-  @media screen and (max-width: 991px) {
-    padding: 4px 15px 4px 18px;
   }
 }
