@@ -203,7 +203,7 @@ const HomeContent = (props) => {
                 }
                 image={
                   <svg width="189" height="190" viewBox="0 0 189 190" fill="none" xmlns="http://www.w3.org/2000/svg" ref={setRefs}>
-                  <circle cx="94" cy="95" r="90" stroke="#997F8A" stroke-width="2"/>
+                  <circle cx="94" cy="95" r="90" stroke="" stroke-width="2" className={circle1InView ? 'full-circle-line' : ''} />
                   <mask id="path-2-outside-1_31:1022" maskUnits="userSpaceOnUse" x="93" y="0" width="96" height="190" fill="black">
                   <rect fill="white" x="93" width="96" height="190"/>
                   <path d="M94 4.995C94 2.78862 95.7895 0.991139 97.9939 1.08488C108.975 1.55184 119.799 3.9415 129.972 8.15533C141.377 12.8793 151.739 19.8033 160.468 28.532C169.197 37.2607 176.121 47.6232 180.845 59.0278C185.569 70.4324 188 82.6558 188 95C188 107.344 185.569 119.568 180.845 130.972C176.121 142.377 169.197 152.739 160.468 161.468C151.739 170.197 141.377 177.121 129.972 181.845C119.799 186.059 108.975 188.448 97.9939 188.915C95.7895 189.009 94 187.211 94 185.005C94 182.799 95.7896 181.02 97.9936 180.917C107.925 180.456 117.711 178.275 126.915 174.463C137.35 170.14 146.831 163.805 154.818 155.818C162.805 147.832 169.14 138.35 173.463 127.915C177.785 117.479 180.01 106.295 180.01 95C180.01 83.705 177.785 72.5206 173.463 62.0854C169.14 51.6502 162.805 42.1685 154.818 34.1818C146.831 26.195 137.35 19.8595 126.915 15.5371C117.711 11.7249 107.925 9.54437 97.9936 9.08276C95.7896 8.98032 94 7.20138 94 4.995Z" />
@@ -222,8 +222,8 @@ const HomeContent = (props) => {
                   </>
                 }
                 image={
-                  <svg width="189" height="190" viewBox="0 0 189 190" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="94" cy="95" r="90" stroke="#997F8A" stroke-width="2"/>
+                  <svg width="189" height="190" viewBox="0 0 189 190" fill="none" xmlns="http://www.w3.org/2000/svg" ref={setRefs2}>
+                  <circle cx="94" cy="95" r="90" stroke="" stroke-width="2" className={circle2InView ? 'full-circle-line' : ''}/>
                   <mask id="path-2-outside-1_31:1022" maskUnits="userSpaceOnUse" x="93" y="0" width="96" height="190" fill="black">
                   <rect fill="white" x="93" width="96" height="190"/>
                   <path d="M94 4.995C94 2.78862 95.7895 0.991139 97.9939 1.08488C108.975 1.55184 119.799 3.9415 129.972 8.15533C141.377 12.8793 151.739 19.8033 160.468 28.532C169.197 37.2607 176.121 47.6232 180.845 59.0278C185.569 70.4324 188 82.6558 188 95C188 107.344 185.569 119.568 180.845 130.972C176.121 142.377 169.197 152.739 160.468 161.468C151.739 170.197 141.377 177.121 129.972 181.845C119.799 186.059 108.975 188.448 97.9939 188.915C95.7895 189.009 94 187.211 94 185.005C94 182.799 95.7896 181.02 97.9936 180.917C107.925 180.456 117.711 178.275 126.915 174.463C137.35 170.14 146.831 163.805 154.818 155.818C162.805 147.832 169.14 138.35 173.463 127.915C177.785 117.479 180.01 106.295 180.01 95C180.01 83.705 177.785 72.5206 173.463 62.0854C169.14 51.6502 162.805 42.1685 154.818 34.1818C146.831 26.195 137.35 19.8595 126.915 15.5371C117.711 11.7249 107.925 9.54437 97.9936 9.08276C95.7896 8.98032 94 7.20138 94 4.995Z" />
@@ -248,7 +248,7 @@ const HomeContent = (props) => {
                 <h6 className='dark-grey'>
                   ‡Results from a retrospective study of patients with locally advanced and recurrent/metastatic oral cancer treated with cetuximab therapy (N=21).
                 </h6>
-                <h6 className='dark-grey' ref={setRefs2}>
+                <h6 className='dark-grey'>
                   §Results from a retrospective study of patients with laryngeal squamous cell carcinoma (N=211).
                 </h6>
               </div>

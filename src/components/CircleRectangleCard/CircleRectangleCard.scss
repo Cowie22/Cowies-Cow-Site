@@ -12,33 +12,45 @@
   }
   .circle-rectangle-img-container {
     padding-left: 16px;
-    .yellow-line {
+    .full-circle-line {
+      stroke: #997F8A;
       stroke-dasharray: 597;
-      // stroke-width: 0%;
       stroke-dashoffset: 597;
-      stroke: #E3FF39;
-      // fill: #E3FF39;
-      animation-name: draw;
-      animation-delay: 2s;
-      animation-duration: 4s;
+      animation-name: draw1;
+      animation-delay: 0s;
+      animation-duration: 2s;
       animation-direction: normal;
       animation-timing-function: linear;
       animation-fill-mode: forwards;
-      @keyframes draw {
+      @keyframes draw1 {
         to {
           stroke-dashoffset: 0;
-          // stroke-width: 8px;
-          // stroke: #FFFFFF;
         }
       }
-      // @keyframes fillIn {
-      //   from {
-      //     fill: #FFFFFF;
-      //   }
-      //   to {
-      //     fill: #E3FF39
-      //   }
-      // }
+    }
+    .yellow-line {
+      stroke: #E3FF39;
+      stroke-dasharray: 597;
+      stroke-dashoffset: 597;
+      animation-name: draw2, fill1;
+      animation-delay: 2s, 4s;
+      animation-duration: 2s, 2s;
+      animation-direction: normal, normal;
+      animation-timing-function: linear, linear;
+      animation-fill-mode: forwards, forwards;
+      @keyframes draw2 {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      @keyframes fill1 {
+        from {
+          fill: #FFFFFF;
+        }
+        to {
+          fill: #E3FF39;
+        }
+      }
     }
   }
 }
