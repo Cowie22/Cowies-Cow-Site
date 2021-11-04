@@ -12,6 +12,10 @@ import BGImg from '../../assets/images/pages/about/about-bg-img-2X.webp'
 import BGImgFB from '../../assets/images/pages/about/about-bg-img-2X.png'
 import BGImgMobile from '../../assets/images/pages/about/about-bg-img-2X-mobile.webp'
 import BGImgMobileFB from '../../assets/images/pages/about/about-bg-img-2X-mobile.png'
+import DiagnosisBGImg from '../../assets/images/pages/about/diagnosis-bg-img-2X.webp'
+import DiagnosisBGImgFB from '../../assets/images/pages/about/diagnosis-bg-img-2X.png'
+import DiagnosisBGImgMobile from '../../assets/images/pages/about/diagnosis-bg-img-2X-mobile.webp'
+import DiagnosisBGImgMobileFB from '../../assets/images/pages/about/diagnosis-bg-img-2X-mobile.png'
 import downArrow from '../../assets/images/global/down-arrow-yellow.svg'
 
 
@@ -250,6 +254,68 @@ const AboutContent = (props) => {
                 title={`Types 1 and 3 are the most common histologies`}
                 text={<>in the US, but type 2 is increasing<sup>2</sup></>}
               />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <section
+        className='about-diagnosis-container'
+        style={
+          width > 991 ?
+          {backgroundImage: `url(${DiagnosisBGImg}), url(${DiagnosisBGImgFB})`} :
+          {backgroundImage: `url(${DiagnosisBGImgMobile}), url(${DiagnosisBGImgMobileFB})`}
+        }
+        title=''
+      >
+        <Container>
+          <Row>
+            <Col lg={{span: 12, offset: 0}}>
+              <Row>
+                <Col lg={{span: 6, offset: 0}}>
+                  <div className='about-diagnosis-content-container'>
+                    <h2 className='white'>
+                      Diagnosing nasopharyngeal carcinoma
+                    </h2>
+                    <p className='white'>
+                      NPC is a rare cancer, and presenting symptoms are highly variable, ranging from neck mass/swelling to headaches. As a result, NPC is frequently missed on initial presentation.<sup>1,7</sup>
+                    </p>
+                    <p className='white'>
+                      This, combined with the inaccessible location and high likelihood of metastasis, may lead to patients being at more advanced stages when diagnosed.<sup>7-9</sup>
+                    </p>
+                  </div>
+                </Col>
+                <Col lg={{span: 6, offset: 0}}>
+                  <div className='about-diagnosis-card-container'>
+                    <p className='white bolder'>
+                      HOW IS NPC DIAGNOSED?
+                    </p>
+                    <p className='white'>
+                      Evaluation for NPC can include<sup>9</sup>:
+                    </p>
+                    <ul className='white-ul about-diagnosis-card-ul'>
+                      <li>
+                        Medical history and physical exam
+                      </li>
+                      <li>
+                        Endoscopy/nasopharyngoscopy
+                      </li>
+                      <li>
+                        Biopsy
+                      </li>
+                      <li>
+                        Radiologic study (PET scan, CT scan, MRI, ultrasound)
+                      </li>
+                      <li>
+                        Neurologic exam
+                      </li>
+                      <li>
+                        Hearing test
+                      </li>
+                    </ul>
+                  </div>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Container>

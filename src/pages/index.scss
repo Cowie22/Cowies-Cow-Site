@@ -343,7 +343,7 @@ sub {
   }
 }
 
-.light-grey-ul, .purple-ul-dashed, .purple-ul-square, .purple-ul-nike {
+.light-grey-ul, .white-ul, .purple-ul-dashed, .purple-ul-square, .purple-ul-nike {
   padding: 4px 0px 4px 18px;
   margin: 0;
   list-style: none;
@@ -369,6 +369,20 @@ sub {
   }
   @media screen and (max-width: 991px) {
     padding: 4px 15px 4px 18px;
+  }
+}
+
+.white-ul {
+  li {
+    color: $white;
+  }
+  li::before {
+    content: "\2022";
+    color: $white;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
   }
 }
 
