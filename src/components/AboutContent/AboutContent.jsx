@@ -3,13 +3,17 @@ import Layout from '../Layout'
 import { Container, Row, Col } from 'react-bootstrap'
 import { AppContext } from '../../contexts/state'
 
-import PurpleCallout from '../PurpleCallout/PurpleCallout'
-import ResourcesDownloadCard from '../ResourcesDownloadCard/ResourcesDownloadCard'
-import ResourcesDownloadCardData from '../ResourcesDownloadCard/ResourcesDownloadCardData.js'
-import NextPageBtn from '../NextPageBtn/NextPageBtn'
+import BGImg from '../../assets/images/pages/about/about-bg-img-2X.webp'
+import BGImgFB from '../../assets/images/pages/about/about-bg-img-2X.png'
+import BGImgMobile from '../../assets/images/pages/about/about-bg-img-2X-mobile.webp'
+import BGImgMobileFB from '../../assets/images/pages/about/about-bg-img-2X-mobile.png'
+import downArrow from '../../assets/images/global/down-arrow-yellow.svg'
+
 
 const AboutContent = (props) => {
+  const [width, handleWidth] = useState(0);
   const state = useContext(AppContext);
+
   const {
     currentPage,
     handleCurrentPage,
@@ -20,19 +24,20 @@ const AboutContent = (props) => {
     setReferences
   } = state;
 
-  const {
-    ResourceDownloadCardData1,
-    ResourceDownloadCardData2,
-    ResourceDownloadCardData3,
-    ResourceDownloadCardData4,
-    ResourceDownloadCardData5,
-    ResourceDownloadCardData6,
-  } = ResourcesDownloadCardData;
-
   useEffect(() => {
     handleCurrentPage('about');
     setReferences([8, 9, 10, 11, 12, 13, 14, 15, 5, 16]);
+
+    updateWindowDimensions();
+    window.addEventListener('resize', updateWindowDimensions, { passive: true });
+    return function cleanUp() {
+      window.removeEventListener('resize', updateWindowDimensions);
+    }
   }, []);
+
+  const updateWindowDimensions = () => {
+    handleWidth(window.innerWidth);
+  }
 
   return (
     <Layout
@@ -41,29 +46,32 @@ const AboutContent = (props) => {
       pageTitle='HCP Resources | Myfembree® (relugolix, estradiol, and norethindrone acetate) Tablets'
       description='Find downloadable resources for the Myfembree® Support Program including a program enrollment form and a patient consent form. See benefits&risks&BOXED WARNING.'
     >
-      <PurpleCallout
-        title={<h1 className='white'>Myfembree<sup>®</sup> Support Program Resources</h1>}
-      />
-      <section className='about-content-container'>
+      <section
+        className='about-container'
+        style={
+          width > 991 ?
+          {backgroundImage: `url(${BGImg}), url(${BGImgFB})`} :
+          {backgroundImage: `url(${BGImgMobile}), url(${BGImgMobileFB})`}
+        }
+        title=''
+      >
         <Container>
           <Row>
-            <Col lg={{span: 10, offset: 1}}>
-              <p className='about-sub-title'>
-                Access, download, and print helpful resources, information, and support for your patients.
+            <Col lg={{span: 6, offset: 0}}>
+              <h3 className='white'>
+                Nasopharyngeal carcinoma (NPC):
+              </h3>
+              <h1 className='white'>
+                A RARE TUMOR ORIGINATING IN THE NASOPHARYNX<sup>1</sup>
+              </h1>
+              <p className='white'>
+                The most common presenting symptoms of NPC are neck mass/swelling and enlarged lymph nodes.<sup>1</sup>
               </p>
-              <ResourcesDownloadCard data={ResourceDownloadCardData1} />
-              <ResourcesDownloadCard data={ResourceDownloadCardData2} />
-              <ResourcesDownloadCard data={ResourceDownloadCardData3} />
-              <ResourcesDownloadCard data={ResourceDownloadCardData4} />
-              <ResourcesDownloadCard data={ResourceDownloadCardData5} />
-              <ResourcesDownloadCard data={ResourceDownloadCardData6} />
+              <p className='white home-lower-text'>
+                Other common symptoms include headaches, bleeding in the mouth and nose, difficulty breathing through the nose, hearing difficulty, and vision problems.<sup>1</sup>
+              </p>
+              <img src={downArrow} alt=''  />
             </Col>
-          </Row>
-          <Row>
-            <NextPageBtn
-              btnText='Explore Once-Daily Dosing With Myfembree'
-              btnLink='once-daily-dosing/'
-            />
           </Row>
         </Container>
       </section>
