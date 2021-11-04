@@ -5,10 +5,8 @@ import { navigate } from 'gatsby'
 import Axios from 'axios'
 import { Container, Row, Col, Form, Button, Dropdown } from 'react-bootstrap'
 
-import closeIcon from '../../assets/images/close.svg'
-import closeIconHovered from '../../assets/images/close-hovered.svg'
-
-
+import closeIcon from '../../assets/images/global/close.svg'
+import closeIconHovered from '../../assets/images/global/close-hovered.svg'
 
 class SignUpForm extends React.Component {
   constructor(props) {

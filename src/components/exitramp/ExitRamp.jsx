@@ -2,9 +2,9 @@ import React, { useState, useEffect, useContext } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { AppContext } from '../../contexts/state'
 
-import closeIcon from '../../assets/images/close.svg'
-import closeIconHovered from '../../assets/images/close-hovered.svg'
-import logo from '../../assets/images/popup-myfembree-logo.svg'
+import closeIcon from '../../assets/images/global/close.svg'
+import closeIconHovered from '../../assets/images/global/close-hovered.svg'
+import logo from '../../assets/images/global/header-logo.svg'
 
 export default props => {
   const [hovered, handleHovered] = useState(false);
