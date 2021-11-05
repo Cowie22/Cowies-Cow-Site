@@ -11,7 +11,7 @@ export default () => (
       <Row>
         <Col lg={{ span: 12, offset: 0 }}>
           <Row>
-            <Col lg={{ span: 9, offset: 0 }}>
+            <Col lg={{ span: 9, offset: 0, order: 1 }} xs={{ span: 12, offset: 0, order: 2 }}>
               <nav className='footer-nav-container'>
                 <a
                   href=''
@@ -40,7 +40,7 @@ export default () => (
                 </h6>
               </div>
             </Col>
-            <Col lg={{ span: 2, offset: 1 }}>
+            <Col lg={{ span: 2, offset: 1, order: 2 }} xs={{ span: 6, offset: 3, order: 1 }}>
               <div className='footer-logo-container'>
                 <img src={footerLogo} alt='' />
               </div>

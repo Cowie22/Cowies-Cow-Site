@@ -43,6 +43,24 @@ footer {
 
 @media only screen and (max-width: 992px) {
   footer {
-
+    padding: 56px 0;
+    .footer-nav-container {
+      padding: 40px 0 16px 0;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        img {
+          margin-right: 8px;
+        }
+      }
+    }
+    .footer-text-container {
+      padding-top: 16px;
+      h6 {
+        text-align: center;
+      }
+    }
   }
 }
