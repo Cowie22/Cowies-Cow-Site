@@ -156,10 +156,22 @@ const MainNav = props => {
                     toggleNav()
                   }}
                 >
-                  <span className='sr-only'>Toggle navigation</span>
-                  <span className='icon-bar' />
-                  <span className='icon-bar' />
-                  <span className='icon-bar' />
+                  <div className='sr-only'>Toggle navigation</div>
+                  <div className='icon-bar'>
+                    <span className='icon-bar-inner'>
+
+                    </span>
+                  </div>
+                  <div className='icon-bar'>
+                    <span className='icon-bar-inner'>
+
+                    </span>
+                  </div>
+                  <div className='icon-bar'>
+                    <span className='icon-bar-inner'>
+
+                    </span>
+                  </div>
                 </button>
               </div>
             </Col>

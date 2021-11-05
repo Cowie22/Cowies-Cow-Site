@@ -182,14 +182,23 @@
     
         &:active {
           .icon-bar {
-            background: $pink;
+            background: $gold;
+            .icon-bar-inner {
+              background: $gold;
+            }
           }
           &:after {
-            color: $pink;
+            color: $gold;
+            .icon-bar-inner {
+              background: $gold;
+            }
           }
           &.active {
             &:after {
-              color: $pink;
+              color: $gold;
+              .icon-bar-inner {
+                background: $gold;
+              }
             }
           }
         }
@@ -197,11 +206,12 @@
         &.active {
           width: 50px;
           .icon-bar {
-            width: 45px;
+            width: 46px;
           }
           .icon-bar:nth-child(2) {
             transform: rotate(45deg);
             top: 10px;
+            left: 6px;
           }
     
           .icon-bar:nth-child(3) {
@@ -211,6 +221,7 @@
           .icon-bar:nth-child(4) {
             transform: rotate(-45deg);
             top: 40px;
+            left: 6px;
           }
         }
     
@@ -221,9 +232,9 @@
         .icon-bar {
           margin: 0;
           display: block;
-          background: $pink;
+          background: $white;
           width: 42px;
-          height: 2px;
+          height: 1px;
           border-radius: 2px;
           position: absolute;
           right: 0;
@@ -240,6 +251,30 @@
           -moz-transform-origin: 1px;
           -o-transform-origin: 1px;
           transform-origin: 1px;
+          .icon-bar-inner {
+            margin: 0;
+            display: block;
+            background: $white;
+            width: 21px;
+            height: 4px;
+            border-radius: 2px;
+            position: absolute;
+            left: 25%;
+            top: -1px;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: transform 300ms ease;
+            -moz-transition: transform 300ms ease;
+            -ms-transition: transform 300ms ease;
+            -o-transition: transform 300ms ease;
+            transition: transform 300ms ease;
+            -webkit-transform-origin: 1px;
+            -moz-transform-origin: 1px;
+            -o-transform-origin: 1px;
+            transform-origin: 1px;
+          }
         }
     
         .icon-bar:nth-child(2) {
