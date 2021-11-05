@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
+import { AppContext } from '../../contexts/state'
 
 import logo from '../../assets/images/global/header-logo.svg'
 
@@ -9,15 +10,13 @@ const MainNav = props => {
   const [yDirection, handleYDirection] = useState(0);
   const [currentTabHovered, handleCurrentTabHovered] = useState('')
 
+  const state = useContext(AppContext);
   const {
     currentPage,
     handleCurrentPage,
-    setNavOpen,
-  } = props
+  } = state;
 
   const toggleNav = () => {
-    // document.querySelector('.mobile-nav').scrollTop = 0
-    props.setNavOpen()
     handleIsNavOpen(!isNavOpen)
 
     if (isNavOpen) {
