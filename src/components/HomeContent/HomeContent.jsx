@@ -316,12 +316,12 @@ const HomeContent = (props) => {
                 </Col>
               </Row>
               <Row>
-                <Col lg={{span: 2, offset: 0}}>
+                <Col lg={{span: 2, offset: 0}} xs={{span: 3, offset: 0}}>
                   <div className='treatment-box-image-container'>
                     <img src={boxArrowIcon} alt='' />
                   </div>
                 </Col>
-                <Col lg={{span: 5, offset: 0}}>
+                <Col lg={{span: 5, offset: 0}} xs={{span: 9, offset: 0}}>
                   <div className='treatment-box-content-container'>
                     <p>
                       Standard of care chemotherapy (gemcitabine/cisplatin) is unique to NPC and was established <span className='extra-bold'>in a single phase 3 trial in 2016</span><sup>1,5</sup>
