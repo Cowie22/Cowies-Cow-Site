@@ -31,7 +31,17 @@
 }
 
 @media screen and (max-width: 992px) {
-  .home-slider-left-content-container {
-
+  .home-slider-right-content-container {
+    .home-slider-inner-container {
+      padding: 32px;
+      h4 {
+        padding-bottom: 0px;
+      }
+      .home-slider-circle-container {
+        p {
+          padding: 40px 0 24px 0;
+        }
+      }
+    }
   }
 }
