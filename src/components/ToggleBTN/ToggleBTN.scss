@@ -38,6 +38,12 @@
 
 @media screen and (max-width: 992px) {
   .toggle-btn-container {
-
+    padding:  8px 10px;
+    h4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
   }
 }

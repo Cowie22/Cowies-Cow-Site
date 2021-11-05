@@ -17,6 +17,10 @@
 
 @media only screen and (max-width: 992px) {
   .circle-rectangle-card-container {
-
+    flex-direction: column;
+    margin-bottom: 40px;
+    .circle-rectangle-img-container {
+      padding: 24px 0 0 0;
+    }
   }
 }

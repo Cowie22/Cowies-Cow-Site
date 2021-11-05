@@ -217,4 +217,23 @@
       }
     }
   }
+  
+  .home-cancer-section {
+    padding: 56px 0;
+    h2 {
+      padding: 8px 0 16px 0;
+    }
+    .home-cancer-card-section {
+      padding: 40px 0 0 0;
+    }
+  }
+
+  .home-outcomes-section {
+    padding: 56px 0;
+    h2 {
+      &:nth-of-type(2) {
+        padding: 16px 0 48px 0;
+      }
+    }
+  }
 }
