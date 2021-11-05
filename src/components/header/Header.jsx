@@ -75,58 +75,16 @@ class Header extends React.Component {
             handleCurrentPage,
           } = context;
           return (
-            yDirection > 0 && !isNavOpen ?
-              <div style={{top: 0, zIndex: 9989, width: '100%'}} className='sticky-header'>
-                <header className='main-header'>
-                  <MainNav
-                    isNavOpen={isNavOpen}
-                    setNavOpen={this.setNavOpen}
-                    popup={popup}
-                    handlePopUp={this.handlePopUp}
-                    currentPage={currentPage}
-                    handleCurrentPage={handleCurrentPage}
-                  />
-                </header>
-              </div>
-            : yDirection > 0 && isNavOpen ?
-              <div style={{position: 'fixed', top: 0, zIndex: 9989, width: '100%'}}>
-                <header className='main-header'>
-                  <MainNav
-                    isNavOpen={isNavOpen}
-                    setNavOpen={this.setNavOpen}
-                    popup={popup}
-                    handlePopUp={this.handlePopUp}
-                    currentPage={currentPage}
-                    handleCurrentPage={handleCurrentPage}
-                  />
-                </header>
-              </div>
-            : isNavOpen ?
-              <div style={{position: 'absolute', top: 0, zIndex: 9989, width: '100%'}}>
-                <header className='main-header'>
-                  <MainNav
-                    isNavOpen={isNavOpen}
-                    setNavOpen={this.setNavOpen}
-                    popup={popup}
-                    handlePopUp={this.handlePopUp}
-                    currentPage={currentPage}
-                    handleCurrentPage={handleCurrentPage}
-                  />
-                </header>
-              </div>
-            :
-              <div style={{position: 'relative', top: 0, zIndex: 9989, width: '100%'}}>
-                <header className='main-header'>
-                  <MainNav
-                    isNavOpen={isNavOpen}
-                    setNavOpen={this.setNavOpen}
-                    popup={popup}
-                    handlePopUp={this.handlePopUp}
-                    currentPage={currentPage}
-                    handleCurrentPage={handleCurrentPage}
-                  />
-                </header>
-              </div>
+            <header>
+              <MainNav
+                isNavOpen={isNavOpen}
+                setNavOpen={this.setNavOpen}
+                popup={popup}
+                handlePopUp={this.handlePopUp}
+                currentPage={currentPage}
+                handleCurrentPage={handleCurrentPage}
+              />
+            </header>
           )
         }}
       </AppContext.Consumer>

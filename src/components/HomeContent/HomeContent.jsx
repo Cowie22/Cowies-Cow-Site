@@ -251,7 +251,10 @@ const HomeContent = (props) => {
         </Container>
       </section>
 
-      <section className='home-outcomes-section' id='outcomes'>
+      <div className='drive-to-container' id='outcomes'>
+
+      </div>
+      <section className='home-outcomes-section'>
         <Container>
           <Row>
             <Col lg={{span: 12}}>
@@ -280,9 +283,11 @@ const HomeContent = (props) => {
         </Container>
       </section>
 
+      <div className='drive-to-container' id='treatment'>
+
+      </div>
       <section
         className='home-treatment-container'
-        id='treatment'
         style={
           width > 991 ?
           {backgroundImage: `url(${TreatmentBGImg}), url(${TreatmentBGImgFB})`} :

@@ -126,8 +126,8 @@ const MainNav = props => {
 
       <section
         className={
-          yDirection > 0 ? 'header-section-mobile dark-nav d-block d-lg-none' :
-          'header-section-mobile dark-nav d-block d-lg-none'
+          yDirection > 0 || isNavOpen ? 'header-section-mobile dark-nav d-block d-lg-none' :
+          'header-section-mobile d-block d-lg-none'
         }
       >
         <Container>
@@ -172,20 +172,58 @@ const MainNav = props => {
                   isNavOpen ? 'header-nav-container-mobile' : 'header-nav-container-mobile hidden-dropdown'}
                 >
                 <ul className='header-nav-list'>
-                  <li
-                    onClick={() => {
-                      toggleNav()
-                    }}
+                  <div
+                    className={
+                      currentPage === 'home' ? 'home-page-list-items active-list' :
+                      'home-page-list-items'
+                    }
                   >
-                    <Link to='/'>Home</Link>
-                  </li>
-                  <li
-                    onClick={() => {
-                      toggleNav()
-                    }}
+                    <li
+                      onClick={() => {
+                        toggleNav()
+                      }}
+                      className='mobile-page-nav-item'
+                    >
+                      <Link to='/'>
+                        HOME
+                      </Link>
+                    </li>
+                    <li
+                      onClick={() => {
+                        toggleNav()
+                      }}
+                    >
+                      <Link to='/#outcomes'>
+                        NPC outcomes
+                      </Link>
+                    </li>
+                    <li
+                      onClick={() => {
+                        toggleNav()
+                      }}
+                    >
+                      <Link to='/#treatment'>
+                        Treatment options
+                      </Link>
+                    </li>
+                  </div>
+                  <div
+                    className={
+                      currentPage === 'about' ? 'about-page-list-items active-list' :
+                      'about-page-list-items'
+                    }
                   >
-                    <Link to='/about/'>About</Link>
-                  </li>
+                    <li
+                      onClick={() => {
+                        toggleNav()
+                      }}
+                      className='mobile-page-nav-item'
+                    >
+                      <Link to='/about/'>
+                        ABOUT NPC
+                      </Link>
+                    </li>
+                  </div>
                 </ul>
               </nav>
             </Col>
