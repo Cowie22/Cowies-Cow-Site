@@ -1,20 +1,17 @@
-.four-oh-four-container {
-  padding: 60px 0;
+.error-container {
+  padding: 224px 0 96px 0;
+  background: #E6E9E9;
+  height: 100vh;
   h2 {
     padding-bottom: 16px;
   }
-  p {
-    a {
-      color: $pink;
-      font-weight: 700;
-      transition: color .5s;
-      transition-delay: .2s;
-      &:hover {
-        cursor: pointer;
-        color: $gold;
-        transition: color .5s;
-        transition-delay: .2s;
-      }
-    }
+  h3 {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .error-container {
+    padding: 184px 0 56px 0;
   }
 }

@@ -73,6 +73,9 @@
           transition: all .5s;
           transition-delay: .1s;
         }
+        &.error {
+          display: none;
+        }
       }
       .active-link-hovered {
         position: absolute;

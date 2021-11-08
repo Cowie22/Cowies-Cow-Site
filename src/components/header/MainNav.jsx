@@ -76,6 +76,8 @@ const MainNav = props => {
                         ? 'active-link home'
                         : currentPage === 'about'
                         ? 'active-link about'
+                        : currentPage === 'error'
+                        ? 'active-link error'
                         : 'active-link home'
                     }
                   ></div>

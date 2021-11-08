@@ -2,21 +2,47 @@ import React, { useState, useEffect, useContext } from 'react'
 import Layout from '../Layout'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
+import { AppContext } from '../../contexts/state'
 
 const FourOhFourContent = (props) => {
+  const state = useContext(AppContext);
+
+  const {
+    currentPage,
+    handleCurrentPage,
+    setReferences
+  } = state;
+
+  useEffect(() => {
+    handleCurrentPage('error');
+    setReferences([]);
+  }, []);
+
   return (
     <Layout>
-      <section className='four-oh-four-container'>
+      <section className='error-container'>
         <Container>
           <Row>
-            <Col lg={{span: 6, offset: 3}}>
-              <h2 className='blue text-center'>
-                Page not found
+            <Col lg={{span: 6, offset: 0}}>
+              <h2>
+                Error 404
               </h2>
-              <p className='text-center'>
-                The page you are looking for either doesn’t exist, or some other error occurred. Please
-                check the URL or go to the <Link to='/'>homepage</Link>.
-              </p>
+              <h3>
+                The page may have been removed or updated.
+              </h3>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={{span: 3, offset: 0}}>
+              <div className='cta-btn-container'>
+                <Link
+                  to={'/'}
+                >
+                  <button className='cta-btn dark-grey-btn'>
+                    Go to homepage
+                  </button>
+                </Link>
+              </div>
             </Col>
           </Row>
         </Container>
