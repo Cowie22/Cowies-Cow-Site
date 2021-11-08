@@ -13,6 +13,9 @@
     "clean": "gatsby clean",
     "test": "jest"
   },
+  "engines": {
+    "node": "<=12.22.6"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
