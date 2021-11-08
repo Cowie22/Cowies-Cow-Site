@@ -334,6 +334,15 @@
           a {
             color: $white;
           }
+          &:active {
+            a {
+              cursor: pointer;
+              color: $gold;
+              border-bottom: 1px solid $gold;
+              transition: all .5s;
+              transition-delay: .2s;
+            }
+          }
           &.mobile-page-nav-item {
             background: rgba(255, 255, 255, 0.1);
             font-size: 18px;

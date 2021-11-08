@@ -267,6 +267,11 @@ sub {
     border: 1px solid $gold;
     color: $dark-grey;
   }
+  &:active {
+    background: $gold;
+    border: 1px solid $gold;
+    color: $dark-grey;
+  }
 }
 
 .overlay {
