@@ -180,4 +180,37 @@
       }
     }
   }
+
+  .about-diagnosis-container {
+    padding: 56px 0;
+    .about-diagnosis-content-container {
+      padding-bottom: 40px;
+      h2 {
+        padding-bottom: 16px;
+      }
+      p {
+        padding-bottom: 16px;
+      }
+    }
+    .about-diagnosis-card-container {
+      .about-diagnosis-card-ul {
+        padding: 4px 0px 4px 28px;
+      }
+    }
+  }
+
+  .about-risk-container {
+    padding: 56px 0 0px 0;
+    .about-risk-title-container {
+      padding-bottom: 40px;
+    }
+    .about-risk-rectangle-callout {
+      margin-top: 0;
+      padding: 32px 20px;
+      background: #C1C7C8;
+      h3 {
+        padding-bottom: 32px;
+      }
+    }
+  }
 }

@@ -22,6 +22,11 @@
 
 @media only screen and (max-width: 992px) {
   .risk-icon-card-container {
-
+    &.extra-card-padding {
+      padding: 0px;
+    }
+    .risk-icon-ul {
+      padding-bottom: 40px;
+    }
   }
 }
