@@ -17,14 +17,16 @@ footer {
         margin-right: 8px;
       }
       h6 {
-        transition: color .5s;
+        transition: all .5s;
         transition-delay: .2s;
+        border-bottom: 1px solid transparent;
       }
       &:hover {
         cursor: pointer;
         h6 {
           color: $gold;
-          transition: color .5s;
+          border-bottom: 1px solid $gold;
+          transition: all .5s;
           transition-delay: .2s;
         }
       }

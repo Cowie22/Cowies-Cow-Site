@@ -17,7 +17,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-tagmanager-delayed",
       options: {
-        id: "GTM-MV77PCG",
+        id: "",
         includeInDevelopment: true,
         defaultDataLayer: { platform: "gatsby" },
       },
