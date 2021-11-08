@@ -14,7 +14,7 @@
     "test": "jest"
   },
   "engines": {
-    "node": "<=12.22.6"
+    "node": "12.22.6"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -31,6 +31,7 @@
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-source-filesystem": "^2.0.28",
     "i": "^0.3.6",
+    "node": "^12.22.6",
     "node-sass": "^4.11.0",
     "npm": "^7.20.6",
     "react": "^16.8.6",
