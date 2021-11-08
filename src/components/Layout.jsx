@@ -7,7 +7,7 @@ import AppProvider, { AppContext } from '../contexts/state'
 
 import Header from './header/Header'
 import References from './References/References'
-import Footer from './Footer/Footer'
+import Footer from './footer/Footer'
 import ExitRamp from '../components/exitramp/ExitRamp'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
