@@ -52,7 +52,7 @@ const ReferencesData = {
   7: (
     <>
       Wang Y, Zhang Y, Ma S. Racial differences in nasopharyngeal carcinoma in
-      the United States. <em>Cancer Epidemiol</em>Cancer Epidemiol. 2013
+      the United States. <em>Cancer Epidemiol</em>. 2013
       December; 37: 793-802.
     </>
   ),

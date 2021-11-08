@@ -4,8 +4,6 @@ import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 import { AppContext } from '../../contexts/state'
 
-import HeaderHero from '../HeaderHero/HeaderHero'
-
 
 const SiteMapContent = (props) => {
   const state = useContext(AppContext);
@@ -23,14 +21,14 @@ const SiteMapContent = (props) => {
 
   return (
     <Layout>
-      <HeaderHero
+      {/* <HeaderHero
         title={
           <>
             Site Map
           </>
         }
         columns={{span: 12}}
-      />
+      /> */}
       {/* <section className='sitemap-container'>
         <Container>
           <Row>

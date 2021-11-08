@@ -47,14 +47,13 @@ class References extends React.Component {
                   <span className='extra-bold'>References:</span>
                   {pageReferences.map((reference, i) => {
                     return (
-                      <>
+                      <span key={i}>
                         <span className='extra-bold'> {i + 1}. </span>{' '}
                         {reference}
-                      </>
+                      </span>
                     )
                   })}
                 </h6>
-                <ol className='reference-ordered-list'></ol>
               </div>
             </Col>
           </Row>
