@@ -140,9 +140,44 @@
 
 @media screen and (max-width: 992px) {
   .about-container {
-    padding: 40px 0;
+    padding: 144px 0 0px 0;
+    height: 932px;
+    h1 {
+      padding-bottom: 16px;
+    }
   }
-  .about-content-container {
-    padding: 40px 0 0 0;
+
+  .about-circle-container{
+    padding: 56px 0;
+    .about-circle-title-container {
+      padding-bottom: 40px;
+    }
+    .about-circle-rectangle-callout {
+      margin: 4px 0 40px 0;
+    }
+  }
+
+  .about-demographics-container {
+    padding: 56px 0 32px 0;
+    .demographic-race-card-container {
+      height: fit-content;
+      .row {
+        .demographic-left-card-col {
+          padding: 0 15px;
+          .demographic-left-card-container {
+            padding: 16px;
+            height: fit-content;
+          }
+        }
+        .demographic-right-card-container {
+          padding: 32px 16px;
+          margin-top: 8px;
+          height: fit-content;
+          h4 {
+            padding-top: 8px;
+          }
+        }
+      }
+    }
   }
 }
