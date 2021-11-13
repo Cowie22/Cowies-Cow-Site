@@ -18,17 +18,17 @@
   }
   .yellow-line {
     stroke-dasharray: 820;
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 820;
     animation-name: draw2;
     stroke: #E3FF39;
-    animation-delay: 0s;
-    animation-duration: 2s;
-    animation-direction: reverse;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-direction: normal;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     @keyframes draw2 {
       to {
-        stroke-dashoffset: -820;
+        stroke-dashoffset: 0;
         // stroke: #FFFFFF;
       }
     }
