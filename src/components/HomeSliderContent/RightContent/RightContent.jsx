@@ -48,12 +48,36 @@ const RightContent = (props) => {
     [circleViewRightContent4],
   );
 
+  const cardRef = useRef()
+  const [cardView, cardInView] = useInView({triggerOnce: true});
+  const setCardRef = useCallback(
+    (node) => {
+      cardRef.current = node;
+      cardView(node);
+    },
+    [cardView],
+  );
+
+  const cardRef2 = useRef()
+  const [cardView2, cardInView2] = useInView({triggerOnce: true});
+  const setCardRef2 = useCallback(
+    (node) => {
+      cardRef2.current = node;
+      cardView2(node);
+    },
+    [cardView2],
+  );
+
   return (
     <Col lg={{span: 12, offset: 0}}>
       <div className='home-slider-right-content-container'>
         <Row>
           <Col lg={{span: 9, offset: 0}}>
-            <div className='home-slider-inner-container left'>
+            <div
+              // className='home-slider-inner-container left'
+              className={cardInView ? 'home-slider-inner-container left active-card' : 'home-slider-inner-container left'}
+              ref={setCardRef}
+            >
               <p className='white text-center bolder'>
                 ASIAN
               </p>
@@ -142,7 +166,11 @@ const RightContent = (props) => {
             </div>
           </Col>
           <Col lg={{span: 3, offset: 0}}>
-            <div className='home-slider-inner-container right'>
+            <div
+              // className='home-slider-inner-container right'
+              className={cardInView2 ? 'home-slider-inner-container right active-card' : 'home-slider-inner-container right'}
+              ref={setCardRef2}
+            >
               <p className='white text-center bolder'>
                 ASIAN
               </p>

@@ -3,6 +3,19 @@
   background: #3E404C;
   padding: 32px;
   display: flex;
+  transform: translateY(110%);
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: .3s, .3s;
+  &.active-card {
+    margin: 0;
+    transform: translateY(0);
+    opacity: 1;
+    transition-property: transform, opacity;
+    transition-delay: .7s, .7s;
+    transition-duration: .7s, .7s;
+    transform-origin: bottom;
+  }
   .circle-rectangle-content-container {
     p {
       &:first-of-type {
