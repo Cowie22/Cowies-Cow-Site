@@ -70,13 +70,17 @@ const RightContent = (props) => {
 
   return (
     <Col lg={{span: 12, offset: 0}}>
-      <div className='home-slider-right-content-container'>
+      <div
+        ref={setCardRef}
+        // className='home-slider-right-content-container'
+        className={cardInView ? 'home-slider-right-content-container active-card' : 'home-slider-right-content-container'}
+      >
         <Row>
           <Col lg={{span: 9, offset: 0}}>
             <div
-              // className='home-slider-inner-container left'
-              className={cardInView ? 'home-slider-inner-container left active-card' : 'home-slider-inner-container left'}
-              ref={setCardRef}
+              className='home-slider-inner-container left'
+              // className={cardInView ? 'home-slider-inner-container left active-card' : 'home-slider-inner-container left'}
+              // ref={setCardRef}
             >
               <p className='white text-center bolder'>
                 ASIAN
@@ -167,9 +171,9 @@ const RightContent = (props) => {
           </Col>
           <Col lg={{span: 3, offset: 0}}>
             <div
-              // className='home-slider-inner-container right'
-              className={cardInView2 ? 'home-slider-inner-container right active-card' : 'home-slider-inner-container right'}
-              ref={setCardRef2}
+              className='home-slider-inner-container right'
+              // className={cardInView2 ? 'home-slider-inner-container right active-card' : 'home-slider-inner-container right'}
+              // ref={setCardRef2}
             >
               <p className='white text-center bolder'>
                 ASIAN
@@ -200,16 +204,16 @@ const RightContent = (props) => {
             </div>
           </Col>
         </Row>
-        <Row>
-          <Col lg={{span: 12, offset: 0}}>
-            <div className='home-slider-footnote-container'>
-              <h6 className='white'>
-                ¶An analysis of NPC patients in the United States reported to the SEER (Surveillance, Epidemiology, and End Results) database between 1973 and 2009. Data included 9,014 patients, of which the majority were non-Hispanic white (n=4,013) and Asian (n=3,381). Other populations included Hispanic white (n=535), Black (n=937), and other (n=148).
-              </h6>
-            </div>
-          </Col>
-        </Row>
       </div>
+      <Row>
+        <Col lg={{span: 12, offset: 0}}>
+          <dispatchEvent>
+            <h6 className='white'>
+              ¶An analysis of NPC patients in the United States reported to the SEER (Surveillance, Epidemiology, and End Results) database between 1973 and 2009. Data included 9,014 patients, of which the majority were non-Hispanic white (n=4,013) and Asian (n=3,381). Other populations included Hispanic white (n=535), Black (n=937), and other (n=148).
+            </h6>
+          </dispatchEvent>
+        </Col>
+      </Row>
     </Col>
   )
 }
