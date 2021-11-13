@@ -62,6 +62,16 @@ const AboutContent = (props) => {
     [circleViewAbout3],
   );
 
+  const raceCardRef = useRef()
+  const [raceCardView, raceCardInView] = useInView({triggerOnce: true});
+  const setRaceCardRef = useCallback(
+    (node) => {
+      raceCardRef.current = node;
+      raceCardView(node);
+    },
+    [raceCardView],
+  );
+
   useEffect(() => {
     handleCurrentPage('about');
     setReferences([8, 9, 10, 11, 12, 13, 14, 15, 5, 16]);
@@ -88,6 +98,8 @@ const AboutContent = (props) => {
     RiskIconCardData2,
     RiskIconCardData3,
   } = RiskIconCardData;
+
+  console.log('HERE', raceCardInView)
 
   return (
     <Layout
@@ -246,7 +258,11 @@ const AboutContent = (props) => {
                 title={`<1 case per 100,000 patients`}
                 text={<>is diagnosed per year in the US<sup>1</sup></>}
               />
-              <div className='demographic-race-card-container'>
+              <div
+                // className='demographic-race-card-container'
+                ref={setRaceCardRef}
+                className={raceCardInView ? `demographic-race-card-container active-race-card` : `demographic-race-card-container`}
+              >
                 <Row>
                   <Col lg={{span: 2, offset: 1}} className='demographic-left-card-col'>
                     <div className='demographic-left-card-container'>

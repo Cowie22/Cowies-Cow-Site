@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext, useRef, useCallback } from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
+import { useInView } from 'react-intersection-observer'
 
 import CircleAnimation from '../CircleAnimation/CircleAnimation'
 
@@ -13,11 +14,25 @@ const CircleTypeCard = (props) => {
     text,
     columns,
     list,
+    delayClass,
   } = data[0];
+
+  const cardRef = useRef()
+  const [cardView, cardInView] = useInView({triggerOnce: true});
+  const setCardRef = useCallback(
+    (node) => {
+      cardRef.current = node;
+      cardView(node);
+    },
+    [cardView],
+  );
   
   return (
-    <Col lg={columns}>
-      <div className='circle-type-card-container'>
+    <Col lg={columns} ref={setCardRef}>
+      <div
+        // className='circle-type-card-container'
+        className={cardInView ? `circle-type-card-container ${delayClass} active-card` : `circle-type-card-container ${delayClass}`}
+      >
         <div className='circle-type-content-container'>
           <p className='white bolder'>
             {title}

@@ -18,16 +18,16 @@
   .home-box-section {
     display: flex;
     height: 0;
-    transform: translateY(110%);
+    transform: translateY(20%);
     opacity: 0;
-    transition-property: transform, opacity;
+    transition: transform, opacity;
     transition-duration: .3s, .3s;
     &.active-box {
       margin: 0;
       height: auto;
       transform: translateY(0);
       opacity: 1;
-      transition-property: transform, opacity;
+      transition: transform, opacity;
       transition-delay: .7s, .7s;
       transition-duration: .7s, .7s;
       transform-origin: bottom;

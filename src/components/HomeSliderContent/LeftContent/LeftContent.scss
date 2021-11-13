@@ -6,13 +6,13 @@
     box-sizing: border-box;
     transform: translateX(50%);
     opacity: 0;
-    transition-property: transform, opacity;
+    transition: transform, opacity;
     transition-duration: .3s, .3s;
     &.active-card {
       margin: 0;
       transform: translateX(0);
       opacity: 1;
-      transition-property: transform, opacity;
+      transition: transform, opacity;
       transition-delay: .7s, .7s;
       transition-duration: .7s, .7s;
       transform-origin: bottom;

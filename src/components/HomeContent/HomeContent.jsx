@@ -219,6 +219,7 @@ const HomeContent = (props) => {
                     While chemoradiotherapy can achieve good locoregional control, up to 50% of NPC patients will develop distant metastasis during their disease course.<sup>6</sup>
                   </>
                 }
+                delayClass=''
                 image={
                   <svg width="188" height="188" viewBox="0 0 188 188" fill="none" xmlns="http://www.w3.org/2000/svg" ref={setRefs}>
                   <circle cx="94" cy="94" r="90" stroke="#997F8A" stroke-width="2"/>
@@ -244,6 +245,7 @@ const HomeContent = (props) => {
                     A key study showed a 1-year PFS rate of 20% for patients whose R/M NPC was treated with standard of care chemotherapy.<sup>1*</sup>
                   </>
                 }
+                delayClass='animation-start-2'
                 image={
                   <svg width="188" height="188" viewBox="0 0 188 188" fill="none" xmlns="http://www.w3.org/2000/svg" ref={setRefs2}>
                   <circle cx="94" cy="94" r="90" stroke="#997F8A" stroke-width="2"/>

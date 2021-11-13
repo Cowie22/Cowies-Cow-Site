@@ -11,6 +11,7 @@ const CircleTypeCardData1 = [
       `More common in Caucasians`,
       `Worse prognosis vs types 2 & 3`,
     ],
+    delayClass: '',
   }
 ]
 
@@ -24,6 +25,7 @@ const CircleTypeCardData2 = [
       `More common in East Asia`,
       <>Better prognosis than type <sup>1</sup></>,
     ],
+    delayClass: 'animation-start-2',
   }
 ]
 
@@ -38,6 +40,7 @@ const CircleTypeCardData3 = [
       <>Better prognosis than type <sup>1</sup></>,
       `Most common worldwide`,
     ],
+    delayClass: 'animation-start-3',
   }
 ]
 

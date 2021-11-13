@@ -2,6 +2,19 @@
 .demographic-card-container {
   height: 170px;
   padding-bottom: 24px;
+  transform: translateY(20%);
+  opacity: 0;
+  transition: transform, opacity;
+  transition-duration: .3s, .3s;
+  &.active-card {
+    margin: 0;
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform, opacity;
+    transition-delay: .7s, .7s;
+    transition-duration: .7s, .7s;
+    transform-origin: bottom;
+  }
   .row {
     height: 100%;
     .demographic-left-card-col {

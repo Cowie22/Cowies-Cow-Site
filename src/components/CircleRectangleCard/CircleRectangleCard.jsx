@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer'
 import CircleAnimation from '../CircleAnimation/CircleAnimation'
 
 const CircleRectangleCard = (props) => {
-  const { title, content, image } = props;
+  const { title, content, image, delayClass } = props;
 
   const cardRef = useRef()
   const [cardView, cardInView] = useInView({triggerOnce: true});
@@ -21,8 +21,8 @@ const CircleRectangleCard = (props) => {
   return (
     <Col lg={{span: 6, offset: 0}} ref={setCardRef}>
       <div
-        className='circle-rectangle-card-container'
-        className={cardInView ? 'circle-rectangle-card-container active-card' : 'circle-rectangle-card-container'}
+        // className='circle-rectangle-card-container'
+        className={cardInView ? `circle-rectangle-card-container ${delayClass} active-card` : `circle-rectangle-card-container ${delayClass}`}
       >
         <div className='circle-rectangle-content-container'>
           <p className='white bolder'>

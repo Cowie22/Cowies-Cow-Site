@@ -1,12 +1,27 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext, useRef, useCallback  } from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
+import { useInView } from 'react-intersection-observer'
 
 const DemographicsCards = (props) => {
-  const { demographic, title, text } = props;
+  const { demographic, title, text, delayClass } = props;
+
+  const cardRef = useRef()
+  const [cardView, cardInView] = useInView({triggerOnce: true});
+  const setCardRef = useCallback(
+    (node) => {
+      cardRef.current = node;
+      cardView(node);
+    },
+    [cardView],
+  );
   
   return (
-    <div className='demographic-card-container'>
+    <div
+      // className='demographic-card-container'
+      ref={setCardRef}
+      className={cardInView ? `demographic-card-container active-card` : `demographic-card-container`}
+    >
       <Row>
         <Col lg={{span: 2, offset: 1}} className='demographic-left-card-col'>
           <div className='demographic-left-card-container'>
