@@ -1,6 +1,25 @@
 
 .risk-icon-card-container {
   width: 100%;
+  transform: translateY(20%);
+  opacity: 0;
+  transition: transform, opacity;
+  transition-duration: .3s, .3s;
+  &.active-card {
+    margin: 0;
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform, opacity;
+    transition-delay: .7s, .7s;
+    transition-duration: .7s, .7s;
+    transform-origin: bottom;
+  }
+  &.animation-start-2 {
+    transition-delay: 1.2s, 1.2s;
+  }
+  &.animation-start-3 {
+    transition-delay: 1.7s, 1.7s;
+  }
   &.extra-card-padding {
     padding: 0 30px 0 60px;
   }

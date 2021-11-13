@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext, useRef, useCallback  } from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
+import { useInView } from 'react-intersection-observer'
 
 const RiskIconCard = (props) => {
 
@@ -12,11 +13,25 @@ const RiskIconCard = (props) => {
     columns,
     list,
     paddingClass,
+    delayClass,
   } = data[0];
+
+  const cardRef = useRef()
+  const [cardView, cardInView] = useInView({triggerOnce: true});
+  const setCardRef = useCallback(
+    (node) => {
+      cardRef.current = node;
+      cardView(node);
+    },
+    [cardView],
+  );
   
   return (
-    <Col lg={columns}>
-      <div className={`risk-icon-card-container ${paddingClass}`}>
+    <Col lg={columns} ref={setCardRef}>
+      <div
+        // className={`risk-icon-card-container ${paddingClass}`}
+        className={cardInView ? `risk-icon-card-container ${paddingClass} ${delayClass} active-card` : `risk-icon-card-container ${paddingClass} ${delayClass}`}
+      >
         <div className='risk-icon-icon-container'>
           <img src={icon} alt='' />
           <p className='text-center bolder'>

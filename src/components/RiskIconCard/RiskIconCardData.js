@@ -14,6 +14,7 @@ const RiskIconCardData1 = [
       `Specific genes, including HLA A2, HLA B46, and HLA B17`,
     ],
     paddingClass: '',
+    delayClass: '',
   }
 ]
 
@@ -28,6 +29,7 @@ const RiskIconCardData2 = [
       `Occupational exposure to dust, smoke, and formaldehyde`,
     ],
     paddingClass: 'extra-card-padding',
+    delayClass: 'animation-start-2',
   }
 ]
 
@@ -41,6 +43,7 @@ const RiskIconCardData3 = [
       `EBV is strongly associated with WHO types 2 and 3`,
     ],
     paddingClass: '',
+    delayClass: 'animation-start-3',
   }
 ]
 

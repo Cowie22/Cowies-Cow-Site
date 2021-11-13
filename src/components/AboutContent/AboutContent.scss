@@ -34,6 +34,19 @@
     margin: 64px 0;
     padding: 32px 0;
     background: $light-grey;
+    transform: translateY(20%);
+    opacity: 0;
+    transition: transform, opacity;
+    transition-duration: .3s, .3s;
+    &.active-card {
+      // margin: 0;
+      transform: translateY(0);
+      opacity: 1;
+      transition: transform, opacity;
+      transition-delay: .7s, .7s;
+      transition-duration: .7s, .7s;
+      transform-origin: bottom;
+    }
     h3 {
       padding-bottom: 0px;
     }
@@ -112,6 +125,19 @@
   .about-diagnosis-card-container {
     background: #3E404C;
     padding: 32px;
+    transform: translateX(20%);
+    opacity: 0;
+    transition: transform, opacity;
+    transition-duration: .3s, .3s;
+    &.active-card {
+      margin: 0;
+      transform: translateX(0);
+      opacity: 1;
+      transition: transform, opacity;
+      transition-delay: .7s, .7s;
+      transition-duration: .7s, .7s;
+      transform-origin: bottom;
+    }
     p {
       padding-bottom: 16px;
       width: 100%;
@@ -145,6 +171,19 @@
     margin-top: 60px;
     padding: 32px;
     background: #C1C7C8;
+    transform: translateY(20%);
+    opacity: 0;
+    transition: transform, opacity;
+    transition-duration: .3s, .3s;
+    &.active-card {
+      // margin: 0;
+      transform: translateY(0);
+      opacity: 1;
+      transition: transform, opacity;
+      transition-delay: .7s, .7s;
+      transition-duration: .7s, .7s;
+      transform-origin: bottom;
+    }
     h3 {
       padding-bottom: 40px;
     }

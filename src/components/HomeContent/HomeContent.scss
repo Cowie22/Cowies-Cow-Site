@@ -137,6 +137,21 @@
     p {
       padding: 32px 0 48px 0;
     }
+    .cta-btn-container {
+      transform: translateY(20%);
+      opacity: 0;
+      transition: transform, opacity;
+      transition-duration: .3s, .3s;
+      &.active-card {
+        margin: 0;
+        transform: translateY(0);
+        opacity: 1;
+        transition: transform, opacity;
+        transition-delay: .7s, .7s;
+        transition-duration: .7s, .7s;
+        transform-origin: bottom;
+      }
+    }
     h6 {
       padding-top: 40px;
     }

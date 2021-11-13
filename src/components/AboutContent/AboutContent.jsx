@@ -72,6 +72,36 @@ const AboutContent = (props) => {
     [raceCardView],
   );
 
+  const boxRef = useRef()
+  const [boxView, boxInView] = useInView({triggerOnce: true});
+  const setBoxRef = useCallback(
+    (node) => {
+      boxRef.current = node;
+      boxView(node);
+    },
+    [boxView],
+  );
+
+  const boxRef2 = useRef()
+  const [boxView2, boxInView2] = useInView({triggerOnce: true});
+  const setBoxRef2 = useCallback(
+    (node) => {
+      boxRef2.current = node;
+      boxView2(node);
+    },
+    [boxView2],
+  );
+
+  const boxRef3 = useRef()
+  const [boxView3, boxInView3] = useInView({triggerOnce: true});
+  const setBoxRef3 = useCallback(
+    (node) => {
+      boxRef3.current = node;
+      boxView3(node);
+    },
+    [boxView3],
+  );
+
   useEffect(() => {
     handleCurrentPage('about');
     setReferences([8, 9, 10, 11, 12, 13, 14, 15, 5, 16]);
@@ -204,8 +234,11 @@ const AboutContent = (props) => {
                 />
               </Row>
               <Row>
-                <Col lg={{span: 10, offset: 1}} xs={{span: 12, offset: 0}}>
-                  <div className='about-circle-rectangle-callout'>
+                <Col lg={{span: 10, offset: 1}} xs={{span: 12, offset: 0}} ref={setBoxRef}>
+                  <div
+                    // className='about-circle-rectangle-callout'
+                    className={boxInView ? `about-circle-rectangle-callout active-card` : `about-circle-rectangle-callout`}
+                  >
                     <Row>
                       <Col lg={{span: 10, offset: 1}} xs={{span: 10, offset: 1}}>
                         <h3 className='text-center'>
@@ -329,8 +362,11 @@ const AboutContent = (props) => {
                     </p>
                   </div>
                 </Col>
-                <Col lg={{span: 6, offset: 0}}>
-                  <div className='about-diagnosis-card-container'>
+                <Col lg={{span: 6, offset: 0}} ref={setBoxRef2}>
+                  <div
+                    // className='about-diagnosis-card-container'
+                    className={boxInView2 ? `about-diagnosis-card-container active-card` : `about-diagnosis-card-container`}
+                  >
                     <p className='white bolder'>
                       HOW IS NPC DIAGNOSED?
                     </p>
@@ -389,8 +425,11 @@ const AboutContent = (props) => {
             </Col>
           </Row>
           <Row>
-            <Col lg={{span: 10, offset: 1}}>
-              <div className='about-risk-rectangle-callout'>
+            <Col lg={{span: 10, offset: 1}} ref={setBoxRef3}>
+              <div
+                // className='about-risk-rectangle-callout'
+                className={boxInView3 ? `about-risk-rectangle-callout active-card` : `about-risk-rectangle-callout`}
+              >
                 <h3 className='text-center'>
                   NPC has a very distinct profile based on diverse etiology and risk factors.
                 </h3>

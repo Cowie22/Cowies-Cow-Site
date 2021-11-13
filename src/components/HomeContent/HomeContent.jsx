@@ -62,6 +62,16 @@ const HomeContent = (props) => {
     [boxView],
   );
 
+  const boxRef2 = useRef()
+  const [boxView2, boxInView2] = useInView({triggerOnce: true});
+  const setBoxRef2 = useCallback(
+    (node) => {
+      boxRef2.current = node;
+      boxView2(node);
+    },
+    [boxView2],
+  );
+
   useEffect(() => {
     handleCurrentPage('home');
     setReferences([1, 2, 3, 4, 5, 6, 7]);
@@ -358,7 +368,11 @@ const HomeContent = (props) => {
                     <p className='bolder'>
                       Current NCCN Guidelines only recommend 2 PD-1 inhibitors for 2nd line R/M NPC based on Category 2B evidence<sup>5</sup>
                     </p>
-                    <div className='cta-btn-container'>
+                    <div
+                      // className='cta-btn-container'
+                      className={boxInView2 ? `cta-btn-container active-card` : `cta-btn-container`}
+                      ref={setBoxRef2}
+                    >
                       <Link
                         to={'/about/'}
                       >
