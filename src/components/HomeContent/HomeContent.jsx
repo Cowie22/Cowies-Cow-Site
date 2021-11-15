@@ -359,7 +359,6 @@ const HomeContent = (props) => {
                       Current NCCN Guidelines only recommend 2 PD-1 inhibitors for 2nd line R/M NPC based on Category 2B evidence<sup>5</sup>
                     </p>
                     <div
-                      // className='cta-btn-container'
                       className={boxInView2 ? `cta-btn-container active-card` : `cta-btn-container`}
                       ref={setBoxRef2}
                     >

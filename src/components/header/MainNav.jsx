@@ -56,10 +56,11 @@ const MainNav = props => {
                 </Link>
               </div>
             </Col>
-            <Col lg={{ span: 5, offset: 5 }}>
+            <Col lg={{ span: 4, offset: 6 }}>
               <nav className='header-nav-container'>
                 <ul>
-                  <li
+                  <Link
+                    to='/'
                     onMouseEnter={() => {
                       handleCurrentTabHovered('home')
                     }}
@@ -67,8 +68,10 @@ const MainNav = props => {
                       handleCurrentTabHovered('')
                     }}
                   >
-                    <Link to='/'>HOME</Link>
-                  </li>
+                    <li>
+                      HOME
+                    </li>
+                  </Link>
                   <div
                     className={
                       currentPage === 'home'
@@ -93,7 +96,8 @@ const MainNav = props => {
                         : 'active-link-hovered'
                     }
                   ></div>
-                  <li
+                  <Link
+                    to='/about/'
                     onMouseEnter={() => {
                       handleCurrentTabHovered('about')
                     }}
@@ -101,11 +105,13 @@ const MainNav = props => {
                       handleCurrentTabHovered('')
                     }}
                   >
-                    <Link to='/about/'>ABOUT NPC</Link>
-                  </li>
+                    <li>
+                      ABOUT NPC
+                    </li>
+                  </Link>
                 </ul>
               </nav>
-              <nav className={currentPage === 'home' ? 'secondary-nav' : 'secondary-nav none'}>
+              {/* <nav className={currentPage === 'home' ? 'secondary-nav' : 'secondary-nav none'}>
                 <ul>
                   <li>
                     <a href='#outcomes'>
@@ -118,7 +124,7 @@ const MainNav = props => {
                     </a>
                   </li>
                 </ul>
-              </nav>
+              </nav> */}
             </Col>
           </Row>
         </Container>

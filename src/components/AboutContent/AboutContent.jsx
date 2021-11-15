@@ -129,8 +129,6 @@ const AboutContent = (props) => {
     RiskIconCardData3,
   } = RiskIconCardData;
 
-  console.log('HERE', raceCardInView)
-
   return (
     <Layout
       canonicalURL='https://www.myfembreehcp.com/resources/'
