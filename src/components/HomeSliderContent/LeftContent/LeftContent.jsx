@@ -7,7 +7,7 @@ import CircleAnimation from '../../../components/CircleAnimation/CircleAnimation
 
 const LeftContent = (props) => {
   const circleRefLeftContent = useRef();
-  const [circleViewLeftContent, circleInViewLeftContent] = useInView();
+  const [circleViewLeftContent, circleInViewLeftContent] = useInView({triggerOnce: true});
   const setRefs = useCallback(
     (node) => {
       circleRefLeftContent.current = node;
@@ -17,7 +17,7 @@ const LeftContent = (props) => {
   );
 
   const circleRefLeftContent2 = useRef();
-  const [circleViewLeftContent2, circleInViewLeftContent2] = useInView();
+  const [circleViewLeftContent2, circleInViewLeftContent2] = useInView({triggerOnce: true});
   const setRefs2 = useCallback(
     (node) => {
       circleRefLeftContent2.current = node;
@@ -27,7 +27,7 @@ const LeftContent = (props) => {
   );
 
   const circleRefLeftContent3 = useRef();
-  const [circleViewLeftContent3, circleInViewLeftContent3] = useInView();
+  const [circleViewLeftContent3, circleInViewLeftContent3] = useInView({triggerOnce: true});
   const setRefs3 = useCallback(
     (node) => {
       circleRefLeftContent3.current = node;
@@ -37,7 +37,7 @@ const LeftContent = (props) => {
   );
 
   const circleRefLeftContent4 = useRef();
-  const [circleViewLeftContent4, circleInViewLeftContent4] = useInView();
+  const [circleViewLeftContent4, circleInViewLeftContent4] = useInView({triggerOnce: true});
   const setRefs4 = useCallback(
     (node) => {
       circleRefLeftContent4.current = node;

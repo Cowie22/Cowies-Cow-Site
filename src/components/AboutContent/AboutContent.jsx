@@ -33,7 +33,7 @@ const AboutContent = (props) => {
   } = state;
 
   const circleRefAbout = useRef()
-  const [circleViewAbout, circleInViewAbout] = useInView();
+  const [circleViewAbout, circleInViewAbout] = useInView({triggerOnce: true});
   const setRefs = useCallback(
     (node) => {
       circleRefAbout.current = node;
@@ -43,7 +43,7 @@ const AboutContent = (props) => {
   );
 
   const circleRefAbout2 = useRef()
-  const [circleViewAbout2, circleInViewAbout2] = useInView();
+  const [circleViewAbout2, circleInViewAbout2] = useInView({triggerOnce: true});
   const setRefs2 = useCallback(
     (node) => {
       circleRefAbout2.current = node;
@@ -53,7 +53,7 @@ const AboutContent = (props) => {
   );
 
   const circleRefAbout3 = useRef()
-  const [circleViewAbout3, circleInViewAbout3] = useInView();
+  const [circleViewAbout3, circleInViewAbout3] = useInView({triggerOnce: true});
   const setRefs3 = useCallback(
     (node) => {
       circleRefAbout3.current = node;

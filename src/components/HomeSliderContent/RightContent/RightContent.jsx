@@ -9,7 +9,7 @@ import fiftyPercentCircle from '../../../assets/images/pages/home/50-percent-cir
 
 const RightContent = (props) => {
   const circleRefRightContent = useRef();
-  const [circleViewRightContent, circleInViewRightContent] = useInView();
+  const [circleViewRightContent, circleInViewRightContent] = useInView({triggerOnce: true});
   const setRefs = useCallback(
     (node) => {
       circleRefRightContent.current = node;
@@ -19,7 +19,7 @@ const RightContent = (props) => {
   );
 
   const circleRefRightContent2 = useRef();
-  const [circleViewRightContent2, circleInViewRightContent2] = useInView();
+  const [circleViewRightContent2, circleInViewRightContent2] = useInView({triggerOnce: true});
   const setRefs2 = useCallback(
     (node) => {
       circleRefRightContent2.current = node;
@@ -29,7 +29,7 @@ const RightContent = (props) => {
   );
 
   const circleRefRightContent3 = useRef();
-  const [circleViewRightContent3, circleInViewRightContent3] = useInView();
+  const [circleViewRightContent3, circleInViewRightContent3] = useInView({triggerOnce: true});
   const setRefs3 = useCallback(
     (node) => {
       circleRefRightContent3.current = node;
@@ -39,7 +39,7 @@ const RightContent = (props) => {
   );
 
   const circleRefRightContent4 = useRef();
-  const [circleViewRightContent4, circleInViewRightContent4] = useInView();
+  const [circleViewRightContent4, circleInViewRightContent4] = useInView({triggerOnce: true});
   const setRefs4 = useCallback(
     (node) => {
       circleRefRightContent4.current = node;
