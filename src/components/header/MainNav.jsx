@@ -45,17 +45,16 @@ const MainNav = props => {
       >
         <Container>
           <Row>
-            <Col lg={2} xs={6} className='navbar-header'>
-              <Link to='/'>
-                <img
-                  loading='lazy'
-                  alt=''
-                  className='header-logo'
-                  src={logo}
-                  width={'86%'}
-                  height={'100%'}
-                />
-              </Link>
+            <Col lg={2} xs={6}>
+              <div className='header-logo-container'>
+                <Link to='/'>
+                  <img
+                    loading='lazy'
+                    alt=''
+                    src={logo}
+                  />
+                </Link>
+              </div>
             </Col>
             <Col lg={{ span: 5, offset: 5 }}>
               <nav className='header-nav-container'>
@@ -139,7 +138,6 @@ const MainNav = props => {
                   <img
                     loading='lazy'
                     alt=''
-                    className='header-logo'
                     src={logo}
                     width={'86%'}
                     height={'100%'}

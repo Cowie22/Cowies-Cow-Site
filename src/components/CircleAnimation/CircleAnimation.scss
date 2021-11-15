@@ -18,28 +18,24 @@
   }
   .yellow-line {
     stroke-dasharray: 820;
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 820;
     animation-name: draw2;
     stroke: #E3FF39;
-    animation-delay: 0s;
+    animation-delay: 2.2s;
     animation-duration: 3s;
-    animation-direction: reverse;
+    animation-direction: normal;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     @keyframes draw2 {
       to {
-        stroke-dashoffset: -820;
-        // stroke: #FFFFFF;
+        stroke-dashoffset: 0;
       }
     }
-    // @keyframes fill1 {
-    //   from {
-    //     fill: #FFFFFF;
-    //   }
-    //   to {
-    //     fill: #E3FF39;
-    //   }
-    // }
+  }
+  &.less-animation-delay {
+    .yellow-line {
+      animation-delay: 1s;
+    }
   }
 }
 

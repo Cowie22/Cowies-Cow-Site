@@ -85,6 +85,7 @@ const RightContent = (props) => {
                       Keratinizing Squamous Cell Carcinoma
                     </p>
                     <CircleAnimation
+                      circleDelayClass='less-animation-delay'
                       image={
                         <svg width="188" height="188" viewBox="0 0 188 188" fill="none" xmlns="http://www.w3.org/2000/svg" ref={setRefs}>
                         <circle cx="94" cy="94" r="90" stroke="#997F8A" stroke-width="2"/>
@@ -101,6 +102,7 @@ const RightContent = (props) => {
                       Non-Keratinzizing Differentiated Carcinoma
                     </p>
                     <CircleAnimation
+                      circleDelayClass='less-animation-delay'
                       image={
                         <svg width="189" height="188" viewBox="0 0 189 188" fill="none" xmlns="http://www.w3.org/2000/svg" ref={setRefs2}>
                         <circle cx="94.5" cy="94" r="90" stroke="#997F8A" stroke-width="2"/>
@@ -117,6 +119,7 @@ const RightContent = (props) => {
                       Non-Keratinizing Undifferentiated Carcinoma
                     </p>
                     <CircleAnimation
+                      circleDelayClass='less-animation-delay'
                       image={
                         <svg width="188" height="188" viewBox="0 0 188 188" fill="none" xmlns="http://www.w3.org/2000/svg" ref={setRefs3}>
                         <circle cx="94" cy="94" r="90" stroke="#997F8A" stroke-width="2"/>
@@ -146,6 +149,7 @@ const RightContent = (props) => {
                 <Col lg={{span: 12, offset: 0}}>
                   <div className='home-slider-circle-container'>
                     <CircleAnimation
+                      circleDelayClass='less-animation-delay'
                       image={
                         <svg width="189" height="188" viewBox="0 0 189 188" fill="none" xmlns="http://www.w3.org/2000/svg" ref={setRefs4}>
                         <circle cx="94.5" cy="94" r="90" stroke="#997F8A" stroke-width="2"/>

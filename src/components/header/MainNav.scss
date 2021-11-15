@@ -11,6 +11,12 @@
     transition: all 1.2s;
     transition-delay: .2s;
   }
+  .header-logo-container {
+    img {
+      width: 65%;
+      height: auto;
+    }
+  }
   .header-nav-container {
     display: flex;
     justify-content: flex-end;

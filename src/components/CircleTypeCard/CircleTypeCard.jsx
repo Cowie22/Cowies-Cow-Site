@@ -15,6 +15,7 @@ const CircleTypeCard = (props) => {
     columns,
     list,
     delayClass,
+    circleDelayClass,
   } = data[0];
 
   const cardRef = useRef()
@@ -44,6 +45,7 @@ const CircleTypeCard = (props) => {
         <div className='circle-type-img-container'>
           <CircleAnimation 
             image={image}
+            circleDelayClass={circleDelayClass}
           />
         </div>
         <ul className='light-grey-ul'>

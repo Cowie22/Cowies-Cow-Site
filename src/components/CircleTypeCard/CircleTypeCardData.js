@@ -12,6 +12,7 @@ const CircleTypeCardData1 = [
       `Worse prognosis vs types 2 & 3`,
     ],
     delayClass: '',
+    circleDelayClass: '',
   }
 ]
 
@@ -26,6 +27,7 @@ const CircleTypeCardData2 = [
       <>Better prognosis than type <sup>1</sup></>,
     ],
     delayClass: 'animation-start-2',
+    circleDelayClass: '',
   }
 ]
 
@@ -41,6 +43,7 @@ const CircleTypeCardData3 = [
       `Most common worldwide`,
     ],
     delayClass: 'animation-start-3',
+    circleDelayClass: '',
   }
 ]
 

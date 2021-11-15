@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer'
 import CircleAnimation from '../CircleAnimation/CircleAnimation'
 
 const CircleRectangleCard = (props) => {
-  const { title, content, image, delayClass } = props;
+  const { title, content, image, delayClass, circleDelayClass } = props;
 
   const cardRef = useRef()
   const [cardView, cardInView] = useInView({triggerOnce: true});
@@ -35,6 +35,7 @@ const CircleRectangleCard = (props) => {
         <div className='circle-rectangle-img-container'>
           <CircleAnimation 
             image={image}
+            circleDelayClass={circleDelayClass}
           />
         </div>
       </div>
