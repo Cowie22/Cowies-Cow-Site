@@ -182,7 +182,7 @@
       padding: 32px 0;
     }
     .home-arrow-icon-container {
-      padding-bottom: 56px;
+      // padding-bottom: 56px;
     }
     .home-box-section {
       display: flex;
@@ -292,7 +292,10 @@
   }
   
   .home-cancer-section {
-    padding: 56px 0;
+    padding: 24px 0 16px 0;
+    .footnote-container {
+      padding-bottom: 40px;
+    }
     h2 {
       padding: 8px 0 16px 0;
     }

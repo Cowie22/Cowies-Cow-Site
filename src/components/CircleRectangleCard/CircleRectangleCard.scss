@@ -8,7 +8,6 @@
   transition: transform, opacity;
   transition-duration: .3s, .3s;
   &.active-card {
-    margin: 0;
     transform: translateY(0);
     opacity: 1;
     transition: transform, opacity;
@@ -37,6 +36,9 @@
     margin-bottom: 40px;
     .circle-rectangle-img-container {
       padding: 24px 0 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }

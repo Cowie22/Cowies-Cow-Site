@@ -21,7 +21,6 @@ const CircleRectangleCard = (props) => {
   return (
     <Col lg={{span: 6, offset: 0}} ref={setCardRef}>
       <div
-        // className='circle-rectangle-card-container'
         className={cardInView ? `circle-rectangle-card-container ${delayClass} active-card` : `circle-rectangle-card-container ${delayClass}`}
       >
         <div className='circle-rectangle-content-container'>

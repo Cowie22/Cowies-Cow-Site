@@ -6,7 +6,6 @@
   transition-duration: .3s, .3s;
   padding-bottom: 40px;
   &.active-card {
-    margin: 0;
     transform: translateX(0);
     opacity: 1;
     transition: transform, opacity;
@@ -48,8 +47,15 @@
   .home-slider-right-content-container {
     .home-slider-inner-container {
       padding: 32px;
+      height:  fit-content;
       h4 {
         padding-bottom: 0px;
+      }
+      &.right {
+        margin-top: 40px;
+        h4 {
+          padding-bottom: 32px;
+        }
       }
       .home-slider-circle-container {
         p {
