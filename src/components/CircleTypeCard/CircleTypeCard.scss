@@ -35,5 +35,10 @@
 @media only screen and (max-width: 992px) {
   .circle-type-card-container {
     padding-bottom: 36px;
+    .circle-type-img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

@@ -160,7 +160,7 @@ const AboutContent = (props) => {
               <p className='white home-lower-text'>
                 Other common symptoms include headaches, bleeding in the mouth and nose, difficulty breathing through the nose, hearing difficulty, and vision problems.<sup>1</sup>
               </p>
-              <img src={downArrow} alt='' className='d-none d-lg-block' />
+              <img src={downArrow} alt='' />
             </Col>
           </Row>
         </Container>
