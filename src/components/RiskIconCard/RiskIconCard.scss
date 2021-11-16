@@ -52,6 +52,12 @@
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .risk-icon-card-container {
+    &.animation-start-2 {
+      transition-delay: .7s, .7s;
+    }
+    &.animation-start-3 {
+      transition-delay: .7s, .7s;
+    }
     &.extra-card-padding {
       padding: 0 20px;
     }

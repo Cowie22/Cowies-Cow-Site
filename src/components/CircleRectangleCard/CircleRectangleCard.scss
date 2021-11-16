@@ -38,6 +38,9 @@
   .circle-rectangle-card-container {
     flex-direction: column;
     margin-bottom: 40px;
+    &.animation-start-2 {
+      transition-delay: .7s, .7s;
+    }
     .circle-rectangle-content-container {
       width: 100%;
     }
