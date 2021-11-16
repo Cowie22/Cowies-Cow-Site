@@ -138,11 +138,11 @@ const AboutContent = props => {
     <Layout canonicalURL='' title='' pageTitle='' description=''>
       <section
         className='about-container'
-        style={
-          width > 991
-            ? { backgroundImage: `url(${BGImg}), url(${BGImgFB})` }
-            : { backgroundImage: `url(${BGImgMobile}), url(${BGImgMobileFB})` }
-        }
+        // style={
+        //   width > 991
+        //     ? { backgroundImage: `url(${BGImg}), url(${BGImgFB})` }
+        //     : { backgroundImage: `url(${BGImgMobile}), url(${BGImgMobileFB})` }
+        // }
         title=''
       >
         <Container>

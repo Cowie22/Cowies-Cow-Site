@@ -16,14 +16,14 @@ import ToggleBTN from '../../components/ToggleBTN/ToggleBTN'
 import HomeSliderRightContent from '../../components/HomeSliderContent/RightContent/RightContent'
 import HomeSlideLeftContent from '../../components/HomeSliderContent/LeftContent/LeftContent'
 
-import BGImg from '../../assets/images/pages/home/home-bg-img-2X.webp'
-import BGImgFB from '../../assets/images/pages/home/home-bg-img-2X.png'
-import BGImgMobile from '../../assets/images/pages/home/home-bg-img-2X-mobile.webp'
-import BGImgMobileFB from '../../assets/images/pages/home/home-bg-img-2X-mobile.png'
-import TreatmentBGImg from '../../assets/images/pages/home/treatment-bg-img-2X.webp'
-import TreatmentBGImgFB from '../../assets/images/pages/home/treatment-bg-img-2X.png'
-import TreatmentBGImgMobile from '../../assets/images/pages/home/treatment-bg-img-2X-mobile.webp'
-import TreatmentBGImgMobileFB from '../../assets/images/pages/home/treatment-bg-img-2X-mobile.png'
+// import BGImg from '../../assets/images/pages/home/home-bg-img-2X.webp'
+// import BGImgFB from '../../assets/images/pages/home/home-bg-img-2X.png'
+// import BGImgMobile from '../../assets/images/pages/home/home-bg-img-2X-mobile.webp'
+// import BGImgMobileFB from '../../assets/images/pages/home/home-bg-img-2X-mobile.png'
+// import TreatmentBGImg from '../../assets/images/pages/home/treatment-bg-img-2X.webp'
+// import TreatmentBGImgFB from '../../assets/images/pages/home/treatment-bg-img-2X.png'
+// import TreatmentBGImgMobile from '../../assets/images/pages/home/treatment-bg-img-2X-mobile.webp'
+// import TreatmentBGImgMobileFB from '../../assets/images/pages/home/treatment-bg-img-2X-mobile.png'
 import downArrow from '../../assets/images/global/down-arrow-yellow.svg'
 
 const HomeContent = props => {
@@ -96,11 +96,11 @@ const HomeContent = props => {
     <Layout canonicalURL='' title='' pageTitle='' description=''>
       <section
         className='home-container'
-        style={
-          width > 991
-            ? { backgroundImage: `url(${BGImg}), url(${BGImgFB})` }
-            : { backgroundImage: `url(${BGImgMobile}), url(${BGImgMobileFB})` }
-        }
+        // style={
+        //   width > 991
+        //     ? { backgroundImage: `url(${BGImg}), url(${BGImgFB})` }
+        //     : { backgroundImage: `url(${BGImgMobile}), url(${BGImgMobileFB})` }
+        // }
         // title=''
       >
         <Container>
@@ -377,15 +377,15 @@ const HomeContent = props => {
       <div className='drive-to-container' id='treatment'></div>
       <section
         className='home-treatment-container'
-        style={
-          width > 991
-            ? {
-                backgroundImage: `url(${TreatmentBGImg}), url(${TreatmentBGImgFB})`,
-              }
-            : {
-                backgroundImage: `url(${TreatmentBGImgMobile}), url(${TreatmentBGImgMobileFB})`,
-              }
-        }
+        // style={
+        //   width > 991
+        //     ? {
+        //         backgroundImage: `url(${TreatmentBGImg}), url(${TreatmentBGImgFB})`,
+        //       }
+        //     : {
+        //         backgroundImage: `url(${TreatmentBGImgMobile}), url(${TreatmentBGImgMobileFB})`,
+        //       }
+        // }
         // title=''
       >
         <Container>
