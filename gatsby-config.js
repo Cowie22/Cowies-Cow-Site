@@ -5,7 +5,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
-    // `gatsby-plugin-minify`,
+    `gatsby-plugin-minify`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -21,12 +21,12 @@ module.exports = {
         defaultDataLayer: { platform: "gatsby" },
       },
     },
-    // {
-    //   resolve: 'gatsby-plugin-brotli',
-    //   options: {
-    //     extensions: ['css', 'html', 'js', 'svg', 'jsx', 'webp', 'scss', 'png', 'jpg']
-    //   }
-    // },
+    {
+      resolve: 'gatsby-plugin-brotli',
+      options: {
+        extensions: ['css', 'html', 'js', 'svg', 'jsx', 'webp', 'scss', 'png', 'jpg']
+      }
+    },
     {
       resolve: `gatsby-plugin-google-fonts-with-attributes`,
       options: {
