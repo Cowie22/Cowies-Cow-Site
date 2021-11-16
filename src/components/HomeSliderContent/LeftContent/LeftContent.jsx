@@ -60,16 +60,11 @@ const LeftContent = (props) => {
     <Col lg={{span: 12, offset: 0}}>
       <div
         ref={setCardRef}
-        // className='home-slider-left-content-container'
         className={cardInView ? 'home-slider-left-content-container active-card' : 'home-slider-left-content-container'}
       >
         <Row>
           <Col lg={{span: 9, offset: 0}}>
-            <div
-              className='home-slider-inner-container left'
-              // className={cardInView ? 'home-slider-inner-container left active-card' : 'home-slider-inner-container left'}
-              // ref={setCardRef}
-            >
+            <div className='home-slider-inner-container left'>
               <p className='white text-center bolder'>
                 NON-HISPANIC WHITE
               </p>
@@ -132,11 +127,7 @@ const LeftContent = (props) => {
             </div>
           </Col>
           <Col lg={{span: 3, offset: 0}}>
-            <div
-              className='home-slider-inner-container right'
-              // className={cardInView2 ? 'home-slider-inner-container right active-card' : 'home-slider-inner-container right'}
-              // ref={setCardRef2}
-            >
+            <div className='home-slider-inner-container right'>
               <p className='white text-center bolder'>
                 NON-HISPANIC WHITE
               </p>
