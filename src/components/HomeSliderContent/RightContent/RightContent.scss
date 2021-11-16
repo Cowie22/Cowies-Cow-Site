@@ -46,13 +46,6 @@
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  .home-slider-right-content-container {
-    .home-slider-inner-container {
-      height: 468px;
-    }
-  }
-}
 
 @media screen and (max-width: 992px) {
   .home-slider-right-content-container {
@@ -73,6 +66,15 @@
           padding: 40px 0 24px 0;
         }
       }
+    }
+  }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .home-slider-right-content-container {
+    .home-slider-inner-container {
+      height: 468px;
     }
   }
 }
