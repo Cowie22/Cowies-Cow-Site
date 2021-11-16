@@ -169,8 +169,15 @@
 @media screen and (max-width: 992px) {
   .home-container {
     padding: 144px 0 0px 0;
+    height: 1078px;
+    h1 {
+      padding-bottom: 40px;
+    }
     .home-lower-text {
-      padding: 8px 0 24px 0;
+      padding: 32px 0;
+    }
+    .home-arrow-icon-container {
+      padding-bottom: 56px;
     }
     .home-box-section {
       display: flex;
@@ -182,15 +189,16 @@
           width: 34%;
           background: #D8D6E3;
           &:first-of-type {
-            margin-bottom: 24px;
+            margin-bottom: 16px;
           }
           &:last-of-type {
-            margin: 24px 0 72px 0;
+            margin: 16px 0 72px 0;
           }
         }
       }
       .home-box-container {
         display: flex;
+        padding-bottom: 52px;
         .home-box {
           padding: 12px 8px;
           max-height: 98px;

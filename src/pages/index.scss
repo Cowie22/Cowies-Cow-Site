@@ -43,7 +43,6 @@ html {
   font-size: 50%;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  width: 100vw;
 }
 
 body {
@@ -51,7 +50,7 @@ body {
   font-size: 2rem;
   color: #333333;
   overflow-x: hidden;
-  width: 100vw;
+  margin: 0;
   &.scroll-none {
     overflow: hidden;
   }

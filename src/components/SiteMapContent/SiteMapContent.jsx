@@ -20,26 +20,12 @@ const SiteMapContent = (props) => {
   }, []);
 
   return (
-    <Layout>
-      {/* <HeaderHero
-        title={
-          <>
-            Site Map
-          </>
-        }
-        columns={{span: 12}}
-      /> */}
-      {/* <section className='sitemap-container'>
-        <Container>
-          <Row>
-            <Col lg={{span: 12}}>
-              <h1 className='white'>
-                Site Map
-              </h1>
-            </Col>
-          </Row>
-        </Container>
-      </section> */}
+    <Layout
+      canonicalURL=''
+      title=''
+      pageTitle=''
+      description=''
+    >
       <section className='sitemap-list-container'>
         <Container>
           <Row>

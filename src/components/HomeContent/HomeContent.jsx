@@ -19,7 +19,6 @@ import TreatmentBGImgFB from '../../assets/images/pages/home/treatment-bg-img-2X
 import TreatmentBGImgMobile from '../../assets/images/pages/home/treatment-bg-img-2X-mobile.webp'
 import TreatmentBGImgMobileFB from '../../assets/images/pages/home/treatment-bg-img-2X-mobile.png'
 import downArrow from '../../assets/images/global/down-arrow-yellow.svg'
-import boxArrowIcon from '../../assets/images/pages/home/box-arrow-icon.svg'
 
 const HomeContent = (props) => {
   const [width, handleWidth] = useState(0);
@@ -89,10 +88,10 @@ const HomeContent = (props) => {
 
   return (
     <Layout
-      canonicalURL='https://www.myfembreehcp.com/'
-      title='Myfembree® (relugolix, estradiol, and norethindrone acetate) Tablets HCP Site'
-      pageTitle='Myfembree® (relugolix, estradiol, and norethindrone acetate) Tablets HCP Site'
-      description='Visit the HCP website for more information about Myfembree® tablets for oral use. See benefits & risks, including BOXED WARNING.'
+      canonicalURL=''
+      title=''
+      pageTitle=''
+      description=''
     >
       <section
         className='home-container'
@@ -101,11 +100,11 @@ const HomeContent = (props) => {
           {backgroundImage: `url(${BGImg}), url(${BGImgFB})`} :
           {backgroundImage: `url(${BGImgMobile}), url(${BGImgMobileFB})`}
         }
-        title=''
+        // title=''
       >
         <Container>
           <Row>
-            <Col lg={{span: 4, offset: 0}} xs={{span: 11, offset: 0}}>
+            <Col lg={{span: 4, offset: 0}} xs={{span: 12, offset: 0}}>
               <h3 className='white'>
                 NASOPHARYNGEAL CARCINOMA:
               </h3>
@@ -122,7 +121,9 @@ const HomeContent = (props) => {
               <p className='white home-lower-text'>
                 Explore the facts below.
               </p>
-              <img src={downArrow} alt='' className='d-none d-lg-block'  />
+              <div className='home-arrow-icon-container'>
+                <img src={downArrow} alt='' />
+              </div>
             </Col>
             <Col lg={{span: 7, offset: 1, order: 2}} xs={{span: 9, offset: 3, order: 1}}>
               <div
@@ -323,7 +324,7 @@ const HomeContent = (props) => {
           {backgroundImage: `url(${TreatmentBGImg}), url(${TreatmentBGImgFB})`} :
           {backgroundImage: `url(${TreatmentBGImgMobile}), url(${TreatmentBGImgMobileFB})`}
         }
-        title=''
+        // title=''
       >
         <Container>
           <Row>

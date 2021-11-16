@@ -19,7 +19,12 @@ const FourOhFourContent = (props) => {
   }, []);
 
   return (
-    <Layout>
+    <Layout
+      canonicalURL=''
+      title=''
+      pageTitle=''
+      description=''
+    >
       <section className='error-container'>
         <Container>
           <Row>

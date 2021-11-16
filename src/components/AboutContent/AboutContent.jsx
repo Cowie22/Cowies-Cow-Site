@@ -131,10 +131,10 @@ const AboutContent = (props) => {
 
   return (
     <Layout
-      canonicalURL='https://www.myfembreehcp.com/resources/'
-      title='HCP Resources | Myfembree® (relugolix, estradiol, and norethindrone acetate) Tablets'
-      pageTitle='HCP Resources | Myfembree® (relugolix, estradiol, and norethindrone acetate) Tablets'
-      description='Find downloadable resources for the Myfembree® Support Program including a program enrollment form and a patient consent form. See benefits&risks&BOXED WARNING.'
+      canonicalURL=''
+      title=''
+      pageTitle=''
+      description=''
     >
       <section
         className='about-container'
