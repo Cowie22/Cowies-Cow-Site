@@ -114,13 +114,16 @@
 }
 
 .home-cancer-section {
-  padding: 96px 0;
+  padding: 24px 0 96px 0;
   background: #C1C7C8;
+  .footnote-container {
+    padding-bottom: 72px;
+  }
   h2 {
-    padding: 16px 0;
+    padding: 8px 0 16px 0;
   }
   .home-cancer-card-section {
-    padding: 40px 0;
+    padding: 40px 0 0 0;
   }
 }
 
@@ -139,41 +142,26 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 80px 0;
+  padding: 96px 0;
   h2 {
     padding-bottom: 40px;
   }
-  .treatment-box-image-container {
-
+  h3 {
+    padding-bottom: 80px;
   }
-  .treatment-box-content-container {
-    p {
-      &:nth-of-type(2) {
-        padding-top: 40px;
-      }
-    }
-  }
-  .home-treatment-lower-container {
-    p {
-      padding: 32px 0 48px 0;
-    }
-    .cta-btn-container {
-      transform: translateY(20%);
-      opacity: 0;
+  .cta-btn-container {
+    transform: translateY(20%);
+    opacity: 0;
+    transition: transform, opacity;
+    transition-duration: .3s, .3s;
+    &.active-card {
+      margin: 0;
+      transform: translateY(0);
+      opacity: 1;
       transition: transform, opacity;
-      transition-duration: .3s, .3s;
-      &.active-card {
-        margin: 0;
-        transform: translateY(0);
-        opacity: 1;
-        transition: transform, opacity;
-        transition-delay: .7s, .7s;
-        transition-duration: .7s, .7s;
-        transform-origin: bottom;
-      }
-    }
-    h6 {
-      padding-top: 40px;
+      transition-delay: .7s, .7s;
+      transition-duration: .7s, .7s;
+      transform-origin: bottom;
     }
   }
 }

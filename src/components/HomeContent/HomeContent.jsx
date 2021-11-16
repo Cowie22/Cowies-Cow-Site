@@ -210,6 +210,24 @@ const HomeContent = (props) => {
         <Container>
           <Row>
             <Col lg={{span: 12, offset: 0}}>
+              <div className='footnote-container'>
+                <h6 className='dark-grey'>
+                  *Results from a multicenter, randomized, open-label phase 3 trial of patients with recurrent or metastatic nasopharyngeal carcinoma (N=362).
+                </h6>
+                <h6 className='dark-grey'>
+                  †Results from a retrospective analysis of patients with HPV-positive and HPV-negative recurrent locoregional and distant metastatic oropharyngeal cancer (N=108).
+                </h6>
+                <h6 className='dark-grey'>
+                  ‡Results from a retrospective study of patients with locally advanced and recurrent/metastatic oral cancer treated with cetuximab therapy (N=21).
+                </h6>
+                <h6 className='dark-grey'>
+                  §Results from a retrospective study of patients with laryngeal squamous cell carcinoma (N=211).
+                </h6>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={{span: 12, offset: 0}}>
               <p className='dark-grey bolder'>
                 NASOPHARYNGEAL CARCINOMA (NPC):
               </p>
@@ -260,24 +278,6 @@ const HomeContent = (props) => {
               />
             </Row>
           </div>
-          <Row>
-            <Col>
-              <div className='footnote-container'>
-                <h6 className='dark-grey'>
-                  *Results from a multicenter, randomized, open-label phase 3 trial of patients with recurrent or metastatic nasopharyngeal carcinoma (N=362).
-                </h6>
-                <h6 className='dark-grey'>
-                  †Results from a retrospective analysis of patients with HPV-positive and HPV-negative recurrent locoregional and distant metastatic oropharyngeal cancer (N=108).
-                </h6>
-                <h6 className='dark-grey'>
-                  ‡Results from a retrospective study of patients with locally advanced and recurrent/metastatic oral cancer treated with cetuximab therapy (N=21).
-                </h6>
-                <h6 className='dark-grey'>
-                  §Results from a retrospective study of patients with laryngeal squamous cell carcinoma (N=211).
-                </h6>
-              </div>
-            </Col>
-          </Row>
         </Container>
       </section>
 
@@ -329,51 +329,24 @@ const HomeContent = (props) => {
           <Row>
             <Col lg={{span: 12, offset: 0}}>
               <Row>
-                <Col lg={{span: 6, offset: 0}}>
-                  <h2 className='dark-grey'>
-                    Current treatment options in R/M NPC are limited.
+                <Col lg={{span: 5, offset: 0}}>
+                  <h2>
+                    Effective treatment options are limited.
                   </h2>
-                </Col>
-              </Row>
-              <Row>
-                <Col lg={{span: 2, offset: 0}} xs={{span: 3, offset: 0}}>
-                  <div className='treatment-box-image-container'>
-                    <img src={boxArrowIcon} alt='' />
-                  </div>
-                </Col>
-                <Col lg={{span: 5, offset: 0}} xs={{span: 9, offset: 0}}>
-                  <div className='treatment-box-content-container'>
-                    <p>
-                      Standard of care chemotherapy (gemcitabine/cisplatin) is unique to NPC and was established <span className='extra-bold'>in a single phase 3 trial in 2016</span><sup>1,5</sup>
-                    </p>
-                    <p>
-                      <span className='extra-bold'>Still no FDA-approved treatments</span>, including I/O agents <br />
-                      <span className='extra-bold'>Still no PREFERRED I/O treatments</span> in NCCN® Guidelines
-                    </p>
-                  </div>
-                </Col>
-              </Row>
-              <Row>
-                <Col lg={{span: 6, offset: 0}}>
-                  <div className='home-treatment-lower-container'>
-                    <p className='bolder'>
-                      Current NCCN Guidelines only recommend 2 PD-1 inhibitors for 2nd line R/M NPC based on Category 2B evidence<sup>5</sup>
-                    </p>
-                    <div
-                      className={boxInView2 ? `cta-btn-container active-card` : `cta-btn-container`}
-                      ref={setBoxRef2}
+                  <h3>
+                    Despite the standard of care with gemcitabine/cisplatin, outcomes are still suboptimal.
+                  </h3>
+                  <div
+                    className={boxInView2 ? `cta-btn-container active-card` : `cta-btn-container`}
+                    ref={setBoxRef2}
+                  >
+                    <Link
+                      to={'/about/'}
                     >
-                      <Link
-                        to={'/about/'}
-                      >
-                        <button className='cta-btn dark-grey-btn'>
-                          Learn more about this distinct cancer
-                        </button>
-                      </Link>
-                    </div>
-                    <h6>
-                      NCCN = National Comprehensive Cancer Network.
-                    </h6>
+                      <button className='cta-btn dark-grey-btn'>
+                        Learn more about this distinct cancer
+                      </button>
+                    </Link>
                   </div>
                 </Col>
               </Row>
