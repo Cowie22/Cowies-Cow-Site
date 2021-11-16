@@ -126,7 +126,6 @@ const HomeContent = (props) => {
             </Col>
             <Col lg={{span: 7, offset: 1, order: 2}} xs={{span: 9, offset: 3, order: 1}}>
               <div
-                // className='home-box-section'
                 ref={setBoxRef}
                 className={boxInView ? 'home-box-section active-box' : 'home-box-section'}
               >
@@ -180,21 +179,23 @@ const HomeContent = (props) => {
                       <p className='white bolder'>
                         METASTATIC OROPHARYNGEAL<sup>2†</sup>
                       </p>
-                      <div className='home-box-percent-container'>
-                        <h2 className='white'>
-                          76%
-                        </h2>
-                        <p className='white'>
-                          HPV+
-                        </p>
-                      </div>
-                      <div className='home-box-percent-container'>
-                        <h2 className='white'>
-                          39%
-                        </h2>
-                        <p className='white'>
-                          HPV-
-                        </p>
+                      <div className='home-box-right-inner-container'>
+                        <div className='home-box-percent-container'>
+                          <h2 className='white'>
+                            76%
+                          </h2>
+                          <p className='white'>
+                            HPV+
+                          </p>
+                        </div>
+                        <div className='home-box-percent-container'>
+                          <h2 className='white'>
+                            39%
+                          </h2>
+                          <p className='white'>
+                            HPV-
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>

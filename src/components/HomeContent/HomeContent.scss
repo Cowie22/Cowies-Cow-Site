@@ -60,7 +60,7 @@
           align-items: flex-end;
           h2 {
             padding-right: 8px;
-            font-weight: 600;
+            font-weight: 500;
           }
           p {
             text-transform: uppercase;
@@ -87,6 +87,26 @@
       .home-box-right-container {
         .home-box {
           max-width: 182px;
+          padding: 22px 8px;
+          .home-box-right-inner-container {
+            display: flex;
+            .home-box-percent-container {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: flex-start;
+              h2 {
+                font-weight: 500;
+                padding-right: 16px;
+                padding-top: 4px;
+              }
+              &:last-of-type {
+                h2 {
+                  padding-right: 0px;
+                }
+              }
+            }
+          }
         }
       }
     }
