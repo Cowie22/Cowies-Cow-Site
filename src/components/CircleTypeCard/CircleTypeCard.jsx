@@ -29,7 +29,7 @@ const CircleTypeCard = (props) => {
   );
   
   return (
-    <Col lg={columns} ref={setCardRef}>
+    <Col lg={columns} ref={setCardRef} className='circle-type-card-col'>
       <div
         // className='circle-type-card-container'
         className={cardInView ? `circle-type-card-container ${delayClass} active-card` : `circle-type-card-container ${delayClass}`}
