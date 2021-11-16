@@ -1,5 +1,9 @@
 
 .circle-animation-img-container {
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
   .full-circle-line {
     stroke: #997F8A;
     stroke-dasharray: 820;

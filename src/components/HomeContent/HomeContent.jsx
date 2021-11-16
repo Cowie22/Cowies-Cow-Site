@@ -125,7 +125,11 @@ const HomeContent = (props) => {
                 <img src={downArrow} alt='' />
               </div>
             </Col>
-            <Col lg={{span: 7, offset: 1, order: 2}} xs={{span: 9, offset: 3, order: 1}}>
+            <Col
+              xl={{span: 7, offset: 1, order: 2}}
+              lg={{span: 8, offset: 0, order: 2}}
+              xs={{span: 9, offset: 3, order: 1}}
+            >
               <div
                 ref={setBoxRef}
                 className={boxInView ? 'home-box-section active-box' : 'home-box-section'}

@@ -7,6 +7,7 @@
   opacity: 0;
   transition: transform, opacity;
   transition-duration: .3s, .3s;
+  width: 100%;
   &.active-card {
     transform: translateY(0);
     opacity: 1;
@@ -19,6 +20,7 @@
     transition-delay: 1.2s, 1.2s;
   }
   .circle-rectangle-content-container {
+    width: 60%;
     p {
       &:first-of-type {
         padding-bottom: 16px;
@@ -27,6 +29,13 @@
   }
   .circle-rectangle-img-container {
     padding-left: 16px;
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .circle-rectangle-card-container {
+    min-height: 272px;
   }
 }
 
@@ -34,7 +43,11 @@
   .circle-rectangle-card-container {
     flex-direction: column;
     margin-bottom: 40px;
+    .circle-rectangle-content-container {
+      width: 100%;
+    }
     .circle-rectangle-img-container {
+      width: 100%;
       padding: 24px 0 0 0;
       display: flex;
       justify-content: center;

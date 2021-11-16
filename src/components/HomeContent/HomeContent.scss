@@ -170,6 +170,20 @@
   }
 }
 
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .home-container {
+    .home-box-section {
+      .home-box-section-title-container {
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+
+  .home-treatment-container {
+    background-position: 70% 50%;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .home-container {
     padding: 144px 0 0px 0;

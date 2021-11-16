@@ -29,16 +29,28 @@
       align-items: center;
     }
     &.left {
-
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
     }
     .home-slider-circle-container {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      height: 100%;
       p {
         padding-bottom: 24px;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .home-slider-left-content-container {
+    .home-slider-inner-container {
+      height: 468px;
     }
   }
 }
