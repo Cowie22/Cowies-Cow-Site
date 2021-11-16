@@ -11,36 +11,31 @@ export default () => (
       <Row>
         <Col lg={{ span: 12, offset: 0 }}>
           <Row>
-            <Col lg={{ span: 9, offset: 0, order: 1 }} xs={{ span: 12, offset: 0, order: 2 }}>
+            <Col
+              lg={{ span: 9, offset: 0, order: 1 }}
+              xs={{ span: 12, offset: 0, order: 2 }}
+            >
               <nav className='footer-nav-container'>
-                <a
-                  href=''
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
+                <a href='' target='_blank' rel='noopener noreferrer'>
                   <img src={arrowRight} alt='' />
-                  <h6 className='white bolder'>
-                    Contact Us
-                  </h6>
+                  <h6 className='white bolder'>Contact Us</h6>
                 </a>
-                <a
-                  href=''
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
+                <a href='' target='_blank' rel='noopener noreferrer'>
                   <img src={arrowRight} alt='' />
-                  <h6 className='white bolder'>
-                    Privacy Policy
-                  </h6>
+                  <h6 className='white bolder'>Privacy Policy</h6>
                 </a>
               </nav>
               <div className='footer-text-container'>
                 <h6 className='white'>
-                  © 2021 Coherus BioSciences, Inc. All rights reserved. 1021-IO-P031
+                  © 2021 Coherus BioSciences, Inc. All rights reserved.
+                  1021-IO-P031
                 </h6>
               </div>
             </Col>
-            <Col lg={{ span: 2, offset: 1, order: 2 }} xs={{ span: 6, offset: 3, order: 1 }}>
+            <Col
+              lg={{ span: 2, offset: 1, order: 2 }}
+              xs={{ span: 6, offset: 3, order: 1 }}
+            >
               <div className='footer-logo-container'>
                 <img src={footerLogo} alt='' />
               </div>

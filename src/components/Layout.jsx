@@ -13,32 +13,31 @@ import ExitRamp from '../components/exitramp/ExitRamp'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../pages/index.scss'
 
-const Layout = ({ children, title, pageTitle, description, canonicalURL, preLoadImg }) => {
-  const [hovered, handleHovered] = useState(false);
-  const [yDirection, handleYDirection] = useState(0);
-  const [width, handleWidth] = useState(0);
-  const state = useContext(AppContext);
-  const { references, currentPage } = state;
+const Layout = ({ children, title, pageTitle, description, canonicalURL }) => {
+  const [yDirection, handleYDirection] = useState(0)
+  const [width, handleWidth] = useState(0)
+  const state = useContext(AppContext)
+  const { references, currentPage } = state
 
-  const mounted = useRef(false);
+  const mounted = useRef(false)
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    updateWindowDimensions();
-    window.addEventListener('resize', updateWindowDimensions, { passive: true });
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    updateWindowDimensions()
+    window.addEventListener('resize', updateWindowDimensions, { passive: true })
 
     return function cleanUp() {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', updateWindowDimensions);
+      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('resize', updateWindowDimensions)
     }
   }, [])
 
   const handleScroll = () => {
-    let currentY = window.pageYOffset;
-    handleYDirection(currentY);
+    let currentY = window.pageYOffset
+    handleYDirection(currentY)
   }
 
   const updateWindowDimensions = () => {
-    handleWidth(window.innerWidth);
+    handleWidth(window.innerWidth)
   }
 
   return (

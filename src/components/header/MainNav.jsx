@@ -7,14 +7,11 @@ import logo from '../../assets/images/global/header-logo.svg'
 
 const MainNav = props => {
   const [isNavOpen, handleIsNavOpen] = useState(false)
-  const [yDirection, handleYDirection] = useState(0);
+  const [yDirection, handleYDirection] = useState(0)
   const [currentTabHovered, handleCurrentTabHovered] = useState('')
 
-  const state = useContext(AppContext);
-  const {
-    currentPage,
-    handleCurrentPage,
-  } = state;
+  const state = useContext(AppContext)
+  const { currentPage, handleCurrentPage } = state
 
   const toggleNav = () => {
     handleIsNavOpen(!isNavOpen)
@@ -27,32 +24,26 @@ const MainNav = props => {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return function cleanUp() {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
   const handleScroll = () => {
-    let currentY = window.pageYOffset;
-    handleYDirection(currentY);
+    let currentY = window.pageYOffset
+    handleYDirection(currentY)
   }
 
   return (
     <>
-      <section
-        className={yDirection > 0 ? 'main-nav dark-nav' : 'main-nav'}
-      >
+      <section className={yDirection > 0 ? 'main-nav dark-nav' : 'main-nav'}>
         <Container>
           <Row>
             <Col lg={2} xs={3}>
               <div className='header-logo-container'>
                 <Link to='/'>
-                  <img
-                    loading='lazy'
-                    alt=''
-                    src={logo}
-                  />
+                  <img loading='lazy' alt='' src={logo} />
                 </Link>
               </div>
             </Col>
@@ -68,9 +59,7 @@ const MainNav = props => {
                       handleCurrentTabHovered('')
                     }}
                   >
-                    <li>
-                      HOME
-                    </li>
+                    <li>HOME</li>
                   </Link>
                   <div
                     className={
@@ -105,9 +94,7 @@ const MainNav = props => {
                       handleCurrentTabHovered('')
                     }}
                   >
-                    <li>
-                      ABOUT NPC
-                    </li>
+                    <li>ABOUT NPC</li>
                   </Link>
                 </ul>
               </nav>

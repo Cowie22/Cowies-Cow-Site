@@ -1,53 +1,47 @@
-import React, { useState, useEffect, useContext, useRef, useCallback  } from 'react'
+import React, {
+  useState,
+  useEffect,
+  useContext,
+  useRef,
+  useCallback,
+} from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 import { useInView } from 'react-intersection-observer'
 
-const RiskIconCard = (props) => {
+const RiskIconCard = props => {
+  const { data } = props
 
-  const { data } = props;
-
-  const {
-    title,
-    icon,
-    columns,
-    list,
-    paddingClass,
-    delayClass,
-  } = data[0];
+  const { title, icon, columns, list, paddingClass, delayClass } = data[0]
 
   const cardRef = useRef()
-  const [cardView, cardInView] = useInView({triggerOnce: true});
+  const [cardView, cardInView] = useInView({ triggerOnce: true })
   const setCardRef = useCallback(
-    (node) => {
-      cardRef.current = node;
-      cardView(node);
+    node => {
+      cardRef.current = node
+      cardView(node)
     },
-    [cardView],
-  );
-  
+    [cardView]
+  )
+
   return (
     <Col lg={columns} ref={setCardRef}>
       <div
         // className={`risk-icon-card-container ${paddingClass}`}
-        className={cardInView ? `risk-icon-card-container ${paddingClass} ${delayClass} active-card` : `risk-icon-card-container ${paddingClass} ${delayClass}`}
+        className={
+          cardInView
+            ? `risk-icon-card-container ${paddingClass} ${delayClass} active-card`
+            : `risk-icon-card-container ${paddingClass} ${delayClass}`
+        }
       >
         <div className='risk-icon-icon-container'>
           <img src={icon} alt='' />
-          <p className='text-center bolder'>
-            {title}
-          </p>
+          <p className='text-center bolder'>{title}</p>
         </div>
         <ul className='dark-grey-ul risk-icon-ul'>
-          {
-            list.map((item, i) => {
-              return (
-                <li key={i}>
-                  {item}
-                </li>
-              )
-            })
-          }
+          {list.map((item, i) => {
+            return <li key={i}>{item}</li>
+          })}
         </ul>
       </div>
     </Col>

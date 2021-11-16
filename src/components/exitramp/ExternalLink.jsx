@@ -1,6 +1,6 @@
-import React, { useContext } from "react"
-import PropTypes from "prop-types"
-import { AppContext } from "../../contexts/state"
+import React, { useContext } from 'react'
+import PropTypes from 'prop-types'
+import { AppContext } from '../../contexts/state'
 
 const ExternalLink = ({ children, externalUrl, className, id }) => {
   const state = useContext(AppContext)
