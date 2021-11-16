@@ -115,14 +115,16 @@ const HomeContent = (props) => {
           </Row>
           <Row>
             <Col lg={{span: 4, offset: 0, order: 1}} xs={{span: 12, offset: 0, order: 2}}>
-              <p className='white'>
-                Nasopharyngeal carcinoma (NPC) is a distinct cancer with a unique etiology and prognosis. Key data highlight the poor outcomes of patients with recurrent/metastatic nasopharyngeal carcinoma (R/M NPC).
-              </p>
-              <p className='white home-lower-text'>
-                Explore the facts below.
-              </p>
-              <div className='home-arrow-icon-container'>
-                <img src={downArrow} alt='' />
+              <div className='home-hero-lower-content-container'>
+                <p className='white'>
+                  Nasopharyngeal carcinoma (NPC) is a distinct cancer with a unique etiology and prognosis. Key data highlight the poor outcomes of patients with recurrent/metastatic nasopharyngeal carcinoma (R/M NPC).
+                </p>
+                <p className='white home-lower-text'>
+                  Explore the facts below.
+                </p>
+                <div className='home-arrow-icon-container'>
+                  <img src={downArrow} alt='' />
+                </div>
               </div>
             </Col>
             <Col
@@ -142,7 +144,7 @@ const HomeContent = (props) => {
                     HEAD AND NECK CANCERS
                   </p>
                   <h4 className='gold'>
-                    1&#8209;YEAR <br /> PROGRESSION&#8209;FREE SURVIVAL
+                    1&#8209;YEAR <br /> PROGRESSION&#8209;FREE <br /> SURVIVAL
                   </h4>
                   <div className='home-box-title-border'>
 

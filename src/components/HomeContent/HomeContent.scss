@@ -12,8 +12,10 @@
   h1 {
     padding-bottom: 32px;
   }
-  .home-lower-text {
-    padding: 32px 0 40px 0;
+  .home-hero-lower-content-container {
+    .home-lower-text {
+      padding: 32px 0 40px 0;
+    }
   }
   .home-box-section {
     display: flex;
@@ -33,6 +35,7 @@
       transform-origin: bottom;
     }
     .home-box-section-title-container {
+      padding-right: 16px;
       .home-box-title-border {
         height: 2px;
         width: 34%;
@@ -172,17 +175,26 @@
 
 @media screen and (max-width: 992px) {
   .home-container {
-    padding: 144px 0 0px 0;
-    background-position: bottom;
-    height: 1078px;
+    padding: 164px 0 0px 0;
+    background-position: 20% 10%;
+    height: 1140px;
+    // height: fit-content;
     h1 {
       padding-bottom: 40px;
     }
-    .home-lower-text {
-      padding: 32px 0;
-    }
-    .home-arrow-icon-container {
-      // padding-bottom: 56px;
+    .home-hero-lower-content-container {
+      padding-top: 95px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+      height: 100%;
+      .home-lower-text {
+        padding: 32px 0;
+      }
+      .home-arrow-icon-container {
+        // padding-bottom: 86px;
+      }
     }
     .home-box-section {
       display: flex;
@@ -200,13 +212,13 @@
             margin-bottom: 24px;
           }
           &:last-of-type {
-            margin: 24px 0 72px 0;
+            margin: 24px 0 82px 0;
           }
         }
       }
       .home-box-container {
         display: flex;
-        padding-bottom: 72px;
+        // margin-bottom: 56px;
         .home-box {
           padding: 12px 8px;
           max-height: 98px;
@@ -345,10 +357,12 @@
   }
 }
 
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .home-container {
     .home-box-section {
       .home-box-section-title-container {
+        padding: 0;
         margin: 0 10px 0 0;
       }
     }
@@ -356,5 +370,30 @@
 
   .home-treatment-container {
     background-position: 70% 50%;
+  }
+}
+
+
+@media screen and (min-width: 525px) and (max-width: 768px) {
+  .home-container {
+    padding: 220px 0 0px 0;
+    background-position: 50% 75%;
+    height: fit-content;
+    .home-hero-lower-content-container {
+      padding-top: 95px;
+      .home-arrow-icon-container {
+        padding-bottom: 56px;
+      }
+    }
+    .home-box-section {
+      .home-box-container {
+        padding-bottom: 280px;
+      }
+    }
+  }
+
+  .home-treatment-container {
+    padding: 800px 0 56px 0;
+    background-position: 50% 18%;
   }
 }
