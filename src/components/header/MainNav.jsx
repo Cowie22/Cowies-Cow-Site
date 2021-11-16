@@ -41,11 +41,11 @@ const MainNav = props => {
   return (
     <>
       <section
-        className={yDirection > 0 ? 'main-nav dark-nav d-none d-lg-block' : 'main-nav d-none d-lg-block'}
+        className={yDirection > 0 ? 'main-nav dark-nav' : 'main-nav'}
       >
         <Container>
           <Row>
-            <Col lg={2} xs={6}>
+            <Col lg={2} xs={3}>
               <div className='header-logo-container'>
                 <Link to='/'>
                   <img
@@ -56,7 +56,7 @@ const MainNav = props => {
                 </Link>
               </div>
             </Col>
-            <Col lg={{ span: 4, offset: 6 }}>
+            <Col lg={{ span: 4, offset: 6 }} xs={{ span: 8, offset: 1 }}>
               <nav className='header-nav-container'>
                 <ul>
                   <Link
@@ -130,7 +130,7 @@ const MainNav = props => {
         </Container>
       </section>
 
-      <section
+      {/* <section
         className={
           yDirection > 0 || isNavOpen ? 'header-section-mobile dark-nav d-block d-lg-none' :
           'header-section-mobile d-block d-lg-none'
@@ -246,7 +246,7 @@ const MainNav = props => {
             </Col>
           </Row>
         </Container>
-      </section>
+      </section> */}
     </>
   )
 }

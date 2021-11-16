@@ -42,12 +42,16 @@ html {
   // and spacing (margin/padding)
   font-size: 50%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 body {
   font-family: $barlow;
   font-size: 2rem;
   color: #333333;
+  overflow-x: hidden;
+  width: 100vw;
   &.scroll-none {
     overflow: hidden;
   }
