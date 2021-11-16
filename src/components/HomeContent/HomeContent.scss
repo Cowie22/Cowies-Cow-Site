@@ -55,6 +55,10 @@
         backdrop-filter: blur(20px);
         max-height: 164px;
         margin-bottom: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         .home-box-percent-container {
           display: flex;
           align-items: flex-end;
@@ -169,6 +173,7 @@
 @media screen and (max-width: 992px) {
   .home-container {
     padding: 144px 0 0px 0;
+    background-position: bottom;
     height: 1078px;
     h1 {
       padding-bottom: 40px;
@@ -184,21 +189,24 @@
       flex-direction: column;
       margin-bottom: 100px;
       .home-box-section-title-container {
+        h4 {
+          padding-right: 16px;
+        }
         .home-box-title-border {
           height: 2px;
           width: 34%;
           background: #D8D6E3;
           &:first-of-type {
-            margin-bottom: 16px;
+            margin-bottom: 24px;
           }
           &:last-of-type {
-            margin: 16px 0 72px 0;
+            margin: 24px 0 72px 0;
           }
         }
       }
       .home-box-container {
         display: flex;
-        padding-bottom: 52px;
+        padding-bottom: 72px;
         .home-box {
           padding: 12px 8px;
           max-height: 98px;
@@ -207,8 +215,10 @@
             display: flex;
             align-items: flex-end;
             h2 {
+              font-size: 24px;
+              line-height: 100%;
               padding-right: 8px;
-              font-weight: 600;
+              font-weight: 500;
             }
             p {
               text-transform: uppercase;
@@ -222,6 +232,7 @@
           .home-box {
             margin-right: 4px;
             width: 138px;
+            min-height: 64px;
             &.gold-box {
               border: 6px solid #E3FF39;
             }
@@ -231,9 +242,9 @@
               padding-bottom: 4px;
             }
             h2 {
-              font-size: 18px;
+              font-size: 24px;
               line-height: 100%;
-              padding-bottom: 4px;
+              // padding-bottom: 4px;
             }
             p {
               font-size: 10px;
@@ -246,17 +257,33 @@
         }
         .home-box-right-container {
           .home-box {
+            padding: 7px;
             width: 108px;
             height: 98px;
-            h2 {
-              font-size: 18px;
-              line-height: 100%;
-              padding-bottom: 4px;
-            }
             p {
               font-size: 10px;
               line-height: 14px;
               padding-bottom: 4px;
+            }
+            .home-box-right-inner-container {
+              display: flex;
+              .home-box-percent-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                h2 {
+                  font-size: 24px;
+                  line-height: 100%;
+                  // padding-bottom: 4px;
+                  padding-right: 8px;
+                  &:last-of-type {
+                    h2 {
+                      padding-right: 0px;
+                    }
+                  }
+                }
+              }
             }
           }
         }

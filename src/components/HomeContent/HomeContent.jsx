@@ -135,10 +135,10 @@ const HomeContent = (props) => {
 
                   </div>
                   <p className='white bolder'>
-                    HEAD AND NECK CANCER
+                    HEAD AND NECK CANCERS
                   </p>
                   <h4 className='gold'>
-                    1-YEAR PROGRESSION-FREE SURVIVAL
+                    1&#8209;YEAR <br /> PROGRESSION&#8209;FREE SURVIVAL
                   </h4>
                   <div className='home-box-title-border'>
 
@@ -148,7 +148,7 @@ const HomeContent = (props) => {
                   <div className='home-box-left-container'>
                     <div className='home-box gold-box'>
                       <h1 className='text-center white large-percent'>
-                        20%
+                        20<small>%</small>
                       </h1>
                       <p className='text-center white'>
                         R/m Nasopharyngeal<sup>1*</sup>
@@ -157,7 +157,7 @@ const HomeContent = (props) => {
                     <div className='home-box'>
                       <div className='home-box-percent-container'>
                         <h2 className='white'>
-                          43%
+                          43<small>%</small>
                         </h2>
                         <p className='white'>
                           Metastatic Oral cavity<sup>3‡</sup>
@@ -167,7 +167,7 @@ const HomeContent = (props) => {
                     <div className='home-box'>
                       <div className='home-box-percent-container'>
                         <h2 className='white'>
-                          91%
+                          91<small>%</small>
                         </h2>
                         <p className='white'>
                           STAGE IV laryngeal<sup>4§</sup>
@@ -183,7 +183,7 @@ const HomeContent = (props) => {
                       <div className='home-box-right-inner-container'>
                         <div className='home-box-percent-container'>
                           <h2 className='white'>
-                            76%
+                            76<small>%</small>
                           </h2>
                           <p className='white'>
                             HPV+
@@ -191,7 +191,7 @@ const HomeContent = (props) => {
                         </div>
                         <div className='home-box-percent-container'>
                           <h2 className='white'>
-                            39%
+                            39<small>%</small>
                           </h2>
                           <p className='white'>
                             HPV-
