@@ -271,3 +271,11 @@
     }
   }
 }
+
+@media screen and (min-width: 525px) and (max-width: 768px) {
+  .about-container {
+    padding: 224px 0 0px 0;
+    height: 1400px;
+    background-position: 50% 85%;
+  }
+}

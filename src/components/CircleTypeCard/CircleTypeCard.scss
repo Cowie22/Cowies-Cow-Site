@@ -36,6 +36,12 @@
 @media only screen and (max-width: 992px) {
   .circle-type-card-container {
     padding-bottom: 36px;
+    &.animation-start-2 {
+      transition-delay: 1.2s, 1.2s;
+    }
+    &.animation-start-3 {
+      transition-delay: 1.7s, 1.7s;
+    }
     .circle-type-img-container {
       display: flex;
       justify-content: center;

@@ -7,7 +7,7 @@ import CircleAnimation from '../CircleAnimation/CircleAnimation'
 
 const CircleTypeCard = (props) => {
 
-  const { data, image } = props;
+  const { data, image, circleDelayClass } = props;
 
   const {
     title,
@@ -15,7 +15,6 @@ const CircleTypeCard = (props) => {
     columns,
     list,
     delayClass,
-    circleDelayClass,
   } = data[0];
 
   const cardRef = useRef()
@@ -31,7 +30,6 @@ const CircleTypeCard = (props) => {
   return (
     <Col lg={columns} ref={setCardRef} className='circle-type-card-col'>
       <div
-        // className='circle-type-card-container'
         className={cardInView ? `circle-type-card-container ${delayClass} active-card` : `circle-type-card-container ${delayClass}`}
       >
         <div className='circle-type-content-container'>

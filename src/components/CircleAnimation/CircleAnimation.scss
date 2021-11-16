@@ -45,6 +45,10 @@
 
 @media screen and (max-width: 992px) {
   .circle-animation-img-container {
-
+    &.less-animation-delay-mobile {
+      .yellow-line {
+        animation-delay: 1.8s;
+      }
+    }
   }
 }

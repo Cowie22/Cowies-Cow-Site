@@ -49,3 +49,11 @@
     }
   }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .risk-icon-card-container {
+    &.extra-card-padding {
+      padding: 0 20px;
+    }
+  }
+}
