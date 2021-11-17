@@ -16,11 +16,19 @@ export default () => (
               xs={{ span: 12, offset: 0, order: 2 }}
             >
               <nav className='footer-nav-container'>
-                <a href='' target='_blank' rel='noopener noreferrer'>
+                <a
+                  href='https://www.coherus.com/contact-us/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   <img src={arrowRight} alt='' />
                   <h6 className='white bolder'>Contact Us</h6>
                 </a>
-                <a href='' target='_blank' rel='noopener noreferrer'>
+                <a
+                  href='https://www.coherus.com/privacy-policy/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   <img src={arrowRight} alt='' />
                   <h6 className='white bolder'>Privacy Policy</h6>
                 </a>
@@ -37,7 +45,13 @@ export default () => (
               xs={{ span: 6, offset: 3, order: 1 }}
             >
               <div className='footer-logo-container'>
-                <img src={footerLogo} alt='' />
+                <a
+                  href='https://www.coherus.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <img src={footerLogo} alt='Coherus BioSciences' />
+                </a>
               </div>
             </Col>
           </Row>

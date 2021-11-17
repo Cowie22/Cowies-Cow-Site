@@ -140,36 +140,39 @@ const AboutContent = props => {
   } = RiskIconCardData
 
   return (
-    <Layout canonicalURL='' title='' pageTitle='' description=''>
-      <section
-        className='about-container'
-        // style={
-        //   width > 991
-        //     ? { backgroundImage: `url(${BGImg}), url(${BGImgFB})` }
-        //     : { backgroundImage: `url(${BGImgMobile}), url(${BGImgMobileFB})` }
-        // }
-        title=''
-      >
-        <Container>
-          <Row>
-            <Col lg={{ span: 6, offset: 0 }}>
-              <h3 className='white'>Nasopharyngeal carcinoma (NPC):</h3>
-              <h1 className='white'>
-                A RARE TUMOR ORIGINATING IN THE NASOPHARYNX<sup>1</sup>
-              </h1>
-              <p className='white'>
-                The most common presenting symptoms of NPC are neck
-                mass/swelling and enlarged lymph nodes.<sup>1</sup>
-              </p>
-              <p className='white home-lower-text'>
-                Other common symptoms include headaches, bleeding in the mouth
-                and nose, difficulty breathing through the nose, hearing
-                difficulty, and vision problems.<sup>1</sup>
-              </p>
-              <img src={downArrow} alt='' />
-            </Col>
-          </Row>
-        </Container>
+    <Layout
+      canonicalURL='https://www.npcfacts.com/aboutnpc/'
+      title='Nasopharyngeal carcinoma (NPC) | A rare and distinct cancer'
+      pageTitle='Nasopharyngeal carcinoma (NPC) | A rare and distinct cancer'
+      description='Who is the NPC patient? See the demographics and etiology that make NPC different.'
+      keyWords='nasopharyngeal cancer symptoms; nasopharyngeal cancer statistics'
+    >
+      <section className='about-outer-background-container'>
+        <section
+          className='about-container'
+          title='Profile of Asian man with nasopharynx highlighted'
+        >
+          <Container>
+            <Row>
+              <Col lg={{ span: 6, offset: 0 }}>
+                <h3 className='white'>Nasopharyngeal carcinoma (NPC):</h3>
+                <h1 className='white'>
+                  A RARE TUMOR ORIGINATING IN THE NASOPHARYNX<sup>1</sup>
+                </h1>
+                <p className='white'>
+                  The most common presenting symptoms of NPC are neck
+                  mass/swelling and enlarged lymph nodes.<sup>1</sup>
+                </p>
+                <p className='white home-lower-text'>
+                  Other common symptoms include headaches, bleeding in the mouth
+                  and nose, difficulty breathing through the nose, hearing
+                  difficulty, and vision problems.<sup>1</sup>
+                </p>
+                <img src={downArrow} alt='' />
+              </Col>
+            </Row>
+          </Container>
+        </section>
       </section>
 
       {

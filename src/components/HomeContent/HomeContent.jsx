@@ -98,119 +98,122 @@ const HomeContent = props => {
   }
 
   return (
-    <Layout canonicalURL='' title='' pageTitle='' description=''>
-      <section
-        className='home-container'
-        // style={
-        //   width > 991
-        //     ? { backgroundImage: `url(${BGImg}), url(${BGImgFB})` }
-        //     : { backgroundImage: `url(${BGImgMobile}), url(${BGImgMobileFB})` }
-        // }
-        // title=''
-      >
-        <Container>
-          <Row>
-            <Col lg={{ span: 4, offset: 0 }} xs={{ span: 12, offset: 0 }}>
-              <h3 className='white'>NASOPHARYNGEAL CARCINOMA:</h3>
-              <h1 className='white'>FACING THE SURVIVAL FACTS</h1>
-            </Col>
-          </Row>
-          <Row>
-            <Col
-              lg={{ span: 4, offset: 0, order: 1 }}
-              xs={{ span: 12, offset: 0, order: 2 }}
-            >
-              <div className='home-hero-lower-content-container'>
-                <p className='white'>
-                  Nasopharyngeal carcinoma (NPC) is a distinct cancer with a
-                  unique etiology and prognosis. Key data highlight the poor
-                  outcomes of patients with recurrent/metastatic nasopharyngeal
-                  carcinoma (R/M NPC).
-                </p>
-                <p className='white home-lower-text'>
-                  Explore the facts below.
-                </p>
-                <div className='home-arrow-icon-container'>
-                  <img src={downArrow} alt='' />
-                </div>
-              </div>
-            </Col>
-            <Col
-              xl={{ span: 7, offset: 1, order: 2 }}
-              lg={{ span: 8, offset: 0, order: 2 }}
-              xs={{ span: 9, offset: 3, order: 1 }}
-            >
-              <div
-                ref={setBoxRef}
-                className={
-                  boxInView ? 'home-box-section active-box' : 'home-box-section'
-                }
+    <Layout
+      canonicalURL='https://www.npcfacts.com/'
+      title='Get the facts about nasopharyngeal carcinoma (NPC)'
+      pageTitle='Get the facts about nasopharyngeal carcinoma (NPC)'
+      description='Outcomes are poor with current treatment options in metastatic NPC. Face the facts about this distinct cancer.'
+      keyWords='Nasopharyngeal carcinoma; NPC treatments; NPC outcomes'
+    >
+      <section className='home-outer-background-container'>
+        <section
+          className='home-container'
+          title='Low progression-free survival for NPC patients'
+        >
+          <Container>
+            <Row>
+              <Col lg={{ span: 4, offset: 0 }} xs={{ span: 12, offset: 0 }}>
+                <h3 className='white'>NASOPHARYNGEAL CARCINOMA:</h3>
+                <h1 className='white'>FACING THE SURVIVAL FACTS</h1>
+              </Col>
+            </Row>
+            <Row>
+              <Col
+                lg={{ span: 4, offset: 0, order: 1 }}
+                xs={{ span: 12, offset: 0, order: 2 }}
               >
-                <div className='home-box-section-title-container'>
-                  <div className='home-box-title-border'></div>
-                  <p className='white bolder'>HEAD AND NECK CANCERS</p>
-                  <h4 className='gold'>
-                    1&#8209;YEAR <br /> PROGRESSION&#8209;FREE <br /> SURVIVAL
-                  </h4>
-                  <div className='home-box-title-border'></div>
+                <div className='home-hero-lower-content-container'>
+                  <p className='white'>
+                    Nasopharyngeal carcinoma (NPC) is a distinct cancer with a
+                    unique etiology and prognosis. Key data highlight the poor
+                    outcomes of patients with recurrent/metastatic nasopharyngeal
+                    carcinoma (R/M NPC).
+                  </p>
+                  <p className='white home-lower-text'>
+                    Explore the facts below.
+                  </p>
+                  <div className='home-arrow-icon-container'>
+                    <img src={downArrow} alt='' />
+                  </div>
                 </div>
-                <div className='home-box-container'>
-                  <div className='home-box-left-container'>
-                    <div className='home-box gold-box'>
-                      <h1 className='text-center white large-percent'>
-                        20<small>%</small>
-                      </h1>
-                      <p className='text-center white'>
-                        R/m Nasopharyngeal<sup>1*</sup>
-                      </p>
-                    </div>
-                    <div className='home-box'>
-                      <div className='home-box-percent-container'>
-                        <h2 className='white'>
-                          43<small>%</small>
-                        </h2>
-                        <p className='white'>
-                          Metastatic Oral cavity<sup>3‡</sup>
+              </Col>
+              <Col
+                xl={{ span: 7, offset: 1, order: 2 }}
+                lg={{ span: 8, offset: 0, order: 2 }}
+                xs={{ span: 9, offset: 3, order: 1 }}
+              >
+                <div
+                  ref={setBoxRef}
+                  className={
+                    boxInView ? 'home-box-section active-box' : 'home-box-section'
+                  }
+                >
+                  <div className='home-box-section-title-container'>
+                    <div className='home-box-title-border'></div>
+                    <p className='white bolder'>HEAD AND NECK CANCERS</p>
+                    <h4 className='gold'>
+                      1&#8209;YEAR <br /> PROGRESSION&#8209;FREE <br /> SURVIVAL
+                    </h4>
+                    <div className='home-box-title-border'></div>
+                  </div>
+                  <div className='home-box-container'>
+                    <div className='home-box-left-container'>
+                      <div className='home-box gold-box'>
+                        <h1 className='text-center white large-percent'>
+                          20<small>%</small>
+                        </h1>
+                        <p className='text-center white'>
+                          R/m Nasopharyngeal<sup>1*</sup>
                         </p>
                       </div>
+                      <div className='home-box'>
+                        <div className='home-box-percent-container'>
+                          <h2 className='white'>
+                            43<small>%</small>
+                          </h2>
+                          <p className='white'>
+                            Metastatic Oral cavity<sup>3‡</sup>
+                          </p>
+                        </div>
+                      </div>
+                      <div className='home-box'>
+                        <div className='home-box-percent-container'>
+                          <h2 className='white'>
+                            91<small>%</small>
+                          </h2>
+                          <p className='white'>
+                            STAGE IV laryngeal<sup>4§</sup>
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                    <div className='home-box'>
-                      <div className='home-box-percent-container'>
-                        <h2 className='white'>
-                          91<small>%</small>
-                        </h2>
-                        <p className='white'>
-                          STAGE IV laryngeal<sup>4§</sup>
+                    <div className='home-box-right-container'>
+                      <div className='home-box'>
+                        <p className='white bolder'>
+                          METASTATIC OROPHARYNGEAL<sup>2†</sup>
                         </p>
+                        <div className='home-box-right-inner-container'>
+                          <div className='home-box-percent-container'>
+                            <h2 className='white'>
+                              76<small>%</small>
+                            </h2>
+                            <p className='white'>HPV+</p>
+                          </div>
+                          <div className='home-box-percent-container'>
+                            <h2 className='white'>
+                              39<small>%</small>
+                            </h2>
+                            <p className='white'>HPV-</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div className='home-box-right-container'>
-                    <div className='home-box'>
-                      <p className='white bolder'>
-                        METASTATIC OROPHARYNGEAL<sup>2†</sup>
-                      </p>
-                      <div className='home-box-right-inner-container'>
-                        <div className='home-box-percent-container'>
-                          <h2 className='white'>
-                            76<small>%</small>
-                          </h2>
-                          <p className='white'>HPV+</p>
-                        </div>
-                        <div className='home-box-percent-container'>
-                          <h2 className='white'>
-                            39<small>%</small>
-                          </h2>
-                          <p className='white'>HPV-</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+              </Col>
+            </Row>
+          </Container>
+        </section>
       </section>
 
       {
@@ -355,7 +358,6 @@ const HomeContent = props => {
             </Container>
           </section>
 
-          <div className='drive-to-container' id='outcomes'></div>
           <section className='home-outcomes-section'>
             <Container>
               <Row>
@@ -381,20 +383,9 @@ const HomeContent = props => {
               </Row>
             </Container>
           </section>
-
-          <div className='drive-to-container' id='treatment'></div>
           <section
             className='home-treatment-container'
-            // style={
-            //   width > 991
-            //     ? {
-            //         backgroundImage: `url(${TreatmentBGImg}), url(${TreatmentBGImgFB})`,
-            //       }
-            //     : {
-            //         backgroundImage: `url(${TreatmentBGImgMobile}), url(${TreatmentBGImgMobileFB})`,
-            //       }
-            // }
-            // title=''
+            title='Caucasian female NPC patient'
           >
             <Container>
               <Row>

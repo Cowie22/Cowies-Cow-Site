@@ -1,3 +1,8 @@
+
+.about-outer-background-container {
+  background: linear-gradient(132.79deg, #2F333D 0%, #4E6362 100%);
+}
+
 .about-container {
   background-image: url('../assets/images/pages/about/about-bg-img-2X.webp'), url('../assets/images/pages/about/about-bg-img-2X.png');
   position: relative;
@@ -8,7 +13,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 220px 0 144px 0;
+  padding: 300px 0 144px 0;
   h3 {
     padding-bottom: 8px;
   }

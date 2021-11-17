@@ -7,6 +7,7 @@ import virusIcon from '../../assets/images/components/RiskIconCard/virus-icon.sv
 const RiskIconCardData1 = [
   {
     icon: DNAIcon,
+    altTag: 'Genetic',
     title: <>GENETICS<sup>2,10</sup></>,
     columns: {span: 3, offset: 1},
     list: [
@@ -21,6 +22,7 @@ const RiskIconCardData1 = [
 const RiskIconCardData2 = [
   {
     icon: leafInHouseIcon,
+    altTag: 'Environmental',
     title: <>ENVIRONMENTAL<sup>2,10</sup></>,
     columns: {span: 4, offset: 0},
     list: [
@@ -36,6 +38,7 @@ const RiskIconCardData2 = [
 const RiskIconCardData3 = [
   {
     icon: virusIcon,
+    altTag: 'Viral',
     title: <>VIRAL<sup>3,9</sup></>,
     columns: {span: 3, offset: 0},
     list: [

@@ -12,7 +12,7 @@ import { useInView } from 'react-intersection-observer'
 const RiskIconCard = props => {
   const { data } = props
 
-  const { title, icon, columns, list, paddingClass, delayClass } = data[0]
+  const { title, icon, columns, list, paddingClass, delayClass, altTag } = data[0]
 
   const cardRef = useRef()
   const [cardView, cardInView] = useInView({ triggerOnce: true })
@@ -35,7 +35,7 @@ const RiskIconCard = props => {
         }
       >
         <div className='risk-icon-icon-container'>
-          <img src={icon} alt='' />
+          <img src={icon} alt={altTag} />
           <p className='text-center bolder'>{title}</p>
         </div>
         <ul className='dark-grey-ul risk-icon-ul'>
