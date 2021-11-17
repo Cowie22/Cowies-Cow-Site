@@ -16,14 +16,6 @@ import ToggleBTN from '../../components/ToggleBTN/ToggleBTN'
 import HomeSliderRightContent from '../../components/HomeSliderContent/RightContent/RightContent'
 import HomeSlideLeftContent from '../../components/HomeSliderContent/LeftContent/LeftContent'
 
-// import BGImg from '../../assets/images/pages/home/home-bg-img-2X.webp'
-// import BGImgFB from '../../assets/images/pages/home/home-bg-img-2X.png'
-// import BGImgMobile from '../../assets/images/pages/home/home-bg-img-2X-mobile.webp'
-// import BGImgMobileFB from '../../assets/images/pages/home/home-bg-img-2X-mobile.png'
-// import TreatmentBGImg from '../../assets/images/pages/home/treatment-bg-img-2X.webp'
-// import TreatmentBGImgFB from '../../assets/images/pages/home/treatment-bg-img-2X.png'
-// import TreatmentBGImgMobile from '../../assets/images/pages/home/treatment-bg-img-2X-mobile.webp'
-// import TreatmentBGImgMobileFB from '../../assets/images/pages/home/treatment-bg-img-2X-mobile.png'
 import downArrow from '../../assets/images/global/down-arrow-yellow.svg'
 
 const HomeContent = props => {
@@ -140,7 +132,9 @@ const HomeContent = props => {
               <Col
                 xl={{ span: 7, offset: 1, order: 2 }}
                 lg={{ span: 8, offset: 0, order: 2 }}
+                md={{ span: 8, offset: 4, order: 1 }}
                 xs={{ span: 9, offset: 3, order: 1 }}
+                className='home-box-col'
               >
                 <div
                   ref={setBoxRef}

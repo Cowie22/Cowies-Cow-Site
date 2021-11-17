@@ -17,14 +17,6 @@ import DemographicsCards from '../DemographicsCards/DemographicsCards'
 import RiskIconCard from '../RiskIconCard/RiskIconCard'
 import RiskIconCardData from '../RiskIconCard/RiskIconCardData.js'
 
-// import BGImg from '../../assets/images/pages/about/about-bg-img-2X.webp'
-// import BGImgFB from '../../assets/images/pages/about/about-bg-img-2X.png'
-// import BGImgMobile from '../../assets/images/pages/about/about-bg-img-2X-mobile.webp'
-// import BGImgMobileFB from '../../assets/images/pages/about/about-bg-img-2X-mobile.png'
-// import DiagnosisBGImg from '../../assets/images/pages/about/diagnosis-bg-img-2X.webp'
-// import DiagnosisBGImgFB from '../../assets/images/pages/about/diagnosis-bg-img-2X.png'
-// import DiagnosisBGImgMobile from '../../assets/images/pages/about/diagnosis-bg-img-2X-mobile.webp'
-// import DiagnosisBGImgMobileFB from '../../assets/images/pages/about/diagnosis-bg-img-2X-mobile.png'
 import downArrow from '../../assets/images/global/down-arrow-yellow.svg'
 
 const AboutContent = props => {
