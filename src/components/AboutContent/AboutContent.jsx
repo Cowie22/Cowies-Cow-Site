@@ -423,15 +423,6 @@ const AboutContent = props => {
 
           <section
             className='about-diagnosis-container'
-            // style={
-            //   width > 991
-            //     ? {
-            //         backgroundImage: `url(${DiagnosisBGImg}), url(${DiagnosisBGImgFB})`,
-            //       }
-            //     : {
-            //         backgroundImage: `url(${DiagnosisBGImgMobile}), url(${DiagnosisBGImgMobileFB})`,
-            //       }
-            // }
             title=''
           >
             <Container>
