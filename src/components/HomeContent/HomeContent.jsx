@@ -399,7 +399,7 @@ const HomeContent = props => {
                         }
                         ref={setBoxRef2}
                       >
-                        <Link to={'/about/'}>
+                        <Link to={'/aboutnpc/'}>
                           <button className='cta-btn dark-grey-btn'>
                             Learn more about this distinct cancer
                           </button>

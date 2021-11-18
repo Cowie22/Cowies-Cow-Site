@@ -86,7 +86,7 @@ const MainNav = props => {
                     }
                   ></div>
                   <Link
-                    to='/about/'
+                    to='/aboutnpc/'
                     onMouseEnter={() => {
                       handleCurrentTabHovered('about')
                     }}
@@ -223,7 +223,7 @@ const MainNav = props => {
                       }}
                       className='mobile-page-nav-item'
                     >
-                      <Link to='/about/'>
+                      <Link to='/aboutnpc/'>
                         ABOUT NPC
                       </Link>
                     </li>
