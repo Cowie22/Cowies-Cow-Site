@@ -101,13 +101,20 @@ const AboutContent = props => {
   )
 
   useEffect(() => {
-    window.scrollTo(0,0)
+    if (typeof window !== 'undefined') {
+      let path = window.location.href
+      if (!path.includes('#')) {
+        window.scrollTo(0, 0)
+        setTimeout(() => {
+          handleLanded(true)
+        }, 500)
+      } else {
+        handleLanded(true)
+      }
+    }
+
     handleCurrentPage('about')
     setReferences([8, 9, 10, 11, 12, 13, 14, 15, 5, 16])
-    setTimeout(() => {
-      handleLanded(true)
-    }, 500)
-
     updateWindowDimensions()
     window.addEventListener('resize', updateWindowDimensions, { passive: true })
     return function cleanUp() {
@@ -167,8 +174,7 @@ const AboutContent = props => {
         </section>
       </section>
 
-      {
-        landed ?
+      {landed ? (
         <>
           <section className='about-circle-container'>
             <Container>
@@ -179,8 +185,8 @@ const AboutContent = props => {
                       Histological classifications of nasopharyngeal carcinoma
                     </h2>
                     <p className='white'>
-                      The World Health Organization (WHO) categorizes NPC into three
-                      different histological subtypes.<sup>2</sup>
+                      The World Health Organization (WHO) categorizes NPC into
+                      three different histological subtypes.<sup>2</sup>
                     </p>
                   </div>
                   <h3 className='white'>US incidence by WHO Type</h3>
@@ -320,6 +326,7 @@ const AboutContent = props => {
             </Container>
           </section>
 
+          <div id='about-npc-demographics' className='drive-to-container'></div>
           <section className='about-demographics-container'>
             <Container>
               <Row>
@@ -330,9 +337,9 @@ const AboutContent = props => {
                     </h2>
                     <p className='text-center'>
                       NPC is more common in people from Southeast Asia, Northern
-                      Africa, and the Middle East. That increased risk remains for
-                      them and their descendants, even if they move to lower-risk
-                      areas such as the US.<sup>1-2</sup>
+                      Africa, and the Middle East. That increased risk remains
+                      for them and their descendants, even if they move to
+                      lower-risk areas such as the US.<sup>1-2</sup>
                     </p>
                     <h3 className='text-center'>NPC by the numbers</h3>
                   </div>
@@ -400,8 +407,8 @@ const AboutContent = props => {
                             Males of Asian descent make up
                           </h4>
                           <h4 className='text-center bold'>
-                            <span className='extra-bold'>23%</span> of NPC patients
-                            in the US<sup>6</sup>
+                            <span className='extra-bold'>23%</span> of NPC
+                            patients in the US<sup>6</sup>
                           </h4>
                         </div>
                       </Col>
@@ -421,10 +428,7 @@ const AboutContent = props => {
             </Container>
           </section>
 
-          <section
-            className='about-diagnosis-container'
-            title=''
-          >
+          <section className='about-diagnosis-container' title=''>
             <Container>
               <Row>
                 <Col lg={{ span: 12, offset: 0 }}>
@@ -435,15 +439,15 @@ const AboutContent = props => {
                           Diagnosing nasopharyngeal carcinoma
                         </h2>
                         <p className='white'>
-                          NPC is a rare cancer, and presenting symptoms are highly
-                          variable, ranging from neck mass/swelling to headaches. As
-                          a result, NPC is frequently missed on initial
-                          presentation.<sup>1,7</sup>
+                          NPC is a rare cancer, and presenting symptoms are
+                          highly variable, ranging from neck mass/swelling to
+                          headaches. As a result, NPC is frequently missed on
+                          initial presentation.<sup>1,7</sup>
                         </p>
                         <p className='white'>
                           This, combined with the inaccessible location and high
-                          likelihood of metastasis, may lead to patients being at
-                          more advanced stages when diagnosed.<sup>7-9</sup>
+                          likelihood of metastasis, may lead to patients being
+                          at more advanced stages when diagnosed.<sup>7-9</sup>
                         </p>
                       </div>
                     </Col>
@@ -464,7 +468,8 @@ const AboutContent = props => {
                           <li>Endoscopy/nasopharyngoscopy</li>
                           <li>Biopsy</li>
                           <li>
-                            Radiologic study (PET scan, CT scan, MRI, ultrasound)
+                            Radiologic study (PET scan, CT scan, MRI,
+                            ultrasound)
                           </li>
                           <li>Neurologic exam</li>
                           <li>Hearing test</li>
@@ -509,8 +514,8 @@ const AboutContent = props => {
                     }
                   >
                     <h3 className='text-center'>
-                      NPC has a very distinct profile based on diverse etiology and
-                      risk factors.
+                      NPC has a very distinct profile based on diverse etiology
+                      and risk factors.
                     </h3>
                     <Row>
                       <Col lg={{ span: 6, offset: 3 }}>
@@ -529,11 +534,9 @@ const AboutContent = props => {
             </Container>
           </section>
         </>
-        :
-        <div>
-        </div>
-      }
-
+      ) : (
+        <div></div>
+      )}
     </Layout>
   )
 }

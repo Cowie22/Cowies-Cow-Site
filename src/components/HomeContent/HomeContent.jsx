@@ -71,12 +71,20 @@ const HomeContent = props => {
   )
 
   useEffect(() => {
-    window.scrollTo(0,0)
+    if (typeof window !== 'undefined') {
+      let path = window.location.href
+      if (!path.includes('#')) {
+        window.scrollTo(0, 0)
+        setTimeout(() => {
+          handleLanded(true)
+        }, 500)
+      } else {
+        handleLanded(true)
+      }
+    }
+
     handleCurrentPage('home')
     setReferences([1, 2, 3, 4, 5, 6, 7])
-    setTimeout(() => {
-      handleLanded(true)
-    }, 500)
 
     updateWindowDimensions()
     window.addEventListener('resize', updateWindowDimensions, { passive: true })
@@ -118,8 +126,8 @@ const HomeContent = props => {
                   <p className='white'>
                     Nasopharyngeal carcinoma (NPC) is a distinct cancer with a
                     unique etiology and prognosis. Key data highlight the poor
-                    outcomes of patients with recurrent/metastatic nasopharyngeal
-                    carcinoma (R/M NPC).
+                    outcomes of patients with recurrent/metastatic
+                    nasopharyngeal carcinoma (R/M NPC).
                   </p>
                   <p className='white home-lower-text'>
                     Explore the facts below.
@@ -139,7 +147,9 @@ const HomeContent = props => {
                 <div
                   ref={setBoxRef}
                   className={
-                    boxInView ? 'home-box-section active-box' : 'home-box-section'
+                    boxInView
+                      ? 'home-box-section active-box'
+                      : 'home-box-section'
                   }
                 >
                   <div className='home-box-section-title-container'>
@@ -210,8 +220,7 @@ const HomeContent = props => {
         </section>
       </section>
 
-      {
-        landed ?
+      {landed ? (
         <>
           <section className='home-cancer-section'>
             <Container>
@@ -219,9 +228,9 @@ const HomeContent = props => {
                 <Col lg={{ span: 12, offset: 0 }}>
                   <div className='footnote-container'>
                     <h6 className='dark-grey'>
-                      *Results from a multicenter, randomized, open-label phase 3
-                      trial of patients with recurrent or metastatic nasopharyngeal
-                      carcinoma (N=362).
+                      *Results from a multicenter, randomized, open-label phase
+                      3 trial of patients with recurrent or metastatic
+                      nasopharyngeal carcinoma (N=362).
                     </h6>
                     <h6 className='dark-grey'>
                       †Results from a retrospective analysis of patients with
@@ -229,13 +238,13 @@ const HomeContent = props => {
                       distant metastatic oropharyngeal cancer (N=108).
                     </h6>
                     <h6 className='dark-grey'>
-                      ‡Results from a retrospective study of patients with locally
-                      advanced and recurrent/metastatic oral cancer treated with
-                      cetuximab therapy (N=21).
+                      ‡Results from a retrospective study of patients with
+                      locally advanced and recurrent/metastatic oral cancer
+                      treated with cetuximab therapy (N=21).
                     </h6>
                     <h6 className='dark-grey'>
-                      §Results from a retrospective study of patients with laryngeal
-                      squamous cell carcinoma (N=211).
+                      §Results from a retrospective study of patients with
+                      laryngeal squamous cell carcinoma (N=211).
                     </h6>
                   </div>
                 </Col>
@@ -246,15 +255,16 @@ const HomeContent = props => {
                     NASOPHARYNGEAL CARCINOMA (NPC):
                   </p>
                   <h2 className='dark-grey'>
-                    A rare and distinct cancer with high propensity for metastasis
+                    A rare and distinct cancer with high propensity for
+                    metastasis
                     <sup>5</sup>
                   </h2>
                   <p>
                     Nasopharyngeal carcinoma is considered within the context of
-                    head and neck cancers because of its anatomical location. But
-                    NPC is a distinct cancer with a unique etiology and prognosis.
-                    For patients with recurrent/metastatic NPC, the outcomes tell a
-                    troubling story.
+                    head and neck cancers because of its anatomical location.
+                    But NPC is a distinct cancer with a unique etiology and
+                    prognosis. For patients with recurrent/metastatic NPC, the
+                    outcomes tell a troubling story.
                   </p>
                 </Col>
               </Row>
@@ -357,8 +367,8 @@ const HomeContent = props => {
               <Row>
                 <Col lg={{ span: 12 }}>
                   <h2 className='white text-center'>
-                    5-year overall survival (OS) for NPC (ALL STAGES) varies greatly
-                    across histologies
+                    5-year overall survival (OS) for NPC (ALL STAGES) varies
+                    greatly across histologies
                   </h2>
                   <h2 className='white text-center'>
                     Rates are low in R/M disease for common patient types
@@ -373,7 +383,11 @@ const HomeContent = props => {
                 <ToggleBTN />
               </Row>
               <Row>
-                {!slider ? <HomeSlideLeftContent /> : <HomeSliderRightContent />}
+                {!slider ? (
+                  <HomeSlideLeftContent />
+                ) : (
+                  <HomeSliderRightContent />
+                )}
               </Row>
             </Container>
           </section>
@@ -399,7 +413,7 @@ const HomeContent = props => {
                         }
                         ref={setBoxRef2}
                       >
-                        <Link to={'/aboutnpc/'}>
+                        <Link to={'/aboutnpc/#about-npc-demographics'}>
                           <button className='cta-btn dark-grey-btn'>
                             Learn more about this distinct cancer
                           </button>
@@ -412,11 +426,9 @@ const HomeContent = props => {
             </Container>
           </section>
         </>
-        :
-        <div>
-        </div>
-      }
-
+      ) : (
+        <div></div>
+      )}
     </Layout>
   )
 }
