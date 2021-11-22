@@ -114,7 +114,7 @@ const HomeContent = props => {
             <Row>
               <Col lg={{ span: 4, offset: 0 }} xs={{ span: 12, offset: 0 }}>
                 <h3 className='white'>NASOPHARYNGEAL CARCINOMA:</h3>
-                <h1 className='white'>FACING THE SURVIVAL FACTS</h1>
+                <h1 className='pink'>FACING THE SURVIVAL FACTS</h1>
               </Col>
             </Row>
             <Row>
