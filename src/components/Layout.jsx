@@ -13,7 +13,14 @@ import ExitRamp from '../components/exitramp/ExitRamp'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../pages/index.scss'
 
-const Layout = ({ children, title, pageTitle, description, canonicalURL, keyWords }) => {
+const Layout = ({
+  children,
+  title,
+  pageTitle,
+  description,
+  canonicalURL,
+  keyWords,
+}) => {
   const [yDirection, handleYDirection] = useState(0)
   const [width, handleWidth] = useState(0)
   const state = useContext(AppContext)
@@ -49,7 +56,7 @@ const Layout = ({ children, title, pageTitle, description, canonicalURL, keyWord
         <meta name='description' content={description} />
         <link rel='canonical' href={canonicalURL} />
         <meta name='url' content={canonicalURL} />
-        <meta name="keywords" content={keyWords} />
+        <meta name='keywords' content={keyWords} />
         <html lang='en' />
       </Helmet>
 
