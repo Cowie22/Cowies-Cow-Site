@@ -158,6 +158,11 @@
       padding: 16px 0 40px 0;
     }
   }
+  .slider-component-outer-container {
+    .slider-component-outer-content-container {
+      overflow-x: hidden;
+    }
+  }
 }
 
 .home-treatment-container {
@@ -341,6 +346,17 @@
         padding: 16px 0 48px 0;
       }
     }
+    .slider-component-outer-container {
+      .slider-component-outer-toggle-container {
+        position: sticky;
+        overflow-x: hidden;
+        z-index: 1;
+        top: 3em;
+      }
+      .slider-component-outer-content-container {
+        overflow-x: hidden;
+      }
+    }
   }
 
   .home-treatment-container {
@@ -413,6 +429,14 @@
         .home-box-container {
           padding-bottom: 280px;
         }
+      }
+    }
+  }
+
+  .home-outcomes-section {
+    .slider-component-outer-container {
+      .slider-component-outer-toggle-container {
+        top: 8em;
       }
     }
   }

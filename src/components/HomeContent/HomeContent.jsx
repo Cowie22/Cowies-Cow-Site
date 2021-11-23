@@ -377,15 +377,35 @@ const HomeContent = props => {
                   </p>
                 </Col>
               </Row>
+              <div className='slider-component-outer-container'>
+                <div className='slider-component-outer-toggle-container'>
+                  <Row>
+                    <ToggleBTN />
+                  </Row>
+                </div>
+                <div className='slider-component-outer-content-container'>
+                  <Row>
+                    {!slider ? (
+                      <HomeSlideLeftContent />
+                    ) : (
+                      <HomeSliderRightContent />
+                    )}
+                  </Row>
+                </div>
+              </div>
               <Row>
-                <ToggleBTN />
-              </Row>
-              <Row>
-                {!slider ? (
-                  <HomeSlideLeftContent />
-                ) : (
-                  <HomeSliderRightContent />
-                )}
+                <Col lg={{ span: 12, offset: 0 }}>
+                  <div>
+                    <h6 className='white'>
+                      ¶An analysis of NPC patients in the United States reported to the
+                      SEER (Surveillance, Epidemiology, and End Results) database
+                      between 1973 and 2009. Data included 9,014 patients, of which the
+                      majority were non-Hispanic white (n=4,013) and Asian (n=3,381).
+                      Other populations included Hispanic white (n=535), Black (n=937),
+                      and other (n=148).
+                    </h6>
+                  </div>
+                </Col>
               </Row>
             </Container>
           </section>
