@@ -23,7 +23,7 @@ const CircleTypeCardData2 = [
     list: [
       `Associated with EBV`,
       `More common in East Asia`,
-      <>Better prognosis than type <sup>1</sup></>,
+      <>Better prognosis than type 1</>,
     ],
     delayClass: 'animation-start-2',
   }
@@ -37,7 +37,7 @@ const CircleTypeCardData3 = [
     list: [
       `Associated with EBV`,
       `More common in East Asia`,
-      <>Better prognosis than type <sup>1</sup></>,
+      <>Better prognosis than type 1</>,
       `Most common worldwide`,
     ],
     delayClass: 'animation-start-3',

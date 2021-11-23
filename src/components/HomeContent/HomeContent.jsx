@@ -113,7 +113,7 @@ const HomeContent = props => {
           <Container>
             <Row>
               <Col lg={{ span: 4, offset: 0 }} xs={{ span: 12, offset: 0 }}>
-                <h3 className='white'>NASOPHARYNGEAL CARCINOMA:</h3>
+                <h3 className='white'>Nasopharyngeal carcinoma (NPC):</h3>
                 <h1 className='white'>FACING THE SURVIVAL FACTS</h1>
               </Col>
             </Row>
@@ -167,7 +167,7 @@ const HomeContent = props => {
                           20<small>%</small>
                         </h1>
                         <p className='text-center white'>
-                          R/m Nasopharyngeal<sup>1*</sup>
+                          R/M NASOPHARYNGEAL<sup>1</sup>*
                         </p>
                       </div>
                       <div className='home-box'>
@@ -262,8 +262,7 @@ const HomeContent = props => {
                   <p>
                     Nasopharyngeal carcinoma is considered within the context of
                     head and neck cancers because of its anatomical location.
-                    But NPC is a distinct cancer with a unique etiology and
-                    prognosis. For patients with recurrent/metastatic NPC, the
+                    But NPC is a distinct cancer because of its unique etiology, demographics, treatment, and prognosis. For patients with recurrent/metastatic NPC, the
                     outcomes tell a troubling story.
                   </p>
                 </Col>
@@ -275,7 +274,7 @@ const HomeContent = props => {
                     content={
                       <>
                         While chemoradiotherapy can achieve good locoregional
-                        control, up to 50% of NPC patients will develop distant
+                        control, 18%-50% of NPC patients will develop distant
                         metastasis during their disease course.<sup>6</sup>
                       </>
                     }
@@ -316,12 +315,12 @@ const HomeContent = props => {
                     }
                   />
                   <CircleRectangleCard
-                    title={'LOW PROGRESSION-FREE SURVIVAL (PFS) in r/m NPC'}
+                    title={'LOW PROGRESSION-FREE SURVIVAL (PFS) in R/M NPC'}
                     content={
                       <>
                         A key study showed a 1-year PFS rate of 20% for patients
                         whose R/M NPC was treated with standard of care
-                        chemotherapy.<sup>1*</sup>
+                        chemotherapy.<sup>1</sup>*
                       </>
                     }
                     delayClass='animation-start-2'
@@ -367,8 +366,7 @@ const HomeContent = props => {
               <Row>
                 <Col lg={{ span: 12 }}>
                   <h2 className='white text-center'>
-                    5-year overall survival (OS) for NPC (ALL STAGES) varies
-                    greatly across histologies
+                    5-year overall survival (OS) for NPC (ALL STAGES) varies across histologies
                   </h2>
                   <h2 className='white text-center'>
                     Rates are low in R/M disease for common patient types

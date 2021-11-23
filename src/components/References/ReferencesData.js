@@ -6,15 +6,15 @@ const ReferencesData = {
       Zhang L, Huang Y, Hong S, et al. Gemcitabine plus cisplatin versus
       fluorouracil plus cisplatin in recurrent or metastatic nasopharyngeal
       carcinoma: a multicentre, randomised, open-label, phase 3 trial.{" "}
-      <em>Lancet</em> 2016;388:1883–92.
+      <em>Lancet</em>. 2016;388:1883-1892.
     </>
   ),
   2: (
     <>
       Guo T, Qualliotine JR, Ha PK, et al. Surgical salvage improves overall
       survival for patients with HPV-positive and HPV-negative recurrent
-      locoregional and distant metastatic oropharyngeal cancer. <em>Caner</em>.
-      2015;121:1977-84.
+      locoregional and distant metastatic oropharyngeal cancer. <em>Cancer</em>.
+      2015;121:1977-1984.
     </>
   ),
   3: (
@@ -46,14 +46,13 @@ const ReferencesData = {
     <>
       Kuo D-Y, Chang M-H, Wang S-Y, Hsieh P-Y, Shueng P-W. Unusual axillary
       metastasis of recurrent nasopharyngeal cancer: a case report.{" "}
-      <em>Medicine</em> 2017; 96: p e6854.
+      <em>Medicine</em>. 2017;93:e685.
     </>
   ),
   7: (
     <>
       Wang Y, Zhang Y, Ma S. Racial differences in nasopharyngeal carcinoma in
-      the United States. <em>Cancer Epidemiol</em>. 2013
-      December; 37: 793-802.
+      the United States. <em>Cancer Epidemiol</em>. 2013;37:793-802.
     </>
   ),
   8: (
@@ -64,15 +63,14 @@ const ReferencesData = {
   ),
   9: (
     <>
-      Chang ET, Adami H-O. The enigmatic epidemiology of nasopharyngeal
+      Chang ET, Adami&nbsp;H-O. The enigmatic epidemiology of nasopharyngeal
       carcinoma. <em>Cancer Epidemiol Biomarkers Prev</em>. 2006;15:1765-1777.
     </>
   ),
   10: (
     <>
       Lo EJ, Bell D, Woo JS, et al. Human papillomavirus and WHO type I
-      nasopharyngeal carcinoma. <em>Laryngoscope</em>. 2010
-      October;120:1990–1997.
+      nasopharyngeal carcinoma. <em>Laryngoscope</em>. 2010;120:1990-1997.
     </>
   ),
   11: (
@@ -91,14 +89,14 @@ const ReferencesData = {
   13: (
     <>
       Wang Y, Zhang Y, Ma S. Racial differences in nasopharyngeal carcinoma in
-      the United States. <em>Cancer Epidemiol</em>. 2013 December; 37: 793-802.
+      the United States. <em>Cancer Epidemiol</em>. 2013;37:793-802.
     </>
   ),
   14: (
     <>
       Wu Z-X, Xiang L, Rong J-F, He H-L, Li D. Nasopharyngeal carcinoma with
       headaches as the main symptom: a potential diagnostic pitfall.{" "}
-      <em>J Cancer Res Ther</em>. Jan-Mar 2016;12:209-214.
+      <em>J Cancer Res Ther</em>. 2016;12:209-214.
     </>
   ),
   15: (

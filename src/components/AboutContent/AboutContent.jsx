@@ -522,7 +522,7 @@ const AboutContent = props => {
                         <div className='cta-btn-container'>
                           <Link to={'/'}>
                             <button className='cta-btn dark-grey-btn'>
-                              Learn more about the unmet need in NPC
+                              Learn more about outcomes in NPC
                             </button>
                           </Link>
                         </div>
