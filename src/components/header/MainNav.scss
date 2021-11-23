@@ -58,7 +58,7 @@
       }
       .active-link {
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         left: 0;
         width: 50%;
         background: #E3FF39;
@@ -82,7 +82,7 @@
       }
       .active-link-hovered {
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         width: 0;
         height: 0;
         cursor: pointer;
