@@ -131,7 +131,7 @@ const RightContent = props => {
                 <Col lg={{ span: 4, offset: 0 }}>
                   <div className='home-slider-circle-container'>
                     <p className='white text-center'>
-                      Non-Keratinzizing <br /> Differentiated Carcinoma
+                      Non-Keratinzizing Differentiated Carcinoma
                     </p>
                     <CircleAnimation
                       circleDelayClass='less-animation-delay'
@@ -172,7 +172,7 @@ const RightContent = props => {
                 <Col lg={{ span: 4, offset: 0 }}>
                   <div className='home-slider-circle-container'>
                     <p className='white text-center'>
-                      Non-Keratinizing <br /> Undifferentiated Carcinoma
+                      Non-Keratinizing Undifferentiated Carcinoma
                     </p>
                     <CircleAnimation
                       circleDelayClass='less-animation-delay'
