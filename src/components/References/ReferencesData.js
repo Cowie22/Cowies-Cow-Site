@@ -1,11 +1,11 @@
-import React from "react"
+import React from 'react'
 
 const ReferencesData = {
   1: (
     <>
       Zhang L, Huang Y, Hong S, et al. Gemcitabine plus cisplatin versus
       fluorouracil plus cisplatin in recurrent or metastatic nasopharyngeal
-      carcinoma: a multicentre, randomised, open-label, phase 3 trial.{" "}
+      carcinoma: a multicentre, randomised, open-label, phase 3 trial.{' '}
       <em>Lancet</em>. 2016;388:1883-1892.
     </>
   ),
@@ -27,7 +27,7 @@ const ReferencesData = {
   4: (
     <>
       Zhang Q, Wang H, Zhao Q, et al. Evaluation of risk factors for laryngeal
-      squamous cell carcinoma: a single-center retrospective study.{" "}
+      squamous cell carcinoma: a single-center retrospective study.{' '}
       <em>Front Oncol</em>. 2021;11:606010.
     </>
   ),
@@ -45,7 +45,7 @@ const ReferencesData = {
   6: (
     <>
       Kuo D-Y, Chang M-H, Wang S-Y, Hsieh P-Y, Shueng P-W. Unusual axillary
-      metastasis of recurrent nasopharyngeal cancer: a case report.{" "}
+      metastasis of recurrent nasopharyngeal cancer: a case report.{' '}
       <em>Medicine</em>. 2017;93:e685.
     </>
   ),
@@ -82,7 +82,7 @@ const ReferencesData = {
   12: (
     <>
       Argirion I, Zarins KR, Ruterbusch JJ, et al. Increasing incidence of
-      Epstein-Barr virus–related nasopharyngeal carcinoma in the United States.{" "}
+      Epstein-Barr virus–related nasopharyngeal carcinoma in the United States.{' '}
       <em>Cancer</em>. 2020;126:121-130.
     </>
   ),
@@ -95,7 +95,7 @@ const ReferencesData = {
   14: (
     <>
       Wu Z-X, Xiang L, Rong J-F, He H-L, Li D. Nasopharyngeal carcinoma with
-      headaches as the main symptom: a potential diagnostic pitfall.{" "}
+      headaches as the main symptom: a potential diagnostic pitfall.{' '}
       <em>J Cancer Res Ther</em>. 2016;12:209-214.
     </>
   ),
