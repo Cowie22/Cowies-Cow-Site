@@ -393,7 +393,7 @@ const AboutContent = props => {
                       <Col lg={{ span: 4, offset: 0 }} className=''>
                         <div className='demographic-right-card-container center-card'>
                           <h4 className='text-center'>
-                            Non-Hispanic white males make up 33%
+                            Non-Hispanic white males <br /> make up 33%
                           </h4>
                           <h4 className='text-center bold'>
                             of NPC patients in the US<sup>6</sup>
@@ -403,11 +403,10 @@ const AboutContent = props => {
                       <Col lg={{ span: 4, offset: 0 }}>
                         <div className='demographic-right-card-container'>
                           <h4 className='text-center'>
-                            Males of Asian descent make up
+                            Males of Asian descent <br /> make up 23%
                           </h4>
                           <h4 className='text-center bold'>
-                            <span className='extra-bold'>23%</span> of NPC
-                            patients in the US<sup>6</sup>
+                            of NPC patients in the US<sup>6</sup>
                           </h4>
                         </div>
                       </Col>
