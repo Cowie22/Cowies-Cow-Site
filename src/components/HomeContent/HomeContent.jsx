@@ -84,7 +84,7 @@ const HomeContent = props => {
     }
 
     handleCurrentPage('home')
-    setReferences([1, 2, 3, 4, 5, 6, 7])
+    setReferences([1, 2, 4, 5, 6, 7])
 
     updateWindowDimensions()
     window.addEventListener('resize', updateWindowDimensions, { passive: true })
@@ -125,7 +125,7 @@ const HomeContent = props => {
                 <div className='home-hero-lower-content-container'>
                   <p className='white'>
                     Nasopharyngeal carcinoma (NPC) is a distinct cancer with a
-                    unique etiology and prognosis. Key data highlight the poor
+                    unique etiology and prognosis. Key data, including progression-free survival and overall survival, highlight the poor
                     outcomes of patients with recurrent/metastatic
                     nasopharyngeal carcinoma (R/M NPC).
                   </p>
@@ -186,7 +186,7 @@ const HomeContent = props => {
                             91<small>%</small>
                           </h2>
                           <p className='white'>
-                            STAGE IV laryngeal<sup>4§</sup>
+                            STAGE IV laryngeal<sup>3‡</sup>
                           </p>
                         </div>
                       </div>
@@ -239,11 +239,6 @@ const HomeContent = props => {
                     </h6>
                     <h6 className='dark-grey'>
                       ‡Results from a retrospective study of patients with
-                      locally advanced and recurrent/metastatic oral cancer
-                      treated with cetuximab therapy (N=21).
-                    </h6>
-                    <h6 className='dark-grey'>
-                      §Results from a retrospective study of patients with
                       laryngeal squamous cell carcinoma (N=211).
                     </h6>
                   </div>
@@ -257,7 +252,7 @@ const HomeContent = props => {
                   <h2 className='dark-grey'>
                     A rare and distinct cancer with high propensity for
                     metastasis
-                    <sup>5</sup>
+                    <sup>4</sup>
                   </h2>
                   <p>
                     Nasopharyngeal carcinoma is considered within the context of
@@ -277,7 +272,7 @@ const HomeContent = props => {
                       <>
                         While chemoradiotherapy can achieve good locoregional
                         control, 18%-50% of NPC patients will develop distant
-                        metastasis during their disease course.<sup>6</sup>
+                        metastasis during their disease course.<sup>5</sup>
                       </>
                     }
                     delayClass=''
@@ -373,7 +368,7 @@ const HomeContent = props => {
                   </h2>
                   <h2 className='white text-center'>
                     Rates are low in R/M disease for common patient types
-                    <sup>7¶</sup>
+                    <sup>6§</sup>
                   </h2>
                   <p className='white text-center bolder'>
                     Click the buttons below to see OS rates by race.
@@ -400,7 +395,7 @@ const HomeContent = props => {
                 <Col lg={{ span: 12, offset: 0 }}>
                   <div>
                     <h6 className='white'>
-                      ¶An analysis of NPC patients in the United States reported
+                      §An analysis of NPC patients in the United States reported
                       to the SEER (Surveillance, Epidemiology, and End Results)
                       database between 1973 and 2009. Data included 9,014
                       patients, of which the majority were non-Hispanic white
@@ -424,7 +419,7 @@ const HomeContent = props => {
                       <h2>Effective treatment options are limited.</h2>
                       <h3>
                         Despite the standard of care with gemcitabine/cisplatin,
-                        outcomes are still suboptimal.
+                        there still remains an unmet need in this area.
                       </h3>
                       <div
                         className={

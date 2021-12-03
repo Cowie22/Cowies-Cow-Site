@@ -163,8 +163,7 @@ const AboutContent = props => {
                   mass/swelling and enlarged lymph nodes.<sup>1</sup>
                 </p>
                 <p className='white home-lower-text'>
-                  Other common symptoms include headaches, bleeding in the mouth
-                  and nose, difficulty breathing through the nose, hearing
+                  Other possible symptoms include headaches, bleeding in the nose, difficulty breathing through the nose, hearing
                   difficulty, and vision problems.<sup>1</sup>
                 </p>
                 <img src={downArrow} alt='' />
@@ -338,7 +337,7 @@ const AboutContent = props => {
                     <p className='text-center'>
                       NPC is more common in people from Southeast Asia, Northern
                       Africa, and the Middle East. That increased risk remains
-                      for them and their descendants, even if they move to
+                      for them and their offspring, even if they move to
                       lower-risk areas such as the US.<sup>1-2</sup>
                     </p>
                     <h3 className='text-center'>NPC by the numbers</h3>
@@ -394,7 +393,7 @@ const AboutContent = props => {
                       <Col lg={{ span: 4, offset: 0 }} className=''>
                         <div className='demographic-right-card-container center-card'>
                           <h4 className='text-center'>
-                            Caucasian males make up 33%
+                            Non-Hispanic white males make up 33%
                           </h4>
                           <h4 className='text-center bold'>
                             of NPC patients in the US<sup>6</sup>
