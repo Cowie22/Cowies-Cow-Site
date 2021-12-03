@@ -170,7 +170,26 @@ const HomeContent = props => {
                           R/M NASOPHARYNGEAL<sup>1</sup>*
                         </p>
                       </div>
-                      <div className='home-box'>
+                      <div className='home-box home-box-stacked'>
+                        <p className='white bolder'>
+                          METASTATIC OROPHARYNGEAL<sup>2†</sup>
+                        </p>
+                        <div className='home-box-right-inner-container'>
+                          <div className='home-box-percent-container'>
+                            <h2 className='white'>
+                              76<small>%</small>
+                            </h2>
+                            <p className='white'>HPV+</p>
+                          </div>
+                          <div className='home-box-percent-container'>
+                            <h2 className='white'>
+                              39<small>%</small>
+                            </h2>
+                            <p className='white'>HPV-</p>
+                          </div>
+                        </div>
+                      </div>
+                      {/* <div className='home-box'>
                         <div className='home-box-percent-container'>
                           <h2 className='white'>
                             43<small>%</small>
@@ -179,8 +198,8 @@ const HomeContent = props => {
                             Metastatic Oral cavity<sup>3‡</sup>
                           </p>
                         </div>
-                      </div>
-                      <div className='home-box'>
+                      </div> */}
+                      <div className='home-box bottom-box'>
                         <div className='home-box-percent-container'>
                           <h2 className='white'>
                             91<small>%</small>
@@ -191,7 +210,7 @@ const HomeContent = props => {
                         </div>
                       </div>
                     </div>
-                    <div className='home-box-right-container'>
+                    {/* <div className='home-box-right-container'>
                       <div className='home-box'>
                         <p className='white bolder'>
                           METASTATIC OROPHARYNGEAL<sup>2†</sup>
@@ -211,7 +230,7 @@ const HomeContent = props => {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </Col>

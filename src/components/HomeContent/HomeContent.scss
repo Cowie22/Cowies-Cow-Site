@@ -12,7 +12,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 220px 0 80px 0;
+  padding: 230px 0 38px 0;
   h3 {
     padding-bottom: 8px;
   }
@@ -25,16 +25,17 @@
     }
   }
   .home-box-col {
-    padding: 0 0 0 30px;
+    padding: 0 0 0 24px;
     .home-box-section {
       display: flex;
+      margin-top: 64px;
       height: 0;
       transform: translateY(20%);
       opacity: 0;
       transition: transform, opacity;
       transition-duration: .3s, .3s;
       &.active-box {
-        margin: 0;
+        margin: 64px 0 0 0;
         height: auto;
         transform: translateY(0);
         opacity: 1;
@@ -44,7 +45,7 @@
         transform-origin: bottom;
       }
       .home-box-section-title-container {
-        padding-right: 16px;
+        padding-right: 28px;
         .home-box-title-border {
           height: 2px;
           width: 34%;
@@ -88,7 +89,7 @@
         .home-box-left-container {
           .home-box {
             margin-right: 8px;
-            width: 222px;
+            width: 232px;
             &.gold-box {
               border: 6px solid #E3FF39;
               padding: 22px 4px;
@@ -104,32 +105,35 @@
               letter-spacing: -0.02em;
               text-shadow: 1.41038px 2.82076px 2.82076px rgba(0, 0, 0, 0.25);
             }
-          }
-        }
-        .home-box-right-container {
-          .home-box {
-            max-width: 182px;
-            padding: 22px 8px;
-            .home-box-right-inner-container {
-              display: flex;
-              .home-box-percent-container {
+            &.home-box-stacked {
+              max-width: 232px;
+              padding: 22px 40px;
+              .home-box-right-inner-container {
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: flex-start;
-                h2 {
-                  font-weight: 500;
-                  padding-right: 16px;
-                  // padding-top: 4px;
-                }
-                &:last-of-type {
+                .home-box-percent-container {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  align-items: flex-start;
                   h2 {
-                    padding-right: 0px;
+                    font-weight: 500;
+                    padding-right: 16px;
+                    // padding-top: 4px;
+                  }
+                  &:last-of-type {
+                    h2 {
+                      padding-right: 0px;
+                    }
                   }
                 }
               }
             }
+            &.bottom-box {
+              padding: 22px 28px;
+            }
           }
+        }
+        .home-box-right-container {
         }
       }
     }
@@ -199,15 +203,15 @@
 @media screen and (max-width: 992px) {
   .home-container {
     background-image: url('../assets/images/pages/home/home-bg-img-2X-mobile.webp'), url('../assets/images/pages/home/home-bg-img-2X-mobile.png');
-    padding: 164px 0 0px 0;
+    padding: 150px 0 0px 0;
     background-position: 20% 10%;
-    height: 1140px;
+    // height: 1140px;
     // height: fit-content;
     h1 {
-      padding-bottom: 40px;
+      padding-bottom: 60px;
     }
     .home-hero-lower-content-container {
-      padding-top: 80px;
+      padding: 64px 0 16px 0;
       display: flex;
       justify-content: flex-end;
       align-items: flex-start;
@@ -222,7 +226,11 @@
       .home-box-section {
         display: flex;
         flex-direction: column;
-        margin-bottom: 100px;
+        // margin-bottom: 100px;
+        margin: 8px 0 0 0;
+        &.active-box {
+          margin: 8px 0 0 0;
+        }
         .home-box-section-title-container {
           h4 {
             padding-right: 16px;
@@ -275,6 +283,12 @@
                 font-size: 60px;
                 line-height: 48px;
                 padding-bottom: 4px;
+              }
+              &.home-box-stacked {
+                padding: 12px 20px;
+              }
+              &.bottom-box {
+                padding: 12px 20px;
               }
               h2 {
                 font-size: 24px;
@@ -395,13 +409,13 @@
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .home-container {
-    background-position: 70% 50%;
+    background-position: 59% 50%;
     .home-box-col {
-      padding: 0 0 0 15px;
+      padding: 0 0 0 48px;
       .home-box-section {
         .home-box-section-title-container {
           padding: 0;
-          margin: 0 10px 0 0;
+          margin: 0 32px 0 0;
         }
       }
     }
