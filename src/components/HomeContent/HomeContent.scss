@@ -423,12 +423,12 @@
   }
 
   .home-treatment-container {
-    background-position: 70% 50%;
+    background-position: 65% 50%;
   }
 }
 
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .home-container {
     padding: 220px 0 0px 0;
     background-position: 50% 60%;
@@ -458,6 +458,40 @@
 
   .home-treatment-container {
     padding: 800px 0 56px 0;
-    background-position: 50% 18%;
+    background-position: 50% 28%;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  .home-container {
+    padding: 40% 0 10% 0;
+    background-position: 50% 65%;
+    // height: fit-content;
+    .home-hero-lower-content-container {
+      padding-top: 30%;
+      .home-arrow-icon-container {
+        // padding-bottom: 56px;
+      }
+    }
+    .home-box-col {
+      .home-box-section {
+        .home-box-container {
+          padding-bottom: 10%;
+        }
+      }
+    }
+  }
+
+  // .home-outcomes-section {
+  //   .slider-component-outer-container {
+  //     .slider-component-outer-toggle-container {
+  //       top: 8em;
+  //     }
+  //   }
+  // }
+
+  .home-treatment-container {
+    padding: 600px 0 56px 0;
+    background-position: 50% 35%;
   }
 }

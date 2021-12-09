@@ -206,8 +206,9 @@
 @media screen and (max-width: 992px) {
   .about-container {
     background-image: url('../assets/images/pages/about/about-bg-img-2X-mobile.webp'), url('../assets/images/pages/about/about-bg-img-2X-mobile.png');
-    padding: 124px 0 0px 0;
-    height: 969px;
+    padding: 25% 0 10% 0;
+    background-position: 50% 75%;
+    min-height: 969px;
     h1 {
       padding-bottom: 16px;
     }
@@ -286,10 +287,13 @@
   }
 }
 
-@media screen and (min-width: 525px) and (max-width: 768px) {
+@media screen and (min-width: 525px) and (max-width: 991px) {
   .about-container {
-    padding: 224px 0 0px 0;
-    height: 1400px;
-    background-position: 50% 85%;
+    padding: 160px 0 0px 0;
+    background-position: 50% 70%;
+    min-height: 969px;
+    h1 {
+      padding-bottom: 16px;
+    }
   }
 }
