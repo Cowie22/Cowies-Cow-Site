@@ -27,6 +27,8 @@ exports.createPages = ({ graphql, actions }) => {
         toPath: to,
         isPermanent: true,
         statusCode: 301,
+        redirectInBrowser: true,
+        force: true,
       })
     )
   })
