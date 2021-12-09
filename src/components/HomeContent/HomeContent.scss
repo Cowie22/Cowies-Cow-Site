@@ -13,7 +13,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 230px 0 38px 0;
-  pointer-events: none;
   h3 {
     padding-bottom: 8px;
   }
@@ -179,7 +178,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 104px 0;
-  pointer-events: none;
   h2 {
     padding-bottom: 16px;
   }
@@ -191,7 +189,6 @@
     opacity: 0;
     transition: transform, opacity;
     transition-duration: .3s, .3s;
-    pointer-events: auto;
     &.active-card {
       margin: 0;
       transform: translateY(0);
