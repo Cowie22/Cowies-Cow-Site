@@ -11,7 +11,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "jest"
+    "test": "jest",
+    "deploy:s3": "aws s3 sync --delete --exclude '*.DS_Store' public/ s3://npcfacts.com",
+    "invalidate:cf": "aws cloudfront create-invalidation --distribution-id E3TFENMA9DXLZG --paths /\\*"
   },
   "engines": {
     "node": "12.22.6"

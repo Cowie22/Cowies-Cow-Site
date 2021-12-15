@@ -140,7 +140,7 @@ const HomeContent = props => {
               <Col
                 xl={{ span: 7, offset: 1, order: 2 }}
                 lg={{ span: 8, offset: 0, order: 2 }}
-                md={{ span: 8, offset: 4, order: 1 }}
+                md={{ span: 8, offset: 3, order: 1 }}
                 xs={{ span: 9, offset: 3, order: 1 }}
                 className='home-box-col'
               >
