@@ -70,6 +70,15 @@ const HomeContent = props => {
     [boxView2]
   )
 
+  const handleDriveToId = () => {
+    let path = window.location.href.split('#')[1]
+    let hashID = document.getElementById(path)
+    window.scrollTo({
+      top: hashID.offsetTop - 0,
+      behavior: 'smooth'
+    });
+  }
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       let path = window.location.href
@@ -80,6 +89,9 @@ const HomeContent = props => {
         }, 500)
       } else {
         handleLanded(true)
+        setTimeout(() => {
+          handleDriveToId()
+        }, 200)
       }
     }
 
