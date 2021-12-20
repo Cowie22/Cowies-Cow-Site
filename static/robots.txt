@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /nejm/
+Disallow: /jco/
+Disallow: /asco/
+Disallow: /lancet/
+
+Sitemap: http://www.npcfacts.com/sitemap.xml
