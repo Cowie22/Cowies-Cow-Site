@@ -30,6 +30,14 @@ const redirectData = [
   {
     from: '/lancet/',
     to: '/?utm_source=lancet&utm_medium=print&utm_campaign=dse&utm_id=none&utm_term=none&utm_content=none',
+  },
+  {
+    from: '/mhncs',
+    to: '/',
+  },
+  {
+    from: '/mhncs/',
+    to: '/',
   }
 ]
 
