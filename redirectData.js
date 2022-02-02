@@ -38,6 +38,14 @@ const redirectData = [
   {
     from: '/mhncs/',
     to: '/',
+  },
+  {
+    from: '/conference',
+    to: '/',
+  },
+  {
+    from: '/conference/',
+    to: '/',
   }
 ]
 
