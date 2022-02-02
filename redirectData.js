@@ -24,14 +24,6 @@ const redirectData = [
     to: '/?utm_source=asco&utm_medium=print&utm_campaign=dse&utm_id=none&utm_term=none&utm_content=none',
   },
   {
-    from: '/lancet',
-    to: '/?utm_source=lancet&utm_medium=print&utm_campaign=dse&utm_id=none&utm_term=none&utm_content=none',
-  },
-  {
-    from: '/lancet/',
-    to: '/?utm_source=lancet&utm_medium=print&utm_campaign=dse&utm_id=none&utm_term=none&utm_content=none',
-  },
-  {
     from: '/mhncs',
     to: '/',
   },
