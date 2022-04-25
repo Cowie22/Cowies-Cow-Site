@@ -46,7 +46,15 @@ const redirectData = [
   {
     from: '/learn/',
     to: '/',
-  }
+  },
+  {
+    from: '/summer',
+    to: '/',
+  },
+  {
+    from: '/summer/',
+    to: '/',
+  },
 ]
 
 module.exports ={
