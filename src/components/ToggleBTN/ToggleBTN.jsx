@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useContext, memo } from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 import { AppContext } from '../../contexts/state'
@@ -37,4 +37,4 @@ const ToggleBTN = props => {
   )
 }
 
-export default ToggleBTN
+export default memo(ToggleBTN)

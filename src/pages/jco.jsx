@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { memo } from 'react'
 import Layout from '../components/Layout'
 
 const Jco = props => {
@@ -9,4 +9,4 @@ const Jco = props => {
   )
 }
 
-export default Jco
+export default memo(Jco)

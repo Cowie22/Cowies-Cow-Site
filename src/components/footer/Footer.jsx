@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 
 import footerLogo from '../../assets/images/global/footer-logo.svg'
 import arrowRight from '../../assets/images/global/right-arrow-yellow.svg'
 
-export default () => (
+const Footer = () => (
   <footer>
     <Container>
       <Row>
@@ -60,3 +60,5 @@ export default () => (
     </Container>
   </footer>
 )
+
+export default memo(Footer)

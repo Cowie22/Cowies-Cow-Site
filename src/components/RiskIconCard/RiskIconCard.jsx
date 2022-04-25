@@ -1,9 +1,7 @@
 import React, {
-  useState,
-  useEffect,
-  useContext,
   useRef,
   useCallback,
+  memo,
 } from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
@@ -48,4 +46,4 @@ const RiskIconCard = props => {
   )
 }
 
-export default RiskIconCard
+export default memo(RiskIconCard)

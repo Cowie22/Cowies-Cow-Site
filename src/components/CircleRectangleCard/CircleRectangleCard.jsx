@@ -1,9 +1,7 @@
 import React, {
-  useState,
-  useEffect,
-  useContext,
   useRef,
   useCallback,
+  memo,
 } from 'react'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
@@ -45,4 +43,4 @@ const CircleRectangleCard = props => {
   )
 }
 
-export default CircleRectangleCard
+export default memo(CircleRectangleCard)

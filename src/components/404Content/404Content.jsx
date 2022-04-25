@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext, memo } from 'react'
 import Layout from '../Layout'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
@@ -41,4 +41,4 @@ const FourOhFourContent = props => {
   )
 }
 
-export default FourOhFourContent
+export default memo(FourOhFourContent)

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { memo } from 'react'
 import Layout from '../components/Layout'
 
 const Learn = props => {
@@ -9,4 +9,4 @@ const Learn = props => {
   )
 }
 
-export default Learn
+export default memo(Learn)

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext, memo } from 'react'
 import Layout from '../Layout'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
@@ -68,4 +68,4 @@ const SiteMapContent = props => {
   )
 }
 
-export default SiteMapContent
+export default memo(SiteMapContent)

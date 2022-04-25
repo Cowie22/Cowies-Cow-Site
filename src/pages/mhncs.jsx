@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { memo } from 'react'
 import Layout from '../components/Layout'
 
 const Mhncs = props => {
@@ -9,4 +9,4 @@ const Mhncs = props => {
   )
 }
 
-export default Mhncs
+export default memo(Mhncs)

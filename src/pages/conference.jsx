@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { memo } from 'react'
 import Layout from '../components/Layout'
 
 const Conference = props => {
@@ -9,4 +9,4 @@ const Conference = props => {
   )
 }
 
-export default Conference
+export default memo(Conference)

@@ -1,6 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
-import { Link } from 'gatsby'
-import { Container, Row, Col } from 'react-bootstrap'
+import React, { memo } from 'react'
 
 const CircleAnimation = props => {
   const { image, circleDelayClass } = props
@@ -11,4 +9,4 @@ const CircleAnimation = props => {
   )
 }
 
-export default CircleAnimation
+export default memo(CircleAnimation)

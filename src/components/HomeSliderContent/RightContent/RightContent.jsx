@@ -1,9 +1,7 @@
 import React, {
-  useState,
-  useEffect,
-  useContext,
   useRef,
   useCallback,
+  memo,
 } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { useInView } from 'react-intersection-observer'
@@ -267,4 +265,4 @@ const RightContent = props => {
   )
 }
 
-export default RightContent
+export default memo(RightContent)

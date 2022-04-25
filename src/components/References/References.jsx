@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, memo } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
 import ReferencesData from './ReferencesData.js'
@@ -51,4 +51,4 @@ const References = props => {
   )
 }
 
-export default References
+export default memo(References)

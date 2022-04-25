@@ -36,205 +36,71 @@ const MainNav = props => {
   }
 
   return (
-    <>
-      <section className={yDirection > 0 ? 'main-nav dark-nav' : 'main-nav'}>
-        <Container>
-          <Row>
-            <Col lg={2} xs={3}>
-              <div className='header-logo-container'>
-                <Link to='/'>
-                  <img loading='lazy' alt='' src={logo} />
-                </Link>
-              </div>
-            </Col>
-            <Col lg={{ span: 4, offset: 6 }} xs={{ span: 8, offset: 1 }}>
-              <nav className='header-nav-container'>
-                <ul>
-                  <Link
-                    to='/'
-                    onMouseEnter={() => {
-                      handleCurrentTabHovered('home')
-                    }}
-                    onMouseLeave={() => {
-                      handleCurrentTabHovered('')
-                    }}
-                  >
-                    <li>HOME</li>
-                  </Link>
-                  <div
-                    className={
-                      currentPage === 'home'
-                        ? 'active-link home'
-                        : currentPage === 'about'
-                        ? 'active-link about'
-                        : currentPage === 'error'
-                        ? 'active-link error'
-                        : 'active-link home'
-                    }
-                  ></div>
-                  <div
-                    className={
-                      currentTabHovered === 'home'
-                        ? 'active-link-hovered home'
-                        : currentTabHovered === 'about'
-                        ? 'active-link-hovered about'
-                        : currentTabHovered === '' && currentPage === 'home'
-                        ? 'active-link-hovered home'
-                        : currentTabHovered === '' && currentPage === 'about'
-                        ? 'active-link-hovered about'
-                        : 'active-link-hovered'
-                    }
-                  ></div>
-                  <Link
-                    to='/aboutnpc/'
-                    onMouseEnter={() => {
-                      handleCurrentTabHovered('about')
-                    }}
-                    onMouseLeave={() => {
-                      handleCurrentTabHovered('')
-                    }}
-                  >
-                    <li>ABOUT NPC</li>
-                  </Link>
-                </ul>
-              </nav>
-              {/* <nav className={currentPage === 'home' ? 'secondary-nav' : 'secondary-nav none'}>
-                <ul>
-                  <li>
-                    <a href='#outcomes'>
-                      NPC outcomes
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#treatment'>
-                      Treatment options
-                    </a>
-                  </li>
-                </ul>
-              </nav> */}
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      {/* <section
-        className={
-          yDirection > 0 || isNavOpen ? 'header-section-mobile dark-nav d-block d-lg-none' :
-          'header-section-mobile d-block d-lg-none'
-        }
-      >
-        <Container>
-          <Row>
-            <Col xs={{span: 4, offset: 0}}>
-              <div className='header-logo-container'>
-                <Link to='/'>
-                  <img
-                    loading='lazy'
-                    alt=''
-                    src={logo}
-                    width={'86%'}
-                    height={'100%'}
-                  />
-                </Link>
-              </div>
-            </Col>
-            <Col xs={{ span: 2, offset: 6 }}>
-              <div className='mobile-navbar-container'>
-                <button
-                  type='button'
-                  className={
-                    isNavOpen ? 'navbar-toggle active' : 'navbar-toggle'
-                  }
-                  onClick={() => {
-                    toggleNav()
+    <section className={yDirection > 0 ? 'main-nav dark-nav' : 'main-nav'}>
+      <Container>
+        <Row>
+          <Col lg={2} xs={3}>
+            <div className='header-logo-container'>
+              <Link to='/'>
+                <img loading='lazy' alt='' src={logo} />
+              </Link>
+            </div>
+          </Col>
+          <Col lg={{ span: 4, offset: 6 }} xs={{ span: 8, offset: 1 }}>
+            <nav className='header-nav-container'>
+              <ul>
+                <Link
+                  to='/'
+                  onMouseEnter={() => {
+                    handleCurrentTabHovered('home')
+                  }}
+                  onMouseLeave={() => {
+                    handleCurrentTabHovered('')
                   }}
                 >
-                  <div className='sr-only'>Toggle navigation</div>
-                  <div className='icon-bar'>
-                    <span className='icon-bar-inner'>
-
-                    </span>
-                  </div>
-                  <div className='icon-bar'>
-                    <span className='icon-bar-inner'>
-
-                    </span>
-                  </div>
-                  <div className='icon-bar'>
-                    <span className='icon-bar-inner'>
-
-                    </span>
-                  </div>
-                </button>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={{span: 12, offset: 0}}>
-              <nav
-                className={
-                  isNavOpen ? 'header-nav-container-mobile' : 'header-nav-container-mobile hidden-dropdown'}
+                  <li>HOME</li>
+                </Link>
+                <div
+                  className={
+                    currentPage === 'home'
+                      ? 'active-link home'
+                      : currentPage === 'about'
+                      ? 'active-link about'
+                      : currentPage === 'error'
+                      ? 'active-link error'
+                      : 'active-link home'
+                  }
+                ></div>
+                <div
+                  className={
+                    currentTabHovered === 'home'
+                      ? 'active-link-hovered home'
+                      : currentTabHovered === 'about'
+                      ? 'active-link-hovered about'
+                      : currentTabHovered === '' && currentPage === 'home'
+                      ? 'active-link-hovered home'
+                      : currentTabHovered === '' && currentPage === 'about'
+                      ? 'active-link-hovered about'
+                      : 'active-link-hovered'
+                  }
+                ></div>
+                <Link
+                  to='/aboutnpc/'
+                  onMouseEnter={() => {
+                    handleCurrentTabHovered('about')
+                  }}
+                  onMouseLeave={() => {
+                    handleCurrentTabHovered('')
+                  }}
                 >
-                <ul className='header-nav-list'>
-                  <div
-                    className={
-                      currentPage === 'home' ? 'home-page-list-items active-list' :
-                      'home-page-list-items'
-                    }
-                  >
-                    <li
-                      onClick={() => {
-                        toggleNav()
-                      }}
-                      className='mobile-page-nav-item'
-                    >
-                      <Link to='/'>
-                        HOME
-                      </Link>
-                    </li>
-                    <li
-                      onClick={() => {
-                        toggleNav()
-                      }}
-                    >
-                      <Link to='/#outcomes'>
-                        NPC outcomes
-                      </Link>
-                    </li>
-                    <li
-                      onClick={() => {
-                        toggleNav()
-                      }}
-                    >
-                      <Link to='/#treatment'>
-                        Treatment options
-                      </Link>
-                    </li>
-                  </div>
-                  <div
-                    className={
-                      currentPage === 'about' ? 'about-page-list-items active-list' :
-                      'about-page-list-items'
-                    }
-                  >
-                    <li
-                      onClick={() => {
-                        toggleNav()
-                      }}
-                      className='mobile-page-nav-item'
-                    >
-                      <Link to='/aboutnpc/'>
-                        ABOUT NPC
-                      </Link>
-                    </li>
-                  </div>
-                </ul>
-              </nav>
-            </Col>
-          </Row>
-        </Container>
-      </section> */}
-    </>
+                  <li>ABOUT NPC</li>
+                </Link>
+              </ul>
+            </nav>
+          </Col>
+        </Row>
+      </Container>
+    </section>
   )
 }
 

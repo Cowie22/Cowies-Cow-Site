@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { memo } from 'react'
 import Layout from '../components/Layout'
 
 const Asco = props => {
@@ -9,4 +9,4 @@ const Asco = props => {
   )
 }
 
-export default Asco
+export default memo(Asco)
