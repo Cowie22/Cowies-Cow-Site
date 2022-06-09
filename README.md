@@ -19,9 +19,11 @@
 <ul>
   <li>
     Hooks are primarily used for state management throughout the site.
-  </li>
-  <li>
-    The traditional React method of passing props down is also used.
+    <ul>
+      <li>
+        Custom hooks are located in /customHooks
+      </li>
+    </ul>
   </li>
   <li>
     The React Context API is used for global state management.
@@ -86,9 +88,6 @@
 </h2>
 <ul>
   <li>
-    Currently this project does not contain any redirects, but the setup for front-end redirects is all there and the implementation is described below.
-  </li>
-  <li>
     Gatsby has functionality for redirects, which are held in gatsby-node.js and are painlessly made.
   </li>
   <li>
@@ -113,7 +112,7 @@
 </h2>
 <ul>
   <li>
-    Most animations throughout the project are do it yourself, with js and css animations.  For example the slider for tabs, hover states, expanding cards, etc.
+    Most animations throughout the project are do it yourself, with js and css animations.
   </li>
   <li>
     Making the animations yourself, by utilizing such tools as keyframes, greatly reduces the size of your npm modules and increases performance.
@@ -180,56 +179,14 @@
 </ul>
 
 <h2>
-  The Matrix (Pages With Tabs)
-</h2>
-<ul>
-  <li>
-    The content for a tab, along with the tab animations, is determined with context.  The currentPage and currentTopTab values determine the content that is shown.
-  </li>
-  <li>
-    These values also allow one to show dynamic content, that isn't is specific for a tab, but is not located in the tab content.  For example, the references at the bottom of the page.
-  </li>
-</ul>
-
-<h2>
-  Deployment
-</h2>
-<ul>
-  <li>
-    A third party company, Workbox, is responsible for hosting the site.  However, we are still responsible for creating the production build and uploading it to the staging server.
-  </li>
-  <li>
-    In order to deploy, you can use and SFTP, such as Filezilla to upload the files.  However, I find it easier to SFTP to the staging server using the terminal.  You can SFTP, as well as SSH into the server with the credentials.  Using the SFTP commands, you can easily and more quickly upload the files.
-  </li>
-  <li>
-    There are files on the server that are permanent, and you must keep them there.  These files are saved in the Placeholder directory on the server as well, so that you never lose them.
-  </li>
-  <li>
-    After running, npm run build (make sure brotli and the minification are utilized), you can grab the exact path to the public folder and upload this to the server using SFTP.
-  </li>
-  <li>
-    In the server, navigate to public_html and run, "put -r {path to public folder}/*" for example
-    "put -r /Users/rcowie/GiantWebsites/Myovant/Myovant-HCP-Gatsby/public/*"
-    <ul>
-      <li>
-        Put is the SFTP command to upload files.
-      </li>
-      <li>
-        -r means recursively, so that the child directories of the public folder and all of their files are uploaded as well.
-      </li>
-      <li>
-        /* is used so that you upload the content within the public directory and not the public directory itself, otherwise the path would be off and the project won't run.
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h2>
   Tests
 </h2>
 <ul>
   <li>
     There's only so much that you can test on a static website, but they are located in the /components/__tests__ directory.
+  </li>
+  <li>
+    All tests are just examples in the starter, used from a previous project.  They are there to use as a reference.  Will need to replace them all when you are ready to write tests.
   </li>
   <li>
     Jest and React Testing Library are used to make tests.
