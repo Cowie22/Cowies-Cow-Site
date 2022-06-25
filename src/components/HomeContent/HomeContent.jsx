@@ -15,6 +15,7 @@ import CircleRectangleCard from '../../components/CircleRectangleCard/CircleRect
 import ToggleBTN from '../../components/ToggleBTN/ToggleBTN'
 import HomeSliderRightContent from '../../components/HomeSliderContent/RightContent/RightContent'
 import HomeSlideLeftContent from '../../components/HomeSliderContent/LeftContent/LeftContent'
+import VideoPlayer from '../VideoPlayer/VideoPlayer'
 
 import downArrow from '../../assets/images/global/down-arrow-yellow.svg'
 
@@ -249,6 +250,19 @@ const HomeContent = props => {
             </Row>
           </Container>
         </section>
+      </section>
+
+      <section className='home-video-section'>
+        <Container>
+          <Row>
+            <Col lg={{ span: 12, offset: 0 }}>
+              <h3 className='white'>
+                Watch Dr. Rosenberg discuss nasopharyngeal cancer, its unique subtype and histologic classification, as well as treatment and prognosis.
+              </h3>
+              <VideoPlayer />
+            </Col>
+          </Row>
+        </Container>
       </section>
 
       {landed ? (
