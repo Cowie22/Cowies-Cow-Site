@@ -1,64 +1,69 @@
 import React, { useRef, memo } from 'react'
+import { Row, Col } from 'react-bootstrap'
 
 import video from '../../assets/videos/test.mp4'
-import useVideoPlayer from '../../customHooks/useVideoPlayer'
+import VideoPlayerData from './VideoPlayerData'
 
 
 const VideoPlayer = (props) => {
-  const videoElement = useRef(null)
-  const {
-    playerState,
-    togglePlay,
-    handleOnTimeUpdate,
-    handleVideoProgress,
-    handleVideoSpeed,
-    toggleMute,
-  } = useVideoPlayer(videoElement)
-
   return (
     <div className='video-player-container'>
-      <div className='video-wrapper'>
-        <video
-          src={video}
-          ref={videoElement}
-          onTimeUpdate={handleOnTimeUpdate}
-        />
-        <div className='controls'>
-          <div className='actions'>
-            <button onClick={togglePlay}>
-              {!playerState.isPlaying ? (
-                <i className='bx bx-play'></i>
-              ) : (
-                <i className='bx bx-pause'></i>
-              )}
-            </button>
+      <Row>
+        <Col lg={{span: 8, offset: 0}} className='video-col'>
+          <div className='video-container'>
+            <video
+              controls
+            >
+              <source src={video} type="video/mp4"></source>
+            </video>
           </div>
-          <input
-            type='range'
-            min='0'
-            max='100'
-            value={playerState.progress}
-            onChange={(e) => handleVideoProgress(e)}
-          />
-          <select
-            className='velocity'
-            value={playerState.speed}
-            onChange={(e) => handleVideoSpeed(e)}
-          >
-            <option value='0.50'>0.50x</option>
-            <option value='1'>1x</option>
-            <option value='1.25'>1.25x</option>
-            <option value='2'>2x</option>
-          </select>
-          <button className='mute-btn' onClick={toggleMute}>
-            {!playerState.isMuted ? (
-              <i className='bx bxs-volume-full'></i>
-            ) : (
-              <i className='bx bxs-volume-mute'></i>
-            )}
-          </button>
-        </div>
-      </div>
+        </Col>
+        <Col lg={{span: 4, offset: 0}} className='video-library-col'>
+          <div className='video-library-container'>
+            <div className='video-library-title-container'>
+              <h4 className='text-center extra-bold'>
+                VIDEO SERIES
+              </h4>
+            </div>
+            <div className='video-selection-container'>
+              {
+                VideoPlayerData.map((video, i) => {
+                  const { src, thumbnail, thumbnailFB, alt, text } = video
+                  return (
+                    <div
+                      className='video-thumbnail-container'
+                      key={`${src}-${i}`}
+                    >
+                      <div className='thumbnail-container'>
+                        <picture>
+                          <source
+                            srcSet={thumbnail}
+                            alt={alt}
+                            type='image/webp'
+                          />
+                          <source
+                            srcSet={thumbnailFB}
+                            alt={alt}
+                            type='image/png'
+                          />
+                          <img
+                            loading='lazy'
+                            src={thumbnailFB}
+                            alt={alt}
+                          />
+                        </picture>
+                      </div>
+                      <p>
+                        {text}
+                      </p>
+                    </div>
+                  )
+                })
+              }
+            </div>
+          </div>
+        </Col>
+      </Row>
     </div>
   )
 }
