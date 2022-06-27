@@ -16,12 +16,14 @@ import ToggleBTN from '../../components/ToggleBTN/ToggleBTN'
 import HomeSliderRightContent from '../../components/HomeSliderContent/RightContent/RightContent'
 import HomeSlideLeftContent from '../../components/HomeSliderContent/LeftContent/LeftContent'
 import VideoPlayer from '../VideoPlayer/VideoPlayer'
+import useHover from '../../customHooks/useHover'
 
-import downArrow from '../../assets/images/global/down-arrow-yellow.svg'
+import VideoArrow from '../SVGs/VideoArrow'
 
 const HomeContent = props => {
   const [width, handleWidth] = useState(0)
   const [landed, handleLanded] = useState(false)
+  const [isHovered, hover] = useHover(false)
   const state = useContext(AppContext)
   const {
     currentPage,
@@ -30,6 +32,8 @@ const HomeContent = props => {
     slider,
     handleSlider,
   } = state
+
+  const videoRef = useRef()
 
   const circleRefHome = useRef()
   const [circleViewHome, circleInViewHome] = useInView({ triggerOnce: true })
@@ -110,6 +114,15 @@ const HomeContent = props => {
     handleWidth(window.innerWidth)
   }
 
+  const scrollToRef = (ref) => {
+    let currentRef = ref.current
+    window.scrollTo({
+      top: currentRef.offsetTop - 100,
+      left: 0,
+      behavior: 'smooth',
+    });
+  }
+
   return (
     <Layout
       canonicalURL='https://www.npcfacts.com/'
@@ -142,11 +155,16 @@ const HomeContent = props => {
                     outcomes of patients with recurrent/metastatic
                     nasopharyngeal carcinoma (R/M NPC).
                   </p>
-                  <p className='white home-lower-text'>
-                    Explore the facts below.
-                  </p>
-                  <div className='home-arrow-icon-container'>
-                    <img src={downArrow} alt='' />
+                  <div
+                    className='home-video-arrow-container hovered-icon-container'
+                    onMouseEnter={() => hover(true)}
+                    onMouseLeave={() => hover(false)}
+                    onClick={() => scrollToRef(videoRef)}
+                  >
+                    <VideoArrow isHovered={isHovered} />
+                    <h4 className='white'>
+                      EXPLORE A VIDEO SERIES ON NPC
+                    </h4>
                   </div>
                 </div>
               </Col>
@@ -252,10 +270,26 @@ const HomeContent = props => {
         </section>
       </section>
 
-      <section className='home-video-section'>
+      <section className='home-video-section' ref={videoRef}>
         <Container>
           <Row>
             <Col lg={{ span: 12, offset: 0 }}>
+              <div className='footnote-container'>
+                <h6 className='white'>
+                  *Results from a multicenter, randomized, open-label phase
+                  3 trial of patients with recurrent or metastatic
+                  nasopharyngeal carcinoma (N=362).
+                </h6>
+                <h6 className='white'>
+                  †Results from a retrospective analysis of patients with
+                  HPV-positive and HPV-negative recurrent locoregional and
+                  distant metastatic oropharyngeal cancer (N=108).
+                </h6>
+                <h6 className='white'>
+                  ‡Results from a retrospective study of patients with
+                  laryngeal squamous cell carcinoma (N=211).
+                </h6>
+              </div>
               <h3 className='white'>
                 Watch Dr. Rosenberg discuss nasopharyngeal cancer, its unique subtype and histologic classification, as well as treatment and prognosis.
               </h3>
@@ -269,26 +303,6 @@ const HomeContent = props => {
         <>
           <section className='home-cancer-section'>
             <Container>
-              <Row>
-                <Col lg={{ span: 12, offset: 0 }}>
-                  <div className='footnote-container'>
-                    <h6 className='dark-grey'>
-                      *Results from a multicenter, randomized, open-label phase
-                      3 trial of patients with recurrent or metastatic
-                      nasopharyngeal carcinoma (N=362).
-                    </h6>
-                    <h6 className='dark-grey'>
-                      †Results from a retrospective analysis of patients with
-                      HPV-positive and HPV-negative recurrent locoregional and
-                      distant metastatic oropharyngeal cancer (N=108).
-                    </h6>
-                    <h6 className='dark-grey'>
-                      ‡Results from a retrospective study of patients with
-                      laryngeal squamous cell carcinoma (N=211).
-                    </h6>
-                  </div>
-                </Col>
-              </Row>
               <Row>
                 <Col lg={{ span: 12, offset: 0 }}>
                   <p className='dark-grey bolder'>

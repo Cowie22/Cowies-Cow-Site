@@ -35,6 +35,9 @@
           }
           .thumbnail-container {
             width: 50%;
+            &:hover {
+              cursor: pointer;
+            }
             img {
               width: 100%;
               height: auto;

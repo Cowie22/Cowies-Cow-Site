@@ -20,8 +20,17 @@
     padding-bottom: 32px;
   }
   .home-hero-lower-content-container {
-    .home-lower-text {
-      padding: 32px 0 40px 0;
+    .home-video-arrow-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 32px;
+      &:hover {
+        cursor: pointer;
+      }
+      h4 {
+        padding-left: 16px;
+      }
     }
   }
   .home-box-col {
@@ -140,17 +149,17 @@
 .home-video-section {
   padding: 24px 0 88px 0;
   background: #3E404C;
+  .footnote-container {
+    padding-bottom: 72px;
+  }
   h3 {
     padding-bottom: 40px;
   }
 }
 
 .home-cancer-section {
-  padding: 24px 0 96px 0;
+  padding: 96px 0;
   background: #C1C7C8;
-  .footnote-container {
-    padding-bottom: 72px;
-  }
   h2 {
     padding: 8px 0 16px 0;
   }
@@ -219,8 +228,8 @@
       align-items: flex-start;
       flex-direction: column;
       height: 100%;
-      .home-lower-text {
-        padding: 32px 0;
+      .home-video-arrow-container {
+        padding-top: 32px;
       }
     }
     .home-box-col {
@@ -251,12 +260,16 @@
       }
     }
   }
-  
-  .home-cancer-section {
-    padding: 24px 0 16px 0;
+
+  .home-video-section {
+    padding: 56px 0;
     .footnote-container {
       padding-bottom: 40px;
     }
+  }
+  
+  .home-cancer-section {
+    padding: 56px 0 16px 0;
     h2 {
       padding: 8px 0 16px 0;
     }

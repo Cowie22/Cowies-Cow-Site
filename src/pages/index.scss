@@ -353,3 +353,19 @@ sub {
     margin-left: -1em;
   }
 }
+
+.hovered-icon-container {
+  svg {
+    > * {
+      transition: 0.5s all;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    svg {
+      > * {
+        transition: 0.5s all;
+      }
+    }
+  }
+}
