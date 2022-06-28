@@ -1,5 +1,6 @@
 import React from 'react'
 
+import video_2 from '../../assets/videos/test.mp4'
 import thumbnail_1 from '../../assets/images/components/VideoPlayer/thumbnail-1.webp'
 import thumbnail_1_FB from '../../assets/images/components/VideoPlayer/thumbnail-1.png'
 import thumbnail_2 from '../../assets/images/components/VideoPlayer/thumbnail-2.webp'
@@ -10,21 +11,21 @@ import thumbnail_3_FB from '../../assets/images/components/VideoPlayer/thumbnail
 
 const VideoPlayerData = [
   {
-    src: '',
+    src: 'https://player.vimeo.com/video/724730019?h=667e6e2997',
     thumbnail: thumbnail_1,
     thumbnailFB: thumbnail_1_FB,
     alt: '',
     text: 'Definition, incidence, and risk factors',
   },
   {
-    src: '',
+    src: video_2,
     thumbnail: thumbnail_2,
     thumbnailFB: thumbnail_2_FB,
     alt: '',
     text: 'Classification and clinical presentation',
   },
   {
-    src: '',
+    src: 'https://player.vimeo.com/video/724730019?h=667e6e2997',
     thumbnail: thumbnail_3,
     thumbnailFB: thumbnail_3_FB,
     alt: '',

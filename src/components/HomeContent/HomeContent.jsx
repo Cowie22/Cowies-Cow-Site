@@ -33,7 +33,7 @@ const HomeContent = props => {
     handleSlider,
   } = state
 
-  const videoRef = useRef()
+  const videoPlayerRef = useRef()
 
   const circleRefHome = useRef()
   const [circleViewHome, circleInViewHome] = useInView({ triggerOnce: true })
@@ -117,7 +117,7 @@ const HomeContent = props => {
   const scrollToRef = (ref) => {
     let currentRef = ref.current
     window.scrollTo({
-      top: currentRef.offsetTop - 100,
+      top: currentRef.offsetTop,
       left: 0,
       behavior: 'smooth',
     });
@@ -159,7 +159,7 @@ const HomeContent = props => {
                     className='home-video-arrow-container hovered-icon-container'
                     onMouseEnter={() => hover(true)}
                     onMouseLeave={() => hover(false)}
-                    onClick={() => scrollToRef(videoRef)}
+                    onClick={() => scrollToRef(videoPlayerRef)}
                   >
                     <VideoArrow isHovered={isHovered} />
                     <h4 className='white'>
@@ -220,16 +220,6 @@ const HomeContent = props => {
                           </div>
                         </div>
                       </div>
-                      {/* <div className='home-box'>
-                        <div className='home-box-percent-container'>
-                          <h2 className='white'>
-                            43<small>%</small>
-                          </h2>
-                          <p className='white'>
-                            Metastatic Oral cavity<sup>3‡</sup>
-                          </p>
-                        </div>
-                      </div> */}
                       <div className='home-box bottom-box'>
                         <div className='home-box-percent-container'>
                           <h2 className='white'>
@@ -241,27 +231,6 @@ const HomeContent = props => {
                         </div>
                       </div>
                     </div>
-                    {/* <div className='home-box-right-container'>
-                      <div className='home-box'>
-                        <p className='white bolder'>
-                          METASTATIC OROPHARYNGEAL<sup>2†</sup>
-                        </p>
-                        <div className='home-box-right-inner-container'>
-                          <div className='home-box-percent-container'>
-                            <h2 className='white'>
-                              76<small>%</small>
-                            </h2>
-                            <p className='white'>HPV+</p>
-                          </div>
-                          <div className='home-box-percent-container'>
-                            <h2 className='white'>
-                              39<small>%</small>
-                            </h2>
-                            <p className='white'>HPV-</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div> */}
                   </div>
                 </div>
               </Col>
@@ -270,7 +239,7 @@ const HomeContent = props => {
         </section>
       </section>
 
-      <section className='home-video-section' ref={videoRef}>
+      <section className='home-video-section'>
         <Container>
           <Row>
             <Col lg={{ span: 12, offset: 0 }}>
@@ -295,6 +264,7 @@ const HomeContent = props => {
               </h3>
               <VideoPlayer />
             </Col>
+            <div ref={videoPlayerRef}></div>
           </Row>
         </Container>
       </section>

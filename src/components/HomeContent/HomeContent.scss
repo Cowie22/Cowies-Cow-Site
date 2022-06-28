@@ -262,9 +262,9 @@
   }
 
   .home-video-section {
-    padding: 56px 0;
+    padding: 0px 0 56px 0;
     .footnote-container {
-      padding-bottom: 40px;
+      padding-bottom: 48px;
     }
   }
   
@@ -334,6 +334,11 @@
 
 @media screen and (max-width: 525px) {
   .home-container {
+    padding: 37% 2% 16% 0;
+    background-position: 30% 65%;
+    .home-hero-lower-content-container {
+      padding-top: 18%;
+    }
     .home-box-col {
       .home-box-section {
         .home-box-container {
@@ -420,7 +425,7 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .home-container {
     padding: 220px 0 0px 10px;
-    background-position: 50% 62%;
+    background-position: 50% 56%;
     height: fit-content;
     .home-hero-lower-content-container {
       padding-top: 95px;
@@ -451,12 +456,12 @@
   }
 }
 
-@media screen and (min-width: 426px) and (max-width: 767px) {
+@media screen and (min-width: 526px) and (max-width: 767px) {
   .home-container {
-    padding: 50% 8% 10% 0;
+    padding: 50% 8% 22% 0;
     background-position: 50% 65%;
     .home-hero-lower-content-container {
-      padding-top: 20%;
+      padding-top: 18%;
     }
     .home-box-col {
       .home-box-section {
