@@ -1,22 +1,11 @@
-import React, { memo, useEffect, useRef, useState } from 'react'
+import React, { memo } from 'react'
 import { Row, Col } from 'react-bootstrap'
 
 import VideoPlayerData from './VideoPlayerData'
-
-import placeholderImg from '../../assets/images/components/VideoPlayer/video-placeholder.webp'
-import placeholderImgFB from '../../assets/images/components/VideoPlayer/video-placeholder.png'
+import useVideoUpdate from '../../customHooks/useVideoUpdate'
 
 const VideoPlayer = props => {
-  const videoRef = useRef()
-  const [video, handleVideo] = useState(VideoPlayerData[0].src)
-
-  // useEffect(() => {
-  //   videoRef.current ? videoRef.current.load() : undefined
-  // }, [video])
-
-  const updateVideo = videoSrc => {
-    handleVideo(videoSrc)
-  }
+  const [video, updateVideo] = useVideoUpdate(VideoPlayerData[0].src)
 
   return (
     <div className='video-player-container'>
@@ -25,20 +14,9 @@ const VideoPlayer = props => {
           <div className='video-container'>
             <iframe
               src={video}
-              // width='640'
-              // height='360'
               frameBorder='0'
-              allow='autoplay; fullscreen; picture-in-picture'
-              allowFullScreen
+              allow='fullscreen; picture-in-picture'
             ></iframe>
-            {/* <video
-              controls
-              poster={placeholderImg || placeholderImgFB}
-              preload='none'
-              ref={videoRef}
-            >
-              <source src={video} type='video/mp4'></source>
-            </video> */}
           </div>
         </Col>
         <Col lg={{ span: 4, offset: 0 }} className='video-library-col'>
