@@ -3,7 +3,7 @@
  */
 
 
-var project_name = "tori-dse-gatsby"
+var project_name = "tori-dse-gatsby-video-update"
 var client_name = "tori"
 var git_repo = "git@github.com:GiantAgency/Tori-DSE-Gatsby.git"
 var git_branch = "master"
