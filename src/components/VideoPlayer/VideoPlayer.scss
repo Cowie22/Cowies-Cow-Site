@@ -43,10 +43,10 @@
           .thumbnail-container {
             width: 50%;
             border: 2px solid transparent;
-            transition: all 0.5s;
+            transition: all 0.7s;
             &.active-thumbnail {
               border: 2px solid $gold;
-              transition: all 0.5s;
+              transition: all 0.7s;
             }
             &:hover {
               cursor: pointer;
