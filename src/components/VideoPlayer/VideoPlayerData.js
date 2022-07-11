@@ -15,6 +15,7 @@ const VideoPlayerData = [
     thumbnailFB: thumbnail_1_FB,
     alt: 'Thumbnail image of Dr. Rosenberg: Definition, incidence, and risk factors',
     text: 'Definition, incidence, and risk factors',
+    startingSRC: 'https://player.vimeo.com/video/724730019?h=667e6e2997',
   },
   {
     src: 'https://player.vimeo.com/video/724761160?h=9d7614b4c4&autoplay=1&cc_load_policy=1',
