@@ -24,9 +24,10 @@
       .video-library-title-container {
         padding: 16px 0;
         border-bottom: 1px solid #FFFFFF;
+        width: 100%;
       }
       .video-selection-container {
-        padding: 16px 20px;
+        padding: 16px 20px 12px 20px;
         .video-thumbnail-container {
           display: flex;
           justify-content: center;
@@ -37,7 +38,7 @@
           }
           .thumbnail-container {
             width: 50%;
-            border: 0px solid $gold;
+            border: 2px solid transparent;
             transition: all 0.5s;
             &.active-thumbnail {
               border: 2px solid $gold;

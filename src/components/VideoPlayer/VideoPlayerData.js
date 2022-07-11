@@ -10,21 +10,21 @@ import thumbnail_3_FB from '../../assets/images/components/VideoPlayer/thumbnail
 
 const VideoPlayerData = [
   {
-    src: 'https://player.vimeo.com/video/724730019?h=667e6e2997',
+    src: 'https://player.vimeo.com/video/724730019?h=667e6e2997&autoplay=1&cc_load_policy=1',
     thumbnail: thumbnail_1,
     thumbnailFB: thumbnail_1_FB,
     alt: 'Thumbnail image of Dr. Rosenberg: Definition, incidence, and risk factors',
     text: 'Definition, incidence, and risk factors',
   },
   {
-    src: 'https://player.vimeo.com/video/724761160?h=9d7614b4c4',
+    src: 'https://player.vimeo.com/video/724761160?h=9d7614b4c4&autoplay=1&cc_load_policy=1',
     thumbnail: thumbnail_2,
     thumbnailFB: thumbnail_2_FB,
     alt: 'Thumbnail image of Dr. Rosenberg: Classification and clinical presentation',
     text: 'Classification and clinical presentation',
   },
   {
-    src: 'https://player.vimeo.com/video/724765080?h=c2cdaa8cbc',
+    src: 'https://player.vimeo.com/video/724765080?h=c2cdaa8cbc&autoplay=1&cc_load_policy=1',
     thumbnail: thumbnail_3,
     thumbnailFB: thumbnail_3_FB,
     alt: 'Thumbnail image of Dr. Rosenberg: A distinct cancer',

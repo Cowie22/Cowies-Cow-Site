@@ -15,7 +15,7 @@ const VideoPlayer = props => {
             <iframe
               src={video}
               frameBorder='0'
-              allow='fullscreen; picture-in-picture'
+              allow='fullscreen; picture-in-picture; autoplay'
               title={video}
             ></iframe>
           </div>

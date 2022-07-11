@@ -12,11 +12,11 @@ const VideoArrow = props => {
       xmlns='http://www.w3.org/2000/svg'
     >
       <path
-        stroke={isHovered ? '#997F8A' : '#E3FF39'}
+        stroke={isHovered ? '#E3FF39' : '#E3FF39'}
         strokeWidth={0.898765}
         d='M0.449383 0.449383H39.550582999999996V27.550583H0.449383z'
       />
-      <path d='M28 13.712l-13.067 7.544V6.168L28 13.712z' fill={isHovered ? '#997F8A' : '#E3FF39'} />
+      <path d='M28 13.712l-13.067 7.544V6.168L28 13.712z' fill={isHovered ? '#E3FF39' : '#E3FF39'} />
     </svg>
   )
 }

@@ -198,12 +198,12 @@ const HomeContent = props => {
                           20<small>%</small>
                         </h1>
                         <p className='text-center white'>
-                          R/M NASOPHARYNGEAL<sup>1</sup>*
+                          R/M NASOPHARYNGEAL*<sup>1</sup>
                         </p>
                       </div>
                       <div className='home-box home-box-stacked'>
                         <p className='white bolder'>
-                          METASTATIC OROPHARYNGEAL<sup>2†</sup>
+                          METASTATIC OROPHARYNGEAL<sup>†2</sup>
                         </p>
                         <div className='home-box-right-inner-container'>
                           <div className='home-box-percent-container'>
@@ -226,7 +226,7 @@ const HomeContent = props => {
                             91<small>%</small>
                           </h2>
                           <p className='white'>
-                            STAGE IV laryngeal<sup>3‡</sup>
+                            STAGE IV laryngeal<sup>‡3</sup>
                           </p>
                         </div>
                       </div>
@@ -245,7 +245,7 @@ const HomeContent = props => {
             <Col lg={{ span: 12, offset: 0 }}>
               <div className='footnote-container'>
                 <h6 className='white'>
-                  *Results from a multicenter, randomized, open-label phase
+                  *Results from a multicenter, randomized, open-label, phase
                   3 trial of patients with recurrent or metastatic
                   nasopharyngeal carcinoma (N=362).
                 </h6>
@@ -345,8 +345,8 @@ const HomeContent = props => {
                     content={
                       <>
                         A key study showed a 1-year PFS rate of 20% for patients
-                        whose R/M NPC was treated with standard of care
-                        chemotherapy.<sup>1</sup>*
+                        whose R/M NPC was treated with standard-of-care
+                        chemotherapy.*<sup>1</sup>
                       </>
                     }
                     delayClass='animation-start-2'
@@ -397,7 +397,7 @@ const HomeContent = props => {
                   </h2>
                   <h2 className='white text-center'>
                     Rates are low in R/M disease for common patient types
-                    <sup>6§</sup>
+                    <sup>¶7</sup>
                   </h2>
                   <p className='white text-center bolder'>
                     Click the buttons below to see OS rates by race.
@@ -424,7 +424,7 @@ const HomeContent = props => {
                 <Col lg={{ span: 12, offset: 0 }}>
                   <div>
                     <h6 className='white'>
-                      §An analysis of NPC patients in the United States reported
+                      ¶An analysis of NPC patients in the United States reported
                       to the SEER (Surveillance, Epidemiology, and End Results)
                       database between 1973 and 2009. Data included 9,014
                       patients, of which the majority were non-Hispanic white

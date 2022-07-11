@@ -27,9 +27,16 @@
       padding-top: 32px;
       &:hover {
         cursor: pointer;
+        h4 {
+          color: #E3FF39;
+          transition: all .5s;
+          transition-delay: .2s;
+        }
       }
       h4 {
         padding-left: 16px;
+        transition: all .5s;
+        transition-delay: .2s;
       }
     }
   }

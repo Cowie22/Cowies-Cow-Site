@@ -35,8 +35,8 @@ const Footer = () => (
               </nav>
               <div className='footer-text-container'>
                 <h6 className='white'>
-                  © 2021 Coherus BioSciences, Inc. All rights reserved.
-                  1021-IO-P031
+                  © 2022 Coherus BioSciences, Inc. All rights reserved.
+                  0422-IO-P166
                 </h6>
               </div>
             </Col>
