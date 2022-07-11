@@ -27,7 +27,14 @@ const VideoPlayer = props => {
             </div>
             <div className='video-selection-container'>
               {VideoPlayerData.map((videoData, i) => {
-                const { src, thumbnail, thumbnailFB, alt, text, startingSRC } = videoData
+                const {
+                  src,
+                  thumbnail,
+                  thumbnailFB,
+                  alt,
+                  text,
+                  startingSRC,
+                } = videoData
                 return (
                   <div
                     className='video-thumbnail-container'
@@ -35,7 +42,11 @@ const VideoPlayer = props => {
                   >
                     <div
                       className={`thumbnail-container ${
-                        src === video ? 'active-thumbnail' : startingSRC === video ? 'active-thumbnail' : ''
+                        src === video
+                          ? 'active-thumbnail'
+                          : startingSRC === video
+                          ? 'active-thumbnail'
+                          : ''
                       }`}
                       onClick={() => updateVideo(src)}
                     >

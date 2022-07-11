@@ -28,6 +28,10 @@
       }
       .video-selection-container {
         padding: 16px 20px 12px 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: calc(100% - 63px);
         .video-thumbnail-container {
           display: flex;
           justify-content: center;
@@ -43,7 +47,6 @@
             &.active-thumbnail {
               border: 2px solid $gold;
               transition: all 0.5s;
-
             }
             &:hover {
               cursor: pointer;
@@ -73,6 +76,7 @@
       .video-library-container {
         .video-selection-container {
           padding: 20px 8px;
+          height: calc(100% - 59px);
           .video-thumbnail-container {
             p {
               padding-left: 12px;
