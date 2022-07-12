@@ -397,7 +397,7 @@ const HomeContent = props => {
                   </h2>
                   <h2 className='white text-center'>
                     Rates are low in R/M disease for common patient types
-                    <sup>¶7</sup>
+                    <sup>§7</sup>
                   </h2>
                   <p className='white text-center bolder'>
                     Click the buttons below to see OS rates by race.
@@ -424,7 +424,7 @@ const HomeContent = props => {
                 <Col lg={{ span: 12, offset: 0 }}>
                   <div>
                     <h6 className='white'>
-                      ¶An analysis of NPC patients in the United States reported
+                      §An analysis of NPC patients in the United States reported
                       to the SEER (Surveillance, Epidemiology, and End Results)
                       database between 1973 and 2009. Data included 9,014
                       patients, of which the majority were non-Hispanic white
