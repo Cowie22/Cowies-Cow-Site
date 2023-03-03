@@ -2,7 +2,7 @@
 // const AppProvider = require("./src/contexts/state");
 
 import React from 'react'
-import AppProvider from './src/contexts/state'
+import { AppWrapper } from './src/contexts/state'
 
 // For Gatsby, there is a special way to handle context and apply the app provider to the project.
 // You simply need to use the app provider in gatsby-browser.js and gatsby-ssr.js, and it will work
@@ -10,8 +10,8 @@ import AppProvider from './src/contexts/state'
 
 export default wrapRootElement = ({ element }) => {
   return (
-    <AppProvider>
+    <AppWrapper>
       {element}
-    </AppProvider>
+    </AppWrapper>
   )
 }

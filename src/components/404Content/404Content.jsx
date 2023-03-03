@@ -7,11 +7,11 @@ import { AppContext } from '../../contexts/state'
 const FourOhFourContent = props => {
   const state = useContext(AppContext)
 
-  const { currentPage, handleCurrentPage, setReferences } = state
+  const { currentPage, updateCurrentPage, updateReferences } = state
 
   useEffect(() => {
-    handleCurrentPage('error')
-    setReferences([])
+    updateCurrentPage('error')
+    updateReferences([])
   }, [])
 
   return (

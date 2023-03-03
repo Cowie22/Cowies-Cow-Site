@@ -24,7 +24,7 @@ const AboutContent = props => {
   const [landed, handleLanded] = useState(false)
   const state = useContext(AppContext)
 
-  const { currentPage, handleCurrentPage, setReferences } = state
+  const { currentPage, updateCurrentPage, updateReferences } = state
 
   const circleRefAbout = useRef()
   const [circleViewAbout, circleInViewAbout] = useInView({ triggerOnce: true })
@@ -125,8 +125,8 @@ const AboutContent = props => {
       }
     }
 
-    handleCurrentPage('about')
-    setReferences([8, 9, 10, 11, 12, 13, 14, 15, 5, 16])
+    updateCurrentPage('about')
+    updateReferences([8, 9, 10, 11, 12, 13, 14, 15, 5, 16])
     updateWindowDimensions()
     window.addEventListener('resize', updateWindowDimensions, { passive: true })
     return function cleanUp() {

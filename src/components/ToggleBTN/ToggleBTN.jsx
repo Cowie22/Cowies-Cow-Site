@@ -5,13 +5,13 @@ import { AppContext } from '../../contexts/state'
 
 const ToggleBTN = props => {
   const state = useContext(AppContext)
-  const { slider, handleSlider } = state
+  const { slider, updateSlider } = state
 
   return (
     <Col lg={{ span: 6, offset: 3 }} xs={{ span: 12, offset: 0 }}>
       <div
         className='toggle-btn-container'
-        onClick={() => handleSlider(!slider)}
+        onClick={() => updateSlider(!slider)}
       >
         <div className={slider ? 'slider-btn right' : 'slider-btn left'}></div>
         <Row>

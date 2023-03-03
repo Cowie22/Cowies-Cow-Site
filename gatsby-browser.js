@@ -10,12 +10,12 @@
 
  import "bootstrap/dist/css/bootstrap.min.css"
  import React from "react"
- import AppProvider from "./src/contexts/state.jsx"
+ import { AppWrapper } from "./src/contexts/state.jsx"
 
  export const wrapRootElement = ({ element }) => {
    return (
-     <AppProvider>
+     <AppWrapper>
        {element}
-     </AppProvider>
+     </AppWrapper>
    )
  }

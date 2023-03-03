@@ -1,74 +1,83 @@
-import React, { Component } from "react"
+import React, {
+  createContext,
+  useCallback,
+  useContext,
+  useState,
+  useReducer,
+} from 'react'
 
 // This is the main function that allows contexts to work and is built in to react.
 // AppContext will have AppContext.Provider, which is used here and will also have
 // AppContext.Consumer, which allows the global state to be used throughout the app.
 // Hence why AppContext is exported as well as the class component below.
 
-const defaultState = {
-  isExitRampOpen: false,
-  handleIsExitRampOpen: () => {},
-  externalUrl: '',
-  currentPage: '',
-  handleCurrentPage: () => {},
-  slider: false,
-  handleSlider: () => {},
-  references: '',
-  setReferences: () => {},
-}
+const AppContext = createContext()
 
-export const AppContext = React.createContext(defaultState)
-class AppProvider extends Component {
-  constructor(props) {
-    super(props)
-    // With context, this.state will have the state that needs to be shared amongst multiple
-    // Components in the app, but it is important to note that this.state also contains
-    // The functions that are responsible for changing the state.  In order to maintain readability,
-    // I have seen that many engineers indent the function, directly below the state or states that
-    // That particular function is responsible for updating.
-    this.state = {
-      isExitRampOpen: false,
-      handleIsExitRampOpen: url => {
-        this.setState({
-          isExitRampOpen: !this.state.isExitRampOpen,
-          externalUrl: url,
-        })
-      },
-      externalUrl: '',
-      currentPage: '',
-      handleCurrentPage: (val) => {
-        this.setState({
-          currentPage: val,
-        })
-      },
-      slider: false,
-      handleSlider: (val) => {
-        this.setState({
-          slider: val,
-        })
-      },
-      references: 0,
-      setReferences: (arr) => {
-        this.setState({
-          references: arr,
-        })
-      },
+const AppWrapper = ({ children }) => {
+  const [currentPage, handleCurrentPage] = useState('')
+  const [isExitRampOpen, handleIsExitRampOpen] = useState(false)
+  const [externalUrl, handleExternalUrl] = useState('')
+  const [slider, handleSlider] = useState('')
+  const [references, handleReferences] = useState('')
+
+
+  // Handle the current page of the site
+  const updateCurrentPage = useCallback(
+    (val) => {
+      handleCurrentPage(val)
+    },
+    [handleCurrentPage]
+  )
+
+  const updateIsExitRampOpen = (url) => {
+    handleIsExitRampOpen(!isExitRampOpen)
+    handleBodyScroll(!isExitRampOpen)
+    handleExternalUrl(url)
+  }
+
+  const updateSlider = useCallback(
+    (val) => {
+      handleSlider(val)
+    },
+    [handleSlider]
+  )
+
+  const updateReferences = useCallback(
+    (val) => {
+      handleReferences(val)
+    },
+    [handleReferences]
+  )
+
+  // Function that when called with true, will stop the user from being able to
+  // Scroll and visa versa
+  const handleBodyScroll = (val) => {
+    if (typeof document !== 'undefined') {
+      let body = document.getElementsByTagName('body')[0]
+      if (val === true) {
+        body.classList.add('scroll-none')
+      } else {
+        body.classList.remove('scroll-none')
+      }
     }
   }
-  render() {
-    // AppContext.Provider is a built in function for context, it is important that
-    // this.props.children is used and to note that this.state is passed in.
 
-    // The class AppProvider will then wrap the outermost component(s) in the app.
-    // For Gatsby, there is a special way to handle this, and the wrapper will be
-    // Used in gatsby-browser.js and gatsby-ssr.js.
-    return (
-      <AppContext.Provider value={this.state}>
-        {this.props.children}
-      </AppContext.Provider>
-    )
+  let sharedState = {
+    currentPage,
+    updateCurrentPage,
+    isExitRampOpen,
+    externalUrl,
+    updateIsExitRampOpen,
+    slider,
+    updateSlider,
+    references,
+    updateReferences,
   }
+
+  return (
+    <AppContext.Provider value={sharedState}>{children}</AppContext.Provider>
+  )
+
 }
 
-
-export default AppProvider
+export { AppContext, AppWrapper }

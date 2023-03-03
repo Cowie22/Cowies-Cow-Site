@@ -43,7 +43,7 @@ export default props => {
             ? { top: `${yDirection - 450}px` }
             : { top: `${yDirection - 350}px` }
         }
-        onClick={() => state.handleIsExitRampOpen()}
+        onClick={() => state.updateIsExitRampOpen()}
       ></section>
       <section className={state.isExitRampOpen ? 'exit-popup-overlay' : ''}>
         <Container>
@@ -62,7 +62,7 @@ export default props => {
                       className="close-img-container"
                       onMouseEnter={() => handleHovered(true)}
                       onMouseLeave={() => handleHovered(false)}
-                      onClick={() => state.handleIsExitRampOpen()}
+                      onClick={() => state.updateIsExitRampOpen()}
                     >
                       <img
                         src={hovered ? closeIconHovered : closeIcon}
@@ -97,7 +97,7 @@ export default props => {
                         rel="noopener noreferrer"
                         href={state.externalUrl}
                         onClick={() =>
-                          state.handleIsExitRampOpen(state.externalUrl)
+                          state.updateIsExitRampOpen(state.externalUrl)
                         }
                       >
                         <button className="cta-btn pink-btn">Continue</button>
@@ -105,7 +105,7 @@ export default props => {
                     </div>
                     <div
                       className="cta-btn-container exit-popup-btn-container"
-                      onClick={() => state.handleIsExitRampOpen()}
+                      onClick={() => state.updateIsExitRampOpen()}
                     >
                       <button className="cta-btn transparent-btn-pink">
                         Stay on MyfembreeHCP.com

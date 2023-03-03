@@ -11,7 +11,7 @@ const MainNav = props => {
   const [currentTabHovered, handleCurrentTabHovered] = useState('')
 
   const state = useContext(AppContext)
-  const { currentPage, handleCurrentPage } = state
+  const { currentPage, updateCurrentPage } = state
 
   const toggleNav = () => {
     handleIsNavOpen(!isNavOpen)

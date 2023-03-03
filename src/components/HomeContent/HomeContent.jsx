@@ -27,10 +27,10 @@ const HomeContent = props => {
   const state = useContext(AppContext)
   const {
     currentPage,
-    handleCurrentPage,
-    setReferences,
+    updateCurrentPage,
+    updateReferences,
     slider,
-    handleSlider,
+    updateSlider,
   } = state
 
   const videoPlayerRef = useRef()
@@ -100,8 +100,8 @@ const HomeContent = props => {
       }
     }
 
-    handleCurrentPage('home')
-    setReferences([1, 2, 4, 5, 6, 7])
+    updateCurrentPage('home')
+    updateReferences([1, 2, 4, 5, 6, 7])
 
     updateWindowDimensions()
     window.addEventListener('resize', updateWindowDimensions, { passive: true })

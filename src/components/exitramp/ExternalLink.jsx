@@ -13,7 +13,7 @@ const ExternalLink = ({ children, externalUrl, className, id }) => {
       rel="noopener noreferrer"
       onClick={e => {
         e.preventDefault()
-        state.handleIsExitRampOpen(externalUrl)
+        state.updateIsExitRampOpen(externalUrl)
       }}
     >
       {children}

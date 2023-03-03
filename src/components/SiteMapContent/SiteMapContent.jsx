@@ -7,11 +7,11 @@ import { AppContext } from '../../contexts/state'
 const SiteMapContent = props => {
   const state = useContext(AppContext)
 
-  const { currentPage, handleCurrentPage, setReferences } = state
+  const { currentPage, updateCurrentPage, updateReferences } = state
 
   useEffect(() => {
-    handleCurrentPage('sitemap')
-    setReferences([])
+    updateCurrentPage('sitemap')
+    updateReferences([])
   }, [])
 
   return (
