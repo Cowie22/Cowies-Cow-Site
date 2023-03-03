@@ -16,8 +16,11 @@ $barlow: 'Barlow', sans-serif;
 @import "../components/SiteMapContent/SiteMapContent.scss";
 @import "../components/404Content/404Content.scss";
 
+@import "../components/header-hold/Header.scss";
+@import "../components/header-hold/MainNav.scss";
 @import "../components/header/Header.scss";
-@import "../components/header/MainNav.scss";
+@import "../components/header/MainNav/MainNav.scss";
+@import "../components/header/MainNavMobile/MainNavMobile.scss";
 @import "../components/exitramp/ExitRamp.scss";
 @import "../components/footer/Footer.scss";
 @import "../components/Layout.scss";

@@ -1,11 +1,17 @@
 import React, { memo } from 'react'
 
-import MainNav from './MainNav'
+import MainNav from './MainNav/MainNav'
+import MainNavMobile from './MainNavMobile/MainNavMobile'
 
 const Header = props => {
   return (
     <header>
-      <MainNav />
+      <div className='d-none d-lg-block'>
+        <MainNav />
+      </div>
+      <div className='d-block d-lg-none'>
+        <MainNavMobile />
+      </div>
     </header>
   )
 }
