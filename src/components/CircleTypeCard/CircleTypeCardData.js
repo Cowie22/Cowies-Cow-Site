@@ -18,7 +18,7 @@ const CircleTypeCardData1 = [
 const CircleTypeCardData2 = [
   {
     title: `Type 2:`,
-    text: `Non-Keratinizing Differentiated Carcinoma`,
+    text: `Nonkeratinizing Differentiated Carcinoma`,
     columns: {span: 3, offset: 1},
     list: [
       `Associated with EBV`,
@@ -32,7 +32,7 @@ const CircleTypeCardData2 = [
 const CircleTypeCardData3 = [
   {
     title: `Type 3:`,
-    text: `Non-Keratinizing Undifferentiated Carcinoma`,
+    text: `Nonkeratinizing Undifferentiated Carcinoma`,
     columns: {span: 3, offset: 1},
     list: [
       `Associated with EBV`,

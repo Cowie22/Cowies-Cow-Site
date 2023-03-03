@@ -20,8 +20,24 @@
     padding-bottom: 32px;
   }
   .home-hero-lower-content-container {
-    .home-lower-text {
-      padding: 32px 0 40px 0;
+    .home-video-arrow-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 32px;
+      &:hover {
+        cursor: pointer;
+        h4 {
+          color: #E3FF39;
+          transition: all .5s;
+          transition-delay: .2s;
+        }
+      }
+      h4 {
+        padding-left: 16px;
+        transition: all .5s;
+        transition-delay: .2s;
+      }
     }
   }
   .home-box-col {
@@ -137,12 +153,20 @@
   }
 }
 
-.home-cancer-section {
-  padding: 24px 0 96px 0;
-  background: #C1C7C8;
+.home-video-section {
+  padding: 24px 0 88px 0;
+  background: #3E404C;
   .footnote-container {
     padding-bottom: 72px;
   }
+  h3 {
+    padding-bottom: 40px;
+  }
+}
+
+.home-cancer-section {
+  padding: 96px 0;
+  background: #C1C7C8;
   h2 {
     padding: 8px 0 16px 0;
   }
@@ -211,8 +235,8 @@
       align-items: flex-start;
       flex-direction: column;
       height: 100%;
-      .home-lower-text {
-        padding: 32px 0;
+      .home-video-arrow-container {
+        padding-top: 32px;
       }
     }
     .home-box-col {
@@ -243,12 +267,16 @@
       }
     }
   }
+
+  .home-video-section {
+    padding: 0px 0 56px 0;
+    .footnote-container {
+      padding-bottom: 48px;
+    }
+  }
   
   .home-cancer-section {
-    padding: 24px 0 16px 0;
-    .footnote-container {
-      padding-bottom: 40px;
-    }
+    padding: 56px 0 16px 0;
     h2 {
       padding: 8px 0 16px 0;
     }
@@ -313,6 +341,11 @@
 
 @media screen and (max-width: 525px) {
   .home-container {
+    padding: 37% 2% 16% 0;
+    background-position: 30% 65%;
+    .home-hero-lower-content-container {
+      padding-top: 18%;
+    }
     .home-box-col {
       .home-box-section {
         .home-box-container {
@@ -399,7 +432,7 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .home-container {
     padding: 220px 0 0px 10px;
-    background-position: 50% 62%;
+    background-position: 50% 56%;
     height: fit-content;
     .home-hero-lower-content-container {
       padding-top: 95px;
@@ -430,12 +463,12 @@
   }
 }
 
-@media screen and (min-width: 426px) and (max-width: 767px) {
+@media screen and (min-width: 526px) and (max-width: 767px) {
   .home-container {
-    padding: 50% 8% 10% 0;
+    padding: 50% 8% 22% 0;
     background-position: 50% 65%;
     .home-hero-lower-content-container {
-      padding-top: 20%;
+      padding-top: 18%;
     }
     .home-box-col {
       .home-box-section {

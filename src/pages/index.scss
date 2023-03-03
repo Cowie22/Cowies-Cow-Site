@@ -32,6 +32,7 @@ $barlow: 'Barlow', sans-serif;
 @import "../components/DemographicsCards/DemographicsCards.scss";
 @import "../components/RiskIconCard/RiskIconCard.scss";
 @import "../components/SignUpForm/SignUpForm.scss";
+@import "../components/VideoPlayer/VideoPlayer.scss";
 
 
 html {
@@ -350,5 +351,21 @@ sub {
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+  }
+}
+
+.hovered-icon-container {
+  svg {
+    > * {
+      transition: 0.5s all;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    svg {
+      > * {
+        transition: 0.5s all;
+      }
+    }
   }
 }
